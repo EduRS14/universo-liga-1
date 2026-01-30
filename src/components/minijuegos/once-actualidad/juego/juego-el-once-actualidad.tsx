@@ -441,7 +441,7 @@ export default function JuegoElOnceActualidad() {
                         </div>
                       </div>
                       <p className="turno-instruccion">
-                          Coloca un jugador retirado de este equipo en cualquier posición libre.
+                          Coloca un jugador actualmente jugando en este equipo en cualquier posición libre.
                       </p>
                   </div>
               </div>
@@ -489,7 +489,7 @@ export default function JuegoElOnceActualidad() {
                 ) : (
                   <div className='text-center contenedor-orientativo'>
                       <p className='texto-orientacion'>
-                          Selecciona una posición vacía (+) para agregar al jugador retirado.
+                          Selecciona una posición vacía (+) para agregar al jugador actual.
                       </p>
                       <button 
                           className="btn btn-danger btn-sm mt-2 btn-rendirse"
