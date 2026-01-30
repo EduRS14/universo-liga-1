@@ -1,0 +1,261 @@
+.contenedor-resultados, .contenedor-tabla{
+    margin: 1rem 0;
+}
+
+.contenedor-opciones{
+    margin: 0.5rem 0;
+    background-color: #ED283A;
+    padding: 0.6rem 0.3rem;
+    border-radius: 5px;
+}
+
+.contenedor-titulo-tabla{
+    margin: 0.5rem 0;
+    padding: 0.6rem 0.3rem;
+}
+
+.contenedor-encabezado-tabla{
+    padding: 0.5rem 0;
+    border-bottom: 1px solid gray;
+}
+
+.contenedor-leyenda{
+    margin: 0.5rem 0;
+}
+
+.contenedor-cuadrado-leyenda{
+    position: relative;
+    padding: 0.3rem;
+}
+
+.contenedor-leyenda-tabla{
+    margin: 0.3rem 0;
+}
+
+.cuadrado-verde{
+    position: absolute;
+    /* Lo centramos tanto horizontal como verticalmente */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 20px;
+    height: 20px;
+    border-radius: 3px;
+    background-color: #32a869;
+    border: 1px solid rgb(190, 190, 190);
+}
+
+.cuadrado-rojo{
+    position: absolute;
+    /* Lo centramos tanto horizontal como verticalmente */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 20px;
+    height: 20px;
+    border-radius: 3px;
+    background-color: #e5533d;
+    border: 1px solid rgb(190, 190, 190);
+}
+
+.cuadrado-naranja{
+    position: absolute;
+    /* Lo centramos tanto horizontal como verticalmente */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 20px;
+    height: 20px;
+    border-radius: 3px;
+    background-color: #e0944d;
+    border: 1px solid rgb(190, 190, 190);
+}
+
+.cuadrado-amarillo{
+    position: absolute;
+    /* Lo centramos tanto horizontal como verticalmente */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 20px;
+    height: 20px;
+    border-radius: 3px;
+    background-color: #f0b535;
+    border: 1px solid rgb(190, 190, 190);
+}
+
+.cuadrado-rojo{
+    position: absolute;
+    /* Lo centramos tanto horizontal como verticalmente */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 20px;
+    height: 20px;
+    border-radius: 3px;
+    background-color: #e74c3c;
+    border: 1px solid rgb(190, 190, 190);
+}
+
+.separador{
+    height: 0.5rem;
+}
+
+.contenedor-resultado-tabla{
+    padding: 0.2rem 0;
+}
+
+.contenedor-calculadora {
+    background-color: white;
+    padding: 2rem 1rem;
+    border-radius: 5px;
+}
+
+.contenedor-cuerpo-tabla{
+    background-color: #1a1a1a;
+    margin: 1rem 0;
+    padding: 1rem 0;
+    border-radius: 5px;
+}
+
+.contenedor-partido{
+    margin: 0.5rem 0;
+    padding: 0 0.5rem;
+    background: #910f0f;
+    background: linear-gradient(90deg,rgba(145, 15, 15, 0.75) 0%, rgba(0, 33, 125, 0.75) 100%);
+    border-radius: 4px;
+}
+
+.contenedor-inputs-resultado{
+    padding: 0.8rem 0;
+    background-color: white;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+}
+
+.contenedor-escudo{
+    padding: 0.4rem 0;
+    border-right: 1px solid rgb(63, 63, 63);
+}
+
+.contenedor-escudo-2{
+    padding: 0.4rem 0;
+    border-left: 1px solid rgb(63, 63, 63);
+}
+
+.btn-opciones{
+    background-color: white;
+    color: #ED283A;
+    font-weight: 500;
+    border: none;
+}
+
+.btn-opciones:hover{
+    font-weight: 800;
+    background-color: white;
+    color: #ED283A;
+}
+
+.btn-opciones:disabled{
+    background-color: #f0f0f0;
+    color: gray;
+    font-weight: 400;
+}
+
+.titulo-fecha{
+    color: white;
+    font-weight: 600;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.texto-tabla{
+    color: white;
+    font-size: 0.8rem;
+}
+
+.texto-leyenda{
+    color: white;
+    font-size: 0.8rem;
+    text-shadow: 0 10px 20px rgba(124, 0, 0, 0.5);
+}
+
+.texto {
+    color: white;
+}
+
+.texto-separador{
+    color: black;
+    font-weight: 600;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.texto-equipos{
+    color: white;
+    font-weight: 600;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.input-resultado {
+    width: 50px;
+}
+
+.input-resultado:disabled{
+    border-radius: 2px;
+    background-color: #bbbbbb;
+}
+
+.img-escudo{
+    max-height: 40px;
+}
+
+@media (max-width: 768px) {
+
+    .contenedor-opciones{
+        padding: 0.4rem 0.2rem;
+    }
+
+    .contenedor-calculadora {
+        padding: 1rem 0.5rem;
+    }
+
+    .contenedor-titulo-tabla{
+        padding: 0.4rem 0.2rem;
+    }
+
+    .contenedor-inputs-resultado{
+        padding: 0.4rem 0;
+    }
+
+    .contenedor-escudo, .contenedor-escudo-2{
+        border: none;
+    }
+
+    .contenedor-numero-tabla{
+        padding: 0;
+    }
+
+    .titulo-fecha{
+        font-size: 0.8rem;
+    }
+
+    .btn-opciones{
+        font-size: 0.5rem;
+    }
+
+    .input-resultado {
+        height: 25px;
+        width: 35px;
+        font-size: 0.8rem;
+    }
+
+    .img-escudo{
+        max-height: 25px;
+    }
+
+    .texto-equipos{
+        font-size: 0.7rem;
+    }
+
+}

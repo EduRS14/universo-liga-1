@@ -1,0 +1,129 @@
+.contenedor-configuracion{
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contenedor-opciones{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.texto-general{
+    font-size: 1.2rem;
+    color: rgb(255, 255, 255);
+    margin: 2rem 0 1rem 0;
+}
+.texto-opcion{
+    font-size: 1rem;
+    color: rgb(255, 255, 255);
+}
+.radio-oculto {
+  display: none;
+}
+.radio-label {
+  display: inline-block;
+  padding: 0.6rem 1.2rem;
+  margin-right: 1rem;
+  font-family: sans-serif;
+  font-size: 0.8rem;
+  background-color: #f0f0f0; /* Fondo gris claro */
+  color: #333;
+  border: 2px solid #ddd;
+  border-radius: 8px; /* Bordes redondeados */
+  cursor: pointer; /* Manito al pasar el mouse */
+  transition: all 0.2s ease; /* Suavizar la animación */
+  user-select: none; /* Evitar que se seleccione el texto */
+}
+.radio-label:hover {
+  background-color: #e2e2e2;
+}
+
+.btn-jugar{
+  margin-top: 1rem;
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 10px;
+  background-color: #643bf6;
+  color: white;
+  transition: all 0.2s ease;
+}
+
+.btn-jugar:hover {
+  background-color: #5128d4;
+  font-weight: bold;
+  color: white;
+}
+
+.btn-jugar:disabled {
+  background-color: #a9a9a9;
+  cursor: not-allowed;
+}
+
+input[type="radio"]:checked + .radio-label {
+  background-color: #911515;
+  color: white;
+  border-color: rgb(165, 12, 12);
+  box-shadow: inset 0 3px 5px rgba(0,0,0,0.2); 
+  transform: translateY(1px); /* Mueve el botón un píxel abajo */
+}
+
+.presentacion-el-once{
+    font-size: 0.9rem;
+    color: white;
+    text-align: justify;
+    margin-bottom: 2rem;
+    background-color: #341b83;
+    border: 2px solid #5128d4;
+    border-radius: 10px;
+    padding: 1rem;
+}
+
+.texto-cargando{
+    font-size: 1.5rem;
+    color: white;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.img-el-once{
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+    height: auto;
+    display: block;
+}
+
+@media (max-width: 600px) {
+    .texto-cargando{
+        font-size: 1rem;
+    }
+
+    .img-el-once{
+        max-width: 250px;
+    }
+
+    .presentacion-el-once{
+        margin-top: 1rem;
+        font-size: 0.6rem;
+    }
+
+    .texto-general{
+        font-size: 0.8rem;
+    }
+
+    .radio-label {
+        font-size: 0.6rem;
+        padding: 0.4rem 0.8rem;
+        margin-right: 0.5rem;
+    }
+
+    .btn-jugar{
+        font-size: 0.8rem;
+        padding: 0.6rem 1rem;
+        margin: 0;
+        margin-bottom: 2rem;
+    }
+}

@@ -1,0 +1,227 @@
+[
+    {
+        "id": 1,
+        "nombre": "Perú",
+        "continente": "América del Sur"
+    },
+    {
+        "id": 2,
+        "nombre": "Argentina",
+        "continente": "América del Sur"
+    },
+    {
+        "id": 3,
+        "nombre": "Brasil",
+        "continente": "América del Sur"
+    },
+    {
+        "id": 4,
+        "nombre": "Chile",
+        "continente": "América del Sur"
+    },
+    {
+        "id": 5,
+        "nombre": "Colombia",
+        "continente": "América del Sur"
+    },
+    {
+        "id": 6,
+        "nombre": "Ecuador",
+        "continente": "América del Sur"
+    },
+    {
+        "id": 7,
+        "nombre": "Uruguay",
+        "continente": "América del Sur"
+    },
+    {
+        "id": 8,
+        "nombre": "Venezuela",
+        "continente": "América del Sur"
+    },
+    {
+        "id": 9,
+        "nombre": "Paraguay",
+        "continente": "América del Sur"
+    },
+    {
+        "id": 10,
+        "nombre": "Bolivia",
+        "continente": "América del Sur"
+    },
+    {
+        "id": 11,
+        "nombre": "España",
+        "continente": "Europa"
+    },
+    {
+        "id": 12,
+        "nombre": "Italia",
+        "continente": "Europa"
+    },
+    {
+        "id": 13,
+        "nombre": "Alemania",
+        "continente": "Europa"
+    },
+    {
+        "id": 14,
+        "nombre": "Francia",
+        "continente": "Europa"
+    },
+    {
+        "id": 15,
+        "nombre": "Inglaterra",
+        "continente": "Europa"
+    },
+    {
+        "id": 16,
+        "nombre": "Portugal",
+        "continente": "Europa"
+    },
+    {
+        "id": 17,
+        "nombre": "Países Bajos",
+        "continente": "Europa"
+    },
+    {
+        "id": 18,
+        "nombre": "Bélgica",
+        "continente": "Europa"
+    },
+    {
+        "id": 19,
+        "nombre": "Suiza",
+        "continente": "Europa"
+    },
+    {
+        "id": 20,
+        "nombre": "Turquía",
+        "continente": "Europa"
+    },
+    {
+        "id": 21,
+        "nombre": "Estados Unidos",
+        "continente": "América del Norte"
+    },
+    {
+        "id": 22,
+        "nombre": "México",
+        "continente": "América del Norte"
+    },
+    {
+        "id": 23,
+        "nombre": "Canadá",
+        "continente": "América del Norte"
+    },
+    {
+        "id": 24,
+        "nombre": "Costa Rica",
+        "continente": "América Central"
+    },
+    {
+        "id": 25,
+        "nombre": "Panamá",
+        "continente": "América Central"
+    },
+    {
+        "id": 26,
+        "nombre": "Cuba",
+        "continente": "Caribe"
+    },
+    {
+        "id": 27,
+        "nombre": "República Dominicana",
+        "continente": "Caribe"
+    },
+    {
+        "id": 28,
+        "nombre": "Jamaica",
+        "continente": "Caribe"
+    },
+    {
+        "id": 29,
+        "nombre": "Puerto Rico",
+        "continente": "Caribe"
+    },
+    {
+        "id": 30,
+        "nombre": "Australia",
+        "continente": "Oceanía"
+    },
+    {
+        "id": 31,
+        "nombre": "Nueva Zelanda",
+        "continente": "Oceanía"
+    },
+    {
+        "id": 32,
+        "nombre": "Japón",
+        "continente": "Asia"
+    },
+    {
+        "id": 33,
+        "nombre": "Corea del Sur",
+        "continente": "Asia"
+    },
+    {
+        "id": 34,
+        "nombre": "China",
+        "continente": "Asia"
+    },
+    {
+        "id": 35,
+        "nombre": "India",
+        "continente": "Asia"
+    },
+    {
+        "id": 36,
+        "nombre": "Rusia",
+        "continente": "Europa/Asia"
+    },
+    {
+        "id": 37,
+        "nombre": "Sudáfrica",
+        "continente": "África"
+    },
+    {
+        "id": 38,
+        "nombre": "Nigeria",
+        "continente": "África"
+    },
+    {
+        "id": 39,
+        "nombre": "Egipto",
+        "continente": "África"
+    },
+    {
+        "id": 40,
+        "nombre": "Marruecos",
+        "continente": "África"
+    },
+    {
+        "id": 41,
+        "nombre": "Túnez",
+        "continente": "África"
+    },
+    {
+        "id": 42,
+        "nombre": "Costa de Marfil",
+        "continente": "África"
+    },
+    {
+        "id": 43,
+        "nombre": "Ghana",
+        "continente": "África"
+    },
+    {
+        "id": 44,
+        "nombre": "Senegal",
+        "continente": "África"
+    },
+    {
+        "id": 45,
+        "nombre": "Camerún",
+        "continente": "África"
+    }
+]

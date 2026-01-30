@@ -1,0 +1,674 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import equiposData from '../../data/wiki/equipos.json';
+import type { Equipo } from '../../types/equipo';
+
+export function getStaticPaths() {
+  return equiposData.map((equipo) => {
+    return {
+      params: { id: equipo.id.toString() }, 
+      props: { equipo }, 
+    };
+  });
+}
+
+const { equipo } = Astro.props;
+
+const { identidad, estadio, historia, plantilla, palmares } = equipo;
+
+const urls_img_alternas : string[] = [
+    '/img/equipos/bn/adt.webp',
+    '/img/equipos/bn/aas.webp',
+    '/img/equipos/bn/alima.webp',
+    '/img/equipos/bn/ag.webp',
+    '/img/equipos/bn/cienciano.webp',
+    '/img/equipos/bn/comerciantes.webp',
+    '/img/equipos/bn/cusco.webp',
+    '/img/equipos/bn/garcilaso.webp',
+    '/img/equipos/bn/moquegua.webp',
+    '/img/equipos/bn/melgar.webp',
+    '/img/equipos/bn/cajamarca.webp',
+    '/img/equipos/bn/jpii.webp',
+    '/img/equipos/bn/chankas.webp',
+    '/img/equipos/bn/sb.webp',
+    '/img/equipos/bn/huancayo.webp',
+    '/img/equipos/bn/sc.webp',
+    '/img/equipos/bn/u.webp',
+    '/img/equipos/bn/utc.webp'
+];
+
+const background_equipos : string[] = [
+    'linear-gradient(90deg,rgba(171, 153, 15, 0.77) 0%, rgba(25, 86, 255, 0.73) 100%)',
+    'linear-gradient(90deg,rgba(227, 227, 227, 0.78) 0%, rgba(70, 148, 232, 0.87) 100%)',
+    'linear-gradient(90deg,rgba(209, 207, 207, 0.77) 0%, rgba(13, 16, 117, 0.72) 100%)',
+    'linear-gradient(90deg,rgba(171, 15, 15, 0.77) 0%, rgba(251, 244, 27, 0.72) 100%)',
+    'linear-gradient(90deg,rgba(186, 189, 207, 0.77) 0%, rgba(115, 6, 6, 0.77) 100%)',
+    'linear-gradient(90deg,rgba(42, 112, 42, 0.77) 0%, rgba(77, 5, 87, 0.77) 100%)',
+    'linear-gradient(90deg,rgba(102, 88, 19, 0.77) 0%, rgba(26, 24, 6, 0.87) 100%)',
+    'linear-gradient(90deg,rgba(56, 150, 144, 0.82) 0%, rgba(145, 28, 28, 0.87) 100%)',
+    'linear-gradient(90deg,rgba(217, 217, 217, 0.78) 0%, rgba(59, 57, 57, 0.87) 100%)',
+    'linear-gradient(90deg,rgba(138, 21, 25, 0.82) 0%, rgba(5, 0, 0, 0.87) 100%)',
+    'linear-gradient(90deg,rgba(240, 234, 67, 0.78) 0%, rgba(64, 64, 194, 0.87) 100%)',
+    'linear-gradient(90deg,rgba(181, 176, 25, 0.82) 0%, rgba(217, 166, 104, 0.87) 100%)',
+    'linear-gradient(90deg,rgba(237, 151, 76, 0.77) 0%, rgba(140, 14, 81, 0.72) 100%)',
+    'linear-gradient(90deg,rgba(191, 73, 144, 0.78) 0%, rgba(5, 0, 0, 0.87) 100%)',
+    'linear-gradient(90deg,rgba(153, 149, 44, 0.82) 0%, rgba(168, 12, 12, 0.87) 100%)',
+    'linear-gradient(90deg,rgba(240, 240, 240, 0.78) 0%, rgba(0, 158, 158, 0.87) 100%)',
+    'linear-gradient(90deg,rgba(255, 225, 176, 0.78) 0%, rgba(158, 0, 0, 0.87) 100%)',
+    'linear-gradient(90deg,rgba(199, 167, 161, 0.78) 0%, rgba(232, 70, 70, 0.87) 100%)'
+];
+
+const transformarFechaAFormatoLegible = (fecha: string): string => {
+    const meses: { [key: string]: string } = {
+        '01': 'enero',
+        '02': 'febrero',
+        '03': 'marzo',
+        '04': 'abril',
+        '05': 'mayo',
+        '06': 'junio',
+        '07': 'julio',
+        '08': 'agosto',
+        '09': 'septiembre',
+        '10': 'octubre',
+        '11': 'noviembre',
+        '12': 'diciembre'
+    };
+
+    const partes = fecha.split('-');
+    if (partes.length !== 3) return fecha; 
+
+    const año = partes[0];
+    const mes = meses[partes[1]];
+    const dia = parseInt(partes[2], 10); 
+
+    return `${dia} de ${mes} de ${año}`;
+};
+
+---
+
+<Layout>
+
+    <main>
+
+        <div class="container-fluid">
+	    	<div class="row justify-content-center align-items-center">
+
+                <div class="col-9 contenedor-general-equipo">
+
+                    <div class="row justify-content-center align-items-center">
+
+                        <div class="col-12 col-lg-8 my-5">
+
+                            <div class="row justify-content-center align-items-center">
+
+                                <div class="col-8 text-center">
+                                    <img src={equipo.url_foto} alt={`Imagen del equipo ${equipo.nombre}`} class="img-fluid img-equipo"/>
+                                </div>
+
+                                <div class="col-8 text-center mt-4">
+                                    <h1 class="text-center texto-titulo-equipo">{equipo.nombre}</h1>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="col-12 col-lg-10 my-5">
+
+                            <div class="row justify-content-center align-items-center">
+
+                                <div class="col-10 col-lg-5 text-center">
+                                    <div class="contenedor-img d-flex justify-content-center align-items-center">
+                                        <div class="contenedor-img-descripcion" style={`background: ${background_equipos[equipo.id - 1]};`}>
+                                            <img src={urls_img_alternas[equipo.id - 1]} alt={`Imagen alternativa del equipo ${equipo.nombre}`} class="img-fluid img-descripcion-equipo">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-10 col-lg-5">
+                                    <div class="row justify-content-center align-items-center">
+
+                                        <div class="col-12">
+                                            <h2 class="texto-titulo-descripcion">Información principal de {equipo.nombre}</h2>
+                                        </div>
+
+                                        <ul>
+                                            <div class="col-12">
+                                                <li class="texto-especifico-descripcion"><strong>Historia:</strong> {historia}</li>
+                                            </div>
+                                            <div class="col-12">
+                                                <li class="texto-especifico-descripcion"><strong>Fundación:</strong> {transformarFechaAFormatoLegible(identidad.fecha_fundacion)}</li>
+                                            </div>
+                                            <div class="col-12">
+                                                <li class="texto-especifico-descripcion"><strong>Apodos:</strong> {identidad.apodos.map(apodo => apodo).join(', ')}</li>
+                                            </div>
+                                        </ul>
+
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="col-10 col-lg-8 my-5">
+
+                            <div class="row justify-content-center align-items-center">
+
+                                <div class="col-10 text-center">
+                                    <div class="contenedor-titulo-localidad">
+                                        <h2 class="texto-seccion">Localidad</h2>
+                                    </div>
+                                </div>
+
+                                <div class="col-10 text-center">
+                                    <div class="contenedor-img d-flex justify-content-center align-items-center">
+                                        <div class="borde-imagen">
+                                            <img src={estadio.url_foto} alt={`Imagen del estadio ${estadio.nombre}`} class=" img-fluid img-estadio">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-10 text-center">
+                                    <div class="contenedor-titulo-localidad">
+                                        <h2 class="texto-nombre-estadio">{estadio.nombre}</h2>
+                                    </div>
+                                </div>
+
+                                <div class="col-8 text-center my-3">
+
+                                    <div class="row justify-content-evenly align-items-center">
+
+                                        <div class="col-10 col-lg-4">
+                                            <img src={`/img/equipos/ciudades/${identidad.ciudad.toLowerCase()}.webp`} alt={`Imagen de la ciudad ${identidad.ciudad}`} class="img-fluid img-ciudad-equipo"/>
+                                        </div>
+                                        <div class="col-10 col-lg-5">
+                                            <div class="row justify-content-center align-items-center">
+                                                <ul>
+                                                    <div class="col-12 my-3">
+                                                        <li class="texto-ciudad"><strong>Ciudad:</strong> {identidad.ciudad}</li>
+                                                    </div>
+                                                    <div class="col-12 my-3">
+                                                        <li class="texto-ciudad"><strong>Capacidad:</strong> {estadio.capacidad} espectadores</li>
+                                                    </div>
+                                                    <div class="col-12 my-3">
+                                                        <li class="texto-ciudad"><strong>Altura:</strong> {estadio.altura_msnm} msnm</li>
+                                                    </div>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="col-11 col-lg-8 my-5">
+
+                            <div class="row justify-content-center align-items-center">
+
+                                <div class="col-10 text-center">
+                                    <div class="contenedor-titulo-localidad">
+                                        <h2 class="texto-seccion">Palmarés</h2>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 col-lg-10 text-center">
+
+                                    <div class="row justify-content-center align-items-center">
+
+                                        <div class="col-10 contenedor-titulo-local-cantidad">
+                                            <span class="texto-especifico-equipo">Títulos de Primera División: {palmares.titulos_primera_division}</span>
+                                        </div>
+
+                                        <div class="col-12 col-lg-10">
+                                            
+                                            <!-- Mostramos una imagen el numero de veces que gano el titulo de primera division -->
+                                            {Array.from({ length: palmares.titulos_primera_division }).map(() => (
+                                                <div class="col-1 d-inline-block mx-2 my-1">
+                                                    <img src='/img/liga/trofe-liga1.svg' alt="Icono de torneo" class="img-fluid img-trofeo-primera-division" />
+                                                </div>
+                                            ))}
+                                            
+                                        </div>
+
+                                        {palmares.titulos_internacionales.length > 0 && 
+                                            <div class="col-12 col-lg-10 mt-3">
+                                                <span class="texto-especifico-equipo">Títulos Internacionales: {palmares.titulos_internacionales.length}</span>
+                                                <div class="row justify-content-center align-items-center">
+                                                    <ul class="row justify-content-center align-items-center">
+                                                        <div class="col-7 col-lg-5 text-center m-3">
+                                                            <li class="texto-dt">
+                                                                <div class="row justify-content-center align-items-center">
+
+                                                                    <div class="col-12 text-center">
+                                                                        <img src="/img/liga/trofeo-copa-sudamericana.svg" alt="Icono de torneo" class="img-fluid img-trofeo-primera-division" />
+                                                                    </div>
+
+                                                                    <div class="col-12 text-center mt-3">
+                                                                        <span class="texto-titulo-internacional">Copa Sudamericana: {palmares.titulos_internacionales.filter(titulo => titulo.includes('Copa Sudamericana')).length}</span>
+                                                                    </div>
+
+                                                                </div>
+                                                            </li>
+                                                        </div>
+                                                        <div class="col-7 col-lg-5 text-center m-3">
+                                                            <li class="texto-dt">
+                                                                <div class="row justify-content-center align-items-center">
+
+                                                                    <div class="col-12 text-center">
+                                                                        <img src="/img/liga/trofeo-recopa-sudamericana.svg" alt="Icono de torneo" class="img-fluid img-trofeo-primera-division" />
+                                                                    </div>
+
+                                                                    <div class="col-12 text-center mt-3">
+                                                                        <span class="texto-titulo-internacional">Recopa Sudamericana: {palmares.titulos_internacionales.filter(titulo => titulo.includes('Recopa Sudamericana')).length}</span>
+                                                                    </div>
+
+                                                                </div>
+                                                            </li>
+                                                        </div>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        }
+
+                                    </div>
+                                    
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="col-12 my-5">
+
+                            <div class="row justify-content-center align-items-center">
+
+                                <div class="col-5">
+                                    <div class="row justify-content-center align-items-center">
+
+                                        <div class="col-10 text-center">
+                                            <h4 class="texto-seccion">Director Técnico</h4>
+                                        </div>
+
+                                        <div class="col-10 text-center">
+                                            <div class="contenedor-img-dt">
+                                                <img src="/img/liga/entrenador.webp" alt={`Imagen del director técnico ${equipo.cuerpo_tecnico.dt}`} class="img-fluid img-dt">
+                                            </div> 
+                                        </div>
+
+                                        <ul>
+                                            <div class="col-12 text-center">
+                                                <li class="texto-dt"><strong>Nombre:</strong> {equipo.cuerpo_tecnico.dt}</li>
+                                            </div>
+                                            <div class="col-12 text-center">
+                                                <li class="texto-dt"><strong>Nacionalidad:</strong> {equipo.cuerpo_tecnico.nacionalidad}</li>
+                                            </div>
+                                        </ul>
+
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="col-11 col-lg-8 my-5">
+
+                            <div class="row justify-content-between align-items-top">
+
+                                <div class="col-12 text-center">
+                                    <h4 class="texto-seccion">Plantilla</h4>
+                                </div>
+                                <div class="col-5 contenedor-plantilla-equipo">
+                                    <div class="row justify-content-center align-items-top">
+                                        <div class="col-11 text-center mb-4">
+                                            <h5 class="texto-general-equipo">Arqueros</h5>
+                                        </div>
+                                        <div class="col-11 text-center mb-2 d-block d-xl-none">
+                                            <img src="/img/liga/posiciones/arquero.webp" alt="Imagen de un arquero" class="img-jugador"/>
+                                        </div>
+                                        {plantilla.arqueros.map((jugador) => (
+                                            <div class="col-12 col-xl-4 p-0 contenedor-nombres-jugadores">
+                                                <div class="row justify-content-center align-items-center">
+                                                    <div class="col-12 text-center d-none d-lg-block">
+                                                        <img src="/img/liga/posiciones/arquero.webp" alt={`Imagen del jugador ${jugador.nombre}`} class="img-jugador"/>
+                                                    </div>
+                                                    <div class="col-12 text-center d-none d-lg-block">
+                                                        <span class="texto-jugador">{jugador.nombre}</span>
+                                                    </div>
+                                                    <div class="col-12 text-center d-none d-lg-block">
+                                                        <span class="texto-jugador"><i style="font-style: italic;">{jugador.nacionalidad}</i></span>
+                                                    </div>
+                                                    <div class="col-12 text-center d-block d-lg-none">
+                                                        <span class="texto-jugador">{jugador.nombre} ({jugador.nacionalidad})</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                        
+                                        ))}
+                                    
+                                    </div>
+                                </div>
+                                <div class="col-5 contenedor-plantilla-equipo">
+                                    <div class="row justify-content-center align-items-top">
+                                        <div class="col-11 text-center mb-4">
+                                            <h5 class="texto-general-equipo">Defensores</h5>
+                                        </div>
+                                        <div class="col-11 text-center mb-2 d-block d-xl-none">
+                                            <img src="/img/liga/posiciones/defensa.webp" alt="Imagen de un defensa" class="img-jugador"/>
+                                        </div>
+                                        {plantilla.defensas.map((jugador) => (
+                                            <div class="col-12 col-xl-3 p-0 contenedor-nombres-jugadores">
+                                                <div class="row justify-content-center align-items-center">
+                                                    <div class="col-12 text-center d-none d-lg-block">
+                                                        <img src="/img/liga/posiciones/defensa.webp" alt={`Imagen del jugador ${jugador.nombre}`} class="img-jugador"/>
+                                                    </div>
+                                                    <div class="col-12 text-center d-none d-lg-block">
+                                                        <span class="texto-jugador">{jugador.nombre}</span>
+                                                    </div>
+                                                    <div class="col-12 text-center d-none d-lg-block">
+                                                        <span class="texto-jugador"><i style="font-style: italic;">{jugador.nacionalidad}</i></span>
+                                                    </div>
+                                                    <div class="col-12 text-center d-block d-lg-none">
+                                                        <span class="texto-jugador">{jugador.nombre} ({jugador.nacionalidad})</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                        
+                                        ))}
+                                    
+                                    </div>
+                                </div>
+                                <div class="col-5 contenedor-plantilla-equipo">
+                                    <div class="row justify-content-center align-items-top">
+                                        <div class="col-11 text-center mb-4">
+                                            <h5 class="texto-general-equipo">Volantes</h5>
+                                        </div>
+                                        <div class="col-11 text-center mb-2 d-block d-xl-none">
+                                            <img src="/img/liga/posiciones/volante.webp" alt="Imagen de un volante" class="img-jugador"/>
+                                        </div>
+                                        {plantilla.volantes.map((jugador) => (
+                                            <div class="col-12 col-xl-3 p-0 contenedor-nombres-jugadores">
+                                                <div class="row justify-content-center align-items-center">
+                                                    <div class="col-12 text-center d-none d-lg-block">
+                                                        <img src="/img/liga/posiciones/volante.webp" alt={`Imagen del jugador ${jugador.nombre}`} class="img-jugador"/>
+                                                    </div>
+                                                    <div class="col-12 text-center d-none d-lg-block">
+                                                        <span class="texto-jugador">{jugador.nombre}</span>
+                                                    </div>
+                                                    <div class="col-12 text-center d-none d-lg-block">
+                                                        <span class="texto-jugador"><i style="font-style: italic;">{jugador.nacionalidad}</i></span>
+                                                    </div>
+                                                    <div class="col-12 text-center d-block d-lg-none">
+                                                        <span class="texto-jugador">{jugador.nombre} ({jugador.nacionalidad})</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                        
+                                        ))}
+                                    
+                                    </div>
+                                </div>
+                                <div class="col-5 contenedor-plantilla-equipo">
+                                    <div class="row justify-content-center align-items-top">
+                                        <div class="col-11 text-center mb-4">
+                                            <h5 class="texto-general-equipo">Delanteros</h5>
+                                        </div>
+                                        <div class="col-11 text-center mb-2 d-block d-xl-none">
+                                            <img src="/img/liga/posiciones/delantero.webp" alt="Imagen de un delantero" class="img-jugador"/>
+                                        </div>
+                                        {plantilla.delanteros.map((jugador) => (
+                                            <div class="col-12 col-xl-3 p-0 contenedor-nombres-jugadores">
+                                                <div class="row justify-content-center align-items-center">
+                                                    <div class="col-12 text-center d-none d-lg-block">
+                                                        <img src="/img/liga/posiciones/delantero.webp" alt={`Imagen del jugador ${jugador.nombre}`} class="img-jugador"/>
+                                                    </div>
+                                                    <div class="col-12 text-center d-none d-lg-block">
+                                                        <span class="texto-jugador">{jugador.nombre}</span>
+                                                    </div>
+                                                    <div class="col-12 text-center d-none d-lg-block">
+                                                        <span class="texto-jugador"><i style="font-style: italic;">{jugador.nacionalidad}</i></span>
+                                                    </div>
+                                                    <div class="col-12 text-center d-block d-lg-none">
+                                                        <span class="texto-jugador">{jugador.nombre} ({jugador.nacionalidad})</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                        
+                                        ))}
+                                    
+                                    </div>
+                                </div>
+
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </main>
+
+</Layout>
+
+<style>
+
+    .contenedor-general-equipo{
+        background-color: #ffffff;
+    }
+
+    .contenedor-titulo-localidad{
+        margin: 1.5rem 0;
+    }
+
+    .contenedor-plantilla-equipo{
+        padding: 1rem;
+        margin-top: 1.5rem;
+    }
+
+    .contenedor-titulo-local-cantidad{
+        margin: 0 0 1rem 0;
+    }
+
+    .contenedor-img-dt{
+        margin: 1rem 0;
+    }
+
+    .contenedor-img-descripcion{
+        max-width: fit-content;
+        padding: 2rem 3rem;
+        border-radius: 10px;
+    }
+
+    .texto-titulo-equipo{
+        font-size: 2rem;
+        color: #000000;
+        font-weight: 600;
+        font-style: normal;
+        text-shadow: #797979 0px 2px 10px;
+    }
+
+    .contenedor-nombres-jugadores{
+        margin-bottom: 1.2rem;
+    }
+
+    .texto-general-equipo{
+        color: #000000;
+        font-size: 1.5rem;
+    }
+
+    .texto-especifico-equipo{
+        color: #000000;
+        font-size: 1rem;
+    }
+
+    .texto-seccion{
+        color: #000000;
+        font-size: 1.8rem;
+        font-weight: 600;
+        margin-bottom: 1rem;
+    }
+
+    .texto-titulo-descripcion{
+        color: #000000;
+        font-size: 1rem;
+        font-weight: 600;
+        margin-bottom: 1rem;
+    }
+
+    .texto-especifico-descripcion{
+        color: #000000;
+        font-size: 0.8rem;
+        list-style-type: none;
+        margin-bottom: 0.5rem;
+    }
+
+    .texto-jugador{
+        color: #000000;
+        font-size: 0.6rem;
+    }
+
+    .texto-nombre-estadio{
+        color: #000000;
+        font-size: 1.2rem;
+        font-style: italic;
+    }
+
+    .texto-ciudad{
+        color: #000000;
+        font-size: 1rem;
+        list-style-type: none;
+    }
+
+    .borde-imagen{
+        background: linear-gradient(90deg,rgba(21, 80, 158, 0.62) 0%, rgba(230, 103, 103, 0.55) 100%);
+        max-width: fit-content;
+        padding: 0.5rem;
+        border-radius: 10px;
+    }
+
+    .img-equipo{
+        width: 30%;
+        max-width: 400px;
+        height: auto;
+        filter: drop-shadow(0 4px 10px rgba(0,0,0,0.4));
+    }
+
+    .img-descripcion-equipo{
+        max-width: 100%;
+        height: auto;
+        opacity: 0.4;
+        filter: grayscale(100%) drop-shadow(0 4px 6px rgba(0,0,0,0.4));
+    }
+
+    .img-ciudad-equipo{
+        max-height: 200px;
+        filter: drop-shadow(0px 5px 10px rgba(19, 23, 223, 0.4));
+    }
+
+    .img-estadio{
+        border-radius: 5px;
+    }
+
+    .img-trofeo-primera-division{
+        max-width: 50px;
+        height: auto;
+        filter: drop-shadow(0px 4px 6px rgba(228, 23, 23, 0.4));
+    }
+
+    .img-jugador{
+        max-width: 35px;
+        height: auto;
+    }
+
+    .img-dt{
+        max-height: 200px;
+    }
+
+    .texto-dt{
+        list-style-type: none;
+    }
+
+    @media (max-width: 768px) {
+        .texto-titulo-equipo{
+            font-size: 1rem;
+        }
+
+        .contenedor-img-descripcion{
+            padding: 1rem 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .contenedor-nombres-jugadores{
+            margin-bottom: 0.4rem;
+        }
+
+        .img-descripcion-equipo{
+            max-width: 50%;
+        }
+
+        .img-ciudad-equipo{
+            max-height: 100px;
+        }
+
+        .img-trofeo-primera-division{
+            max-width: 30px;
+        }
+
+        .texto-titulo-descripcion{
+            font-size: 0.8rem;
+            text-align: center;
+        }
+
+        .texto-especifico-descripcion{
+            font-size: 0.6rem;
+        }
+
+        .texto-seccion{
+            font-size: 1.2rem;
+        }
+
+        .texto-nombre-estadio{
+            font-size: 0.8rem;
+        }
+
+        .texto-ciudad{
+            font-size: 0.7rem;
+        }
+
+        .texto-especifico-equipo{
+            font-size: 0.8rem;
+        }
+
+        .texto-titulo-internacional{
+            font-size: 0.7rem;
+        }
+
+        .texto-dt{
+            font-size: 0.7rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .texto-general-equipo{
+            font-size: 0.7rem;
+        }
+
+        .texto-jugador{
+            font-size: 0.5rem;
+            line-height: 0.2rem;
+        }
+    }
+
+</style>

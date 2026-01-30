@@ -1,0 +1,83 @@
+[
+    {
+        "id": 1,
+        "equipo_local": 12,
+        "equipo_visitante": 16,
+        "goles_local": null,
+        "goles_visitante": null,
+        "ganador": null,
+        "jugado": false
+    },
+    {
+        "id": 2,
+        "equipo_local": 2,
+        "equipo_visitante": 3,
+        "goles_local": null,
+        "goles_visitante": null,
+        "ganador": null,
+        "jugado": false
+    },
+    {
+        "id": 3,
+        "equipo_local": 10,
+        "equipo_visitante": 9,
+        "goles_local": null,
+        "goles_visitante": null,
+        "ganador": null,
+        "jugado": false
+    },
+    {
+        "id": 4,
+        "equipo_local": 18,
+        "equipo_visitante": 7,
+        "goles_local": null,
+        "goles_visitante": null,
+        "ganador": null,
+        "jugado": false
+    },
+    {
+        "id": 5,
+        "equipo_local": 8,
+        "equipo_visitante": 1,
+        "goles_local": null,
+        "goles_visitante": null,
+        "ganador": null,
+        "jugado": false
+    },
+    {
+        "id": 6,
+        "equipo_local": 15,
+        "equipo_visitante": 11,
+        "goles_local": null,
+        "goles_visitante": null,
+        "ganador": null,
+        "jugado": false
+    },
+    {
+        "id": 7,
+        "equipo_local": 17,
+        "equipo_visitante": 5,
+        "goles_local": null,
+        "goles_visitante": null,
+        "ganador": null,
+        "jugado": false
+    },
+    {
+        "id": 8,
+        "equipo_local": 14,
+        "equipo_visitante": 4,
+        "goles_local": null,
+        "goles_visitante": null,
+        "ganador": null,
+        "jugado": false
+    },
+    {
+        "id": 9,
+        "equipo_local": 6,
+        "equipo_visitante": 13,
+        "goles_local": null,
+        "goles_visitante": null,
+        "ganador": null,
+        "jugado": false
+    }
+]

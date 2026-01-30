@@ -1,0 +1,154 @@
+<header>
+    <nav>
+        <div class="container-fluid contenedor-navbar">
+            <div class="row justify-content-start align-items-center">
+                <div class="col-8 col-md-3">
+                    <a class="link-general" href="/"><h1 class="titulo-navbar">Universo <img src="/img/liga/logo.png" alt="Logo" class="img-fluid logo-liga"> <span class="nombre-liga">LIGA 1</span></h1></a>
+                </div>
+                <div class="col-5 d-none d-md-block"></div>
+                <div class="col-4 text-center nav-right">
+                    <button class="menu-toggle" aria-label="Abrir menú">
+                        ☰
+                    </button>
+                    <ul class="nav-links">
+                      <li><a class="link" href="/">Inicio</a></li>
+                      <li><a class="link" href="/equipos">Equipos</a></li>
+                      <li><a class="link" href="/calculadora">Calculadora</a></li>
+                      <li><a class="link" href="/minijuegos">FutPerú</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const toggle = document.querySelector(".menu-toggle");
+    const navLinks = document.querySelector(".nav-links");
+
+    if (toggle && navLinks) {
+      toggle.addEventListener("click", () => {
+        navLinks.classList.toggle("active");
+      });
+    }
+  });
+</script>
+
+<style>
+
+    .nav-right{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .menu-toggle{
+        display: none;
+        font-size: 1.5rem;
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
+
+    .contenedor-navbar {
+        background-color: #f8f9fa;
+        padding: 1rem;
+        padding-left: 2rem;
+        box-shadow: 0 2px 6px rgba(172, 163, 163, 0.692);
+    }
+
+    .nav-links{
+        list-style: none;
+        display: flex;
+        gap: 5rem;
+        margin: 0;
+        padding: 0;
+    }
+
+    .link-general{
+        text-decoration: none;
+        color: #333;
+    }
+
+    .link{
+        text-decoration: none;
+        color: #333;
+        font-weight: 600;
+        font-size: 1rem;
+        display: inline-block;        /* importante */
+        transition: transform 0.3s ease, color 0.3s ease;
+    }
+
+    .link:hover{
+        color: #851212;
+        transform: scale(1.2);
+    }
+
+    .titulo-navbar{
+        font-weight: 700;
+        font-size: 1.5rem;
+    }
+
+    .logo-liga {
+        margin-left: 1rem;
+        height: 35px;
+        width: auto;
+        vertical-align: middle;
+    }
+
+    .nombre-liga {
+        font-weight: 800;
+    }
+
+    @media (max-width: 768px) {
+
+        .nav-right{
+            justify-content: flex-end;
+        }
+    
+        .menu-toggle{
+            display: block;
+        }
+
+        .nav-links{
+            position: absolute;
+            top: 70px;
+            right: 20px;
+            background: #f8f9fa;
+            flex-direction: column;
+            gap: 1.5rem;
+            padding: 1.5rem 2rem;
+            border-radius: 12px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+
+            opacity: 0;
+            transform: translateY(-10px);
+            pointer-events: none;
+
+            transition: all 0.3s ease;
+        }
+    
+        .nav-links.active{
+            opacity: 1;
+            transform: translateY(0);
+            pointer-events: auto;
+            z-index: 1000;
+        }
+
+        .titulo-navbar {
+            font-size: 1rem;
+        }
+
+        .logo-liga {
+            height: 25px;
+            margin-left: 0.5rem;
+        }
+
+        .nombre-liga {
+            font-size: 0.9rem;
+        }
+
+    }
+
+</style>

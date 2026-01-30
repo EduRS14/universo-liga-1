@@ -1,0 +1,91 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body {
+    background: #02121a;
+    background: linear-gradient(0deg,rgba(2, 18, 26, 1) 0%, rgba(10, 33, 46, 1) 50%, rgba(18, 43, 56, 1) 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+p, h1, h2, h3, h4, h5, h6, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+.contenedor-titulo-calculadora{
+    padding: 1rem 0rem;
+    background: #521010;
+    background: linear-gradient(0deg,rgba(82, 16, 16, 1) 0%, rgba(117, 29, 29, 1) 100%);
+    margin-bottom: 0.5rem;
+}
+
+.titulo {
+    font-weight: 600;
+}
+
+.btn-sincronizar{
+    padding: 0.6rem 1.2rem;
+    cursor: pointer;
+    border-radius: 6px;
+    background-color: rgb(190, 190, 190);
+    border: none;
+    font-weight: 500;
+}
+
+.btn-sincronizar:hover{
+    background-color: rgb(136, 136, 136);
+    border: none;
+    font-weight: 700;
+}
+
+.btn-sincronizar:active{
+    background-color: rgb(136, 136, 136);
+    border: none;
+    font-weight: 700;
+}
+
+.btn-esperando{
+    padding: 0.6rem 1.2rem;
+    cursor: pointer;
+    border-radius: 6px;
+    background-color: rgb(220, 220, 220);
+    border: none;
+    font-weight: 500;
+}
+
+.btn-esperando:hover{
+    background-color: rgb(220, 220, 220);
+    color: gray;
+    font-weight: 700;
+}
+
+.titulo-calculadora{
+    color: white;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+
+@media (max-width: 768px) {
+
+    .btn-sincronizar{
+        padding: 0.4rem 0.8rem;
+        font-size: 0.8rem;
+    }
+
+    .titulo-calculadora{
+        font-size: 1rem;
+    }
+
+}

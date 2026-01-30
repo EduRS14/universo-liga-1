@@ -1,0 +1,110 @@
+[
+    {
+        "id": 1,
+        "nombre": "ADT",
+        "diminutivo": "ADT",
+        "url_foto": "/img/equipos/adt.webp"
+    },
+    {
+        "id": 2,
+        "nombre": "Alianza Atlético",
+        "diminutivo": "AAS",
+        "url_foto": "/img/equipos/aas.webp"
+    },
+    {
+        "id": 3,
+        "nombre": "Alianza Lima",
+        "diminutivo": "ALI",
+        "url_foto": "/img/equipos/alima.webp"
+    },
+    {
+        "id": 4,
+        "nombre": "Atlético Grau",
+        "diminutivo": "CAG",
+        "url_foto": "/img/equipos/ag.webp"
+    },
+    {
+        "id": 5,
+        "nombre": "Cienciano",
+        "diminutivo": "CIE",
+        "url_foto": "/img/equipos/cienciano.webp"
+    },
+    {
+        "id": 6,
+        "nombre": "Comerciantes Unidos",
+        "diminutivo": "COM",
+        "url_foto": "/img/equipos/comerciantes.webp"
+    },
+    {
+        "id": 7,
+        "nombre": "Cusco FC",
+        "diminutivo": "CUS",
+        "url_foto": "/img/equipos/cusco.webp"
+    },
+    {
+        "id": 8,
+        "nombre": "Deportivo Garcilaso",
+        "diminutivo": "GAR",
+        "url_foto": "/img/equipos/garcilaso.webp"
+    },
+    {
+        "id": 9,
+        "nombre": "Deportivo Moquegua",
+        "diminutivo": "MOQ",
+        "url_foto": "/img/equipos/moquegua.webp"
+    },
+    {
+        "id": 10,
+        "nombre": "FBC Melgar",
+        "diminutivo": "MEL",
+        "url_foto": "/img/equipos/melgar.webp"
+    },
+    {
+        "id": 11,
+        "nombre": "FC Cajamarca",
+        "diminutivo": "CAJ",
+        "url_foto": "/img/equipos/cajamarca.webp"
+    },
+    {
+        "id": 12,
+        "nombre": "Juan Pablo II",
+        "diminutivo": "JPA",
+        "url_foto": "/img/equipos/jpii.webp"
+    },
+    {
+        "id": 13,
+        "nombre": "Los Chankas",
+        "diminutivo": "CHA",
+        "url_foto": "/img/equipos/chankas.webp"
+    },
+    {
+        "id": 14,
+        "nombre": "Sport Boys",
+        "diminutivo": "SBA",
+        "url_foto": "/img/equipos/sb.webp"
+    },
+    {
+        "id": 15,
+        "nombre": "Sport Huancayo",
+        "diminutivo": "HUA",
+        "url_foto": "/img/equipos/huancayo.webp"
+    },
+    {
+        "id": 16,
+        "nombre": "Sporting Cristal",
+        "diminutivo": "CSC",
+        "url_foto": "/img/equipos/sc.webp"
+    },
+    {
+        "id": 17,
+        "nombre": "Universitario",
+        "diminutivo": "UNI",
+        "url_foto": "/img/equipos/u.webp"
+    },
+    {
+        "id": 18,
+        "nombre": "UTC",
+        "diminutivo": "UTC",
+        "url_foto": "/img/equipos/utc.webp"
+    }
+]

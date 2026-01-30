@@ -1,0 +1,3021 @@
+[
+    {
+        "id": 1,
+        "nombre": "Club Alianza Lima",
+        "url_foto": "/img/equipos/alima.webp",
+        "torneos": [
+            {
+                "id_torneo": 2,
+                "periodos": [
+                    [
+                        1912,
+                        1938
+                    ],
+                    [
+                        1940,
+                        -1
+                    ]
+                ]
+            },
+            {
+                "id_torneo": 7,
+                "periodos": [
+                    [
+                        2011,
+                        2011
+                    ],
+                    [
+                        2014,
+                        2015
+                    ]
+                ]
+            },
+            {
+                "id_torneo": 5,
+                "periodos": [
+                    [
+                        1939,
+                        1939
+                    ]
+                ]
+            },
+            {
+                "id_torneo": 8,
+                "periodos": [
+                    [
+                        2018,
+                        2018
+                    ]
+                ]
+            },
+            {
+                "id_torneo": 11,
+                "periodos": [
+                    [
+                        2019,
+                        2019
+                    ],
+                    [
+                        2021,
+                        2021
+                    ]
+                ]
+            },
+            {
+                "id_torneo": 9,
+                "periodos": [
+                    [
+                        1963,
+                        1964
+                    ],
+                    [
+                        1966,
+                        1966
+                    ],
+                    [
+                        1972,
+                        1972
+                    ],
+                    [
+                        1976,
+                        1976
+                    ],
+                    [
+                        1978,
+                        1979
+                    ],
+                    [
+                        1983,
+                        1983
+                    ],
+                    [
+                        1987,
+                        1988
+                    ],
+                    [
+                        1994,
+                        1995
+                    ],
+                    [
+                        1997,
+                        1998
+                    ],
+                    [
+                        2000,
+                        2000
+                    ],
+                    [
+                        2002,
+                        2005
+                    ],
+                    [
+                        2007,
+                        2007
+                    ],
+                    [
+                        2010,
+                        2012
+                    ],
+                    [
+                        2015,
+                        2015
+                    ],
+                    [
+                        2018,
+                        2019
+                    ],
+                    [
+                        2020,
+                        2020
+                    ],
+                    [
+                        2022,
+                        2026
+                    ]
+                ]
+            },
+            {
+                "id_torneo": 10,
+                "periodos": [
+                    [
+                        2002,
+                        2003
+                    ],
+                    [
+                        2014,
+                        2014
+                    ],
+                    [
+                        2017,
+                        2017
+                    ],
+                    [
+                        2025,
+                        2025
+                    ]
+                ]
+            }
+        ],
+        "trofeos": [
+            {
+                "id_trofeo": 2,
+                "cantidad": 25
+            },
+            {
+                "id_trofeo": 7,
+                "cantidad": 1
+            },
+            {
+                "id_trofeo": 5,
+                "cantidad": 1
+            },
+            {
+                "id_trofeo": 8,
+                "cantidad": 1
+            }
+        ],
+        "divisionActual": 1,
+        "fechaFundacion": "1901-02-15"
+    },
+    {
+        "id": 2,
+        "nombre": "Universitario de Deportes",
+        "url_foto": "/img/equipos/u.webp",
+        "torneos": [
+            {
+                "id_torneo": 2,
+                "periodos": [
+                    [
+                        1928,
+                        -1
+                    ]
+                ]
+            },
+            {
+                "id_torneo": 7,
+                "periodos": [
+                    [
+                        2011,
+                        2011
+                    ],
+                    [
+                        2014,
+                        2015
+                    ]
+                ]
+            },
+            {
+                "id_torneo": 11,
+                "periodos": [
+                    [
+                        2019,
+                        2019
+                    ],
+                    [
+                        2021,
+                        2021
+                    ]
+                ]
+            },
+            {
+                "id_torneo": 9,
+                "periodos": [
+                    [
+                        1961,
+                        1961
+                    ],
+                    [
+                        1965,
+                        1968
+                    ],
+                    [
+                        1970,
+                        1973
+                    ],
+                    [
+                        1975,
+                        1975
+                    ],
+                    [
+                        1979,
+                        1979
+                    ],
+                    [
+                        1983,
+                        1983
+                    ],
+                    [
+                        1985,
+                        1986
+                    ],
+                    [
+                        1988,
+                        1989
+                    ],
+                    [
+                        1991,
+                        1991
+                    ],
+                    [
+                        1993,
+                        1994
+                    ],
+                    [
+                        1996,
+                        1996
+                    ],
+                    [
+                        1999,
+                        2001
+                    ],
+                    [
+                        2003,
+                        2003
+                    ],
+                    [
+                        2006,
+                        2006
+                    ],
+                    [
+                        2009,
+                        2010
+                    ],
+                    [
+                        2014,
+                        2014
+                    ],
+                    [
+                        2017,
+                        2018
+                    ],
+                    [
+                        2020,
+                        2022
+                    ],
+                    [
+                        2024,
+                        2026
+                    ]
+                ]
+            },
+            {
+                "id_torneo": 10,
+                "periodos": [
+                    [
+                        2002,
+                        2002
+                    ],
+                    [
+                        2005,
+                        2005
+                    ],
+                    [
+                        2007,
+                        2008
+                    ],
+                    [
+                        2011,
+                        2011
+                    ],
+                    [
+                        2015,
+                        2016
+                    ],
+                    [
+                        2023,
+                        2023
+                    ]
+                ]
+            }
+        ],
+        "trofeos": [
+            {
+                "id_trofeo": 2,
+                "cantidad": 29
+            }
+        ],
+        "divisionActual": 1,
+        "fechaFundacion": "1924-08-07"
+    },
+    {
+        "id": 3,
+        "nombre": "Club Sporting Cristal",
+        "url_foto": "/img/equipos/sc.webp",
+        "torneos": [
+            {
+                "id_torneo": 2,
+                "periodos": [
+                    [
+                        1956,
+                        -1
+                    ]
+                ]
+            },
+            {
+                "id_torneo": 7,
+                "periodos": [
+                    [
+                        2011,
+                        2011
+                    ],
+                    [
+                        2014,
+                        2015
+                    ]
+                ]
+            },
+            {
+                "id_torneo": 11,
+                "periodos": [
+                    [
+                        2019,
+                        2019
+                    ],
+                    [
+                        2021,
+                        2021
+                    ]
+                ]
+            },
+            {
+                "id_torneo": 9,
+                "periodos": [
+                    [
+                        1962,
+                        1962
+                    ],
+                    [
+                        1968,
+                        1969
+                    ],
+                    [
+                        1971,
+                        1971
+                    ],
+                    [
+                        1973,
+                        1974
+                    ],
+                    [
+                        1978,
+                        1978
+                    ],
+                    [
+                        1980,
+                        1981
+                    ],
+                    [
+                        1984,
+                        1984
+                    ],
+                    [
+                        1989,
+                        1990
+                    ],
+                    [
+                        1992,
+                        1993
+                    ],
+                    [
+                        1995,
+                        2007
+                    ],
+                    [
+                        2009,
+                        2009
+                    ],
+                    [
+                        2013,
+                        2017
+                    ],
+                    [
+                        2019,
+                        2026
+                    ]
+                ]
+            },
+            {
+                "id_torneo": 10,
+                "periodos": [
+                    [
+                        2018,
+                        2019
+                    ],
+                    [
+                        2021,
+                        2021
+                    ],
+                    [
+                        2023,
+                        2023
+                    ]
+                ]
+            }
+        ],
+        "trofeos": [
+            {
+                "id_trofeo": 2,
+                "cantidad": 20
+            },
+            {
+                "id_trofeo": 11,
+                "cantidad": 1
+            }
+        ],
+        "divisionActual": 1,
+        "fechaFundacion": "1955-12-13"
+    },
+    {
+        "id": 4,
+        "nombre": "FBC Melgar",
+        "url_foto": "/img/equipos/melgar.webp",
+        "torneos": [
+            {
+                "id_torneo": 2,
+                "periodos": [
+                    [
+                        1966,
+                        1966
+                    ],
+                    [
+                        1971,
+                        -1
+                    ]
+                ]
+            },
+            {
+                "id_torneo": 7,
+                "periodos": [
+                    [
+                        2011,
+                        2011
+                    ],
+                    [
+                        2014,
+                        2015
+                    ]
+                ]
+            },
+            {
+                "id_torneo": 11,
+                "periodos": [
+                    [
+                        2019,
+                        2019
+                    ],
+                    [
+                        2021,
+                        2021
+                    ]
+                ]
+            },
+            {
+                "id_torneo": 9,
+                "periodos": [
+                    [
+                        1982,
+                        1982
+                    ],
+                    [
+                        1984,
+                        1984
+                    ],
+                    [
+                        2016,
+                        2019
+                    ],
+                    [
+                        2023,
+                        2025
+                    ]
+                ]
+            },
+            {
+                "id_torneo": 10,
+                "periodos": [
+                    [
+                        2013,
+                        2013
+                    ],
+                    [
+                        2015,
+                        2015
+                    ],
+                    [
+                        2019,
+                        2022
+                    ],
+                    [
+                        2025,
+                        2026
+                    ]
+                ]
+            }
+        ],
+        "trofeos": [
+            {
+                "id_trofeo": 2,
+                "cantidad": 2
+            }
+        ],
+        "divisionActual": 1,
+        "fechaFundacion": "1915-03-25"
+    },
+    {
+        "id": 5,
+        "nombre": "Sport Boys Association",
+        "url_foto": "/img/equipos/sb.webp",
+        "torneos": [
+            {
+                "id_torneo": 2,
+                "periodos": [
+                    [
+                        1933,
+                        1987
+                    ],
+                    [
+                        1990,
+                        2008
+                    ],
+                    [
+                        2010,
+                        2012
+                    ],
+                    [
+                        2018,
+                        -1
+                    ]
+                ]
+            },
+            {
+                "id_torneo": 7,
+                "periodos": [
+                    [
+                        2011,
+                        2011
+                    ]
+                ]
+            },
+            {
+                "id_torneo": 5,
+                "periodos": [
+                    [
+                        1988,
+                        1989
+                    ],
+                    [
+                        2009,
+                        2009
+                    ],
+                    [
+                        2013,
+                        2017
+                    ]
+                ]
+            },
+            {
+                "id_torneo": 11,
+                "periodos": [
+                    [
+                        2019,
+                        2019
+                    ],
+                    [
+                        2021,
+                        2021
+                    ]
+                ]
+            },
+            {
+                "id_torneo": 8,
+                "periodos": [
+                    [
+                        2018,
+                        2018
+                    ]
+                ]
+            },
+            {
+                "id_torneo": 9,
+                "periodos": [
+                    [
+                        1967,
+                        1967
+                    ],
+                    [
+                        1977,
+                        1977
+                    ],
+                    [
+                        1985,
+                        1985
+                    ],
+                    [
+                        1991,
+                        1992
+                    ],
+                    [
+                        2001,
+                        2001
+                    ]
+                ]
+            },
+            {
+                "id_torneo": 10,
+                "periodos": [
+                    [
+                        2022,
+                        2022
+                    ]
+                ]
+            }
+        ],
+        "trofeos": [
+            {
+                "id_trofeo": 2,
+                "cantidad": 6
+            },
+            {
+                "id_trofeo": 5,
+                "cantidad": 3
+            }
+        ],
+        "divisionActual": 1,
+        "fechaFundacion": "1927-07-28"
+    },
+    {
+        "id": 6,
+        "nombre": "Club Cienciano",
+        "url_foto": "/img/equipos/cienciano.webp",
+        "torneos": [
+            {
+                "id_torneo": 2,
+                "periodos": [
+                    [
+                        1973,
+                        1977
+                    ],
+                    [
+                        1984,
+                        2015
+                    ],
+                    [
+                        2020,
+                        -1
+                    ]
+                ]
+            },
+            {
+                "id_torneo": 7,
+                "periodos": [
+                    [
+                        2011,
+                        2011
+                    ],
+                    [
+                        2014,
+                        2015
+                    ]
+                ]
+            },
+            {
+                "id_torneo": 5,
+                "periodos": [
+                    [
+                        2016,
+                        2019
+                    ]
+                ]
+            },
+            {
+                "id_torneo": 11,
+                "periodos": [
+                    [
+                        2019,
+                        2019
+                    ],
+                    [
+                        2021,
+                        2021
+                    ]
+                ]
+            },
+            {
+                "id_torneo": 9,
+                "periodos": [
+                    [
+                        2002,
+                        2002
+                    ],
+                    [
+                        2004,
+                        2008
+                    ]
+                ]
+            },
+            {
+                "id_torneo": 10,
+                "periodos": [
+                    [
+                        2003,
+                        2004
+                    ],
+                    [
+                        2009,
+                        2009
+                    ],
+                    [
+                        2022,
+                        2023
+                    ],
+                    [
+                        2025,
+                        2026
+                    ]
+                ]
+            },
+            {
+                "id_torneo": 3,
+                "periodos": [
+                    [
+                        2004,
+                        2004
+                    ]
+                ]
+            }
+        ],
+        "trofeos": [
+            {
+                "id_trofeo": 5,
+                "cantidad": 1
+            },
+            {
+                "id_trofeo": 10,
+                "cantidad": 1
+            },
+            {
+                "id_trofeo": 3,
+                "cantidad": 1
+            }
+        ],
+        "divisionActual": 1,
+        "fechaFundacion": "1901-07-08"
+    },
+    {
+        "id": 7,
+        "nombre": "Universidad San Martín de Porres",
+        "url_foto": "/img/equipos/usmp.webp",
+        "torneos": [
+            {
+                "id_torneo": 2,
+                "periodos": [
+                    [
+                        2004,
+                        2022
+                    ]
+                ]
+            },
+            {
+                "id_torneo": 7,
+                "periodos": [
+                    [
+                        2011,
+                        2011
+                    ],
+                    [
+                        2014,
+                        2015
+                    ]
+                ]
+            },
+            {
+                "id_torneo": 5,
+                "periodos": [
+                    [
+                        2023,
+                        -1
+                    ]
+                ]
+            },
+            {
+                "id_torneo": 11,
+                "periodos": [
+                    [
+                        2019,
+                        2019
+                    ],
+                    [
+                        2021,
+                        2021
+                    ]
+                ]
+            },
+            {
+                "id_torneo": 9,
+                "periodos": [
+                    [
+                        2008,
+                        2009
+                    ],
+                    [
+                        2011,
+                        2011
+                    ]
+                ]
+            },
+            {
+                "id_torneo": 10,
+                "periodos": [
+                    [
+                        2006,
+                        2006
+                    ],
+                    [
+                        2010,
+                        2010
+                    ],
+                    [
+                        2012,
+                        2012
+                    ]
+                ]
+            }
+        ],
+        "trofeos": [
+            {
+                "id_trofeo": 2,
+                "cantidad": 3
+            }
+        ],
+        "divisionActual": 2,
+        "fechaFundacion": "2004-01-21"
+    },
+    {
+        "id": 8,
+        "nombre": "Club Juan Aurich",
+        "url_foto": "/img/equipos/aurich.webp",
+        "torneos": [
+            {
+                "id_torneo": 2,
+                "periodos": [
+                    [
+                        1967,
+                        1983
+                    ],
+                    [
+                        1988,
+                        1989
+                    ],
+                    [
+                        1991,
+                        1991
+                    ],
+                    [
+                        1998,
+                        2002
+                    ],
+                    [
+                        2008,
+                        2017
+                    ]
+                ]
+            },
+            {
+                "id_torneo": 7,
+                "periodos": [
+                    [
+                        2011,
+                        2011
+                    ],
+                    [
+                        2014,
+                        2015
+                    ]
+                ]
+            },
+            {
+                "id_torneo": 5,
+                "periodos": [
+                    [
+                        2018,
+                        2023
+                    ]
+                ]
+            },
+            {
+                "id_torneo": 11,
+                "periodos": [
+                    [
+                        2019,
+                        2019
+                    ],
+                    [
+                        2021,
+                        2021
+                    ]
+                ]
+            },
+            {
+                "id_torneo": 8,
+                "periodos": [
+                    [
+                        2012,
+                        2012
+                    ]
+                ]
+            },
+            {
+                "id_torneo": 9,
+                "periodos": [
+                    [
+                        1969,
+                        1969
+                    ],
+                    [
+                        2010,
+                        2010
+                    ],
+                    [
+                        2012,
+                        2012
+                    ],
+                    [
+                        2015,
+                        2015
+                    ]
+                ]
+            },
+            {
+                "id_torneo": 10,
+                "periodos": [
+                    [
+                        2011,
+                        2011
+                    ],
+                    [
+                        2013,
+                        2013
+                    ],
+                    [
+                        2017,
+                        2017
+                    ]
+                ]
+            }
+        ],
+        "trofeos": [
+            {
+                "id_trofeo": 2,
+                "cantidad": 1
+            }
+        ],
+        "divisionActual": 3,
+        "fechaFundacion": "1922-09-03"
+    },
+    {
+        "id": 9,
+        "nombre": "Universidad César Vallejo",
+        "url_foto": "/img/equipos/ucv.webp",
+        "torneos": [
+            {
+                "id_torneo": 2,
+                "periodos": [
+                    [
+                        2004,
+                        2005
+                    ],
+                    [
+                        2008,
+                        2016
+                    ],
+                    [
+                        2019,
+                        2024
+                    ]
+                ]
+            },
+            {
+                "id_torneo": 7,
+                "periodos": [
+                    [
+                        2011,
+                        2011
+                    ],
+                    [
+                        2014,
+                        2015
+                    ]
+                ]
+            },
+            {
+                "id_torneo": 5,
+                "periodos": [
+                    [
+                        2006,
+                        2007
+                    ],
+                    [
+                        2017,
+                        2018
+                    ],
+                    [
+                        2025,
+                        -1
+                    ]
+                ]
+            },
+            {
+                "id_torneo": 11,
+                "periodos": [
+                    [
+                        2019,
+                        2019
+                    ],
+                    [
+                        2021,
+                        2021
+                    ]
+                ]
+            },
+            {
+                "id_torneo": 9,
+                "periodos": [
+                    [
+                        2013,
+                        2013
+                    ],
+                    [
+                        2016,
+                        2016
+                    ],
+                    [
+                        2021,
+                        2022
+                    ]
+                ]
+            },
+            {
+                "id_torneo": 10,
+                "periodos": [
+                    [
+                        2010,
+                        2011
+                    ],
+                    [
+                        2014,
+                        2014
+                    ],
+                    [
+                        2023,
+                        2024
+                    ]
+                ]
+            }
+        ],
+        "trofeos": [
+            {
+                "id_trofeo": 5,
+                "cantidad": 2
+            },
+            {
+                "id_trofeo": 7,
+                "cantidad": 1
+            }
+        ],
+        "divisionActual": 2,
+        "fechaFundacion": "1996-01-06"
+    },
+    {
+        "id": 10,
+        "nombre": "Sport Huancayo",
+        "url_foto": "/img/equipos/huancayo.webp",
+        "torneos": [
+            {
+                "id_torneo": 2,
+                "periodos": [
+                    [
+                        2009,
+                        -1
+                    ]
+                ]
+            },
+            {
+                "id_torneo": 7,
+                "periodos": [
+                    [
+                        2011,
+                        2011
+                    ],
+                    [
+                        2014,
+                        2015
+                    ]
+                ]
+            },
+            {
+                "id_torneo": 11,
+                "periodos": [
+                    [
+                        2019,
+                        2019
+                    ],
+                    [
+                        2021,
+                        2021
+                    ]
+                ]
+            },
+            {
+                "id_torneo": 9,
+                "periodos": [
+                    [
+                        2012,
+                        2012
+                    ],
+                    [
+                        2023,
+                        2023
+                    ]
+                ]
+            },
+            {
+                "id_torneo": 10,
+                "periodos": [
+                    [
+                        2010,
+                        2010
+                    ],
+                    [
+                        2013,
+                        2013
+                    ],
+                    [
+                        2016,
+                        2021
+                    ],
+                    [
+                        2024,
+                        2024
+                    ]
+                ]
+            }
+        ],
+        "trofeos": [],
+        "divisionActual": 1,
+        "fechaFundacion": "2007-02-07"
+    },
+    {
+        "id": 11,
+        "nombre": "Alianza Atlético Sullana",
+        "url_foto": "/img/equipos/aas.webp",
+        "torneos": [
+            {
+                "id_torneo": 2,
+                "periodos": [
+                    [
+                        1988,
+                        2011
+                    ],
+                    [
+                        2015,
+                        2017
+                    ],
+                    [
+                        2021,
+                        -1
+                    ]
+                ]
+            },
+            {
+                "id_torneo": 7,
+                "periodos": [
+                    [
+                        2011,
+                        2011
+                    ],
+                    [
+                        2015,
+                        2015
+                    ]
+                ]
+            },
+            {
+                "id_torneo": 5,
+                "periodos": [
+                    [
+                        2018,
+                        2020
+                    ]
+                ]
+            },
+            {
+                "id_torneo": 11,
+                "periodos": [
+                    [
+                        2019,
+                        2019
+                    ],
+                    [
+                        2021,
+                        2021
+                    ]
+                ]
+            },
+            {
+                "id_torneo": 10,
+                "periodos": [
+                    [
+                        2004,
+                        2005
+                    ],
+                    [
+                        2009,
+                        2009
+                    ],
+                    [
+                        2026,
+                        2026
+                    ]
+                ]
+            }
+        ],
+        "trofeos": [
+            {
+                "id_trofeo": 5,
+                "cantidad": 1
+            }
+        ],
+        "divisionActual": 1,
+        "fechaFundacion": "1920-01-18"
+    },
+    {
+        "id": 12,
+        "nombre": "José Gálvez FBC",
+        "url_foto": "/img/equipos/jg.webp",
+        "torneos": [
+            {
+                "id_torneo": 2,
+                "periodos": [
+                    [
+                        1971,
+                        1973
+                    ],
+                    [
+                        1984,
+                        1985
+                    ],
+                    [
+                        1997,
+                        1997
+                    ],
+                    [
+                        2006,
+                        2006
+                    ],
+                    [
+                        2008,
+                        2010
+                    ],
+                    [
+                        2012,
+                        2013
+                    ]
+                ]
+            },
+            {
+                "id_torneo": 7,
+                "periodos": [
+                    [
+                        2011,
+                        2011
+                    ]
+                ]
+            },
+            {
+                "id_torneo": 5,
+                "periodos": [
+                    [
+                        1983,
+                        1983
+                    ],
+                    [
+                        2011,
+                        2011
+                    ],
+                    [
+                        2014,
+                        2014
+                    ]
+                ]
+            },
+            {
+                "id_torneo": 8,
+                "periodos": [
+                    [
+                        2012,
+                        2012
+                    ]
+                ]
+            }
+        ],
+        "trofeos": [
+            {
+                "id_trofeo": 5,
+                "cantidad": 1
+            },
+            {
+                "id_trofeo": 8,
+                "cantidad": 1
+            },
+            {
+                "id_trofeo": 7,
+                "cantidad": 1
+            }
+        ],
+        "divisionActual": -1,
+        "fechaFundacion": "1951-10-27"
+    },
+    {
+        "id": 13,
+        "nombre": "CD León de Huánuco",
+        "url_foto": "/img/equipos/lh.webp",
+        "torneos": [
+            {
+                "id_torneo": 2,
+                "periodos": [
+                    [
+                        1972,
+                        1979
+                    ],
+                    [
+                        1981,
+                        1983
+                    ],
+                    [
+                        1985,
+                        1986
+                    ],
+                    [
+                        1988,
+                        1995
+                    ],
+                    [
+                        2010,
+                        2015
+                    ]
+                ]
+            },
+            {
+                "id_torneo": 7,
+                "periodos": [
+                    [
+                        2011,
+                        2011
+                    ],
+                    [
+                        2014,
+                        2015
+                    ]
+                ]
+            },
+            {
+                "id_torneo": 9,
+                "periodos": [
+                    [
+                        2011,
+                        2011
+                    ]
+                ]
+            },
+            {
+                "id_torneo": 10,
+                "periodos": [
+                    [
+                        2012,
+                        2012
+                    ],
+                    [
+                        2015,
+                        2015
+                    ]
+                ]
+            }
+        ],
+        "trofeos": [],
+        "divisionActual": -1,
+        "fechaFundacion": "1946-06-29"
+    },
+    {
+        "id": 14,
+        "nombre": "Total Chalaco",
+        "url_foto": "/img/equipos/tch.webp",
+        "torneos": [
+            {
+                "id_torneo": 2,
+                "periodos": [
+                    [
+                        2007,
+                        2007
+                    ],
+                    [
+                        2009,
+                        2010
+                    ]
+                ]
+            },
+            {
+                "id_torneo": 5,
+                "periodos": [
+                    [
+                        2008,
+                        2008
+                    ]
+                ]
+            }
+        ],
+        "trofeos": [
+            {
+                "id_trofeo": 5,
+                "cantidad": 1
+            }
+        ],
+        "divisionActual": -1,
+        "fechaFundacion": "2004-12-21"
+    },
+    {
+        "id": 15,
+        "nombre": "Ayacucho FC (Ex Inti Gas)",
+        "url_foto": "/img/equipos/ayacucho.webp",
+        "torneos": [
+            {
+                "id_torneo": 2,
+                "periodos": [
+                    [
+                        2009,
+                        2022
+                    ],
+                    [
+                        2025,
+                        2025
+                    ]
+                ]
+            },
+            {
+                "id_torneo": 7,
+                "periodos": [
+                    [
+                        2011,
+                        2011
+                    ],
+                    [
+                        2014,
+                        2015
+                    ]
+                ]
+            },
+            {
+                "id_torneo": 5,
+                "periodos": [
+                    [
+                        2008,
+                        2008
+                    ],
+                    [
+                        2023,
+                        2024
+                    ],
+                    [
+                        2026,
+                        -1
+                    ]
+                ]
+            },
+            {
+                "id_torneo": 11,
+                "periodos": [
+                    [
+                        2019,
+                        2019
+                    ],
+                    [
+                        2021,
+                        2021
+                    ]
+                ]
+            },
+            {
+                "id_torneo": 9,
+                "periodos": [
+                    [
+                        2021,
+                        2021
+                    ]
+                ]
+            },
+            {
+                "id_torneo": 10,
+                "periodos": [
+                    [
+                        2012,
+                        2014
+                    ],
+                    [
+                        2022,
+                        2022
+                    ]
+                ]
+            }
+        ],
+        "trofeos": [],
+        "divisionActual": 2,
+        "fechaFundacion": "2008-08-09"
+    },
+    {
+        "id": 16,
+        "nombre": "Colegio Nacional Iquitos (CNI)",
+        "url_foto": "/img/equipos/cni.webp",
+        "torneos": [
+            {
+                "id_torneo": 2,
+                "periodos": [
+                    [
+                        1973,
+                        1992
+                    ],
+                    [
+                        2009,
+                        2011
+                    ]
+                ]
+            },
+            {
+                "id_torneo": 7,
+                "periodos": [
+                    [
+                        2011,
+                        2011
+                    ]
+                ]
+            }
+        ],
+        "trofeos": [],
+        "divisionActual": -1,
+        "fechaFundacion": "1926-05-20"
+    },
+    {
+        "id": 17,
+        "nombre": "CD Unión Comercio",
+        "url_foto": "/img/equipos/uc.webp",
+        "torneos": [
+            {
+                "id_torneo": 2,
+                "periodos": [
+                    [
+                        2011,
+                        2019
+                    ],
+                    [
+                        2023,
+                        2024
+                    ]
+                ]
+            },
+            {
+                "id_torneo": 7,
+                "periodos": [
+                    [
+                        2011,
+                        2011
+                    ],
+                    [
+                        2014,
+                        2015
+                    ]
+                ]
+            },
+            {
+                "id_torneo": 5,
+                "periodos": [
+                    [
+                        2020,
+                        2022
+                    ],
+                    [
+                        2025,
+                        -1
+                    ]
+                ]
+            },
+            {
+                "id_torneo": 11,
+                "periodos": [
+                    [
+                        2019,
+                        2019
+                    ],
+                    [
+                        2021,
+                        2021
+                    ]
+                ]
+            },
+            {
+                "id_torneo": 10,
+                "periodos": [
+                    [
+                        2012,
+                        2012
+                    ],
+                    [
+                        2015,
+                        2015
+                    ]
+                ]
+            }
+        ],
+        "trofeos": [],
+        "divisionActual": 2,
+        "fechaFundacion": "2002-01-31"
+    },
+    {
+        "id": 18,
+        "nombre": "Cobresol FBC",
+        "url_foto": "/img/equipos/cobresol.webp",
+        "torneos": [
+            {
+                "id_torneo": 2,
+                "periodos": [
+                    [
+                        2011,
+                        2012
+                    ]
+                ]
+            },
+            {
+                "id_torneo": 7,
+                "periodos": [
+                    [
+                        2011,
+                        2011
+                    ]
+                ]
+            },
+            {
+                "id_torneo": 5,
+                "periodos": [
+                    [
+                        2009,
+                        2010
+                    ]
+                ]
+            }
+        ],
+        "trofeos": [
+            {
+                "id_trofeo": 5,
+                "cantidad": 1
+            }
+        ],
+        "divisionActual": -1,
+        "fechaFundacion": "2008-02-05"
+    },
+    {
+        "id": 19,
+        "nombre": "Cusco FC (Ex Real Garcilaso)",
+        "url_foto": "/img/equipos/cusco.webp",
+        "torneos": [
+            {
+                "id_torneo": 2,
+                "periodos": [
+                    [
+                        2012,
+                        2021
+                    ],
+                    [
+                        2023,
+                        -1
+                    ]
+                ]
+            },
+            {
+                "id_torneo": 7,
+                "periodos": [
+                    [
+                        2011,
+                        2011
+                    ],
+                    [
+                        2014,
+                        2015
+                    ]
+                ]
+            },
+            {
+                "id_torneo": 5,
+                "periodos": [
+                    [
+                        2022,
+                        2022
+                    ]
+                ]
+            },
+            {
+                "id_torneo": 11,
+                "periodos": [
+                    [
+                        2019,
+                        2019
+                    ],
+                    [
+                        2021,
+                        2021
+                    ]
+                ]
+            },
+            {
+                "id_torneo": 9,
+                "periodos": [
+                    [
+                        2013,
+                        2014
+                    ],
+                    [
+                        2018,
+                        2019
+                    ],
+                    [
+                        2026,
+                        2026
+                    ]
+                ]
+            },
+            {
+                "id_torneo": 10,
+                "periodos": [
+                    [
+                        2016,
+                        2016
+                    ],
+                    [
+                        2020,
+                        2020
+                    ],
+                    [
+                        2025,
+                        2025
+                    ]
+                ]
+            }
+        ],
+        "trofeos": [
+            {
+                "id_trofeo": 5,
+                "cantidad": 1
+            }
+        ],
+        "divisionActual": 1,
+        "fechaFundacion": "2009-07-16"
+    },
+    {
+        "id": 20,
+        "nombre": "Pacífico FC",
+        "url_foto": "/img/equipos/pacifico.webp",
+        "torneos": [
+            {
+                "id_torneo": 2,
+                "periodos": [
+                    [
+                        2013,
+                        2013
+                    ]
+                ]
+            },
+            {
+                "id_torneo": 5,
+                "periodos": [
+                    [
+                        2012,
+                        2012
+                    ],
+                    [
+                        2014,
+                        2014
+                    ]
+                ]
+            }
+        ],
+        "trofeos": [
+            {
+                "id_trofeo": 5,
+                "cantidad": 1
+            }
+        ],
+        "divisionActual": 3,
+        "fechaFundacion": "1960-01-01"
+    },
+    {
+        "id": 21,
+        "nombre": "Universidad Técnica de Cajamarca (UTC)",
+        "url_foto": "/img/equipos/utc.webp",
+        "torneos": [
+            {
+                "id_torneo": 2,
+                "periodos": [
+                    [
+                        1982,
+                        1993
+                    ],
+                    [
+                        2013,
+                        -1
+                    ]
+                ]
+            },
+            {
+                "id_torneo": 7,
+                "periodos": [
+                    [
+                        2011,
+                        2011
+                    ],
+                    [
+                        2014,
+                        2015
+                    ]
+                ]
+            },
+            {
+                "id_torneo": 5,
+                "periodos": [
+                    [
+                        2006,
+                        2008
+                    ]
+                ]
+            },
+            {
+                "id_torneo": 11,
+                "periodos": [
+                    [
+                        2019,
+                        2019
+                    ],
+                    [
+                        2021,
+                        2021
+                    ]
+                ]
+            },
+            {
+                "id_torneo": 9,
+                "periodos": [
+                    [
+                        1986,
+                        1986
+                    ]
+                ]
+            },
+            {
+                "id_torneo": 10,
+                "periodos": [
+                    [
+                        2014,
+                        2014
+                    ],
+                    [
+                        2018,
+                        2019
+                    ],
+                    [
+                        2021,
+                        2021
+                    ]
+                ]
+            }
+        ],
+        "trofeos": [],
+        "divisionActual": 1,
+        "fechaFundacion": "1964-07-14"
+    },
+    {
+        "id": 22,
+        "nombre": "CD San Simón",
+        "url_foto": "/img/equipos/ss.webp",
+        "torneos": [
+            {
+                "id_torneo": 2,
+                "periodos": [
+                    [
+                        2014,
+                        2014
+                    ]
+                ]
+            },
+            {
+                "id_torneo": 7,
+                "periodos": [
+                    [
+                        2014,
+                        2014
+                    ]
+                ]
+            },
+            {
+                "id_torneo": 5,
+                "periodos": [
+                    [
+                        2015,
+                        2015
+                    ]
+                ]
+            }
+        ],
+        "trofeos": [],
+        "divisionActual": -1,
+        "fechaFundacion": "1983-01-05"
+    },
+    {
+        "id": 23,
+        "nombre": "CCD Los Caimanes",
+        "url_foto": "/img/equipos/caimanes.webp",
+        "torneos": [
+            {
+                "id_torneo": 2,
+                "periodos": [
+                    [
+                        2014,
+                        2014
+                    ]
+                ]
+            },
+            {
+                "id_torneo": 7,
+                "periodos": [
+                    [
+                        2014,
+                        2014
+                    ]
+                ]
+            },
+            {
+                "id_torneo": 5,
+                "periodos": [
+                    [
+                        2012,
+                        2013
+                    ],
+                    [
+                        2015,
+                        2019
+                    ]
+                ]
+            },
+            {
+                "id_torneo": 11,
+                "periodos": [
+                    [
+                        2019,
+                        2019
+                    ]
+                ]
+            }
+        ],
+        "trofeos": [
+            {
+                "id_trofeo": 5,
+                "cantidad": 1
+            }
+        ],
+        "divisionActual": -1,
+        "fechaFundacion": "1957-05-22"
+    },
+    {
+        "id": 24,
+        "nombre": "Deportivo Municipal",
+        "url_foto": "/img/equipos/municipal.webp",
+        "torneos": [
+            {
+                "id_torneo": 2,
+                "periodos": [
+                    [
+                        1937,
+                        1967
+                    ],
+                    [
+                        1969,
+                        2000
+                    ],
+                    [
+                        2007,
+                        2007
+                    ],
+                    [
+                        2015,
+                        2023
+                    ]
+                ]
+            },
+            {
+                "id_torneo": 7,
+                "periodos": [
+                    [
+                        2011,
+                        2011
+                    ],
+                    [
+                        2015,
+                        2015
+                    ]
+                ]
+            },
+            {
+                "id_torneo": 5,
+                "periodos": [
+                    [
+                        1968,
+                        1968
+                    ],
+                    [
+                        2001,
+                        2006
+                    ],
+                    [
+                        2008,
+                        2009
+                    ],
+                    [
+                        2013,
+                        2014
+                    ],
+                    [
+                        2024,
+                        2024
+                    ]
+                ]
+            },
+            {
+                "id_torneo": 11,
+                "periodos": [
+                    [
+                        2019,
+                        2019
+                    ],
+                    [
+                        2021,
+                        2021
+                    ]
+                ]
+            },
+            {
+                "id_torneo": 9,
+                "periodos": [
+                    [
+                        1982,
+                        1982
+                    ],
+                    [
+                        2017,
+                        2017
+                    ]
+                ]
+            },
+            {
+                "id_torneo": 10,
+                "periodos": [
+                    [
+                        2016,
+                        2016
+                    ],
+                    [
+                        2019,
+                        2019
+                    ]
+                ]
+            },
+            {
+                "id_torneo": 12,
+                "periodos": [
+                    [
+                        1973,
+                        1973
+                    ]
+                ]
+            }
+        ],
+        "trofeos": [
+            {
+                "id_trofeo": 2,
+                "cantidad": 4
+            },
+            {
+                "id_trofeo": 5,
+                "cantidad": 3
+            }
+        ],
+        "divisionActual": 3,
+        "fechaFundacion": "1935-07-27"
+    },
+    {
+        "id": 25,
+        "nombre": "Sport Loreto",
+        "url_foto": "/img/equipos/loreto.webp",
+        "torneos": [
+            {
+                "id_torneo": 2,
+                "periodos": [
+                    [
+                        2015,
+                        2015
+                    ]
+                ]
+            },
+            {
+                "id_torneo": 7,
+                "periodos": [
+                    [
+                        2015,
+                        2015
+                    ]
+                ]
+            },
+            {
+                "id_torneo": 5,
+                "periodos": [
+                    [
+                        2016,
+                        2019
+                    ]
+                ]
+            },
+            {
+                "id_torneo": 11,
+                "periodos": [
+                    [
+                        2019,
+                        2019
+                    ]
+                ]
+            }
+        ],
+        "trofeos": [],
+        "divisionActual": -1,
+        "fechaFundacion": "1939-09-03"
+    },
+    {
+        "id": 26,
+        "nombre": "Defensor La Bocana",
+        "url_foto": "/img/equipos/dlb.webp",
+        "torneos": [
+            {
+                "id_torneo": 2,
+                "periodos": [
+                    [
+                        2016,
+                        2016
+                    ]
+                ]
+            },
+            {
+                "id_torneo": 5,
+                "periodos": [
+                    [
+                        2017,
+                        2017
+                    ]
+                ]
+            }
+        ],
+        "trofeos": [],
+        "divisionActual": -1,
+        "fechaFundacion": "1987-06-29"
+    },
+    {
+        "id": 27,
+        "nombre": "Comerciantes Unidos",
+        "url_foto": "/img/equipos/comerciantes.webp",
+        "torneos": [
+            {
+                "id_torneo": 2,
+                "periodos": [
+                    [
+                        2016,
+                        2018
+                    ],
+                    [
+                        2024,
+                        -1
+                    ]
+                ]
+            },
+            {
+                "id_torneo": 5,
+                "periodos": [
+                    [
+                        2014,
+                        2015
+                    ],
+                    [
+                        2019,
+                        2023
+                    ]
+                ]
+            },
+            {
+                "id_torneo": 11,
+                "periodos": [
+                    [
+                        2019,
+                        2019
+                    ],
+                    [
+                        2021,
+                        2021
+                    ]
+                ]
+            },
+            {
+                "id_torneo": 10,
+                "periodos": [
+                    [
+                        2017,
+                        2017
+                    ]
+                ]
+            }
+        ],
+        "trofeos": [
+            {
+                "id_trofeo": 5,
+                "cantidad": 2
+            }
+        ],
+        "divisionActual": 1,
+        "fechaFundacion": "2002-09-19"
+    },
+    {
+        "id": 28,
+        "nombre": "Rosario FC (Ex Sport Rosario)",
+        "url_foto": "/img/equipos/rosario.webp",
+        "torneos": [
+            {
+                "id_torneo": 2,
+                "periodos": [
+                    [
+                        2017,
+                        2018
+                    ]
+                ]
+            },
+            {
+                "id_torneo": 10,
+                "periodos": [
+                    [
+                        2018,
+                        2018
+                    ]
+                ]
+            }
+        ],
+        "trofeos": [],
+        "divisionActual": -1,
+        "fechaFundacion": "1965-10-04"
+    },
+    {
+        "id": 29,
+        "nombre": "Academia Deportiva Cantolao",
+        "url_foto": "/img/equipos/cantolao.webp",
+        "torneos": [
+            {
+                "id_torneo": 2,
+                "periodos": [
+                    [
+                        2017,
+                        2023
+                    ]
+                ]
+            },
+            {
+                "id_torneo": 5,
+                "periodos": [
+                    [
+                        1983,
+                        1985
+                    ],
+                    [
+                        2016,
+                        2016
+                    ],
+                    [
+                        2024,
+                        -1
+                    ]
+                ]
+            },
+            {
+                "id_torneo": 11,
+                "periodos": [
+                    [
+                        2019,
+                        2019
+                    ],
+                    [
+                        2021,
+                        2021
+                    ]
+                ]
+            }
+        ],
+        "trofeos": [
+            {
+                "id_trofeo": 5,
+                "cantidad": 1
+            }
+        ],
+        "divisionActual": 2,
+        "fechaFundacion": "1981-04-14"
+    },
+    {
+        "id": 30,
+        "nombre": "Deportivo Binacional",
+        "url_foto": "/img/equipos/binacional.webp",
+        "torneos": [
+            {
+                "id_torneo": 2,
+                "periodos": [
+                    [
+                        2018,
+                        2023
+                    ],
+                    [
+                        2025,
+                        2025
+                    ]
+                ]
+            },
+            {
+                "id_torneo": 5,
+                "periodos": [
+                    [
+                        2024,
+                        2024
+                    ],
+                    [
+                        2026,
+                        -1
+                    ]
+                ]
+            },
+            {
+                "id_torneo": 11,
+                "periodos": [
+                    [
+                        2019,
+                        2019
+                    ],
+                    [
+                        2021,
+                        2021
+                    ]
+                ]
+            },
+            {
+                "id_torneo": 8,
+                "periodos": [
+                    [
+                        2020,
+                        2020
+                    ]
+                ]
+            },
+            {
+                "id_torneo": 9,
+                "periodos": [
+                    [
+                        2020,
+                        2020
+                    ]
+                ]
+            },
+            {
+                "id_torneo": 10,
+                "periodos": [
+                    [
+                        2019,
+                        2019
+                    ],
+                    [
+                        2023,
+                        2023
+                    ]
+                ]
+            }
+        ],
+        "trofeos": [
+            {
+                "id_trofeo": 2,
+                "cantidad": 1
+            }
+        ],
+        "divisionActual": 2,
+        "fechaFundacion": "2010-12-18"
+    },
+    {
+        "id": 31,
+        "nombre": "Alianza Universidad",
+        "url_foto": "/img/equipos/au.webp",
+        "torneos": [
+            {
+                "id_torneo": 2,
+                "periodos": [
+                    [
+                        1991,
+                        1991
+                    ],
+                    [
+                        2019,
+                        2021
+                    ],
+                    [
+                        2025,
+                        2025
+                    ]
+                ]
+            },
+            {
+                "id_torneo": 5,
+                "periodos": [
+                    [
+                        2012,
+                        2016
+                    ],
+                    [
+                        2022,
+                        2024
+                    ],
+                    [
+                        2026,
+                        -1
+                    ]
+                ]
+            },
+            {
+                "id_torneo": 11,
+                "periodos": [
+                    [
+                        2019,
+                        2019
+                    ],
+                    [
+                        2021,
+                        2021
+                    ]
+                ]
+            }
+        ],
+        "trofeos": [
+            {
+                "id_trofeo": 5,
+                "cantidad": 1
+            }
+        ],
+        "divisionActual": 2,
+        "fechaFundacion": "1939-01-01"
+    },
+    {
+        "id": 32,
+        "nombre": "Carlos A. Mannucci",
+        "url_foto": "/img/equipos/mannucci.webp",
+        "torneos": [
+            {
+                "id_torneo": 2,
+                "periodos": [
+                    [
+                        1968,
+                        1972
+                    ],
+                    [
+                        1974,
+                        1976
+                    ],
+                    [
+                        1984,
+                        1994
+                    ],
+                    [
+                        2019,
+                        2024
+                    ]
+                ]
+            },
+            {
+                "id_torneo": 5,
+                "periodos": [
+                    [
+                        1983,
+                        1983
+                    ],
+                    [
+                        2014,
+                        2018
+                    ],
+                    [
+                        2025,
+                        -1
+                    ]
+                ]
+            },
+            {
+                "id_torneo": 11,
+                "periodos": [
+                    [
+                        2019,
+                        2019
+                    ],
+                    [
+                        2021,
+                        2021
+                    ]
+                ]
+            },
+            {
+                "id_torneo": 10,
+                "periodos": [
+                    [
+                        2021,
+                        2021
+                    ]
+                ]
+            }
+        ],
+        "trofeos": [],
+        "divisionActual": 2,
+        "fechaFundacion": "1959-11-16"
+    },
+    {
+        "id": 33,
+        "nombre": "Pirata FC",
+        "url_foto": "/img/equipos/pirata.webp",
+        "torneos": [
+            {
+                "id_torneo": 2,
+                "periodos": [
+                    [
+                        2019,
+                        2019
+                    ]
+                ]
+            },
+            {
+                "id_torneo": 5,
+                "periodos": [
+                    [
+                        2020,
+                        -1
+                    ]
+                ]
+            }
+        ],
+        "trofeos": [],
+        "divisionActual": 2,
+        "fechaFundacion": "2015-11-15"
+    },
+    {
+        "id": 34,
+        "nombre": "FC Carlos Stein",
+        "url_foto": "/img/equipos/stein.webp",
+        "torneos": [
+            {
+                "id_torneo": 2,
+                "periodos": [
+                    [
+                        2020,
+                        2020
+                    ],
+                    [
+                        2022,
+                        2022
+                    ]
+                ]
+            },
+            {
+                "id_torneo": 5,
+                "periodos": [
+                    [
+                        2021,
+                        2021
+                    ],
+                    [
+                        2023,
+                        2024
+                    ]
+                ]
+            },
+            {
+                "id_torneo": 11,
+                "periodos": [
+                    [
+                        2021,
+                        2021
+                    ]
+                ]
+            }
+        ],
+        "trofeos": [],
+        "divisionActual": 3,
+        "fechaFundacion": "2012-03-06"
+    },
+    {
+        "id": 35,
+        "nombre": "Club Atlético Grau",
+        "url_foto": "/img/equipos/ag.webp",
+        "torneos": [
+            {
+                "id_torneo": 2,
+                "periodos": [
+                    [
+                        1966,
+                        1970
+                    ],
+                    [
+                        1972,
+                        1975
+                    ],
+                    [
+                        1986,
+                        1991
+                    ],
+                    [
+                        2020,
+                        2020
+                    ],
+                    [
+                        2022,
+                        -1
+                    ]
+                ]
+            },
+            {
+                "id_torneo": 7,
+                "periodos": [
+                    [
+                        2011,
+                        2011
+                    ]
+                ]
+            },
+            {
+                "id_torneo": 5,
+                "periodos": [
+                    [
+                        2018,
+                        2019
+                    ],
+                    [
+                        2021,
+                        2021
+                    ]
+                ]
+            },
+            {
+                "id_torneo": 11,
+                "periodos": [
+                    [
+                        2019,
+                        2019
+                    ],
+                    [
+                        2021,
+                        2021
+                    ]
+                ]
+            },
+            {
+                "id_torneo": 8,
+                "periodos": [
+                    [
+                        2020,
+                        2020
+                    ]
+                ]
+            },
+            {
+                "id_torneo": 10,
+                "periodos": [
+                    [
+                        2020,
+                        2020
+                    ],
+                    [
+                        2025,
+                        2025
+                    ]
+                ]
+            }
+        ],
+        "trofeos": [
+            {
+                "id_trofeo": 5,
+                "cantidad": 1
+            },
+            {
+                "id_trofeo": 11,
+                "cantidad": 1
+            },
+            {
+                "id_trofeo": 8,
+                "cantidad": 1
+            }
+        ],
+        "divisionActual": 1,
+        "fechaFundacion": "1919-06-05"
+    },
+    {
+        "id": 36,
+        "nombre": "Deportivo Llacuabamba",
+        "url_foto": "/img/equipos/llacuabamba.webp",
+        "torneos": [
+            {
+                "id_torneo": 2,
+                "periodos": [
+                    [
+                        2020,
+                        2020
+                    ]
+                ]
+            },
+            {
+                "id_torneo": 5,
+                "periodos": [
+                    [
+                        2021,
+                        -1
+                    ]
+                ]
+            },
+            {
+                "id_torneo": 11,
+                "periodos": [
+                    [
+                        2021,
+                        2021
+                    ]
+                ]
+            }
+        ],
+        "trofeos": [],
+        "divisionActual": 2,
+        "fechaFundacion": "2011-02-15"
+    },
+    {
+        "id": 37,
+        "nombre": "Asociación Deportiva Tarma (ADT)",
+        "url_foto": "/img/equipos/adt.webp",
+        "torneos": [
+            {
+                "id_torneo": 2,
+                "periodos": [
+                    [
+                        1980,
+                        1991
+                    ],
+                    [
+                        2022,
+                        -1
+                    ]
+                ]
+            },
+            {
+                "id_torneo": 7,
+                "periodos": [
+                    [
+                        2011,
+                        2011
+                    ]
+                ]
+            },
+            {
+                "id_torneo": 10,
+                "periodos": [
+                    [
+                        2024,
+                        2025
+                    ]
+                ]
+            }
+        ],
+        "trofeos": [],
+        "divisionActual": 1,
+        "fechaFundacion": "1929-06-18"
+    },
+    {
+        "id": 38,
+        "nombre": "Deportivo Garcilaso",
+        "url_foto": "/img/equipos/garcilaso.webp",
+        "torneos": [
+            {
+                "id_torneo": 2,
+                "periodos": [
+                    [
+                        2023,
+                        -1
+                    ]
+                ]
+            },
+            {
+                "id_torneo": 7,
+                "periodos": [
+                    [
+                        2011,
+                        2011
+                    ]
+                ]
+            },
+            {
+                "id_torneo": 10,
+                "periodos": [
+                    [
+                        2024,
+                        2024
+                    ],
+                    [
+                        2026,
+                        2026
+                    ]
+                ]
+            }
+        ],
+        "trofeos": [],
+        "divisionActual": 1,
+        "fechaFundacion": "1957-04-13"
+    },
+    {
+        "id": 39,
+        "nombre": "CD Los Chankas (Ex Cultural Santa Rosa)",
+        "url_foto": "/img/equipos/chankas.webp",
+        "torneos": [
+            {
+                "id_torneo": 2,
+                "periodos": [
+                    [
+                        2024,
+                        -1
+                    ]
+                ]
+            },
+            {
+                "id_torneo": 5,
+                "periodos": [
+                    [
+                        2016,
+                        2023
+                    ]
+                ]
+            },
+            {
+                "id_torneo": 11,
+                "periodos": [
+                    [
+                        2019,
+                        2019
+                    ],
+                    [
+                        2021,
+                        2021
+                    ]
+                ]
+            }
+        ],
+        "trofeos": [],
+        "divisionActual": 1,
+        "fechaFundacion": "1989-08-30"
+    },
+    {
+        "id": 40,
+        "nombre": "Club Juan Pablo II College",
+        "url_foto": "/img/equipos/jpii.webp",
+        "torneos": [
+            {
+                "id_torneo": 2,
+                "periodos": [
+                    [
+                        2025,
+                        -1
+                    ]
+                ]
+            },
+            {
+                "id_torneo": 5,
+                "periodos": [
+                    [
+                        2024,
+                        2024
+                    ]
+                ]
+            }
+        ],
+        "trofeos": [],
+        "divisionActual": 1,
+        "fechaFundacion": "2015-11-24"
+    },
+    {
+        "id": 41,
+        "nombre": "CD Moquegua",
+        "url_foto": "/img/equipos/moquegua.webp",
+        "torneos": [
+            {
+                "id_torneo": 2,
+                "periodos": [
+                    [
+                        2026,
+                        -1
+                    ]
+                ]
+            },
+            {
+                "id_torneo": 5,
+                "periodos": [
+                    [
+                        2024,
+                        2025
+                    ]
+                ]
+            }
+        ],
+        "trofeos": [],
+        "divisionActual": 1,
+        "fechaFundacion": "2021-12-17"
+    },
+    {
+        "id": 42,
+        "nombre": "FC Cajamarca",
+        "url_foto": "/img/equipos/cajamarca.webp",
+        "torneos": [
+            {
+                "id_torneo": 2,
+                "periodos": [
+                    [
+                        2026,
+                        -1
+                    ]
+                ]
+            },
+            {
+                "id_torneo": 5,
+                "periodos": [
+                    [
+                        2025,
+                        2025
+                    ]
+                ]
+            }
+        ],
+        "trofeos": [
+            {
+                "id_trofeo": 5,
+                "cantidad": 1
+            }
+        ],
+        "divisionActual": 1,
+        "fechaFundacion": "2023-01-05"
+    }
+]

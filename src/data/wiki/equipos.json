@@ -1,0 +1,1124 @@
+[
+  {
+    "id": 1,
+    "nombre": "ADT",
+    "diminutivo": "ADT",
+    "url_foto": "/img/equipos/adt.webp",
+    "identidad": {
+      "fecha_fundacion": "1929-06-18",
+      "ciudad": "Tarma",
+      "apodos": ["El Vendaval Celeste"],
+      "colores": { "primario": "#87CEEB", "secundario": "#FFFFFF" }
+    },
+    "historia": "El histórico de Tarma que regresó a Primera desde la Copa Perú. ADT, fundado en 1929, es uno de los clubes más tradicionales del centro del país. Tras décadas en el fútbol de ascenso, logró volver a la élite ganando la Copa Perú, en un regreso que marcó un hito para Tarma. Su identidad está ligada a la perseverancia, al fuerte apoyo local y a su capacidad de hacerse respetar en casa. ADT representa al fútbol provincial que lucha, cae y vuelve más fuerte.",
+
+    "palmares": {
+      "titulos_primera_division": 0,
+      "titulos_internacionales": []
+    },
+    "estadio": {
+      "nombre": "Estadio Unión Tarma",
+      "capacidad": 9100,
+      "altura_msnm": 3053,
+      "url_foto": "/img/equipos/estadios/union_tarma.webp"
+    },
+    "cuerpo_tecnico": { "dt": "Pablo Trobbiani", "nacionalidad": "ESP" },
+    "plantilla": {
+      "arqueros": [
+        { "nombre": "Juan Valencia", "nacionalidad": "PER" },
+        { "nombre": "Carlos Solís", "nacionalidad": "PER" },
+        { "nombre": "Edú Azañero", "nacionalidad": "PER" }
+      ],
+      "defensas": [
+        { "nombre": "Ronny Biojó", "nacionalidad": "ECU" },
+        { "nombre": "John Narváez", "nacionalidad": "ECU" },
+        { "nombre": "Jhair Soto", "nacionalidad": "PER" },
+        { "nombre": "Carlos Cabello", "nacionalidad": "PER" },
+        { "nombre": "Luis Gómez", "nacionalidad": "PER" },
+        { "nombre": "Arthur Gutiérrez", "nacionalidad": "PER" }
+      ],
+      "volantes": [
+        { "nombre": "Jhon Vega", "nacionalidad": "PER" },
+        { "nombre": "Jordan Guivin", "nacionalidad": "PER" },
+        { "nombre": "Luis Pérez", "nacionalidad": "COL" },
+        { "nombre": "Josue Alvino", "nacionalidad": "PER" },
+        { "nombre": "Jair Reyes", "nacionalidad": "PER" },
+        { "nombre": "Víctor Cedrón", "nacionalidad": "PER" },
+        { "nombre": "Joao Rojas", "nacionalidad": "ECU" },
+        { "nombre": "Alexander Hidalgo", "nacionalidad": "PER" },
+        { "nombre": "Sinclair García", "nacionalidad": "PER" }
+      ],
+      "delanteros": [
+        { "nombre": "Luis Benites", "nacionalidad": "PER" },
+        { "nombre": "Óscar Pinto", "nacionalidad": "PER" },
+        { "nombre": "Hideyoshi Arakaki", "nacionalidad": "PER" },
+        { "nombre": "Jhojan Garcilazo", "nacionalidad": "PER" },
+        { "nombre": "Hernán Rengifo", "nacionalidad": "PER" },
+        { "nombre": "Nicolás Rengifo", "nacionalidad": "PER" }
+      ]
+    }
+  },
+  {
+    "id": 2,
+    "nombre": "Alianza Atlético",
+    "diminutivo": "AAS",
+    "url_foto": "/img/equipos/aas.webp",
+    "identidad": {
+      "fecha_fundacion": "1920-01-18",
+      "ciudad": "Sullana",
+      "apodos": ["El Vendaval", "Los Churres"],
+      "colores": { "primario": "#FFFFFF", "secundario": "#0000FF" }
+    },
+    "historia": "El club que convirtió a Sullana en plaza permanente del fútbol profesional. Fundado en 1920, Alianza Atlético es uno de los equipos más representativos del norte peruano. Ha tenido múltiples etapas en Primera División y participaciones internacionales. Se caracteriza por su juego intenso, su cercanía con la hinchada y por ser cuna de varios futbolistas que luego destacaron a nivel nacional. Es identidad norteña pura.",
+    
+    "palmares": {
+      "titulos_primera_division": 0,
+      "titulos_internacionales": []
+    },
+    "estadio": {
+      "nombre": "Estadio Campeones del 36",
+      "capacidad": 12000,
+      "altura_msnm": 60,
+      "url_foto": "/img/equipos/estadios/campeones_36.webp"
+    },
+    "cuerpo_tecnico": { "dt": "Federico Urciuoli", "nacionalidad": "ARG" },
+    "plantilla": {
+      "arqueros": [
+        { "nombre": "Daniel Prieto", "nacionalidad": "PER" },
+        { "nombre": "Sebastián Amasifuén", "nacionalidad": "PER" },
+        { "nombre": "Jesus Rossi", "nacionalidad": "PER" }
+      ],
+      "defensas": [
+        { "nombre": "José Villegas", "nacionalidad": "ARG" },
+        { "nombre": "Román Suárez", "nacionalidad": "ARG" },
+        { "nombre": "José Luján", "nacionalidad": "PER" },
+        { "nombre": "Juan Quiñones", "nacionalidad": "PER" },
+        { "nombre": "Williams Guzmán", "nacionalidad": "PER" },
+        { "nombre": "Luiggi Alburqueque", "nacionalidad": "PER" },
+        { "nombre": "Jesús Mendieta", "nacionalidad": "PER" },
+        { "nombre": "Anthony Gordillo", "nacionalidad": "PER" },
+        { "nombre": "Erick Perleche", "nacionalidad": "PER" }
+      ],
+      "volantes": [
+        { "nombre": "Hernan Lupu", "nacionalidad": "PER" },
+        { "nombre": "Stefano Fernández", "nacionalidad": "PER" },
+        { "nombre": "Juan Delgado", "nacionalidad": "PER" },
+        { "nombre": "Jimmy Pérez", "nacionalidad": "PER" },
+        { "nombre": "Ariel Muñoz", "nacionalidad": "ARG" },
+        { "nombre": "Germán Díaz", "nacionalidad": "ARG" }
+      ],
+      "delanteros": [
+        { "nombre": "Jorge del Castillo", "nacionalidad": "PER" },
+        { "nombre": "Guillermo Larios", "nacionalidad": "PER" },
+        { "nombre": "Franchesco Flores", "nacionalidad": "PER" },
+        { "nombre": "Cristhian Valladolid", "nacionalidad": "PER" },
+        { "nombre": "Valentín Robaldo", "nacionalidad": "ARG" },
+        { "nombre": "Franco Coronel", "nacionalidad": "ARG" },
+        { "nombre": "Mariano Barreda", "nacionalidad": "PER" },
+        { "nombre": "Álvaro Guevara", "nacionalidad": "PER" }
+      ]
+    }
+  },
+  {
+    "id": 3,
+    "nombre": "Alianza Lima",
+    "diminutivo": "ALI",
+    "url_foto": "/img/equipos/alima.webp",
+    "identidad": {
+      "fecha_fundacion": "1901-02-15",
+      "ciudad": "Lima",
+      "apodos": ["Los Íntimos", "Blanquiazules", "Grones"],
+      "colores": { "primario": "#00008B", "secundario": "#FFFFFF" }
+    },
+    "historia": "El club más popular del Perú y uno de los más antiguos de Sudamérica. Fundado en 1901, Alianza Lima es un pilar del fútbol peruano. Su historia está llena de títulos, clásicos memorables y futbolistas legendarios. También está marcada por la tragedia aérea de 1987, que convirtió al club en símbolo de resiliencia. Alianza no es solo fútbol: es cultura, barrio y una pasión que pasa de generación en generación.",
+
+    "palmares": {
+      "titulos_primera_division": 25,
+      "titulos_internacionales": []
+    },
+    "estadio": {
+      "nombre": "Estadio Alejandro Villanueva",
+      "capacidad": 33938,
+      "altura_msnm": 150,
+      "url_foto": "/img/equipos/estadios/matute.webp"
+    },
+    "cuerpo_tecnico": { "dt": "Pablo Guede", "nacionalidad": "ARG" },
+    "plantilla": {
+      "arqueros": [
+        { "nombre": "Guillermo Viscarra", "nacionalidad": "BOL" },
+        { "nombre": "Alejandro Duarte", "nacionalidad": "PER" },
+        { "nombre": "Ángel de la Cruz", "nacionalidad": "PER" },
+        { "nombre": "Fabrisio Mesías", "nacionalidad": "PER" }
+      ],
+      "defensas": [
+        { "nombre": "Mateo Antoni", "nacionalidad": "URU" },
+        { "nombre": "Carlos Zambrano", "nacionalidad": "PER" },
+        { "nombre": "Renzo Garcés", "nacionalidad": "PER" },
+        { "nombre": "Gianfranco Chávez", "nacionalidad": "PER" },
+        { "nombre": "Jhoao Velásquez", "nacionalidad": "PER" },
+        { "nombre": "Luis Advíncula", "nacionalidad": "PER" },
+        { "nombre": "Miguel Trauco", "nacionalidad": "PER" },
+        { "nombre": "Josué Estrada", "nacionalidad": "PER" },
+        { "nombre": "Cristian Carbajal", "nacionalidad": "PER" },
+        { "nombre": "D'Alessandro Montenegro", "nacionalidad": "PER" },
+        { "nombre": "Rait Alarcón", "nacionalidad": "PER" }
+      ],
+      "volantes": [
+        { "nombre": "Pedro Aquino", "nacionalidad": "PER" },
+        { "nombre": "Sergio Peña", "nacionalidad": "PER" },
+        { "nombre": "Jairo Vélez", "nacionalidad": "ECU" },
+        { "nombre": "Fernando Gaibor", "nacionalidad": "ECU" },
+        { "nombre": "Jesús Castillo", "nacionalidad": "PER" },
+        { "nombre": "Jean Pierre Archimbaud", "nacionalidad": "PER" },
+        { "nombre": "Alessandro Burlamaqui", "nacionalidad": "PER" },
+        { "nombre": "Piero Cari", "nacionalidad": "PER" }
+      ],
+      "delanteros": [
+        { "nombre": "Federico Girotti", "nacionalidad": "ARG" },
+        { "nombre": "Paolo Guerrero", "nacionalidad": "PER" },
+        { "nombre": "Kevin Quevedo", "nacionalidad": "PER" },
+        { "nombre": "Gaspar Gentile", "nacionalidad": "ARG" },
+        { "nombre": "Alan Cantero", "nacionalidad": "ARG" },
+        { "nombre": "Eryc Castillo", "nacionalidad": "ECU" },
+        { "nombre": "Luis Ramos", "nacionalidad": "PER" },
+        { "nombre": "Geray Motta", "nacionalidad": "PER" }
+      ]
+    }
+  },
+  {
+    "id": 4,
+    "nombre": "Atlético Grau",
+    "diminutivo": "CAG",
+    "url_foto": "/img/equipos/ag.webp",
+    "identidad": {
+      "fecha_fundacion": "1919-06-05",
+      "ciudad": "Piura",
+      "apodos": ["El Patrimonio de Piura", "Los Albos", "Los Blancos"],
+      "colores": { "primario": "#FFFFFF", "secundario": "#FFFF00" }
+    },
+    "historia": "El máximo representante histórico del fútbol piurano. Fundado en 1919 y nombrado en honor al héroe nacional Miguel Grau, es el club más emblemático del norte costero. Su mayor fortaleza es la identidad regional y el respaldo popular. En los últimos años se ha consolidado en Primera División, convirtiéndose en un rival competitivo y un orgullo permanente para Piura.",
+
+    "palmares": {
+      "titulos_primera_division": 0,
+      "titulos_internacionales": []
+    },
+    "estadio": {
+      "nombre": "Estadio Campeones del 36",
+      "capacidad": 12000,
+      "altura_msnm": 60,
+      "url_foto": "/img/equipos/estadios/campeones_36.webp"
+    },
+    "cuerpo_tecnico": { "dt": "Ángel Comizzo", "nacionalidad": "ARG" },
+    "plantilla": {
+      "arqueros": [
+        { "nombre": "Patricio Álvarez", "nacionalidad": "PER" },
+        { "nombre": "Aamet Calderón", "nacionalidad": "PER" },
+        { "nombre": "Aarom Fuentes", "nacionalidad": "PER" }
+      ],
+      "defensas": [
+        { "nombre": "Ignacio Tapia", "nacionalidad": "CHI" },
+        { "nombre": "Rodrigo Tapia", "nacionalidad": "ARG" },
+        { "nombre": "Lucas Acevedo", "nacionalidad": "ARG" },
+        { "nombre": "José Ataupillco", "nacionalidad": "PER" },
+        { "nombre": "Elsar Rodas", "nacionalidad": "PER" },
+        { "nombre": "Gabriel Alfaro", "nacionalidad": "PER" },
+        { "nombre": "Arnold Flores", "nacionalidad": "PER" }
+      ],
+      "volantes": [
+        { "nombre": "Rafael Guarderas", "nacionalidad": "PER" },
+        { "nombre": "Freddy Oncoy", "nacionalidad": "PER" },
+        { "nombre": "Emiliano Franco", "nacionalidad": "ARG" },
+        { "nombre": "Cristian Neira", "nacionalidad": "PER" },
+        { "nombre": "Aldair Vásquez", "nacionalidad": "PER" },
+        { "nombre": "Adrián de la Cruz", "nacionalidad": "PER" },
+        { "nombre": "Eslyn Correa", "nacionalidad": "PER" },
+        { "nombre": "Diego Barreto", "nacionalidad": "PER" }
+      ],
+      "delanteros": [
+        { "nombre": "Raúl Ruidíaz", "nacionalidad": "PER" },
+        { "nombre": "Paulo de la Cruz", "nacionalidad": "PER" },
+        { "nombre": "Yamir Ruidíaz", "nacionalidad": "PER" }
+      ]
+    }
+  },
+  {
+    "id": 5,
+    "nombre": "Cienciano",
+    "diminutivo": "CIE",
+    "url_foto": "/img/equipos/cienciano.webp",
+    "identidad": {
+      "fecha_fundacion": "1901-07-08",
+      "ciudad": "Cusco",
+      "apodos": ["El Papá de América", "La Furia Roja", "Los Imperiales"],
+      "colores": { "primario": "#FF0000", "secundario": "#FFFFFF" }
+    },
+    "historia": "El único club peruano con títulos internacionales oficiales. Fundado en 1901 en Cusco, Cienciano hizo historia al ganar la Copa Sudamericana 2003 y la Recopa Sudamericana 2004, venciendo a River Plate y Boca Juniors. Es el mayor orgullo futbolístico del sur y un símbolo continental para el Perú. Jugar en Cusco, con altura e historia, hace de Cienciano un club único.",
+
+    "palmares": {
+      "titulos_primera_division": 0,
+      "titulos_internacionales": ["Copa Sudamericana 2003", "Recopa Sudamericana 2004"]
+    },
+    "estadio": {
+      "nombre": "Estadio Inca Garcilaso de la Vega",
+      "capacidad": 45065,
+      "altura_msnm": 3402,
+      "url_foto": "/img/equipos/estadios/garcilaso.webp"
+    },
+    "cuerpo_tecnico": { "dt": "Horacio Melgarejo", "nacionalidad": "ARG" },
+    "plantilla": {
+      "arqueros": [
+        { "nombre": "Ítalo Espinoza", "nacionalidad": "PER" },
+        { "nombre": "Gonzalo Falcón", "nacionalidad": "URU" }
+      ],
+      "defensas": [
+        { "nombre": "Maximiliano Amondarain", "nacionalidad": "URU" },
+        { "nombre": "Kevin Becerra", "nacionalidad": "ECU" },
+        { "nombre": "Claudio Nuñez", "nacionalidad": "PER" },
+        { "nombre": "Rotceh Aguilar", "nacionalidad": "PER" },
+        { "nombre": "Marco Huamán", "nacionalidad": "PER" },
+        { "nombre": "Alonso Yovera", "nacionalidad": "PER" },
+        { "nombre": "Sebastián Cavero", "nacionalidad": "PER" }
+      ],
+      "volantes": [
+        { "nombre": "Santiago Arias", "nacionalidad": "URU" },
+        { "nombre": "Gonzalo Aguirre", "nacionalidad": "PER" },
+        { "nombre": "Gerson Barreto", "nacionalidad": "PER" },
+        { "nombre": "Henry Caparó", "nacionalidad": "PER" },
+        { "nombre": "Álvaro Rojas", "nacionalidad": "PER" },
+        { "nombre": "Ademar Robles", "nacionalidad": "PER" },
+        { "nombre": "Harol Rodríguez", "nacionalidad": "PER" }
+      ],
+      "delanteros": [
+        { "nombre": "Carlos Garcés", "nacionalidad": "ECU" },
+        { "nombre": "Matías Succar", "nacionalidad": "PER" },
+        { "nombre": "Juan Romagnoli", "nacionalidad": "ARG" },
+        { "nombre": "Alejandro Hohberg", "nacionalidad": "PER" },
+        { "nombre": "Neri Bandiera", "nacionalidad": "ARG" },
+        { "nombre": "Cristian Souza", "nacionalidad": "URU" },
+        { "nombre": "Ray Sandoval", "nacionalidad": "PER" },
+        { "nombre": "Nadhir Colunga", "nacionalidad": "PER" },
+        { "nombre": "Yván Rojas", "nacionalidad": "PER" }
+      ]
+    }
+  },
+  {
+    "id": 6,
+    "nombre": "Comerciantes Unidos",
+    "diminutivo": "COM",
+    "url_foto": "/img/equipos/comerciantes.webp",
+    "identidad": {
+      "fecha_fundacion": "2002-09-19",
+      "ciudad": "Cutervo",
+      "apodos": ["Las Águilas Cutervinas", "El Orgullo de Cutervo"],
+      "colores": { "primario": "#FFFF00", "secundario": "#00008B" }
+    },
+    "historia": "El equipo que llevó a Cutervo por primera vez a la élite del fútbol peruano. Fundado en 2002, Comerciantes Unidos es un ejemplo del crecimiento del fútbol de provincia. Ha vivido ascensos, descensos y regresos, construyendo su historia a base de esfuerzo. Su identidad está ligada al pueblo, a la cercanía con su hinchada y a la lucha constante por mantenerse en Primera.",
+
+    "palmares": {
+      "titulos_primera_division": 0,
+      "titulos_internacionales": []
+    },
+    "estadio": {
+      "nombre": "Estadio Juan Maldonado Gamarra",
+      "capacidad": 8000,
+      "altura_msnm": 2649,
+      "url_foto": "/img/equipos/estadios/juan_maldonado.webp"
+    },
+    "cuerpo_tecnico": { "dt": "Claudio Biaggio", "nacionalidad": "ARG" },
+    "plantilla": {
+      "arqueros": [
+        { "nombre": "Álvaro Villete", "nacionalidad": "URU" },
+        { "nombre": "Matías Córdova", "nacionalidad": "PER" },
+        { "nombre": "José Charún", "nacionalidad": "PER" }
+      ],
+      "defensas": [
+        { "nombre": "Yordi Vílchez", "nacionalidad": "PER" },
+        { "nombre": "Piero Guzmán", "nacionalidad": "PER" },
+        { "nombre": "Juan Rodríguez", "nacionalidad": "PER" },
+        { "nombre": "Daniel Lino", "nacionalidad": "PER" },
+        { "nombre": "Alexis Cossio", "nacionalidad": "PER" },
+        { "nombre": "Christian Vásquez", "nacionalidad": "PER" },
+        { "nombre": "Fabio Rojas", "nacionalidad": "PER" }
+      ],
+      "volantes": [
+        { "nombre": "Agustín Rodríguez", "nacionalidad": "URU" },
+        { "nombre": "José Parodi", "nacionalidad": "PER" },
+        { "nombre": "Carlos Correa", "nacionalidad": "PER" },
+        { "nombre": "Thiago Salinas", "nacionalidad": "PER" },
+        { "nombre": "Rodrigo Vilca", "nacionalidad": "PER" }
+      ],
+      "delanteros": [
+        { "nombre": "Matías Sen", "nacionalidad": "ARG" },
+        { "nombre": "Josuee Herrera", "nacionalidad": "PER" },
+        { "nombre": "Mathías Carpio", "nacionalidad": "PER" },
+        { "nombre": "Miguel Carranza", "nacionalidad": "PER" },
+        { "nombre": "Carlos Saavedra", "nacionalidad": "PER" }
+      ]
+    }
+  },
+  {
+    "id": 7,
+    "nombre": "Cusco FC",
+    "diminutivo": "CUS",
+    "url_foto": "/img/equipos/cusco.webp",
+    "identidad": {
+      "fecha_fundacion": "2009-07-16",
+      "ciudad": "Cusco",
+      "apodos": ["Los Dorados", "La Máquina Dorada"],
+      "colores": { "primario": "#000000", "secundario": "#D4AF37" }
+    },
+    "historia": "El club cusqueño que pasó de ascendido a protagonista del campeonato. Antes conocido como Real Garcilaso, sorprendió al país llegando rápidamente a finales y subcampeonatos. Se caracteriza por su buena organización, planteles competitivos y fortaleza jugando en altura. Es uno de los proyectos modernos más sólidos del fútbol peruano.",
+
+    "palmares": {
+      "titulos_primera_division": 0,
+      "titulos_internacionales": []
+    },
+    "estadio": {
+      "nombre": "Estadio Inca Garcilaso de la Vega",
+      "capacidad": 45065,
+      "altura_msnm": 3402,
+      "url_foto": "/img/equipos/estadios/garcilaso.webp"
+    },
+    "cuerpo_tecnico": { "dt": "Miguel Rondelli", "nacionalidad": "ARG" },
+    "plantilla": {
+      "arqueros": [
+        { "nombre": "Pedro Díaz", "nacionalidad": "PER" },
+        { "nombre": "Andy Vidal", "nacionalidad": "PER" },
+        { "nombre": "Alessandro Cavagna", "nacionalidad": "PER" },
+        { "nombre": "Rodolfo Anderson", "nacionalidad": "PER" }
+      ],
+      "defensas": [
+        { "nombre": "Carlos Gamarra", "nacionalidad": "PER" },
+        { "nombre": "Gu-rum Choi", "nacionalidad": "PER" },
+        { "nombre": "Aldair Fuentes", "nacionalidad": "PER" },
+        { "nombre": "José Bolívar", "nacionalidad": "PER" },
+        { "nombre": "Marlon Ruidías", "nacionalidad": "PER" },
+        { "nombre": "Álvaro Ampuero", "nacionalidad": "PER" },
+        { "nombre": "Alessandro Milesi", "nacionalidad": "PER" },
+        { "nombre": "Alex Custodio", "nacionalidad": "PER" },
+        { "nombre": "José Zevallos", "nacionalidad": "PER" },
+        { "nombre": "Julinho Astudillo", "nacionalidad": "PER" }
+      ],
+      "volantes": [
+        { "nombre": "Iván Colman", "nacionalidad": "ARG" },
+        { "nombre": "Miguel Aucca", "nacionalidad": "PER" },
+        { "nombre": "Gabriel Carabajal", "nacionalidad": "ARG" },
+        { "nombre": "Diego Soto", "nacionalidad": "PER" },
+        { "nombre": "Oswaldo Valenzuela", "nacionalidad": "PER" },
+        { "nombre": "Carlo Diez", "nacionalidad": "PER" },
+        { "nombre": "Sergio Quillahuaman", "nacionalidad": "PER" },
+        { "nombre": "Sebastián Zarabia", "nacionalidad": "PER" }
+      ],
+      "delanteros": [
+        { "nombre": "Juan Manuel Tévez", "nacionalidad": "ARG" },
+        { "nombre": "Facundo Callejo", "nacionalidad": "ARG" },
+        { "nombre": "Lucas Colitto", "nacionalidad": "ARG" },
+        { "nombre": "Nicolás Silva", "nacionalidad": "ARG" },
+        { "nombre": "Pierre da Silva", "nacionalidad": "USA" },
+        { "nombre": "José Manzaneda", "nacionalidad": "PER" },
+        { "nombre": "José Alí", "nacionalidad": "PER" },
+        { "nombre": "Joel Herrera", "nacionalidad": "PER" }
+      ]
+    }
+  },
+  {
+    "id": 8,
+    "nombre": "Deportivo Garcilaso",
+    "diminutivo": "GAR",
+    "url_foto": "/img/equipos/garcilaso.webp",
+    "identidad": {
+      "fecha_fundacion": "1957-04-13",
+      "ciudad": "Cusco",
+      "apodos": ["El Rico Garci", "El Pedacito de Cielo"],
+      "colores": { "primario": "#87CEEB", "secundario": "#FFFFFF" }
+    },
+    "historia": "El club que convirtió al clásico cusqueño en un duelo de Primera División. Fundado en 1957, pasó décadas en categorías menores hasta lograr el ascenso y consolidarse. Hoy es protagonista en el fútbol nacional y rival directo de Cienciano. Representa otra cara del Cusco: tradición educativa, crecimiento silencioso y ambición deportiva.",
+
+    "palmares": {
+      "titulos_primera_division": 0,
+      "titulos_internacionales": []
+    },
+    "estadio": {
+      "nombre": "Estadio Inca Garcilaso de la Vega",
+      "capacidad": 45065,
+      "altura_msnm": 3402,
+      "url_foto": "/img/equipos/estadios/garcilaso.webp"
+    },
+    "cuerpo_tecnico": { "dt": "Hernán Lisi", "nacionalidad": "ARG" },
+    "plantilla": {
+      "arqueros": [
+        { "nombre": "Patrick Zubczuk", "nacionalidad": "PER" },
+        { "nombre": "Juniors Barbieri", "nacionalidad": "PER" },
+        { "nombre": "Mallki Marmanillo", "nacionalidad": "PER" }
+      ],
+      "defensas": [
+        { "nombre": "Agustín Gómez", "nacionalidad": "ARG" },
+        { "nombre": "Horacio Benincasa", "nacionalidad": "PER" },
+        { "nombre": "Jefferson Portales", "nacionalidad": "PER" },
+        { "nombre": "Aldair Salazar", "nacionalidad": "PER" },
+        { "nombre": "Xavi Moreno", "nacionalidad": "PER" },
+        { "nombre": "Erick Canales", "nacionalidad": "PER" },
+        { "nombre": "Orlando Núñez", "nacionalidad": "PER" },
+        { "nombre": "Samir Villacorta", "nacionalidad": "PER" }
+      ],
+      "volantes": [
+        { "nombre": "Agustín González", "nacionalidad": "URU" },
+        { "nombre": "Claudio Torrejón", "nacionalidad": "PER" },
+        { "nombre": "Carlos Ramos", "nacionalidad": "PER" },
+        { "nombre": "Adrián Ascues", "nacionalidad": "PER" },
+        { "nombre": "Inti Garrafa", "nacionalidad": "PER" },
+        { "nombre": "Joao Mendoza", "nacionalidad": "PER" }
+      ],
+      "delanteros": [
+        { "nombre": "Agustín Graneros", "nacionalidad": "ARG" },
+        { "nombre": "Kevin Sandoval", "nacionalidad": "PER" },
+        { "nombre": "Christopher Olivares", "nacionalidad": "PER" },
+        { "nombre": "Beto da Silva", "nacionalidad": "PER" },
+        { "nombre": "Francisco Arancibia", "nacionalidad": "CHI" },
+        { "nombre": "José Sinisterra", "nacionalidad": "COL" },
+        { "nombre": "James Morales", "nacionalidad": "PER" },
+        { "nombre": "Sharif Ramírez", "nacionalidad": "PER" },
+        { "nombre": "Paulo Rodríguez", "nacionalidad": "PER" },
+        { "nombre": "Bryan Yupanqui", "nacionalidad": "PER" }
+      ]
+    }
+  },
+  {
+    "id": 9,
+    "nombre": "Deportivo Moquegua",
+    "diminutivo": "MOQ",
+    "url_foto": "/img/equipos/moquegua.webp",
+    "identidad": {
+      "fecha_fundacion": "2021-12-17",
+      "ciudad": "Moquegua",
+      "apodos": ["La Fuerza del Sur", "La Embestida del Sur"],
+      "colores": { "primario": "#FF0000", "secundario": "#FFFF00" }
+    },
+    "historia": "El club que devolvió el fútbol profesional a Moquegua. Luego de un periodo de tiempo corto (desde su creación en 2021), Deportivo Moquegua llega a la élite como símbolo de ilusión, identidad local y nuevas oportunidades. Es uno de los clubes que refrescan el campeonato y amplían el mapa futbolero del Perú. Representa el renacer del fútbol en la región Moquegua tras la desaparición de Cobresol.",
+
+    "palmares": {
+      "titulos_primera_division": 0,
+      "titulos_internacionales": []
+    },
+    "estadio": {
+      "nombre": "Estadio 25 de Noviembre",
+      "capacidad": 21000,
+      "altura_msnm": 1410,
+      "url_foto": "/img/equipos/estadios/25_de_noviembre.webp"
+    },
+    "cuerpo_tecnico": { "dt": "Jaime Serna", "nacionalidad": "PER" },
+    "plantilla": {
+      "arqueros": [
+        { "nombre": "Carlos Grados", "nacionalidad": "PER" },
+        { "nombre": "Renzo Figueroa", "nacionalidad": "PER" },
+        { "nombre": "William Falcón", "nacionalidad": "PER" },
+        { "nombre": "Thiago Bedoya", "nacionalidad": "PER" }
+      ],
+      "defensas": [
+        { "nombre": "Cristian Enciso", "nacionalidad": "PAR" },
+        { "nombre": "Kevin Moreno", "nacionalidad": "PER" },
+        { "nombre": "Brayan Rivera", "nacionalidad": "PER" },
+        { "nombre": "Juan Diego Lojas", "nacionalidad": "PER" },
+        { "nombre": "José Luis Granda", "nacionalidad": "PER" },
+        { "nombre": "Mathias Panizo", "nacionalidad": "PER" },
+        { "nombre": "Aldair Perleche", "nacionalidad": "PER" },
+        { "nombre": "Eros Montenegro", "nacionalidad": "PER" },
+        { "nombre": "Jimmy Jiménez", "nacionalidad": "PER" },
+        { "nombre": "Nicolás Amasifuén", "nacionalidad": "PER" }
+      ],
+      "volantes": [
+        { "nombre": "Cristian Mejía", "nacionalidad": "COL" },
+        { "nombre": "Nicolás Chávez", "nacionalidad": "ARG" },
+        { "nombre": "Ricardo Chipao", "nacionalidad": "PER" },
+        { "nombre": "Claudio Ramírez", "nacionalidad": "PER" },
+        { "nombre": "Diego Ramírez", "nacionalidad": "PER" }
+      ],
+      "delanteros": [
+        { "nombre": "Yorman Zapata", "nacionalidad": "COL" },
+        { "nombre": "Jeferson Collazos", "nacionalidad": "COL" },
+        { "nombre": "Bryan Angulo", "nacionalidad": "ECU" },
+        { "nombre": "Edgar Lastre", "nacionalidad": "ECU" },
+        { "nombre": "Kevin Ruiz", "nacionalidad": "PER" },
+        { "nombre": "Allonso Dávila", "nacionalidad": "PER" },
+        { "nombre": "José López", "nacionalidad": "PER" },
+        { "nombre": "Marcello Negrón", "nacionalidad": "PER" }
+      ]
+    }
+  },
+  {
+    "id": 10,
+    "nombre": "FBC Melgar",
+    "diminutivo": "MEL",
+    "url_foto": "/img/equipos/melgar.webp",
+    "identidad": {
+      "fecha_fundacion": "1915-03-25",
+      "ciudad": "Arequipa",
+      "apodos": ["El Dominó", "El León del Sur"],
+      "colores": { "primario": "#FF0000", "secundario": "#000000" }
+    },
+    "historia": "Patrimonio de Arequipa y el club de provincia más exitoso de la era moderna. Fundado en 1915 en Arequipa, Melgar es uno de los equipos más históricos del país. Ha ganado títulos nacionales y participado en torneos internacionales, consolidándose como protagonista constante. Fue campeón en el año de su centenario (2015) y su impecable organización, trabajo en menores y aprovechamiento del estadio de la UNSA como su fortín lo convierten en referencia del fútbol fuera de Lima.",
+
+    "palmares": {
+      "titulos_primera_division": 2,
+      "titulos_internacionales": []
+    },
+    "estadio": {
+      "nombre": "Estadio Monumental de la UNSA",
+      "capacidad": 40370,
+      "altura_msnm": 2368,
+      "url_foto": "/img/equipos/estadios/unsa.webp"
+    },
+    "cuerpo_tecnico": { "dt": "Juan Reynoso", "nacionalidad": "PER" },
+    "plantilla": {
+      "arqueros": [
+        { "nombre": "Carlos Cáceda", "nacionalidad": "PER" },
+        { "nombre": "Jorge Cabezudo", "nacionalidad": "PER" },
+        { "nombre": "Octavio Ramos", "nacionalidad": "PER" },
+        { "nombre": "Ricardo Farro", "nacionalidad": "PER" }
+      ],
+      "defensas": [
+        { "nombre": "Matías Lazo", "nacionalidad": "PER" },
+        { "nombre": "Jesús Alcántar", "nacionalidad": "MEX" },
+        { "nombre": "Alec Deneumostier", "nacionalidad": "PER" },
+        { "nombre": "Daniel Meneses", "nacionalidad": "PER" },
+        { "nombre": "Alejandro Ramos", "nacionalidad": "PER" },
+        { "nombre": "Nelson Cabanillas", "nacionalidad": "PER" },
+        { "nombre": "Diego Rodríguez", "nacionalidad": "PER" },
+        { "nombre": "Juan Ayqque", "nacionalidad": "PER" },
+        { "nombre": "Ángel Obando", "nacionalidad": "PER" },
+        { "nombre": "Juan Muñoz", "nacionalidad": "PER" }
+      ],
+      "volantes": [
+        { "nombre": "Javier Salas", "nacionalidad": "MEX" },
+        { "nombre": "Nicolás Quagliata", "nacionalidad": "URU" },
+        { "nombre": "Horacio Orzán", "nacionalidad": "ARG" },
+        { "nombre": "Walter Tandazo", "nacionalidad": "PER" },
+        { "nombre": "Yimy Gamero", "nacionalidad": "PER" },
+        { "nombre": "Andersson Pumacajia", "nacionalidad": "PER" },
+        { "nombre": "Gian García", "nacionalidad": "PER" },
+        { "nombre": "Cesar Doy", "nacionalidad": "PER" }
+      ],
+      "delanteros": [
+        { "nombre": "Bernardo Cuesta", "nacionalidad": "ARG" },
+        { "nombre": "Pablo Erustes", "nacionalidad": "ARG" },
+        { "nombre": "Lautaro Guzmán", "nacionalidad": "ARG" },
+        { "nombre": "Gregorio Rodríguez", "nacionalidad": "URU" },
+        { "nombre": "Cristian Bordacahar", "nacionalidad": "ARG" },
+        { "nombre": "Franco Zanelatto", "nacionalidad": "PER" },
+        { "nombre": "Jhamir D'Arrigo", "nacionalidad": "PER" },
+        { "nombre": "Jeriel de Santis", "nacionalidad": "PER" },
+        { "nombre": "Jhonny Vidales", "nacionalidad": "PER" },
+        { "nombre": "Nicolás Figueroa", "nacionalidad": "PER" },
+        { "nombre": "Abraham Aguinaga", "nacionalidad": "PER" },
+        { "nombre": "Bruno Portugal", "nacionalidad": "PER" },
+        { "nombre": "Matias Zegarra", "nacionalidad": "PER" },
+        { "nombre": "Patricio Núñez", "nacionalidad": "PER" },
+        { "nombre": "Ryu Yabiku", "nacionalidad": "PER" }
+      ]
+    }
+  },
+  {
+    "id": 11,
+    "nombre": "FC Cajamarca",
+    "diminutivo": "CAJ",
+    "url_foto": "/img/equipos/cajamarca.webp",
+    "identidad": {
+      "fecha_fundacion": "2023-01-05",
+      "ciudad": "Cajamarca",
+      "apodos": ["Azul y Oro"],
+      "colores": { "primario": "#FF8C00", "secundario": "#000000" }
+    },
+    "historia": "La nueva fuerza del fútbol cajamarquino. FC Cajamarca llega a la Liga 1 luego de un ascenso histórico, producto de una gestión moderna y ambiciosa que le permitió superar fases rápidamente. Es un club joven que simboliza crecimiento, ambición y descentralización, que busca escribir su propia historia, rivalizar la popularidad de UTC en la región y darle protagonismo nacional al fútbol de Cajamarca.",
+
+    "palmares": {
+      "titulos_primera_division": 0,
+      "titulos_internacionales": []
+    },
+    "estadio": {
+      "nombre": "Estadio Héroes de San Ramón",
+      "capacidad": 18000,
+      "altura_msnm": 2750,
+      "url_foto": "/img/equipos/estadios/heroes_san_ramon.webp"
+    },
+    "cuerpo_tecnico": { "dt": "Carlos Silvestri", "nacionalidad": "PER" },
+    "plantilla": {
+      "arqueros": [
+        { "nombre": "Samuel Aspajo", "nacionalidad": "PER" },
+        { "nombre": "Jonathan Medina", "nacionalidad": "PER" }
+      ],
+      "defensas": [
+        { "nombre": "Matías Almirón", "nacionalidad": "ARG" },
+        { "nombre": "Pablo Míguez", "nacionalidad": "URU" },
+        { "nombre": "Hairo Timaná", "nacionalidad": "PER" },
+        { "nombre": "Alexis Rodas", "nacionalidad": "PER" },
+        { "nombre": "Brian Bernaola", "nacionalidad": "PER" },
+        { "nombre": "Bruno Merino", "nacionalidad": "PER" },
+        { "nombre": "Ricardo Lagos", "nacionalidad": "PER" },
+        { "nombre": "Nilson Loyola", "nacionalidad": "PER" },
+        { "nombre": "José Gallardo", "nacionalidad": "PER" },
+        { "nombre": "Carlos Gómez", "nacionalidad": "PER" },
+        { "nombre": "Jhan Vega", "nacionalidad": "PER" }
+      ],
+      "volantes": [
+        { "nombre": "Tomás Andrade", "nacionalidad": "ARG" },
+        { "nombre": "Pablo Lavandeira", "nacionalidad": "URU" },
+        { "nombre": "Axel Moyano", "nacionalidad": "PER" },
+        { "nombre": "Enmanuel Páucar", "nacionalidad": "PER" },
+        { "nombre": "Keyvin Paico", "nacionalidad": "PER" },
+        { "nombre": "Mauricio Arrasco", "nacionalidad": "PER" },
+        { "nombre": "Patrick Alegría", "nacionalidad": "PER" }
+      ],
+      "delanteros": [
+        { "nombre": "Hernán Barcos", "nacionalidad": "ARG" },
+        { "nombre": "Arley Rodríguez", "nacionalidad": "COL" },
+        { "nombre": "Jonathan Betancourt", "nacionalidad": "ECU" },
+        { "nombre": "Brandon Palacios", "nacionalidad": "PER" },
+        { "nombre": "Sebastien Pineau", "nacionalidad": "PER" },
+        { "nombre": "Sebastián Enciso", "nacionalidad": "PER" },
+        { "nombre": "Fernando Ocas", "nacionalidad": "PER" },
+        { "nombre": "Carlos Meza", "nacionalidad": "PER" },
+        { "nombre": "Said Peralta", "nacionalidad": "PER" }
+      ]
+    }
+  },
+  {
+    "id": 12,
+    "nombre": "Juan Pablo II",
+    "diminutivo": "JPA",
+    "url_foto": "/img/equipos/jpii.webp",
+    "identidad": {
+      "fecha_fundacion": "2015-11-24",
+      "ciudad": "Chongoyape",
+      "apodos": ["Auriblancos", "JuanPablinos", "El Equipo Papal"],
+      "colores": { "primario": "#FFFF00", "secundario": "#FFFFFF" }
+    },
+    "historia": "El ascenso más inesperado de las últimas temporadas. Representando a Chongoyape, Juan Pablo II logró llegar rápidamente desde categorías menores hasta la Liga 1. Su nombre lo hace inconfundible y su historia reciente lo convierte en uno de los clubes más curiosos del campeonato. Llega sin pasado en Primera, pero con toda una historia por escribir.",
+
+    "palmares": {
+      "titulos_primera_division": 0,
+      "titulos_internacionales": []
+    },
+    "estadio": {
+      "nombre": "Complejo Deportivo Juan Pablo II",
+      "capacidad": 3000,
+      "altura_msnm": 248,
+      "url_foto": "/img/equipos/estadios/chongoyape.webp"
+    },
+    "cuerpo_tecnico": { "dt": "Marcelo Zuleta", "nacionalidad": "ARG" },
+    "plantilla": {
+      "arqueros": [
+        { "nombre": "Ismael Quispe", "nacionalidad": "PER" },
+        { "nombre": "Jorge Stucchi", "nacionalidad": "PER" },
+        { "nombre": "Matías Vega", "nacionalidad": "ARG" }
+      ],
+      "defensas": [
+        { "nombre": "Paolo Fuentes", "nacionalidad": "PER" },
+        { "nombre": "Iago Iriarte", "nacionalidad": "PER" },
+        { "nombre": "Arón Sánchez", "nacionalidad": "PER" },
+        { "nombre": "Martín Peralta", "nacionalidad": "PER" },
+        { "nombre": "Jorge Toledo", "nacionalidad": "PER" },
+        { "nombre": "Josué Canova", "nacionalidad": "PER" },
+        { "nombre": "Fabio Agurto", "nacionalidad": "PER" },
+        { "nombre": "Piero Antón", "nacionalidad": "PER" },
+        { "nombre": "Adriano Espinoza", "nacionalidad": "PER" }
+      ],
+      "volantes": [
+        { "nombre": "Christian Cueva", "nacionalidad": "PER" },
+        { "nombre": "Christian Flores", "nacionalidad": "PER" },
+        { "nombre": "Cristian García", "nacionalidad": "PER" },
+        { "nombre": "Nilton Ramirez", "nacionalidad": "PER" },
+        { "nombre": "Cristian Ramírez", "nacionalidad": "PER" },
+        { "nombre": "Gustavo Aliaga", "nacionalidad": "PER" },
+        { "nombre": "Erinson Ramírez", "nacionalidad": "PER" }
+      ],
+      "delanteros": [
+        { "nombre": "Martín Alaníz", "nacionalidad": "URU" },
+        { "nombre": "Maximiliano Juambeltz", "nacionalidad": "URU" },
+        { "nombre": "Jack Durán", "nacionalidad": "PER" },
+        { "nombre": "Héctor Bazán", "nacionalidad": "PER" },
+        { "nombre": "Adán Henricks", "nacionalidad": "PER" },
+        { "nombre": "Jossimar Serrato", "nacionalidad": "PER" },
+        { "nombre": "Jean Piere Valle", "nacionalidad": "PER" },
+        { "nombre": "Randy Ramirez", "nacionalidad": "PER" }
+      ]
+    }
+  },
+  {
+    "id": 13,
+    "nombre": "Los Chankas",
+    "diminutivo": "CHA",
+    "url_foto": "/img/equipos/chankas.webp",
+    "identidad": {
+      "fecha_fundacion": "1989-08-30",
+      "ciudad": "Andahuaylas",
+      "apodos": ["Los Guerreros Chankas", "Chankastasaray"],
+      "colores": { "primario": "#800000", "secundario": "#DAA520" }
+    },
+    "historia": "El club que puso a Apurímac en la Primera División. Conocido previamente como Cultural Santa Rosa, su presencia en Liga 1 es un logro histórico para la región, representa identidad andina, orgullo local y descentralización del fútbol peruano en beneficio del sur andino. Encarnan el espíritu guerrero de la cultura Chanka. Representan a Andahuaylas y hacen de su estadio uno de los reductos más complicados de la liga debido a la altitud y la presión de su gente.",
+
+    "palmares": {
+      "titulos_primera_division": 0,
+      "titulos_internacionales": []
+    },
+    "estadio": {
+      "nombre": "Estadio Los Chankas",
+      "capacidad": 10000,
+      "altura_msnm": 2926,
+      "url_foto": "/img/equipos/estadios/los_chankas.webp"
+    },
+    "cuerpo_tecnico": { "dt": "Walter Paolella", "nacionalidad": "ARG" },
+    "plantilla": {
+      "arqueros": [
+        { "nombre": "Franco Saravia", "nacionalidad": "PER" },
+        { "nombre": "Hairo Camacho", "nacionalidad": "PER" }
+      ],
+      "defensas": [
+        { "nombre": "Gonzalo Rizzo", "nacionalidad": "URU" },
+        { "nombre": "Carlos Pimienta", "nacionalidad": "URU" },
+        { "nombre": "Ederson Mogollón", "nacionalidad": "PER" },
+        { "nombre": "Michael Kaufman", "nacionalidad": "PER" },
+        { "nombre": "Héctor González", "nacionalidad": "PER" },
+        { "nombre": "Ayrthon Quintana", "nacionalidad": "PER" },
+        { "nombre": "Brayan Guevara", "nacionalidad": "PER" },
+        { "nombre": "David Gonzáles", "nacionalidad": "PER" }
+      ],
+      "volantes": [
+        { "nombre": "Abdiel Ayarza", "nacionalidad": "PAN" },
+        { "nombre": "Franco Torres", "nacionalidad": "ARG" },
+        { "nombre": "Kelvin Sánchez", "nacionalidad": "PER" },
+        { "nombre": "Jorge Palomino", "nacionalidad": "PER" },
+        { "nombre": "Christian Velarde", "nacionalidad": "PER" },
+        { "nombre": "Adrián Quiroz", "nacionalidad": "PER" }
+      ],
+      "delanteros": [
+        { "nombre": "Jarlín Quintero", "nacionalidad": "COL" },
+        { "nombre": "Juan Diego Ospina", "nacionalidad": "COL" },
+        { "nombre": "Janio Pósito", "nacionalidad": "PER" },
+        { "nombre": "Oshiro Takeuchi", "nacionalidad": "PER" },
+        { "nombre": "Kenyi Barrios", "nacionalidad": "PER" },
+        { "nombre": "Félix Espinoza", "nacionalidad": "PER" }
+      ]
+    }
+  },
+  {
+    "id": 14,
+    "nombre": "Sport Boys",
+    "diminutivo": "SBA",
+    "url_foto": "/img/equipos/sb.webp",
+    "identidad": {
+      "fecha_fundacion": "1927-07-28",
+      "ciudad": "Callao",
+      "apodos": ["La Misilera", "Los Rosados", "El Primer Campeón"],
+      "colores": { "primario": "#FF69B4", "secundario": "#000000" }
+    },
+    "historia": "El primer campeón del fútbol profesional peruano. Fundado en 1927, es el club más emblemático del Callao. Su historia mezcla títulos, clásicos, crisis y regresos, siempre acompañado por una hinchada fiel. Sport Boys es tradición, barrio, salsa, puerto y una identidad única dentro del fútbol peruano.",
+
+    "palmares": {
+      "titulos_primera_division": 6,
+      "titulos_internacionales": []
+    },
+    "estadio": {
+      "nombre": "Estadio Miguel Grau",
+      "capacidad": 17000,
+      "altura_msnm": 25,
+      "url_foto": "/img/equipos/estadios/miguel_grau.webp"
+    },
+    "cuerpo_tecnico": { "dt": "Jaime de la Pava", "nacionalidad": "ECU" },
+    "plantilla": {
+      "arqueros": [
+        { "nombre": "Steven Rivadeneyra", "nacionalidad": "PER" },
+        { "nombre": "Diego Melián", "nacionalidad": "URU" }
+      ],
+      "defensas": [
+        { "nombre": "Gustavo Dulanto", "nacionalidad": "PER" },
+        { "nombre": "Renzo Alfani", "nacionalidad": "ARG" },
+        { "nombre": "Hansell Riojas", "nacionalidad": "PER" },
+        { "nombre": "Anghelo Flores", "nacionalidad": "PER" },
+        { "nombre": "David Alvarado", "nacionalidad": "PER" },
+        { "nombre": "Mathías Llontop", "nacionalidad": "PER" },
+        { "nombre": "Sebastián Aranda", "nacionalidad": "PER" },
+        { "nombre": "Oslimg Mora", "nacionalidad": "PER" },
+        { "nombre": "Emilio Saba", "nacionalidad": "PER" },
+        { "nombre": "Renzo Salazar", "nacionalidad": "PER" }
+      ],
+      "volantes": [
+        { "nombre": "Federico Illanes", "nacionalidad": "ARG" },
+        { "nombre": "Hernán Da Campo", "nacionalidad": "ARG" },
+        { "nombre": "Erick Gonzales", "nacionalidad": "PER" },
+        { "nombre": "Leonel Solís", "nacionalidad": "PER" },
+        { "nombre": "Nicolas Paz", "nacionalidad": "PER" },
+        { "nombre": "Víctor Flores", "nacionalidad": "PER" },
+        { "nombre": "André Vasquez", "nacionalidad": "PER" }
+      ],
+      "delanteros": [
+        { "nombre": "Carlos López", "nacionalidad": "COL" },
+        { "nombre": "Luis Urruti", "nacionalidad": "URU" },
+        { "nombre": "Luciano Nequecaur", "nacionalidad": "ARG" },
+        { "nombre": "Percy Liza", "nacionalidad": "PER" },
+        { "nombre": "Jostin Alarcón", "nacionalidad": "PER" },
+        { "nombre": "Juan Carlos Gonzáles", "nacionalidad": "PER" },
+        { "nombre": "Juan Torres", "nacionalidad": "COL" },
+        { "nombre": "Rolando Díaz", "nacionalidad": "PER" },
+        { "nombre": "Alexis Huamán", "nacionalidad": "PER" },
+        { "nombre": "José Davey", "nacionalidad": "PER" }
+      ]
+    }
+  },
+  {
+    "id": 15,
+    "nombre": "Sport Huancayo",
+    "diminutivo": "HUA",
+    "url_foto": "/img/equipos/huancayo.webp",
+    "identidad": {
+      "fecha_fundacion": "2007-02-07",
+      "ciudad": "Huancayo",
+      "apodos": ["El Rojo Matador", "Los Huancaínos"],
+      "colores": { "primario": "#DC143C", "secundario": "#008000" }
+    },
+    "historia": "El club que convirtió a Huancayo en una plaza estable de Liga 1. Desde su ascenso se ha mantenido como un equipo competitivo, logrando incluso clasificaciones internacionales. Se caracteriza por su orden, intensidad y fortaleza en altura. Sport Huancayo es sinónimo de regularidad. Representa a la Incontrastable, localidad difícil para cualquier rival visitante.",
+
+    "palmares": {
+      "titulos_primera_division": 0,
+      "titulos_internacionales": []
+    },
+    "estadio": {
+      "nombre": "Estadio IPD de Huancayo",
+      "capacidad": 20000,
+      "altura_msnm": 3259,
+      "url_foto": "/img/equipos/estadios/huancayo.webp"
+    },
+    "cuerpo_tecnico": { "dt": "Roberto Mosquera", "nacionalidad": "PER" },
+    "plantilla": {
+      "arqueros": [
+        { "nombre": "Ángel Zamudio", "nacionalidad": "PER" },
+        { "nombre": "Diego Campos", "nacionalidad": "PER" },
+        { "nombre": "Aldair Ccorahua", "nacionalidad": "PER" }
+      ],
+      "defensas": [
+        { "nombre": "Yonatan Murillo", "nacionalidad": "COL" },
+        { "nombre": "Jimmy Valoyes", "nacionalidad": "COL" },
+        { "nombre": "Marcelo Gaona", "nacionalidad": "PER" },
+        { "nombre": "Juan Barreda", "nacionalidad": "PER" },
+        { "nombre": "Luis Torres", "nacionalidad": "PER" },
+        { "nombre": "Hugo Ángeles", "nacionalidad": "PER" },
+        { "nombre": "Axel Chávez", "nacionalidad": "PER" },
+        { "nombre": "Diego Mesones", "nacionalidad": "PER" },
+        { "nombre": "Jeremy Rostaing", "nacionalidad": "PER" },
+        { "nombre": "Jean Franco Falconí", "nacionalidad": "PER" }
+      ],
+      "volantes": [
+        { "nombre": "Javier Sanguinetti", "nacionalidad": "ARG" },
+        { "nombre": "Ricardo Salcedo", "nacionalidad": "PER" },
+        { "nombre": "Diego Carabaño", "nacionalidad": "PER" },
+        { "nombre": "Edu Villar", "nacionalidad": "PER" },
+        { "nombre": "Leonardo Villar", "nacionalidad": "PER" },
+        { "nombre": "José Meza", "nacionalidad": "PER" }
+      ],
+      "delanteros": [
+        { "nombre": "Yorleys Mena", "nacionalidad": "COL" },
+        { "nombre": "Nahuel Luján", "nacionalidad": "ARG" },
+        { "nombre": "Ronal Huaccha", "nacionalidad": "PER" },
+        { "nombre": "Piero Magallanes", "nacionalidad": "PER" },
+        { "nombre": "Jeremy Canela", "nacionalidad": "PER" },
+        { "nombre": "Rick Campodónico", "nacionalidad": "PER" },
+        { "nombre": "Cristian Mendoza", "nacionalidad": "PER" },
+        { "nombre": "Carlos Jiménez", "nacionalidad": "PER" },
+        { "nombre": "Franco Caballero", "nacionalidad": "PER" },
+        { "nombre": "Juan Martínez", "nacionalidad": "PER" }
+      ]
+    }
+  },
+  {
+    "id": 16,
+    "nombre": "Sporting Cristal",
+    "diminutivo": "CSC",
+    "url_foto": "/img/equipos/sc.webp",
+    "identidad": {
+      "fecha_fundacion": "1955-12-13",
+      "ciudad": "Lima",
+      "apodos": ["La Máquina Celeste", "La Fuerza Ganadora", "Los Cerveceros"],
+      "colores": { "primario": "#87CEEB", "secundario": "#FFFFFF" }
+    },
+    "historia": "El club que nació campeón. Fundado en 1955, es uno de los clubes más ganadores del Perú. La 'Raza Celeste' se distingue por su estilo ofensivo, su planificación, su constante formación de futbolistas y exportación de talento. Es el club peruano con más presencias en Copa Libertadores, fue el primero en el país en conseguir un tricampeonato en la era profesional y año tras año compite a nivel local por el título de la Liga 1.",
+
+    "palmares": {
+      "titulos_primera_division": 20,
+      "titulos_internacionales": []
+    },
+    "estadio": {
+      "nombre": "Estadio Alberto Gallardo",
+      "capacidad": 11600,
+      "altura_msnm": 160,
+      "url_foto": "/img/equipos/estadios/gallardo.webp"
+    },
+    "cuerpo_tecnico": { "dt": "Paulo Autuori", "nacionalidad": "BRA" },
+    "plantilla": {
+      "arqueros": [
+        { "nombre": "Diego Enríquez", "nacionalidad": "PER" },
+        { "nombre": "Renato Solís", "nacionalidad": "PER" },
+        { "nombre": "César Bautista", "nacionalidad": "PER" }
+      ],
+      "defensas": [
+        { "nombre": "Luis Abram", "nacionalidad": "PER" },
+        { "nombre": "Miguel Araujo", "nacionalidad": "PER" },
+        { "nombre": "Rafael Lutiger", "nacionalidad": "PER" },
+        { "nombre": "Cristiano", "nacionalidad": "BRA" },
+        { "nombre": "Leandro Sosa", "nacionalidad": "URU" },
+        { "nombre": "Alejandro Pósito", "nacionalidad": "PER" },
+        { "nombre": "Flavio Alcedo", "nacionalidad": "PER" },
+        { "nombre": "Leo Díaz", "nacionalidad": "PER" },
+        { "nombre": "Quembol Guadalupe", "nacionalidad": "PER" },
+        { "nombre": "Juan González", "nacionalidad": "PER" },
+        { "nombre": "Fabrizio Lora", "nacionalidad": "PER" },
+        { "nombre": "Duham Ballumbrosio", "nacionalidad": "PER" }
+      ],
+      "volantes": [
+        { "nombre": "Yoshimar Yotún", "nacionalidad": "PER" },
+        { "nombre": "Christofer Gonzales", "nacionalidad": "PER" },
+        { "nombre": "Gustavo Cazonatti", "nacionalidad": "BRA" },
+        { "nombre": "Santiago González", "nacionalidad": "ARG" },
+        { "nombre": "Catriel Cabellos", "nacionalidad": "PER" },
+        { "nombre": "Martín Távara", "nacionalidad": "PER" },
+        { "nombre": "Cristian Benavente", "nacionalidad": "PER" },
+        { "nombre": "Gabriel", "nacionalidad": "BRA" },
+        { "nombre": "Ian Wisdom", "nacionalidad": "PER" },
+        { "nombre": "Yamir del Valle", "nacionalidad": "PER" }
+      ],
+      "delanteros": [
+        { "nombre": "Felipe Vizeu", "nacionalidad": "BRA" },
+        { "nombre": "Luis Iberico", "nacionalidad": "PER" },
+        { "nombre": "Írven Ávila", "nacionalidad": "PER" },
+        { "nombre": "Maxloren Castro", "nacionalidad": "PER" },
+        { "nombre": "Diego Otoya", "nacionalidad": "PER" },
+        { "nombre": "Sebastián Sánchez", "nacionalidad": "PER" },
+        { "nombre": "Jair Moretti", "nacionalidad": "PER" },
+        { "nombre": "Mateo Rodríguez", "nacionalidad": "PER" }
+      ]
+    }
+  },
+  {
+    "id": 17,
+    "nombre": "Universitario",
+    "diminutivo": "UNI",
+    "url_foto": "/img/equipos/u.webp",
+    "identidad": {
+      "fecha_fundacion": "1924-08-07",
+      "ciudad": "Lima",
+      "apodos": ["Los Cremas", "La U", "Merengues"],
+      "colores": { "primario": "#FFFDD0", "secundario": "#8B0000" }
+    },
+    "historia": "El club más campeón en la historia del fútbol peruano. Fundado en 1924, es uno de los pilares del deporte nacional. Protagonista del clásico peruano, ha construido su legado con títulos, ídolos y una conexión emocional única con su hinchada. Universitario es tradición, presión popular y competitividad.",
+
+    "palmares": {
+      "titulos_primera_division": 29,
+      "titulos_internacionales": []
+    },
+    "estadio": {
+      "nombre": "Estadio Monumental",
+      "capacidad": 80093,
+      "altura_msnm": 135,
+      "url_foto": "/img/equipos/estadios/monumental.webp"
+    },
+    "cuerpo_tecnico": { "dt": "Javier Rabanal", "nacionalidad": "ESP" },
+    "plantilla": {
+      "arqueros": [
+        { "nombre": "Diego Romero", "nacionalidad": "PER" },
+        { "nombre": "Miguel Vargas", "nacionalidad": "CHI" },
+        { "nombre": "Jhefferson Rodríguez", "nacionalidad": "PER" }
+      ],
+      "defensas": [
+        { "nombre": "Williams Riveros", "nacionalidad": "PAR" },
+        { "nombre": "Matías Di Benedetto", "nacionalidad": "ARG" },
+        { "nombre": "Anderson Santamaría", "nacionalidad": "PER" },
+        { "nombre": "Caín Fara", "nacionalidad": "ARG" },
+        { "nombre": "José Carabalí", "nacionalidad": "ECU" },
+        { "nombre": "Aldo Corzo", "nacionalidad": "PER" },
+        { "nombre": "César Inga", "nacionalidad": "PER" },
+        { "nombre": "Paolo Reyna", "nacionalidad": "PER" },
+        { "nombre": "Hugo Ancajima", "nacionalidad": "PER" },
+        { "nombre": "Rafael Guzmán", "nacionalidad": "PER" }
+      ],
+      "volantes": [
+        { "nombre": "Jairo Concha", "nacionalidad": "PER" },
+        { "nombre": "Jesús Castillo", "nacionalidad": "PER" },
+        { "nombre": "Martín Pérez Guedes", "nacionalidad": "PER" },
+        { "nombre": "Horacio Calcaterra", "nacionalidad": "PER" },
+        { "nombre": "Jorge Murrugarra", "nacionalidad": "PER" },
+        { "nombre": "Yuriel Celi", "nacionalidad": "PER" },
+        { "nombre": "Esteban Cruz", "nacionalidad": "PER" },
+        { "nombre": "Sebastian Flores", "nacionalidad": "PER" }
+      ],
+      "delanteros": [
+        { "nombre": "Sekou Gassama", "nacionalidad": "SEN" },
+        { "nombre": "Edison Flores", "nacionalidad": "PER" },
+        { "nombre": "Andy Polo", "nacionalidad": "PER" },
+        { "nombre": "Álex Valera", "nacionalidad": "PER" },
+        { "nombre": "José Rivera", "nacionalidad": "PER" },
+        { "nombre": "Héctor Fértoli", "nacionalidad": "ARG" },
+        { "nombre": "Rodrigo Dioses", "nacionalidad": "PER" }
+      ]
+    }
+  },
+  {
+    "id": 18,
+    "nombre": "UTC",
+    "diminutivo": "UTC",
+    "url_foto": "/img/equipos/utc.webp",
+    "identidad": {
+      "fecha_fundacion": "1964-07-14",
+      "ciudad": "Cajamarca",
+      "apodos": ["El Gavilán del Norte", "Los Cremas del Norte"],
+      "colores": { "primario": "#FFFDD0", "secundario": "#000000" }
+    },
+    "historia": "El equipo que consolidó a Cajamarca en el fútbol de Primera. Con una larga historia regional, UTC logró establecerse en la Liga 1 y participar en torneos internacionales. Se caracteriza por su fortaleza en casa y su fuerte vínculo con la ciudad. Es uno de los principales representantes del norte andino.",
+
+    "palmares": {
+      "titulos_primera_division": 0,
+      "titulos_internacionales": []
+    },
+    "estadio": {
+      "nombre": "Estadio Héroes de San Ramón",
+      "capacidad": 18000,
+      "altura_msnm": 2750,
+      "url_foto": "/img/equipos/estadios/heroes_san_ramon.webp"
+    },
+    "cuerpo_tecnico": { "dt": "Carlos Bustos", "nacionalidad": "ARG" },
+    "plantilla": {
+      "arqueros": [
+        { "nombre": "Ángelo Campos", "nacionalidad": "PER" },
+        { "nombre": "Ignacio Barrios", "nacionalidad": "URU" },
+        { "nombre": "Ricardo Bettocchi", "nacionalidad": "PER" },
+        { "nombre": "Fernando Sánchez", "nacionalidad": "PER" }
+      ],
+      "defensas": [
+        { "nombre": "Bruno Duarte", "nacionalidad": "ARG" },
+        { "nombre": "Leonardo Rugel", "nacionalidad": "PER" },
+        { "nombre": "Manuel Ganoza", "nacionalidad": "PER" },
+        { "nombre": "Francesco Cavagna", "nacionalidad": "PER" },
+        { "nombre": "Dylan Caro", "nacionalidad": "PER" },
+        { "nombre": "Joaquín Aguirre", "nacionalidad": "PER" },
+        { "nombre": "Junior Huerto", "nacionalidad": "PER" },
+        { "nombre": "Gilmar Paredes", "nacionalidad": "PER" },
+        { "nombre": "Luis Garro", "nacionalidad": "PER" }
+      ],
+      "volantes": [
+        { "nombre": "Arquímedes Figuera", "nacionalidad": "VEN" },
+        { "nombre": "Marcos Lliuya", "nacionalidad": "PER" },
+        { "nombre": "Piero Serra", "nacionalidad": "PER" },
+        { "nombre": "Luis Arce", "nacionalidad": "PER" },
+        { "nombre": "David Dioses", "nacionalidad": "PER" },
+        { "nombre": "Joshua Cantt", "nacionalidad": "PER" }
+      ],
+      "delanteros": [
+        { "nombre": "Marlon de Jesús", "nacionalidad": "ECU" },
+        { "nombre": "Adolfo Muñoz", "nacionalidad": "ECU" },
+        { "nombre": "David Camacho", "nacionalidad": "COL" },
+        { "nombre": "Alexander Succar", "nacionalidad": "PER" },
+        { "nombre": "Michel Rasmussen", "nacionalidad": "PER" },
+        { "nombre": "Jhosep Núñez", "nacionalidad": "PER" },
+        { "nombre": "Santiago Gálvez", "nacionalidad": "PER" },
+        { "nombre": "Maycol Infante", "nacionalidad": "PER" }
+      ]
+    }
+  }
+]
