@@ -287,6 +287,7 @@ export default function JuegoElOnceLeyendas() {
   };
 
   const handleRendirse = () => {
+      reiniciarJuegoTotalmente()
       setEstadoJuego('perdido');
   };
 
@@ -300,10 +301,11 @@ export default function JuegoElOnceLeyendas() {
       localStorage.removeItem('elOnceLeyendas_tiempo');
       localStorage.removeItem('elOnceLeyendas_formacion');
       localStorage.removeItem('juegoIniciadoElOnceLeyendas');
-
-      // 3. Recargar página para limpiar estado de React y volver al inicio
-      window.location.reload();
   };
+
+  const volver = () => {
+    window.location.reload();
+  }
 
   // --- RENDERIZADO: PANTALLA FIN DE JUEGO ---
   if (estadoJuego !== 'jugando') {
@@ -325,7 +327,7 @@ export default function JuegoElOnceLeyendas() {
                       
                       <button 
                           className="btn btn-primary mt-3"
-                          onClick={reiniciarJuegoTotalmente} // Llama a la limpieza total
+                          onClick={volver} // Llama a la limpieza total
                       >
                           Jugar de Nuevo
                       </button>

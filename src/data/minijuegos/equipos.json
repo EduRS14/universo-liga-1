@@ -3,6 +3,7 @@
         "id": 1,
         "nombre": "Club Alianza Lima",
         "url_foto": "/img/equipos/alima.webp",
+        "multiplicador": 1.0,
         "torneos": [
             {
                 "id_torneo": 2,
@@ -181,6 +182,7 @@
         "id": 2,
         "nombre": "Universitario de Deportes",
         "url_foto": "/img/equipos/u.webp",
+        "multiplicador": 1.0,
         "torneos": [
             {
                 "id_torneo": 2,
@@ -341,6 +343,7 @@
         "id": 3,
         "nombre": "Club Sporting Cristal",
         "url_foto": "/img/equipos/sc.webp",
+        "multiplicador": 1.0,
         "torneos": [
             {
                 "id_torneo": 2,
@@ -469,6 +472,7 @@
         "id": 4,
         "nombre": "FBC Melgar",
         "url_foto": "/img/equipos/melgar.webp",
+        "multiplicador": 1.0,
         "torneos": [
             {
                 "id_torneo": 2,
@@ -565,6 +569,7 @@
         "id": 5,
         "nombre": "Sport Boys Association",
         "url_foto": "/img/equipos/sb.webp",
+        "multiplicador": 1.5,
         "torneos": [
             {
                 "id_torneo": 2,
@@ -687,6 +692,7 @@
         "id": 6,
         "nombre": "Club Cienciano",
         "url_foto": "/img/equipos/cienciano.webp",
+        "multiplicador": 1.5,
         "torneos": [
             {
                 "id_torneo": 2,
@@ -805,6 +811,7 @@
         "id": 7,
         "nombre": "Universidad San Martín de Porres",
         "url_foto": "/img/equipos/usmp.webp",
+        "multiplicador": 2.0,
         "torneos": [
             {
                 "id_torneo": 2,
@@ -894,6 +901,7 @@
         "id": 8,
         "nombre": "Club Juan Aurich",
         "url_foto": "/img/equipos/aurich.webp",
+        "multiplicador": 2.0,
         "torneos": [
             {
                 "id_torneo": 2,
@@ -1016,6 +1024,7 @@
         "id": 9,
         "nombre": "Universidad César Vallejo",
         "url_foto": "/img/equipos/ucv.webp",
+        "multiplicador": 2.0,
         "torneos": [
             {
                 "id_torneo": 2,
@@ -1129,6 +1138,7 @@
         "id": 10,
         "nombre": "Sport Huancayo",
         "url_foto": "/img/equipos/huancayo.webp",
+        "multiplicador": 1.5,
         "torneos": [
             {
                 "id_torneo": 2,
@@ -1208,6 +1218,7 @@
         "id": 11,
         "nombre": "Alianza Atlético Sullana",
         "url_foto": "/img/equipos/aas.webp",
+        "multiplicador": 1.5,
         "torneos": [
             {
                 "id_torneo": 2,
@@ -1292,6 +1303,7 @@
         "id": 12,
         "nombre": "José Gálvez FBC",
         "url_foto": "/img/equipos/jg.webp",
+        "multiplicador": 3.0,
         "torneos": [
             {
                 "id_torneo": 2,
@@ -1379,6 +1391,7 @@
         "id": 13,
         "nombre": "CD León de Huánuco",
         "url_foto": "/img/equipos/lh.webp",
+        "multiplicador": 3.0,
         "torneos": [
             {
                 "id_torneo": 2,
@@ -1449,6 +1462,7 @@
         "id": 14,
         "nombre": "Total Chalaco",
         "url_foto": "/img/equipos/tch.webp",
+        "multiplicador": 3.0,
         "torneos": [
             {
                 "id_torneo": 2,
@@ -1486,6 +1500,7 @@
         "id": 15,
         "nombre": "Ayacucho FC (Ex Inti Gas)",
         "url_foto": "/img/equipos/ayacucho.webp",
+        "multiplicador": 2.0,
         "torneos": [
             {
                 "id_torneo": 2,
@@ -1574,6 +1589,7 @@
         "id": 16,
         "nombre": "Colegio Nacional Iquitos (CNI)",
         "url_foto": "/img/equipos/cni.webp",
+        "multiplicador": 3.0,
         "torneos": [
             {
                 "id_torneo": 2,
@@ -1606,6 +1622,7 @@
         "id": 17,
         "nombre": "CD Unión Comercio",
         "url_foto": "/img/equipos/uc.webp",
+        "multiplicador": 2.0,
         "torneos": [
             {
                 "id_torneo": 2,
@@ -1681,6 +1698,7 @@
         "id": 18,
         "nombre": "Cobresol FBC",
         "url_foto": "/img/equipos/cobresol.webp",
+        "multiplicador": 3.0,
         "torneos": [
             {
                 "id_torneo": 2,
@@ -1723,6 +1741,7 @@
         "id": 19,
         "nombre": "Cusco FC (Ex Real Garcilaso)",
         "url_foto": "/img/equipos/cusco.webp",
+        "multiplicador": 1.5,
         "torneos": [
             {
                 "id_torneo": 2,
@@ -1820,6 +1839,7 @@
         "id": 20,
         "nombre": "Pacífico FC",
         "url_foto": "/img/equipos/pacifico.webp",
+        "multiplicador": 3.0,
         "torneos": [
             {
                 "id_torneo": 2,
@@ -1857,6 +1877,7 @@
         "id": 21,
         "nombre": "Universidad Técnica de Cajamarca (UTC)",
         "url_foto": "/img/equipos/utc.webp",
+        "multiplicador": 2.0,
         "torneos": [
             {
                 "id_torneo": 2,
@@ -1941,6 +1962,7 @@
         "id": 22,
         "nombre": "CD San Simón",
         "url_foto": "/img/equipos/ss.webp",
+        "multiplicador": 3.0,
         "torneos": [
             {
                 "id_torneo": 2,
@@ -1978,6 +2000,7 @@
         "id": 23,
         "nombre": "CCD Los Caimanes",
         "url_foto": "/img/equipos/caimanes.webp",
+        "multiplicador": 3.0,
         "torneos": [
             {
                 "id_torneo": 2,
@@ -2033,6 +2056,7 @@
         "id": 24,
         "nombre": "Deportivo Municipal",
         "url_foto": "/img/equipos/municipal.webp",
+        "multiplicador": 2.0,
         "torneos": [
             {
                 "id_torneo": 2,
@@ -2159,6 +2183,7 @@
         "id": 25,
         "nombre": "Sport Loreto",
         "url_foto": "/img/equipos/loreto.webp",
+        "multiplicador": 3.0,
         "torneos": [
             {
                 "id_torneo": 2,
@@ -2205,6 +2230,7 @@
         "id": 26,
         "nombre": "Defensor La Bocana",
         "url_foto": "/img/equipos/dlb.webp",
+        "multiplicador": 3.0,
         "torneos": [
             {
                 "id_torneo": 2,
@@ -2233,6 +2259,7 @@
         "id": 27,
         "nombre": "Comerciantes Unidos",
         "url_foto": "/img/equipos/comerciantes.webp",
+        "multiplicador": 2.0,
         "torneos": [
             {
                 "id_torneo": 2,
@@ -2296,6 +2323,7 @@
         "id": 28,
         "nombre": "Rosario FC (Ex Sport Rosario)",
         "url_foto": "/img/equipos/rosario.webp",
+        "multiplicador": 3.0,
         "torneos": [
             {
                 "id_torneo": 2,
@@ -2324,6 +2352,7 @@
         "id": 29,
         "nombre": "Academia Deportiva Cantolao",
         "url_foto": "/img/equipos/cantolao.webp",
+        "multiplicador": 2.0,
         "torneos": [
             {
                 "id_torneo": 2,
@@ -2378,6 +2407,7 @@
         "id": 30,
         "nombre": "Deportivo Binacional",
         "url_foto": "/img/equipos/binacional.webp",
+        "multiplicador": 2.0,
         "torneos": [
             {
                 "id_torneo": 2,
@@ -2463,6 +2493,7 @@
         "id": 31,
         "nombre": "Alianza Universidad",
         "url_foto": "/img/equipos/au.webp",
+        "multiplicador": 2.0,
         "torneos": [
             {
                 "id_torneo": 2,
@@ -2525,6 +2556,7 @@
         "id": 32,
         "nombre": "Carlos A. Mannucci",
         "url_foto": "/img/equipos/mannucci.webp",
+        "multiplicador": 2.0,
         "torneos": [
             {
                 "id_torneo": 2,
@@ -2595,6 +2627,7 @@
         "id": 33,
         "nombre": "Pirata FC",
         "url_foto": "/img/equipos/pirata.webp",
+        "multiplicador": 3.0,
         "torneos": [
             {
                 "id_torneo": 2,
@@ -2623,6 +2656,7 @@
         "id": 34,
         "nombre": "FC Carlos Stein",
         "url_foto": "/img/equipos/stein.webp",
+        "multiplicador": 3.0,
         "torneos": [
             {
                 "id_torneo": 2,
@@ -2668,6 +2702,7 @@
         "id": 35,
         "nombre": "Club Atlético Grau",
         "url_foto": "/img/equipos/ag.webp",
+        "multiplicador": 2.0,
         "torneos": [
             {
                 "id_torneo": 2,
@@ -2773,6 +2808,7 @@
         "id": 36,
         "nombre": "Deportivo Llacuabamba",
         "url_foto": "/img/equipos/llacuabamba.webp",
+        "multiplicador": 3.0,
         "torneos": [
             {
                 "id_torneo": 2,
@@ -2810,6 +2846,7 @@
         "id": 37,
         "nombre": "Asociación Deportiva Tarma (ADT)",
         "url_foto": "/img/equipos/adt.webp",
+        "multiplicador": 2.0,
         "torneos": [
             {
                 "id_torneo": 2,
@@ -2851,6 +2888,7 @@
         "id": 38,
         "nombre": "Deportivo Garcilaso",
         "url_foto": "/img/equipos/garcilaso.webp",
+        "multiplicador": 2.0,
         "torneos": [
             {
                 "id_torneo": 2,
@@ -2892,6 +2930,7 @@
         "id": 39,
         "nombre": "CD Los Chankas (Ex Cultural Santa Rosa)",
         "url_foto": "/img/equipos/chankas.webp",
+        "multiplicador": 2.0,
         "torneos": [
             {
                 "id_torneo": 2,
@@ -2933,6 +2972,7 @@
         "id": 40,
         "nombre": "Club Juan Pablo II College",
         "url_foto": "/img/equipos/jpii.webp",
+        "multiplicador": 3.0,
         "torneos": [
             {
                 "id_torneo": 2,
@@ -2961,6 +3001,7 @@
         "id": 41,
         "nombre": "CD Moquegua",
         "url_foto": "/img/equipos/moquegua.webp",
+        "multiplicador": 3.0,
         "torneos": [
             {
                 "id_torneo": 2,
@@ -2989,6 +3030,7 @@
         "id": 42,
         "nombre": "FC Cajamarca",
         "url_foto": "/img/equipos/cajamarca.webp",
+        "multiplicador": 3.0,
         "torneos": [
             {
                 "id_torneo": 2,

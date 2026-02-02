@@ -312,6 +312,7 @@ export default function JuegoElOnceActualidad() {
   };
 
   const handleRendirse = () => {
+     reiniciarJuegoTotalmente()
       setEstadoJuego('perdido');
   };
 
@@ -325,10 +326,11 @@ export default function JuegoElOnceActualidad() {
       localStorage.removeItem('elOnceActualidad_tiempo');
       localStorage.removeItem('elOnceActualidad_formacion');
       localStorage.removeItem('juegoIniciadoElOnceActualidad');
-
-      // 3. Recargar página para limpiar estado de React y volver al inicio
-      window.location.reload();
   };
+
+  const volver = () => {
+    window.location.reload();
+  }
 
   // --- RENDERIZADO: PANTALLA FIN DE JUEGO ---
   if (estadoJuego !== 'jugando') {
@@ -350,7 +352,7 @@ export default function JuegoElOnceActualidad() {
                       
                       <button 
                           className="btn btn-primary mt-3"
-                          onClick={reiniciarJuegoTotalmente} // Llama a la limpieza total
+                          onClick={volver} // Llama a la limpieza total
                       >
                           Jugar de Nuevo
                       </button>

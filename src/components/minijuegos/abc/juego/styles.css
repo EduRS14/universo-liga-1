@@ -1,0 +1,295 @@
+/* src/styles/ElABC.css */
+
+/* --- Contenedor Principal --- */
+.abc-container {
+  width: 100%;
+  max-width: 40vw;
+  margin: 4rem auto;
+  font-family: system-ui, -apple-system, sans-serif;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* --- HUD (Score y Progreso) --- */
+.reto-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+}
+
+.badge-puntaje, .badge-progreso {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 8px 16px;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  letter-spacing: 0.5px;
+}
+
+.badge-puntaje {
+  color: #fbbf24; /* Dorado */
+  border-color: #fbbf24;
+}
+
+/* --- Tarjeta del Desafío (Letra + Equipo) --- */
+.reto-card {
+  --glow-color: #0ea5e9;
+  background: linear-gradient(90deg,rgba(0, 25, 38, 1) 0%, rgba(10, 0, 64, 1) 50%, rgba(33, 0, 0, 1) 100%);
+  border: 1px solid #333;
+  border-radius: 24px;
+  padding: 2.5rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.5rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.6), 0 0 10px var(--glow-color); /* Brillo externo al hover */
+  transition: transform 0.3s ease;
+}
+
+.contenedor-equipo{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Efecto sutil de brillo en la tarjeta */
+.reto-card::after {
+  content: '';
+  position: absolute;
+  background: linear-gradient(90deg, transparent, var(--glow-color), transparent);
+  top: -2px; left: 20%; right: 20%; height: 4px;
+}
+
+.letra-grande {
+  font-size: 6rem;
+  line-height: 1;
+  font-weight: 900;
+  color: #fff;
+  text-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+  margin-bottom: -10px; /* Ajuste visual */
+}
+
+.equipo-escudo {
+  width: 140px;
+  height: 140px;
+  object-fit: contain; /* Mantiene la proporción del logo */
+  filter: drop-shadow(0 5px 15px rgba(0,0,0,0.6));
+  z-index: 1;
+}
+
+.equipo-nombre {
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 0.5rem;
+  color: #e2e8f0;
+}
+
+/* Badge de Dificultad */
+.badge-dificultad {
+  margin-top: 5px;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 4px 10px;
+  border-radius: 4px;
+  background: rgba(239, 68, 68, 0.2); /* Rojo suave */
+  color: #fca5a5;
+  border: 1px solid rgba(239, 68, 68, 0.5);
+}
+
+.input-apellido {
+  flex: 1;
+  background: #121212;
+  border: 2px solid #333;
+  color: #fff;
+  padding: 16px;
+  font-size: 1.1rem;
+  border-radius: 12px;
+  text-align: center;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.input-apellido:focus {
+  border-color: #0ea5e9; /* Azul focus */
+}
+
+.btn-enviar, .btn-rendirse, .btn-saltar {
+  background: #0ea5e9;
+  color: white;
+  border: none;
+  width: 100%;
+  height: 4rem;
+  border-radius: 12px;
+  font-weight: 700;
+  font-size: 0.8rem;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.1s;
+}
+
+/* .btn-enviar{
+  padding: 0 2rem;
+} */
+
+.btn-saltar, .btn-rendirse {
+  background: #6b7280;
+}
+
+.btn-enviar:hover {
+  background: #0284c7;
+}
+
+.btn-rendirse:hover, .btn-saltar:hover {
+  background: #4b5563;
+}
+
+.btn-enviar:not(:disabled):active, 
+.btn-rendirse:not(:disabled):active, 
+.btn-saltar:not(:disabled):active {
+  transform: scale(0.96);
+}
+
+.btn-saltar:disabled, .btn-rendirse:disabled {
+  background: #374151;
+  cursor: not-allowed;
+}
+
+/* --- Mensajes de Feedback --- */
+.feedback-msg {
+  padding: 1rem;
+  border-radius: 12px;
+  text-align: center;
+  font-weight: 600;
+  animation: popIn 0.3s ease-out;
+}
+
+.feedback-msg.exito {
+  background: rgba(34, 197, 94, 0.15);
+  color: #4ade80;
+  border: 1px solid rgba(34, 197, 94, 0.3);
+}
+
+.feedback-msg.error {
+  background: rgba(239, 68, 68, 0.15);
+  color: #f87171;
+  border: 1px solid rgba(239, 68, 68, 0.3);
+}
+
+/* Pantalla final */
+.puntaje-final {
+  font-size: 4rem;
+  font-weight: 800;
+  color: #fbbf24;
+  margin: 2rem 0;
+  text-align: center;
+}
+
+.juego-container{
+  display: flex; 
+  flex-direction: column; 
+  align-items: center;
+  margin: 3rem 0;
+  min-height: 70vh;
+}
+
+.contenedor-menu-fin{
+  background-color: rgba(0,0,0,0.8);
+  padding: 2rem;
+  border-radius: 15px;
+}
+
+.texto-estado-juego{
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.texto-explicacion-estado{
+  color: white;
+  font-size: 1.2rem;
+}
+
+@keyframes popIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsivo para móviles */
+@media (max-width: 768px) {
+
+  .abc-container {
+    max-width: 80vw;
+    margin: 1.5rem auto;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .badge-puntaje, .badge-progreso {
+    padding: 0.3rem 0.6rem;
+    font-size: 0.7rem;
+  }
+
+  .reto-card {
+    padding: 1rem;
+    gap: 1rem;
+  }
+  
+  .letra-grande {
+    font-size: 2rem;
+  }
+
+  .equipo-escudo { 
+    width: 70px; 
+    height: 70px; 
+  }
+
+  .equipo-nombre {
+    font-size: 1rem;
+  }
+
+  .badge-dificultad {
+    font-size: 0.6rem;
+    padding: 2px 6px;
+  }
+
+  .input-apellido {
+    padding: 10px;
+    font-size: 0.9rem;
+    margin-bottom: 1.2rem;
+  }
+
+  .juego-container{
+    min-height: 60vh;
+  }
+  .contenedor-menu-fin{
+    width: 80%;
+  }
+  .texto-estado-juego{
+    font-size: 1.2rem;
+  }
+  .texto-explicacion-estado{
+    font-size: 0.9rem;
+  }
+
+  .btn-enviar, .btn-rendirse, .btn-saltar {
+    height: 2.7rem;
+    font-size: 0.7rem;
+    margin-bottom: 1.2rem;
+  }
+
+  .feedback-msg{
+    font-size: 0.9rem;
+    padding: 0 0.7rem 1.2rem 0.7rem;
+  }
+}

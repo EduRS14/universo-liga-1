@@ -1,0 +1,135 @@
+/* src/styles/ModalSeleccion.css */
+
+/* Fondo oscuro que cubre toda la pantalla */
+.modal-overlay {
+  position: fixed;
+  top: 0; 
+  left: 0; 
+  right: 0; 
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.85); /* Muy oscuro para enfocar */
+  backdrop-filter: blur(4px); /* Efecto borroso moderno */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  padding: 20px;
+  animation: fadeIn 0.2s ease-out;
+}
+
+/* Caja del contenido */
+.modal-content {
+  background: #1a1a1a;
+  border: 1px solid #444;
+  border-radius: 16px;
+  width: 100%;
+  max-width: 650px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  max-height: 90vh; /* Para que no se salga de la pantalla en móviles */
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
+}
+
+.modal-content h3 {
+  margin: 0 0 0.5rem 0;
+  color: #fff;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.modal-content p {
+  color: #aaa;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-size: 0.95rem;
+}
+
+/* Grilla de candidatos */
+.grid-jugadores {
+  display: grid;
+  /* Crea columnas automáticas, mínimo 110px de ancho */
+  grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
+  gap: 15px;
+  overflow-y: auto; /* Scroll si hay muchos */
+  padding: 5px; /* Espacio para el outline del focus */
+}
+
+/* Tarjeta individual del jugador en el modal */
+.card-candidato {
+  background: #262626;
+  border-radius: 12px;
+  padding: 15px 10px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all 0.2s ease;
+  border: 2px solid transparent;
+}
+
+.card-candidato:hover {
+  background: #333;
+  transform: translateY(-4px);
+  border-color: #0ea5e9; /* Borde azul al pasar el mouse */
+}
+
+/* Imagen circular */
+.img-candidato {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  object-fit: cover;
+  background-color: #444; /* Fondo mientras carga o si es PNG transparente */
+  margin-bottom: 10px;
+  border: 2px solid #555;
+}
+
+.nombre-candidato {
+  font-size: 0.85rem;
+  color: #fff;
+  text-align: center;
+  line-height: 1.3;
+  font-weight: 500;
+}
+
+/* Botón Cancelar */
+.btn-cancelar {
+  margin-top: 1.5rem;
+  background: transparent;
+  border: 1px solid #555;
+  color: #ccc;
+  padding: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: all 0.2s;
+  width: 100%;
+}
+
+.btn-cancelar:hover {
+  background: #333;
+  color: #fff;
+  border-color: #fff;
+}
+
+/* Animación de entrada */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Scrollbar personalizada para el modal */
+.grid-jugadores::-webkit-scrollbar {
+  width: 8px;
+}
+.grid-jugadores::-webkit-scrollbar-track {
+  background: #1a1a1a;
+}
+.grid-jugadores::-webkit-scrollbar-thumb {
+  background: #444;
+  border-radius: 4px;
+}
+.grid-jugadores::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
