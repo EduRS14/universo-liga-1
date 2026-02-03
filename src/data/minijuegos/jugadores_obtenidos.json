@@ -167585,6 +167585,1372 @@
     },
     {
         "id": 3363,
+        "nombre": "Milko Salgado",
+        "fechaNacimiento": "1998-11-05",
+        "fechaFallecimiento": null,
+        "edad": 27,
+        "altura": 0.0,
+        "nacionalidades": [
+            1
+        ],
+        "clubActual": "Sin equipo",
+        "posicionPrincipal": "Pivote",
+        "posicionesSecundarias": [],
+        "valorMercadoMaximo": 50000.0,
+        "jugoExtranjero": false,
+        "equiposJugados": [
+            {
+                "id_equipo": 33,
+                "periodos": [
+                    [
+                        2021,
+                        2021
+                    ]
+                ]
+            },
+            {
+                "id_equipo": 5,
+                "periodos": [
+                    [
+                        2023,
+                        2023
+                    ]
+                ]
+            }
+        ],
+        "titulosObtenidos": [],
+        "url_foto": "https://img.a.transfermarkt.technology/portrait/header/default.jpg?lm=1"
+    },
+    {
+        "id": 3364,
+        "nombre": "Milovan Díaz",
+        "fechaNacimiento": "1997-02-19",
+        "fechaFallecimiento": null,
+        "edad": 28,
+        "altura": 0.0,
+        "nacionalidades": [
+            1
+        ],
+        "clubActual": "M. Grau Abancay",
+        "posicionPrincipal": "Extremo izquierdo",
+        "posicionesSecundarias": [
+            "Extremo derecho"
+        ],
+        "valorMercadoMaximo": 50000.0,
+        "jugoExtranjero": false,
+        "equiposJugados": [
+            {
+                "id_equipo": 5,
+                "periodos": [
+                    [
+                        2013,
+                        2015
+                    ]
+                ]
+            },
+            {
+                "id_equipo": 6,
+                "periodos": [
+                    [
+                        2016,
+                        2017
+                    ]
+                ]
+            },
+            {
+                "id_equipo": 25,
+                "periodos": [
+                    [
+                        2019,
+                        2019
+                    ]
+                ]
+            }
+        ],
+        "titulosObtenidos": [],
+        "url_foto": "https://img.a.transfermarkt.technology/portrait/header/639762-1608327835.jpg?lm=1"
+    },
+    {
+        "id": 3365,
+        "nombre": "Milton Benítez",
+        "fechaNacimiento": "1986-03-30",
+        "fechaFallecimiento": null,
+        "edad": 39,
+        "altura": 175.0,
+        "nacionalidades": [
+            9
+        ],
+        "clubActual": "Sin equipo",
+        "posicionPrincipal": "Mediocentro ofensivo",
+        "posicionesSecundarias": [
+            "Extremo derecho",
+            "Extremo izquierdo"
+        ],
+        "valorMercadoMaximo": 200000.0,
+        "jugoExtranjero": true,
+        "equiposJugados": [
+            {
+                "id_equipo": 30,
+                "periodos": [
+                    [
+                        2018,
+                        2018
+                    ]
+                ]
+            },
+            {
+                "id_equipo": 10,
+                "periodos": [
+                    [
+                        2019,
+                        2020
+                    ]
+                ]
+            }
+        ],
+        "titulosObtenidos": [
+            {
+                "id_trofeo": 130,
+                "cantidad": 1
+            }
+        ],
+        "url_foto": "https://img.a.transfermarkt.technology/portrait/header/default.jpg?lm=1"
+    },
+    {
+        "id": 3366,
+        "nombre": "Milton Bermejo",
+        "fechaNacimiento": "1993-02-05",
+        "fechaFallecimiento": null,
+        "edad": 32,
+        "altura": 0.0,
+        "nacionalidades": [
+            1
+        ],
+        "clubActual": "Sin equipo",
+        "posicionPrincipal": "Pivote",
+        "posicionesSecundarias": [],
+        "valorMercadoMaximo": 125000.0,
+        "jugoExtranjero": false,
+        "equiposJugados": [
+            {
+                "id_equipo": 36,
+                "periodos": [
+                    [
+                        2019,
+                        2019
+                    ]
+                ]
+            },
+            {
+                "id_equipo": 38,
+                "periodos": [
+                    [
+                        2022,
+                        2022
+                    ]
+                ]
+            }
+        ],
+        "titulosObtenidos": [],
+        "url_foto": "https://img.a.transfermarkt.technology/portrait/header/default.jpg?lm=1"
+    },
+    {
+        "id": 3367,
+        "nombre": "Milton Céliz",
+        "fechaNacimiento": "1992-07-25",
+        "fechaFallecimiento": null,
+        "edad": 33,
+        "altura": 183.0,
+        "nacionalidades": [
+            2
+        ],
+        "clubActual": "Barcelona SC",
+        "posicionPrincipal": "Mediocentro",
+        "posicionesSecundarias": [
+            "Interior izquierdo",
+            "Delantero centro"
+        ],
+        "valorMercadoMaximo": 400000.0,
+        "jugoExtranjero": true,
+        "equiposJugados": [
+            {
+                "id_equipo": 8,
+                "periodos": [
+                    [
+                        2017,
+                        2017
+                    ]
+                ]
+            }
+        ],
+        "titulosObtenidos": [
+            {
+                "id_trofeo": 34,
+                "cantidad": 1
+            },
+            {
+                "id_trofeo": 104,
+                "cantidad": 1
+            },
+            {
+                "id_trofeo": 167,
+                "cantidad": 1
+            }
+        ],
+        "url_foto": "https://img.a.transfermarkt.technology/portrait/header/260652-1720462376.JPG?lm=1"
+    },
+    {
+        "id": 3368,
+        "nombre": "Minzum Quina",
+        "fechaNacimiento": "1987-05-11",
+        "fechaFallecimiento": null,
+        "edad": 38,
+        "altura": 179.0,
+        "nacionalidades": [
+            1
+        ],
+        "clubActual": "Unión Minas",
+        "posicionPrincipal": "Defensa central",
+        "posicionesSecundarias": [
+            "Lateral izquierdo"
+        ],
+        "valorMercadoMaximo": 450000.0,
+        "jugoExtranjero": false,
+        "equiposJugados": [
+            {
+                "id_equipo": 3,
+                "periodos": [
+                    [
+                        2005,
+                        2005
+                    ],
+                    [
+                        2011,
+                        2011
+                    ]
+                ]
+            },
+            {
+                "id_equipo": 21,
+                "periodos": [
+                    [
+                        2006,
+                        2006
+                    ]
+                ]
+            },
+            {
+                "id_equipo": 11,
+                "periodos": [
+                    [
+                        2009,
+                        2010
+                    ]
+                ]
+            },
+            {
+                "id_equipo": 13,
+                "periodos": [
+                    [
+                        2012,
+                        2012
+                    ]
+                ]
+            },
+            {
+                "id_equipo": 9,
+                "periodos": [
+                    [
+                        2013,
+                        2013
+                    ]
+                ]
+            },
+            {
+                "id_equipo": 4,
+                "periodos": [
+                    [
+                        2014,
+                        2018
+                    ]
+                ]
+            },
+            {
+                "id_equipo": 19,
+                "periodos": [
+                    [
+                        2019,
+                        2019
+                    ]
+                ]
+            },
+            {
+                "id_equipo": 15,
+                "periodos": [
+                    [
+                        2020,
+                        2023
+                    ]
+                ]
+            },
+            {
+                "id_equipo": 30,
+                "periodos": [
+                    [
+                        2023,
+                        2024
+                    ]
+                ]
+            },
+            {
+                "id_equipo": 10,
+                "periodos": [
+                    [
+                        2024,
+                        2024
+                    ]
+                ]
+            }
+        ],
+        "titulosObtenidos": [
+            {
+                "id_trofeo": 2,
+                "cantidad": 2
+            }
+        ],
+        "url_foto": "https://img.a.transfermarkt.technology/portrait/header/104415-1600581753.jpg?lm=1"
+    },
+    {
+        "id": 3369,
+        "nombre": "Mohamed Karamoko",
+        "fechaNacimiento": "2002-01-25",
+        "fechaFallecimiento": null,
+        "edad": 24,
+        "altura": 180.0,
+        "nacionalidades": [
+            42
+        ],
+        "clubActual": "Montalegre",
+        "posicionPrincipal": "Delantero centro",
+        "posicionesSecundarias": [
+            "Extremo izquierdo",
+            "Extremo derecho"
+        ],
+        "valorMercadoMaximo": 225000.0,
+        "jugoExtranjero": true,
+        "equiposJugados": [
+            {
+                "id_equipo": 7,
+                "periodos": [
+                    [
+                        2020,
+                        2020
+                    ]
+                ]
+            }
+        ],
+        "titulosObtenidos": [],
+        "url_foto": "https://img.a.transfermarkt.technology/portrait/header/default.jpg?lm=1"
+    },
+    {
+        "id": 3370,
+        "nombre": "Moisés Cabada",
+        "fechaNacimiento": "1985-11-02",
+        "fechaFallecimiento": null,
+        "edad": 40,
+        "altura": 182.0,
+        "nacionalidades": [
+            1
+        ],
+        "clubActual": "Retirado",
+        "posicionPrincipal": "Defensa central",
+        "posicionesSecundarias": [],
+        "valorMercadoMaximo": 225000.0,
+        "jugoExtranjero": false,
+        "equiposJugados": [
+            {
+                "id_equipo": 5,
+                "periodos": [
+                    [
+                        2004,
+                        2006
+                    ],
+                    [
+                        2008,
+                        2008
+                    ],
+                    [
+                        2012,
+                        2012
+                    ]
+                ]
+            },
+            {
+                "id_equipo": 6,
+                "periodos": [
+                    [
+                        2009,
+                        2009
+                    ]
+                ]
+            },
+            {
+                "id_equipo": 12,
+                "periodos": [
+                    [
+                        2010,
+                        2011
+                    ]
+                ]
+            },
+            {
+                "id_equipo": 21,
+                "periodos": [
+                    [
+                        2012,
+                        2012
+                    ]
+                ]
+            },
+            {
+                "id_equipo": 23,
+                "periodos": [
+                    [
+                        2013,
+                        2021
+                    ]
+                ]
+            }
+        ],
+        "titulosObtenidos": [
+            {
+                "id_trofeo": 5,
+                "cantidad": 2
+            },
+            {
+                "id_trofeo": 7,
+                "cantidad": 1
+            }
+        ],
+        "url_foto": "https://img.a.transfermarkt.technology/portrait/header/default.jpg?lm=1"
+    },
+    {
+        "id": 3371,
+        "nombre": "Moisés Condori",
+        "fechaNacimiento": "1980-06-26",
+        "fechaFallecimiento": null,
+        "edad": 45,
+        "altura": 0.0,
+        "nacionalidades": [
+            1
+        ],
+        "clubActual": "Retirado",
+        "posicionPrincipal": "Mediocentro ofensivo",
+        "posicionesSecundarias": [],
+        "valorMercadoMaximo": 0.0,
+        "jugoExtranjero": false,
+        "equiposJugados": [
+            {
+                "id_equipo": 19,
+                "periodos": [
+                    [
+                        2010,
+                        2011
+                    ]
+                ]
+            },
+            {
+                "id_equipo": 31,
+                "periodos": [
+                    [
+                        2014,
+                        2014
+                    ]
+                ]
+            }
+        ],
+        "titulosObtenidos": [],
+        "url_foto": "https://img.a.transfermarkt.technology/portrait/header/default.jpg?lm=1"
+    },
+    {
+        "id": 3372,
+        "nombre": "Moisés Velásquez",
+        "fechaNacimiento": "1999-02-24",
+        "fechaFallecimiento": null,
+        "edad": 26,
+        "altura": 170.0,
+        "nacionalidades": [
+            1
+        ],
+        "clubActual": "Sin equipo",
+        "posicionPrincipal": "Extremo derecho",
+        "posicionesSecundarias": [
+            "Extremo izquierdo",
+            "Mediocentro"
+        ],
+        "valorMercadoMaximo": 300000.0,
+        "jugoExtranjero": false,
+        "equiposJugados": [
+            {
+                "id_equipo": 10,
+                "periodos": [
+                    [
+                        2019,
+                        2021
+                    ]
+                ]
+            },
+            {
+                "id_equipo": 39,
+                "periodos": [
+                    [
+                        2022,
+                        2022
+                    ]
+                ]
+            }
+        ],
+        "titulosObtenidos": [],
+        "url_foto": "https://img.a.transfermarkt.technology/portrait/header/598823-1749666915.png?lm=1"
+    },
+    {
+        "id": 3373,
+        "nombre": "Muriel Orlando",
+        "fechaNacimiento": "1989-03-18",
+        "fechaFallecimiento": null,
+        "edad": 36,
+        "altura": 181.0,
+        "nacionalidades": [
+            2
+        ],
+        "clubActual": "Douglas Haig",
+        "posicionPrincipal": "Delantero centro",
+        "posicionesSecundarias": [],
+        "valorMercadoMaximo": 850000.0,
+        "jugoExtranjero": true,
+        "equiposJugados": [
+            {
+                "id_equipo": 16,
+                "periodos": [
+                    [
+                        2011,
+                        2011
+                    ]
+                ]
+            },
+            {
+                "id_equipo": 13,
+                "periodos": [
+                    [
+                        2014,
+                        2014
+                    ]
+                ]
+            }
+        ],
+        "titulosObtenidos": [],
+        "url_foto": "https://img.a.transfermarkt.technology/portrait/header/127394-1567590244.jpg?lm=1"
+    },
+    {
+        "id": 3374,
+        "nombre": "Mynor Escoe",
+        "fechaNacimiento": "1991-04-06",
+        "fechaFallecimiento": null,
+        "edad": 34,
+        "altura": 175.0,
+        "nacionalidades": [
+            24,
+            25
+        ],
+        "clubActual": "Sin equipo",
+        "posicionPrincipal": "Delantero centro",
+        "posicionesSecundarias": [
+            "Extremo izquierdo",
+            "Extremo derecho"
+        ],
+        "valorMercadoMaximo": 300000.0,
+        "jugoExtranjero": true,
+        "equiposJugados": [
+            {
+                "id_equipo": 21,
+                "periodos": [
+                    [
+                        2017,
+                        2017
+                    ]
+                ]
+            }
+        ],
+        "titulosObtenidos": [
+            {
+                "id_trofeo": 100,
+                "cantidad": 3
+            },
+            {
+                "id_trofeo": 101,
+                "cantidad": 1
+            },
+            {
+                "id_trofeo": 103,
+                "cantidad": 1
+            }
+        ],
+        "url_foto": "https://img.a.transfermarkt.technology/portrait/header/170926-1609872092.jpg?lm=1"
+    },
+    {
+        "id": 3375,
+        "nombre": "Máximo Rabines",
+        "fechaNacimiento": "1993-07-05",
+        "fechaFallecimiento": null,
+        "edad": 32,
+        "altura": 183.0,
+        "nacionalidades": [
+            1
+        ],
+        "clubActual": "ADA Jaén",
+        "posicionPrincipal": "Portero",
+        "posicionesSecundarias": [],
+        "valorMercadoMaximo": 300000.0,
+        "jugoExtranjero": false,
+        "equiposJugados": [
+            {
+                "id_equipo": 9,
+                "periodos": [
+                    [
+                        2012,
+                        2015
+                    ],
+                    [
+                        2017,
+                        2019
+                    ],
+                    [
+                        2020,
+                        2021
+                    ],
+                    [
+                        2022,
+                        2022
+                    ],
+                    [
+                        2023,
+                        2024
+                    ],
+                    [
+                        2025,
+                        2025
+                    ]
+                ]
+            },
+            {
+                "id_equipo": 23,
+                "periodos": [
+                    [
+                        2016,
+                        2016
+                    ]
+                ]
+            },
+            {
+                "id_equipo": 35,
+                "periodos": [
+                    [
+                        2019,
+                        2019
+                    ],
+                    [
+                        2022,
+                        2022
+                    ]
+                ]
+            },
+            {
+                "id_equipo": 29,
+                "periodos": [
+                    [
+                        2022,
+                        2022
+                    ]
+                ]
+            },
+            {
+                "id_equipo": 10,
+                "periodos": [
+                    [
+                        2024,
+                        2024
+                    ]
+                ]
+            }
+        ],
+        "titulosObtenidos": [
+            {
+                "id_trofeo": 5,
+                "cantidad": 1
+            },
+            {
+                "id_trofeo": 11,
+                "cantidad": 1
+            }
+        ],
+        "url_foto": "https://img.a.transfermarkt.technology/portrait/header/335377-1583610135.JPG?lm=1"
+    },
+    {
+        "id": 3376,
+        "nombre": "Nadhir Colunga",
+        "fechaNacimiento": "2004-02-07",
+        "fechaFallecimiento": null,
+        "edad": 21,
+        "altura": 184.0,
+        "nacionalidades": [
+            1
+        ],
+        "clubActual": "Cienciano",
+        "posicionPrincipal": "Delantero centro",
+        "posicionesSecundarias": [
+            "Extremo derecho"
+        ],
+        "valorMercadoMaximo": 25000.0,
+        "jugoExtranjero": false,
+        "equiposJugados": [
+            {
+                "id_equipo": 6,
+                "periodos": [
+                    [
+                        2023,
+                        2024
+                    ],
+                    [
+                        2026,
+                        -1
+                    ]
+                ]
+            },
+            {
+                "id_equipo": 32,
+                "periodos": [
+                    [
+                        2025,
+                        2025
+                    ]
+                ]
+            }
+        ],
+        "titulosObtenidos": [],
+        "url_foto": "https://img.a.transfermarkt.technology/portrait/header/1102806-1743120527.jpg?lm=1"
+    },
+    {
+        "id": 3377,
+        "nombre": "Nahuel Guerrero",
+        "fechaNacimiento": "1987-07-06",
+        "fechaFallecimiento": null,
+        "edad": 38,
+        "altura": 183.0,
+        "nacionalidades": [
+            2,
+            12
+        ],
+        "clubActual": "Sin equipo",
+        "posicionPrincipal": "Defensa central",
+        "posicionesSecundarias": [],
+        "valorMercadoMaximo": 0.0,
+        "jugoExtranjero": true,
+        "equiposJugados": [
+            {
+                "id_equipo": 22,
+                "periodos": [
+                    [
+                        2014,
+                        2014
+                    ]
+                ]
+            }
+        ],
+        "titulosObtenidos": [],
+        "url_foto": "https://img.a.transfermarkt.technology/portrait/header/default.jpg?lm=1"
+    },
+    {
+        "id": 3378,
+        "nombre": "Nahuel Luján",
+        "fechaNacimiento": "1995-08-23",
+        "fechaFallecimiento": null,
+        "edad": 30,
+        "altura": 178.0,
+        "nacionalidades": [
+            2
+        ],
+        "clubActual": "Sport Huancayo",
+        "posicionPrincipal": "Extremo izquierdo",
+        "posicionesSecundarias": [
+            "Mediocentro ofensivo"
+        ],
+        "valorMercadoMaximo": 800000.0,
+        "jugoExtranjero": true,
+        "equiposJugados": [
+            {
+                "id_equipo": 10,
+                "periodos": [
+                    [
+                        2025,
+                        -1
+                    ]
+                ]
+            }
+        ],
+        "titulosObtenidos": [],
+        "url_foto": "https://img.a.transfermarkt.technology/portrait/header/325147-1741548163.jpg?lm=1"
+    },
+    {
+        "id": 3379,
+        "nombre": "Nahuel Rodríguez",
+        "fechaNacimiento": "2002-03-04",
+        "fechaFallecimiento": null,
+        "edad": 23,
+        "altura": 173.0,
+        "nacionalidades": [
+            1
+        ],
+        "clubActual": "ADA Jaén",
+        "posicionPrincipal": "Extremo derecho",
+        "posicionesSecundarias": [
+            "Mediocentro ofensivo"
+        ],
+        "valorMercadoMaximo": 275000.0,
+        "jugoExtranjero": false,
+        "equiposJugados": [
+            {
+                "id_equipo": 9,
+                "periodos": [
+                    [
+                        2021,
+                        2023
+                    ]
+                ]
+            },
+            {
+                "id_equipo": 40,
+                "periodos": [
+                    [
+                        2024,
+                        2025
+                    ]
+                ]
+            }
+        ],
+        "titulosObtenidos": [],
+        "url_foto": "https://img.a.transfermarkt.technology/portrait/header/892071-1712797434.png?lm=1"
+    },
+    {
+        "id": 3380,
+        "nombre": "Nahuel Tecilla",
+        "fechaNacimiento": "1995-01-16",
+        "fechaFallecimiento": null,
+        "edad": 31,
+        "altura": 194.0,
+        "nacionalidades": [
+            2
+        ],
+        "clubActual": "ADA Jaén",
+        "posicionPrincipal": "Defensa central",
+        "posicionesSecundarias": [],
+        "valorMercadoMaximo": 600000.0,
+        "jugoExtranjero": true,
+        "equiposJugados": [
+            {
+                "id_equipo": 27,
+                "periodos": [
+                    [
+                        2025,
+                        2025
+                    ]
+                ]
+            }
+        ],
+        "titulosObtenidos": [],
+        "url_foto": "https://img.a.transfermarkt.technology/portrait/header/default.jpg?lm=1"
+    },
+    {
+        "id": 3381,
+        "nombre": "Natalio Portillo",
+        "fechaNacimiento": "1979-10-15",
+        "fechaFallecimiento": null,
+        "edad": 46,
+        "altura": 178.0,
+        "nacionalidades": [
+            2,
+            1
+        ],
+        "clubActual": "Retirado",
+        "posicionPrincipal": "Delantero centro",
+        "posicionesSecundarias": [],
+        "valorMercadoMaximo": 275000.0,
+        "jugoExtranjero": true,
+        "equiposJugados": [
+            {
+                "id_equipo": 6,
+                "periodos": [
+                    [
+                        2007,
+                        2008
+                    ]
+                ]
+            },
+            {
+                "id_equipo": 16,
+                "periodos": [
+                    [
+                        2009,
+                        2009
+                    ]
+                ]
+            },
+            {
+                "id_equipo": 12,
+                "periodos": [
+                    [
+                        2012,
+                        2012
+                    ]
+                ]
+            },
+            {
+                "id_equipo": 24,
+                "periodos": [
+                    [
+                        2013,
+                        2013
+                    ]
+                ]
+            }
+        ],
+        "titulosObtenidos": [],
+        "url_foto": "https://img.a.transfermarkt.technology/portrait/header/default.jpg?lm=1"
+    },
+    {
+        "id": 3382,
+        "nombre": "Nathan Ali",
+        "fechaNacimiento": "2003-04-29",
+        "fechaFallecimiento": null,
+        "edad": 22,
+        "altura": 180.0,
+        "nacionalidades": [
+            1,
+            10
+        ],
+        "clubActual": "Juventud Alfa",
+        "posicionPrincipal": "Mediocentro ofensivo",
+        "posicionesSecundarias": [
+            "Mediocentro"
+        ],
+        "valorMercadoMaximo": 0.0,
+        "jugoExtranjero": true,
+        "equiposJugados": [
+            {
+                "id_equipo": 19,
+                "periodos": [
+                    [
+                        2022,
+                        2023
+                    ]
+                ]
+            }
+        ],
+        "titulosObtenidos": [
+            {
+                "id_trofeo": 5,
+                "cantidad": 1
+            }
+        ],
+        "url_foto": "https://img.a.transfermarkt.technology/portrait/header/999846-1683663136.jpeg?lm=1"
+    },
+    {
+        "id": 3383,
+        "nombre": "Natán Santa Cruz",
+        "fechaNacimiento": "1988-10-24",
+        "fechaFallecimiento": null,
+        "edad": 37,
+        "altura": 175.0,
+        "nacionalidades": [
+            1
+        ],
+        "clubActual": "Retirado",
+        "posicionPrincipal": "Defensa central",
+        "posicionesSecundarias": [],
+        "valorMercadoMaximo": 0.0,
+        "jugoExtranjero": false,
+        "equiposJugados": [
+            {
+                "id_equipo": 26,
+                "periodos": [
+                    [
+                        2017,
+                        2017
+                    ]
+                ]
+            }
+        ],
+        "titulosObtenidos": [],
+        "url_foto": "https://img.a.transfermarkt.technology/portrait/header/default.jpg?lm=1"
+    },
+    {
+        "id": 3384,
+        "nombre": "Nazareno Bazán",
+        "fechaNacimiento": "1999-03-08",
+        "fechaFallecimiento": null,
+        "edad": 26,
+        "altura": 184.0,
+        "nacionalidades": [
+            2
+        ],
+        "clubActual": "Sin equipo",
+        "posicionPrincipal": "Delantero centro",
+        "posicionesSecundarias": [],
+        "valorMercadoMaximo": 500000.0,
+        "jugoExtranjero": true,
+        "equiposJugados": [
+            {
+                "id_equipo": 37,
+                "periodos": [
+                    [
+                        2025,
+                        2025
+                    ]
+                ]
+            }
+        ],
+        "titulosObtenidos": [],
+        "url_foto": "https://img.a.transfermarkt.technology/portrait/header/555846-1754533246.JPG?lm=1"
+    },
+    {
+        "id": 3385,
+        "nombre": "Neil Marcos",
+        "fechaNacimiento": "1992-05-11",
+        "fechaFallecimiento": null,
+        "edad": 33,
+        "altura": 173.0,
+        "nacionalidades": [
+            1
+        ],
+        "clubActual": "Sin equipo",
+        "posicionPrincipal": "Pivote",
+        "posicionesSecundarias": [
+            "Mediocentro"
+        ],
+        "valorMercadoMaximo": 275000.0,
+        "jugoExtranjero": false,
+        "equiposJugados": [
+            {
+                "id_equipo": 5,
+                "periodos": [
+                    [
+                        2012,
+                        2012
+                    ]
+                ]
+            },
+            {
+                "id_equipo": 22,
+                "periodos": [
+                    [
+                        2013,
+                        2014
+                    ]
+                ]
+            },
+            {
+                "id_equipo": 4,
+                "periodos": [
+                    [
+                        2015,
+                        2017
+                    ]
+                ]
+            },
+            {
+                "id_equipo": 27,
+                "periodos": [
+                    [
+                        2018,
+                        2018
+                    ]
+                ]
+            },
+            {
+                "id_equipo": 17,
+                "periodos": [
+                    [
+                        2019,
+                        2019
+                    ],
+                    [
+                        2022,
+                        2022
+                    ],
+                    [
+                        2025,
+                        2025
+                    ]
+                ]
+            },
+            {
+                "id_equipo": 35,
+                "periodos": [
+                    [
+                        2020,
+                        2022
+                    ],
+                    [
+                        2023,
+                        2023
+                    ]
+                ]
+            },
+            {
+                "id_equipo": 8,
+                "periodos": [
+                    [
+                        2024,
+                        2024
+                    ]
+                ]
+            },
+            {
+                "id_equipo": 21,
+                "periodos": [
+                    [
+                        2024,
+                        2024
+                    ]
+                ]
+            }
+        ],
+        "titulosObtenidos": [
+            {
+                "id_trofeo": 2,
+                "cantidad": 1
+            },
+            {
+                "id_trofeo": 5,
+                "cantidad": 1
+            }
+        ],
+        "url_foto": "https://img.a.transfermarkt.technology/portrait/header/224683-1622578347.jpg?lm=1"
+    },
+    {
+        "id": 3386,
+        "nombre": "Neity Mejía",
+        "fechaNacimiento": "2003-01-01",
+        "fechaFallecimiento": null,
+        "edad": 23,
+        "altura": 0.0,
+        "nacionalidades": [
+            1
+        ],
+        "clubActual": "Sin equipo",
+        "posicionPrincipal": "Lateral derecho",
+        "posicionesSecundarias": [],
+        "valorMercadoMaximo": 25000.0,
+        "jugoExtranjero": false,
+        "equiposJugados": [
+            {
+                "id_equipo": 27,
+                "periodos": [
+                    [
+                        2021,
+                        2021
+                    ]
+                ]
+            }
+        ],
+        "titulosObtenidos": [],
+        "url_foto": "https://img.a.transfermarkt.technology/portrait/header/default.jpg?lm=1"
+    },
+    {
+        "id": 3387,
+        "nombre": "Nelinho Quina",
+        "fechaNacimiento": "1987-05-11",
+        "fechaFallecimiento": null,
+        "edad": 38,
+        "altura": 183.0,
+        "nacionalidades": [
+            1
+        ],
+        "clubActual": "Estudiantil CNI",
+        "posicionPrincipal": "Defensa central",
+        "posicionesSecundarias": [
+            "Lateral izquierdo"
+        ],
+        "valorMercadoMaximo": 300000.0,
+        "jugoExtranjero": true,
+        "equiposJugados": [
+            {
+                "id_equipo": 3,
+                "periodos": [
+                    [
+                        2005,
+                        2005
+                    ],
+                    [
+                        2013,
+                        2013
+                    ]
+                ]
+            },
+            {
+                "id_equipo": 9,
+                "periodos": [
+                    [
+                        2006,
+                        2006
+                    ]
+                ]
+            },
+            {
+                "id_equipo": 11,
+                "periodos": [
+                    [
+                        2007,
+                        2008
+                    ]
+                ]
+            },
+            {
+                "id_equipo": 2,
+                "periodos": [
+                    [
+                        2009,
+                        2009
+                    ],
+                    [
+                        2010,
+                        2010
+                    ],
+                    [
+                        2011,
+                        2011
+                    ],
+                    [
+                        2019,
+                        2022
+                    ]
+                ]
+            },
+            {
+                "id_equipo": 8,
+                "periodos": [
+                    [
+                        2010,
+                        2011
+                    ],
+                    [
+                        2011,
+                        2012
+                    ]
+                ]
+            },
+            {
+                "id_equipo": 4,
+                "periodos": [
+                    [
+                        2014,
+                        2015
+                    ]
+                ]
+            },
+            {
+                "id_equipo": 21,
+                "periodos": [
+                    [
+                        2015,
+                        2016
+                    ]
+                ]
+            },
+            {
+                "id_equipo": 17,
+                "periodos": [
+                    [
+                        2017,
+                        2017
+                    ]
+                ]
+            },
+            {
+                "id_equipo": 5,
+                "periodos": [
+                    [
+                        2018,
+                        2018
+                    ]
+                ]
+            },
+            {
+                "id_equipo": 19,
+                "periodos": [
+                    [
+                        2023,
+                        2023
+                    ]
+                ]
+            },
+            {
+                "id_equipo": 32,
+                "periodos": [
+                    [
+                        2024,
+                        2024
+                    ]
+                ]
+            }
+        ],
+        "titulosObtenidos": [
+            {
+                "id_trofeo": 2,
+                "cantidad": 3
+            }
+        ],
+        "url_foto": "https://img.a.transfermarkt.technology/portrait/header/82584-1615646653.jpg?lm=1"
+    },
+    {
+        "id": 3388,
+        "nombre": "Nelsinho Benites",
+        "fechaNacimiento": "1990-04-11",
+        "fechaFallecimiento": null,
+        "edad": 35,
+        "altura": 0.0,
+        "nacionalidades": [
+            1
+        ],
+        "clubActual": "Retirado",
+        "posicionPrincipal": "Defensa central",
+        "posicionesSecundarias": [],
+        "valorMercadoMaximo": 0.0,
+        "jugoExtranjero": false,
+        "equiposJugados": [
+            {
+                "id_equipo": 22,
+                "periodos": [
+                    [
+                        2013,
+                        2015
+                    ]
+                ]
+            },
+            {
+                "id_equipo": 39,
+                "periodos": [
+                    [
+                        2016,
+                        2016
+                    ]
+                ]
+            }
+        ],
+        "titulosObtenidos": [],
+        "url_foto": "https://img.a.transfermarkt.technology/portrait/header/default.jpg?lm=1"
+    },
+    {
+        "id": 3389,
         "nombre": "Nelson Cabanillas",
         "fechaNacimiento": "2000-02-08",
         "fechaFallecimiento": null,
@@ -167634,7 +169000,560 @@
         "url_foto": "https://img.a.transfermarkt.technology/portrait/header/491570-1615647446.jpg?lm=1"
     },
     {
-        "id": 3364,
+        "id": 3390,
+        "nombre": "Nelson Chaparro",
+        "fechaNacimiento": "1991-04-25",
+        "fechaFallecimiento": null,
+        "edad": 34,
+        "altura": 170.0,
+        "nacionalidades": [
+            1
+        ],
+        "clubActual": "Sin equipo",
+        "posicionPrincipal": "Pivote",
+        "posicionesSecundarias": [
+            "Mediocentro"
+        ],
+        "valorMercadoMaximo": 225000.0,
+        "jugoExtranjero": false,
+        "equiposJugados": [
+            {
+                "id_equipo": 18,
+                "periodos": [
+                    [
+                        2010,
+                        2012
+                    ]
+                ]
+            },
+            {
+                "id_equipo": 8,
+                "periodos": [
+                    [
+                        2013,
+                        2013
+                    ]
+                ]
+            },
+            {
+                "id_equipo": 22,
+                "periodos": [
+                    [
+                        2014,
+                        2014
+                    ]
+                ]
+            },
+            {
+                "id_equipo": 6,
+                "periodos": [
+                    [
+                        2015,
+                        2015
+                    ]
+                ]
+            },
+            {
+                "id_equipo": 29,
+                "periodos": [
+                    [
+                        2016,
+                        2017
+                    ],
+                    [
+                        2022,
+                        2022
+                    ]
+                ]
+            },
+            {
+                "id_equipo": 20,
+                "periodos": [
+                    [
+                        2025,
+                        2025
+                    ]
+                ]
+            }
+        ],
+        "titulosObtenidos": [
+            {
+                "id_trofeo": 5,
+                "cantidad": 1
+            }
+        ],
+        "url_foto": "https://img.a.transfermarkt.technology/portrait/header/250133-1749438632.jpg?lm=1"
+    },
+    {
+        "id": 3391,
+        "nombre": "Nelson Dávila",
+        "fechaNacimiento": "1988-08-18",
+        "fechaFallecimiento": null,
+        "edad": 37,
+        "altura": 0.0,
+        "nacionalidades": [
+            1
+        ],
+        "clubActual": "Retirado",
+        "posicionPrincipal": "Delantero centro",
+        "posicionesSecundarias": [],
+        "valorMercadoMaximo": 0.0,
+        "jugoExtranjero": false,
+        "equiposJugados": [
+            {
+                "id_equipo": 24,
+                "periodos": [
+                    [
+                        2013,
+                        2013
+                    ],
+                    [
+                        2015,
+                        2014
+                    ]
+                ]
+            },
+            {
+                "id_equipo": 30,
+                "periodos": [
+                    [
+                        2014,
+                        2014
+                    ]
+                ]
+            },
+            {
+                "id_equipo": 37,
+                "periodos": [
+                    [
+                        2021,
+                        2021
+                    ]
+                ]
+            }
+        ],
+        "titulosObtenidos": [],
+        "url_foto": "https://img.a.transfermarkt.technology/portrait/header/default.jpg?lm=1"
+    },
+    {
+        "id": 3392,
+        "nombre": "Nelson González",
+        "fechaNacimiento": "1988-09-22",
+        "fechaFallecimiento": null,
+        "edad": 37,
+        "altura": 167.0,
+        "nacionalidades": [
+            2
+        ],
+        "clubActual": "Retirado",
+        "posicionPrincipal": "Pivote",
+        "posicionesSecundarias": [
+            "Interior derecho",
+            "Interior izquierdo"
+        ],
+        "valorMercadoMaximo": 250000.0,
+        "jugoExtranjero": true,
+        "equiposJugados": [
+            {
+                "id_equipo": 25,
+                "periodos": [
+                    [
+                        2015,
+                        2016
+                    ]
+                ]
+            }
+        ],
+        "titulosObtenidos": [
+            {
+                "id_trofeo": 20,
+                "cantidad": 1
+            }
+        ],
+        "url_foto": "https://img.a.transfermarkt.technology/portrait/header/default.jpg?lm=1"
+    },
+    {
+        "id": 3393,
+        "nombre": "Nelson Roque",
+        "fechaNacimiento": "1984-09-04",
+        "fechaFallecimiento": null,
+        "edad": 41,
+        "altura": 175.0,
+        "nacionalidades": [
+            1
+        ],
+        "clubActual": "Retirado",
+        "posicionPrincipal": "Pivote",
+        "posicionesSecundarias": [
+            "Mediocentro",
+            "Lateral izquierdo"
+        ],
+        "valorMercadoMaximo": 250000.0,
+        "jugoExtranjero": false,
+        "equiposJugados": [
+            {
+                "id_equipo": 11,
+                "periodos": [
+                    [
+                        2005,
+                        2007
+                    ],
+                    [
+                        2015,
+                        2015
+                    ]
+                ]
+            },
+            {
+                "id_equipo": 35,
+                "periodos": [
+                    [
+                        2011,
+                        2011
+                    ],
+                    [
+                        2018,
+                        2018
+                    ]
+                ]
+            },
+            {
+                "id_equipo": 10,
+                "periodos": [
+                    [
+                        2014,
+                        2014
+                    ]
+                ]
+            },
+            {
+                "id_equipo": 26,
+                "periodos": [
+                    [
+                        2017,
+                        2017
+                    ]
+                ]
+            }
+        ],
+        "titulosObtenidos": [],
+        "url_foto": "https://img.a.transfermarkt.technology/portrait/header/default.jpg?lm=1"
+    },
+    {
+        "id": 3394,
+        "nombre": "Nelson Semperena",
+        "fechaNacimiento": "1984-02-19",
+        "fechaFallecimiento": null,
+        "edad": 41,
+        "altura": 177.0,
+        "nacionalidades": [
+            7
+        ],
+        "clubActual": "Desconocido",
+        "posicionPrincipal": "Defensa central",
+        "posicionesSecundarias": [
+            "Lateral derecho"
+        ],
+        "valorMercadoMaximo": 700000.0,
+        "jugoExtranjero": true,
+        "equiposJugados": [
+            {
+                "id_equipo": 23,
+                "periodos": [
+                    [
+                        2014,
+                        2014
+                    ]
+                ]
+            }
+        ],
+        "titulosObtenidos": [],
+        "url_foto": "https://img.a.transfermarkt.technology/portrait/header/default.jpg?lm=1"
+    },
+    {
+        "id": 3395,
+        "nombre": "Nemias Velásquez",
+        "fechaNacimiento": "2001-05-29",
+        "fechaFallecimiento": null,
+        "edad": 24,
+        "altura": 0.0,
+        "nacionalidades": [
+            1
+        ],
+        "clubActual": "Andahuaylas FC",
+        "posicionPrincipal": "Mediocentro",
+        "posicionesSecundarias": [],
+        "valorMercadoMaximo": 50000.0,
+        "jugoExtranjero": false,
+        "equiposJugados": [
+            {
+                "id_equipo": 39,
+                "periodos": [
+                    [
+                        2019,
+                        2020
+                    ]
+                ]
+            }
+        ],
+        "titulosObtenidos": [],
+        "url_foto": "https://img.a.transfermarkt.technology/portrait/header/default.jpg?lm=1"
+    },
+    {
+        "id": 3396,
+        "nombre": "Neri Bandiera",
+        "fechaNacimiento": "1989-07-03",
+        "fechaFallecimiento": null,
+        "edad": 36,
+        "altura": 172.0,
+        "nacionalidades": [
+            2
+        ],
+        "clubActual": "Cienciano",
+        "posicionPrincipal": "Delantero centro",
+        "posicionesSecundarias": [
+            "Extremo izquierdo",
+            "Extremo derecho"
+        ],
+        "valorMercadoMaximo": 600000.0,
+        "jugoExtranjero": true,
+        "equiposJugados": [
+            {
+                "id_equipo": 35,
+                "periodos": [
+                    [
+                        2023,
+                        2025
+                    ]
+                ]
+            },
+            {
+                "id_equipo": 6,
+                "periodos": [
+                    [
+                        2026,
+                        -1
+                    ]
+                ]
+            }
+        ],
+        "titulosObtenidos": [],
+        "url_foto": "https://img.a.transfermarkt.technology/portrait/header/415544-1690388539.jpg?lm=1"
+    },
+    {
+        "id": 3397,
+        "nombre": "Nery Bareiro",
+        "fechaNacimiento": "1988-03-03",
+        "fechaFallecimiento": null,
+        "edad": 37,
+        "altura": 185.0,
+        "nacionalidades": [
+            9
+        ],
+        "clubActual": "12 de Octubre",
+        "posicionPrincipal": "Defensa central",
+        "posicionesSecundarias": [],
+        "valorMercadoMaximo": 250000.0,
+        "jugoExtranjero": true,
+        "equiposJugados": [
+            {
+                "id_equipo": 30,
+                "periodos": [
+                    [
+                        2020,
+                        2020
+                    ]
+                ]
+            }
+        ],
+        "titulosObtenidos": [
+            {
+                "id_trofeo": 63,
+                "cantidad": 1
+            }
+        ],
+        "url_foto": "https://img.a.transfermarkt.technology/portrait/header/213987-1652344351.jpg?lm=1"
+    },
+    {
+        "id": 3398,
+        "nombre": "Nick Montalva",
+        "fechaNacimiento": "1976-03-18",
+        "fechaFallecimiento": null,
+        "edad": 49,
+        "altura": 178.0,
+        "nacionalidades": [
+            1
+        ],
+        "clubActual": "Retirado",
+        "posicionPrincipal": "Defensa central",
+        "posicionesSecundarias": [],
+        "valorMercadoMaximo": 250000.0,
+        "jugoExtranjero": false,
+        "equiposJugados": [
+            {
+                "id_equipo": 2,
+                "periodos": [
+                    [
+                        1995,
+                        1996
+                    ]
+                ]
+            },
+            {
+                "id_equipo": 24,
+                "periodos": [
+                    [
+                        2006,
+                        2007
+                    ]
+                ]
+            },
+            {
+                "id_equipo": 5,
+                "periodos": [
+                    [
+                        2008,
+                        2008
+                    ]
+                ]
+            },
+            {
+                "id_equipo": 16,
+                "periodos": [
+                    [
+                        2009,
+                        2009
+                    ]
+                ]
+            },
+            {
+                "id_equipo": 15,
+                "periodos": [
+                    [
+                        2010,
+                        2013
+                    ]
+                ]
+            },
+            {
+                "id_equipo": 31,
+                "periodos": [
+                    [
+                        2014,
+                        2014
+                    ]
+                ]
+            }
+        ],
+        "titulosObtenidos": [
+            {
+                "id_trofeo": 5,
+                "cantidad": 1
+            }
+        ],
+        "url_foto": "https://img.a.transfermarkt.technology/portrait/header/default.jpg?lm=1"
+    },
+    {
+        "id": 3399,
+        "nombre": "Nick Vásquez",
+        "fechaNacimiento": "1990-04-17",
+        "fechaFallecimiento": null,
+        "edad": 35,
+        "altura": 0.0,
+        "nacionalidades": [
+            1
+        ],
+        "clubActual": "Retirado",
+        "posicionPrincipal": "Defensa central",
+        "posicionesSecundarias": [],
+        "valorMercadoMaximo": 0.0,
+        "jugoExtranjero": false,
+        "equiposJugados": [
+            {
+                "id_equipo": 5,
+                "periodos": [
+                    [
+                        2014,
+                        2014
+                    ]
+                ]
+            }
+        ],
+        "titulosObtenidos": [],
+        "url_foto": "https://img.a.transfermarkt.technology/portrait/header/default.jpg?lm=1"
+    },
+    {
+        "id": 3400,
+        "nombre": "Nicolas Paz",
+        "fechaNacimiento": "2005-08-23",
+        "fechaFallecimiento": null,
+        "edad": 20,
+        "altura": 173.0,
+        "nacionalidades": [
+            1,
+            21
+        ],
+        "clubActual": "Sport Boys",
+        "posicionPrincipal": "Pivote",
+        "posicionesSecundarias": [
+            "Mediocentro"
+        ],
+        "valorMercadoMaximo": 0.0,
+        "jugoExtranjero": false,
+        "equiposJugados": [
+            {
+                "id_equipo": 5,
+                "periodos": [
+                    [
+                        2025,
+                        -1
+                    ]
+                ]
+            }
+        ],
+        "titulosObtenidos": [],
+        "url_foto": "https://img.a.transfermarkt.technology/portrait/header/1370570-1751828689.jpeg?lm=1"
+    },
+    {
+        "id": 3401,
+        "nombre": "Nicolás Albarracín",
+        "fechaNacimiento": "1993-06-11",
+        "fechaFallecimiento": null,
+        "edad": 32,
+        "altura": 182.0,
+        "nacionalidades": [
+            7,
+            12
+        ],
+        "clubActual": "WX Wugo",
+        "posicionPrincipal": "Extremo izquierdo",
+        "posicionesSecundarias": [
+            "Mediocentro ofensivo",
+            "Extremo derecho"
+        ],
+        "valorMercadoMaximo": 850000.0,
+        "jugoExtranjero": true,
+        "equiposJugados": [
+            {
+                "id_equipo": 32,
+                "periodos": [
+                    [
+                        2024,
+                        2024
+                    ]
+                ]
+            }
+        ],
+        "titulosObtenidos": [
+            {
+                "id_trofeo": 44,
+                "cantidad": 1
+            }
+        ],
+        "url_foto": "https://img.a.transfermarkt.technology/portrait/header/170785-1705509520.JPG?lm=1"
+    },
+    {
+        "id": 3402,
         "nombre": "Nicolás Amasifuén",
         "fechaNacimiento": "2005-07-05",
         "fechaFallecimiento": null,
@@ -167698,5 +169617,1918 @@
         ],
         "titulosObtenidos": [],
         "url_foto": "https://img.a.transfermarkt.technology/portrait/header/1064183-1677427011.jpg?lm=1"
+    },
+    {
+        "id": 3403,
+        "nombre": "Nicolás Ayr",
+        "fechaNacimiento": "1982-10-11",
+        "fechaFallecimiento": null,
+        "edad": 43,
+        "altura": 187.0,
+        "nacionalidades": [
+            2
+        ],
+        "clubActual": "Retirado",
+        "posicionPrincipal": "Defensa central",
+        "posicionesSecundarias": [],
+        "valorMercadoMaximo": 350000.0,
+        "jugoExtranjero": true,
+        "equiposJugados": [
+            {
+                "id_equipo": 3,
+                "periodos": [
+                    [
+                        2012,
+                        2013
+                    ]
+                ]
+            },
+            {
+                "id_equipo": 19,
+                "periodos": [
+                    [
+                        2016,
+                        2016
+                    ]
+                ]
+            }
+        ],
+        "titulosObtenidos": [
+            {
+                "id_trofeo": 2,
+                "cantidad": 1
+            }
+        ],
+        "url_foto": "https://img.a.transfermarkt.technology/portrait/header/99398-1688337273.jpg?lm=1"
+    },
+    {
+        "id": 3404,
+        "nombre": "Nicolás Baluarte",
+        "fechaNacimiento": "2003-05-01",
+        "fechaFallecimiento": null,
+        "edad": 22,
+        "altura": 178.0,
+        "nacionalidades": [
+            1
+        ],
+        "clubActual": "Sin equipo",
+        "posicionPrincipal": "Delantero centro",
+        "posicionesSecundarias": [
+            "Extremo izquierdo",
+            "Extremo derecho"
+        ],
+        "valorMercadoMaximo": 25000.0,
+        "jugoExtranjero": false,
+        "equiposJugados": [
+            {
+                "id_equipo": 24,
+                "periodos": [
+                    [
+                        2024,
+                        2024
+                    ]
+                ]
+            }
+        ],
+        "titulosObtenidos": [],
+        "url_foto": "https://img.a.transfermarkt.technology/portrait/header/default.jpg?lm=1"
+    },
+    {
+        "id": 3405,
+        "nombre": "Nicolás Celis",
+        "fechaNacimiento": "1984-10-24",
+        "fechaFallecimiento": null,
+        "edad": 41,
+        "altura": 177.0,
+        "nacionalidades": [
+            1
+        ],
+        "clubActual": "Retirado",
+        "posicionPrincipal": "Delantero centro",
+        "posicionesSecundarias": [],
+        "valorMercadoMaximo": 0.0,
+        "jugoExtranjero": false,
+        "equiposJugados": [
+            {
+                "id_equipo": 16,
+                "periodos": [
+                    [
+                        2003,
+                        2005
+                    ],
+                    [
+                        2008,
+                        2009
+                    ],
+                    [
+                        2011,
+                        2011
+                    ]
+                ]
+            },
+            {
+                "id_equipo": 4,
+                "periodos": [
+                    [
+                        2006,
+                        2006
+                    ]
+                ]
+            },
+            {
+                "id_equipo": 12,
+                "periodos": [
+                    [
+                        2010,
+                        2010
+                    ]
+                ]
+            },
+            {
+                "id_equipo": 21,
+                "periodos": [
+                    [
+                        2012,
+                        2012
+                    ]
+                ]
+            },
+            {
+                "id_equipo": 27,
+                "periodos": [
+                    [
+                        2014,
+                        2014
+                    ]
+                ]
+            }
+        ],
+        "titulosObtenidos": [],
+        "url_foto": "https://img.a.transfermarkt.technology/portrait/header/default.jpg?lm=1"
+    },
+    {
+        "id": 3406,
+        "nombre": "Nicolás Chávez",
+        "fechaNacimiento": "1993-10-16",
+        "fechaFallecimiento": null,
+        "edad": 32,
+        "altura": 183.0,
+        "nacionalidades": [
+            9,
+            12
+        ],
+        "clubActual": "Dep. Moquegua",
+        "posicionPrincipal": "Mediocentro ofensivo",
+        "posicionesSecundarias": [
+            "Mediocentro"
+        ],
+        "valorMercadoMaximo": 175000.0,
+        "jugoExtranjero": true,
+        "equiposJugados": [
+            {
+                "id_equipo": 8,
+                "periodos": [
+                    [
+                        2022,
+                        2022
+                    ],
+                    [
+                        2023,
+                        2024
+                    ]
+                ]
+            },
+            {
+                "id_equipo": 30,
+                "periodos": [
+                    [
+                        2024,
+                        2024
+                    ]
+                ]
+            },
+            {
+                "id_equipo": 41,
+                "periodos": [
+                    [
+                        2025,
+                        -1
+                    ]
+                ]
+            }
+        ],
+        "titulosObtenidos": [],
+        "url_foto": "https://img.a.transfermarkt.technology/portrait/header/419034-1712956568.png?lm=1"
+    },
+    {
+        "id": 3407,
+        "nombre": "Nicolás Contin",
+        "fechaNacimiento": "1995-12-07",
+        "fechaFallecimiento": null,
+        "edad": 30,
+        "altura": 183.0,
+        "nacionalidades": [
+            2
+        ],
+        "clubActual": "Gimnasia y Tiro",
+        "posicionPrincipal": "Delantero centro",
+        "posicionesSecundarias": [],
+        "valorMercadoMaximo": 800000.0,
+        "jugoExtranjero": true,
+        "equiposJugados": [
+            {
+                "id_equipo": 5,
+                "periodos": [
+                    [
+                        2023,
+                        2023
+                    ]
+                ]
+            }
+        ],
+        "titulosObtenidos": [],
+        "url_foto": "https://img.a.transfermarkt.technology/portrait/header/340164-1727450827.jpg?lm=1"
+    },
+    {
+        "id": 3408,
+        "nombre": "Nicolás Figueroa",
+        "fechaNacimiento": "2002-05-24",
+        "fechaFallecimiento": null,
+        "edad": 23,
+        "altura": 187.0,
+        "nacionalidades": [
+            1
+        ],
+        "clubActual": "FBC Melgar",
+        "posicionPrincipal": "Delantero centro",
+        "posicionesSecundarias": [
+            "Extremo derecho"
+        ],
+        "valorMercadoMaximo": 325000.0,
+        "jugoExtranjero": false,
+        "equiposJugados": [
+            {
+                "id_equipo": 7,
+                "periodos": [
+                    [
+                        2020,
+                        2021
+                    ]
+                ]
+            },
+            {
+                "id_equipo": 4,
+                "periodos": [
+                    [
+                        2022,
+                        2022
+                    ],
+                    [
+                        2025,
+                        2024
+                    ],
+                    [
+                        2025,
+                        2025
+                    ],
+                    [
+                        2026,
+                        -1
+                    ]
+                ]
+            },
+            {
+                "id_equipo": 35,
+                "periodos": [
+                    [
+                        2023,
+                        2024
+                    ]
+                ]
+            },
+            {
+                "id_equipo": 30,
+                "periodos": [
+                    [
+                        2025,
+                        2025
+                    ]
+                ]
+            },
+            {
+                "id_equipo": 27,
+                "periodos": [
+                    [
+                        2025,
+                        2025
+                    ]
+                ]
+            }
+        ],
+        "titulosObtenidos": [],
+        "url_foto": "https://img.a.transfermarkt.technology/portrait/header/662708-1690388590.jpg?lm=1"
+    },
+    {
+        "id": 3409,
+        "nombre": "Nicolás Freitas",
+        "fechaNacimiento": "1987-06-08",
+        "fechaFallecimiento": null,
+        "edad": 38,
+        "altura": 182.0,
+        "nacionalidades": [
+            7
+        ],
+        "clubActual": "Bella Vista",
+        "posicionPrincipal": "Pivote",
+        "posicionesSecundarias": [
+            "Mediocentro"
+        ],
+        "valorMercadoMaximo": 750000.0,
+        "jugoExtranjero": true,
+        "equiposJugados": [
+            {
+                "id_equipo": 4,
+                "periodos": [
+                    [
+                        2019,
+                        2019
+                    ]
+                ]
+            }
+        ],
+        "titulosObtenidos": [
+            {
+                "id_trofeo": 44,
+                "cantidad": 1
+            },
+            {
+                "id_trofeo": 95,
+                "cantidad": 1
+            },
+            {
+                "id_trofeo": 104,
+                "cantidad": 1
+            }
+        ],
+        "url_foto": "https://img.a.transfermarkt.technology/portrait/header/76501-1447749532.jpg?lm=1"
+    },
+    {
+        "id": 3410,
+        "nombre": "Nicolás González",
+        "fechaNacimiento": "1997-06-23",
+        "fechaFallecimiento": null,
+        "edad": 28,
+        "altura": 183.0,
+        "nacionalidades": [
+            7
+        ],
+        "clubActual": "Plaza Colonia",
+        "posicionPrincipal": "Delantero centro",
+        "posicionesSecundarias": [],
+        "valorMercadoMaximo": 375000.0,
+        "jugoExtranjero": true,
+        "equiposJugados": [
+            {
+                "id_equipo": 17,
+                "periodos": [
+                    [
+                        2025,
+                        2025
+                    ]
+                ]
+            }
+        ],
+        "titulosObtenidos": [
+            {
+                "id_trofeo": 29,
+                "cantidad": 1
+            }
+        ],
+        "url_foto": "https://img.a.transfermarkt.technology/portrait/header/457535-1721228573.jpg?lm=1"
+    },
+    {
+        "id": 3411,
+        "nombre": "Nicolás Gómez",
+        "fechaNacimiento": "1996-02-25",
+        "fechaFallecimiento": null,
+        "edad": 29,
+        "altura": 179.0,
+        "nacionalidades": [
+            2
+        ],
+        "clubActual": "Ferro",
+        "posicionPrincipal": "Mediocentro",
+        "posicionesSecundarias": [
+            "Pivote",
+            "Interior izquierdo"
+        ],
+        "valorMercadoMaximo": 275000.0,
+        "jugoExtranjero": true,
+        "equiposJugados": [
+            {
+                "id_equipo": 38,
+                "periodos": [
+                    [
+                        2025,
+                        2025
+                    ]
+                ]
+            }
+        ],
+        "titulosObtenidos": [],
+        "url_foto": "https://img.a.transfermarkt.technology/portrait/header/540304-1741113989.png?lm=1"
+    },
+    {
+        "id": 3412,
+        "nombre": "Nicolás Maná",
+        "fechaNacimiento": "1994-03-25",
+        "fechaFallecimiento": null,
+        "edad": 31,
+        "altura": 178.0,
+        "nacionalidades": [
+            2
+        ],
+        "clubActual": "Trinidense",
+        "posicionPrincipal": "Extremo derecho",
+        "posicionesSecundarias": [
+            "Mediapunta",
+            "Extremo izquierdo"
+        ],
+        "valorMercadoMaximo": 750000.0,
+        "jugoExtranjero": true,
+        "equiposJugados": [
+            {
+                "id_equipo": 7,
+                "periodos": [
+                    [
+                        2015,
+                        2015
+                    ]
+                ]
+            }
+        ],
+        "titulosObtenidos": [],
+        "url_foto": "https://img.a.transfermarkt.technology/portrait/header/282631-1715963169.jpg?lm=1"
+    },
+    {
+        "id": 3413,
+        "nombre": "Nicolás Marotta",
+        "fechaNacimiento": "1996-12-23",
+        "fechaFallecimiento": null,
+        "edad": 29,
+        "altura": 186.0,
+        "nacionalidades": [
+            2
+        ],
+        "clubActual": "Recoleta FC",
+        "posicionPrincipal": "Defensa central",
+        "posicionesSecundarias": [],
+        "valorMercadoMaximo": 550000.0,
+        "jugoExtranjero": true,
+        "equiposJugados": [
+            {
+                "id_equipo": 30,
+                "periodos": [
+                    [
+                        2021,
+                        2021
+                    ],
+                    [
+                        2022,
+                        2022
+                    ]
+                ]
+            }
+        ],
+        "titulosObtenidos": [
+            {
+                "id_trofeo": 138,
+                "cantidad": 1
+            }
+        ],
+        "url_foto": "https://img.a.transfermarkt.technology/portrait/header/843712-1727871780.jpg?lm=1"
+    },
+    {
+        "id": 3414,
+        "nombre": "Nicolás Martínez",
+        "fechaNacimiento": "1989-02-15",
+        "fechaFallecimiento": null,
+        "edad": 36,
+        "altura": 172.0,
+        "nacionalidades": [
+            9
+        ],
+        "clubActual": "Desconocido",
+        "posicionPrincipal": "Interior derecho",
+        "posicionesSecundarias": [
+            "Mediocentro ofensivo",
+            "Extremo derecho"
+        ],
+        "valorMercadoMaximo": 800000.0,
+        "jugoExtranjero": true,
+        "equiposJugados": [
+            {
+                "id_equipo": 15,
+                "periodos": [
+                    [
+                        2019,
+                        2019
+                    ]
+                ]
+            }
+        ],
+        "titulosObtenidos": [],
+        "url_foto": "https://img.a.transfermarkt.technology/portrait/header/default.jpg?lm=1"
+    },
+    {
+        "id": 3415,
+        "nombre": "Nicolás Medina",
+        "fechaNacimiento": "1982-02-17",
+        "fechaFallecimiento": null,
+        "edad": 43,
+        "altura": 177.0,
+        "nacionalidades": [
+            2,
+            12
+        ],
+        "clubActual": "Retirado",
+        "posicionPrincipal": "Pivote",
+        "posicionesSecundarias": [
+            "Mediocentro"
+        ],
+        "valorMercadoMaximo": 4500000.0,
+        "jugoExtranjero": true,
+        "equiposJugados": [
+            {
+                "id_equipo": 17,
+                "periodos": [
+                    [
+                        2013,
+                        2014
+                    ]
+                ]
+            },
+            {
+                "id_equipo": 10,
+                "periodos": [
+                    [
+                        2015,
+                        2015
+                    ]
+                ]
+            }
+        ],
+        "titulosObtenidos": [
+            {
+                "id_trofeo": 87,
+                "cantidad": 1
+            },
+            {
+                "id_trofeo": 96,
+                "cantidad": 1
+            }
+        ],
+        "url_foto": "https://img.a.transfermarkt.technology/portrait/header/3776-1712245813.jpg?lm=1"
+    },
+    {
+        "id": 3416,
+        "nombre": "Nicolás Olivera",
+        "fechaNacimiento": "1993-02-17",
+        "fechaFallecimiento": null,
+        "edad": 32,
+        "altura": 193.0,
+        "nacionalidades": [
+            7
+        ],
+        "clubActual": "Wanderers",
+        "posicionPrincipal": "Defensa central",
+        "posicionesSecundarias": [],
+        "valorMercadoMaximo": 400000.0,
+        "jugoExtranjero": true,
+        "equiposJugados": [
+            {
+                "id_equipo": 19,
+                "periodos": [
+                    [
+                        2022,
+                        2021
+                    ]
+                ]
+            },
+            {
+                "id_equipo": 32,
+                "periodos": [
+                    [
+                        2022,
+                        2022
+                    ]
+                ]
+            }
+        ],
+        "titulosObtenidos": [
+            {
+                "id_trofeo": 44,
+                "cantidad": 1
+            }
+        ],
+        "url_foto": "https://img.a.transfermarkt.technology/portrait/header/343593-1645270315.jpg?lm=1"
+    },
+    {
+        "id": 3417,
+        "nombre": "Nicolás Ortiz",
+        "fechaNacimiento": "1995-03-04",
+        "fechaFallecimiento": null,
+        "edad": 30,
+        "altura": 188.0,
+        "nacionalidades": [
+            2
+        ],
+        "clubActual": "Dep. Madryn",
+        "posicionPrincipal": "Defensa central",
+        "posicionesSecundarias": [],
+        "valorMercadoMaximo": 475000.0,
+        "jugoExtranjero": true,
+        "equiposJugados": [
+            {
+                "id_equipo": 21,
+                "periodos": [
+                    [
+                        2020,
+                        2022
+                    ]
+                ]
+            }
+        ],
+        "titulosObtenidos": [],
+        "url_foto": "https://img.a.transfermarkt.technology/portrait/header/default.jpg?lm=1"
+    },
+    {
+        "id": 3418,
+        "nombre": "Nicolás Palacios",
+        "fechaNacimiento": "1992-02-11",
+        "fechaFallecimiento": null,
+        "edad": 33,
+        "altura": 190.0,
+        "nacionalidades": [
+            5
+        ],
+        "clubActual": "Sin equipo",
+        "posicionPrincipal": "Defensa central",
+        "posicionesSecundarias": [
+            "Pivote"
+        ],
+        "valorMercadoMaximo": 750000.0,
+        "jugoExtranjero": true,
+        "equiposJugados": [
+            {
+                "id_equipo": 17,
+                "periodos": [
+                    [
+                        2023,
+                        2023
+                    ]
+                ]
+            }
+        ],
+        "titulosObtenidos": [
+            {
+                "id_trofeo": 63,
+                "cantidad": 1
+            }
+        ],
+        "url_foto": "https://img.a.transfermarkt.technology/portrait/header/210481-1675706667.png?lm=1"
+    },
+    {
+        "id": 3419,
+        "nombre": "Nicolás Pasquini",
+        "fechaNacimiento": "1991-01-02",
+        "fechaFallecimiento": null,
+        "edad": 35,
+        "altura": 177.0,
+        "nacionalidades": [
+            2,
+            12
+        ],
+        "clubActual": "Sin equipo",
+        "posicionPrincipal": "Lateral izquierdo",
+        "posicionesSecundarias": [
+            "Interior izquierdo",
+            "Mediocentro"
+        ],
+        "valorMercadoMaximo": 2800000.0,
+        "jugoExtranjero": true,
+        "equiposJugados": [
+            {
+                "id_equipo": 3,
+                "periodos": [
+                    [
+                        2023,
+                        2025
+                    ]
+                ]
+            }
+        ],
+        "titulosObtenidos": [
+            {
+                "id_trofeo": 10,
+                "cantidad": 1
+            },
+            {
+                "id_trofeo": 14,
+                "cantidad": 1
+            },
+            {
+                "id_trofeo": 167,
+                "cantidad": 1
+            }
+        ],
+        "url_foto": "https://img.a.transfermarkt.technology/portrait/header/270987-1721832165.jpg?lm=1"
+    },
+    {
+        "id": 3420,
+        "nombre": "Nicolás Pereira",
+        "fechaNacimiento": "1983-04-19",
+        "fechaFallecimiento": null,
+        "edad": 42,
+        "altura": 178.0,
+        "nacionalidades": [
+            7
+        ],
+        "clubActual": "Retirado",
+        "posicionPrincipal": "Pivote",
+        "posicionesSecundarias": [],
+        "valorMercadoMaximo": 400000.0,
+        "jugoExtranjero": true,
+        "equiposJugados": [
+            {
+                "id_equipo": 12,
+                "periodos": [
+                    [
+                        2013,
+                        2013
+                    ]
+                ]
+            }
+        ],
+        "titulosObtenidos": [],
+        "url_foto": "https://img.a.transfermarkt.technology/portrait/header/default.jpg?lm=1"
+    },
+    {
+        "id": 3421,
+        "nombre": "Nicolás Quagliata",
+        "fechaNacimiento": "1999-06-05",
+        "fechaFallecimiento": null,
+        "edad": 26,
+        "altura": 170.0,
+        "nacionalidades": [
+            7,
+            12
+        ],
+        "clubActual": "FBC Melgar",
+        "posicionPrincipal": "Mediocentro ofensivo",
+        "posicionesSecundarias": [
+            "Extremo izquierdo"
+        ],
+        "valorMercadoMaximo": 1500000.0,
+        "jugoExtranjero": true,
+        "equiposJugados": [
+            {
+                "id_equipo": 4,
+                "periodos": [
+                    [
+                        2025,
+                        -1
+                    ]
+                ]
+            }
+        ],
+        "titulosObtenidos": [
+            {
+                "id_trofeo": 34,
+                "cantidad": 1
+            }
+        ],
+        "url_foto": "https://img.a.transfermarkt.technology/portrait/header/733083-1762995953.JPG?lm=1"
+    },
+    {
+        "id": 3422,
+        "nombre": "Nicolás Raguso",
+        "fechaNacimiento": "1992-01-02",
+        "fechaFallecimiento": null,
+        "edad": 34,
+        "altura": 169.0,
+        "nacionalidades": [
+            7,
+            12
+        ],
+        "clubActual": "Retirado",
+        "posicionPrincipal": "Lateral izquierdo",
+        "posicionesSecundarias": [
+            "Interior izquierdo"
+        ],
+        "valorMercadoMaximo": 375000.0,
+        "jugoExtranjero": true,
+        "equiposJugados": [
+            {
+                "id_equipo": 33,
+                "periodos": [
+                    [
+                        2019,
+                        2019
+                    ]
+                ]
+            },
+            {
+                "id_equipo": 36,
+                "periodos": [
+                    [
+                        2020,
+                        2020
+                    ]
+                ]
+            }
+        ],
+        "titulosObtenidos": [
+            {
+                "id_trofeo": 44,
+                "cantidad": 1
+            }
+        ],
+        "url_foto": "https://img.a.transfermarkt.technology/portrait/header/default.jpg?lm=1"
+    },
+    {
+        "id": 3423,
+        "nombre": "Nicolás Rengifo",
+        "fechaNacimiento": "2007-02-15",
+        "fechaFallecimiento": null,
+        "edad": 18,
+        "altura": 186.0,
+        "nacionalidades": [
+            1
+        ],
+        "clubActual": "AD Tarma",
+        "posicionPrincipal": "Delantero centro",
+        "posicionesSecundarias": [],
+        "valorMercadoMaximo": 0.0,
+        "jugoExtranjero": false,
+        "equiposJugados": [
+            {
+                "id_equipo": 2,
+                "periodos": [
+                    [
+                        2025,
+                        2025
+                    ],
+                    [
+                        2027,
+                        -1
+                    ]
+                ]
+            },
+            {
+                "id_equipo": 37,
+                "periodos": [
+                    [
+                        2026,
+                        2026
+                    ]
+                ]
+            }
+        ],
+        "titulosObtenidos": [
+            {
+                "id_trofeo": 2,
+                "cantidad": 1
+            }
+        ],
+        "url_foto": "https://img.a.transfermarkt.technology/portrait/header/1369249-1738285826.png?lm=1"
+    },
+    {
+        "id": 3424,
+        "nombre": "Nicolás Rinaldi",
+        "fechaNacimiento": "1993-08-23",
+        "fechaFallecimiento": null,
+        "edad": 32,
+        "altura": 190.0,
+        "nacionalidades": [
+            2,
+            4
+        ],
+        "clubActual": "Gimnasia y Tiro",
+        "posicionPrincipal": "Mediocentro",
+        "posicionesSecundarias": [
+            "Mediocentro ofensivo",
+            "Interior izquierdo"
+        ],
+        "valorMercadoMaximo": 450000.0,
+        "jugoExtranjero": true,
+        "equiposJugados": [
+            {
+                "id_equipo": 6,
+                "periodos": [
+                    [
+                        2022,
+                        2022
+                    ]
+                ]
+            }
+        ],
+        "titulosObtenidos": [],
+        "url_foto": "https://img.a.transfermarkt.technology/portrait/header/539160-1651692051.png?lm=1"
+    },
+    {
+        "id": 3425,
+        "nombre": "Nicolás Rizzo",
+        "fechaNacimiento": "1993-07-30",
+        "fechaFallecimiento": null,
+        "edad": 32,
+        "altura": 177.0,
+        "nacionalidades": [
+            2,
+            12
+        ],
+        "clubActual": "Sin equipo",
+        "posicionPrincipal": "Mediapunta",
+        "posicionesSecundarias": [
+            "Extremo izquierdo",
+            "Delantero centro"
+        ],
+        "valorMercadoMaximo": 200000.0,
+        "jugoExtranjero": true,
+        "equiposJugados": [
+            {
+                "id_equipo": 11,
+                "periodos": [
+                    [
+                        2011,
+                        2011
+                    ]
+                ]
+            }
+        ],
+        "titulosObtenidos": [],
+        "url_foto": "https://img.a.transfermarkt.technology/portrait/header/default.jpg?lm=1"
+    },
+    {
+        "id": 3426,
+        "nombre": "Nicolás Rotundo",
+        "fechaNacimiento": "1976-06-06",
+        "fechaFallecimiento": null,
+        "edad": 49,
+        "altura": 181.0,
+        "nacionalidades": [
+            7
+        ],
+        "clubActual": "Retirado",
+        "posicionPrincipal": "Pivote",
+        "posicionesSecundarias": [],
+        "valorMercadoMaximo": 0.0,
+        "jugoExtranjero": true,
+        "equiposJugados": [
+            {
+                "id_equipo": 4,
+                "periodos": [
+                    [
+                        2010,
+                        2010
+                    ]
+                ]
+            }
+        ],
+        "titulosObtenidos": [],
+        "url_foto": "https://img.a.transfermarkt.technology/portrait/header/default.jpg?lm=1"
+    },
+    {
+        "id": 3427,
+        "nombre": "Nicolás Saenz",
+        "fechaNacimiento": "2001-11-07",
+        "fechaFallecimiento": null,
+        "edad": 24,
+        "altura": 181.0,
+        "nacionalidades": [
+            1
+        ],
+        "clubActual": "Sin equipo",
+        "posicionPrincipal": "Lateral izquierdo",
+        "posicionesSecundarias": [
+            "Defensa central",
+            "Pivote"
+        ],
+        "valorMercadoMaximo": 75000.0,
+        "jugoExtranjero": false,
+        "equiposJugados": [
+            {
+                "id_equipo": 39,
+                "periodos": [
+                    [
+                        2021,
+                        2021
+                    ]
+                ]
+            }
+        ],
+        "titulosObtenidos": [],
+        "url_foto": "https://img.a.transfermarkt.technology/portrait/header/default.jpg?lm=1"
+    },
+    {
+        "id": 3428,
+        "nombre": "Nicolás Silva",
+        "fechaNacimiento": "1990-01-24",
+        "fechaFallecimiento": null,
+        "edad": 36,
+        "altura": 163.0,
+        "nacionalidades": [
+            2
+        ],
+        "clubActual": "Cusco FC",
+        "posicionPrincipal": "Extremo derecho",
+        "posicionesSecundarias": [
+            "Extremo izquierdo",
+            "Interior derecho"
+        ],
+        "valorMercadoMaximo": 400000.0,
+        "jugoExtranjero": true,
+        "equiposJugados": [
+            {
+                "id_equipo": 19,
+                "periodos": [
+                    [
+                        2024,
+                        -1
+                    ]
+                ]
+            }
+        ],
+        "titulosObtenidos": [
+            {
+                "id_trofeo": 4,
+                "cantidad": 1
+            }
+        ],
+        "url_foto": "https://img.a.transfermarkt.technology/portrait/header/422914-1705361359.png?lm=1"
+    },
+    {
+        "id": 3429,
+        "nombre": "Nicolás Strobach",
+        "fechaNacimiento": "1993-04-06",
+        "fechaFallecimiento": null,
+        "edad": 32,
+        "altura": 185.0,
+        "nacionalidades": [
+            1
+        ],
+        "clubActual": "Retirado",
+        "posicionPrincipal": "Delantero centro",
+        "posicionesSecundarias": [],
+        "valorMercadoMaximo": 0.0,
+        "jugoExtranjero": false,
+        "equiposJugados": [
+            {
+                "id_equipo": 7,
+                "periodos": [
+                    [
+                        2011,
+                        2011
+                    ]
+                ]
+            },
+            {
+                "id_equipo": 5,
+                "periodos": [
+                    [
+                        2013,
+                        2013
+                    ],
+                    [
+                        2015,
+                        2015
+                    ]
+                ]
+            },
+            {
+                "id_equipo": 13,
+                "periodos": [
+                    [
+                        2014,
+                        2014
+                    ]
+                ]
+            }
+        ],
+        "titulosObtenidos": [],
+        "url_foto": "https://img.a.transfermarkt.technology/portrait/header/default.jpg?lm=1"
+    },
+    {
+        "id": 3430,
+        "nombre": "Nicolás Tami",
+        "fechaNacimiento": "2001-04-06",
+        "fechaFallecimiento": null,
+        "edad": 24,
+        "altura": 180.0,
+        "nacionalidades": [
+            1
+        ],
+        "clubActual": "Retirado",
+        "posicionPrincipal": "Delantero centro",
+        "posicionesSecundarias": [
+            "Extremo derecho",
+            "Extremo izquierdo"
+        ],
+        "valorMercadoMaximo": 75000.0,
+        "jugoExtranjero": false,
+        "equiposJugados": [
+            {
+                "id_equipo": 8,
+                "periodos": [
+                    [
+                        2020,
+                        2021
+                    ]
+                ]
+            }
+        ],
+        "titulosObtenidos": [],
+        "url_foto": "https://img.a.transfermarkt.technology/portrait/header/784507-1652213190.jpg?lm=1"
+    },
+    {
+        "id": 3431,
+        "nombre": "Nicolás Vigneri",
+        "fechaNacimiento": "1983-07-06",
+        "fechaFallecimiento": null,
+        "edad": 42,
+        "altura": 178.0,
+        "nacionalidades": [
+            7,
+            12
+        ],
+        "clubActual": "Retirado",
+        "posicionPrincipal": "Delantero centro",
+        "posicionesSecundarias": [
+            "Extremo derecho",
+            "Extremo izquierdo"
+        ],
+        "valorMercadoMaximo": 1500000.0,
+        "jugoExtranjero": true,
+        "equiposJugados": [
+            {
+                "id_equipo": 23,
+                "periodos": [
+                    [
+                        2014,
+                        2014
+                    ]
+                ]
+            }
+        ],
+        "titulosObtenidos": [
+            {
+                "id_trofeo": 44,
+                "cantidad": 1
+            }
+        ],
+        "url_foto": "https://img.a.transfermarkt.technology/portrait/header/default.jpg?lm=1"
+    },
+    {
+        "id": 3432,
+        "nombre": "Niger Vega",
+        "fechaNacimiento": "1993-08-06",
+        "fechaFallecimiento": null,
+        "edad": 32,
+        "altura": 175.0,
+        "nacionalidades": [
+            1
+        ],
+        "clubActual": "Sin equipo",
+        "posicionPrincipal": "Mediocentro ofensivo",
+        "posicionesSecundarias": [],
+        "valorMercadoMaximo": 325000.0,
+        "jugoExtranjero": false,
+        "equiposJugados": [
+            {
+                "id_equipo": 9,
+                "periodos": [
+                    [
+                        2012,
+                        2015
+                    ],
+                    [
+                        2016,
+                        2017
+                    ]
+                ]
+            },
+            {
+                "id_equipo": 32,
+                "periodos": [
+                    [
+                        2018,
+                        2019
+                    ]
+                ]
+            },
+            {
+                "id_equipo": 36,
+                "periodos": [
+                    [
+                        2020,
+                        2021
+                    ]
+                ]
+            },
+            {
+                "id_equipo": 17,
+                "periodos": [
+                    [
+                        2022,
+                        2022
+                    ]
+                ]
+            },
+            {
+                "id_equipo": 39,
+                "periodos": [
+                    [
+                        2023,
+                        2023
+                    ]
+                ]
+            }
+        ],
+        "titulosObtenidos": [],
+        "url_foto": "https://img.a.transfermarkt.technology/portrait/header/249978-1688791464.jpg?lm=1"
+    },
+    {
+        "id": 3433,
+        "nombre": "Nils Marotazo",
+        "fechaNacimiento": "2005-04-13",
+        "fechaFallecimiento": null,
+        "edad": 20,
+        "altura": 184.0,
+        "nacionalidades": [
+            1
+        ],
+        "clubActual": "Sin equipo",
+        "posicionPrincipal": "Defensa central",
+        "posicionesSecundarias": [
+            "Lateral izquierdo",
+            "Pivote"
+        ],
+        "valorMercadoMaximo": 25000.0,
+        "jugoExtranjero": false,
+        "equiposJugados": [
+            {
+                "id_equipo": 40,
+                "periodos": [
+                    [
+                        2024,
+                        2024
+                    ]
+                ]
+            }
+        ],
+        "titulosObtenidos": [],
+        "url_foto": "https://img.a.transfermarkt.technology/portrait/header/1236729-1712797533.png?lm=1"
+    },
+    {
+        "id": 3434,
+        "nombre": "Nilson Loyola",
+        "fechaNacimiento": "1994-10-26",
+        "fechaFallecimiento": null,
+        "edad": 31,
+        "altura": 178.0,
+        "nacionalidades": [
+            1
+        ],
+        "clubActual": "FC Cajamarca",
+        "posicionPrincipal": "Lateral izquierdo",
+        "posicionesSecundarias": [],
+        "valorMercadoMaximo": 600000.0,
+        "jugoExtranjero": true,
+        "equiposJugados": [
+            {
+                "id_equipo": 4,
+                "periodos": [
+                    [
+                        2015,
+                        2018
+                    ]
+                ]
+            },
+            {
+                "id_equipo": 3,
+                "periodos": [
+                    [
+                        2019,
+                        2023
+                    ]
+                ]
+            },
+            {
+                "id_equipo": 9,
+                "periodos": [
+                    [
+                        2024,
+                        2024
+                    ]
+                ]
+            },
+            {
+                "id_equipo": 30,
+                "periodos": [
+                    [
+                        2025,
+                        2025
+                    ]
+                ]
+            },
+            {
+                "id_equipo": 40,
+                "periodos": [
+                    [
+                        2025,
+                        2025
+                    ]
+                ]
+            },
+            {
+                "id_equipo": 42,
+                "periodos": [
+                    [
+                        2026,
+                        -1
+                    ]
+                ]
+            }
+        ],
+        "titulosObtenidos": [
+            {
+                "id_trofeo": 2,
+                "cantidad": 2
+            },
+            {
+                "id_trofeo": 11,
+                "cantidad": 1
+            }
+        ],
+        "url_foto": "https://img.a.transfermarkt.technology/portrait/header/333025-1619974953.png?lm=1"
+    },
+    {
+        "id": 3435,
+        "nombre": "Nilson Olaya",
+        "fechaNacimiento": "1998-07-18",
+        "fechaFallecimiento": null,
+        "edad": 27,
+        "altura": 0.0,
+        "nacionalidades": [
+            1
+        ],
+        "clubActual": "Sin equipo",
+        "posicionPrincipal": "Mediocentro",
+        "posicionesSecundarias": [],
+        "valorMercadoMaximo": 50000.0,
+        "jugoExtranjero": true,
+        "equiposJugados": [
+            {
+                "id_equipo": 27,
+                "periodos": [
+                    [
+                        2014,
+                        2016
+                    ]
+                ]
+            }
+        ],
+        "titulosObtenidos": [],
+        "url_foto": "https://img.a.transfermarkt.technology/portrait/header/default.jpg?lm=1"
+    },
+    {
+        "id": 3436,
+        "nombre": "Nilton Oliva",
+        "fechaNacimiento": "1999-03-01",
+        "fechaFallecimiento": null,
+        "edad": 26,
+        "altura": 0.0,
+        "nacionalidades": [
+            1
+        ],
+        "clubActual": "Juan Aurich",
+        "posicionPrincipal": "Extremo izquierdo",
+        "posicionesSecundarias": [],
+        "valorMercadoMaximo": 0.0,
+        "jugoExtranjero": false,
+        "equiposJugados": [
+            {
+                "id_equipo": 8,
+                "periodos": [
+                    [
+                        2025,
+                        -1
+                    ]
+                ]
+            }
+        ],
+        "titulosObtenidos": [],
+        "url_foto": "https://img.a.transfermarkt.technology/portrait/header/default.jpg?lm=1"
+    },
+    {
+        "id": 3437,
+        "nombre": "Nilton Ramirez",
+        "fechaNacimiento": "2005-08-08",
+        "fechaFallecimiento": null,
+        "edad": 20,
+        "altura": 169.0,
+        "nacionalidades": [
+            1
+        ],
+        "clubActual": "Juan Pablo II",
+        "posicionPrincipal": "Mediocentro",
+        "posicionesSecundarias": [
+            "Extremo derecho",
+            "Mediocentro ofensivo"
+        ],
+        "valorMercadoMaximo": 325000.0,
+        "jugoExtranjero": false,
+        "equiposJugados": [
+            {
+                "id_equipo": 13,
+                "periodos": [
+                    [
+                        2018,
+                        2020
+                    ],
+                    [
+                        2022,
+                        2022
+                    ]
+                ]
+            },
+            {
+                "id_equipo": 31,
+                "periodos": [
+                    [
+                        2023,
+                        2025
+                    ]
+                ]
+            },
+            {
+                "id_equipo": 40,
+                "periodos": [
+                    [
+                        2026,
+                        -1
+                    ]
+                ]
+            }
+        ],
+        "titulosObtenidos": [
+            {
+                "id_trofeo": 5,
+                "cantidad": 1
+            }
+        ],
+        "url_foto": "https://img.a.transfermarkt.technology/portrait/header/1107110-1716688143.jpg?lm=1"
+    },
+    {
+        "id": 3438,
+        "nombre": "Nilton Rubiños",
+        "fechaNacimiento": "1986-10-30",
+        "fechaFallecimiento": null,
+        "edad": 39,
+        "altura": 0.0,
+        "nacionalidades": [
+            1
+        ],
+        "clubActual": "Retirado",
+        "posicionPrincipal": "Mediocentro ofensivo",
+        "posicionesSecundarias": [],
+        "valorMercadoMaximo": 0.0,
+        "jugoExtranjero": false,
+        "equiposJugados": [
+            {
+                "id_equipo": 32,
+                "periodos": [
+                    [
+                        2013,
+                        2015
+                    ]
+                ]
+            }
+        ],
+        "titulosObtenidos": [],
+        "url_foto": "https://img.a.transfermarkt.technology/portrait/header/default.jpg?lm=1"
+    },
+    {
+        "id": 3439,
+        "nombre": "Nixon Villoslada",
+        "fechaNacimiento": "1993-05-21",
+        "fechaFallecimiento": null,
+        "edad": 32,
+        "altura": 0.0,
+        "nacionalidades": [
+            1
+        ],
+        "clubActual": "San Román",
+        "posicionPrincipal": "Defensa central",
+        "posicionesSecundarias": [
+            "Pivote"
+        ],
+        "valorMercadoMaximo": 150000.0,
+        "jugoExtranjero": false,
+        "equiposJugados": [
+            {
+                "id_equipo": 17,
+                "periodos": [
+                    [
+                        2015,
+                        2017
+                    ]
+                ]
+            }
+        ],
+        "titulosObtenidos": [],
+        "url_foto": "https://img.a.transfermarkt.technology/portrait/header/250678-1681436475.jpg?lm=1"
+    },
+    {
+        "id": 3440,
+        "nombre": "Noams Oyola",
+        "fechaNacimiento": "1991-02-28",
+        "fechaFallecimiento": null,
+        "edad": 34,
+        "altura": 178.0,
+        "nacionalidades": [
+            1
+        ],
+        "clubActual": "Retirado",
+        "posicionPrincipal": "Mediocentro ofensivo",
+        "posicionesSecundarias": [],
+        "valorMercadoMaximo": 100000.0,
+        "jugoExtranjero": false,
+        "equiposJugados": [
+            {
+                "id_equipo": 5,
+                "periodos": [
+                    [
+                        2008,
+                        2008
+                    ],
+                    [
+                        2012,
+                        2012
+                    ]
+                ]
+            },
+            {
+                "id_equipo": 14,
+                "periodos": [
+                    [
+                        2010,
+                        2010
+                    ]
+                ]
+            }
+        ],
+        "titulosObtenidos": [],
+        "url_foto": "https://img.a.transfermarkt.technology/portrait/header/s_95195_12729_2010_1.jpg?lm=1"
+    },
+    {
+        "id": 3441,
+        "nombre": "Néstor Duarte",
+        "fechaNacimiento": "1990-09-08",
+        "fechaFallecimiento": null,
+        "edad": 35,
+        "altura": 178.0,
+        "nacionalidades": [
+            1
+        ],
+        "clubActual": "Retirado",
+        "posicionPrincipal": "Defensa central",
+        "posicionesSecundarias": [
+            "Lateral derecho"
+        ],
+        "valorMercadoMaximo": 300000.0,
+        "jugoExtranjero": false,
+        "equiposJugados": [
+            {
+                "id_equipo": 2,
+                "periodos": [
+                    [
+                        2007,
+                        2015
+                    ]
+                ]
+            },
+            {
+                "id_equipo": 19,
+                "periodos": [
+                    [
+                        2016,
+                        2016
+                    ]
+                ]
+            },
+            {
+                "id_equipo": 15,
+                "periodos": [
+                    [
+                        2016,
+                        2016
+                    ]
+                ]
+            },
+            {
+                "id_equipo": 21,
+                "periodos": [
+                    [
+                        2017,
+                        2017
+                    ]
+                ]
+            },
+            {
+                "id_equipo": 10,
+                "periodos": [
+                    [
+                        2018,
+                        2018
+                    ]
+                ]
+            },
+            {
+                "id_equipo": 29,
+                "periodos": [
+                    [
+                        2019,
+                        2019
+                    ]
+                ]
+            },
+            {
+                "id_equipo": 33,
+                "periodos": [
+                    [
+                        2020,
+                        2021
+                    ]
+                ]
+            }
+        ],
+        "titulosObtenidos": [
+            {
+                "id_trofeo": 2,
+                "cantidad": 2
+            },
+            {
+                "id_trofeo": 71,
+                "cantidad": 1
+            }
+        ],
+        "url_foto": "https://img.a.transfermarkt.technology/portrait/header/82569-1757256442.jpg?lm=1"
+    },
+    {
+        "id": 3442,
+        "nombre": "Nórbil Romero",
+        "fechaNacimiento": "1984-03-18",
+        "fechaFallecimiento": null,
+        "edad": 41,
+        "altura": 181.0,
+        "nacionalidades": [
+            1
+        ],
+        "clubActual": "Retirado",
+        "posicionPrincipal": "Mediocentro ofensivo",
+        "posicionesSecundarias": [
+            "Interior izquierdo"
+        ],
+        "valorMercadoMaximo": 275000.0,
+        "jugoExtranjero": false,
+        "equiposJugados": [
+            {
+                "id_equipo": 3,
+                "periodos": [
+                    [
+                        2003,
+                        2004
+                    ]
+                ]
+            },
+            {
+                "id_equipo": 4,
+                "periodos": [
+                    [
+                        2007,
+                        2010
+                    ]
+                ]
+            },
+            {
+                "id_equipo": 18,
+                "periodos": [
+                    [
+                        2011,
+                        2012
+                    ]
+                ]
+            }
+        ],
+        "titulosObtenidos": [],
+        "url_foto": "https://img.a.transfermarkt.technology/portrait/header/default.jpg?lm=1"
+    },
+    {
+        "id": 3443,
+        "nombre": "OIiver López",
+        "fechaNacimiento": "2008-05-20",
+        "fechaFallecimiento": null,
+        "edad": 17,
+        "altura": 184.0,
+        "nacionalidades": [
+            1,
+            4
+        ],
+        "clubActual": "AD Cantolao",
+        "posicionPrincipal": "Delantero centro",
+        "posicionesSecundarias": [],
+        "valorMercadoMaximo": 25000.0,
+        "jugoExtranjero": false,
+        "equiposJugados": [
+            {
+                "id_equipo": 29,
+                "periodos": [
+                    [
+                        2024,
+                        -1
+                    ]
+                ]
+            }
+        ],
+        "titulosObtenidos": [],
+        "url_foto": "https://img.a.transfermarkt.technology/portrait/header/1253905-1743308500.jpeg?lm=1"
+    },
+    {
+        "id": 3444,
+        "nombre": "Octavio Ramos",
+        "fechaNacimiento": "2004-12-19",
+        "fechaFallecimiento": null,
+        "edad": 21,
+        "altura": 182.0,
+        "nacionalidades": [
+            1
+        ],
+        "clubActual": "Sin equipo",
+        "posicionPrincipal": "Portero",
+        "posicionesSecundarias": [],
+        "valorMercadoMaximo": 25000.0,
+        "jugoExtranjero": false,
+        "equiposJugados": [
+            {
+                "id_equipo": 4,
+                "periodos": [
+                    [
+                        2024,
+                        2025
+                    ]
+                ]
+            }
+        ],
+        "titulosObtenidos": [],
+        "url_foto": "https://img.a.transfermarkt.technology/portrait/header/default.jpg?lm=1"
+    },
+    {
+        "id": 3445,
+        "nombre": "Octavio Zapata",
+        "fechaNacimiento": "1990-11-19",
+        "fechaFallecimiento": null,
+        "edad": 35,
+        "altura": 186.0,
+        "nacionalidades": [
+            5
+        ],
+        "clubActual": "Delfines",
+        "posicionPrincipal": "Defensa central",
+        "posicionesSecundarias": [],
+        "valorMercadoMaximo": 250000.0,
+        "jugoExtranjero": true,
+        "equiposJugados": [
+            {
+                "id_equipo": 17,
+                "periodos": [
+                    [
+                        2022,
+                        2023
+                    ]
+                ]
+            },
+            {
+                "id_equipo": 34,
+                "periodos": [
+                    [
+                        2023,
+                        2024
+                    ]
+                ]
+            }
+        ],
+        "titulosObtenidos": [],
+        "url_foto": "https://img.a.transfermarkt.technology/portrait/header/378303-1650993278.png?lm=1"
+    },
+    {
+        "id": 3446,
+        "nombre": "Oliver Benítez",
+        "fechaNacimiento": "1991-06-07",
+        "fechaFallecimiento": null,
+        "edad": 34,
+        "altura": 185.0,
+        "nacionalidades": [
+            2
+        ],
+        "clubActual": "Sin equipo",
+        "posicionPrincipal": "Defensa central",
+        "posicionesSecundarias": [
+            "Lateral izquierdo"
+        ],
+        "valorMercadoMaximo": 850000.0,
+        "jugoExtranjero": true,
+        "equiposJugados": [
+            {
+                "id_equipo": 5,
+                "periodos": [
+                    [
+                        2023,
+                        2023
+                    ]
+                ]
+            }
+        ],
+        "titulosObtenidos": [
+            {
+                "id_trofeo": 43,
+                "cantidad": 1
+            },
+            {
+                "id_trofeo": 175,
+                "cantidad": 1
+            }
+        ],
+        "url_foto": "https://img.a.transfermarkt.technology/portrait/header/107529-1678299989.jpg?lm=1"
+    },
+    {
+        "id": 3447,
+        "nombre": "Oliver Rivera",
+        "fechaNacimiento": "2002-03-07",
+        "fechaFallecimiento": null,
+        "edad": 23,
+        "altura": 183.0,
+        "nacionalidades": [
+            1
+        ],
+        "clubActual": "Sin equipo",
+        "posicionPrincipal": "Defensa central",
+        "posicionesSecundarias": [
+            "Lateral izquierdo"
+        ],
+        "valorMercadoMaximo": 50000.0,
+        "jugoExtranjero": false,
+        "equiposJugados": [
+            {
+                "id_equipo": 34,
+                "periodos": [
+                    [
+                        2024,
+                        2024
+                    ]
+                ]
+            }
+        ],
+        "titulosObtenidos": [],
+        "url_foto": "https://img.a.transfermarkt.technology/portrait/header/1146672-1710948356.png?lm=1"
+    },
+    {
+        "id": 3448,
+        "nombre": "Omar Carrillo",
+        "fechaNacimiento": "1979-05-06",
+        "fechaFallecimiento": null,
+        "edad": 46,
+        "altura": 0.0,
+        "nacionalidades": [
+            1
+        ],
+        "clubActual": "Retirado",
+        "posicionPrincipal": "Defensa central",
+        "posicionesSecundarias": [],
+        "valorMercadoMaximo": 0.0,
+        "jugoExtranjero": false,
+        "equiposJugados": [
+            {
+                "id_equipo": 17,
+                "periodos": [
+                    [
+                        2010,
+                        2011
+                    ]
+                ]
+            }
+        ],
+        "titulosObtenidos": [],
+        "url_foto": "https://img.a.transfermarkt.technology/portrait/header/default.jpg?lm=1"
     }
 ]
