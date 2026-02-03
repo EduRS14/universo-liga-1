@@ -253,6 +253,7 @@ export const JuegoElABC: React.FC<ElABCProps> = ({ todosLosEquipos, todosLosJuga
 
   const volver = () => {
     localStorage.removeItem(STORAGE_KEY);
+    localStorage.removeItem('juegoIniciadoElABC');
     window.location.reload();
   };
 
