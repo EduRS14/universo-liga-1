@@ -18,11 +18,11 @@ interface EstadoPartida {
   puntaje: number;
   saltos: number;
   estado: 'jugando' | 'ganado' | 'perdido';
-  secuenciaIds: number[]; // Guardamos solo los IDs para ahorrar espacio
+  secuenciaIds: number[]; 
 }
 
 const ALFABETO: string[] = "ABCDEFGHIJLMNOPQRSTUVZ".split('');
-const STORAGE_KEY = 'elABC_sesion_v2'; // Cambié a v2 para evitar conflictos con versiones previas
+const STORAGE_KEY = 'elABC_sesion_v2'; 
 
 export const JuegoElABC: React.FC<ElABCProps> = ({ todosLosEquipos, todosLosJugadores }) => {
   // ESTADOS VISUALES
@@ -37,6 +37,10 @@ export const JuegoElABC: React.FC<ElABCProps> = ({ todosLosEquipos, todosLosJuga
   const [inputValue, setInputValue] = useState<string>('');
   const [errorMsg, setErrorMsg] = useState<string | null>(null);
   
+  // ESTADO DE BLOQUEO (Nuevo)
+  // Evita interacciones mientras se muestra la animación/mensaje de éxito o salto
+  const [procesando, setProcesando] = useState<boolean>(false);
+
   // MODAL
   const [candidatos, setCandidatos] = useState<Jugador[]>([]);
   const [showModal, setShowModal] = useState<boolean>(false);
@@ -46,24 +50,19 @@ export const JuegoElABC: React.FC<ElABCProps> = ({ todosLosEquipos, todosLosJuga
   const equipoActual = secuenciaEquipos[indiceLetra] || null;
 
   // --------------------------------------------------------------------------
-  // 1. OPTIMIZACIÓN: Mapa de Letras -> Equipos Válidos (useMemo)
+  // 1. OPTIMIZACIÓN (useMemo)
   // --------------------------------------------------------------------------
-  // Esto crea un diccionario instantáneo para saber qué equipos son válidos para cada letra
   const mapaLetrasEquipos = useMemo(() => {
     const mapa: Record<string, Set<number>> = {};
     ALFABETO.forEach(l => mapa[l] = new Set());
 
     todosLosJugadores.forEach(jugador => {
-      // Usamos la utilidad para obtener el apellido limpio
       const apellidos = obtenerStringApellidos(jugador.nombre);
       if (!apellidos) return;
-      
       const inicial = apellidos.charAt(0).toUpperCase();
 
-      // Si la inicial está en nuestro alfabeto de juego
       if (mapa[inicial]) {
         jugador.equiposJugados.forEach(e => {
-          // Manejo robusto de IDs (number u objeto)
           const id = typeof e === 'number' ? e : ((e as any).id_equipo || (e as any).equipoId || (e as any).id);
           if (id) mapa[inicial].add(Number(id));
         });
@@ -76,7 +75,6 @@ export const JuegoElABC: React.FC<ElABCProps> = ({ todosLosEquipos, todosLosJuga
   // 2. LÓGICA DE GENERACIÓN Y PERSISTENCIA
   // --------------------------------------------------------------------------
 
-  // Función auxiliar para actualizar LocalStorage
   const guardarProgreso = (datos: Partial<EstadoPartida>) => {
     const actualRaw = localStorage.getItem(STORAGE_KEY);
     const actual = actualRaw ? JSON.parse(actualRaw) : {};
@@ -84,11 +82,9 @@ export const JuegoElABC: React.FC<ElABCProps> = ({ todosLosEquipos, todosLosJuga
     localStorage.setItem(STORAGE_KEY, JSON.stringify(nuevoEstado));
   };
 
-  // Generación de partida validada (useCallback)
   const iniciarNuevaPartida = useCallback(() => {
     const nuevaSecuencia = ALFABETO.map((letra) => {
       const idsValidosSet = mapaLetrasEquipos[letra];
-
       const equiposCandidatos = Array.from(idsValidosSet)
         .map(id => todosLosEquipos.find(e => e.id === id))
         .filter(e => e !== undefined) as Equipo[];
@@ -115,21 +111,18 @@ export const JuegoElABC: React.FC<ElABCProps> = ({ todosLosEquipos, todosLosJuga
     setPuntaje(0);
     setSaltosDisponibles(3);
     setEstadoJuego('jugando');
+    setProcesando(false); // Aseguramos que inicie desbloqueado
     guardarProgreso(estadoInicial);
   }, [todosLosEquipos, mapaLetrasEquipos]);
 
   useEffect(() => {
     const partidaGuardada = localStorage.getItem(STORAGE_KEY);
-
     if (partidaGuardada) {
       try {
         const datos: EstadoPartida = JSON.parse(partidaGuardada);
-        
-        // Reconstruir los objetos Equipo a partir de los IDs guardados
         const secuenciaReconstruida = datos.secuenciaIds.map(id => 
           todosLosEquipos.find(e => e.id === id) || todosLosEquipos[0]
         );
-
         setIndiceLetra(datos.indice);
         setPuntaje(datos.puntaje);
         setSaltosDisponibles(datos.saltos);
@@ -144,16 +137,22 @@ export const JuegoElABC: React.FC<ElABCProps> = ({ todosLosEquipos, todosLosJuga
     setCargando(false);
   }, [iniciarNuevaPartida, todosLosEquipos]);
 
+  // --------------------------------------------------------------------------
+  // 3. HANDLERS
+  // --------------------------------------------------------------------------
+
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setInputValue(e.target.value);
   };
 
   const handleKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {
+    // Bloqueamos Enter si está procesando
+    if (procesando) return;
     if (e.key === 'Enter') handleSubmit();
   };
 
   const handleSubmit = () => {
-    if (!inputValue.trim()) return;
+    if (procesando || !inputValue.trim()) return;
 
     const encontrados = buscarPorApellido(inputValue, todosLosJugadores, letraActual);
 
@@ -183,6 +182,9 @@ export const JuegoElABC: React.FC<ElABCProps> = ({ todosLosEquipos, todosLosJuga
     );
 
     if (jugoEnEquipo) {
+      // 1. Bloqueamos la UI inmediatamente
+      setProcesando(true);
+      
       const puntosGanados = Math.round(100 * equipoActual.multiplicador);
       const nuevoPuntaje = puntaje + puntosGanados;
       
@@ -195,22 +197,30 @@ export const JuegoElABC: React.FC<ElABCProps> = ({ todosLosEquipos, todosLosJuga
       }, 1500);
 
     } else {
+      // Si falla, NO bloqueamos, dejamos que intente de nuevo
       setErrorMsg(`INCORRECTO. ${jugador.nombre} no figura en ${equipoActual.nombre}.`);
     }
   };
 
   const handleSaltarEquipo = () => {
+    // Si ya está procesando o no hay saltos, no hacemos nada
+    if (procesando || saltosDisponibles <= 0) return;
+
     if (saltosDisponibles <= 0) {
       setErrorMsg('No te quedan saltos disponibles.');
       setTimeout(() => setErrorMsg(null), 2000);
       return;
     }
 
+    // 1. Bloqueamos UI
+    setProcesando(true);
+
     const nuevosSaltos = saltosDisponibles - 1;
     setSaltosDisponibles(nuevosSaltos);
     guardarProgreso({ saltos: nuevosSaltos });
 
     setErrorMsg(`Saltaste este equipo. Te quedan ${nuevosSaltos} saltos.`);
+    
     setTimeout(() => {
       avanzarJuego();
     }, 1500);
@@ -230,16 +240,19 @@ export const JuegoElABC: React.FC<ElABCProps> = ({ todosLosEquipos, todosLosJuga
       setIndiceLetra(siguienteIndice);
       guardarProgreso({ indice: siguienteIndice });
     }
+    
+    // IMPORTANTE: Liberamos la UI para el siguiente turno
+    setProcesando(false);
   };
 
   const handleRendirse = () => {
+    if (procesando) return;
     setEstadoJuego('perdido');
     guardarProgreso({ estado: 'perdido' });
   };
 
   const volver = () => {
     localStorage.removeItem(STORAGE_KEY);
-    localStorage.removeItem('juegoIniciadoElABC');
     window.location.reload();
   };
 
@@ -249,6 +262,9 @@ export const JuegoElABC: React.FC<ElABCProps> = ({ todosLosEquipos, todosLosJuga
     return '#0ea5e9';
   };
 
+  // --------------------------------------------------------------------------
+  // 4. RENDER
+  // --------------------------------------------------------------------------
 
   if (cargando) return <div className="loading">Cargando partida...</div>;
 
@@ -267,7 +283,12 @@ export const JuegoElABC: React.FC<ElABCProps> = ({ todosLosEquipos, todosLosJuga
           </p>
 
           <div style={{ marginTop: '30px' }}>
-            <p className='texto-explicacion-estado'>Letras completadas: {indiceLetra} / {ALFABETO.length}</p>
+            {
+              estadoJuego === 'ganado' ? (
+                <p className='texto-explicacion-estado'>¡Lograste completar el reto!</p>
+              ) :
+              <p className='texto-explicacion-estado'>Lograste llegar hasta la "{ALFABETO[indiceLetra]}"</p>
+            }
             
             <button 
               className="btn btn-primary mt-3"
@@ -281,7 +302,6 @@ export const JuegoElABC: React.FC<ElABCProps> = ({ todosLosEquipos, todosLosJuga
     );
   }
 
-  // Protección por si acaso falla la secuencia
   if (!equipoActual) return <div className="loading">Generando desafío...</div>;
 
   const colorActual = getColorDificultad(equipoActual.multiplicador);
@@ -324,11 +344,16 @@ export const JuegoElABC: React.FC<ElABCProps> = ({ todosLosEquipos, todosLosJuga
               onChange={handleInputChange}
               onKeyDown={handleKeyDown}
               autoFocus
+              disabled={procesando} /* AQUÍ BLOQUEAMOS EL INPUT */
             />
           </div>
 
           <div className="col-4 col-lg-3">
-            <button className="btn-enviar" onClick={handleSubmit}>
+            <button 
+              className="btn-enviar" 
+              onClick={handleSubmit}
+              disabled={procesando} /* BLOQUEADO AL PROCESAR */
+            >
               VERIFICAR
             </button>
           </div>
@@ -342,13 +367,22 @@ export const JuegoElABC: React.FC<ElABCProps> = ({ todosLosEquipos, todosLosJuga
           )}
 
           <div className="col-6 col-lg-2">
-            <button className="btn-rendirse" onClick={handleSaltarEquipo} disabled={saltosDisponibles === 0}>
+            <button 
+              className="btn-rendirse" 
+              onClick={handleSaltarEquipo} 
+              /* Deshabilitado si: 1. Está procesando OR 2. No hay saltos */
+              disabled={procesando || saltosDisponibles === 0}
+            >
               🚩 SALTAR ({saltosDisponibles})
             </button>
           </div>
 
           <div className="col-6 col-lg-2">
-            <button className="btn-rendirse" onClick={handleRendirse}>
+            <button 
+              className="btn-rendirse" 
+              onClick={handleRendirse}
+              disabled={procesando} /* BLOQUEADO AL PROCESAR */
+            >
               🏳️ RENDIRSE
             </button>
           </div>

@@ -163,6 +163,11 @@
   cursor: not-allowed;
 }
 
+.btn-enviar:disabled {
+  background: #94a3b8;
+  cursor: not-allowed;
+}
+
 /* --- Mensajes de Feedback --- */
 .feedback-msg {
   padding: 1rem;
