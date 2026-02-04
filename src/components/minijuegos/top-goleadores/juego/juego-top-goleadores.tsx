@@ -6,7 +6,6 @@ import type { Jugador } from '../../../../types/minijuegos/jugador.interface';
 import type { ConfiguracionTop } from '../../../../types/minijuegos/tops/configuracion-top';
 import type { GoleadoresTemporadas } from '../../../../types/minijuegos/tops/goleadores';
 import './styles.css';
-import { set } from 'astro:schema';
 
 // --- CONSTANTES Y CONFIGURACIÓN ---
 
@@ -244,7 +243,7 @@ export default function JuegoTopGoleadores() {
       <div className="container-fluid">
         <div className="row justify-content-center align-items-center">
 
-          <div className="col-6 contenedor-juego">
+          <div className="col-11 col-lg-6 contenedor-juego">
 
             <div className="row justify-content-center align-items-center">
 
@@ -252,7 +251,7 @@ export default function JuegoTopGoleadores() {
                 <h1 className='texto-titulo-top'>TOP: GOLEADORES DE LA TEMPORADA {data.goleadoresTemporada.temporada}</h1>
               </div>
 
-              <div className="col-10 mt-3">
+              <div className="col-11 col-lg-10 mt-3">
                 <div className="row justify-content-center align-items-center">
 
                   {
@@ -261,11 +260,11 @@ export default function JuegoTopGoleadores() {
                       const jugadorInfo = jugadoresReducidos[goleador.id_jugador];
                       const equiposInfo = goleador.id_equipo.map(id_eq => EQUIPOS[id_eq]);
                       return (
-                        <div className={`col-10 ${esCompletado ? 'contenedor-fila-goleador-conseguido' : 
+                        <div className={`col-11 col-lg-10 ${esCompletado ? 'contenedor-fila-goleador-conseguido' : 
                         seRindio ? 'contenedor-fila-goleador-rindio' : 'contenedor-fila-goleador'} my-1`} key={index}>
                           <div className="row align-items-center justify-content-center">
 
-                            <div className="col-2 text-center">
+                            <div className="col-1 col-lg-2 text-center">
                               <p className='texto-ranking-goleador'>{goleador.rank}</p>
                             </div>
 
@@ -273,7 +272,7 @@ export default function JuegoTopGoleadores() {
                               <div className="row align-items-center justify-content-between">
                                 {esCompletado || seRindio ? (
                                   <>
-                                    <div className="col-3 text-center">
+                                    <div className="col-2 col-lg-3 text-center px-0">
                                       <img src={jugadorInfo?.url_foto} alt={jugadorInfo?.nombre} className='img-fluid img-jugador-goleador'/>
                                     </div>
                                     <div className="col-7 text-center">
@@ -299,7 +298,7 @@ export default function JuegoTopGoleadores() {
                               <div className="row align-items-center justify-content-center">
 
                               { equiposInfo.map((eq, idx) => (
-                                <div className="col-4 text-center" key={idx}>
+                                <div className="col-4 text-center px-0" key={idx}>
                                   <img src={eq.url_foto} alt={eq.nombre} className='img-fluid img-equipo-goleador'/>
                                 </div>
                               ))}
@@ -327,10 +326,10 @@ export default function JuegoTopGoleadores() {
                     )}
                   </div>
 
-                  <div className="col-9">
-                    <div className="row justify-content-center align-items-center">
+                  <div className="col-11 col-lg-9 contenedor-controles">
+                    <div className="row justify-content-evenly align-items-center">
                   
-                      <div className="col-4 d-flex justify-content-center align-items-center px-0">
+                      <div className="col-6 col-lg-4 d-flex justify-content-center align-items-center px-0">
                         <div className='contenedor-tiempo'>
                           <span className='texto-tiempo-restante'>Tiempo Restante: </span>
                           <span className='texto-valor-tiempo-restante'
@@ -341,19 +340,25 @@ export default function JuegoTopGoleadores() {
                         </div>
                       </div>
                               
-                      <div className="col-5 d-flex justify-content-center align-items-center">
+                      <div className="col-5 d-flex justify-content-center align-items-center d-none d-lg-block">
                         <Buscador 
                           onJugadorSeleccionado={agregarJugadorAlTop}
                         />
                       </div>
                               
-                      <div className="col-3 d-flex justify-content-center align-items-center">
+                      <div className="col-4 col-lg-3 d-flex justify-content-center align-items-center">
                         <button 
                           className="btn btn-danger"
                           onClick={handleRendirse}
                         >
                           🏳️ Rendirse
                         </button>
+                      </div>
+
+                      <div className="col-12 d-flex justify-content-center align-items-center d-block d-lg-none">
+                        <Buscador 
+                          onJugadorSeleccionado={agregarJugadorAlTop}
+                        />
                       </div>
                               
                     </div>

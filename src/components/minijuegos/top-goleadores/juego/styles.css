@@ -394,6 +394,42 @@
         padding: 2rem 0;
     }
 
+    .texto-titulo-top{
+        font-size: 0.8rem;
+    }
+
+    .texto-nombre-jugador-goleador{
+        font-size: 0.6rem;
+    }
+
+    .texto-goles-jugador{
+        font-size: 0.6rem;
+    }
+
+    .texto-tiempo-restante{
+        font-size: 0.6rem;
+    }
+
+    .texto-valor-tiempo-restante{
+        font-size: 0.8rem !important;
+    }
+
+    .btn-danger{
+        font-size: 0.7rem;
+    }
+
+    .contenedor-controles{
+        margin-top: 1rem;
+    }
+
+    .alerta-rendicion{
+        font-size: 0.8rem;
+    }
+
+    .alerta-equivocacion{
+        font-size: 0.8rem;
+    }
+
     .titulo-descripcion-minijuego{
         font-size: 0.8rem;
     }

@@ -130,7 +130,7 @@ export default function MenuTopGoleadores() {
 
 
               {yaJugoHoy ?  (
-                <div style={{ backgroundColor: 'rgba(255, 255, 0, 0.2)', padding: '10px', borderRadius: '5px', marginBottom: '15px' }}>
+                <div className='texto-ya-jugo' style={{ backgroundColor: 'rgba(255, 255, 0, 0.2)', padding: '10px', borderRadius: '5px', marginBottom: '15px' }}>
                      <p style={{ color: '#ffd700', textAlign: 'center', margin: 0 }}>
                         ⚠️ Nota: Ya has jugado el reto diario de hoy.
                     </p>
