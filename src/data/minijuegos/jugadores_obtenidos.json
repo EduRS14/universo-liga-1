@@ -7086,14 +7086,6 @@
                     [
                         2016,
                         2018
-                    ],
-                    [
-                        2019,
-                        2018
-                    ],
-                    [
-                        2020,
-                        2019
                     ]
                 ]
             },
@@ -68595,10 +68587,6 @@
                     [
                         2020,
                         2020
-                    ],
-                    [
-                        2022,
-                        2021
                     ]
                 ]
             },
@@ -126711,10 +126699,6 @@
                     [
                         2018,
                         2019
-                    ],
-                    [
-                        2021,
-                        2020
                     ]
                 ]
             },
@@ -171530,5 +171514,147 @@
         ],
         "titulosObtenidos": [],
         "url_foto": "https://img.a.transfermarkt.technology/portrait/header/default.jpg?lm=1"
+    },
+    {
+        "id": 3449,
+        "nombre": "Jesús Castillo",
+        "fechaNacimiento": "1996-03-10",
+        "fechaFallecimiento": null,
+        "edad": 29,
+        "altura": 175.0,
+        "nacionalidades": [
+            1
+        ],
+        "clubActual": "Alianza Lima",
+        "posicionPrincipal": "Pivote",
+        "posicionesSecundarias": [
+            "Mediocentro"
+        ],
+        "valorMercadoMaximo": 700000.0,
+        "jugoExtranjero": false,
+        "equiposJugados": [
+            {
+                "id_equipo": 29,
+                "periodos": [
+                    [
+                        2017,
+                        2022
+                    ]
+                ]
+            },
+            {
+                "id_equipo": 1,
+                "periodos": [
+                    [
+                        2023,
+                        -1
+                    ]
+                ]
+            }
+        ],
+        "titulosObtenidos": [],
+        "url_foto": "https://img.a.transfermarkt.technology/portrait/header/582655-1736796337.jpg?lm=1"
+    },
+    {
+        "id": 3450,
+        "nombre": "Franco Mendoza",
+        "fechaNacimiento": "1981-08-18",
+        "fechaFallecimiento": null,
+        "edad": 44,
+        "altura": 182.0,
+        "nacionalidades": [
+            2,
+            11
+        ],
+        "clubActual": "Retirado",
+        "posicionPrincipal": "Delantero centro",
+        "posicionesSecundarias": [],
+        "valorMercadoMaximo": 2200000.0,
+        "jugoExtranjero": true,
+        "equiposJugados": [
+            {
+                "id_equipo": 14,
+                "periodos": [
+                    [
+                        2010,
+                        2010
+                    ]
+                ]
+            }
+        ],
+        "titulosObtenidos": [],
+        "url_foto": "https://img.a.transfermarkt.technology/portrait/header/default.jpg?lm=1"
+    },
+    {
+        "id": 3451,
+        "nombre": "Rodrigo Salinas",
+        "fechaNacimiento": "1986-07-04",
+        "fechaFallecimiento": null,
+        "edad": 39,
+        "altura": 188.0,
+        "nacionalidades": [
+            2
+        ],
+        "clubActual": "Vil. San Carlos",
+        "posicionPrincipal": "Delantero centro",
+        "posicionesSecundarias": [],
+        "valorMercadoMaximo": 750000.0,
+        "jugoExtranjero": true,
+        "equiposJugados": [
+            {
+                "id_equipo": 35,
+                "periodos": [
+                    [
+                        2022,
+                        2023
+                    ]
+                ]
+            }
+        ],
+        "titulosObtenidos": [
+            {
+                "id_trofeo": 29,
+                "cantidad": 1
+            }
+        ],
+        "url_foto": "https://img.a.transfermarkt.technology/portrait/header/125750-1690388832.jpg?lm=1"
+    },
+    {
+        "id": 3452,
+        "nombre": "Adrián Fernández",
+        "fechaNacimiento": "1992-08-04",
+        "fechaFallecimiento": null,
+        "edad": 33,
+        "altura": 184.0,
+        "nacionalidades": [
+            9
+        ],
+        "clubActual": "Caracas FC",
+        "posicionPrincipal": "Delantero centro",
+        "posicionesSecundarias": [],
+        "valorMercadoMaximo": 600000.0,
+        "jugoExtranjero": true,
+        "equiposJugados": [
+            {
+                "id_equipo": 11,
+                "periodos": [
+                    [
+                        2022,
+                        2024
+                    ]
+                ]
+            },
+            {
+                "id_equipo": 37,
+                "periodos": [
+                    [
+                        2025,
+                        2025
+                    ]
+                ]
+            }
+        ],
+        "titulosObtenidos": [],
+        "url_foto": "https://img.a.transfermarkt.technology/portrait/header/239623-1754533766.JPG?lm=1"
     }
 ]

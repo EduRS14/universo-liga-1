@@ -1,0 +1,242 @@
+[
+  {
+    "temporada": 2010,
+    "goleadores": [
+      { "rank": 1, "id_jugador": 1271, "goles": 24, "id_equipo": [7] },
+      { "rank": 2, "id_jugador": 2170, "goles": 23, "id_equipo": [13] },
+      { "rank": 3, "id_jugador": 2064, "goles": 22, "id_equipo": [15] },
+      { "rank": 4, "id_jugador": 2965, "goles": 21, "id_equipo": [16] },
+      { "rank": 5, "id_jugador": 2461, "goles": 19, "id_equipo": [3] },
+      { "rank": 6, "id_jugador": 1100, "goles": 18, "id_equipo": [7] },
+      { "rank": 7, "id_jugador": 3242, "goles": 17, "id_equipo": [10] },
+      { "rank": 8, "id_jugador": 2190, "goles": 16, "id_equipo": [8] },
+      { "rank": 9, "id_jugador": 3450, "goles": 16, "id_equipo": [14] },
+      { "rank": 10, "id_jugador": 2737, "goles": 15, "id_equipo": [8] }
+    ]
+  },
+  {
+    "temporada": 2011,
+    "goleadores": [
+      { "rank": 1, "id_jugador": 2190, "goles": 17, "id_equipo": [8] },
+      { "rank": 2, "id_jugador": 1267, "goles": 16, "id_equipo": [15] },
+      { "rank": 3, "id_jugador": 2778, "goles": 16, "id_equipo": [17] },
+      { "rank": 4, "id_jugador": 3242, "goles": 14, "id_equipo": [10] },
+      { "rank": 5, "id_jugador": 2781, "goles": 14, "id_equipo": [1] },
+      { "rank": 6, "id_jugador": 2970, "goles": 11, "id_equipo": [6] },
+      { "rank": 7, "id_jugador": 502, "goles": 10, "id_equipo": [18] },
+      { "rank": 8, "id_jugador": 1939, "goles": 10, "id_equipo": [18] },
+      { "rank": 9, "id_jugador": 1605, "goles": 10, "id_equipo": [2] },
+      { "rank": 10, "id_jugador": 231, "goles": 9, "id_equipo": [4] }
+    ]
+  },
+  {
+    "temporada": 2012,
+    "goleadores": [
+      { "rank": 1, "id_jugador": 199, "goles": 27, "id_equipo": [19] },
+      { "rank": 2, "id_jugador": 2461, "goles": 20, "id_equipo": [2] },
+      { "rank": 3, "id_jugador": 2778, "goles": 18, "id_equipo": [9] },
+      { "rank": 4, "id_jugador": 1985, "goles": 17, "id_equipo": [3] },
+      { "rank": 5, "id_jugador": 1246, "goles": 16, "id_equipo": [3] },
+      { "rank": 6, "id_jugador": 435, "goles": 16, "id_equipo": [5] },
+      { "rank": 7, "id_jugador": 2190, "goles": 15, "id_equipo": [8] },
+      { "rank": 8, "id_jugador": 3242, "goles": 15, "id_equipo": [3] },
+      { "rank": 9, "id_jugador": 2970, "goles": 14, "id_equipo": [10] },
+      { "rank": 10, "id_jugador": 2299, "goles": 13, "id_equipo": [12] }
+    ]
+  },
+  {
+    "temporada": 2013,
+    "goleadores": [
+      { "rank": 1, "id_jugador": 2679, "goles": 21, "id_equipo": [2] },
+      { "rank": 2, "id_jugador": 3062, "goles": 21, "id_equipo": [17] },
+      { "rank": 3, "id_jugador": 3242, "goles": 18, "id_equipo": [3] },
+      { "rank": 4, "id_jugador": 1100, "goles": 18, "id_equipo": [9] },
+      { "rank": 5, "id_jugador": 2661, "goles": 18, "id_equipo": [6] },
+      { "rank": 6, "id_jugador": 2781, "goles": 17, "id_equipo": [8] },
+      { "rank": 7, "id_jugador": 2970, "goles": 16, "id_equipo": [10] },
+      { "rank": 8, "id_jugador": 987, "goles": 15, "id_equipo": [15] },
+      { "rank": 9, "id_jugador": 2170, "goles": 14, "id_equipo": [7] },
+      { "rank": 10, "id_jugador": 1486, "goles": 14, "id_equipo": [12] }
+    ]
+  },
+  {
+    "temporada": 2014,
+    "goleadores": [
+      { "rank": 1, "id_jugador": 2912, "goles": 23, "id_equipo": [7] },
+      { "rank": 2, "id_jugador": 3242, "goles": 20, "id_equipo": [3] },
+      { "rank": 3, "id_jugador": 2661, "goles": 17, "id_equipo": [19] },
+      { "rank": 4, "id_jugador": 543, "goles": 17, "id_equipo": [17] },
+      { "rank": 5, "id_jugador": 295, "goles": 17, "id_equipo": [4] },
+      { "rank": 6, "id_jugador": 422, "goles": 16, "id_equipo": [3] },
+      { "rank": 7, "id_jugador": 2679, "goles": 14, "id_equipo": [2] },
+      { "rank": 8, "id_jugador": 1246, "goles": 13, "id_equipo": [8] },
+      { "rank": 9, "id_jugador": 2030, "goles": 13, "id_equipo": [10] },
+      { "rank": 10, "id_jugador": 1076, "goles": 12, "id_equipo": [1] }
+    ]
+  },
+  {
+    "temporada": 2015,
+    "goleadores": [
+      { "rank": 1, "id_jugador": 2085, "goles": 24, "id_equipo": [17] },
+      { "rank": 2, "id_jugador": 231, "goles": 23, "id_equipo": [10] },
+      { "rank": 3, "id_jugador": 435, "goles": 19, "id_equipo": [6] },
+      { "rank": 4, "id_jugador": 3062, "goles": 19, "id_equipo": [21] },
+      { "rank": 5, "id_jugador": 3170, "goles": 19, "id_equipo": [4] },
+      { "rank": 6, "id_jugador": 2190, "goles": 18, "id_equipo": [8] },
+      { "rank": 7, "id_jugador": 2679, "goles": 17, "id_equipo": [2, 4] },
+      { "rank": 8, "id_jugador": 2485, "goles": 17, "id_equipo": [4] },
+      { "rank": 9, "id_jugador": 613, "goles": 15, "id_equipo": [19] },
+      { "rank": 10, "id_jugador": 2778, "goles": 15, "id_equipo": [11] }
+    ]
+  },
+  {
+    "temporada": 2016,
+    "goleadores": [
+      { "rank": 1, "id_jugador": 2882, "goles": 30, "id_equipo": [11] },
+      { "rank": 2, "id_jugador": 2190, "goles": 25, "id_equipo": [8] },
+      { "rank": 3, "id_jugador": 295, "goles": 21, "id_equipo": [4] },
+      { "rank": 4, "id_jugador": 484, "goles": 20, "id_equipo": [7] },
+      { "rank": 5, "id_jugador": 700, "goles": 19, "id_equipo": [17] },
+      { "rank": 6, "id_jugador": 231, "goles": 17, "id_equipo": [10] },
+      { "rank": 7, "id_jugador": 846, "goles": 17, "id_equipo": [26] },
+      { "rank": 8, "id_jugador": 2085, "goles": 17, "id_equipo": [1] },
+      { "rank": 9, "id_jugador": 1246, "goles": 15, "id_equipo": [2] },
+      { "rank": 10, "id_jugador": 2401, "goles": 14, "id_equipo": [24] }
+    ]
+  },
+  {
+    "temporada": 2017,
+    "goleadores": [
+      { "rank": 1, "id_jugador": 3242, "goles": 22, "id_equipo": [3] },
+      { "rank": 2, "id_jugador": 543, "goles": 20, "id_equipo": [17] },
+      { "rank": 3, "id_jugador": 613, "goles": 19, "id_equipo": [19] },
+      { "rank": 4, "id_jugador": 2190, "goles": 18, "id_equipo": [2] },
+      { "rank": 5, "id_jugador": 2370, "goles": 17, "id_equipo": [10] },
+      { "rank": 6, "id_jugador": 2112, "goles": 15, "id_equipo": [1] },
+      { "rank": 7, "id_jugador": 127, "goles": 15, "id_equipo": [7] },
+      { "rank": 8, "id_jugador": 59, "goles": 13, "id_equipo": [2] },
+      { "rank": 9, "id_jugador": 2667, "goles": 13, "id_equipo": [3] },
+      { "rank": 10, "id_jugador": 3117, "goles": 12, "id_equipo": [15] }
+    ]
+  },
+  {
+    "temporada": 2018,
+    "goleadores": [
+      { "rank": 1, "id_jugador": 824, "goles": 40, "id_equipo": [3] },
+      { "rank": 2, "id_jugador": 431, "goles": 27, "id_equipo": [10] },
+      { "rank": 3, "id_jugador": 1076, "goles": 26, "id_equipo": [3] },
+      { "rank": 4, "id_jugador": 2370, "goles": 22, "id_equipo": [15] },
+      { "rank": 5, "id_jugador": 904, "goles": 21, "id_equipo": [29] },
+      { "rank": 6, "id_jugador": 50, "goles": 18, "id_equipo": [7] },
+      { "rank": 7, "id_jugador": 2190, "goles": 16, "id_equipo": [5] },
+      { "rank": 8, "id_jugador": 3117, "goles": 15, "id_equipo": [17] },
+      { "rank": 9, "id_jugador": 3021, "goles": 13, "id_equipo": [28, 4] },
+      { "rank": 10, "id_jugador": 736, "goles": 13, "id_equipo": [21] }
+    ]
+  },
+  {
+    "temporada": 2019,
+    "goleadores": [
+      { "rank": 1, "id_jugador": 295, "goles": 27, "id_equipo": [4] },
+      { "rank": 2, "id_jugador": 736, "goles": 23, "id_equipo": [30] },
+      { "rank": 3, "id_jugador": 2015, "goles": 17, "id_equipo": [1] },
+      { "rank": 4, "id_jugador": 2912, "goles": 15, "id_equipo": [9] },
+      { "rank": 5, "id_jugador": 2370, "goles": 15, "id_equipo": [15] },
+      { "rank": 6, "id_jugador": 2940, "goles": 14, "id_equipo": [17] },
+      { "rank": 7, "id_jugador": 431, "goles": 14, "id_equipo": [10] },
+      { "rank": 8, "id_jugador": 535, "goles": 14, "id_equipo": [3] },
+      { "rank": 9, "id_jugador": 1602, "goles": 12, "id_equipo": [7] },
+      { "rank": 10, "id_jugador": 68, "goles": 11, "id_equipo": [30] }
+    ]
+  },
+  {
+    "temporada": 2020,
+    "goleadores": [
+      { "rank": 1, "id_jugador": 824, "goles": 20, "id_equipo": [3] },
+      { "rank": 2, "id_jugador": 3164, "goles": 19, "id_equipo": [9] },
+      { "rank": 3, "id_jugador": 2949, "goles": 14, "id_equipo": [5] },
+      { "rank": 4, "id_jugador": 2380, "goles": 14, "id_equipo": [21] },
+      { "rank": 5, "id_jugador": 613, "goles": 14, "id_equipo": [19] },
+      { "rank": 6, "id_jugador": 87, "goles": 13, "id_equipo": [2] },
+      { "rank": 7, "id_jugador": 2515, "goles": 13, "id_equipo": [4] },
+      { "rank": 8, "id_jugador": 1632, "goles": 12, "id_equipo": [2] },
+      { "rank": 9, "id_jugador": 1450, "goles": 11, "id_equipo": [35] },
+      { "rank": 10, "id_jugador": 2359, "goles": 11, "id_equipo": [24] }
+    ]
+  },
+  {
+    "temporada": 2021,
+    "goleadores": [
+      { "rank": 1, "id_jugador": 2149, "goles": 12, "id_equipo": [4] },
+      { "rank": 2, "id_jugador": 958, "goles": 12, "id_equipo": [32] },
+      { "rank": 3, "id_jugador": 1079, "goles": 11, "id_equipo": [29] },
+      { "rank": 4, "id_jugador": 1581, "goles": 11, "id_equipo": [5] },
+      { "rank": 5, "id_jugador": 3027, "goles": 11, "id_equipo": [11] },
+      { "rank": 6, "id_jugador": 3183, "goles": 11, "id_equipo": [2] },
+      { "rank": 7, "id_jugador": 2298, "goles": 10, "id_equipo": [30] },
+      { "rank": 8, "id_jugador": 1239, "goles": 10, "id_equipo": [1] },
+      { "rank": 9, "id_jugador": 295, "goles": 9, "id_equipo": [4] },
+      { "rank": 10, "id_jugador": 2524, "goles": 9, "id_equipo": [15] }
+    ]
+  },
+  {
+    "temporada": 2022,
+    "goleadores": [
+      { "rank": 1, "id_jugador": 2119, "goles": 19, "id_equipo": [10] },
+      { "rank": 2, "id_jugador": 1239, "goles": 18, "id_equipo": [1] },
+      { "rank": 3, "id_jugador": 613, "goles": 16, "id_equipo": [6] },
+      { "rank": 4, "id_jugador": 3164, "goles": 15, "id_equipo": [9] },
+      { "rank": 5, "id_jugador": 1380, "goles": 15, "id_equipo": [30] },
+      { "rank": 6, "id_jugador": 931, "goles": 15, "id_equipo": [21] },
+      { "rank": 7, "id_jugador": 295, "goles": 14, "id_equipo": [4] },
+      { "rank": 8, "id_jugador": 3451, "goles": 13, "id_equipo": [35] },
+      { "rank": 9, "id_jugador": 143, "goles": 13, "id_equipo": [7] },
+      { "rank": 10, "id_jugador": 1087, "goles": 13, "id_equipo": [21] }
+    ]
+  },
+  {
+    "temporada": 2023,
+    "goleadores": [
+      { "rank": 1, "id_jugador": 2902, "goles": 22, "id_equipo": [38] },
+      { "rank": 2, "id_jugador": 295, "goles": 17, "id_equipo": [4] },
+      { "rank": 3, "id_jugador": 1239, "goles": 17, "id_equipo": [1] },
+      { "rank": 4, "id_jugador": 3452, "goles": 17, "id_equipo": [11] },
+      { "rank": 5, "id_jugador": 3164, "goles": 17, "id_equipo": [9] },
+      { "rank": 6, "id_jugador": 410, "goles": 16, "id_equipo": [6] },
+      { "rank": 7, "id_jugador": 3183, "goles": 15, "id_equipo": [2] },
+      { "rank": 8, "id_jugador": 3396, "goles": 14, "id_equipo": [35] },
+      { "rank": 9, "id_jugador": 330, "goles": 13, "id_equipo": [3] },
+      { "rank": 10, "id_jugador": 2298, "goles": 10, "id_equipo": [17] }
+    ]
+  },
+  {
+    "temporada": 2024,
+    "goleadores": [
+      { "rank": 1, "id_jugador": 2301, "goles": 35, "id_equipo": [3] },
+      { "rank": 2, "id_jugador": 410, "goles": 19, "id_equipo": [6] },
+      { "rank": 3, "id_jugador": 1390, "goles": 17, "id_equipo": [21] },
+      { "rank": 4, "id_jugador": 2091, "goles": 16, "id_equipo": [10] },
+      { "rank": 5, "id_jugador": 295, "goles": 15, "id_equipo": [4] },
+      { "rank": 6, "id_jugador": 1239, "goles": 14, "id_equipo": [1] },
+      { "rank": 7, "id_jugador": 3396, "goles": 14, "id_equipo": [35] },
+      { "rank": 8, "id_jugador": 2903, "goles": 14, "id_equipo": [3] },
+      { "rank": 9, "id_jugador": 3183, "goles": 13, "id_equipo": [2] },
+      { "rank": 10, "id_jugador": 2357, "goles": 13, "id_equipo": [27] }
+    ]
+  },
+  {
+    "temporada": 2025,
+    "goleadores": [
+      { "rank": 1, "id_jugador": 924, "goles": 25, "id_equipo": [19] },
+      { "rank": 2, "id_jugador": 1548, "goles": 19, "id_equipo": [4] },
+      { "rank": 3, "id_jugador": 3183, "goles": 16, "id_equipo": [2] },
+      { "rank": 4, "id_jugador": 1390, "goles": 16, "id_equipo": [21] },
+      { "rank": 5, "id_jugador": 2539, "goles": 15, "id_equipo": [1] },
+      { "rank": 6, "id_jugador": 2521, "goles": 15, "id_equipo": [38] },
+      { "rank": 7, "id_jugador": 2357, "goles": 14, "id_equipo": [27] },
+      { "rank": 8, "id_jugador": 87, "goles": 14, "id_equipo": [6] },
+      { "rank": 9, "id_jugador": 3164, "goles": 14, "id_equipo": [31] },
+      { "rank": 10, "id_jugador": 46, "goles": 14, "id_equipo": [11] }
+    ]
+  }
+]

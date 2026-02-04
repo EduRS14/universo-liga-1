@@ -3,6 +3,8 @@ import todosLosJugadores from '../data/minijuegos/jugadores_obtenidos.json';
 import type { Jugador } from '../types/minijuegos/jugador.interface';
 import './BuscadorStyles.css';
 
+const JUGADORES : Jugador[] = todosLosJugadores as Jugador[];
+
 interface Props {
   onJugadorSeleccionado: (jugador: Jugador) => void;
   posicionAFiltrar?: string;
@@ -32,7 +34,7 @@ export default function Buscador({ onJugadorSeleccionado }: Props) {
 
   useEffect(() => {
     if (busqueda.length > 1) {
-      const resultados = todosLosJugadores.filter(jugador => 
+      const resultados : Jugador[] = JUGADORES.filter(jugador => 
         normalizarTexto(jugador.nombre.toLocaleLowerCase()).includes(normalizarTexto(busqueda))
       );
       setSugerencias(resultados);

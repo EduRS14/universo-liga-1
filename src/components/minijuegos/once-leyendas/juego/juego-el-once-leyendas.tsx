@@ -304,6 +304,7 @@ export default function JuegoElOnceLeyendas() {
   };
 
   const volver = () => {
+    reiniciarJuegoTotalmente();
     window.location.reload();
   }
 

@@ -329,6 +329,7 @@ export default function JuegoElOnceActualidad() {
   };
 
   const volver = () => {
+    reiniciarJuegoTotalmente();
     window.location.reload();
   }
 

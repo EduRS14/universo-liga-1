@@ -281,7 +281,7 @@ export default function JuegoElOnce() {
   };
 
   const handleRendirse = () => {
-    reiniciarJuegoTotalmente()
+    reiniciarJuegoTotalmente();
     setEstadoJuego('perdido');
   };
 
@@ -298,6 +298,7 @@ export default function JuegoElOnce() {
   };
 
   const volver = () => {
+    reiniciarJuegoTotalmente();
     window.location.reload();
   }
 
