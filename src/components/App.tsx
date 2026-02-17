@@ -8,27 +8,10 @@ import type { Partido } from '../types/partido';
 export default function App() {
 
     const [dataEquipos, setDataEquipos] = useState<Equipo[]>([]);
-    const [fechaActual, setFechaActual] = useState(2);
-    const [partidosFecha, setPartidosFecha] = useState<Partido[]>([]);
+    const [fechaActual, setFechaActual] = useState(4);
     const [listaPartidosAuxiliares, setListaPartidosAuxiliares] = useState<{ [key: string]: Partido[] }>({});
 
     const [sincronizando, setSincronizando] = useState(false);
-
-    // Funcion para guardar / usar los partidos auxiliares de cada fecha
-    const manejarPartidosAuxiliares = (fecha: number, partidos: Partido[]) => {
-
-        // Si ya existen partidos auxiliares para esa fecha, no hacemos nada
-        if (listaPartidosAuxiliares[`fecha${fecha}`]) {
-            return;
-        } else {
-            // Si no existen, los guardamos
-            setListaPartidosAuxiliares(prevState => ({
-                ...prevState,
-                [`fecha${fecha}`]: partidos
-            }));
-        }
-
-    }
 
     const sincronizarDatosReales = async () => {
 
@@ -51,10 +34,7 @@ export default function App() {
             
             const datosReales: Partido[] = await response.json();
 
-            // 2. Actualizamos el estado visual inmediato (lo que ve el usuario ahora)
-            setPartidosFecha(datosReales);
-
-            // 3. Actualizamos la lista auxiliar (para que la Tabla se recalcule)
+            // 2. Actualizamos la lista auxiliar (para que la Tabla se recalcule)
             setListaPartidosAuxiliares(prev => ({
                 ...prev,
                 [`fecha${fechaActual}`]: datosReales
@@ -63,19 +43,19 @@ export default function App() {
             // 4. Sobrescribimos el localStorage de la fecha actual
             localStorage.setItem(`fecha${fechaActual}_apertura`, JSON.stringify(datosReales));
 
+            // Limpiamos todas las fechas excepto la actual
+            const nuevaListaAuxiliar: { [key: string]: Partido[] } = {
+                [`fecha${fechaActual}`]: datosReales
+            };
+
             Object.keys(localStorage).forEach(key => {
-                // Borramos todo lo que sea del torneo apertura, EXCEPTO la fecha actual que acabamos de actualizar
                 if (key.includes('_apertura') && key !== `fecha${fechaActual}_apertura`) {
                     localStorage.removeItem(key);
-                    // También podrías limpiarlo de la lista auxiliar en memoria si quisieras un reset total:
-                    setListaPartidosAuxiliares(prev => {
-                        const copy = { ...prev };
-                        const keyExtract = key.replace('_apertura', '');
-                        delete copy[keyExtract];
-                        return copy;
-                    });
                 }
             });
+
+            // Actualizamos el estado UNA sola vez
+            setListaPartidosAuxiliares(nuevaListaAuxiliar);
 
             alert(`Fechas sincronizadas con resultados oficiales.`);
 
@@ -92,39 +72,49 @@ export default function App() {
         setDataEquipos(Equipos);
     }, []);
 
-    // Cargamos los datos de la fecha actual
+    // Cargamos los datos de todas las fechas al montar el componente, pero mostramos solo la fecha actual
     useEffect(() => {
-        async function fetchPartidos() {
 
-            // Buscamos si tenemos guardado en localStorage la fecha actual
-            const fechaAlmacenada = localStorage.getItem(`fecha${fechaActual}_apertura`);
+        async function cargarTodasLasFechas() {
 
-            if (fechaAlmacenada) {
-                setPartidosFecha(JSON.parse(fechaAlmacenada));
-                manejarPartidosAuxiliares(fechaActual, JSON.parse(fechaAlmacenada));
-                return;
-            } else {
+            const nuevaListaAuxiliar: { [key: string]: Partido[] } = {};
 
-                try {
-                    const response = await fetch(`/data/fechas/apertura/fecha${fechaActual}.json`);
-                    if (!response.ok) {
-                        throw new Error('Error al cargar los datos de los partidos');
+            const TOTAL_FECHAS = 17; // ← cámbialo por la cantidad real de fechas
+
+            for (let i = 1; i <= TOTAL_FECHAS; i++) {
+
+                const fechaGuardada = localStorage.getItem(`fecha${i}_apertura`);
+
+                if (fechaGuardada) {
+                    nuevaListaAuxiliar[`fecha${i}`] = JSON.parse(fechaGuardada);
+                } else {
+
+                    try {
+                        const response = await fetch(`/data/fechas/apertura/fecha${i}.json`);
+
+                        if (!response.ok) {
+                            throw new Error('Error al cargar datos');
+                        }
+
+                        const datos: Partido[] = await response.json();
+
+                        nuevaListaAuxiliar[`fecha${i}`] = datos;
+
+                        localStorage.setItem(`fecha${i}_apertura`, JSON.stringify(datos));
+
+                    } catch (error) {
+                        console.error(error);
                     }
-                    const partidosData: Partido[] = await response.json();
-                    setPartidosFecha(partidosData);
-                    manejarPartidosAuxiliares(fechaActual, partidosData);
-
-                    // Guardamos en localStorage los datos cargados
-                    localStorage.setItem(`fecha${fechaActual}_apertura`, JSON.stringify(partidosData));
-                } catch (error) {
-                    console.error(error);
                 }
-
             }
-            
+
+            // Guardamos TODAS las fechas de una sola vez
+            setListaPartidosAuxiliares(nuevaListaAuxiliar);
         }
-        fetchPartidos();
-    }, [fechaActual]);
+
+        cargarTodasLasFechas();
+
+    }, []);
 
     // useEffect(() => {
         // console.log("Lista auxiliar actualizada:", listaPartidosAuxiliares);
@@ -143,9 +133,11 @@ export default function App() {
                 </div>
 
 	    		<div className="col-12 col-md-6">
-	    			<Resultados equipos={dataEquipos} partidos={partidosFecha} onCambiarPartidos={setPartidosFecha}
-                    fechaActual={fechaActual} onCambiarFecha={setFechaActual}
-                    listaAuxiliar={listaPartidosAuxiliares} onCambiarListaAuxiliar={setListaPartidosAuxiliares} />
+	    			<Resultados equipos={dataEquipos}
+                    fechaActual={fechaActual} 
+                    onCambiarFecha={setFechaActual}
+                    listaAuxiliar={listaPartidosAuxiliares} 
+                    onCambiarListaAuxiliar={setListaPartidosAuxiliares} />
 	    		</div>
 	    		<div className="col-12 col-md-6">
 	    			<Tabla equipos={dataEquipos} listaFechas={listaPartidosAuxiliares}/>

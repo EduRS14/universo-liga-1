@@ -58,6 +58,27 @@ const background_equipos : string[] = [
     'linear-gradient(90deg,rgba(199, 167, 161, 0.78) 0%, rgba(232, 70, 70, 0.87) 100%)'
 ];
 
+const background_pagina : string[] = [
+    'linear-gradient(90deg,rgba(84, 193, 240, 1) 0%, rgba(255, 255, 255, 1) 20%, rgba(255, 255, 255, 1) 80%, rgba(84, 193, 240, 1) 100%)',
+    'linear-gradient(90deg,rgba(84, 131, 240, 1) 0%, rgba(255, 255, 255, 1) 20%, rgba(255, 255, 255, 1) 80%, rgba(84, 131, 240, 1) 100%)',
+    'linear-gradient(90deg,rgba(30, 67, 110, 1) 0%, rgba(255, 255, 255, 1) 20%, rgba(255, 255, 255, 1) 80%, rgba(30, 67, 110, 1) 100%)',
+    'linear-gradient(90deg,rgba(237, 92, 43, 1) 0%, rgba(255, 255, 255, 1) 20%, rgba(255, 255, 255, 1) 80%, rgba(237, 92, 43, 1) 100%)',
+    'linear-gradient(90deg,rgba(122, 23, 23, 1) 0%, rgba(255, 255, 255, 1) 20%, rgba(255, 255, 255, 1) 80%, rgba(122, 23, 23, 1) 100%)',
+    'linear-gradient(90deg,rgba(84, 30, 138, 1) 0%, rgba(255, 255, 255, 1) 20%, rgba(255, 255, 255, 1) 80%, rgba(84, 30, 138, 1) 100%)',
+    'linear-gradient(90deg,rgba(135, 106, 27, 1) 0%, rgba(255, 255, 255, 1) 20%, rgba(255, 255, 255, 1) 80%, rgba(135, 106, 27, 1) 100%)',
+    'linear-gradient(90deg,rgba(46, 171, 209, 1) 0%, rgba(255, 255, 255, 1) 20%, rgba(255, 255, 255, 1) 80%, rgba(46, 171, 209, 1) 100%)',
+    'linear-gradient(90deg,rgba(141, 237, 138, 1) 0%, rgba(255, 255, 255, 1) 20%, rgba(255, 255, 255, 1) 80%, rgba(141, 237, 138, 1) 100%)',
+    'linear-gradient(90deg,rgba(74, 35, 35, 1) 0%, rgba(255, 255, 255, 1) 20%, rgba(255, 255, 255, 1) 80%, rgba(74, 35, 35, 1) 100%)',
+    'linear-gradient(90deg,rgba(227, 247, 69, 1) 0%, rgba(255, 255, 255, 1) 20%, rgba(255, 255, 255, 1) 80%, rgba(227, 247, 69, 1) 100%)',
+    'linear-gradient(90deg,rgba(212, 189, 21, 1) 0%, rgba(255, 255, 255, 1) 20%, rgba(255, 255, 255, 1) 80%, rgba(212, 189, 21, 1) 100%)',
+    'linear-gradient(90deg,rgba(117, 32, 57, 1) 0%, rgba(255, 255, 255, 1) 20%, rgba(255, 255, 255, 1) 80%, rgba(117, 32, 57, 1) 100%)',
+    'linear-gradient(90deg,rgba(217, 126, 230, 1) 0%, rgba(255, 255, 255, 1) 20%, rgba(255, 255, 255, 1) 80%, rgba(217, 126, 230, 1) 100%)',
+    'linear-gradient(90deg,rgba(199, 72, 68, 1) 0%, rgba(255, 255, 255, 1) 20%, rgba(255, 255, 255, 1) 80%, rgba(199, 72, 68, 1) 100%)',
+    'linear-gradient(90deg,rgba(6, 176, 199, 1) 0%, rgba(255, 255, 255, 1) 20%, rgba(255, 255, 255, 1) 80%, rgba(6, 176, 199, 1) 100%)',
+    'linear-gradient(90deg,rgba(237, 216, 159, 1) 0%, rgba(255, 255, 255, 1) 20%, rgba(255, 255, 255, 1) 80%, rgba(237, 216, 159, 1) 100%)',
+    'linear-gradient(90deg,rgba(224, 188, 166, 1) 0%, rgba(255, 255, 255, 1) 20%, rgba(255, 255, 255, 1) 80%, rgba(224, 188, 166, 1) 100%)'
+];
+
 const transformarFechaAFormatoLegible = (fecha: string): string => {
     const meses: { [key: string]: string } = {
         '01': 'enero',
@@ -93,11 +114,11 @@ const transformarFechaAFormatoLegible = (fecha: string): string => {
         <div class="container-fluid">
 	    	<div class="row justify-content-center align-items-center">
 
-                <div class="col-9 contenedor-general-equipo">
+                <div class="col-9 contenedor-general-equipo" style={`background: ${background_pagina[equipo.id - 1]};`}>
 
                     <div class="row justify-content-center align-items-center">
 
-                        <div class="col-12 col-lg-8 my-5">
+                        <div class="col-12 col-lg-8 contenedor-seccion-inicio">
 
                             <div class="row justify-content-center align-items-center">
 
@@ -113,7 +134,7 @@ const transformarFechaAFormatoLegible = (fecha: string): string => {
 
                         </div>
 
-                        <div class="col-12 col-lg-10 my-5">
+                        <div class="col-12 col-lg-10 contenedor-seccion-informacion-equipo seccion-scroll-animada">
 
                             <div class="row justify-content-center align-items-center">
 
@@ -151,7 +172,7 @@ const transformarFechaAFormatoLegible = (fecha: string): string => {
 
                         </div>
 
-                        <div class="col-10 col-lg-8 my-5">
+                        <div class="col-10 col-lg-8 contenedor-seccion-localidad contenedor-seccion-informacion-equipo seccion-scroll-animada">
 
                             <div class="row justify-content-center align-items-center">
 
@@ -206,7 +227,7 @@ const transformarFechaAFormatoLegible = (fecha: string): string => {
 
                         </div>
 
-                        <div class="col-11 col-lg-8 my-5">
+                        <div class="col-11 col-lg-8 contenedor-seccion-informacion-equipo seccion-scroll-animada">
 
                             <div class="row justify-content-center align-items-center">
 
@@ -221,7 +242,7 @@ const transformarFechaAFormatoLegible = (fecha: string): string => {
                                     <div class="row justify-content-center align-items-center">
 
                                         <div class="col-10 contenedor-titulo-local-cantidad">
-                                            <span class="texto-especifico-equipo">Títulos de Primera División: {palmares.titulos_primera_division}</span>
+                                            <span class="texto-especifico-equipo">Títulos de Primera División: <strong>{palmares.titulos_primera_division}</strong></span>
                                         </div>
 
                                         <div class="col-12 col-lg-10">
@@ -237,7 +258,7 @@ const transformarFechaAFormatoLegible = (fecha: string): string => {
 
                                         {palmares.titulos_internacionales.length > 0 && 
                                             <div class="col-12 col-lg-10 mt-3">
-                                                <span class="texto-especifico-equipo">Títulos Internacionales: {palmares.titulos_internacionales.length}</span>
+                                                <span class="texto-especifico-equipo">Títulos Internacionales: <strong>{palmares.titulos_internacionales.length}</strong></span>
                                                 <div class="row justify-content-center align-items-center">
                                                     <ul class="row justify-content-center align-items-center">
                                                         <div class="col-7 col-lg-5 text-center m-3">
@@ -283,7 +304,7 @@ const transformarFechaAFormatoLegible = (fecha: string): string => {
 
                         </div>
 
-                        <div class="col-12 my-5">
+                        <div class="col-12 contenedor-seccion-informacion-equipo seccion-scroll-animada">
 
                             <div class="row justify-content-center align-items-center">
 
@@ -316,16 +337,25 @@ const transformarFechaAFormatoLegible = (fecha: string): string => {
 
                         </div>
 
-                        <div class="col-11 col-lg-8 my-5">
+                        <div class="col-11 col-lg-8 contenedor-seccion-plantilla contenedor-seccion-informacion-equipo seccion-scroll-animada">
 
                             <div class="row justify-content-between align-items-top">
 
                                 <div class="col-12 text-center">
                                     <h4 class="texto-seccion">Plantilla</h4>
                                 </div>
-                                <div class="col-5 contenedor-plantilla-equipo">
+
+                            </div>
+
+                        </div>
+
+                        <div class="col-11 col-lg-8 contenedor-seccion-plantilla contenedor-seccion-informacion-equipo seccion-scroll-animada">
+
+                            <div class="row justify-content-center align-items-top">
+
+                                <div class="col-10 contenedor-plantilla-equipo">
                                     <div class="row justify-content-center align-items-top">
-                                        <div class="col-11 text-center mb-4">
+                                        <div class="col-11 text-center mb-5">
                                             <h5 class="texto-general-equipo">Arqueros</h5>
                                         </div>
                                         <div class="col-11 text-center mb-2 d-block d-xl-none">
@@ -354,9 +384,18 @@ const transformarFechaAFormatoLegible = (fecha: string): string => {
                                     
                                     </div>
                                 </div>
-                                <div class="col-5 contenedor-plantilla-equipo">
+
+                            </div>
+
+                        </div>
+
+                        <div class="col-11 col-lg-8 contenedor-seccion-plantilla contenedor-seccion-informacion-equipo seccion-scroll-animada">
+
+                            <div class="row justify-content-center align-items-top">
+
+                                <div class="col-10 contenedor-plantilla-equipo">
                                     <div class="row justify-content-center align-items-top">
-                                        <div class="col-11 text-center mb-4">
+                                        <div class="col-11 text-center mb-5">
                                             <h5 class="texto-general-equipo">Defensores</h5>
                                         </div>
                                         <div class="col-11 text-center mb-2 d-block d-xl-none">
@@ -385,9 +424,18 @@ const transformarFechaAFormatoLegible = (fecha: string): string => {
                                     
                                     </div>
                                 </div>
-                                <div class="col-5 contenedor-plantilla-equipo">
+
+                            </div>
+
+                        </div>
+
+                        <div class="col-11 col-lg-8 contenedor-seccion-plantilla contenedor-seccion-informacion-equipo seccion-scroll-animada">
+
+                            <div class="row justify-content-center align-items-top">
+
+                                <div class="col-10 contenedor-plantilla-equipo">
                                     <div class="row justify-content-center align-items-top">
-                                        <div class="col-11 text-center mb-4">
+                                        <div class="col-11 text-center mb-5">
                                             <h5 class="texto-general-equipo">Volantes</h5>
                                         </div>
                                         <div class="col-11 text-center mb-2 d-block d-xl-none">
@@ -416,9 +464,18 @@ const transformarFechaAFormatoLegible = (fecha: string): string => {
                                     
                                     </div>
                                 </div>
-                                <div class="col-5 contenedor-plantilla-equipo">
+
+                            </div>
+
+                        </div>
+
+                        <div class="col-11 col-lg-8 contenedor-seccion-plantilla contenedor-seccion-informacion-equipo seccion-scroll-animada">
+
+                            <div class="row justify-content-center align-items-top">
+
+                                <div class="col-10 contenedor-plantilla-equipo">
                                     <div class="row justify-content-center align-items-top">
-                                        <div class="col-11 text-center mb-4">
+                                        <div class="col-11 text-center mb-5">
                                             <h5 class="texto-general-equipo">Delanteros</h5>
                                         </div>
                                         <div class="col-11 text-center mb-2 d-block d-xl-none">
@@ -447,8 +504,7 @@ const transformarFechaAFormatoLegible = (fecha: string): string => {
                                     
                                     </div>
                                 </div>
-
-
+                                
                             </div>
 
                         </div>
@@ -464,9 +520,27 @@ const transformarFechaAFormatoLegible = (fecha: string): string => {
 </Layout>
 
 <style>
+    
+    html, body {
+        overflow-x: hidden;
+    }
 
-    .contenedor-general-equipo{
-        background-color: #ffffff;
+    .contenedor-seccion-inicio{
+        min-height: 70vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 3rem 0;
+        animation: fade-in 1s ease-in-out;
+    }
+
+    .contenedor-seccion-informacion-equipo{
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 3rem 0;
+        overflow: hidden;
     }
 
     .contenedor-titulo-localidad{
@@ -493,7 +567,8 @@ const transformarFechaAFormatoLegible = (fecha: string): string => {
     }
 
     .texto-titulo-equipo{
-        font-size: 2rem;
+        margin-top: 1rem;
+        font-size: 2.5rem;
         color: #000000;
         font-weight: 600;
         font-style: normal;
@@ -560,10 +635,21 @@ const transformarFechaAFormatoLegible = (fecha: string): string => {
     }
 
     .img-equipo{
-        width: 30%;
-        max-width: 400px;
+        width: 80%;
+        max-width: 500px;
         height: auto;
         filter: drop-shadow(0 4px 10px rgba(0,0,0,0.4));
+    }
+
+    .seccion-scroll-animada{
+        view-timeline-name: --image;
+        view-timeline-axis: block;
+
+        animation-timeline: --image;
+        animation-name: puff-in-center;
+
+        animation-range: entry 25% cover 70%;
+        animation-fill-mode: both;
     }
 
     .img-descripcion-equipo{
@@ -670,5 +756,20 @@ const transformarFechaAFormatoLegible = (fecha: string): string => {
             line-height: 0.2rem;
         }
     }
+
+    @keyframes puff-in-center{
+        0% {
+            transform:scale(1.5);
+            filter:blur(4px);
+            opacity:0
+        }
+        100% {
+            transform:scale(1);
+            filter:blur(0);
+            opacity:1
+        }
+    }
+
+    @keyframes fade-in{0%{opacity:0}100%{opacity:1}}
 
 </style>

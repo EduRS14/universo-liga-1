@@ -2,12 +2,9 @@ import { useState, useEffect, use } from 'react';
 import type { Equipo } from "../../types/equipo";
 import type { Partido } from "../../types/partido";
 import "./styles.css";
-import { set } from 'astro:schema';
 
 interface Props {
     equipos: Equipo[];
-    partidos: Partido[];
-    onCambiarPartidos: (nuevosPartidos: Partido[]) => void;
     fechaActual: number;
     onCambiarFecha: (nuevaFecha: number) => void;
     listaAuxiliar: { [key: string]: Partido[] };
@@ -16,58 +13,51 @@ interface Props {
     ) => void;
 }
 
-export default function Resultados( { equipos, partidos, onCambiarPartidos, fechaActual, onCambiarFecha,
+export default function Resultados( { equipos, fechaActual, onCambiarFecha,
     listaAuxiliar, onCambiarListaAuxiliar
  }: Props ) {
 
     // Funcion para guardar los resultados ingresados
     const guardarResultados = () => {
 
-        if (estadoCambio) {
-            // 1. Obtenemos la lista actual
-            const listaOriginal = listaAuxiliar[`fecha${fechaActual}`] || [];
+        const listaFecha = listaAuxiliar[`fecha${fechaActual}`] || [];
 
-            // 2. Creamos una NUEVA lista usando map (Inmutabilidad)
-            // Esto asegura que React detecte el cambio de referencia
-            const listaActualizada = listaOriginal.map(p => {
-                // Creamos una copia del partido para no mutar el original todavía
-                const partido = { ...p };
-                
-                const golesLocal = partido.goles_local;
-                const golesVisitante = partido.goles_visitante;
+        const listaActualizada = listaFecha.map(p => {
 
-                // Aplicamos la lógica de ganadores
-                if (golesLocal !== null && golesVisitante !== null) {
-                    if (golesLocal > golesVisitante) {
-                        partido.ganador = partido.equipo_local;
-                    } else if (golesLocal < golesVisitante) {
-                        partido.ganador = partido.equipo_visitante;
-                    } else {
-                        partido.ganador = 0; // Empate
-                    }
-                    partido.jugado = true;
+            const partido = { ...p };
+
+            const golesLocal = partido.goles_local;
+            const golesVisitante = partido.goles_visitante;
+
+            if (golesLocal !== null && golesVisitante !== null) {
+
+                if (golesLocal > golesVisitante) {
+                    partido.ganador = partido.equipo_local;
+                } else if (golesLocal < golesVisitante) {
+                    partido.ganador = partido.equipo_visitante;
+                } else {
+                    partido.ganador = 0;
                 }
-                
-                return partido;
-            });
 
-            // 3. Enviamos la NUEVA lista al padre
-            onCambiarPartidos(listaActualizada);
+                partido.jugado = true;
+            }
 
-            // 4. Guardamos en localStorage la nueva lista
-            localStorage.setItem(`fecha${fechaActual}_apertura`, JSON.stringify(listaActualizada));
+            return partido;
+        });
 
-            // 5. Opcional: Actualizar también la lista auxiliar para que refleje el "ganador" calculado en la UI inmediatamente si fuera necesario
-             onCambiarListaAuxiliar(prev => ({
-                ...prev,
-                [`fecha${fechaActual}`]: listaActualizada
-            }));
+        onCambiarListaAuxiliar(prev => ({
+            ...prev,
+            [`fecha${fechaActual}`]: listaActualizada
+        }));
 
-            // Finalmente, reseteamos el estado de cambio
-            setEstadoCambio(false);
-        }
+        localStorage.setItem(
+            `fecha${fechaActual}_apertura`,
+            JSON.stringify(listaActualizada)
+        );
 
-    }
+        setEstadoCambio(false);
+    };
+
 
     const reiniciarFecha = async () => {
       try {
@@ -87,8 +77,6 @@ export default function Resultados( { equipos, partidos, onCambiarPartidos, fech
           [`fecha${fechaActual}`]: nuevaListaFecha
         }));
 
-        onCambiarPartidos(nuevaListaFecha);
-
         localStorage.setItem(`fecha${fechaActual}_apertura`, JSON.stringify(nuevaListaFecha));
 
         setEstadoReset(false);
@@ -106,39 +94,33 @@ export default function Resultados( { equipos, partidos, onCambiarPartidos, fech
 
         const listaFecha = listaAuxiliar[`fecha${fechaActual}`] || [];
 
-        let hayInvalido = false;
-        let hayCambios = false;
+        // 1. Validar que no haya resultados inválidos
+        for (let partido of listaFecha) {
+            const local = partido.goles_local;
+            const visita = partido.goles_visitante;
 
-        for (let i = 0; i < listaFecha.length; i++) {
-
-            const original = partidos[i];
-            const aux = listaFecha[i];
-            if (!original || !aux) continue;
-            
-            const local = aux.goles_local;
-            const visita = aux.goles_visitante;
-            
             const esInvalido =
                 (local === null && visita !== null) ||
                 (local !== null && visita === null);
-            
+
             if (esInvalido) {
-                hayInvalido = true;
-                break;
-            }
-          
-            const esDiferente =
-                local !== original.goles_local ||
-                visita !== original.goles_visitante;
-          
-            if (esDiferente) {
-                hayCambios = true;
+                setEstadoCambio(false);
+                return;
             }
         }
 
-        setEstadoCambio(!hayInvalido && hayCambios);
+        // 2. Obtener lo guardado en localStorage
+        const guardado = localStorage.getItem(`fecha${fechaActual}_apertura`);
+        const listaGuardada = guardado ? JSON.parse(guardado) : [];
 
-    }, [listaAuxiliar, fechaActual, partidos]);
+        // 3. Comparar ambas listas
+        const hayCambios =
+            JSON.stringify(listaFecha) !== JSON.stringify(listaGuardada);
+
+        setEstadoCambio(hayCambios);
+
+    }, [listaAuxiliar, fechaActual]);
+
 
     useEffect(() => {
         // Al cambiar de fecha, reseteamos el estado de cambio
