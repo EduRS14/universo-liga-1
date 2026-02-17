@@ -16,52 +16,48 @@ export default function App() {
     const sincronizarDatosReales = async () => {
 
         setSincronizando(true);
+
         const confirmar = window.confirm(
-            "¿Deseas actualizar a los resultados reales? Esto sobrescribirá tus simulaciones para esta fecha."
+            "¿Deseas actualizar a los resultados reales? Esto sobrescribirá TODAS tus simulaciones."
         );
+
         if (!confirmar) {
             setSincronizando(false);
             return;
-        };
+        }
 
         try {
-            // 1. Volvemos a pedir el JSON original (resultados reales actualizados)
-            const response = await fetch(`/data/fechas/apertura/fecha${fechaActual}.json`);
-            
-            if (!response.ok) {
-                throw new Error('Error al obtener los datos reales');
-            }
-            
-            const datosReales: Partido[] = await response.json();
 
-            // 2. Actualizamos la lista auxiliar (para que la Tabla se recalcule)
-            setListaPartidosAuxiliares(prev => ({
-                ...prev,
-                [`fecha${fechaActual}`]: datosReales
-            }));
+            const TOTAL_FECHAS = 17;
+            const nuevaListaAuxiliar: { [key: string]: Partido[] } = {};
 
-            // 4. Sobrescribimos el localStorage de la fecha actual
-            localStorage.setItem(`fecha${fechaActual}_apertura`, JSON.stringify(datosReales));
+            for (let i = 1; i <= TOTAL_FECHAS; i++) {
 
-            // Limpiamos todas las fechas excepto la actual
-            const nuevaListaAuxiliar: { [key: string]: Partido[] } = {
-                [`fecha${fechaActual}`]: datosReales
-            };
+                const response = await fetch(`/data/fechas/apertura/fecha${i}.json`);
 
-            Object.keys(localStorage).forEach(key => {
-                if (key.includes('_apertura') && key !== `fecha${fechaActual}_apertura`) {
-                    localStorage.removeItem(key);
+                if (!response.ok) {
+                    throw new Error(`Error al obtener fecha ${i}`);
                 }
-            });
+
+                const datos: Partido[] = await response.json();
+
+                nuevaListaAuxiliar[`fecha${i}`] = datos;
+
+                // Sobrescribimos cada fecha en localStorage
+                localStorage.setItem(
+                    `fecha${i}_apertura`,
+                    JSON.stringify(datos)
+                );
+            }
 
             // Actualizamos el estado UNA sola vez
             setListaPartidosAuxiliares(nuevaListaAuxiliar);
 
-            alert(`Fechas sincronizadas con resultados oficiales.`);
+            alert("Todas las fechas fueron sincronizadas con resultados oficiales.");
 
         } catch (error) {
             console.error("Error al sincronizar:", error);
-            alert("No se pudo conectar con la base de datos de resultados.");
+            alert("No se pudo sincronizar con los datos oficiales.");
         } finally {
             setSincronizando(false);
         }
