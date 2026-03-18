@@ -68,50 +68,55 @@ export default function MenuABC() {
   if (juegoIniciado) {
     return (
       <div className="fade-in">
-         {/* Pasamos los datos como props al componente del juego real */}
          <JuegoElABC todosLosEquipos={todosLosEquipos} todosLosJugadores={todosLosJugadores} />
       </div>
     );
   }
 
+  // --- NUEVA VISTA DEL MENÚ CON FONDO TOTAL ---
   return (
-      <div className="contenedor-configuracion">
-        {yaJugoHoy && (
-          <div style={{ backgroundColor: 'rgba(255, 255, 0, 0.2)', padding: '10px', borderRadius: '5px', marginBottom: '15px' }}>
-               <p style={{ color: '#ffd700', textAlign: 'center', margin: 0 }}>
-                  ⚠️ Nota: Ya has completado el reto diario de hoy.
-              </p>
+    <div className="contenedor-configuracion">
+      <div className="menu-juego-abc-full-bg fade-in">
+        
+        {/* 1. EL OVERLAY GENERAL (Imprescindible para legibilidad) */}
+        <div className="abc-overlay-fondo"></div>
+
+        {/* 2. EL CONTENIDO FLOTANTE (Centrado y legible) */}
+        <div className="abc-contenido-contenedor">
+          
+          {/* Cabecera del Juego */}
+          <div className="abc-cabecera text-center mb-5">
+            <span className="badge-categoria-abc">RETO</span>
+            <h1 className="titulo-hero-abc">EL ABC</h1>
+            <h2 className="subtitulo-hero-abc">LA RULETA DE NOMBRES</h2>
           </div>
-        )}
 
-        <div className="container-fluid">
-          <div className="row justify-content-evenly align-items-center">
+          {/* Cuerpo y Acción */}
+          <div className="abc-cuerpo-accion text-center">
+            <p className="descripcion-juego-abc text-justify">
+              No basta con saber quién fue campeón. En <strong>El ABC</strong>, el azar es el verdadero rival. Te enfrentamos a una ruta de 22 letras, y en cada parada te esperará un <strong>escudo diferente</strong> de la Primera División (2010-2026). Podrías tener que recordar a un crack de la 'U' con la A, y al segundo siguiente, buscar a uno de San Simón con la B. <strong>¿Tienes el archivo mental para completar el abecedario?</strong>
+            </p>
 
-            <div className="col-10 col-lg-4 d-flex justify-content-center">
-
-              <img src="/img/minijuegos/juegos/el-abc.webp" alt="El ABC" className='img-fluid img-el-once'/>
-
-            </div>
-            <div className="col-10 col-lg-4">
-
-              <p className='presentacion-el-once'>
-                No basta con saber quién fue campeón. En <strong>El ABC,</strong> el azar es el verdadero rival. Te enfrentamos a una ruta de 22 letras, y en cada parada te esperará un <strong>escudo diferente</strong> de la Primera División (2010-2026). Podrías tener que recordar a un crack de la 'U' con la A, y al segundo siguiente, buscar a uno de San Simón con la B. ¿Tienes el <strong>archivo mental suficiente</strong> para completar el abecedario sin equivocarte?
-              </p>
-
-              
-              <div style={{ marginTop: '2rem' }}>
+            {yaJugoHoy ? (
+              <div className="alerta-jugado-abc fade-in">
+                <span className="alerta-icono-abc">⏳</span>
+                <p>Ya completaste el reto de hoy<br/><strong>Vuelve mañana para un nuevo alfabeto</strong></p>
+              </div>
+            ) : (
+              <form onSubmit={handleContinuar} className="seccion-accion-abc">
                 <button
                   id="btn-continuar"
-                  className="btn btn-jugar"
-                  onClick={handleContinuar}
+                  type="submit"
+                  className="btn-iniciar-reto-abc"
                 >
-                  Jugar
+                  JUGAR AHORA
                 </button>
-              </div>
-            </div>
+              </form>
+            )}
           </div>
         </div>
-      </div>
-  );
 
+      </div>
+    </div>
+  );
 }

@@ -41,11 +41,11 @@ import Layout from '../layouts/Layout.astro';
         <div class="container-fluid contenedor-minijuegos">
         	<div class="row justify-content-center align-items-center">
 
-                <div class="col-10 col-lg-8">
+                <div class="col-11 col-lg-8">
 
                     <div class="row justify-content-center align-items-center">
                         
-                        <div class="col-10 col-lg-4 text-center d-flex justify-content-center align-items-center">
+                        <div class="col-4 text-center d-flex justify-content-center align-items-center p-2">
                             <div class="contenedor-juego">
                                 <a class="titulo-minijuegos" href="/minijuegos/el-once">
                                     <div class="img-wrapper">
@@ -58,7 +58,7 @@ import Layout from '../layouts/Layout.astro';
                                 </a>
                             </div>
                         </div>
-                        <div class="col-10 col-lg-4 text-center d-flex justify-content-center align-items-center">
+                        <div class="col-4 text-center d-flex justify-content-center align-items-center p-2">
                             <div class="contenedor-juego">
                                 <a class="titulo-minijuegos" href="/minijuegos/el-once-leyendas">
                                     <div class="img-wrapper">
@@ -71,7 +71,7 @@ import Layout from '../layouts/Layout.astro';
                                 </a>
                             </div>
                         </div>
-                        <div class="col-10 col-lg-4 text-center d-flex justify-content-center align-items-center">
+                        <div class="col-4 text-center d-flex justify-content-center align-items-center p-2">
                             <div class="contenedor-juego">
                                 <a class="titulo-minijuegos" href="/minijuegos/el-once-actualidad">
                                     <div class="img-wrapper">
@@ -84,7 +84,7 @@ import Layout from '../layouts/Layout.astro';
                                 </a>
                             </div>
                         </div>
-                        <div class="col-10 col-lg-4 text-center d-flex justify-content-center align-items-center">
+                        <div class="col-4 text-center d-flex justify-content-center align-items-center p-2">
                             <div class="contenedor-juego">
                                 <a class="titulo-minijuegos" href="/minijuegos/abc">
                                     <div class="img-wrapper">
@@ -97,7 +97,7 @@ import Layout from '../layouts/Layout.astro';
                                 </a>
                             </div>
                         </div>
-                        <div class="col-10 col-lg-4 text-center d-flex justify-content-center align-items-center">
+                        <div class="col-4 text-center d-flex justify-content-center align-items-center p-2">
                             <div class="contenedor-juego">
                                 <a class="titulo-minijuegos" href="/minijuegos/top-goleadores">
                                     <div class="img-wrapper">
@@ -110,7 +110,20 @@ import Layout from '../layouts/Layout.astro';
                                 </a>
                             </div>
                         </div>
-                        <div class="col-10 col-lg-4 text-center d-flex justify-content-center align-items-center">
+                        <div class="col-4 text-center d-flex justify-content-center align-items-center p-2">
+                            <div class="contenedor-juego">
+                                <a class="titulo-minijuegos" href="/minijuegos/el-tapadito">
+                                    <div class="img-wrapper">
+                                        <img src="/img/minijuegos/juegos/el-tapadito.webp" alt="El Tapadito" class="img-fluid img-juego">
+                                    </div>
+                                    <div class="contenedor-descripcion-juego">
+                                        <h4 class="nombre-juego">EL TAPADITO</h4>
+                                        <p class="descripcion-juego">El Wordle de la Liga 1</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-4 text-center d-flex justify-content-center align-items-center p-2">
                             <div class="contenedor-juego-proximamente">
                                 <a class="titulo-minijuegos">
                                     <div class="img-wrapper">
@@ -123,7 +136,7 @@ import Layout from '../layouts/Layout.astro';
                                 </a>
                             </div>
                         </div>
-                        <div class="col-10 col-lg-4 text-center d-flex justify-content-center align-items-center">
+                        <div class="col-4 text-center d-flex justify-content-center align-items-center p-2">
                             <div class="contenedor-juego-proximamente">
                                 <a class="titulo-minijuegos">
                                     <div class="img-wrapper">
@@ -136,20 +149,7 @@ import Layout from '../layouts/Layout.astro';
                                 </a>
                             </div>
                         </div>
-                        <div class="col-10 col-lg-4 text-center d-flex justify-content-center align-items-center">
-                            <div class="contenedor-juego-proximamente">
-                                <a class="titulo-minijuegos">
-                                    <div class="img-wrapper">
-                                        <img src="/img/minijuegos/juegos/proximamente.webp" alt="El Once" class="img-fluid img-juego">
-                                    </div>
-                                    <div class="contenedor-descripcion-juego-proximamente">
-                                        <h4 class="nombre-juego nombre-proximamente">PRÓXIMAMENTE</h4>
-                                        <p class="descripcion-juego descripcion-proximamnte">Calentando en la banca</p>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-10 col-lg-4 text-center d-flex justify-content-center align-items-center">
+                        <div class="col-4 text-center d-flex justify-content-center align-items-center p-2">
                             <div class="contenedor-juego-proximamente">
                                 <a class="titulo-minijuegos">
                                     <div class="img-wrapper">
@@ -175,177 +175,197 @@ import Layout from '../layouts/Layout.astro';
 </Layout>
 
 <style>
-
-    .contenedor-minijuegos{
+    .contenedor-minijuegos {
         margin-top: 2rem;
         margin-bottom: 5rem;
     }
 
-    .contenedor-subtitulo-futperu{
+    .contenedor-subtitulo-futperu {
         margin-top: 3rem;
         margin-bottom: 2rem;
     }
 
-    .contenedor-descripcion-futperu{
+    .contenedor-descripcion-futperu {
         margin-bottom: 2rem;
     }
 
-    .contenedor-juego, .contenedor-juego-proximamente{
+    /* --- TEXTOS REFINADOS --- */
+    .subtitulo-futperu {
+        color: #ffffff;
+        font-size: 2.8rem;
+        font-weight: 800;
+        font-style: italic;
+        text-shadow: 0 4px 10px rgba(0,0,0,0.3); /* Sombra más suave y moderna */
+    }
+
+    .descripcion-futperu {
+        color: #cbd5e1; /* Gris claro para no cansar la vista */
+        margin-top: 1rem;
+        font-size: 1.05rem;
+        line-height: 1.6; /* Mejor interlineado para lectura fluida */
+    }
+
+    .texto-seleccion {
+        color: #ffffff;
+        font-size: 1.5rem;
+        font-weight: bold;
+        text-shadow: 0 2px 8px rgba(239, 68, 68, 0.4);
+    }
+
+    /* --- TARJETAS DE JUEGO (Mejora UI/UX) --- */
+    .contenedor-juego, .contenedor-juego-proximamente {
         max-width: 250px;
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
         overflow: hidden;
-        border: 6px solid rgb(255, 109, 109);
-        border-radius: 15px;
-        transition: border 0.5s ease;
+        /* Reducimos de 6px a 3px para mayor elegancia */
+        border: 3px solid rgba(239, 68, 68, 0.8); 
+        border-radius: 16px; /* Bordes un poco más suaves */
+        background-color: #1e293b; /* Fondo oscuro base para la tarjeta */
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Profundidad */
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); /* Animación más profesional */
         margin-bottom: 2.5rem;
     }
 
-    .contenedor-juego-proximamente{
-        border: 6px solid rgb(184, 184, 184);
+    /* Tarjetas bloqueadas */
+    .contenedor-juego-proximamente {
+        border: 3px solid #475569;
+        opacity: 0.65; /* Opacidad para denotar inactividad */
+        cursor: not-allowed;
+    }
+    
+    /* Quitamos los eventos de click a los enlaces de "Próximamente" */
+    .contenedor-juego-proximamente a {
+        pointer-events: none; 
     }
 
-    .contenedor-descripcion-juego, .contenedor-descripcion-juego-proximamente{
+    .contenedor-descripcion-juego, .contenedor-descripcion-juego-proximamente {
+        width: 100%; /* Asegura que la caja de texto ocupe todo el ancho */
         padding-top: 1.2rem;
         padding-bottom: 1.5rem;
-        background-color: rgba(117, 12, 12, 0.726);
-        transition: background-color 0.5s ease;
+        background-color: rgba(127, 29, 29, 0.9); /* Rojo oscuro sólido */
+        transition: background-color 0.3s ease;
     }
 
-    .contenedor-descripcion-juego-proximamente{
-        background-color: rgba(255, 255, 255, 0.856);
+    .contenedor-descripcion-juego-proximamente {
+        background-color: #334155; /* Gris pizarra */
     }
 
-    .img-wrapper{
-        width: 250px;
-        height: 250px;
+    .img-wrapper {
+        width: 100%;
+        max-width: 250px;
+        aspect-ratio: 1 / 1; /* Mantiene el cuadrado perfecto automáticamente */
         overflow: hidden;
     }
 
-    .titulo-minijuegos{
+    .titulo-minijuegos {
         text-decoration: none;
-        font-size: 1.5rem;
-        color: rgb(255, 255, 255);
-        font-weight: bold;
-    }
-
-    .subtitulo-futperu{
-        color: rgb(255, 255, 255);
-        font-size: 3rem;
-        font-weight: bold;
-        font-style: italic;
-    }
-
-    .texto-seleccion{
-        color: rgb(255, 255, 255);
-        font-size: 1.5rem;
-        font-weight: bold;
-        text-shadow: 2px 2px 4px rgba(151, 15, 15, 0.5);
-    }
-
-    .descripcion-futperu{
-        color: rgb(255, 255, 255);
-        margin-top: 1rem;
-        font-size: 1rem;
-    }
-
-    .img-juego{
         width: 100%;
-        transition: transform 0.5s ease;
-        transform-origin: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
-    .nombre-juego{
-        color: rgb(255, 255, 255);
-        font-size: 1.2rem;
-        font-weight: bold;
+    .img-juego {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.4s ease;
+    }
+
+    .nombre-juego {
+        color: #ffffff;
+        font-size: 1.15rem;
+        font-weight: 800;
         font-style: italic;
+        margin-bottom: 0.2rem;
     }
 
     .nombre-proximamente {
-        color: rgb(29, 29, 29);
+        color: #94a3b8;
     }
 
-    .descripcion-juego{
-        color: rgb(200, 200, 200);
-        margin-top: 0.5rem;
-        font-size: 0.8rem;
+    .descripcion-juego {
+        color: #f1f5f9;
+        margin-top: 0;
+        font-size: 0.85rem;
     }
 
-    .descripcion-proximamnte{
-        color: rgb(59, 59, 59);
+    .descripcion-proximamnte {
+        color: #64748b;
     }
 
-    .contenedor-juego:hover .img-juego{
-        transform: scale(1.1);
+    /* --- HOVER EFFECTS (Interacción) --- */
+    .contenedor-juego:hover {
+        transform: translateY(-8px); /* Elevación sutil al pasar el mouse */
+        border-color: #8b5cf6; /* Cambia a borde morado moderno */
+        box-shadow: 0 15px 30px rgba(139, 92, 246, 0.3); /* Sombra morada */
     }
 
-    .contenedor-juego-proximamente:hover .img-juego{
-        transform: scale(1.1);
+    .contenedor-juego:hover .img-juego {
+        transform: scale(1.08); /* Zoom sutil, menos agresivo que 1.1 */
     }
 
-    .contenedor-juego:hover .contenedor-descripcion-juego{
-        background-color: rgba(75, 12, 175, 0.726);
+    .contenedor-juego:hover .contenedor-descripcion-juego {
+        background-color: rgba(91, 33, 182, 0.95); /* Fondo de texto morado */
     }
 
-    .contenedor-juego:hover{
-        border: 6px solid rgba(75, 12, 175, 0.726);
-    }
-
-    .contenedor-juego-proximamente:hover .contenedor-descripcion-juego-proximamente{
-        background-color: rgba(155, 155, 155, 0.726);
-    }
-
-    .contenedor-juego-proximamente:hover{
-        border: 6px solid rgba(155, 155, 155, 0.726);
-    }
-
+    /* --- RESPONSIVO MÓVIL (Optimizado) --- */
     @media (max-width: 768px) {
-
-        .contenedor-subtitulo-futperu{
+        .contenedor-subtitulo-futperu {
             margin: 1.5rem 0;
         }
 
-        .contenedor-descripcion-futperu{
-            margin-bottom: 0.8rem;
+        .contenedor-descripcion-futperu {
+            margin-bottom: 1rem;
         }
 
-        .subtitulo-futperu{
-            font-size: 1.2rem;
+        .subtitulo-futperu {
+            font-size: 1.6rem;
         }
         
-        .descripcion-futperu{
-            font-size: 0.7rem;
+        .descripcion-futperu {
+            font-size: 0.85rem;
             margin-top: 0;
             margin-bottom: 1rem;
         }
 
-        .texto-seleccion{
-            font-size: 1rem;
+        .texto-seleccion {
+            font-size: 1.1rem;
         }
 
-        .contenedor-juego, .contenedor-juego-proximamente{
-            margin-bottom: 1.5rem;
+        .contenedor-juego, .contenedor-juego-proximamente {
+            margin-bottom: 1rem;
+            border-width: 2px; /* Borde aún más fino en celular */
+            border-radius: 12px;
         }
 
-        .img-wrapper{
-            width: 200px;
-            height: 200px;
+        .img-wrapper {
+            width: 100px;
+            height: 100px;
         }
 
-        .img-juego{
-            width: 200px;
+        .img-juego {
+            width: 100px;
         }
 
-        .nombre-juego, .nombre-proximamente{
-            font-size: 1rem;
+        .contenedor-descripcion-juego, .contenedor-descripcion-juego-proximamente {
+            padding: 0.8rem 0.2rem;
+            width: 100%;
         }
 
-        .descripcion-juego, .descripcion-proximamente{
-            font-size: 0.7rem;
+        .nombre-juego {
+            font-size: 0.65rem;
+            text-align: center;
+        }
+
+        .descripcion-juego {
+            font-size: 0.55rem;
+            text-align: center;
+            max-width: 90px;
+            line-height: 1.2;
         }
     }
-
 </style>

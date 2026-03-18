@@ -40,7 +40,6 @@ export default function MenuOnceActualidad() {
     const iniciadoPrevio = localStorage.getItem('juegoIniciadoElOnceActualidad');
     
     if (iniciadoPrevio === 'true') {
-        // ¡IMPORTANTE! Recuperamos los valores guardados para no perderlos al recargar
         const difGuardada = localStorage.getItem('elOnceActualidad_dificultad');
         const tiempoGuardado = localStorage.getItem('elOnceActualidad_tiempo');
         const formacionGuardada = localStorage.getItem('elOnceActualidad_formacion');
@@ -96,97 +95,81 @@ export default function MenuOnceActualidad() {
   if (juegoIniciado && tiempo !== null && formacion !== null) {
     return (
       <div className="fade-in">
-         {/* Pasamos los datos como props al componente del juego real */}
          <JuegoElOnceActualidad />
       </div>
     );
   }
 
+  // --- NUEVA VISTA DEL MENÚ ---
   return (
-      <div className="contenedor-configuracion">
-        {yaJugoHoy && (
-          <div style={{ backgroundColor: 'rgba(255, 255, 0, 0.2)', padding: '10px', borderRadius: '5px', marginBottom: '15px' }}>
-               <p style={{ color: '#ffd700', textAlign: 'center', margin: 0 }}>
-                  ⚠️ Nota: Ya has completado el reto diario de hoy.
-              </p>
+    <div className="contenedor-configuracion">
+      <div className="menu-juego-actualidad-full-bg fade-in">
+        
+        {/* OVERLAY GENERAL */}
+        <div className="actualidad-overlay-fondo"></div>
+
+        {/* CONTENIDO FLOTANTE */}
+        <div className="actualidad-contenido-contenedor">
+          
+          {/* Cabecera del Juego */}
+          <div className="actualidad-cabecera text-center mb-5">
+            <span className="badge-categoria-actualidad">RETO</span>
+            <h1 className="titulo-hero-actualidad">EL ONCE: ACTUALIDAD</h1>
+            <h2 className="subtitulo-hero-actualidad">Los mejores jugadores del presente</h2>
           </div>
-        )}
 
-        <div className="container-fluid">
-          <div className="row justify-content-evenly align-items-center">
+          {/* Cuerpo y Acción */}
+          <div className="actualidad-cuerpo-accion text-center">
+            <p className="descripcion-juego-actualidad text-justify">
+              La pelota ya rueda y los planteles están cerrados, pero la última palabra sobre quiénes deben saltar al campo <strong>la tienes tú.</strong> En esta edición, el desafío se traslada al presente absoluto. Aquí no hay espacio para la nostalgia; tu conocimiento se pone a prueba con los <strong>fichajes bomba, jóvenes promesas y los referentes</strong> que defienden hoy mismo los colores de la Primera División. <strong>¿Estás al día con el rendimiento actual?</strong>
+            </p>
 
-            <div className="col-10 col-lg-4 d-flex justify-content-center">
-
-              <img src="/img/minijuegos/juegos/el-once-actualidad.webp" alt="El Once Actualidad" className='img-fluid img-el-once'/>
-
-            </div>
-            <div className="col-10 col-lg-4">
-
-              <p className='presentacion-el-once'>
-                La pelota ya rueda y los planteles están cerrados, pero la última palabra sobre quiénes deben saltar al campo <strong>la tienes tú.</strong> En esta edición actualizada de El Once, el desafío se traslada al presente absoluto: <strong>la Liga 1 2026.</strong> Aquí no hay espacio para la nostalgia ni para el archivo histórico; tu conocimiento se pone a prueba con los <strong>fichajes bomba, las jóvenes promesas y los referentes</strong> que defienden hoy mismo los colores de los <strong>18 clubes de la Primera División.</strong> El reto mantiene su esencia competitiva: selecciona un representante por cada equipo sorteado y encájalo en tu esquema táctico sin margen de error. ¿Quién es el lateral más en forma del torneo? ¿Qué delantero extranjero está rompiendo las redes este año? Demuestra que estás al día con el <strong>mercado de pases y el rendimiento actual</strong> para armar el equipo ideal de la temporada en curso.
-              </p>
-
-              <form onSubmit={handleContinuar}>
-                {/* DIFICULTAD 
-                <h3 className="texto-general">Dificultad:</h3>
-                <div className="contenedor-opciones">
-                  {DIFICULTADES.map((item) => (
-                    <div key={item.label}>
-                      <input
-                        type="radio"
-                        id={`dificultad-${item.label}`}
-                        name="dificultad"
-                        value={item.value}
-                        className="texto-opcion radio-oculto"
-                        onChange={() => setDificultad(item.value)}
-                        checked={dificultad === item.value}
-                      />
-                      <label htmlFor={`dificultad-${item.label}`} className="texto-opcion radio-label">
-                        {item.label}
-                      </label>
-                    </div>
-                  ))}
-                </div>
-                */}
+            {yaJugoHoy ?  (
+              <div className="alerta-jugado-actualidad fade-in">
+                <span className="alerta-icono-actualidad">🔥</span>
+                <p>Ya dirigiste el partido de hoy<br/><strong>Vuelve mañana para una nueva jornada</strong></p>
+              </div>
+            ) : (
+              <form onSubmit={handleContinuar} className="seccion-accion-actualidad">
                 
-                {/* TIEMPO */}
-                <h3 className="texto-general">Tiempo:</h3>
-                <div className="contenedor-opciones">
-                  {TIEMPOS.map((item) => (
-                    <div key={item.label}>
-                      <input
-                        type="radio"
-                        id={`tiempo-${item.label}`}
-                        name="tiempo"
-                        value={item.value}
-                        className="texto-opcion radio-oculto"
-                        onChange={() => setTiempo(item.value)}
-                        checked={tiempo === item.value}
-                      />
-                      <label htmlFor={`tiempo-${item.label}`} className="texto-opcion radio-label">
-                        {item.label}
-                      </label>
-                    </div>
-                  ))}
+                {/* SELECTOR DE TIEMPO MODERNO */}
+                <div className="contenedor-config-tiempo">
+                  <h3 className="titulo-config-actualidad">⏱️ Selecciona tu tiempo:</h3>
+                  <div className="selector-tiempo-actualidad">
+                    {TIEMPOS.map((item) => (
+                      <div key={item.label} className="opcion-radio-wrapper">
+                        <input
+                          type="radio"
+                          id={`tiempo-${item.label}`}
+                          name="tiempo"
+                          value={item.value}
+                          className="radio-oculto-actualidad"
+                          onChange={() => setTiempo(item.value)}
+                          checked={tiempo === item.value}
+                        />
+                        <label htmlFor={`tiempo-${item.label}`} className="radio-label-actualidad">
+                          {item.label}
+                        </label>
+                      </div>
+                    ))}
+                  </div>
                 </div>
                 
-                {/* BOTÓN */}
-                <div style={{ marginTop: '2rem' }}>
-                  <button
-                    id="btn-continuar"
-                    type="submit"
-                    className="btn btn-jugar"
-                    disabled={tiempo === null}
-                  >
-                    Jugar
-                  </button>
-                </div>
+                {/* BOTÓN JUGAR */}
+                <button
+                  id="btn-continuar"
+                  type="submit"
+                  className="btn-iniciar-reto-actualidad mt-4"
+                  disabled={tiempo === null}
+                >
+                  JUGAR AHORA
+                </button>
               </form>
-            </div>
-
+            )}
           </div>
         </div>
-      </div>
-  );
 
+      </div>
+    </div>
+  );
 }

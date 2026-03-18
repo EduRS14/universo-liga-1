@@ -7,65 +7,60 @@
   padding: 1rem;
 }
 
-.texto-cargando {
-  font-size: 1.5rem;
-  color: white;
-  text-align: center;
-  font-weight: 700;
-}
-
-/* --- TARJETA CON FONDO TOTAL --- */
-.menu-juego-abc-full-bg {
+/* --- TARJETA CON FONDO TOTAL (EL CAMBIO CLAVE) --- */
+.menu-juego-tapadito-full-bg {
   width: 100%;
   max-width: 600px;
-  position: relative;
+  position: relative; /* Necesario para que el overlay funcione */
   border-radius: 20px;
   overflow: hidden;
   box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.6);
   border: 1px solid #1e293b;
   
   /* FONDO DE IMAGEN TOTAL */
-  background-image: url('/img/minijuegos/juegos/el-abc.webp');
-  background-size: cover;
-  background-position: center;
+  background-image: url('/img/minijuegos/juegos/el-tapadito.webp');
+  background-size: cover; /* Llenar sin deformar */
+  background-position: center; /* Centrar la imagen */
   background-repeat: no-repeat;
 }
 
-/* --- EL OVERLAY (Desvanecimiento oscuro sobre la imagen) --- */
-.abc-overlay-fondo {
+/* --- EL OVERLAY (El desvanecimiento oscuro sobre la imagen) --- */
+.tapadito-overlay-fondo {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
+  
+  /* Degradado profundo de negro a azul oscuro transparente */
   background: linear-gradient(
     to bottom, 
-    rgba(15, 23, 42, 0.95) 0%,
-    rgba(15, 23, 42, 0.85) 50%,
-    rgba(0, 0, 0, 0.95) 100% 
+    rgba(15, 23, 42, 0.95) 0%,   /* Casi negro arriba */
+    rgba(15, 23, 42, 0.95) 50%,   /* Medio desvanecido en el centro */
+    rgba(0, 0, 0, 0.95) 100%      /* Negro profundo abajo */
   );
-  z-index: 1;
+  z-index: 1; /* Por debajo del contenido */
 }
 
 /* --- CONTENEDOR DE CONTENIDO (Flota sobre el overlay) --- */
-.abc-contenido-contenedor {
+.tapadito-contenido-contenedor {
   position: relative;
-  z-index: 2;
-  padding: 3rem 2.5rem;
+  z-index: 2; /* Por encima del overlay */
+  padding: 3rem 2.5rem; /* Respiro general */
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.abc-cuerpo-accion {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.tapadito-cuerpo-accion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 /* --- ESTILOS DE TEXTO (Premium y legibles) --- */
-.badge-categoria-abc {
-  background-color: #7c3aed; /* Morado intenso */
+.badge-categoria-tapadito {
+  background-color: #2240c5;
   color: #ffffff;
   padding: 5px 14px;
   border-radius: 10px;
@@ -77,18 +72,18 @@
   display: inline-block;
 }
 
-.titulo-hero-abc {
+.titulo-hero-tapadito {
   color: #ffffff;
   font-size: 2.5rem;
   font-weight: 900;
   line-height: 1;
   margin: 0.5rem 0 0.5rem 0;
   letter-spacing: 1px;
-  text-shadow: 0 4px 10px rgba(0,0,0,0.5);
+  text-shadow: 0 4px 10px rgba(0,0,0,0.5); /* Sombra para resaltar */
 }
 
-.subtitulo-hero-abc {
-  color: #c4b5fd;
+.subtitulo-hero-tapadito {
+  color: #94a3b8;
   font-size: 1.1rem;
   font-weight: 700;
   margin: 0;
@@ -96,7 +91,7 @@
   letter-spacing: 2px;
 }
 
-.descripcion-juego-abc {
+.descripcion-juego-tapadito {
   color: #cbd5e1;
   font-size: 1.05rem;
   line-height: 1.6;
@@ -104,20 +99,20 @@
   max-width: 500px;
 }
 
-.descripcion-juego-abc strong {
+.descripcion-juego-tapadito strong {
   color: #ffffff;
 }
 
-/* --- BOTÓN JUGAR (MORADO) --- */
-.seccion-accion-abc {
+/* --- BOTÓN JUGAR (VERDE WORDLE) --- */
+.seccion-accion-tapadito {
   display: flex;
   justify-content: center;
   width: 100%;
   max-width: 400px;
 }
 
-.btn-iniciar-reto-abc {
-  background: #6d28d9;
+.btn-iniciar-reto-tapadito {
+  background: #2240c5;
   color: #ffffff;
   border: none;
   padding: 16px 40px;
@@ -134,13 +129,20 @@
   justify-content: center;
 }
 
-.btn-iniciar-reto-abc:hover {
+.btn-iniciar-reto-tapadito:hover {
   transform: translateY(-2px);
-  background: #5b21b6;
+  background: rgb(48, 87, 214);
+}
+
+.texto-cargando {
+  font-size: 1.5rem;
+  color: white;
+  text-align: center;
+  font-weight: 700;
 }
 
 /* --- ALERTA YA JUGADO --- */
-.alerta-jugado-abc {
+.alerta-jugado-tapadito {
   background-color: rgb(49, 39, 12);
   border: 2px solid rgb(58, 45, 4);
   padding: 1.5rem;
@@ -153,47 +155,47 @@
   max-width: 400px;
 }
 
-.alerta-icono-abc {
+.alerta-icono-tapadito {
   font-size: 2.2rem;
 }
 
-.alerta-jugado-abc p {
+.alerta-jugado-tapadito p {
   color: #fde047;
   margin: 0;
   font-size: 1rem;
   line-height: 1.5;
 }
 
-.alerta-jugado-abc strong {
+.alerta-jugado-tapadito strong {
   color: #ffffff;
 }
 
 /* --- RESPONSIVO MÓVIL --- */
 @media (max-width: 600px) {
-  .abc-contenido-contenedor { 
+  .tapadito-contenido-contenedor { 
     padding: 2rem 1.5rem; 
-  }
+    }
   
-  .abc-cabecera {
+    .tapadito-cabecera{
     margin-bottom: 1.5rem !important;
-  }
+    }
 
-  .titulo-hero-abc { font-size: 1.8rem; }
-  .subtitulo-hero-abc { font-size: 0.8rem; }
+  .titulo-hero-tapadito { font-size: 1rem; }
+  .subtitulo-hero-tapadito { font-size: 0.75rem; }
   
-  .descripcion-juego-abc { font-size: 0.85rem; }
+  .descripcion-juego-tapadito { font-size: 0.7rem; }
   
-  .btn-iniciar-reto-abc {
+  .btn-iniciar-reto-tapadito {
     padding: 14px 30px;
-    font-size: 1rem;
-    width: 80%;
+    font-size: 0.8rem;
+    width: 70%;
   }
 
-  .alerta-icono-abc {
-    font-size: 1.5rem;
+  .alerta-icono-tapadito{
+    font-size: 1.2rem;
   }
 
-  .alerta-jugado-abc p {
-    font-size: 0.85rem;
+  .alerta-jugado-tapadito p {
+    font-size: 0.8rem;
   }
 }

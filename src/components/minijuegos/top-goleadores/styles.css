@@ -1,134 +1,268 @@
-.contenedor-configuracion{
+/* --- CONTENEDOR GENERAL --- */
+.contenedor-configuracion {
   min-height: 80vh;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 1rem;
+  margin: 2rem 0;
 }
 
-.contenedor-opciones{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-.texto-general{
-    font-size: 1.2rem;
-    color: rgb(255, 255, 255);
-    margin: 2rem 0 1rem 0;
-}
-.texto-opcion{
-    font-size: 1rem;
-    color: rgb(255, 255, 255);
-}
-.radio-oculto {
-  display: none;
-}
-.radio-label {
-  display: inline-block;
-  padding: 0.6rem 1.2rem;
-  margin-right: 1rem;
-  font-family: sans-serif;
-  font-size: 0.8rem;
-  background-color: #f0f0f0; /* Fondo gris claro */
-  color: #333;
-  border: 2px solid #ddd;
-  border-radius: 8px; /* Bordes redondeados */
-  cursor: pointer; /* Manito al pasar el mouse */
-  transition: all 0.2s ease; /* Suavizar la animación */
-  user-select: none; /* Evitar que se seleccione el texto */
-}
-.radio-label:hover {
-  background-color: #e2e2e2;
+.texto-cargando {
+  font-size: 1.5rem;
+  color: white;
+  text-align: center;
+  font-weight: 700;
 }
 
-.btn-jugar{
-  margin-top: 1rem;
-  padding: 0.8rem 1.5rem;
-  font-size: 1rem;
+/* --- TARJETA CON FONDO TOTAL --- */
+.menu-juego-top-full-bg {
+  width: 100%;
+  max-width: 50vw;
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.6);
+  border: 1px solid #1e293b;
+  
+  /* FONDO DE IMAGEN TOTAL */
+  background-image: url('/img/minijuegos/juegos/top-goleadores.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* --- EL OVERLAY (Desvanecimiento oscuro sobre la imagen) --- */
+.top-overlay-fondo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to bottom, 
+    rgba(15, 23, 42, 0.95) 0%, 
+    rgba(15, 23, 42, 0.85) 50%, 
+    rgba(0, 0, 0, 0.95) 100%
+  );
+  z-index: 1;
+}
+
+/* --- CONTENEDOR DE CONTENIDO (Flota sobre el overlay) --- */
+.top-contenido-contenedor {
+  position: relative;
+  z-index: 2;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 50vw;
+}
+
+.top-cuerpo-accion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+/* --- ESTILOS DE TEXTO --- */
+.badge-categoria-top {
+  background-color: #eab308; /* Dorado */
+  color: #451a03; /* Marrón muy oscuro para contraste */
+  padding: 5px 14px;
   border-radius: 10px;
-  background-color: #643bf6;
-  color: white;
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+  display: inline-block;
+}
+
+.titulo-hero-top {
+  color: #ffffff;
+  font-size: 2.5rem;
+  font-weight: 900;
+  line-height: 1;
+  margin: 0.5rem 0 0.5rem 0;
+  letter-spacing: 1px;
+  text-shadow: 0 4px 10px rgba(0,0,0,0.5);
+}
+
+.subtitulo-hero-top {
+  color: #fde047; /* Amarillo suave */
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.descripcion-juego-top {
+  color: #cbd5e1;
+  font-size: 1.05rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+  max-width: 500px;
+}
+
+.descripcion-juego-top strong {
+  color: #ffffff;
+}
+
+/* --- FORMULARIO Y SELECTOR DE TIEMPO --- */
+.seccion-accion-top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 500px;
+}
+
+.contenedor-config-tiempo {
+  background: rgb(36, 36, 36);
+  border-radius: 16px;
+  padding: 1.5rem;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.titulo-config-top {
+  color: #b4b4b4;
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.selector-tiempo-top {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.opcion-radio-wrapper {
+  flex: 1 1 calc(25% - 10px);
+  min-width: 80px;
+}
+
+.radio-oculto-top {
+  display: none; /* Ocultamos el circulito tradicional del radio button */
+}
+
+.radio-label-top {
+  display: block;
+  background-color: #3b381e;
+  color: #b4b4b4;
+  border: 2px solid transparent;
+  padding: 10px 5px;
+  border-radius: 15px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-align: center;
+  cursor: pointer;
   transition: all 0.2s ease;
+  user-select: none;
 }
 
-.btn-jugar:hover {
-  background-color: #5128d4;
-  font-weight: bold;
-  color: white;
+.radio-label-top:hover {
+  background-color: #bd9b2d;
+  color: #ffffff;
 }
 
-.btn-jugar:disabled {
-  background-color: #a9a9a9;
+/* Cuando el input radio está seleccionado, aplicamos estilo al label hermano */
+.radio-oculto-top:checked + .radio-label-top {
+  background-color: #bd9b2d;
+  border-color: #eab308;
+  color: #ffffff;
+}
+
+/* --- BOTÓN JUGAR (DORADO) --- */
+.btn-iniciar-reto-top {
+  background: #eab308;
+  color: #451a03;
+  border: none;
+  padding: 16px 40px;
+  border-radius: 50px;
+  font-size: 1.2rem;
+  font-weight: 800;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 400px;
+}
+
+.btn-iniciar-reto-top:hover:not(:disabled) {
+  transform: translateY(-2px);
+  background: #facc15;
+}
+
+.btn-iniciar-reto-top:disabled {
+  background-color: #555033;
+  color: #858b64;
   cursor: not-allowed;
+  box-shadow: none;
 }
 
-input[type="radio"]:checked + .radio-label {
-  background-color: #911515;
-  color: white;
-  border-color: rgb(165, 12, 12);
-  box-shadow: inset 0 3px 5px rgba(0,0,0,0.2); 
-  transform: translateY(1px); /* Mueve el botón un píxel abajo */
+/* --- ALERTA YA JUGADO --- */
+.alerta-jugado-top {
+  background-color: rgb(49, 39, 12);
+  border: 2px solid rgb(58, 45, 4);
+  padding: 1.5rem;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  max-width: 400px;
 }
 
-.presentacion-el-once{
-    font-size: 0.9rem;
-    color: white;
-    text-align: justify;
-    margin-bottom: 2rem;
-    background-color: #341b83;
-    border: 2px solid #5128d4;
-    border-radius: 10px;
-    padding: 1rem;
+.alerta-icono-top {
+  font-size: 2.2rem;
 }
 
-.texto-cargando{
-    font-size: 1.5rem;
-    color: white;
-    text-align: center;
-    margin-top: 2rem;
+.alerta-jugado-top p {
+  color: #fde047;
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.5;
 }
 
-.img-minijuego{
-    border-radius: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    max-width: 600px;
-    height: auto;
-    display: block;
+.alerta-jugado-top strong {
+  color: #ffffff;
 }
 
+/* --- RESPONSIVO MÓVIL --- */
 @media (max-width: 600px) {
-    .texto-cargando{
-        font-size: 1rem;
-    }
+  .top-contenido-contenedor { padding: 2rem 1.5rem; min-width: 90vw; }
 
-    .img-minijuego{
-        max-width: 250px;
-    }
+  .menu-juego-top-full-bg { max-width: 90vw; }
+  
+  .top-cabecera { margin-bottom: 1.5rem !important; }
 
-    .texto-ya-jugo{
-        font-size: 0.7rem;
-        margin-bottom: 2rem !important;
-    }
+  .titulo-hero-top { font-size: 1.8rem; }
+  .subtitulo-hero-top { font-size: 0.8rem; }
+  
+  .descripcion-juego-top { font-size: 0.85rem; }
+  
+  .contenedor-config-tiempo { padding: 1rem; }
+  .radio-label-top { font-size: 0.8rem; padding: 8px 4px; }
 
-    .presentacion-el-once{
-        margin-top: 1rem;
-        font-size: 0.6rem;
-    }
+  .btn-iniciar-reto-top {
+    padding: 14px 30px;
+    font-size: 1rem;
+    width: 90%;
+  }
 
-    .texto-general{
-        font-size: 0.8rem;
-    }
-
-    .radio-label {
-        font-size: 0.6rem;
-        padding: 0.4rem 0.8rem;
-        margin-right: 0.5rem;
-    }
-
-    .btn-jugar{
-        font-size: 0.8rem;
-        padding: 0.6rem 1rem;
-        margin: 0;
-        margin-bottom: 2rem;
-    }
+  .alerta-icono-top { font-size: 1.5rem; }
+  .alerta-jugado-top p { font-size: 0.85rem; }
 }

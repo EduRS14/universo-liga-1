@@ -40,7 +40,6 @@ export default function MenuOnceLeyendas() {
     const iniciadoPrevio = localStorage.getItem('juegoIniciadoElOnceLeyendas');
     
     if (iniciadoPrevio === 'true') {
-        // ¡IMPORTANTE! Recuperamos los valores guardados para no perderlos al recargar
         const difGuardada = localStorage.getItem('elOnceLeyendas_dificultad');
         const tiempoGuardado = localStorage.getItem('elOnceLeyendas_tiempo');
         const formacionGuardada = localStorage.getItem('elOnceLeyendas_formacion');
@@ -96,97 +95,81 @@ export default function MenuOnceLeyendas() {
   if (juegoIniciado && tiempo !== null && formacion !== null) {
     return (
       <div className="fade-in">
-         {/* Pasamos los datos como props al componente del juego real */}
          <JuegoElOnceLeyendas />
       </div>
     );
   }
 
+  // --- NUEVA VISTA DEL MENÚ ---
   return (
-      <div className="contenedor-configuracion">
-        {yaJugoHoy && (
-          <div style={{ backgroundColor: 'rgba(255, 255, 0, 0.2)', padding: '10px', borderRadius: '5px', marginBottom: '15px' }}>
-               <p style={{ color: '#ffd700', textAlign: 'center', margin: 0 }}>
-                  ⚠️ Nota: Ya has completado el reto diario de hoy.
-              </p>
+    <div className="contenedor-configuracion">
+      <div className="menu-juego-leyendas-full-bg fade-in">
+        
+        {/* OVERLAY GENERAL */}
+        <div className="leyendas-overlay-fondo"></div>
+
+        {/* CONTENIDO FLOTANTE */}
+        <div className="leyendas-contenido-contenedor">
+          
+          {/* Cabecera del Juego */}
+          <div className="leyendas-cabecera text-center mb-5">
+            <span className="badge-categoria-leyendas">RETO</span>
+            <h1 className="titulo-hero-leyendas">EL ONCE: LEYENDAS</h1>
+            <h2 className="subtitulo-hero-leyendas">El equipo histórico definitivo</h2>
           </div>
-        )}
 
-        <div className="container-fluid">
-          <div className="row justify-content-evenly align-items-center">
+          {/* Cuerpo y Acción */}
+          <div className="leyendas-cuerpo-accion text-center">
+            <p className="descripcion-juego-leyendas text-justify">
+              El tiempo pasa, pero <strong>la clase es eterna.</strong> En esta edición especial, tu misión es invocar a los <strong>ídolos de antaño</strong> que ya forman parte del mito. Debes armar el equipo histórico definitivo utilizando <strong>un solo jugador retirado por cada club</strong> seleccionado. ¿Recuerdas quién era el caudillo de esa defensa que ya no existe? Es momento de rendir tributo.
+            </p>
 
-            <div className="col-10 col-lg-4 d-flex justify-content-center">
-
-              <img src="/img/minijuegos/juegos/el-once-leyendas.webp" alt="El Once Leyendas" className='img-fluid img-el-once'/>
-
-            </div>
-            <div className="col-10 col-lg-4">
-
-              <p className='presentacion-el-once'>
-                El tiempo pasa, pero <strong>la clase es eterna.</strong> En esta edición especial de El Once, las puertas del vestuario se abren exclusivamente para aquellos que colgaron los botines pero dejaron una <strong>huella imborrable</strong> en nuestra liga. Aquí no cuentan los fichajes del presente; tu misión es invocar a los <strong>ídolos de antaño,</strong> a esos referentes que rugieron en los estadios del Perú entre 2010 y 2025 y que hoy ya forman parte del <strong>mito</strong>. El reto mantiene su rigor: once equipos distintos, once posiciones fijas y un solo jugador retirado para cada una. ¿Recuerdas quién era el caudillo de esa defensa que ya no existe o quién era el "10" extranjero que llegó sin nombre y se fue como <strong>leyenda?</strong> Prepárate para un viaje al pasado donde tu único recurso es la <strong>memoria.</strong> Es momento de rendir tributo a los que se fueron por la puerta grande y armar el <strong>equipo histórico definitivo.</strong>
-              </p>
-
-              <form onSubmit={handleContinuar}>
-                {/* DIFICULTAD 
-                <h3 className="texto-general">Dificultad:</h3>
-                <div className="contenedor-opciones">
-                  {DIFICULTADES.map((item) => (
-                    <div key={item.label}>
-                      <input
-                        type="radio"
-                        id={`dificultad-${item.label}`}
-                        name="dificultad"
-                        value={item.value}
-                        className="texto-opcion radio-oculto"
-                        onChange={() => setDificultad(item.value)}
-                        checked={dificultad === item.value}
-                      />
-                      <label htmlFor={`dificultad-${item.label}`} className="texto-opcion radio-label">
-                        {item.label}
-                      </label>
-                    </div>
-                  ))}
-                </div>
-                */}
+            {yaJugoHoy ?  (
+              <div className="alerta-jugado-leyendas fade-in">
+                <span className="alerta-icono-leyendas">👑</span>
+                <p>Ya armaste tu equipo histórico hoy<br/><strong>Vuelve mañana para invocar nuevas leyendas</strong></p>
+              </div>
+            ) : (
+              <form onSubmit={handleContinuar} className="seccion-accion-leyendas">
                 
-                {/* TIEMPO */}
-                <h3 className="texto-general">Tiempo:</h3>
-                <div className="contenedor-opciones">
-                  {TIEMPOS.map((item) => (
-                    <div key={item.label}>
-                      <input
-                        type="radio"
-                        id={`tiempo-${item.label}`}
-                        name="tiempo"
-                        value={item.value}
-                        className="texto-opcion radio-oculto"
-                        onChange={() => setTiempo(item.value)}
-                        checked={tiempo === item.value}
-                      />
-                      <label htmlFor={`tiempo-${item.label}`} className="texto-opcion radio-label">
-                        {item.label}
-                      </label>
-                    </div>
-                  ))}
+                {/* SELECTOR DE TIEMPO MODERNO */}
+                <div className="contenedor-config-tiempo">
+                  <h3 className="titulo-config-leyendas">⏱️ Selecciona tu tiempo:</h3>
+                  <div className="selector-tiempo-leyendas">
+                    {TIEMPOS.map((item) => (
+                      <div key={item.label} className="opcion-radio-wrapper">
+                        <input
+                          type="radio"
+                          id={`tiempo-${item.label}`}
+                          name="tiempo"
+                          value={item.value}
+                          className="radio-oculto-leyendas"
+                          onChange={() => setTiempo(item.value)}
+                          checked={tiempo === item.value}
+                        />
+                        <label htmlFor={`tiempo-${item.label}`} className="radio-label-leyendas">
+                          {item.label}
+                        </label>
+                      </div>
+                    ))}
+                  </div>
                 </div>
                 
-                {/* BOTÓN */}
-                <div style={{ marginTop: '2rem' }}>
-                  <button
-                    id="btn-continuar"
-                    type="submit"
-                    className="btn btn-jugar"
-                    disabled={tiempo === null}
-                  >
-                    Jugar
-                  </button>
-                </div>
+                {/* BOTÓN JUGAR */}
+                <button
+                  id="btn-continuar"
+                  type="submit"
+                  className="btn-iniciar-reto-leyendas mt-4"
+                  disabled={tiempo === null}
+                >
+                  JUGAR AHORA
+                </button>
               </form>
-            </div>
-
+            )}
           </div>
         </div>
-      </div>
-  );
 
+      </div>
+    </div>
+  );
 }

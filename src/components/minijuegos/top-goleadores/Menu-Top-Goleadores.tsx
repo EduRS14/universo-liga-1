@@ -42,11 +42,6 @@ export default function MenuTopGoleadores() {
     const partidaGuardada = localStorage.getItem('configuracionTopGoleadores');
     if (partidaGuardada) {
       const config: ConfiguracionTop = JSON.parse(partidaGuardada);
-      const fechaUltimaPartida = config.fechaUltimaPartida;
-
-      // Generamos un date para comparar fechas
-      const hoy = new Date();
-      const hoyStr = hoy.toISOString().split('T')[0]; // Formato YYYY-MM-DD
       
       setTiempo(config.tiempoRestante);
       setJuegoIniciado(true);
@@ -105,81 +100,81 @@ export default function MenuTopGoleadores() {
   if (juegoIniciado && tiempo !== null) {
     return (
       <div className="fade-in">
-         {/* Pasamos los datos como props al componente del juego real */}
          <JuegoTopGoleadores />
       </div>
     );
   }
 
+  // --- NUEVA VISTA DEL MENÚ ---
   return (
-      <div className="contenedor-configuracion">
+    <div className="contenedor-configuracion">
+      <div className="menu-juego-top-full-bg fade-in">
+        
+        {/* OVERLAY GENERAL */}
+        <div className="top-overlay-fondo"></div>
 
-        <div className="container-fluid">
-          <div className="row justify-content-evenly align-items-center">
+        {/* CONTENIDO FLOTANTE */}
+        <div className="top-contenido-contenedor">
+          
+          {/* Cabecera del Juego */}
+          <div className="top-cabecera text-center mb-5">
+            <span className="badge-categoria-top">RETO DIARIO</span>
+            <h1 className="titulo-hero-top">EL TOP</h1>
+            <h2 className="subtitulo-hero-top">GOLEADORES: LA MEMORIA DEL GOL</h2>
+          </div>
 
-            <div className="col-10 col-lg-4 d-flex justify-content-center">
+          {/* Cuerpo y Acción */}
+          <div className="top-cuerpo-accion text-center">
+            <p className="descripcion-juego-top text-justify">
+              ¿Qué queda de una temporada cuando se apagan las luces? <strong>El Top</strong> es la arena definitiva donde las estadísticas cobran vida. Tu misión es reconstruir la tabla de máximos anotadores de una <strong>temporada al azar</strong> antes de que el tiempo se agote. Es un examen a tu archivo mental, donde cada apellido correcto es un tributo a la eficacia. <strong>¿Tienes la precisión necesaria para reclamar el Botín de Oro de la nostalgia?</strong>
+            </p>
 
-              <img src="/img/minijuegos/juegos/top-goleadores.webp" alt="Top Goleadores" className='img-fluid img-minijuego'/>
-
-            </div>
-            <div className="col-10 col-lg-4">
-
-              <p className='presentacion-el-once'>
-                ¿Qué queda de una temporada cuando se apagan las luces? <strong>El Top</strong> es la arena definitiva donde las estadísticas cobran vida y la memoria se convierte en trofeo. En esta edición, <strong>Goleadores</strong>, el reto es honrar a los dueños del grito sagrado en la <strong>Liga 1.</strong> No basta con recordar al campeón; aquí la gloria pertenece a los artilleros que, <strong>con camisetas grandes o chicas, perforaron redes desde Tumbes hasta Tacna.</strong> El desafío es directo: una temporada al azar, diez casilleros vacíos y la misión de <strong>reconstruir la tabla de máximos anotadores antes de que el tiempo se agote.</strong> Es un examen a tu archivo mental, donde cada apellido correcto es un tributo a la eficacia. <strong>¿Tienes la precisión necesaria para completar la lista y reclamar el Botín de Oro de la nostalgia?</strong>
-              </p>
-
-
-              {yaJugoHoy ?  (
-                <div className='texto-ya-jugo' style={{ backgroundColor: 'rgba(255, 255, 0, 0.2)', padding: '10px', borderRadius: '5px', marginBottom: '15px' }}>
-                     <p style={{ color: '#ffd700', textAlign: 'center', margin: 0 }}>
-                        ⚠️ Nota: Ya has jugado el reto diario de hoy.
-                    </p>
+            {yaJugoHoy ?  (
+              <div className="alerta-jugado-top fade-in">
+                <span className="alerta-icono-top">🏆</span>
+                <p>Ya jugaste la edición de hoy<br/><strong>Vuelve mañana por una nueva temporada</strong></p>
+              </div>
+            ) : (
+              <form onSubmit={handleContinuar} className="seccion-accion-top">
+                
+                {/* SELECTOR DE TIEMPO MODERNO */}
+                <div className="contenedor-config-tiempo">
+                  <h3 className="titulo-config-top">⏱️ Selecciona tu tiempo:</h3>
+                  <div className="selector-tiempo-top">
+                    {TIEMPOS.map((item) => (
+                      <div key={item.label} className="opcion-radio-wrapper">
+                        <input
+                          type="radio"
+                          id={`tiempo-${item.label}`}
+                          name="tiempo"
+                          value={item.value}
+                          className="radio-oculto-top"
+                          onChange={() => setTiempo(item.value)}
+                          checked={tiempo === item.value}
+                        />
+                        <label htmlFor={`tiempo-${item.label}`} className="radio-label-top">
+                          {item.label}
+                        </label>
+                      </div>
+                    ))}
+                  </div>
                 </div>
-              ) : (
-                <>
-                  <form onSubmit={handleContinuar}>
-
-                    {/* TIEMPO */}
-                    <h3 className="texto-general">Tiempo:</h3>
-                    <div className="contenedor-opciones">
-                      {TIEMPOS.map((item) => (
-                        <div key={item.label}>
-                          <input
-                            type="radio"
-                            id={`tiempo-${item.label}`}
-                            name="tiempo"
-                            value={item.value}
-                            className="texto-opcion radio-oculto"
-                            onChange={() => setTiempo(item.value)}
-                            checked={tiempo === item.value}
-                          />
-                          <label htmlFor={`tiempo-${item.label}`} className="texto-opcion radio-label">
-                            {item.label}
-                          </label>
-                        </div>
-                      ))}
-                    </div>
-                    
-                    {/* BOTÓN */}
-                    <div style={{ marginTop: '2rem' }}>
-                      <button
-                        id="btn-continuar"
-                        type="submit"
-                        className="btn btn-jugar"
-                        disabled={tiempo === null}
-                      >
-                        Jugar
-                      </button>
-                    </div>
-                  </form>
-                </>
-              )
-              }
-            </div>
-
+                
+                {/* BOTÓN JUGAR */}
+                <button
+                  id="btn-continuar"
+                  type="submit"
+                  className="btn-iniciar-reto-top mt-4"
+                  disabled={tiempo === null}
+                >
+                  JUGAR AHORA
+                </button>
+              </form>
+            )}
           </div>
         </div>
-      </div>
-  );
 
+      </div>
+    </div>
+  );
 }

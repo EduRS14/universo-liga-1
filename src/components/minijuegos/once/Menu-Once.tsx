@@ -46,7 +46,6 @@ export default function MenuOnce() {
     const iniciadoPrevio = localStorage.getItem('juegoIniciadoElOnce');
     
     if (iniciadoPrevio === 'true') {
-        // ¡IMPORTANTE! Recuperamos los valores guardados para no perderlos al recargar
         const difGuardada = localStorage.getItem('elOnce_dificultad');
         const tiempoGuardado = localStorage.getItem('elOnce_tiempo');
         const formacionGuardada = localStorage.getItem('elOnce_formacion');
@@ -102,97 +101,81 @@ export default function MenuOnce() {
   if (juegoIniciado && tiempo !== null && formacion !== null) {
     return (
       <div className="fade-in">
-         {/* Pasamos los datos como props al componente del juego real */}
          <JuegoElOnce />
       </div>
     );
   }
 
+  // --- NUEVA VISTA DEL MENÚ ---
   return (
-      <div className="contenedor-configuracion">
-        {yaJugoHoy && (
-          <div style={{ backgroundColor: 'rgba(255, 255, 0, 0.2)', padding: '10px', borderRadius: '5px', marginBottom: '15px' }}>
-               <p style={{ color: '#ffd700', textAlign: 'center', margin: 0 }}>
-                  ⚠️ Nota: Ya has completado el reto diario de hoy.
-              </p>
+    <div className="contenedor-configuracion">
+      <div className="menu-juego-once-full-bg fade-in">
+        
+        {/* OVERLAY GENERAL */}
+        <div className="once-overlay-fondo"></div>
+
+        {/* CONTENIDO FLOTANTE */}
+        <div className="once-contenido-contenedor">
+          
+          {/* Cabecera del Juego */}
+          <div className="once-cabecera text-center mb-5">
+            <span className="badge-categoria-once">RETO</span>
+            <h1 className="titulo-hero-once">EL ONCE</h1>
+            <h2 className="subtitulo-hero-once">EL TEMPLO DE LA MEMORIA</h2>
           </div>
-        )}
 
-        <div className="container-fluid">
-          <div className="row justify-content-evenly align-items-center">
+          {/* Cuerpo y Acción */}
+          <div className="once-cuerpo-accion text-center">
+            <p className="descripcion-juego-once text-justify">
+              ¿Cuántos nombres han pasado por nuestros ojos en más de <strong>quince años de fútbol peruano?</strong> El Once es el espacio donde el conocimiento y la nostalgia se encuentran. El desafío es simple pero implacable: debes <strong>construir un equipo equilibrado utilizando un solo representante por cada club seleccionado.</strong> ¿Estás listo para dar la charla técnica y demostrar que tu memoria es de campeonato?
+            </p>
 
-            <div className="col-10 col-lg-4 d-flex justify-content-center">
-
-              <img src="/img/minijuegos/juegos/el-once.webp" alt="El Once" className='img-fluid img-el-once'/>
-
-            </div>
-            <div className="col-10 col-lg-4">
-
-              <p className='presentacion-el-once'>
-                ¿Cuántos nombres han pasado por nuestros ojos en más de <strong>quince años de fútbol peruano?</strong> El Once es el espacio donde el conocimiento y la nostalgia se encuentran para desafiar a los que dicen saberlo todo sobre la <strong>Liga 1.</strong> Aquí, la gloria no se gana en la cancha, sino recordando a esos guerreros que defendieron camisetas <strong>desde las alturas del Cusco hasta el calor de Moyobamba.</strong> El desafío es simple pero implacable: debes <strong>construir un equipo equilibrado utilizando un solo representante por cada club seleccionado.</strong> Es un viaje por el tiempo y la geografía de nuestro campeonato, donde cada posición vacante es una pregunta y cada nombre que eliges es una prueba de tu lealtad a la historia del fútbol nacional. <strong>¿Estás listo para dar la charla técnica y demostrar que tu memoria es de campeonato?</strong>
-              </p>
-
-              <form onSubmit={handleContinuar}>
-                {/* DIFICULTAD 
-                <h3 className="texto-general">Dificultad:</h3>
-                <div className="contenedor-opciones">
-                  {DIFICULTADES.map((item) => (
-                    <div key={item.label}>
-                      <input
-                        type="radio"
-                        id={`dificultad-${item.label}`}
-                        name="dificultad"
-                        value={item.value}
-                        className="texto-opcion radio-oculto"
-                        onChange={() => setDificultad(item.value)}
-                        checked={dificultad === item.value}
-                      />
-                      <label htmlFor={`dificultad-${item.label}`} className="texto-opcion radio-label">
-                        {item.label}
-                      </label>
-                    </div>
-                  ))}
-                </div>
-                */}
+            {yaJugoHoy ?  (
+              <div className="alerta-jugado-once fade-in">
+                <span className="alerta-icono-once">📋</span>
+                <p>Ya diste la charla técnica de hoy<br/><strong>Vuelve mañana para armar un nuevo equipo</strong></p>
+              </div>
+            ) : (
+              <form onSubmit={handleContinuar} className="seccion-accion-once">
                 
-                {/* TIEMPO */}
-                <h3 className="texto-general">Tiempo:</h3>
-                <div className="contenedor-opciones">
-                  {TIEMPOS.map((item) => (
-                    <div key={item.label}>
-                      <input
-                        type="radio"
-                        id={`tiempo-${item.label}`}
-                        name="tiempo"
-                        value={item.value}
-                        className="texto-opcion radio-oculto"
-                        onChange={() => setTiempo(item.value)}
-                        checked={tiempo === item.value}
-                      />
-                      <label htmlFor={`tiempo-${item.label}`} className="texto-opcion radio-label">
-                        {item.label}
-                      </label>
-                    </div>
-                  ))}
+                {/* SELECTOR DE TIEMPO MODERNO */}
+                <div className="contenedor-config-tiempo">
+                  <h3 className="titulo-config-once">⏱️ Selecciona tu tiempo:</h3>
+                  <div className="selector-tiempo-once">
+                    {TIEMPOS.map((item) => (
+                      <div key={item.label} className="opcion-radio-wrapper">
+                        <input
+                          type="radio"
+                          id={`tiempo-${item.label}`}
+                          name="tiempo"
+                          value={item.value}
+                          className="radio-oculto-once"
+                          onChange={() => setTiempo(item.value)}
+                          checked={tiempo === item.value}
+                        />
+                        <label htmlFor={`tiempo-${item.label}`} className="radio-label-once">
+                          {item.label}
+                        </label>
+                      </div>
+                    ))}
+                  </div>
                 </div>
                 
-                {/* BOTÓN */}
-                <div style={{ marginTop: '2rem' }}>
-                  <button
-                    id="btn-continuar"
-                    type="submit"
-                    className="btn btn-jugar"
-                    disabled={tiempo === null}
-                  >
-                    Jugar
-                  </button>
-                </div>
+                {/* BOTÓN JUGAR */}
+                <button
+                  id="btn-continuar"
+                  type="submit"
+                  className="btn-iniciar-reto-once mt-4"
+                  disabled={tiempo === null}
+                >
+                  JUGAR AHORA
+                </button>
               </form>
-            </div>
-
+            )}
           </div>
         </div>
-      </div>
-  );
 
+      </div>
+    </div>
+  );
 }
