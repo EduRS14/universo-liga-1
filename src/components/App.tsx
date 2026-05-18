@@ -8,7 +8,7 @@ import type { Partido } from '../types/partido';
 export default function App() {
 
     const [dataEquipos, setDataEquipos] = useState<Equipo[]>([]);
-    const [fechaActual, setFechaActual] = useState(10);
+    const [fechaActual, setFechaActual] = useState(16);
     const [listaPartidosAuxiliares, setListaPartidosAuxiliares] = useState<{ [key: string]: Partido[] }>({});
 
     const [sincronizando, setSincronizando] = useState(false);
