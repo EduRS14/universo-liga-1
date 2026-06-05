@@ -1,0 +1,119 @@
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.75);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    backdrop-filter: blur(4px);
+}
+
+.modal-copa {
+    background: #1a2634;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 12px;
+    width: 90%;
+    max-width: 400px;
+    overflow: hidden;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+}
+
+.modal-copa-img {
+    width: 100%;
+    background: #d4d4d4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+}
+
+.modal-copa-img img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    object-fit: contain;
+}
+
+.modal-copa-body {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.modal-copa-titulo {
+    color: #ffffff;
+    font-size: 1.4rem;
+    font-weight: 800;
+    margin: 0;
+    text-align: center;
+}
+
+.modal-copa-texto {
+    color: #94a3b8;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    text-align: center;
+    margin: 0;
+}
+
+.modal-copa-check {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+    color: #94a3b8;
+    font-size: 0.8rem;
+}
+
+.modal-copa-check input {
+    width: 16px;
+    height: 16px;
+    accent-color: #e53935;
+    cursor: pointer;
+}
+
+.modal-copa-btn {
+    background: #e53935;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    padding: 0.75rem 2.5rem;
+    font-size: 0.9rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    margin-top: 0.5rem;
+}
+
+.modal-copa-btn:hover {
+    background: #c62828;
+    transform: translateY(-2px);
+}
+
+@media (max-width: 576px) {
+    .modal-copa {
+        width: 95%;
+    }
+
+    .modal-copa-img {
+        padding: 1rem;
+    }
+
+    .modal-copa-body {
+        padding: 1rem;
+    }
+
+    .modal-copa-titulo {
+        font-size: 1.2rem;
+    }
+
+    .modal-copa-texto {
+        font-size: 0.85rem;
+    }
+}

@@ -243,26 +243,43 @@
 
 /* --- RESPONSIVO MÓVIL --- */
 @media (max-width: 600px) {
-  .top-contenido-contenedor { padding: 2rem 1.5rem; min-width: 90vw; }
+  .top-contenido-contenedor { padding: 1.5rem 1rem; min-width: 90vw; }
 
-  .menu-juego-top-full-bg { max-width: 90vw; }
-  
-  .top-cabecera { margin-bottom: 1.5rem !important; }
+  .menu-juego-top-full-bg { max-width: 90vw; background-position: center top; }
 
-  .titulo-hero-top { font-size: 1.8rem; }
-  .subtitulo-hero-top { font-size: 0.8rem; }
-  
-  .descripcion-juego-top { font-size: 0.85rem; }
-  
-  .contenedor-config-tiempo { padding: 1rem; }
-  .radio-label-top { font-size: 0.8rem; padding: 8px 4px; }
+  .top-cabecera { margin-bottom: 1rem !important; }
+
+  .badge-categoria-top { font-size: 0.6rem; padding: 4px 10px; }
+
+  .titulo-hero-top { font-size: 1.5rem; }
+  .subtitulo-hero-top { font-size: 0.72rem; letter-spacing: 1.5px; }
+
+  .descripcion-juego-top { font-size: 0.75rem; line-height: 1.45; margin-bottom: 1.2rem; }
+
+  .contenedor-config-tiempo { padding: 0.8rem; }
+  .titulo-config-top { font-size: 0.85rem; }
+  .radio-label-top { font-size: 0.72rem; padding: 7px 4px; }
 
   .btn-iniciar-reto-top {
-    padding: 14px 30px;
-    font-size: 1rem;
-    width: 90%;
+    padding: 12px 24px;
+    font-size: 0.85rem;
+    width: 85%;
   }
 
-  .alerta-icono-top { font-size: 1.5rem; }
-  .alerta-jugado-top p { font-size: 0.85rem; }
+  .alerta-icono-top { font-size: 1.2rem; }
+  .alerta-jugado-top p { font-size: 0.78rem; }
+  .alerta-jugado-top { padding: 1rem; }
+}
+
+@media (max-width: 380px) {
+  .top-contenido-contenedor { padding: 1.2rem 0.8rem; }
+
+  .titulo-hero-top { font-size: 1.3rem; }
+  .subtitulo-hero-top { font-size: 0.65rem; }
+
+  .descripcion-juego-top { font-size: 0.7rem; }
+
+  .radio-label-top { font-size: 0.65rem; padding: 6px 3px; }
+
+  .btn-iniciar-reto-top { font-size: 0.78rem; padding: 10px 20px; }
 }

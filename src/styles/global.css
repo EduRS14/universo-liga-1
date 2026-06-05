@@ -89,3 +89,81 @@ p, h1, h2, h3, h4, h5, h6, ul, li {
     }
 
 }
+
+/* Banner Campeón */
+.contenedor-banner {
+    background: #04154a;
+    background: linear-gradient(90deg,rgba(4, 21, 74, 1) 0%, rgba(16, 57, 115, 1) 25%, rgba(49, 82, 122, 1) 50%, rgba(16, 57, 115, 1) 75%, rgba(4, 21, 74, 1) 100%);
+}
+
+.banner-carousel {
+    width: 100%;
+    display: flex;
+    overflow-x: auto;
+    pointer-events: none;
+}
+
+.banner-carousel::-webkit-scrollbar {
+    display: none;
+}
+
+.banner-group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+    animation: bannerScroll 15s infinite linear;
+    padding-right: 4rem;
+}
+
+.banner-item {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    flex-shrink: 0;
+    padding: 0.8rem 0;
+}
+
+.banner-escudo {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    filter: drop-shadow(0px 2px 10px rgba(252, 255, 226, 0.247));
+}
+
+.banner-texto {
+    color: #f0b535;
+    font-weight: 700;
+    font-size: 1rem;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+    white-space: nowrap;
+}
+
+@keyframes bannerScroll {
+    from {
+        translate: 0;
+    }
+    to {
+        translate: -100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .banner-group {
+        gap: 2rem;
+        padding-right: 2rem;
+    }
+
+    .banner-escudo {
+        width: 30px;
+        height: 30px;
+    }
+
+    .banner-texto {
+        font-size: 0.8rem;
+    }
+
+    .banner-item {
+        gap: 0.5rem;
+    }
+}

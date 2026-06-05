@@ -1,0 +1,43 @@
+---
+import Layout from '../../layouts/Layout.astro';
+---
+
+<Layout titulo="Nexos - Test">
+    <main id="nexos-test">
+        <div style="color: white; padding: 2rem; text-align: center;">
+            <h1>NEXOS - TEST</h1>
+            <p>Si ves esto, Astro + React funcionan.</p>
+            <div id="react-mount"></div>
+        </div>
+    </main>
+</Layout>
+
+<script>
+    import { createRoot } from 'react-dom/client';
+    import { createElement, useState } from 'react';
+
+    function TestComponent() {
+        const [count, setCount] = useState(0);
+        return createElement('div', { style: 'color: white; text-align: center;' }, [
+            createElement('h2', { key: 'h' }, ' useState funciona: ' + count),
+            createElement('button', {
+                key: 'btn',
+                onClick: () => setCount(count + 1),
+                style: 'padding: 10px 20px; margin: 10px; cursor: pointer;'
+            }, 'Click me'),
+        ]);
+    }
+
+    const mount = document.getElementById('react-mount');
+    if (mount) {
+        const root = createRoot(mount);
+        root.render(createElement(TestComponent));
+    }
+</script>
+
+<style>
+    main {
+        min-height: 100vh;
+        background: #0f1923;
+    }
+</style>

@@ -1,0 +1,740 @@
+/* --- CONTENEDOR GENERAL --- */
+.contenedor-configuracion {
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+/* --- TARJETA CON FONDO TOTAL --- */
+.menu-nexos-full-bg {
+    width: 100%;
+    max-width: 600px;
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.6);
+    border: 1px solid #1e293b;
+    background-image: url('/img/minijuegos/juegos/nexos.webp');
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+}
+
+/* --- OVERLAY --- */
+.nexos-overlay-fondo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        to bottom,
+        rgba(15, 23, 42, 0.88) 0%,
+        rgba(15, 23, 42, 0.88) 50%,
+        rgba(0, 0, 0, 0.92) 100%
+    );
+    z-index: 1;
+}
+
+/* --- CONTENIDO (flota sobre el overlay) --- */
+.nexos-contenido-contenedor {
+    position: relative;
+    z-index: 2;
+    padding: 3rem 2.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nexos-cabecera {
+    margin-bottom: 1.5rem;
+}
+
+.nexos-cuerpo-accion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu-nexos-badge {
+    display: inline-block;
+    background: #06b6d4;
+    color: #fff;
+    font-size: 0.7rem;
+    font-weight: 700;
+    padding: 0.3rem 0.8rem;
+    border-radius: 4px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 1rem;
+}
+
+.menu-nexos-titulo {
+    color: #06b6d4;
+    font-size: 3rem;
+    font-weight: 800;
+    margin: 0 0 0.5rem 0;
+    text-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+.menu-nexos-subtitulo {
+    color: #94a3b8;
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 0 0 1.5rem 0;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+.menu-nexos-descripcion {
+    color: #cbd5e1;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin: 0 0 1.5rem 0;
+    max-width: 500px;
+    text-align: justify;
+}
+
+.menu-nexos-descripcion strong {
+    color: #ffffff;
+}
+
+.menu-nexos-btn {
+    background: #e53935;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 1rem 3rem;
+    font-size: 1rem;
+    font-weight: 800;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    position: relative;
+    z-index: 100;
+    pointer-events: auto !important;
+}
+
+.menu-nexos-btn:hover {
+    background: #c62828;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(229, 57, 53, 0.4);
+}
+
+.menu-nexos-btn-deshabilitado {
+    background: #475569;
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+
+.menu-nexos-btn-deshabilitado:hover {
+    background: #475569;
+    transform: none;
+    box-shadow: none;
+}
+
+.menu-nexos-ya-jugado {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.6rem;
+    background: rgba(6, 182, 212, 0.1);
+    border: 1px solid #06b6d4;
+    border-radius: 8px;
+    padding: 0.7rem 1rem;
+    margin: 0 0 1.2rem 0;
+    color: #94a3b8;
+    font-size: 0.85rem;
+    max-width: 500px;
+    width: 100%;
+}
+
+.menu-nexos-ya-jugado-icono {
+    font-size: 1.1rem;
+}
+
+/* --- JUEGO PRINCIPAL --- */
+.nexos-container {
+    min-height: 100vh;
+    background: #0f1923;
+    padding: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contenedor-juego{
+    margin: 2rem 0;
+    padding: 2rem 0;
+    border-radius: 16px;
+    background: #2739c2;
+    background: linear-gradient(90deg,rgba(39, 57, 194, 0.5) 0%, rgba(51, 21, 117, 0.5) 49%, rgba(74, 21, 117, 0.5) 100%);
+}
+
+.nexos-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.nexos-titulo {
+    color: #06b6d4;
+    font-size: 2rem;
+    font-weight: 800;
+    margin: 0;
+}
+
+.nexos-subtitulo {
+    color: #8ea3c0;
+    font-size: 0.9rem;
+    margin: 0.5rem 0 0 0;
+}
+
+/* --- CADENA --- */
+.nexos-chain {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 2rem;
+    width: 100%;
+    max-width: 300px;
+}
+
+.nexos-nodo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nexos-nodo {
+    background: #1a2634;
+    border: 2px solid #06b6d4;
+    border-radius: 12px;
+    padding: 0.8rem;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    width: 250px;
+}
+
+.nexos-nodo-error {
+    border-color: #e53935;
+    background: rgba(229, 57, 53, 0.1);
+}
+
+.nexos-nodo-valido {
+    border-color: #22c55e;
+    background: rgba(34, 197, 94, 0.1);
+}
+
+.nexos-nodo-foto {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.nexos-nodo-nombre {
+    color: #fff;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.nexos-flecha {
+    color: #06b6d4;
+    font-size: 1.2rem;
+}
+
+.nexos-flecha-error {
+    color: #e53935;
+}
+
+.nexos-flecha-horizontal {
+    color: #06b6d4;
+    font-size: 1.5rem;
+    margin: 0.5rem 0;
+}
+
+/* --- BUSCADOR --- */
+.nexos-buscador {
+    width: 100%;
+    max-width: 400px;
+    position: relative;
+    margin-bottom: 1.5rem;
+}
+
+.nexos-buscador-input {
+    width: 100%;
+    padding: 0.8rem 1rem;
+    background: #1a2634;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    color: #fff;
+    font-size: 0.9rem;
+}
+
+.nexos-buscador-input:focus {
+    outline: none;
+    border-color: #06b6d4;
+}
+
+.nexos-buscador-lista {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: #1a2634;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    margin-top: 4px;
+    overflow: hidden;
+    z-index: 10;
+}
+
+.nexos-buscador-item {
+    width: 100%;
+    padding: 0.7rem 1rem;
+    background: none;
+    border: none;
+    color: #fff;
+    text-align: left;
+    cursor: pointer;
+    font-size: 0.85rem;
+}
+
+.nexos-buscador-item:hover {
+    background: rgba(6, 182, 212, 0.2);
+}
+
+/* --- BOTONES --- */
+.nexos-acciones {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.nexos-btn-quitar,
+.nexos-btn-verificar {
+    padding: 0.7rem 1.5rem;
+    border-radius: 8px;
+    font-size: 0.85rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.nexos-btn-quitar {
+    background-color: #4b5768;
+    border: none;
+    color: #cad2dd;
+}
+
+.nexos-btn-quitar:hover:not(:disabled) {
+    color: #cad2dd;
+    background-color: #374353;
+}
+
+.nexos-btn-quitar:disabled {
+    opacity: 0.4;
+    background: #374353;
+    cursor: not-allowed;
+}
+
+.nexos-btn-verificar {
+    background: #be8212;
+    border: none;
+    color: #fff;
+}
+
+.nexos-btn-verificar:hover:not(:disabled) {
+    background: #9c6807;
+}
+
+.nexos-btn-verificar:disabled {
+    background: #475569;
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.nexos-btn-rendirse {
+    color: white;
+    background-color: #dc3545;
+    border: none;
+    border-radius: 8px;
+    padding: 0.6rem 1.5rem;
+    font-size: 0.8rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    margin-top: 1.5rem;
+}
+
+.nexos-btn-rendirse:hover:not(:disabled) {
+    background-color: #be1d2d;
+}
+
+.nexos-btn-rendirse:disabled {
+    color: #475569;
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+/* --- ERROR --- */
+.nexos-error {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: rgba(229, 57, 53, 0.15);
+    border: 1px solid #e53935;
+    border-radius: 8px;
+    padding: 0.8rem 1rem;
+    color: #ef5350;
+    font-size: 0.85rem;
+    margin-bottom: 1rem;
+}
+
+.nexos-error-icono {
+    font-size: 1rem;
+}
+
+/* --- MODAL --- */
+.nexos-modal-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.85);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    padding: 1rem;
+    animation: nexos-modal-fade-in 0.25s ease;
+}
+
+@keyframes nexos-modal-fade-in {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.nexos-modal {
+    background: linear-gradient(135deg, #0f1923 0%, #1a2634 100%);
+    border: 2px solid #06b6d4;
+    border-radius: 16px;
+    padding: 2rem 1.5rem;
+    max-width: 380px;
+    width: 100%;
+    text-align: center;
+    animation: nexos-modal-slide-up 0.3s ease;
+}
+
+@keyframes nexos-modal-slide-up {
+    from { transform: translateY(20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+.nexos-modal-victoria {
+    border-color: #f0b535;
+}
+
+.nexos-modal-derrota {
+    border-color: #e53935;
+}
+
+.nexos-modal-rendicion {
+    border-color: #94a3b8;
+}
+
+.nexos-modal-icono {
+    font-size: 4rem;
+    margin-bottom: 0.8rem;
+    line-height: 1;
+}
+
+.nexos-modal-titulo {
+    color: #fff;
+    font-size: 1.6rem;
+    font-weight: 800;
+    margin: 0 0 1rem 0;
+    letter-spacing: 2px;
+}
+
+.nexos-modal-estrellas {
+    font-size: 2rem;
+    margin-bottom: 0.8rem;
+}
+
+.nexos-modal-estrella {
+    opacity: 0.3;
+    margin: 0 4px;
+}
+
+.nexos-modal-estrella-llena {
+    opacity: 1;
+}
+
+.nexos-modal-label {
+    color: #f0b535;
+    font-size: 0.95rem;
+    font-weight: 700;
+    margin: 0 0 1.2rem 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.nexos-modal-mensaje {
+    color: #94a3b8;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin: 0 0 1.5rem 0;
+}
+
+.nexos-modal-btn {
+    background: #06b6d4;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 0.8rem 2rem;
+    font-size: 0.85rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.nexos-modal-btn:hover {
+    background: #0891b2;
+    transform: translateY(-2px);
+}
+
+/* --- RESPONSIVE --- */
+@media (max-width: 768px) {
+
+    .nexos-contenido-contenedor {
+        padding: 1.8rem 1.2rem;
+    }
+
+    .nexos-cabecera {
+        margin-bottom: 1rem;
+    }
+
+    .menu-nexos-titulo {
+        font-size: 2rem;
+    }
+
+    .menu-nexos-subtitulo {
+        font-size: 0.85rem;
+        margin: 0 0 0.8rem 0;
+        letter-spacing: 1.2px;
+    }
+
+    .menu-nexos-descripcion {
+        font-size: 0.85rem;
+        line-height: 1.5;
+        margin: 0 0 1.2rem 0;
+    }
+
+    .menu-nexos-btn {
+        padding: 0.8rem 2rem;
+        font-size: 0.9rem;
+    }
+
+    .nexos-container {
+        padding: 1.5rem 0.75rem;
+    }
+
+    .nexos-titulo {
+        font-size: 1.7rem;
+    }
+
+    .nexos-subtitulo {
+        font-size: 0.85rem;
+    }
+
+    .nexos-chain {
+        max-width: 100%;
+        padding: 0 0.5rem;
+    }
+
+    .nexos-nodo {
+        width: min(250px, 100%);
+    }
+
+    .nexos-buscador {
+        max-width: 100%;
+        padding: 0 0.5rem;
+    }
+
+    .nexos-modal {
+        padding: 1.8rem 1.3rem;
+    }
+
+    .nexos-modal-titulo {
+        font-size: 1.4rem;
+    }
+
+    .nexos-modal-icono {
+        font-size: 3.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .nexos-contenido-contenedor {
+        padding: 1.2rem 0.9rem;
+    }
+
+    .nexos-cabecera {
+        margin-bottom: 0.8rem;
+    }
+
+    .menu-nexos-badge {
+        font-size: 0.6rem;
+        padding: 0.25rem 0.6rem;
+        margin-bottom: 0.6rem;
+    }
+
+    .menu-nexos-titulo {
+        font-size: 1.5rem;
+        margin: 0 0 0.3rem 0;
+    }
+
+    .menu-nexos-subtitulo {
+        font-size: 0.7rem;
+        margin: 0 0 0.7rem 0;
+        letter-spacing: 1px;
+    }
+
+    .menu-nexos-descripcion {
+        font-size: 0.72rem;
+        line-height: 1.45;
+        margin: 0 0 1rem 0;
+    }
+
+    .menu-nexos-ya-jugado {
+        font-size: 0.7rem;
+        padding: 0.5rem 0.6rem;
+        gap: 0.35rem;
+    }
+
+    .menu-nexos-ya-jugado-icono {
+        font-size: 0.9rem;
+    }
+
+    .menu-nexos-btn {
+        padding: 0.7rem 1.8rem;
+        font-size: 0.8rem;
+        width: 80%;
+    }
+
+    .nexos-container {
+        padding: 1.2rem 0.5rem;
+    }
+
+    .nexos-header {
+        margin-bottom: 1.2rem;
+    }
+
+    .nexos-titulo {
+        font-size: 1.4rem;
+    }
+
+    .nexos-subtitulo {
+        font-size: 0.8rem;
+    }
+
+    .nexos-chain {
+        gap: 6px;
+        margin-bottom: 1.2rem;
+    }
+
+    .nexos-nodo {
+        padding: 0.55rem;
+        gap: 0.55rem;
+        border-radius: 10px;
+    }
+
+    .nexos-nodo-foto {
+        width: 34px;
+        height: 34px;
+    }
+
+    .nexos-nodo-nombre {
+        font-size: 0.78rem;
+    }
+
+    .nexos-buscador {
+        margin-bottom: 1rem;
+    }
+
+    .nexos-buscador-input {
+        padding: 0.7rem 0.8rem;
+        font-size: 0.85rem;
+    }
+
+    .nexos-buscador-item {
+        padding: 0.6rem 0.8rem;
+        font-size: 0.8rem;
+    }
+
+    .nexos-acciones {
+        flex-direction: row;
+        gap: 0.6rem;
+        width: 100%;
+        max-width: 320px;
+        justify-content: center;
+    }
+
+    .nexos-btn-quitar,
+    .nexos-btn-verificar {
+        flex: 1;
+        padding: 0.7rem 0.8rem;
+    }
+
+    .nexos-btn-rendirse {
+        padding: 0.6rem 2rem;
+        margin-top: 1rem;
+    }
+
+    .nexos-error {
+        font-size: 0.8rem;
+        padding: 0.6rem 0.7rem;
+    }
+
+    .nexos-modal {
+        padding: 1.3rem 0.9rem;
+    }
+
+    .nexos-modal-icono {
+        font-size: 2.8rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .nexos-modal-titulo {
+        font-size: 1.15rem;
+        letter-spacing: 1.5px;
+        margin: 0 0 0.7rem 0;
+    }
+
+    .nexos-modal-estrellas {
+        font-size: 1.6rem;
+        margin-bottom: 0.6rem;
+    }
+
+    .nexos-modal-label {
+        font-size: 0.85rem;
+        margin: 0 0 1rem 0;
+    }
+
+    .nexos-modal-mensaje {
+        font-size: 0.82rem;
+        margin: 0 0 1.2rem 0;
+    }
+
+    .nexos-modal-btn {
+        padding: 0.75rem 1.8rem;
+        font-size: 0.8rem;
+    }
+}
