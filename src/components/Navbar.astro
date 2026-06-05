@@ -15,8 +15,9 @@
                     <ul class="nav-links">
                       <li><a class="link" href="/">Inicio</a></li>
                       <li><a class="link" href="/equipos">Equipos</a></li>
-                      <li><a class="link" href="/calculadora">Calculadora</a></li>
-                      <li><a class="link" href="/minijuegos">FutPerú</a></li>
+                      <li><a class="link" href="/calculadora">Calculadora <span class="badge badge-calculadora">Apertura Term.</span></a></li>
+                      <li><a class="link" href="/copa-liga">Copa Liga <span class="badge badge-copaliga">Nuevo</span></a></li>
+                      <li><a class="link" href="/minijuegos">FutPerú <span class="badge badge-futperu">Actualiz.</span></a></li>
                     </ul>
                 </div>
             </div>
@@ -79,7 +80,9 @@
         color: #333;
         font-weight: 600;
         font-size: 1rem;
-        display: inline-block;        /* importante */
+        display: inline-block;
+        position: relative;
+        padding-right: 2px;
         transition: transform 0.3s ease, color 0.3s ease;
     }
 
@@ -87,6 +90,23 @@
         color: #851212;
         transform: scale(1.2);
     }
+
+    .badge {
+        position: absolute;
+        top: -10px;
+        right: -20px;
+        font-size: 0.45rem;
+        padding: 2px 4px;
+        border-radius: 3px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.3px;
+        line-height: 1.1;
+    }
+
+    .badge-calculadora { background: #64748b; color: #fff; }
+    .badge-copaliga { background: #e53935; color: #fff; }
+    .badge-futperu { background: #2e7d32; color: #fff; }
 
     .titulo-navbar{
         font-weight: 700;

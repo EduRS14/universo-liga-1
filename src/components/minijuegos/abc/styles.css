@@ -170,30 +170,46 @@
 
 /* --- RESPONSIVO MÓVIL --- */
 @media (max-width: 600px) {
-  .abc-contenido-contenedor { 
-    padding: 2rem 1.5rem; 
-  }
-  
-  .abc-cabecera {
-    margin-bottom: 1.5rem !important;
+  .abc-contenido-contenedor {
+    padding: 1.5rem 1rem;
   }
 
-  .titulo-hero-abc { font-size: 1.8rem; }
-  .subtitulo-hero-abc { font-size: 0.8rem; }
-  
-  .descripcion-juego-abc { font-size: 0.85rem; }
-  
+  .menu-juego-abc-full-bg { background-position: center top; }
+
+  .abc-cabecera {
+    margin-bottom: 1rem !important;
+  }
+
+  .badge-categoria-abc { font-size: 0.6rem; padding: 4px 10px; }
+
+  .titulo-hero-abc { font-size: 1.5rem; }
+  .subtitulo-hero-abc { font-size: 0.72rem; letter-spacing: 1.5px; }
+
+  .descripcion-juego-abc { font-size: 0.75rem; line-height: 1.45; margin-bottom: 1.2rem; }
+
   .btn-iniciar-reto-abc {
-    padding: 14px 30px;
-    font-size: 1rem;
-    width: 80%;
+    padding: 12px 24px;
+    font-size: 0.85rem;
+    width: 85%;
   }
 
   .alerta-icono-abc {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
 
   .alerta-jugado-abc p {
-    font-size: 0.85rem;
+    font-size: 0.78rem;
   }
+  .alerta-jugado-abc { padding: 1rem; }
+}
+
+@media (max-width: 380px) {
+  .abc-contenido-contenedor { padding: 1.2rem 0.8rem; }
+
+  .titulo-hero-abc { font-size: 1.3rem; }
+  .subtitulo-hero-abc { font-size: 0.65rem; }
+
+  .descripcion-juego-abc { font-size: 0.7rem; }
+
+  .btn-iniciar-reto-abc { font-size: 0.78rem; padding: 10px 20px; }
 }

@@ -7,7 +7,7 @@ import Layout from '../layouts/Layout.astro';
     <main>
 
         <div class="container-fluid">
-	    	<div class="row">
+            <div class="row">
 
                 <div class="col-12 contenedor-titulo-calculadora">
                     <div class="row gx-0 justify-content-center align-items-center">
@@ -20,151 +20,140 @@ import Layout from '../layouts/Layout.astro';
         </div>
 
         <div class="container-fluid">
-        	<div class="row justify-content-center align-items-center">
-                <div class="col-8 contenedor-subtitulo-futperu">
-                    <h2 class="text-center subtitulo-futperu">Minijuegos del Fútbol Peruano</h2>
-                </div>
-                <div class="col-10 col-lg-6 contenedor-descripcion-futperu">
-                    <p class="text-center descripcion-futperu">¡Diviértete con nuestros minijuegos inspirados en el fútbol peruano! Pon a prueba tus conocimientos en diferentes retos que involucran a los jugadores y clubes que pasaron por la Primera División de Perú entre los años 2010 y 2026. ¡Juega ahora y demuestra que eres el mejor fanático del fútbol peruano!</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="container-fluid">
-        	<div class="row justify-content-center align-items-center">
-                <div class="col-8 contenedor-subtitulo-futperu">
-                    <h3 class="text-center texto-seleccion">Selecciona el juego que desees jugar</h3>
+            <div class="row justify-content-center align-items-center">
+                <div class="col-10 col-lg-8 col-xl-7">
+                    <p class="text-center subtitulo-seleccion">Selecciona el juego que quieras jugar</p>
                 </div>
             </div>
         </div>
 
         <div class="container-fluid contenedor-minijuegos">
-        	<div class="row justify-content-center align-items-center">
+            <div class="row justify-content-center align-items-start">
 
-                <div class="col-11 col-lg-8">
+                <div class="col-12">
+                    <div class="slots-grid">
 
-                    <div class="row justify-content-center align-items-center">
-                        
-                        <div class="col-4 text-center d-flex justify-content-center align-items-center p-2">
-                            <div class="contenedor-juego">
-                                <a class="titulo-minijuegos" href="/minijuegos/el-once">
-                                    <div class="img-wrapper">
-                                        <img src="/img/minijuegos/juegos/el-once.webp" alt="El Once" class="img-fluid img-juego">
-                                    </div>
-                                    <div class="contenedor-descripcion-juego">
-                                        <h4 class="nombre-juego">EL ONCE</h4>
-                                        <p class="descripcion-juego">11 posiciones, cientos de cracks</p>
-                                    </div>
-                                </a>
-                            </div>
+                        <div class="card-juego">
+                            <a href="/minijuegos/el-once">
+                                <div class="card-juego-img">
+                                    <img src="/img/minijuegos/juegos/el-once.webp" alt="El Once">
+                                </div>
+                                <div class="card-juego-info">
+                                    <span class="card-juego-btn">JUGAR</span>
+                                    <span class="card-juego-nombre">EL ONCE</span>
+                                </div>
+                            </a>
                         </div>
-                        <div class="col-4 text-center d-flex justify-content-center align-items-center p-2">
-                            <div class="contenedor-juego">
-                                <a class="titulo-minijuegos" href="/minijuegos/el-once-leyendas">
-                                    <div class="img-wrapper">
-                                        <img src="/img/minijuegos/juegos/el-once-leyendas.webp" alt="El Once Leyendas" class="img-fluid img-juego">
-                                    </div>
-                                    <div class="contenedor-descripcion-juego">
-                                        <h4 class="nombre-juego">EL ONCE - LEYENDAS</h4>
-                                        <p class="descripcion-juego">11 posiciones, solo leyendas</p>
-                                    </div>
-                                </a>
-                            </div>
+
+                        <div class="card-juego">
+                            <a href="/minijuegos/el-once-leyendas">
+                                <div class="card-juego-img">
+                                    <img src="/img/minijuegos/juegos/el-once-leyendas.webp" alt="El Once Leyendas">
+                                </div>
+                                <div class="card-juego-info">
+                                    <span class="card-juego-btn">JUGAR</span>
+                                    <span class="card-juego-nombre">EL ONCE - LEYENDAS</span>
+                                </div>
+                            </a>
                         </div>
-                        <div class="col-4 text-center d-flex justify-content-center align-items-center p-2">
-                            <div class="contenedor-juego">
-                                <a class="titulo-minijuegos" href="/minijuegos/el-once-actualidad">
-                                    <div class="img-wrapper">
-                                        <img src="/img/minijuegos/juegos/el-once-actualidad.webp" alt="El Once Actualidad" class="img-fluid img-juego">
-                                    </div>
-                                    <div class="contenedor-descripcion-juego">
-                                        <h4 class="nombre-juego">EL ONCE - ACTUALIDAD</h4>
-                                        <p class="descripcion-juego">11 posiciones, los cracks de hoy</p>
-                                    </div>
-                                </a>
-                            </div>
+
+                        <div class="card-juego">
+                            <a href="/minijuegos/el-once-actualidad">
+                                <div class="card-juego-img">
+                                    <img src="/img/minijuegos/juegos/el-once-actualidad.webp" alt="El Once Actualidad">
+                                </div>
+                                <div class="card-juego-info">
+                                    <span class="card-juego-btn">JUGAR</span>
+                                    <span class="card-juego-nombre">EL ONCE - ACTUALIDAD</span>
+                                </div>
+                            </a>
                         </div>
-                        <div class="col-4 text-center d-flex justify-content-center align-items-center p-2">
-                            <div class="contenedor-juego">
-                                <a class="titulo-minijuegos" href="/minijuegos/abc">
-                                    <div class="img-wrapper">
-                                        <img src="/img/minijuegos/juegos/el-abc.webp" alt="El ABC" class="img-fluid img-juego">
-                                    </div>
-                                    <div class="contenedor-descripcion-juego">
-                                        <h4 class="nombre-juego">EL ABC</h4>
-                                        <p class="descripcion-juego">El diccionario del hincha</p>
-                                    </div>
-                                </a>
-                            </div>
+
+                        <div class="card-juego">
+                            <a href="/minijuegos/abc">
+                                <div class="card-juego-img">
+                                    <img src="/img/minijuegos/juegos/el-abc.webp" alt="El ABC">
+                                </div>
+                                <div class="card-juego-info">
+                                    <span class="card-juego-btn">JUGAR</span>
+                                    <span class="card-juego-nombre">EL ABC</span>
+                                </div>
+                            </a>
                         </div>
-                        <div class="col-4 text-center d-flex justify-content-center align-items-center p-2">
-                            <div class="contenedor-juego">
-                                <a class="titulo-minijuegos" href="/minijuegos/top-goleadores">
-                                    <div class="img-wrapper">
-                                        <img src="/img/minijuegos/juegos/top-goleadores.webp" alt="El Top: Goleadores" class="img-fluid img-juego">
-                                    </div>
-                                    <div class="contenedor-descripcion-juego">
-                                        <h4 class="nombre-juego">EL TOP: GOLEADORES</h4>
-                                        <p class="descripcion-juego">La memoria del gol</p>
-                                    </div>
-                                </a>
-                            </div>
+
+                        <div class="card-juego">
+                            <a href="/minijuegos/top-goleadores">
+                                <div class="card-juego-img">
+                                    <img src="/img/minijuegos/juegos/top-goleadores.webp" alt="El Top: Goleadores">
+                                </div>
+                                <div class="card-juego-info">
+                                    <span class="card-juego-btn">JUGAR</span>
+                                    <span class="card-juego-nombre">EL TOP: GOLEADORES</span>
+                                </div>
+                            </a>
                         </div>
-                        <div class="col-4 text-center d-flex justify-content-center align-items-center p-2">
-                            <div class="contenedor-juego">
-                                <a class="titulo-minijuegos" href="/minijuegos/el-tapadito">
-                                    <div class="img-wrapper">
-                                        <img src="/img/minijuegos/juegos/el-tapadito.webp" alt="El Tapadito" class="img-fluid img-juego">
-                                    </div>
-                                    <div class="contenedor-descripcion-juego">
-                                        <h4 class="nombre-juego">EL TAPADITO</h4>
-                                        <p class="descripcion-juego">El Wordle de la Liga 1</p>
-                                    </div>
-                                </a>
-                            </div>
+
+                        <div class="card-juego">
+                            <a href="/minijuegos/el-tapadito">
+                                <div class="card-juego-img">
+                                    <img src="/img/minijuegos/juegos/el-tapadito.webp" alt="El Tapadito">
+                                </div>
+                                <div class="card-juego-info">
+                                    <span class="card-juego-btn">JUGAR</span>
+                                    <span class="card-juego-nombre">EL TAPADITO</span>
+                                </div>
+                            </a>
                         </div>
-                        <div class="col-4 text-center d-flex justify-content-center align-items-center p-2">
-                            <div class="contenedor-juego-proximamente">
-                                <a class="titulo-minijuegos">
-                                    <div class="img-wrapper">
-                                        <img src="/img/minijuegos/juegos/proximamente.webp" alt="El Once" class="img-fluid img-juego">
-                                    </div>
-                                    <div class="contenedor-descripcion-juego-proximamente">
-                                        <h4 class="nombre-juego nombre-proximamente">PRÓXIMAMENTE</h4>
-                                        <p class="descripcion-juego descripcion-proximamnte">Calentando en la banca</p>
-                                    </div>
-                                </a>
-                            </div>
+
+                        <div class="card-juego">
+                            <a href="/minijuegos/nexos">
+                                <div class="card-juego-img">
+                                    <img src="/img/minijuegos/juegos/nexos.webp" alt="Nexos">
+                                </div>
+                                <div class="card-juego-info">
+                                    <span class="card-juego-btn">JUGAR</span>
+                                    <span class="card-juego-nombre">NEXOS</span>
+                                </div>
+                            </a>
                         </div>
-                        <div class="col-4 text-center d-flex justify-content-center align-items-center p-2">
-                            <div class="contenedor-juego-proximamente">
-                                <a class="titulo-minijuegos">
-                                    <div class="img-wrapper">
-                                        <img src="/img/minijuegos/juegos/proximamente.webp" alt="El Once" class="img-fluid img-juego">
-                                    </div>
-                                    <div class="contenedor-descripcion-juego-proximamente">
-                                        <h4 class="nombre-juego nombre-proximamente">PRÓXIMAMENTE</h4>
-                                        <p class="descripcion-juego descripcion-proximamnte">Calentando en la banca</p>
-                                    </div>
-                                </a>
-                            </div>
+
+                        <div class="card-juego card-juego-bloqueado">
+                            <a>
+                                <div class="card-juego-img">
+                                    <img src="/img/minijuegos/juegos/proximamente.webp" alt="Próximamente">
+                                </div>
+                                <div class="card-juego-info">
+                                    <span class="card-juego-btn card-juego-btn-bloqueado">PRÓXIMAMENTE</span>
+                                    <span class="card-juego-nombre card-juego-nombre-bloqueado">Calentando en la banca</span>
+                                </div>
+                            </a>
                         </div>
-                        <div class="col-4 text-center d-flex justify-content-center align-items-center p-2">
-                            <div class="contenedor-juego-proximamente">
-                                <a class="titulo-minijuegos">
-                                    <div class="img-wrapper">
-                                        <img src="/img/minijuegos/juegos/proximamente.webp" alt="El Once" class="img-fluid img-juego">
-                                    </div>
-                                    <div class="contenedor-descripcion-juego-proximamente">
-                                        <h4 class="nombre-juego nombre-proximamente">PRÓXIMAMENTE</h4>
-                                        <p class="descripcion-juego descripcion-proximamnte">Calentando en la banca</p>
-                                    </div>
-                                </a>
-                            </div>
+
+                        <div class="card-juego card-juego-bloqueado">
+                            <a>
+                                <div class="card-juego-img">
+                                    <img src="/img/minijuegos/juegos/proximamente.webp" alt="Próximamente">
+                                </div>
+                                <div class="card-juego-info">
+                                    <span class="card-juego-btn card-juego-btn-bloqueado">PRÓXIMAMENTE</span>
+                                    <span class="card-juego-nombre card-juego-nombre-bloqueado">Calentando en la banca</span>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="card-juego card-juego-bloqueado">
+                            <a>
+                                <div class="card-juego-img">
+                                    <img src="/img/minijuegos/juegos/proximamente.webp" alt="Próximamente">
+                                </div>
+                                <div class="card-juego-info">
+                                    <span class="card-juego-btn card-juego-btn-bloqueado">PRÓXIMAMENTE</span>
+                                    <span class="card-juego-nombre card-juego-nombre-bloqueado">Calentando en la banca</span>
+                                </div>
+                            </a>
                         </div>
 
                     </div>
-
                 </div>
 
             </div>
@@ -180,192 +169,184 @@ import Layout from '../layouts/Layout.astro';
         margin-bottom: 5rem;
     }
 
-    .contenedor-subtitulo-futperu {
-        margin-top: 3rem;
-        margin-bottom: 2rem;
-    }
-
-    .contenedor-descripcion-futperu {
-        margin-bottom: 2rem;
-    }
-
-    /* --- TEXTOS REFINADOS --- */
-    .subtitulo-futperu {
-        color: #ffffff;
-        font-size: 2.8rem;
-        font-weight: 800;
-        font-style: italic;
-        text-shadow: 0 4px 10px rgba(0,0,0,0.3); /* Sombra más suave y moderna */
-    }
-
-    .descripcion-futperu {
-        color: #cbd5e1; /* Gris claro para no cansar la vista */
-        margin-top: 1rem;
-        font-size: 1.05rem;
-        line-height: 1.6; /* Mejor interlineado para lectura fluida */
-    }
-
-    .texto-seleccion {
-        color: #ffffff;
-        font-size: 1.5rem;
-        font-weight: bold;
-        text-shadow: 0 2px 8px rgba(239, 68, 68, 0.4);
-    }
-
-    /* --- TARJETAS DE JUEGO (Mejora UI/UX) --- */
-    .contenedor-juego, .contenedor-juego-proximamente {
-        max-width: 250px;
+    .slots-grid {
         display: flex;
+        flex-wrap: wrap;
         justify-content: center;
-        align-items: center;
-        flex-direction: column;
+        gap: 16px;
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    .subtitulo-seleccion {
+        color: #ffffff;
+        font-size: 1.3rem;
+        font-weight: 600;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        text-shadow: 0 2px 8px rgba(0,0,0,0.4);
+    }
+
+    /* --- TARJETAS DE JUEGO (Estilo Futbol11) --- */
+    .card-juego {
+        background: #2a3a4a;
+        border: 1px solid rgba(255, 255, 255, 0.15);
+        border-radius: 10px;
         overflow: hidden;
-        /* Reducimos de 6px a 3px para mayor elegancia */
-        border: 3px solid rgba(239, 68, 68, 0.8); 
-        border-radius: 16px; /* Bordes un poco más suaves */
-        background-color: #1e293b; /* Fondo oscuro base para la tarjeta */
-        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Profundidad */
-        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); /* Animación más profesional */
-        margin-bottom: 2.5rem;
+        transition: all 0.3s ease;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+        flex: 0 0 170px;
+        max-width: 170px;
     }
 
-    /* Tarjetas bloqueadas */
-    .contenedor-juego-proximamente {
-        border: 3px solid #475569;
-        opacity: 0.65; /* Opacidad para denotar inactividad */
-        cursor: not-allowed;
-    }
-    
-    /* Quitamos los eventos de click a los enlaces de "Próximamente" */
-    .contenedor-juego-proximamente a {
-        pointer-events: none; 
-    }
-
-    .contenedor-descripcion-juego, .contenedor-descripcion-juego-proximamente {
-        width: 100%; /* Asegura que la caja de texto ocupe todo el ancho */
-        padding-top: 1.2rem;
-        padding-bottom: 1.5rem;
-        background-color: rgba(127, 29, 29, 0.9); /* Rojo oscuro sólido */
-        transition: background-color 0.3s ease;
-    }
-
-    .contenedor-descripcion-juego-proximamente {
-        background-color: #334155; /* Gris pizarra */
-    }
-
-    .img-wrapper {
-        width: 100%;
-        max-width: 250px;
-        aspect-ratio: 1 / 1; /* Mantiene el cuadrado perfecto automáticamente */
-        overflow: hidden;
-    }
-
-    .titulo-minijuegos {
+    .card-juego a {
         text-decoration: none;
-        width: 100%;
         display: flex;
         flex-direction: column;
-        align-items: center;
+        height: 100%;
     }
 
-    .img-juego {
+    .card-juego-img {
+        width: 100%;
+        aspect-ratio: 1 / 1;
+        overflow: hidden;
+        background: #121c26;
+    }
+
+    .card-juego-img img {
         width: 100%;
         height: 100%;
         object-fit: cover;
-        transition: transform 0.4s ease;
+        transition: transform 0.3s ease;
     }
 
-    .nombre-juego {
+    .card-juego-info {
+        padding: 0.5rem 0.2rem 0.7rem 0.2rem;
+        background: #2a3a4a;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.05rem;
+    }
+
+    .card-juego-btn {
         color: #ffffff;
-        font-size: 1.15rem;
+        font-size: 0.8rem;
         font-weight: 800;
-        font-style: italic;
-        margin-bottom: 0.2rem;
+        letter-spacing: 0.5px;
     }
 
-    .nombre-proximamente {
+    .card-juego-nombre {
         color: #94a3b8;
+        font-size: 0.7rem;
+        font-weight: 600;
+        text-align: center;
+        line-height: 1.1;
     }
 
-    .descripcion-juego {
-        color: #f1f5f9;
-        margin-top: 0;
-        font-size: 0.85rem;
+    /* --- HOVER --- */
+    .card-juego:hover {
+        border-color: rgba(239, 68, 68, 0.6);
+        transform: translateY(-3px);
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
     }
 
-    .descripcion-proximamnte {
-        color: #64748b;
+    .card-juego:hover .card-juego-img img {
+        transform: scale(1.05);
     }
 
-    /* --- HOVER EFFECTS (Interacción) --- */
-    .contenedor-juego:hover {
-        transform: translateY(-8px); /* Elevación sutil al pasar el mouse */
-        border-color: #8b5cf6; /* Cambia a borde morado moderno */
-        box-shadow: 0 15px 30px rgba(139, 92, 246, 0.3); /* Sombra morada */
+    .card-juego:hover .card-juego-btn {
+        color: #f0b535;
     }
 
-    .contenedor-juego:hover .img-juego {
-        transform: scale(1.08); /* Zoom sutil, menos agresivo que 1.1 */
+    /* --- BLOQUEADO (Próximamente) --- */
+    .card-juego-bloqueado {
+        opacity: 0.5;
+        border-color: rgba(255, 255, 255, 0.06);
     }
 
-    .contenedor-juego:hover .contenedor-descripcion-juego {
-        background-color: rgba(91, 33, 182, 0.95); /* Fondo de texto morado */
+    .card-juego-bloqueado a {
+        pointer-events: none;
+        cursor: not-allowed;
     }
 
-    /* --- RESPONSIVO MÓVIL (Optimizado) --- */
+    .card-juego-btn-bloqueado {
+        color: #64748b !important;
+        font-size: 0.8rem;
+    }
+
+    .card-juego-nombre-bloqueado {
+        color: #475569 !important;
+        font-size: 0.7rem;
+    }
+
+    .card-juego-bloqueado:hover {
+        border-color: rgba(255, 255, 255, 0.06);
+        transform: none;
+        box-shadow: none;
+    }
+
+    .card-juego-bloqueado:hover .card-juego-img img {
+        transform: none;
+    }
+
+    /* --- RESPONSIVE --- */
     @media (max-width: 768px) {
-        .contenedor-subtitulo-futperu {
-            margin: 1.5rem 0;
+        .contenedor-minijuegos {
+            margin-bottom: 3rem;
         }
 
-        .contenedor-descripcion-futperu {
-            margin-bottom: 1rem;
+        .subtitulo-seleccion {
+            font-size: 1rem;
+            margin-top: 1.5rem;
+            margin-bottom: 1.5rem;
         }
 
-        .subtitulo-futperu {
-            font-size: 1.6rem;
-        }
-        
-        .descripcion-futperu {
-            font-size: 0.85rem;
-            margin-top: 0;
-            margin-bottom: 1rem;
+        .slots-grid {
+            gap: 12px;
+            max-width: 520px;
         }
 
-        .texto-seleccion {
-            font-size: 1.1rem;
+        .card-juego {
+            flex: 0 0 150px;
+            max-width: 150px;
         }
 
-        .contenedor-juego, .contenedor-juego-proximamente {
-            margin-bottom: 1rem;
-            border-width: 2px; /* Borde aún más fino en celular */
-            border-radius: 12px;
+        .card-juego-info {
+            padding: 0.25rem 0.2rem;
         }
 
-        .img-wrapper {
-            width: 100px;
-            height: 100px;
-        }
-
-        .img-juego {
-            width: 100px;
-        }
-
-        .contenedor-descripcion-juego, .contenedor-descripcion-juego-proximamente {
-            padding: 0.8rem 0.2rem;
-            width: 100%;
-        }
-
-        .nombre-juego {
-            font-size: 0.65rem;
-            text-align: center;
-        }
-
-        .descripcion-juego {
+        .card-juego-btn {
             font-size: 0.55rem;
-            text-align: center;
-            max-width: 90px;
-            line-height: 1.2;
+        }
+
+        .card-juego-nombre {
+            font-size: 0.42rem;
+        }
+    }
+
+    @media (max-width: 576px) {
+        .slots-grid {
+            gap: 10px;
+            max-width: 340px;
+        }
+
+        .card-juego {
+            flex: 0 0 140px;
+            max-width: 140px;
+        }
+
+        .card-juego-info {
+            padding: 0.2rem 0.15rem;
+        }
+
+        .card-juego-btn {
+            font-size: 0.5rem;
+        }
+
+        .card-juego-nombre {
+            font-size: 0.38rem;
         }
     }
 </style>
