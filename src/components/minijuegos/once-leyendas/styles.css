@@ -249,26 +249,43 @@
 
 /* --- RESPONSIVO MÓVIL --- */
 @media (max-width: 600px) {
-  .leyendas-contenido-contenedor { padding: 2rem 1.5rem; min-width: 90vw; }
+  .leyendas-contenido-contenedor { padding: 1.5rem 1rem; min-width: 90vw; }
 
-  .menu-juego-leyendas-full-bg { max-width: 90vw; }
-  
-  .leyendas-cabecera { margin-bottom: 1.5rem !important; }
+  .menu-juego-leyendas-full-bg { max-width: 90vw; background-position: center top; }
 
-  .titulo-hero-leyendas { font-size: 1.8rem; }
-  .subtitulo-hero-leyendas { font-size: 0.8rem; }
-  
-  .descripcion-juego-leyendas { font-size: 0.85rem; }
-  
-  .contenedor-config-tiempo { padding: 1rem; }
-  .radio-label-leyendas { font-size: 0.8rem; padding: 8px 4px; }
+  .leyendas-cabecera { margin-bottom: 1rem !important; }
+
+  .badge-categoria-leyendas { font-size: 0.6rem; padding: 4px 10px; }
+
+  .titulo-hero-leyendas { font-size: 1.5rem; }
+  .subtitulo-hero-leyendas { font-size: 0.72rem; letter-spacing: 1.5px; }
+
+  .descripcion-juego-leyendas { font-size: 0.75rem; line-height: 1.45; margin-bottom: 1.2rem; }
+
+  .contenedor-config-tiempo { padding: 0.8rem; }
+  .titulo-config-leyendas { font-size: 0.85rem; }
+  .radio-label-leyendas { font-size: 0.72rem; padding: 7px 4px; }
 
   .btn-iniciar-reto-leyendas {
-    padding: 14px 30px;
-    font-size: 1rem;
-    width: 90%;
+    padding: 12px 24px;
+    font-size: 0.85rem;
+    width: 85%;
   }
 
-  .alerta-icono-leyendas { font-size: 1.5rem; }
-  .alerta-jugado-leyendas p { font-size: 0.85rem; }
+  .alerta-icono-leyendas { font-size: 1.2rem; }
+  .alerta-jugado-leyendas p { font-size: 0.78rem; }
+  .alerta-jugado-leyendas { padding: 1rem; }
+}
+
+@media (max-width: 380px) {
+  .leyendas-contenido-contenedor { padding: 1.2rem 0.8rem; }
+
+  .titulo-hero-leyendas { font-size: 1.3rem; }
+  .subtitulo-hero-leyendas { font-size: 0.65rem; }
+
+  .descripcion-juego-leyendas { font-size: 0.7rem; }
+
+  .radio-label-leyendas { font-size: 0.65rem; padding: 6px 3px; }
+
+  .btn-iniciar-reto-leyendas { font-size: 0.78rem; padding: 10px 20px; }
 }

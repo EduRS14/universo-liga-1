@@ -1,0 +1,17 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import NexosJuego from '../../components/minijuegos/nexos/NexosJuego';
+---
+
+<Layout titulo="Nexos - FutPerú">
+    <main>
+        <NexosJuego client:load />
+    </main>
+</Layout>
+
+<style>
+    main {
+        min-height: 100vh;
+        background: #0f1923;
+    }
+</style>
