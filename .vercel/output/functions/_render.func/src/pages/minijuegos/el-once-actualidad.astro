@@ -1,0 +1,75 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import MenuOnceActualidad from '../../components/minijuegos/once-actualidad/Menu-Once-Actualidad';
+---
+
+<Layout>
+
+    <div class="container-fluid">
+	    <div class="row">
+            <div class="col-12 contenedor-titulo-calculadora">
+                <div class="row gx-0 justify-content-center align-items-center">
+                    <div class="col-6">
+                        <h1 class="text-center titulo-calculadora">MINIJUEGO "EL ONCE - ACTUALIDAD"</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <MenuOnceActualidad client:load />
+
+</Layout>
+
+<style>
+
+    .contenedor-opciones{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .texto-general{
+        font-size: 1.2rem;
+        color: rgb(255, 255, 255);
+        margin: 2rem;
+    }
+
+    .texto-opcion{
+        font-size: 1rem;
+        color: rgb(255, 255, 255);
+        margin-left: 0.5rem;
+    }
+
+    .radio-oculto {
+      display: none;
+    }
+
+    .radio-label {
+      display: inline-block;
+      padding: 12px 24px;
+      font-family: sans-serif;
+      font-size: 16px;
+      background-color: #f0f0f0; /* Fondo gris claro */
+      color: #333;
+      border: 2px solid #ddd;
+      border-radius: 8px; /* Bordes redondeados */
+      cursor: pointer; /* Manito al pasar el mouse */
+      transition: all 0.2s ease; /* Suavizar la animación */
+      user-select: none; /* Evitar que se seleccione el texto */
+    }
+
+    .radio-label:hover {
+      background-color: #e2e2e2;
+    }
+
+    input[type="radio"]:checked + .radio-label {
+      background-color: #3b82f6; /* Azul brillante */
+      color: white;
+      border-color: #2563eb;
+      /* Sombra interna para dar efecto de "hundido" o presionado */
+      box-shadow: inset 0 3px 5px rgba(0,0,0,0.2); 
+      transform: translateY(1px); /* Mueve el botón un píxel abajo */
+    }
+
+</style>

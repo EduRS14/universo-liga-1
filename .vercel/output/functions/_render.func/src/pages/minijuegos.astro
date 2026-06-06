@@ -1,0 +1,370 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout>
+
+    <main>
+
+        <div class="container-fluid">
+            <div class="row">
+
+                <div class="col-12 contenedor-titulo-calculadora">
+                    <div class="row gx-0 justify-content-center align-items-center">
+                        <div class="col-6">
+                            <h1 class="text-center titulo-calculadora">FUTPERÚ</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-10 col-lg-8 col-xl-7">
+                    <p class="text-center subtitulo-seleccion">Selecciona el juego que quieras jugar</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid contenedor-minijuegos">
+            <div class="row justify-content-center align-items-start">
+
+                <div class="col-12">
+                    <div class="slots-grid">
+
+                        <div class="card-juego">
+                            <a href="/minijuegos/el-once">
+                                <div class="card-juego-img">
+                                    <img src="/img/minijuegos/juegos/el-once.webp" alt="El Once">
+                                </div>
+                                <div class="card-juego-info">
+                                    <span class="card-juego-btn">JUGAR</span>
+                                    <span class="card-juego-nombre">EL ONCE</span>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="card-juego">
+                            <a href="/minijuegos/el-once-leyendas">
+                                <div class="card-juego-img">
+                                    <img src="/img/minijuegos/juegos/el-once-leyendas.webp" alt="El Once Leyendas">
+                                </div>
+                                <div class="card-juego-info">
+                                    <span class="card-juego-btn">JUGAR</span>
+                                    <span class="card-juego-nombre">EL ONCE - LEYENDAS</span>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="card-juego">
+                            <a href="/minijuegos/el-once-actualidad">
+                                <div class="card-juego-img">
+                                    <img src="/img/minijuegos/juegos/el-once-actualidad.webp" alt="El Once Actualidad">
+                                </div>
+                                <div class="card-juego-info">
+                                    <span class="card-juego-btn">JUGAR</span>
+                                    <span class="card-juego-nombre">EL ONCE - ACTUALIDAD</span>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="card-juego">
+                            <a href="/minijuegos/abc">
+                                <div class="card-juego-img">
+                                    <img src="/img/minijuegos/juegos/el-abc.webp" alt="El ABC">
+                                </div>
+                                <div class="card-juego-info">
+                                    <span class="card-juego-btn">JUGAR</span>
+                                    <span class="card-juego-nombre">EL ABC</span>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="card-juego">
+                            <a href="/minijuegos/top-goleadores">
+                                <div class="card-juego-img">
+                                    <img src="/img/minijuegos/juegos/top-goleadores.webp" alt="El Top: Goleadores">
+                                </div>
+                                <div class="card-juego-info">
+                                    <span class="card-juego-btn">JUGAR</span>
+                                    <span class="card-juego-nombre">EL TOP: GOLEADORES</span>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="card-juego">
+                            <a href="/minijuegos/el-tapadito">
+                                <div class="card-juego-img">
+                                    <img src="/img/minijuegos/juegos/el-tapadito.webp" alt="El Tapadito">
+                                </div>
+                                <div class="card-juego-info">
+                                    <span class="card-juego-btn">JUGAR</span>
+                                    <span class="card-juego-nombre">EL TAPADITO</span>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="card-juego">
+                            <a href="/minijuegos/nexos">
+                                <div class="card-juego-img">
+                                    <img src="/img/minijuegos/juegos/nexos.webp" alt="Nexos">
+                                </div>
+                                <div class="card-juego-info">
+                                    <span class="card-juego-btn">JUGAR</span>
+                                    <span class="card-juego-nombre">NEXOS</span>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="card-juego">
+                            <a href="/minijuegos/subeybaja">
+                                <span class="card-juego-badge-nuevo">NUEVO</span>
+                                <div class="card-juego-img">
+                                    <img src="/img/minijuegos/juegos/subeybaja.webp" alt="Sube y Baja">
+                                </div>
+                                <div class="card-juego-info">
+                                    <span class="card-juego-btn">JUGAR</span>
+                                    <span class="card-juego-nombre">SUBE Y BAJA</span>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="card-juego card-juego-bloqueado">
+                            <a>
+                                <div class="card-juego-img">
+                                    <img src="/img/minijuegos/juegos/proximamente.webp" alt="Próximamente">
+                                </div>
+                                <div class="card-juego-info">
+                                    <span class="card-juego-btn card-juego-btn-bloqueado">PRÓXIMAMENTE</span>
+                                    <span class="card-juego-nombre card-juego-nombre-bloqueado">Calentando en la banca</span>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="card-juego card-juego-bloqueado">
+                            <a>
+                                <div class="card-juego-img">
+                                    <img src="/img/minijuegos/juegos/proximamente.webp" alt="Próximamente">
+                                </div>
+                                <div class="card-juego-info">
+                                    <span class="card-juego-btn card-juego-btn-bloqueado">PRÓXIMAMENTE</span>
+                                    <span class="card-juego-nombre card-juego-nombre-bloqueado">Calentando en la banca</span>
+                                </div>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </main>
+
+</Layout>
+
+<style>
+    .contenedor-minijuegos {
+        margin-top: 2rem;
+        margin-bottom: 5rem;
+    }
+
+    .slots-grid {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 16px;
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    .subtitulo-seleccion {
+        color: #ffffff;
+        font-size: 1.3rem;
+        font-weight: 600;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        text-shadow: 0 2px 8px rgba(0,0,0,0.4);
+    }
+
+    /* --- TARJETAS DE JUEGO (Estilo Futbol11) --- */
+    .card-juego {
+        position: relative;
+        background: #2a3a4a;
+        border: 1px solid rgba(255, 255, 255, 0.15);
+        border-radius: 10px;
+        overflow: hidden;
+        transition: all 0.3s ease;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+        flex: 0 0 170px;
+        max-width: 170px;
+    }
+
+    .card-juego a {
+        text-decoration: none;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .card-juego-img {
+        width: 100%;
+        aspect-ratio: 1 / 1;
+        overflow: hidden;
+        background: #121c26;
+    }
+
+    .card-juego-img img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.3s ease;
+    }
+
+    .card-juego-info {
+        padding: 0.5rem 0.2rem 0.7rem 0.2rem;
+        background: #2a3a4a;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.05rem;
+    }
+
+    .card-juego-btn {
+        color: #ffffff;
+        font-size: 0.8rem;
+        font-weight: 800;
+        letter-spacing: 0.5px;
+    }
+
+    .card-juego-nombre {
+        color: #94a3b8;
+        font-size: 0.7rem;
+        font-weight: 600;
+        text-align: center;
+        line-height: 1.1;
+    }
+
+    .card-juego-badge-nuevo {
+        position: absolute;
+        top: 6px;
+        right: 6px;
+        background: #e53935;
+        color: #fff;
+        font-size: 0.55rem;
+        font-weight: 800;
+        letter-spacing: 0.5px;
+        padding: 3px 7px;
+        border-radius: 4px;
+        z-index: 3;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+        pointer-events: none;
+    }
+
+    /* --- HOVER --- */
+    .card-juego:hover {
+        border-color: rgba(239, 68, 68, 0.6);
+        transform: translateY(-3px);
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
+    }
+
+    .card-juego:hover .card-juego-img img {
+        transform: scale(1.05);
+    }
+
+    .card-juego:hover .card-juego-btn {
+        color: #f0b535;
+    }
+
+    /* --- BLOQUEADO (Próximamente) --- */
+    .card-juego-bloqueado {
+        opacity: 0.5;
+        border-color: rgba(255, 255, 255, 0.06);
+    }
+
+    .card-juego-bloqueado a {
+        pointer-events: none;
+        cursor: not-allowed;
+    }
+
+    .card-juego-btn-bloqueado {
+        color: #64748b !important;
+        font-size: 0.8rem;
+    }
+
+    .card-juego-nombre-bloqueado {
+        color: #475569 !important;
+        font-size: 0.7rem;
+    }
+
+    .card-juego-bloqueado:hover {
+        border-color: rgba(255, 255, 255, 0.06);
+        transform: none;
+        box-shadow: none;
+    }
+
+    .card-juego-bloqueado:hover .card-juego-img img {
+        transform: none;
+    }
+
+    /* --- RESPONSIVE --- */
+    @media (max-width: 768px) {
+        .contenedor-minijuegos {
+            margin-bottom: 3rem;
+        }
+
+        .subtitulo-seleccion {
+            font-size: 1rem;
+            margin-top: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .slots-grid {
+            gap: 12px;
+            max-width: 520px;
+        }
+
+        .card-juego {
+            flex: 0 0 150px;
+            max-width: 150px;
+        }
+
+        .card-juego-info {
+            padding: 0.25rem 0.2rem;
+        }
+
+        .card-juego-btn {
+            font-size: 0.55rem;
+        }
+
+        .card-juego-nombre {
+            font-size: 0.42rem;
+        }
+    }
+
+    @media (max-width: 576px) {
+        .slots-grid {
+            gap: 10px;
+            max-width: 340px;
+        }
+
+        .card-juego {
+            flex: 0 0 140px;
+            max-width: 140px;
+        }
+
+        .card-juego-info {
+            padding: 0.2rem 0.15rem;
+        }
+
+        .card-juego-btn {
+            font-size: 0.5rem;
+        }
+
+        .card-juego-nombre {
+            font-size: 0.38rem;
+        }
+    }
+</style>
