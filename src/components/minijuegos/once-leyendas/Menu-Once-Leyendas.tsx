@@ -121,7 +121,7 @@ export default function MenuOnceLeyendas() {
           {/* Cuerpo y Acción */}
           <div className="leyendas-cuerpo-accion text-center">
             <p className="descripcion-juego-leyendas text-justify">
-              El tiempo pasa, pero <strong>la clase es eterna.</strong> En esta edición especial, tu misión es invocar a los <strong>ídolos de antaño</strong> que ya forman parte del mito. Debes armar el equipo histórico definitivo utilizando <strong>un solo jugador retirado por cada club</strong> seleccionado. ¿Recuerdas quién era el caudillo de esa defensa que ya no existe? Es momento de rendir tributo.
+              El tiempo pasa, pero <strong>la clase es eterna.</strong> En esta edición especial, tu misión es invocar a los <strong>ídolos de antaño</strong> que ya forman parte del mito. Debes armar un equipo utilizando <strong>un solo jugador que hay jugado en la primera división entre 2010 y 2026 y que ya esté retirado por cada club</strong> seleccionado. ¿Recuerdas quién era el caudillo de esa defensa que ya no existe? Es momento de rendir tributo. <strong>Reto ilimitado</strong>
             </p>
 
             {yaJugoHoy ?  (

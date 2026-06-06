@@ -121,7 +121,7 @@ export default function MenuOnceActualidad() {
           {/* Cuerpo y Acción */}
           <div className="actualidad-cuerpo-accion text-center">
             <p className="descripcion-juego-actualidad text-justify">
-              La pelota ya rueda y los planteles están cerrados, pero la última palabra sobre quiénes deben saltar al campo <strong>la tienes tú.</strong> En esta edición, el desafío se traslada al presente absoluto. Aquí no hay espacio para la nostalgia; tu conocimiento se pone a prueba con los <strong>fichajes bomba, jóvenes promesas y los referentes</strong> que defienden hoy mismo los colores de la Primera División. <strong>¿Estás al día con el rendimiento actual?</strong>
+              La pelota ya rueda y los planteles están cerrados, pero la última palabra sobre quiénes deben saltar al campo <strong>la tienes tú.</strong> En esta edición, el desafío se traslada al presente absoluto. Aquí no hay espacio para la nostalgia; tu conocimiento se pone a prueba con los <strong>fichajes bomba, jóvenes promesas y los referentes</strong> que defienden hoy mismo los colores de la Primera División. <strong>¿Estás al día con el rendimiento actual? Reto ilimitado</strong>
             </p>
 
             {yaJugoHoy ?  (
