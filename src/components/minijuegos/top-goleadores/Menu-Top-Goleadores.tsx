@@ -126,7 +126,7 @@ export default function MenuTopGoleadores() {
           {/* Cuerpo y Acción */}
           <div className="top-cuerpo-accion text-center">
             <p className="descripcion-juego-top text-justify">
-              ¿Qué queda de una temporada cuando se apagan las luces? <strong>El Top</strong> es la arena definitiva donde las estadísticas cobran vida. Tu misión es reconstruir la tabla de máximos anotadores de una <strong>temporada al azar entre 2010 y 2025</strong> antes de que el tiempo se agote. Es un examen a tu archivo mental, donde cada apellido correcto es un tributo a la eficacia. <strong>¿Tienes la precisión necesaria para reclamar la Bota de Oro de la nostalgia? Reto ilimitado</strong>
+              ¿Qué queda de una temporada cuando se apagan las luces? <strong>El Top</strong> es la arena definitiva donde las estadísticas cobran vida. Tu misión es reconstruir la tabla de máximos anotadores de una <strong>temporada al azar entre 2010 y 2025</strong> antes de que el tiempo se agote. Es un examen a tu archivo mental, donde cada apellido correcto es un tributo a la eficacia. <strong>¿Tienes la precisión necesaria para reclamar la Bota de Oro de la nostalgia? Reto diario</strong>
             </p>
 
             {yaJugoHoy ?  (
