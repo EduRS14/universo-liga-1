@@ -127,7 +127,7 @@ export default function MenuOnce() {
           {/* Cuerpo y Acción */}
           <div className="once-cuerpo-accion text-center">
             <p className="descripcion-juego-once text-justify">
-              ¿Cuántos nombres han pasado por nuestros ojos en más de <strong>quince años de fútbol peruano?</strong> El Once es el espacio donde el conocimiento y la nostalgia se encuentran. El desafío es simple pero implacable: debes <strong>construir un equipo equilibrado utilizando un solo representante por cada club seleccionado.</strong> ¿Estás listo para dar la charla técnica y demostrar que tu memoria es de campeonato?
+              ¿Cuántos nombres han pasado por nuestros ojos en más de <strong>quince años de fútbol peruano?</strong> El Once es el espacio donde el conocimiento y la nostalgia se encuentran. El desafío es simple pero implacable: debes <strong>construir un equipo equilibrado utilizando un solo representante que haya jugado entre el 2010 y 2026 por cada club seleccionado.</strong> ¿Estás listo para dar la charla técnica y demostrar que tu memoria es de campeonato? <strong>Reto ilimitado</strong> 
             </p>
 
             {yaJugoHoy ?  (
