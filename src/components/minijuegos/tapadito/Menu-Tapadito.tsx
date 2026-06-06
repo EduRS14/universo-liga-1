@@ -130,7 +130,7 @@ export default function MenuElTapadito() {
           {/* Cuerpo y Acción */}
           <div className="tapadito-cuerpo-accion text-center">
             <p className="descripcion-juego-tapadito text-justify">
-              En nuestro fútbol, siempre hay un nombre que se esconde bajo la manga. En esta versión del clásico <strong>Wordle</strong>, tu misión es descubrir la identidad de un futbolista oculto que pasó por nuestro campeonato <strong>entre 2010 y 2026.</strong> Tienes <strong>seis intentos</strong>. El verde te confirmará el éxito, el amarillo la reubicación y el gris el error. <strong>¿Tienes la visión de juego para descifrar el enigma?</strong>
+              En nuestro fútbol, siempre hay un nombre que se esconde bajo la manga. En esta versión del clásico <strong>Wordle</strong>, tu misión es descubrir la identidad de un futbolista oculto que pasó por nuestro campeonato <strong>entre 2010 y 2026.</strong> Tienes <strong>seis intentos</strong>. El verde te confirmará el éxito, el amarillo la reubicación y el gris el error. <strong>¿Tienes la visión de juego para descifrar el enigma? Reto ilimitado</strong>
             </p>
 
             {yaJugoHoy ? (

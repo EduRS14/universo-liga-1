@@ -94,7 +94,7 @@ export default function MenuABC() {
           {/* Cuerpo y Acción */}
           <div className="abc-cuerpo-accion text-center">
             <p className="descripcion-juego-abc text-justify">
-              No basta con saber quién fue campeón. En <strong>El ABC</strong>, el azar es el verdadero rival. Te enfrentamos a una ruta de 22 letras, y en cada parada te esperará un <strong>escudo diferente</strong> de la Primera División (2010-2026). Podrías tener que recordar a un crack de la 'U' con la A, y al segundo siguiente, buscar a uno de San Simón con la B. <strong>¿Tienes el archivo mental para completar el abecedario?</strong>
+              No basta con saber quién fue campeón. En <strong>El ABC</strong>, el azar es el verdadero rival. Te enfrentamos a una ruta de 22 letras, y en cada parada te esperará un <strong>escudo diferente</strong> de la Primera División (2010-2026). Podrías tener que recordar a un crack de la 'U' con la A, y al segundo siguiente, buscar a uno de San Simón con la B. <strong>¿Tienes el archivo mental para completar el abecedario? Reto ilimitado</strong>
             </p>
 
             {yaJugoHoy ? (
