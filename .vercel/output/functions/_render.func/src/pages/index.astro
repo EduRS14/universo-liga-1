@@ -1,0 +1,354 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const urls_img_bn : string[] = [
+    '/img/equipos/bn/adt.webp',
+    '/img/equipos/bn/aas.webp',
+    '/img/equipos/bn/alima.webp',
+    '/img/equipos/bn/ag.webp',
+    '/img/equipos/bn/cienciano.webp',
+    '/img/equipos/bn/comerciantes.webp',
+    '/img/equipos/bn/cusco.webp',
+    '/img/equipos/bn/garcilaso.webp',
+    '/img/equipos/bn/moquegua.webp',
+    '/img/equipos/bn/melgar.webp',
+    '/img/equipos/bn/cajamarca.webp',
+    '/img/equipos/bn/jpii.webp',
+    '/img/equipos/bn/chankas.webp',
+    '/img/equipos/bn/sb.webp',
+    '/img/equipos/bn/huancayo.webp',
+    '/img/equipos/bn/sc.webp',
+    '/img/equipos/bn/u.webp',
+    '/img/equipos/bn/utc.webp'
+];
+---
+
+<Layout>
+
+	<main>
+
+		<div class="container-fluid">
+			<div class="row justify-content-center align-items-center">
+				<div class="col-12 text-center contenedor-bienvenida">
+				
+					<div class="row justify-content-center align-items-center">
+						<div class="col-4 text-center my-4">
+							<h1 class="texto-bienvenida">Bienvenido a</h1>
+						</div>
+						<div class="col-10 text-center">
+							<h1 class="texto-titulo">UNIVERSO LIGA 1</h1>
+						</div>
+					
+						<div class="col-10 col-lg-5 text-center my-3">
+							<p class="texto-slogan">Datos, predicciones y diversión. El universo del fútbol peruano en un solo lugar.</p>
+						</div>
+					
+					</div>
+				
+				</div>
+			
+				<div class="col-12 contenedor-carrusel">
+				
+					<div class="carousel">
+					
+						<div class="group">
+							{urls_img_bn.map((url) => (
+								<div class="item">
+									<img src={url} alt="Equipo Liga 1" class="img-equipo"/>
+								</div>
+							))}
+						</div>
+					
+						<div aria-hidden="true" class="group">
+							{urls_img_bn.map((url) => (
+								<div class="item">
+									<img src={url} alt="Equipo Liga 1" class="img-equipo"/>
+								</div>
+							))}
+						</div>
+					
+					</div>
+				
+				</div>
+			
+				<div class="col-12 contenedor-opciones">
+				
+					<div class="row justify-content-center align-items-center">
+					
+						<div class="col-10 text-center">
+							<h2 class="texto-opciones">Explora las secciones disponibles</h2>
+						</div>
+					
+						<div class="col-6 col-lg-3 d-flex justify-content-center my-3">
+						
+							<div class="box">
+								<img src="/img/pagina-principal/wiki.webp" alt="Wiki Liga 1" class="img-fluid img-opcion"/>
+								<div class="overlay">
+									<h3 class="texto-titulo-card">Wiki Liga 1 2026</h3>
+									<p class="texto-parrafo-card">Explora estadísticas detalladas, historia de equipos y jugadores de la Liga 1 2026.</p>
+									<a href="/equipos" class="link-card">Wiki</a>
+								</div>
+							</div>
+						
+						</div>
+					
+						<div class="col-6 col-lg-3 d-flex justify-content-center my-3">
+						
+							<div class="box">
+								<img src="/img/pagina-principal/calculadora.webp" alt="Calculadora Liga 1" class="img-fluid img-opcion"/>
+								<div class="overlay">
+									<h3 class="texto-titulo-card">Calculadora Liga 1 2026</h3>
+									<p class="texto-parrafo-card">Simula los partidos fecha a fecha y predice quién será el campeón.</p>
+									<a href="/calculadora" class="link-card">Calculadora</a>
+								</div>
+							</div>
+						
+						</div>
+					
+						<div class="col-6 col-lg-3 d-flex justify-content-center my-3">
+						
+							<div class="box">
+								<img src="/img/pagina-principal/futperu.webp" alt="FutPerú" class="img-fluid img-opcion"/>
+								<div class="overlay">
+									<h3 class="texto-titulo-card">FutPerú</h3>
+									<p class="texto-parrafo-card">Desafía tu conocimiento del fútbol peruano y disfruta de diferentes minijuegos.</p>
+									<a href="/minijuegos" class="link-card">FutPerú</a>
+								</div>
+							</div>
+						
+						</div>
+					
+					</div>
+				
+				</div>
+			
+			</div>
+		</div>
+
+	</main>
+
+</Layout>
+
+<style>
+
+	.contenedor-bienvenida{
+		background-image: url('/img/pagina-principal/fondo.png');
+		background-size: cover;
+		background-position: center;
+		width: 100%;
+		height: 70vh;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.contenedor-carrusel{
+		background-color: rgba(20, 20, 20, 0.767);
+	}
+
+	.contenedor-opciones{
+		margin-top: 5rem;
+		margin-bottom: 5rem;
+	}
+
+	.carousel{
+		width: 100%;
+		display: flex;
+		overflow-x: auto;
+		pointer-events: none;
+	}
+
+	.carousel::-webkit-scrollbar {
+		display: none;
+	}
+
+	.group{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: 4rem;
+		animation: scroll 30s infinite linear;
+		padding-right: 4rem;
+	}
+
+	.item{
+		flex: 0 0 5rem;
+		padding: 2rem 1rem;
+	}
+
+	.texto-bienvenida{
+		color: white;
+		font-size: 1.3rem;
+		font-style: italic;
+	}
+
+	.texto-titulo{
+		color: white;
+		font-size: 4.5rem;
+		font-weight: bold;
+		font-style: italic;
+	}
+
+	.texto-slogan{
+		color: white;
+		font-size: 1.2rem;
+		font-style: italic;
+		margin-top: 1rem;
+	}
+
+	.texto-opciones{
+		color: white;
+		font-size: 2rem;
+		font-weight: bold;
+		font-style: italic;
+		margin-bottom: 2rem;
+		text-shadow: 2px 2px 20px rgba(155, 32, 32, 0.7);
+	}
+
+	.texto-principal{
+		color: white;
+	}
+
+	.texto-titulo-card{
+		color: white;
+		font-size: 1.5rem;
+		font-weight: bold;
+	}
+
+	.texto-parrafo-card{
+		color: white;
+		font-size: 1rem;
+		margin-top: 0.5rem;
+	}
+
+	.link-card{
+		display: inline-block;
+		margin-top: 1rem;
+		padding: 0.5rem 1rem;
+		background-color: #851212;
+		color: white;
+		text-decoration: none;
+		border-radius: 5px;
+		transition: background-color 0.3s ease;
+	}
+
+	.img-equipo {
+		max-height: 150px;
+		filter: drop-shadow(0px 2px 10px rgba(252, 255, 226, 0.247));
+	}
+
+	.box{
+		max-width: 70%;
+		border-radius: 10px;
+		position: relative;
+		overflow: hidden;
+		box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+	}
+
+	.img-opcion{
+		max-height: 500px;
+		width: 100%;
+		object-fit: cover;
+		border-radius: 10px;
+		display: block;
+		transition: transform 0.5s, filter 0.5s;;
+	}
+
+	.overlay {
+		height: 0;
+		width: 100%;
+		background: linear-gradient(transparent, #1c1c1c 85%);
+		border-radius: 10px;
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		overflow: hidden;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+		padding: 0 1rem;
+		text-align: center;
+		transition: height 0.5s;
+	}
+
+	.box:hover .img-opcion {
+		transform: scale(1.2);
+		filter: brightness(40%);
+	}
+
+	.box:hover .overlay {
+		height: 80%;
+	}
+
+	.link-card:hover {
+		background-color: #a31f1f;
+	}
+
+	@keyframes scroll {
+		from {
+			translate: 0;
+		}
+		to {
+			translate: -100%;
+		}
+	}
+
+	@media (max-width: 768px) {
+
+		.contenedor-bienvenida{
+			height: 40vh;
+		}
+
+		.contenedor-opciones{
+			margin-top: 2.5rem;
+			margin-bottom: 2.5rem;
+		}
+
+		.group{
+			gap: 1rem;
+			padding-right: 1rem;
+		}
+
+		.box{
+			max-width: 90%;
+		}
+
+		.texto-bienvenida{
+			font-size: 0.8rem;
+		}
+
+		.texto-titulo{
+			font-size: 1.5rem;
+		}
+
+		.texto-slogan{
+			font-size: 0.8rem;
+		}
+
+		.texto-opciones{
+			font-size: 1rem;
+		}
+
+		.img-equipo {
+			max-height: 50px;
+		}
+
+		.texto-titulo-card{
+			font-size: 1rem;
+		}
+
+		.texto-parrafo-card{
+			color: white;
+			font-size: 0.7rem;
+			margin-top: 0.5rem;
+		}
+
+		.link-card:hover {
+			background-color: #a31f1f;
+		}
+
+	}
+
+</style>
