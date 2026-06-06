@@ -10341,7 +10341,7 @@
         "nacionalidades": [
             1
         ],
-        "clubActual": "Sport Boys",
+        "clubActual": "Alianza UDH",
         "posicionPrincipal": "Defensa central",
         "posicionesSecundarias": [],
         "valorMercadoMaximo": 250000.0,
@@ -10353,15 +10353,20 @@
                     [
                         2024,
                         2024
-                    ],
-                    [
-                        2025,
-                        2024
                     ]
                 ]
             },
             {
                 "id_equipo": 5,
+                "periodos": [
+                    [
+                        2026,
+                        2026
+                    ]
+                ]
+            },
+            {
+                "id_equipo": 31,
                 "periodos": [
                     [
                         2026,
@@ -11064,7 +11069,7 @@
         "nacionalidades": [
             1
         ],
-        "clubActual": "Sin equipo",
+        "clubActual": "FC Cajamarca",
         "posicionPrincipal": "Lateral izquierdo",
         "posicionesSecundarias": [
             "Interior izquierdo"
@@ -11167,6 +11172,15 @@
                     [
                         2025,
                         2025
+                    ]
+                ]
+            },
+            {
+                "id_equipo": 42,
+                "periodos": [
+                    [
+                        2026,
+                        -1
                     ]
                 ]
             }
@@ -16329,7 +16343,7 @@
     },
     {
         "id": 330,
-        "nombre": "Brenner",
+        "nombre": "Brenner Marlos",
         "fechaNacimiento": "1994-03-01",
         "fechaFallecimiento": null,
         "edad": 31,
@@ -17684,7 +17698,7 @@
         "nacionalidades": [
             1
         ],
-        "clubActual": "Belgrano",
+        "clubActual": "Universitario",
         "posicionPrincipal": "Extremo izquierdo",
         "posicionesSecundarias": [
             "Extremo derecho",
@@ -17708,6 +17722,15 @@
                     [
                         2023,
                         2023
+                    ]
+                ]
+            },
+            {
+                "id_equipo": 2,
+                "periodos": [
+                    [
+                        2026,
+                        -1
                     ]
                 ]
             }
@@ -22808,7 +22831,7 @@
         "nacionalidades": [
             1
         ],
-        "clubActual": "Alianza Lima",
+        "clubActual": "Sport Boys",
         "posicionPrincipal": "Defensa central",
         "posicionesSecundarias": [
             "Libero"
@@ -22830,6 +22853,15 @@
                 "periodos": [
                     [
                         2023,
+                        2025
+                    ]
+                ]
+            },
+            {
+                "id_equipo": 5,
+                "periodos": [
+                    [
+                        2026,
                         -1
                     ]
                 ]
@@ -33293,7 +33325,7 @@
         "nacionalidades": [
             1
         ],
-        "clubActual": "Fujieda MYFC",
+        "clubActual": "Cienciano",
         "posicionPrincipal": "Extremo derecho",
         "posicionesSecundarias": [
             "Extremo izquierdo"
@@ -33307,6 +33339,10 @@
                     [
                         2023,
                         2025
+                    ],
+                    [
+                        2026,
+                        -1
                     ]
                 ]
             }
@@ -36233,7 +36269,7 @@
         "nacionalidades": [
             1
         ],
-        "clubActual": "Sin equipo",
+        "clubActual": "Atlético Grau",
         "posicionPrincipal": "Lateral derecho",
         "posicionesSecundarias": [
             "Lateral izquierdo"
@@ -36247,6 +36283,10 @@
                     [
                         2021,
                         2021
+                    ],
+                    [
+                        2026,
+                        -1
                     ]
                 ]
             },
@@ -56271,7 +56311,7 @@
                         2024
                     ],
                     [
-                        2025,
+                        2026,
                         -1
                     ]
                 ]
@@ -60913,7 +60953,7 @@
             2,
             1
         ],
-        "clubActual": "FC Cajamarca",
+        "clubActual": "Sport. Cristal",
         "posicionPrincipal": "Delantero centro",
         "posicionesSecundarias": [],
         "valorMercadoMaximo": 4000000.0,
@@ -60930,6 +60970,15 @@
             },
             {
                 "id_equipo": 42,
+                "periodos": [
+                    [
+                        2026,
+                        2026
+                    ]
+                ]
+            },
+            {
+                "id_equipo": 3,
                 "periodos": [
                     [
                         2026,
@@ -64344,7 +64393,7 @@
     },
     {
         "id": 1304,
-        "nombre": "Ignácio",
+        "nombre": "Ignácio da Silva",
         "fechaNacimiento": "1996-12-01",
         "fechaFallecimiento": null,
         "edad": 29,
@@ -72546,7 +72595,7 @@
         "nacionalidades": [
             1
         ],
-        "clubActual": "Dunfermline A.",
+        "clubActual": "FBC Melgar",
         "posicionPrincipal": "Extremo izquierdo",
         "posicionesSecundarias": [
             "Mediocentro ofensivo",
@@ -72565,6 +72614,10 @@
                     [
                         2024,
                         2024
+                    ],
+                    [
+                        2026,
+                        -1
                     ]
                 ]
             },
@@ -86470,7 +86523,7 @@
         "nacionalidades": [
             1
         ],
-        "clubActual": "Juan Pablo II",
+        "clubActual": "ADA Cajabamba",
         "posicionPrincipal": "Delantero centro",
         "posicionesSecundarias": [
             "Mediocentro ofensivo"
@@ -86532,7 +86585,7 @@
                 "periodos": [
                     [
                         2026,
-                        -1
+                        2026
                     ]
                 ]
             }
@@ -92926,7 +92979,7 @@
             2,
             12
         ],
-        "clubActual": "Sin equipo",
+        "clubActual": "Stgo. Morning",
         "posicionPrincipal": "Portero",
         "posicionesSecundarias": [],
         "valorMercadoMaximo": 300000.0,
@@ -103973,7 +104026,7 @@
         "nacionalidades": [
             1
         ],
-        "clubActual": "Sin equipo",
+        "clubActual": "AD Tarma",
         "posicionPrincipal": "Defensa central",
         "posicionesSecundarias": [],
         "valorMercadoMaximo": 425000.0,
@@ -104016,6 +104069,15 @@
                     [
                         2024,
                         2024
+                    ]
+                ]
+            },
+            {
+                "id_equipo": 37,
+                "periodos": [
+                    [
+                        2026,
+                        -1
                     ]
                 ]
             }
@@ -108621,7 +108683,7 @@
             9,
             2
         ],
-        "clubActual": "Dep. Armenio",
+        "clubActual": "CS Ameliano",
         "posicionPrincipal": "Extremo izquierdo",
         "posicionesSecundarias": [
             "Mediocentro ofensivo",
@@ -113092,10 +113154,10 @@
         "nacionalidades": [
             1
         ],
-        "clubActual": "Cienciano",
+        "clubActual": "Alianza Lima",
         "posicionPrincipal": "Lateral derecho",
         "posicionesSecundarias": [
-            "Interior derecho"
+            "Lateral izquierdo"
         ],
         "valorMercadoMaximo": 450000.0,
         "jugoExtranjero": false,
@@ -116682,7 +116744,7 @@
             2,
             1
         ],
-        "clubActual": "Universitario",
+        "clubActual": "Retirado",
         "posicionPrincipal": "Mediocentro",
         "posicionesSecundarias": [
             "Mediocentro ofensivo",
@@ -116714,7 +116776,7 @@
                 "periodos": [
                     [
                         2023,
-                        -1
+                        2026
                     ]
                 ]
             }
@@ -123275,7 +123337,7 @@
         "nacionalidades": [
             1
         ],
-        "clubActual": "Alianza Lima",
+        "clubActual": "Sport Boys",
         "posicionPrincipal": "Lateral izquierdo",
         "posicionesSecundarias": [
             "Interior izquierdo"
@@ -123306,6 +123368,15 @@
                 "periodos": [
                     [
                         2025,
+                        2025
+                    ]
+                ]
+            },
+            {
+                "id_equipo": 5,
+                "periodos": [
+                    [
+                        2026,
                         -1
                     ]
                 ]
@@ -123904,7 +123975,7 @@
         "nacionalidades": [
             1
         ],
-        "clubActual": "FC Cajamarca",
+        "clubActual": "Sport Boys",
         "posicionPrincipal": "Lateral izquierdo",
         "posicionesSecundarias": [],
         "valorMercadoMaximo": 600000.0,
@@ -123957,6 +124028,15 @@
             },
             {
                 "id_equipo": 42,
+                "periodos": [
+                    [
+                        2026,
+                        -1
+                    ]
+                ]
+            },
+            {
+                "id_equipo": 5,
                 "periodos": [
                     [
                         2026,
@@ -127939,7 +128019,7 @@
         "nacionalidades": [
             1
         ],
-        "clubActual": "Universitario",
+        "clubActual": "Juan Pablo II",
         "posicionPrincipal": "Lateral izquierdo",
         "posicionesSecundarias": [
             "Interior izquierdo"
@@ -127961,6 +128041,15 @@
                 "periodos": [
                     [
                         2025,
+                        2026
+                    ]
+                ]
+            },
+            {
+                "id_equipo": 40,
+                "periodos": [
+                    [
+                        2026,
                         -1
                     ]
                 ]
@@ -132788,7 +132877,7 @@
             21,
             1
         ],
-        "clubActual": "Sin equipo",
+        "clubActual": "Brooklyn FC",
         "posicionPrincipal": "Extremo derecho",
         "posicionesSecundarias": [
             "Extremo izquierdo",
@@ -137436,7 +137525,7 @@
         "nacionalidades": [
             1
         ],
-        "clubActual": "Sport Boys",
+        "clubActual": "Cienciano",
         "posicionPrincipal": "Lateral derecho",
         "posicionesSecundarias": [],
         "valorMercadoMaximo": 275000.0,
@@ -137447,6 +137536,15 @@
                 "periodos": [
                     [
                         2023,
+                        2025
+                    ]
+                ]
+            },
+            {
+                "id_equipo": 6,
+                "periodos": [
+                    [
+                        2026,
                         -1
                     ]
                 ]
@@ -145331,7 +145429,7 @@
         "nacionalidades": [
             5
         ],
-        "clubActual": "Sin equipo",
+        "clubActual": "Dep. Moquegua",
         "posicionPrincipal": "Mediocentro ofensivo",
         "posicionesSecundarias": [
             "Mediocentro"
@@ -145354,6 +145452,15 @@
                     [
                         2025,
                         2025
+                    ]
+                ]
+            },
+            {
+                "id_equipo": 41,
+                "periodos": [
+                    [
+                        2026,
+                        -1
                     ]
                 ]
             }
@@ -147426,7 +147533,7 @@
         "nacionalidades": [
             1
         ],
-        "clubActual": "Sport Boys",
+        "clubActual": "Auda",
         "posicionPrincipal": "Lateral izquierdo",
         "posicionesSecundarias": [
             "Interior izquierdo"
@@ -147462,10 +147569,6 @@
                     [
                         2024,
                         2024
-                    ],
-                    [
-                        2025,
-                        2024
                     ]
                 ]
             },
@@ -147474,7 +147577,7 @@
                 "periodos": [
                     [
                         2025,
-                        -1
+                        2026
                     ]
                 ]
             }
@@ -148665,7 +148768,7 @@
         "nacionalidades": [
             1
         ],
-        "clubActual": "Sport. Cristal",
+        "clubActual": "U. San Martín",
         "posicionPrincipal": "Extremo izquierdo",
         "posicionesSecundarias": [
             "Mediocentro ofensivo",
@@ -148688,15 +148791,11 @@
                 "periodos": [
                     [
                         2025,
-                        2024
-                    ],
-                    [
-                        2025,
                         2025
                     ],
                     [
                         2026,
-                        -1
+                        2026
                     ]
                 ]
             },
@@ -149584,7 +149683,7 @@
             1,
             11
         ],
-        "clubActual": "Alianza Lima",
+        "clubActual": "Sakaryaspor",
         "posicionPrincipal": "Mediocentro",
         "posicionesSecundarias": [
             "Mediocentro ofensivo",
@@ -149602,7 +149701,7 @@
                     ],
                     [
                         2025,
-                        -1
+                        2026
                     ]
                 ]
             },
@@ -155782,7 +155881,7 @@
         "nacionalidades": [
             1
         ],
-        "clubActual": "Dep. Moquegua",
+        "clubActual": "Sport. Company",
         "posicionPrincipal": "Portero",
         "posicionesSecundarias": [],
         "valorMercadoMaximo": 25000.0,
@@ -155802,7 +155901,7 @@
                 "periodos": [
                     [
                         2026,
-                        -1
+                        2026
                     ]
                 ]
             }
@@ -159494,7 +159593,7 @@
         "nacionalidades": [
             1
         ],
-        "clubActual": "Universitario",
+        "clubActual": "Sport Boys",
         "posicionPrincipal": "Mediocentro ofensivo",
         "posicionesSecundarias": [
             "Extremo izquierdo",
@@ -159527,14 +159626,6 @@
                     [
                         2023,
                         2024
-                    ],
-                    [
-                        2025,
-                        2024
-                    ],
-                    [
-                        2026,
-                        -1
                     ]
                 ]
             },
@@ -159544,6 +159635,15 @@
                     [
                         2025,
                         2025
+                    ]
+                ]
+            },
+            {
+                "id_equipo": 5,
+                "periodos": [
+                    [
+                        2026,
+                        -1
                     ]
                 ]
             }
@@ -159652,7 +159752,7 @@
         "nacionalidades": [
             1
         ],
-        "clubActual": "Cienciano II",
+        "clubActual": "Cienciano",
         "posicionPrincipal": "Extremo izquierdo",
         "posicionesSecundarias": [
             "Mediocentro"
@@ -159666,6 +159766,10 @@
                     [
                         2024,
                         2025
+                    ],
+                    [
+                        2026,
+                        -1
                     ]
                 ]
             }
@@ -165429,7 +165533,7 @@
     },
     {
         "id": 3299,
-        "nombre": "Gabriel",
+        "nombre": "Gabriel Santana",
         "fechaNacimiento": "1990-01-06",
         "fechaFallecimiento": null,
         "edad": 36,
@@ -170883,7 +170987,7 @@
         "nacionalidades": [
             1
         ],
-        "clubActual": "FC Cajamarca",
+        "clubActual": "Sport Boys",
         "posicionPrincipal": "Lateral izquierdo",
         "posicionesSecundarias": [],
         "valorMercadoMaximo": 600000.0,
@@ -170936,6 +171040,15 @@
             },
             {
                 "id_equipo": 42,
+                "periodos": [
+                    [
+                        2026,
+                        2026
+                    ]
+                ]
+            },
+            {
+                "id_equipo": 5,
                 "periodos": [
                     [
                         2026,
@@ -171656,5 +171769,393 @@
         ],
         "titulosObtenidos": [],
         "url_foto": "https://img.a.transfermarkt.technology/portrait/header/239623-1754533766.JPG?lm=1"
+    },
+    {
+        "id": 3453,
+        "nombre": "Sergio Quiroga",
+        "fechaNacimiento": "1994-06-07",
+        "fechaFallecimiento": null,
+        "edad": 31,
+        "altura": 162.0,
+        "nacionalidades": [
+            2
+        ],
+        "clubActual": "Alianza Atl.",
+        "posicionPrincipal": "Mediocentro ofensivo",
+        "posicionesSecundarias": [
+            "Mediocentro"
+        ],
+        "valorMercadoMaximo": 450000.0,
+        "jugoExtranjero": true,
+        "equiposJugados": [
+            {
+                "id_equipo": 11,
+                "periodos": [
+                    [
+                        2026,
+                        -1
+                    ]
+                ]
+            }
+        ],
+        "titulosObtenidos": [
+            {
+                "id_trofeo": 104,
+                "cantidad": 1
+            }
+        ],
+        "url_foto": "https://img.a.transfermarkt.technology/portrait/header/434715-1645448398.JPG?lm=1"
+    },
+    {
+        "id": 3454,
+        "nombre": "Alejo Antilef",
+        "fechaNacimiento": "1998-07-20",
+        "fechaFallecimiento": null,
+        "edad": 27,
+        "altura": 170.0,
+        "nacionalidades": [
+            2
+        ],
+        "clubActual": "Alianza Atl.",
+        "posicionPrincipal": "Mediocentro",
+        "posicionesSecundarias": [
+            "Mediocentro ofensivo"
+        ],
+        "valorMercadoMaximo": 700000.0,
+        "jugoExtranjero": true,
+        "equiposJugados": [
+            {
+                "id_equipo": 11,
+                "periodos": [
+                    [
+                        2026,
+                        -1
+                    ]
+                ]
+            }
+        ],
+        "titulosObtenidos": [
+            {
+                "id_trofeo": 104,
+                "cantidad": 1
+            }
+        ],
+        "url_foto": "https://img.a.transfermarkt.technology/portrait/header/563817-1738204622.jpeg?lm=1"
+    },
+    {
+        "id": 3455,
+        "nombre": "Jefferson Orejuela",
+        "fechaNacimiento": "1993-02-14",
+        "fechaFallecimiento": null,
+        "edad": 20,
+        "altura": 179.0,
+        "nacionalidades": [
+            2
+        ],
+        "clubActual": "FC Cajamarca",
+        "posicionPrincipal": "Pivote",
+        "posicionesSecundarias": [
+            "Mediocentro"
+        ],
+        "valorMercadoMaximo": 1750000.0,
+        "jugoExtranjero": true,
+        "equiposJugados": [
+            {
+                "id_equipo": 42,
+                "periodos": [
+                    [
+                        2026,
+                        -1
+                    ]
+                ]
+            }
+        ],
+        "titulosObtenidos": [
+            {
+                "id_trofeo": 4,
+                "cantidad": 2
+            },
+            {
+                "id_trofeo": 64,
+                "cantidad": 1
+            },
+            {
+                "id_trofeo": 109,
+                "cantidad": 1
+            }
+        ],
+        "url_foto": "https://img.a.transfermarkt.technology/portrait/header/242996-1721768578.png?lm=1"
+    },
+    {
+        "id": 3456,
+        "nombre": "Miguel Silveira",
+        "fechaNacimiento": "2003-03-26",
+        "fechaFallecimiento": null,
+        "edad": 23,
+        "altura": 174.0,
+        "nacionalidades": [
+            2
+        ],
+        "clubActual": "Universitario",
+        "posicionPrincipal": "Mediocentro ofensivo",
+        "posicionesSecundarias": [
+            "Extremo izquierdo",
+            "Extremo derecho"
+        ],
+        "valorMercadoMaximo": 3500000.0,
+        "jugoExtranjero": true,
+        "equiposJugados": [
+            {
+                "id_equipo": 2,
+                "periodos": [
+                    [
+                        2026,
+                        -1
+                    ]
+                ]
+            }
+        ],
+        "titulosObtenidos": [],
+        "url_foto": "https://img.a.transfermarkt.technology/portrait/header/662338-1770730499.jpg?lm=1"
+    },
+    {
+        "id": 3457,
+        "nombre": "Juan Escobar",
+        "fechaNacimiento": "1995-07-11",
+        "fechaFallecimiento": null,
+        "edad": 30,
+        "altura": 177.0,
+        "nacionalidades": [
+            9
+        ],
+        "clubActual": "FBC Melgar",
+        "posicionPrincipal": "Defensa central",
+        "posicionesSecundarias": [
+            "Lateral derecho"
+        ],
+        "valorMercadoMaximo": 5000000.0,
+        "jugoExtranjero": true,
+        "equiposJugados": [
+            {
+                "id_equipo": 4,
+                "periodos": [
+                    [
+                        2026,
+                        -1
+                    ]
+                ]
+            }
+        ],
+        "titulosObtenidos": [
+            {
+                "id_trofeo": 166,
+                "cantidad": 2
+            },
+            {
+                "id_trofeo": 52,
+                "cantidad": 1
+            },
+            {
+                "id_trofeo": 108,
+                "cantidad": 1
+            },
+            {
+                "id_trofeo": 176,
+                "cantidad": 1
+            }
+        ],
+        "url_foto": "https://img.a.transfermarkt.technology/portrait/header/353034-1580829889.jpg?lm=1"
+    },
+    {
+        "id": 3458,
+        "nombre": "Carlos Mosquera",
+        "fechaNacimiento": "1994-10-19",
+        "fechaFallecimiento": null,
+        "edad": 31,
+        "altura": 194.0,
+        "nacionalidades": [
+            9
+        ],
+        "clubActual": "FC Cajamarca",
+        "posicionPrincipal": "Portero",
+        "posicionesSecundarias": [
+            "Lateral derecho"
+        ],
+        "valorMercadoMaximo": 700000.0,
+        "jugoExtranjero": true,
+        "equiposJugados": [
+            {
+                "id_equipo": 42,
+                "periodos": [
+                    [
+                        2026,
+                        -1
+                    ]
+                ]
+            }
+        ],
+        "titulosObtenidos": [],
+        "url_foto": "https://img.a.transfermarkt.technology/portrait/header/253868-1621394660.jpg?lm=1"
+    },
+    {
+        "id": 3459,
+        "nombre": "Marcos Martinich",
+        "fechaNacimiento": "1996-08-08",
+        "fechaFallecimiento": null,
+        "edad": 29,
+        "altura": 177.0,
+        "nacionalidades": [
+            2,
+            46
+        ],
+        "clubActual": "FC Cajamarca",
+        "posicionPrincipal": "Lateral izquierdo",
+        "posicionesSecundarias": [
+            "Defensa central"
+        ],
+        "valorMercadoMaximo": 250000.0,
+        "jugoExtranjero": true,
+        "equiposJugados": [
+            {
+                "id_equipo": 6,
+                "periodos": [
+                    [
+                        2026,
+                        -1
+                    ]
+                ]
+            }
+        ],
+        "titulosObtenidos": [],
+        "url_foto": "https://img.a.transfermarkt.technology/portrait/header/538612-1771339633.jpeg?lm=1"
+    },
+    {
+        "id": 3460,
+        "nombre": "Esteban Pavez",
+        "fechaNacimiento": "1990-05-01",
+        "fechaFallecimiento": null,
+        "edad": 36,
+        "altura": 180.0,
+        "nacionalidades": [
+            2,
+            46
+        ],
+        "clubActual": "Alianza Lima",
+        "posicionPrincipal": "Pivote",
+        "posicionesSecundarias": [],
+        "valorMercadoMaximo": 1750000.0,
+        "jugoExtranjero": true,
+        "equiposJugados": [
+            {
+                "id_equipo": 6,
+                "periodos": [
+                    [
+                        2026,
+                        -1
+                    ]
+                ]
+            }
+        ],
+        "titulosObtenidos": [
+            {
+                "id_trofeo": 19,
+                "cantidad": 5
+            },
+            {
+                "id_trofeo": 86,
+                "cantidad": 2
+            },
+            {
+                "id_trofeo": 43,
+                "cantidad": 2
+            },
+            {
+                "id_trofeo": 199,
+                "cantidad": 1
+            }
+        ],
+        "url_foto": "https://img.a.transfermarkt.technology/portrait/header/131233-1718987163.jpg?lm=1"
+    },
+    {
+        "id": 3461,
+        "nombre": "Nicolás Delgadillo",
+        "fechaNacimiento": "1997-10-02",
+        "fechaFallecimiento": null,
+        "edad": 28,
+        "altura": 177.0,
+        "nacionalidades": [
+            2
+        ],
+        "clubActual": "Atlético Grau",
+        "posicionPrincipal": "Pivote",
+        "posicionesSecundarias": [],
+        "valorMercadoMaximo": 2400000.0,
+        "jugoExtranjero": true,
+        "equiposJugados": [
+            {
+                "id_equipo": 35,
+                "periodos": [
+                    [
+                        2026,
+                        -1
+                    ]
+                ]
+            }
+        ],
+        "titulosObtenidos": [],
+        "url_foto": "https://img.a.transfermarkt.technology/portrait/header/131233-1718987163.jpg?lm=1"
+    },
+    {
+        "id": 3462,
+        "nombre": "Jonatan Bauman",
+        "fechaNacimiento": "1991-03-30",
+        "fechaFallecimiento": null,
+        "edad": 35,
+        "altura": 178.0,
+        "nacionalidades": [
+            2
+        ],
+        "clubActual": "AD Tarma",
+        "posicionPrincipal": "Delantero centro",
+        "posicionesSecundarias": [
+            "Mediapunta",
+            "Extremo derecho"
+        ],
+        "valorMercadoMaximo": 2000000.0,
+        "jugoExtranjero": true,
+        "equiposJugados": [
+            {
+                "id_equipo": 37,
+                "periodos": [
+                    [
+                        2026,
+                        -1
+                    ]
+                ]
+            }
+        ],
+        "titulosObtenidos": [
+            {
+                "id_trofeo": 29,
+                "cantidad": 1
+            },
+            {
+                "id_trofeo": 10,
+                "cantidad": 1
+            },
+            {
+                "id_trofeo": 4,
+                "cantidad": 1
+            },
+            {
+                "id_trofeo": 64,
+                "cantidad": 1
+            },
+            {
+                "id_trofeo": 200,
+                "cantidad": 1
+            }
+        ],
+        "url_foto": "https://img.a.transfermarkt.technology/portrait/header/131233-1718987163.jpg?lm=1"
     }
 ]
