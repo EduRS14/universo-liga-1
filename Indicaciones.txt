@@ -1,5 +1,0 @@
-¡Excelente análisis y plan de solución! Has detectado con precisión los bugs en el useEffect y la inconsistencia en el ciclo de vida del estado. El enfoque de usar un useRef con un Set para la SesionJuego es perfecto para la persistencia del pool sin provocar rerenders innecesarios.
-
-Dale luz verde, procede con la implementación completa modificando `subeybaja-logic.ts` y `Juego-SubeBaja.tsx` tal como lo has estructurado. 
-
-Solo asegúrate de que al resetear el Set de 'usados' (cuando se agote el pool), agregues de inmediato al nuevo set los IDs del Jugador A y Jugador B actuales para que no se repitan en la jugada inmediatamente siguiente. ¡Quedo a la espera del código corregido!
