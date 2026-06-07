@@ -16,11 +16,11 @@ export const CATEGORIAS: Categoria[] = [
 ];
 
 export const NOMBRES_CATEGORIA: Record<Categoria, string> = {
-    valorMercadoMaximo: 'Valor de Mercado Máximo',
-    titulosObtenidos: 'Títulos Obtenidos',
-    equiposJugados: 'Equipos Jugados',
-    edad: 'Edad',
-    altura: 'Altura',
+    valorMercadoMaximo: 'Valor de Mercado Máximo (en €)',
+    titulosObtenidos: 'Títulos Obtenidos (General)',
+    equiposJugados: 'Equipos Jugados (en 1era Div. Perú)',
+    edad: 'Edad (años)',
+    altura: 'Altura (en m)',
 };
 
 export const ICONOS_CATEGORIA: Record<Categoria, string> = {

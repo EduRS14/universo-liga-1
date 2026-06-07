@@ -164,7 +164,7 @@ export default function MenuSubeBaja() {
                         <p className="descripcion-juego-subeybaja text-justify">
                             Compara dos jugadores que hayan jugado en la Primera División de Perú (2010-2026) y decide si el siguiente tiene un valor{' '}<strong>mayor</strong>, <strong>menor</strong> o <strong>igual</strong> en la categoría
                             del día. Cada acierto suma puntos a tu racha. Tienes <strong>15 segundos</strong> por pregunta.{' '}
-                            <strong>¿Hasta dónde puedes llegar?</strong>
+                            <strong>¿Hasta dónde puedes llegar? Reto Diario</strong>
                         </p>
 
                         <div className="subeybaja-categoria-box">
