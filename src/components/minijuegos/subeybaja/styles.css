@@ -1,0 +1,909 @@
+/* --- CONTENEDOR GENERAL --- */
+.contenedor-configuracion {
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    margin: 1rem 0;
+}
+
+.texto-cargando {
+    font-size: 1.5rem;
+    color: white;
+    text-align: center;
+    font-weight: 700;
+}
+
+/* --- TARJETA CON FONDO TOTAL --- */
+.menu-subeybaja-full-bg {
+    width: 100%;
+    max-width: 600px;
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.5);
+    border: 1px solid #1e293b;
+    background-image: url('/img/minijuegos/juegos/subeybaja.webp');
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+}
+
+.subeybaja-overlay-fondo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        to bottom,
+        rgba(15, 23, 42, 0.88) 0%,
+        rgba(15, 23, 42, 0.88) 50%,
+        rgba(0, 0, 0, 0.92) 100%
+    );
+    z-index: 1;
+}
+
+.subeybaja-contenido-contenedor {
+    position: relative;
+    z-index: 2;
+    padding: 3rem 2.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.subeybaja-cabecera {
+    margin-bottom: 1.5rem;
+}
+
+.subeybaja-cuerpo-accion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+/* --- BADGE CATEGORÍA --- */
+.badge-categoria-subeybaja {
+    display: inline-block;
+    background: #e53935;
+    color: #fff;
+    font-size: 0.7rem;
+    font-weight: 700;
+    padding: 0.3rem 0.8rem;
+    border-radius: 4px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 1rem;
+}
+
+.titulo-hero-subeybaja {
+    color: #e53935;
+    font-size: 3rem;
+    font-weight: 800;
+    margin: 0 0 0.5rem 0;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+.subtitulo-hero-subeybaja {
+    color: #94a3b8;
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 0 0 1.5rem 0;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+.descripcion-juego-subeybaja {
+    color: #cbd5e1;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin: 0 0 1.5rem 0;
+    max-width: 500px;
+    text-align: justify;
+}
+
+.descripcion-juego-subeybaja strong {
+    color: #ffffff;
+}
+
+/* --- CATEGORÍA BOX (MENÚ) --- */
+.subeybaja-categoria-box {
+    width: 100%;
+    max-width: 400px;
+    background: rgba(229, 57, 53, 0.1);
+    border: 1px solid #e53935;
+    border-radius: 10px;
+    padding: 0.9rem 1rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.subeybaja-categoria-box-label {
+    color: #94a3b8;
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    margin-bottom: 0.4rem;
+}
+
+.subeybaja-categoria-box-valor {
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.subeybaja-categoria-box-icono {
+    font-size: 1.4rem;
+}
+
+/* --- RECORDS BOX (MENÚ) --- */
+.subeybaja-record-box {
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    gap: 0.8rem;
+    margin-bottom: 1.5rem;
+}
+
+.subeybaja-record-box-item {
+    flex: 1;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    padding: 0.7rem 0.5rem;
+    text-align: center;
+}
+
+.subeybaja-record-box-label {
+    color: #94a3b8;
+    font-size: 0.6rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 0.3rem;
+}
+
+.subeybaja-record-box-valor {
+    color: #f0b535;
+    font-size: 1.4rem;
+    font-weight: 800;
+}
+
+/* --- BOTÓN JUGAR --- */
+.seccion-accion-subeybaja {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 400px;
+}
+
+.btn-iniciar-reto-subeybaja {
+    background: #e53935;
+    color: #ffffff;
+    border: none;
+    padding: 14px 40px;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: 800;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+    text-transform: uppercase;
+}
+
+.btn-iniciar-reto-subeybaja:hover {
+    background: #c62828;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(229, 57, 53, 0.3);
+}
+
+.btn-iniciar-reto-subeybaja:disabled {
+    background: #475569;
+    cursor: not-allowed;
+    opacity: 0.6;
+    transform: none;
+    box-shadow: none;
+}
+
+/* --- ALERTA YA JUGADO (amarillo/dorado) --- */
+.alerta-jugado-subeybaja {
+    background-color: rgba(49, 39, 12, 0.7);
+    border: 2px solid rgba(240, 181, 53, 0.6);
+    padding: 1.2rem;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    width: 100%;
+    max-width: 400px;
+}
+
+.alerta-icono-subeybaja {
+    font-size: 1.8rem;
+}
+
+.alerta-jugado-subeybaja p {
+    color: #fde047;
+    margin: 0;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.alerta-jugado-subeybaja strong {
+    color: #ffffff;
+}
+
+/* --- PANTALLA RESULTADO / GAMEOVER --- */
+.subeybaja-resultado-cabecera {
+    margin-bottom: 1.5rem;
+}
+
+.subeybaja-resultado-icono {
+    font-size: 4rem;
+    margin-bottom: 0.5rem;
+    line-height: 1;
+}
+
+.subeybaja-resultado-titulo {
+    color: #e53935;
+    font-size: 2rem;
+    font-weight: 800;
+    margin: 0;
+    letter-spacing: 2px;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+.subeybaja-resultado-cuerpo {
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 1.5rem;
+}
+
+.subeybaja-resultado-racha-box {
+    background: rgba(229, 57, 53, 0.1);
+    border: 1px solid #e53935;
+    border-radius: 12px;
+    padding: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.subeybaja-resultado-racha-numero {
+    color: #e53935;
+    font-size: 3rem;
+    font-weight: 900;
+    line-height: 1;
+}
+
+.subeybaja-resultado-racha-label {
+    color: #94a3b8;
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-top: 0.3rem;
+    display: block;
+}
+
+.subeybaja-resultado-categoria {
+    color: #cbd5e1;
+    font-size: 0.9rem;
+    font-weight: 700;
+    margin-bottom: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.subeybaja-record-badge {
+    background: linear-gradient(135deg, #f0b535 0%, #d97706 100%);
+    color: #1a1a1a;
+    padding: 0.7rem 1rem;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    font-weight: 800;
+    margin-bottom: 0.8rem;
+    text-align: center;
+}
+
+.subeybaja-resultado-record-info {
+    color: #94a3b8;
+    font-size: 0.9rem;
+    margin: 0.8rem 0 0 0;
+}
+
+.subeybaja-resultado-record-info strong {
+    color: #f0b535;
+}
+
+.subeybaja-resultado-acciones {
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    justify-content: center;
+}
+
+.subeybaja-btn-volver-menu {
+    background: #e53935;
+    color: #ffffff;
+    border: none;
+    padding: 14px 36px;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 800;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+    text-transform: uppercase;
+}
+
+.subeybaja-btn-volver-menu:hover {
+    background: #c62828;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(229, 57, 53, 0.3);
+}
+
+/* ==================== JUEGO ==================== */
+.subeybaja-juego-wrapper {
+    width: 100%;
+    max-width: 720px;
+    margin: 2rem auto 6rem auto;
+    padding: 1rem;
+    color: #fff;
+}
+
+.subeybaja-cargando {
+    text-align: center;
+    color: #94a3b8;
+    font-size: 1rem;
+    padding: 2rem;
+}
+
+/* --- CATEGORÍA DISPLAY (en juego) --- */
+.subeybaja-categoria-display {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: rgba(229, 57, 53, 0.15);
+    border: 1px solid #e53935;
+    border-radius: 8px;
+    padding: 0.5rem 1rem;
+    margin: 0 auto 1rem auto;
+    font-size: 0.85rem;
+    color: #cbd5e1;
+}
+
+.subeybaja-categoria-icono {
+    font-size: 1.1rem;
+}
+
+.subeybaja-categoria-label {
+    color: #94a3b8;
+    font-weight: 600;
+}
+
+.subeybaja-categoria-valor {
+    color: #fff;
+    font-weight: 800;
+}
+
+/* --- HEADER DEL JUEGO --- */
+.subeybaja-juego-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.subeybaja-racha-display {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: rgba(240, 181, 53, 0.15);
+    border: 1px solid #f0b535;
+    border-radius: 8px;
+    padding: 0.4rem 0.8rem;
+}
+
+.subeybaja-racha-display .subeybaja-racha-label {
+    color: #f0b535;
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.subeybaja-racha-display .subeybaja-racha-numero {
+    color: #f0b535;
+    font-size: 1.3rem;
+    font-weight: 900;
+}
+
+/* --- TIMER BAR --- */
+.subeybaja-timer-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    margin-bottom: 1.5rem;
+}
+
+.subeybaja-timer-barra {
+    flex: 1;
+    height: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.subeybaja-timer-relleno {
+    height: 100%;
+    background: #22c55e;
+    transition: width 0.1s linear, background-color 0.3s ease;
+    border-radius: 4px;
+}
+
+.subeybaja-timer-alerta {
+    background: #f0b535 !important;
+}
+
+.subeybaja-timer-critico {
+    background: #e53935 !important;
+}
+
+.subeybaja-timer-texto {
+    color: #cbd5e1;
+    font-size: 0.85rem;
+    font-weight: 700;
+    min-width: 32px;
+    text-align: right;
+}
+
+/* --- CARDS DE JUGADORES --- */
+.subeybaja-cards-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8rem;
+    margin-bottom: 1.5rem;
+    flex-wrap: nowrap;
+}
+
+.subeybaja-vs {
+    color: #f0b535;
+    font-size: 1.5rem;
+    font-weight: 900;
+    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+    flex-shrink: 0;
+}
+
+.subeybaja-card {
+    flex: 1;
+    max-width: 280px;
+    background: #1a2634;
+    border: 3px solid #475569;
+    border-radius: 14px;
+    padding: 1rem 0.8rem;
+    text-align: center;
+    position: relative;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+.subeybaja-card-B {
+    border-color: #64748b;
+}
+
+.subeybaja-card-verde {
+    border-color: #22c55e !important;
+    background: rgba(34, 197, 94, 0.15) !important;
+}
+
+.subeybaja-card-rojo {
+    border-color: #e53935 !important;
+    background: rgba(229, 57, 53, 0.15) !important;
+}
+
+.subeybaja-card-lado {
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #0f1923;
+    color: #94a3b8;
+    font-size: 0.65rem;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    padding: 2px 10px;
+    border-radius: 4px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.subeybaja-card-imagen-wrapper {
+    width: 100px;
+    height: 100px;
+    margin: 0.8rem auto 0.6rem auto;
+    border-radius: 50%;
+    overflow: hidden;
+    background: #0f1923;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+.subeybaja-card-imagen {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.subeybaja-card-info {
+    margin-bottom: 0.6rem;
+}
+
+.subeybaja-card-nombre {
+    color: #fff;
+    font-size: 0.95rem;
+    font-weight: 700;
+    margin-bottom: 0.2rem;
+    line-height: 1.2;
+}
+
+.subeybaja-card-club {
+    color: #94a3b8;
+    font-size: 0.72rem;
+    font-weight: 600;
+    margin-bottom: 0.1rem;
+}
+
+.subeybaja-card-posicion {
+    color: #94a3b8;
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.subeybaja-card-valor {
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 8px;
+    padding: 0.6rem 0.5rem;
+    margin-top: 0.5rem;
+    min-height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.subeybaja-card-valor-oculto {
+    background: rgba(100, 116, 139, 0.1);
+    border: 2px dashed #64748b;
+}
+
+.subeybaja-card-interrogante {
+    color: #94a3b8;
+    font-size: 2.2rem;
+    font-weight: 900;
+    line-height: 1;
+}
+
+.subeybaja-card-valor-numero {
+    color: #f0b535;
+    font-size: 1.2rem;
+    font-weight: 900;
+}
+
+/* --- BOTONES DE ELECCIÓN --- */
+.subeybaja-botones-eleccion {
+    display: flex;
+    gap: 0.6rem;
+    justify-content: center;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.subeybaja-btn-eleccion {
+    flex: 1;
+    background: #1a2634;
+    border: 2px solid #475569;
+    color: #fff;
+    border-radius: 10px;
+    padding: 0.9rem 0.5rem;
+    font-size: 0.95rem;
+    font-weight: 800;
+    cursor: pointer;
+    transition: background-color 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.3rem;
+}
+
+.subeybaja-btn-eleccion:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(229, 57, 53, 0.3);
+}
+
+.subeybaja-btn-eleccion:disabled {
+    cursor: default;
+    opacity: 0.5;
+    transform: none;
+    box-shadow: none;
+}
+
+.subeybaja-btn-eleccion:disabled:hover {
+    background: #1a2634;
+    border-color: #475569;
+    transform: none;
+    box-shadow: none;
+}
+
+.subeybaja-btn-mayor:hover {
+    background: rgba(34, 197, 94, 0.2);
+    border-color: #22c55e;
+}
+
+.subeybaja-btn-empate:hover {
+    background: rgba(240, 181, 53, 0.2);
+    border-color: #f0b535;
+}
+
+.subeybaja-btn-menor:hover {
+    background: rgba(229, 57, 53, 0.2);
+    border-color: #e53935;
+}
+
+.subeybaja-btn-icono {
+    font-size: 1.3rem;
+    font-weight: 900;
+}
+
+/* --- FEEDBACK OVERLAY --- */
+.subeybaja-feedback-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+    animation: subeybaja-feedback-fade 0.3s ease;
+}
+
+@keyframes subeybaja-feedback-fade {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.subeybaja-feedback-contenido {
+    text-align: center;
+    padding: 2rem 3rem;
+    border-radius: 16px;
+    animation: subeybaja-feedback-pop 0.3s ease;
+}
+
+@keyframes subeybaja-feedback-pop {
+    from { transform: scale(0.7); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
+
+.subeybaja-feedback-verde .subeybaja-feedback-contenido {
+    background: linear-gradient(135deg, rgba(34, 197, 94, 0.95) 0%, rgba(21, 128, 61, 0.95) 100%);
+    color: #fff;
+    box-shadow: 0 0 20px rgba(34, 197, 94, 0.4);
+}
+
+.subeybaja-feedback-rojo .subeybaja-feedback-contenido {
+    background: linear-gradient(135deg, rgba(229, 57, 53, 0.95) 0%, rgba(153, 27, 27, 0.95) 100%);
+    color: #fff;
+    box-shadow: 0 0 20px rgba(229, 57, 53, 0.4);
+}
+
+.subeybaja-feedback-icono {
+    font-size: 5rem;
+    line-height: 1;
+    margin-bottom: 0.5rem;
+}
+
+.subeybaja-feedback-mensaje {
+    font-size: 1.6rem;
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+
+/* --- GAMEOVER --- */
+.subeybaja-gameover {
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.subeybaja-gameover-contenido {
+    text-align: center;
+    color: #fff;
+}
+
+.subeybaja-gameover-icono {
+    font-size: 5rem;
+    margin-bottom: 1rem;
+    line-height: 1;
+}
+
+.subeybaja-gameover-titulo {
+    color: #e53935;
+    font-size: 2rem;
+    font-weight: 800;
+    margin: 0 0 1.5rem 0;
+    letter-spacing: 2px;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+.subeybaja-gameover-racha {
+    background: rgba(229, 57, 53, 0.15);
+    border: 2px solid #e53935;
+    border-radius: 16px;
+    padding: 1.5rem;
+    display: inline-block;
+    min-width: 200px;
+}
+
+.subeybaja-gameover-racha-numero {
+    color: #e53935;
+    font-size: 4rem;
+    font-weight: 900;
+    line-height: 1;
+    display: block;
+}
+
+.subeybaja-gameover-racha-label {
+    color: #94a3b8;
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-top: 0.3rem;
+    display: block;
+}
+
+.subeybaja-gameover-mensaje {
+    color: #94a3b8;
+    font-size: 1rem;
+    margin: 1.5rem 0 0 0;
+}
+
+/* --- INTRO (countdown) --- */
+.subeybaja-juego-wrapper-intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.subeybaja-intro {
+    min-height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.subeybaja-countdown-overlay {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.subeybaja-countdown-numero {
+    color: #e53935;
+    font-size: 8rem;
+    font-weight: 900;
+    text-shadow: 0 0 20px rgba(229, 57, 53, 0.5), 0 2px 8px rgba(0, 0, 0, 0.6);
+    animation: subeybaja-countdown-pop 1s ease-out;
+}
+
+@keyframes subeybaja-countdown-pop {
+    0% { transform: scale(0.3); opacity: 0; }
+    50% { transform: scale(1.2); opacity: 1; }
+    100% { transform: scale(1); opacity: 1; }
+}
+
+/* ==================== RESPONSIVE ==================== */
+@media (max-width: 600px) {
+    .contenedor-configuracion {
+        padding: 0.75rem;
+    }
+
+    .subeybaja-contenido-contenedor {
+        padding: 1.5rem 1rem;
+    }
+
+    .subeybaja-cabecera {
+        margin-bottom: 1rem;
+    }
+
+    .badge-categoria-subeybaja {
+        font-size: 0.6rem;
+        padding: 0.25rem 0.6rem;
+    }
+
+    .titulo-hero-subeybaja { font-size: 1.8rem; }
+    .subtitulo-hero-subeybaja { font-size: 0.75rem; }
+
+    .descripcion-juego-subeybaja { font-size: 0.78rem; line-height: 1.45; }
+
+    .subeybaja-categoria-box { padding: 0.7rem; }
+    .subeybaja-categoria-box-valor { font-size: 0.95rem; }
+
+    .subeybaja-record-box { gap: 0.5rem; }
+    .subeybaja-record-box-valor { font-size: 1.1rem; }
+
+    .btn-iniciar-reto-subeybaja {
+        padding: 12px 24px;
+        font-size: 0.9rem;
+        width: 90%;
+    }
+
+    .alerta-jugado-subeybaja { padding: 1rem; }
+    .alerta-jugado-subeybaja p { font-size: 0.8rem; }
+    .alerta-icono-subeybaja { font-size: 1.3rem; }
+
+    .subeybaja-resultado-icono { font-size: 3rem; }
+    .subeybaja-resultado-titulo { font-size: 1.4rem; }
+    .subeybaja-resultado-racha-numero { font-size: 2.4rem; }
+    .subeybaja-record-badge { font-size: 0.85rem; padding: 0.6rem; }
+    .subeybaja-btn-volver-menu { font-size: 0.85rem; padding: 12px 24px; }
+
+    /* JUEGO */
+    .subeybaja-juego-wrapper { padding: 0.5rem; }
+
+    .subeybaja-juego-header { flex-direction: column; align-items: stretch; }
+    .subeybaja-categoria-display { font-size: 0.75rem; padding: 0.4rem 0.7rem; }
+
+    .subeybaja-cards-container { gap: 0.4rem; }
+    .subeybaja-card { padding: 0.6rem 0.4rem; border-width: 2px; }
+    .subeybaja-card-imagen-wrapper { width: 70px; height: 70px; }
+    .subeybaja-card-nombre { font-size: 0.78rem; }
+    .subeybaja-card-club { font-size: 0.6rem; }
+    .subeybaja-card-posicion { font-size: 0.55rem; }
+    .subeybaja-card-valor { padding: 0.4rem; min-height: 38px; }
+    .subeybaja-card-interrogante { font-size: 1.6rem; }
+    .subeybaja-card-valor-numero { font-size: 0.9rem; }
+    .subeybaja-vs { font-size: 1.1rem; }
+
+    .subeybaja-botones-eleccion { gap: 0.4rem; }
+    .subeybaja-btn-eleccion { padding: 0.7rem 0.3rem; font-size: 0.75rem; }
+    .subeybaja-btn-icono { font-size: 1.1rem; }
+
+    .subeybaja-feedback-contenido { padding: 1.5rem 2rem; }
+    .subeybaja-feedback-icono { font-size: 3.5rem; }
+    .subeybaja-feedback-mensaje { font-size: 1.2rem; }
+
+    .subeybaja-gameover-icono { font-size: 4rem; }
+    .subeybaja-gameover-titulo { font-size: 1.4rem; }
+    .subeybaja-gameover-racha-numero { font-size: 3rem; }
+    .subeybaja-gameover-racha { padding: 1.2rem; }
+
+    .subeybaja-countdown-numero { font-size: 5rem; }
+}
+
+@media (max-width: 380px) {
+    .subeybaja-contenido-contenedor { padding: 1.2rem 0.8rem; }
+
+    .titulo-hero-subeybaja { font-size: 1.5rem; }
+    .subtitulo-hero-subeybaja { font-size: 0.65rem; }
+
+    .descripcion-juego-subeybaja { font-size: 0.72rem; }
+
+    .subeybaja-card { padding: 0.5rem 0.3rem; }
+    .subeybaja-card-imagen-wrapper { width: 55px; height: 55px; }
+    .subeybaja-card-nombre { font-size: 0.7rem; }
+    .subeybaja-card-club, .subeybaja-card-posicion { display: none; }
+    .subeybaja-card-interrogante { font-size: 1.3rem; }
+    .subeybaja-card-valor-numero { font-size: 0.8rem; }
+    .subeybaja-vs { font-size: 0.9rem; }
+
+    .subeybaja-btn-eleccion { font-size: 0.68rem; padding: 0.6rem 0.2rem; }
+
+    .subeybaja-countdown-numero { font-size: 4rem; }
+}
