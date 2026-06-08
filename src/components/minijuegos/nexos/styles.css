@@ -101,6 +101,24 @@
     color: #ffffff;
 }
 
+.nexos-reglas {
+    text-align: left;
+    color: #94a3b8;
+    font-size: 0.85rem;
+    line-height: 1.6;
+    padding-left: 1.25rem;
+    margin: 0 0 1.5rem 0;
+    max-width: 500px;
+}
+
+.nexos-reglas li {
+    margin-bottom: 0.25rem;
+}
+
+.nexos-reglas strong {
+    color: #ffffff;
+}
+
 .menu-nexos-btn {
     background: #e53935;
     color: #fff;
@@ -536,6 +554,10 @@
         margin: 0 0 1.2rem 0;
     }
 
+    .nexos-reglas {
+        font-size: 0.78rem;
+    }
+
     .menu-nexos-btn {
         padding: 0.8rem 2rem;
         font-size: 0.9rem;
@@ -611,6 +633,11 @@
         font-size: 0.72rem;
         line-height: 1.45;
         margin: 0 0 1rem 0;
+    }
+
+    .nexos-reglas {
+        font-size: 0.72rem;
+        padding-left: 1rem;
     }
 
     .menu-nexos-ya-jugado {

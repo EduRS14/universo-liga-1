@@ -8,3 +8,13 @@ export interface ConfiguracionTop {
     fechaUltimaPartida: string;
     numeroJugadoresCompletados: number;
 }
+
+export interface ResultadoFinalTop {
+    dia: string;
+    gano: boolean;
+    goleadoresCompletados: number;
+    goleadoresTemporada: GoleadoresTemporadas;
+    indicesGoleadoresCompletados: number[];
+    seRindio: boolean;
+    tiempoTotalSegundos: number;
+}

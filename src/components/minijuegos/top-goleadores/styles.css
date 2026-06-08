@@ -241,6 +241,63 @@
   color: #ffffff;
 }
 
+/* --- BOTÓN VER RESULTADO --- */
+.btn-ver-resultado-top {
+  background: #d97706;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  padding: 14px 36px;
+  font-size: 1rem;
+  font-weight: 800;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+  text-transform: uppercase;
+}
+
+.btn-ver-resultado-top:hover {
+  background: #b45309;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(217, 119, 6, 0.4);
+}
+
+.btn-ver-resultado-top:active {
+  transform: scale(0.98);
+}
+
+/* --- PANEL DE RESULTADO FINAL (vista VER RESULTADO) --- */
+.top-resultado-contenedor {
+  padding: 1.5rem 1rem;
+}
+
+.top-resultado-panel {
+  width: 100%;
+  max-width: 720px;
+  margin: 0 auto;
+  background-color: #0f172a;
+  border-radius: 15px;
+  padding: 1.5rem 1.25rem;
+  text-align: center;
+}
+
+.top-resultado-titulo-temporada {
+  margin-top: 1.25rem;
+  text-align: center;
+}
+
+.top-resultado-lista {
+  margin-top: 0.75rem;
+  width: 100%;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.top-resultado-resumen {
+  margin-top: 1.25rem;
+  text-align: center;
+}
+
 /* --- RESPONSIVO MÓVIL --- */
 @media (max-width: 600px) {
   .top-contenido-contenedor { padding: 1.5rem 1rem; min-width: 90vw; }
@@ -269,6 +326,11 @@
   .alerta-icono-top { font-size: 1.2rem; }
   .alerta-jugado-top p { font-size: 0.78rem; }
   .alerta-jugado-top { padding: 1rem; }
+
+  .btn-ver-resultado-top { padding: 12px 24px; font-size: 0.85rem; width: 85%; }
+
+  .top-resultado-contenedor { padding: 1rem 0.6rem; }
+  .top-resultado-panel { padding: 1rem 0.75rem; border-radius: 12px; }
 }
 
 @media (max-width: 380px) {
@@ -282,4 +344,9 @@
   .radio-label-top { font-size: 0.65rem; padding: 6px 3px; }
 
   .btn-iniciar-reto-top { font-size: 0.78rem; padding: 10px 20px; }
+
+  .btn-ver-resultado-top { font-size: 0.78rem; padding: 10px 20px; }
+
+  .top-resultado-contenedor { padding: 0.75rem 0.4rem; }
+  .top-resultado-panel { padding: 0.85rem 0.5rem; }
 }
