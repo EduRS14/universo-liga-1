@@ -1,15 +1,17 @@
 import { useState, useEffect } from 'react';
 import Buscador from '../../../buscador';
-import Equipos from '../../../../data/minijuegos/equipos.json'; 
+import Equipos from '../../../../data/minijuegos/equipos.json';
 import Jugadores from '../../../../data/minijuegos/jugadores_obtenidos.json';
 import type { Jugador } from '../../../../types/minijuegos/jugador.interface';
-import type { ConfiguracionTop } from '../../../../types/minijuegos/tops/configuracion-top';
+import type { ConfiguracionTop, ResultadoFinalTop } from '../../../../types/minijuegos/tops/configuracion-top';
 import type { GoleadoresTemporadas } from '../../../../types/minijuegos/tops/goleadores';
 import './styles.css';
 
 // --- CONSTANTES Y CONFIGURACIÓN ---
 
 const CONFIGURACION_KEY = "configuracionTopGoleadores";
+const RESULTADO_KEY = "topGoleadoresResultado";
+const DURACION_REVISION = 5000;
 
 interface ObjetoReducido {
   id?: number;
@@ -41,6 +43,8 @@ export default function JuegoTopGoleadores() {
   const [tiempoRestante, setTiempoRestante] = useState<number>(0);
   const [estadoJuego, setEstadoJuego] = useState<string>('jugando');
   const [seRindio, setSeRindio] = useState(false);
+  const [fase, setFase] = useState<'jugando' | 'revisando' | 'finalizado'>('jugando');
+  const [tiempoTotal, setTiempoTotal] = useState<number>(0);
 
   // --- 1. CARGA INICIAL (RECUPERAR O INICIAR NUEVO) ---
   useEffect(() => {
@@ -133,6 +137,42 @@ export default function JuegoTopGoleadores() {
     return () => clearInterval(intervalo);
   }, [data, estadoJuego]);
 
+  // Cronómetro total del juego (para mostrar tiempo total en el resultado)
+  useEffect(() => {
+    if (estadoJuego !== 'jugando' || !data) return;
+    if (data.tiempoRestante === 0) return; // Sin tiempo, no contar
+    const intervalo = setInterval(() => {
+      setTiempoTotal((prev) => prev + 1);
+    }, 1000);
+    return () => clearInterval(intervalo);
+  }, [data, estadoJuego]);
+
+  // Detectar fin del juego y guardar resultado
+  useEffect(() => {
+    if (estadoJuego === 'jugando' || !goleadoresTemporadas) return;
+    if (fase !== 'jugando') return;
+
+    // Guardar resultado en localStorage
+    const resultado: ResultadoFinalTop = {
+      dia: new Date().toISOString().split('T')[0],
+      gano: estadoJuego === 'ganado',
+      goleadoresCompletados: numeroJugadoresCompletados,
+      goleadoresTemporada: goleadoresTemporadas,
+      indicesGoleadoresCompletados: indicesGoleadoresCompletados,
+      seRindio,
+      tiempoTotalSegundos: tiempoTotal,
+    };
+    localStorage.setItem(RESULTADO_KEY, JSON.stringify(resultado));
+
+    // Iniciar fase de revisión
+    setFase('revisando');
+    const timer = setTimeout(() => {
+      setFase('finalizado');
+    }, DURACION_REVISION);
+    return () => clearTimeout(timer);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [estadoJuego]);
+
   // Efecto para generar variable en localStorage que indique que el juego ya se jugó hoy
   useEffect(() => {
     if (estadoJuego !== 'jugando') {
@@ -179,9 +219,7 @@ export default function JuegoTopGoleadores() {
 
   const handleRendirse = () => {
     setSeRindio(true);
-    setTimeout(() => {
-      setEstadoJuego('perdido');
-    }, 5000);
+    setEstadoJuego('perdido');
   };
 
   // FUNCIÓN PARA REINICIAR Y VOLVER AL MENÚ
@@ -195,29 +233,32 @@ export default function JuegoTopGoleadores() {
     window.location.reload();
   }
 
-  // --- RENDERIZADO: PANTALLA FIN DE JUEGO ---
-  if (estadoJuego !== 'jugando') {
+  // --- RENDERIZADO: PANTALLA FIN DE JUEGO (panel final, tras revisión) ---
+  if (fase === 'finalizado') {
       return (
           <div className="juego-container fade-in d-flex justify-content-center align-items-center">
               <div className="text-center contenedor-menu-fin" style={{ border: `2px solid ${estadoJuego === 'ganado' ? '#22c55e' : '#ef4444'}` }}>
                   <h1 className='texto-estado-juego' style={{ color: estadoJuego === 'ganado' ? '#22c55e' : '#ef4444' }}>
                       {estadoJuego === 'ganado' ? '¡VICTORIA!' : 'JUEGO TERMINADO'}
                   </h1>
-                  
+
                   <p className='texto-explicacion-estado'>
-                      {estadoJuego === 'ganado' 
-                          ? 'Has completado el top de goleadores con éxito. ¡Felicidades!' 
+                      {estadoJuego === 'ganado'
+                          ? 'Has completado el top de goleadores con éxito. ¡Felicidades!'
                           : 'No lograste completar el top de goleadores a tiempo. ¡Suerte para la próxima!'}
                   </p>
 
                   <div style={{ marginTop: '30px' }}>
                       <p className='texto-explicacion-estado'>Goleadores encontrados: {numeroJugadoresCompletados} / 10</p>
-                      
-                      <button 
+                      {seRindio && (
+                          <p className='texto-explicacion-estado'>Te rendiste</p>
+                      )}
+
+                      <button
                           className="btn btn-primary mt-3"
-                          onClick={volver} // Llama a la limpieza total
+                          onClick={volver}
                       >
-                          Jugar de Nuevo
+                          VOLVER AL MENÚ
                       </button>
                   </div>
               </div>
@@ -257,11 +298,16 @@ export default function JuegoTopGoleadores() {
                   {
                     goleadoresTemporadas?.goleadores.map((goleador, index) => {
                       const esCompletado = indicesGoleadoresCompletados[index] === 1;
+                      const mostrarRevelado = esCompletado || seRindio || fase !== 'jugando';
                       const jugadorInfo = jugadoresReducidos[goleador.id_jugador];
                       const equiposInfo = goleador.id_equipo.map(id_eq => EQUIPOS[id_eq]);
+                      const claseFila = esCompletado
+                        ? 'contenedor-fila-goleador-conseguido'
+                        : (seRindio || fase !== 'jugando')
+                          ? 'contenedor-fila-goleador-rindio'
+                          : 'contenedor-fila-goleador';
                       return (
-                        <div className={`col-11 col-lg-10 ${esCompletado ? 'contenedor-fila-goleador-conseguido' : 
-                        seRindio ? 'contenedor-fila-goleador-rindio' : 'contenedor-fila-goleador'} my-1`} key={index}>
+                        <div className={`col-11 col-lg-10 ${claseFila} my-1`} key={index}>
                           <div className="row align-items-center justify-content-center">
 
                             <div className="col-1 col-lg-2 text-center">
@@ -270,7 +316,7 @@ export default function JuegoTopGoleadores() {
 
                             <div className="col-7 text-center">
                               <div className="row align-items-center justify-content-between">
-                                {esCompletado || seRindio ? (
+                                {mostrarRevelado ? (
                                   <>
                                     <div className="col-2 col-lg-3 text-center px-0">
                                       <img src={jugadorInfo?.url_foto} alt={jugadorInfo?.nombre} className='img-fluid img-jugador-goleador'/>
@@ -316,7 +362,7 @@ export default function JuegoTopGoleadores() {
               </div>
               
               {
-                !seRindio ? (
+                !seRindio && fase === 'jugando' ? (
                   <>
                   <div className="col-8 text-center">
                     {errorMsg && (
@@ -328,26 +374,26 @@ export default function JuegoTopGoleadores() {
 
                   <div className="col-11 col-lg-9 contenedor-controles">
                     <div className="row justify-content-evenly align-items-center">
-                  
+                   
                       <div className="col-6 col-lg-4 d-flex justify-content-center align-items-center px-0">
                         <div className='contenedor-tiempo'>
                           <span className='texto-tiempo-restante'>Tiempo Restante: </span>
                           <span className='texto-valor-tiempo-restante'
-                          style={{ 
+                          style={{
                                     color: (tiempoRestante > 0 && tiempoRestante <= 10) ? '#ef4444' : 'white',
                                     fontSize: '1.2rem'
                                 }}>{formatoTiempo(tiempoRestante)}</span>
                         </div>
                       </div>
-                              
+                             
                       <div className="col-5 d-flex justify-content-center align-items-center d-none d-lg-block">
-                        <Buscador 
+                        <Buscador
                           onJugadorSeleccionado={agregarJugadorAlTop}
                         />
                       </div>
-                              
+                             
                       <div className="col-4 col-lg-3 d-flex justify-content-center align-items-center">
-                        <button 
+                        <button
                           className="btn btn-danger"
                           onClick={handleRendirse}
                         >
@@ -356,23 +402,23 @@ export default function JuegoTopGoleadores() {
                       </div>
 
                       <div className="col-12 d-flex justify-content-center align-items-center d-block d-lg-none">
-                        <Buscador 
+                        <Buscador
                           onJugadorSeleccionado={agregarJugadorAlTop}
                         />
                       </div>
-                              
+                             
                     </div>
                   </div>
-                  </> 
-                  ) : (
-                    <>
-                    <div className="col-8 text-center">
-                      <div className="alerta-rendicion" role="alert">
-                        🏳️ Has decidido rendirte. Mostrando resultados...
-                      </div>
+                  </>
+                ) : seRindio ? (
+                  <>
+                  <div className="col-8 text-center">
+                    <div className="alerta-rendicion" role="alert">
+                      🏳️ Has decidido rendirte. Mostrando resultados...
                     </div>
-                    </>
-                  )
+                  </div>
+                  </>
+                ) : null
               }
 
             </div>
