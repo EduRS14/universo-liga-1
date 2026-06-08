@@ -1,0 +1,22 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import MenuBajoLaLupa from '../../components/minijuegos/bajo-la-lupa/Menu-BajoLaLupa';
+---
+
+<Layout>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 contenedor-titulo-calculadora">
+                <div class="row gx-0 justify-content-center align-items-center">
+                    <div class="col-6">
+                        <h1 class="text-center titulo-calculadora">MINIJUEGO "BAJO LA LUPA"</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <MenuBajoLaLupa client:load />
+
+</Layout>

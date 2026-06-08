@@ -22,8 +22,17 @@ export default function NexosMenu({ onJugar, deshabilitado = false }: Props) {
 
                     <div className="nexos-cuerpo-accion text-center">
                         <p className="menu-nexos-descripcion">
-                            ¿Te consideras un <strong>verdadero especialista</strong> en el mercado de pases de nuestra liga? <strong>Nexos</strong> es el laboratorio donde los vestuarios, las trayectorias y la historia del fútbol peruano se entrelazan. El desafío pondrá a prueba tu memoria de forma milimétrica: debes <strong>conectar a dos futbolistas</strong> de épocas o estilos totalmente distintos construyendo un <strong>puente de compañeros de equipo</strong> que compartieron club y año, y que hayan jugado en la primera división entre 2010 y 2026. ¿Serás capaz de trazar la <strong>ruta perfecta con la menor cantidad de pases posibles</strong> o te quedarás sin ideas a mitad del camino? ¡Demuestra que conoces el recorrido de cada camiseta y encuentra el nexo del día! <strong>Reto diario</strong>
+                            <strong>¿Te consideras un especialista en el mercado de pases de nuestra liga?</strong>
+                            {" "}Nexos es el laboratorio donde los vestuarios, las trayectorias y la historia del fútbol peruano se entrelazan. Tu misión es <strong>conectar a dos futbolistas</strong> distintos construyendo un puente de compañeros de equipo que compartieron club y año, en la primera división entre 2010 y 2026.
                         </p>
+
+                        <ul className="nexos-reglas">
+                            <li>Cada jugador agregado al camino debe haber sido <strong>compañero de equipo</strong> del anterior en algún año.</li>
+                            <li>Tienes que <strong>conectar un origen y un destino</strong> en la menor cantidad de pases posible.</li>
+                            <li>Menos pases = más estrellas (1⭐, 2⭐ o 3⭐ según la eficiencia del camino).</li>
+                            <li>Si no puedes conectar, puedes <strong>rendirte</strong> y ver el resultado del día.</li>
+                            <li><strong>Reto diario</strong></li>
+                        </ul>
 
                         {deshabilitado && (
                             <div className="menu-nexos-ya-jugado">

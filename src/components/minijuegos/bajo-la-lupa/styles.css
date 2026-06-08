@@ -1,0 +1,1048 @@
+/* --- CONTENEDOR GENERAL --- */
+.contenedor-configuracion {
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    margin: 1rem 0;
+}
+
+/* --- TARJETA CON FONDO TOTAL --- */
+.menu-lupa-full-bg {
+    width: 100%;
+    max-width: 720px;
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.5);
+    border: 1px solid #1e293b;
+    background-image: url('/img/minijuegos/juegos/bajo-la-lupa.webp');
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+}
+
+.lupa-overlay-fondo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        to bottom,
+        rgba(15, 23, 42, 0.88) 0%,
+        rgba(15, 23, 42, 0.88) 50%,
+        rgba(0, 0, 0, 0.92) 100%
+    );
+    z-index: 1;
+}
+
+/* --- TARJETA RESULTADO (color plano, sin imagen) --- */
+.menu-lupa-resultado {
+    width: 100%;
+    max-width: 720px;
+    position: relative;
+    border-radius: 20px;
+    background: #0f172a;
+    border: 1px solid #1e293b;
+    box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.5);
+}
+
+.lupa-contenido-contenedor {
+    position: relative;
+    z-index: 2;
+    padding: 3rem 2.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.lupa-cabecera {
+    margin-bottom: 1.5rem;
+}
+
+.lupa-cuerpo-accion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+/* --- BADGE --- */
+.badge-lupa {
+    display: inline-block;
+    background: #d97706;
+    color: #fff;
+    font-size: 0.7rem;
+    font-weight: 700;
+    padding: 0.3rem 0.8rem;
+    border-radius: 4px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 1rem;
+}
+
+/* --- TÍTULO HERO --- */
+.lupa-titulo {
+    color: #d97706;
+    font-size: 3rem;
+    font-weight: 800;
+    margin: 0 0 0.5rem 0;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+.lupa-subtitulo {
+    color: #94a3b8;
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 0 0 1.5rem 0;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+/* --- DESCRIPCIÓN --- */
+.lupa-descripcion {
+    color: #cbd5e1;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin: 0 0 1.5rem 0;
+    max-width: 500px;
+    text-align: justify;
+}
+
+.lupa-descripcion strong {
+    color: #ffffff;
+}
+
+/* --- REGLAS --- */
+.lupa-reglas {
+    text-align: left;
+    color: #94a3b8;
+    font-size: 0.85rem;
+    line-height: 1.6;
+    padding-left: 1.25rem;
+    margin: 0 0 1.5rem 0;
+    max-width: 500px;
+}
+
+.lupa-reglas li {
+    margin-bottom: 0.25rem;
+}
+
+.lupa-reglas strong {
+    color: #ffffff;
+}
+
+/* --- BOTÓN JUGAR --- */
+.lupa-btn-jugar {
+    background: #e53935;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 1rem 3rem;
+    font-size: 1rem;
+    font-weight: 800;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.lupa-btn-jugar:hover {
+    background: #c62828;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(229, 57, 53, 0.4);
+}
+
+.lupa-btn-jugar:active {
+    transform: scale(0.98);
+}
+
+/* --- RESULTADO --- */
+.lupa-resultado-texto {
+    color: #cbd5e1;
+    text-align: center;
+    margin: 1rem 0;
+    font-size: 0.95rem;
+}
+
+.lupa-btn-volver {
+    background: #e53935;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 0.8rem 2rem;
+    font-size: 0.9rem;
+    font-weight: 800;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.lupa-btn-volver:hover {
+    background: #c62828;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(229, 57, 53, 0.4);
+}
+
+/* --- YA JUGADO HOY (banner) --- */
+.lupa-ya-jugado {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.6rem;
+    background: rgba(217, 119, 6, 0.1);
+    border: 1px solid #d97706;
+    border-radius: 8px;
+    padding: 0.7rem 1rem;
+    margin: 0 0 1.2rem 0;
+    color: #cbd5e1;
+    font-size: 0.85rem;
+    max-width: 500px;
+    width: 100%;
+}
+
+.lupa-ya-jugado-icono {
+    font-size: 1.1rem;
+}
+
+/* --- BOTÓN VER RESULTADO --- */
+.lupa-btn-ver-resultado {
+    background: #d97706;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 1rem 3rem;
+    font-size: 1rem;
+    font-weight: 800;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.lupa-btn-ver-resultado:hover {
+    background: #b45309;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(217, 119, 6, 0.4);
+}
+
+/* ==================== JUEGO ==================== */
+.lupa-juego {
+    max-width: 600px;
+    margin: 0 auto 6rem auto;
+    padding: 1.5rem;
+    color: #e2e8f0;
+}
+
+/* --- Header: silueta + badge de intentos --- */
+.lupa-juego-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.lupa-silueta {
+    width: 64px;
+    height: 64px;
+    border-radius: 6px;
+    border: 2px solid #d97706;
+    background: #1e293b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.25rem;
+    color: #475569;
+    font-weight: 800;
+    line-height: 1;
+    overflow: hidden;
+    flex: 0 0 auto;
+}
+
+.lupa-silueta-foto {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.lupa-silueta-texto {
+    font-size: 2.25rem;
+    color: #475569;
+    font-weight: 800;
+    line-height: 1;
+    display: block;
+}
+
+.lupa-silueta-fade-out {
+    animation: lupa-fade-out 0.3s ease forwards;
+}
+
+.lupa-silueta-fade-in {
+    animation: lupa-fade-in 0.4s ease forwards;
+}
+
+@keyframes lupa-fade-out {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes lupa-fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.lupa-revelado-fadein {
+    animation: lupa-fade-in 0.4s ease both;
+    width: 100%;
+}
+
+.lupa-bloqueado {
+    opacity: 0.55;
+    pointer-events: none;
+    transition: opacity 0.2s ease;
+}
+
+/* --- Badge intentos (mantener diseño actual) --- */
+.lupa-badge-intentos {
+    background: transparent;
+    border: none;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.lupa-badge-circulos {
+    display: flex;
+    gap: 0.4rem;
+    flex-wrap: wrap;
+}
+
+.lupa-badge-circulo {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.lupa-badge-circulo-disponible {
+    background: #22c55e;
+}
+
+.lupa-badge-circulo-usado {
+    background: #475569;
+    border: 1px solid #64748b;
+}
+
+.lupa-badge-contador {
+    color: #cbd5e1;
+    font-size: 0.85rem;
+    font-weight: 700;
+    margin-left: 0.4rem;
+    font-variant-numeric: tabular-nums;
+}
+
+.lupa-badge-numero {
+    display: none;
+}
+
+.lupa-badge-numero-valor {
+    color: #f8fafc;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.lupa-badge-numero-label {
+    color: #94a3b8;
+    font-size: 0.75rem;
+}
+
+.lupa-badge-nombre-usado {
+    display: none;
+}
+
+/* --- Caja de filtros (borde cyan) --- */
+.lupa-filtros-box {
+    background: rgba(6, 182, 212, 0.04);
+    border: 1px solid rgba(6, 182, 212, 0.4);
+    border-radius: 10px;
+    padding: 0.85rem 1rem 1rem 1rem;
+    margin-bottom: 0.75rem;
+}
+
+.lupa-filtros-label {
+    color: #94a3b8;
+    font-size: 0.8rem;
+    margin-bottom: 0.5rem;
+}
+
+/* --- Filtros (chips) --- */
+.lupa-filtros {
+    display: block;
+}
+
+.lupa-filtros-chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    margin-bottom: 0.6rem;
+}
+
+.lupa-filtro-chip {
+    background: #475569;
+    color: #cbd5e1;
+    border: 1px solid #64748b;
+    border-radius: 16px;
+    padding: 0.35rem 0.85rem;
+    font-size: 0.82rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.15s ease;
+}
+
+.lupa-filtro-chip:hover {
+    background: #64748b;
+}
+
+.lupa-filtro-chip-activo {
+    background: #d97706;
+    color: #fff;
+    border-color: #d97706;
+}
+
+.lupa-filtros-dropdown {
+    margin-bottom: 0.5rem;
+}
+
+.lupa-filtros-preguntar-row {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 0.25rem;
+    clear: both;
+}
+
+.lupa-filtros-btn-preguntar {
+    background: #d97706;
+    border: 1px solid #d97706;
+    color: #fff;
+    font-weight: 700;
+    padding: 0.55rem 1.5rem;
+    font-size: 0.9rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.lupa-filtros-btn-preguntar:hover:not(:disabled) {
+    background: #b45309;
+    border-color: #b45309;
+}
+
+.lupa-filtros-btn-preguntar:disabled {
+    background: #443e37;
+    border-color: #837a6f;
+    color: #cbd5e1;
+    cursor: not-allowed;
+}
+
+/* --- Select con autocompletado (reutilizado por los chips) --- */
+.lupa-select-autocomplete {
+    position: relative;
+}
+
+.lupa-select-input {
+    background: #1e293b !important;
+    border: 1px solid #334155 !important;
+    color: #f8fafc !important;
+    font-size: 0.875rem;
+}
+
+.lupa-select-input:focus {
+    background: #1e293b !important;
+    border-color: #d97706 !important;
+    color: #f8fafc !important;
+    box-shadow: 0 0 0 0.2rem rgba(217, 119, 6, 0.25) !important;
+}
+
+.lupa-select-input::placeholder {
+    color: #64748b;
+}
+
+.lupa-select-dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: #1e293b;
+    border: 1px solid #334155;
+    border-top: none;
+    border-radius: 0 0 6px 6px;
+    list-style: none;
+    margin: 0;
+    padding: 0.25rem 0;
+    max-height: 240px;
+    overflow-y: auto;
+    z-index: 1000;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+.lupa-select-option {
+    padding: 0.5rem 0.75rem;
+    color: #cbd5e1;
+    font-size: 0.875rem;
+    cursor: pointer;
+    transition: background-color 0.1s ease;
+}
+
+.lupa-select-option:hover,
+.lupa-select-option-highlighted {
+    background: #334155;
+    color: #f8fafc;
+}
+
+.lupa-select-option-empty {
+    color: #64748b;
+    cursor: default;
+    font-style: italic;
+}
+
+.lupa-select-option-empty:hover {
+    background: transparent;
+    color: #64748b;
+}
+
+/* --- Texto "Te quedan X preguntas" --- */
+.lupa-preguntas-restantes {
+    color: #cbd5e1;
+    text-align: center;
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin: 0.6rem 0 0.75rem 0;
+}
+
+/* --- Sin preguntas (agotadas) --- */
+.lupa-sin-preguntas {
+    color: #94a3b8;
+    font-size: 0.85rem;
+    text-align: center;
+    padding: 0.75rem;
+    background: #1e293b;
+    border-radius: 8px;
+    font-style: italic;
+    margin-bottom: 0.75rem;
+}
+
+/* --- Caja del historial (borde ámbar) --- */
+.lupa-historial-box {
+    border: 2px solid #d97706;
+    border-radius: 12px;
+    background: rgba(0, 0, 0, 0.25);
+    padding: 0.9rem;
+    min-height: 180px;
+    margin-bottom: 1rem;
+}
+
+.lupa-historial-contenido {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.lupa-historial-entry {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #cbd5e1;
+    font-size: 0.85rem;
+}
+
+.lupa-historial-q {
+    flex: 1;
+}
+
+.lupa-historial-a {
+    font-weight: 800;
+    padding: 0.15rem 0.55rem;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    color: #fff;
+    flex: 0 0 auto;
+}
+
+.lupa-historial-a.si {
+    background: #16a34a;
+}
+
+.lupa-historial-a.no {
+    background: #dc2626;
+}
+
+.lupa-historial-vacio {
+    color: #64748b;
+    text-align: center;
+    padding: 1.5rem 0;
+    font-style: italic;
+    font-size: 0.85rem;
+}
+
+/* --- Arriesgar (compacto) --- */
+.lupa-arriesgar {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.4rem;
+    margin-top: 0.5rem;
+}
+
+.lupa-arriesgar-titulo {
+    color: #cbd5e1;
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin: 0 0 0.4rem 0;
+    text-align: center;
+}
+
+.lupa-arriesgar-contador {
+    color: #94a3b8;
+    font-size: 0.78rem;
+    margin: 0 0 0.4rem 0;
+    text-align: center;
+    font-variant-numeric: tabular-nums;
+}
+
+.lupa-arriesgar-label {
+    display: none;
+}
+
+.lupa-arriesgar-grupo {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.lupa-arriesgar-input {
+    background: #1e293b !important;
+    border: 1px solid #334155 !important;
+    color: #f8fafc !important;
+    flex: 1;
+}
+
+.lupa-arriesgar-input:focus {
+    background: #1e293b !important;
+    border-color: #d97706 !important;
+    color: #f8fafc !important;
+    box-shadow: 0 0 0 0.2rem rgba(217, 119, 6, 0.25) !important;
+}
+
+.lupa-arriesgar-input::placeholder {
+    color: #64748b;
+}
+
+.lupa-arriesgar-btn {
+    display: none;
+}
+
+.lupa-arriesgar-usado {
+    color: #f0b535;
+    font-size: 0.75rem;
+    font-style: italic;
+}
+
+/* --- Buscador de nombre (autocomplete) --- */
+.lupa-buscador-nombre {
+    position: relative;
+}
+
+.lupa-buscador-nombre-input {
+    background: #1e293b !important;
+    border: 1px solid #334155 !important;
+    color: #f8fafc !important;
+    flex: 1;
+    width: 100%;
+}
+
+.lupa-buscador-nombre-input:focus {
+    background: #1e293b !important;
+    border-color: #d97706 !important;
+    color: #f8fafc !important;
+    box-shadow: 0 0 0 0.2rem rgba(217, 119, 6, 0.25) !important;
+}
+
+.lupa-buscador-nombre-input::placeholder {
+    color: #64748b;
+}
+
+.lupa-buscador-nombre-dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: #1e293b;
+    border: 1px solid #334155;
+    border-top: none;
+    border-radius: 0 0 6px 6px;
+    list-style: none;
+    margin: 0;
+    padding: 0.25rem 0;
+    max-height: 240px;
+    overflow-y: auto;
+    z-index: 1000;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+.lupa-buscador-nombre-option {
+    padding: 0.5rem 0.75rem;
+    color: #cbd5e1;
+    font-size: 0.875rem;
+    cursor: pointer;
+    transition: background-color 0.1s ease;
+}
+
+.lupa-buscador-nombre-option:hover,
+.lupa-buscador-nombre-option-highlighted {
+    background: #334155;
+    color: #f8fafc;
+}
+
+/* ==================== REVELADO (resultado final) ==================== */
+.lupa-revelado {
+    width: 100%;
+    color: #e2e8f0;
+    position: relative;
+    overflow: hidden;
+}
+
+.lupa-revelado-titulo {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.lupa-revelado-win .lupa-revelado-titulo {
+    color: #22c55e;
+}
+
+.lupa-revelado-gameover .lupa-revelado-titulo {
+    color: #e53935;
+}
+
+.lupa-revelado-tarjeta {
+    background-color: #1d1915;
+    border: 1px solid #1e293b;
+    border-radius: 12px;
+    padding: 1.5rem;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}
+
+.lupa-revelado-win .lupa-revelado-tarjeta {
+    border-color: #22c55e;
+}
+
+.lupa-revelado-gameover .lupa-revelado-tarjeta {
+    border-color: #e53935;
+}
+
+.lupa-revelado-foto {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #334155;
+    margin: 0 auto 1rem;
+    display: block;
+    background: #1e293b;
+}
+
+.lupa-revelado-nombre {
+    color: #f8fafc;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.lupa-revelado-info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.75rem;
+    text-align: left;
+    margin-top: 1rem;
+}
+
+.lupa-revelado-info-item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.15rem;
+    padding: 0.5rem;
+    background: #1e293b;
+    border-radius: 6px;
+}
+
+.lupa-revelado-info-label {
+    color: #94a3b8;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-weight: 600;
+}
+
+.lupa-revelado-info-valor {
+    color: #f8fafc;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.lupa-revelado-resumen {
+    margin-top: 1rem;
+    color: #94a3b8;
+    font-size: 0.85rem;
+}
+
+/* --- Fade in --- */
+.fade-in {
+    animation: lupa-fade-in 0.3s ease;
+}
+
+/* ==================== RESPONSIVE ==================== */
+@media (max-width: 768px) {
+    .contenedor-configuracion {
+        padding: 0.75rem;
+    }
+
+    .lupa-contenido-contenedor {
+        padding: 1.8rem 1.2rem;
+    }
+
+    .lupa-cabecera {
+        margin-bottom: 1rem;
+    }
+
+    .badge-lupa {
+        font-size: 0.6rem;
+        padding: 0.25rem 0.6rem;
+    }
+
+    .lupa-titulo {
+        font-size: 2rem;
+    }
+
+    .lupa-subtitulo {
+        font-size: 0.85rem;
+        margin: 0 0 0.8rem 0;
+        letter-spacing: 1.2px;
+    }
+
+    .lupa-descripcion {
+        font-size: 0.85rem;
+        line-height: 1.5;
+        margin: 0 0 1.2rem 0;
+    }
+
+    .lupa-reglas {
+        font-size: 0.78rem;
+    }
+
+    .lupa-btn-jugar {
+        padding: 0.8rem 2rem;
+        font-size: 0.9rem;
+    }
+
+    .lupa-btn-ver-resultado {
+        padding: 0.8rem 2rem;
+        font-size: 0.9rem;
+    }
+
+    .lupa-ya-jugado {
+        font-size: 0.78rem;
+        padding: 0.6rem 0.8rem;
+    }
+
+    .lupa-juego {
+        padding: 1rem;
+    }
+
+    .lupa-revelado {
+        padding: 1rem 0.5rem;
+    }
+
+    .lupa-revelado-titulo {
+        font-size: 1.25rem;
+        margin-bottom: 0.75rem;
+    }
+
+    .lupa-revelado-tarjeta {
+        padding: 1.25rem 1rem;
+    }
+
+    .lupa-revelado-foto {
+        width: 110px;
+        height: 110px;
+    }
+
+    .lupa-revelado-nombre {
+        font-size: 1.35rem;
+        margin-bottom: 0.75rem;
+    }
+
+    .lupa-revelado-info {
+        grid-template-columns: 1fr;
+        gap: 0.5rem;
+    }
+
+    .lupa-revelado-info-item {
+        padding: 0.4rem 0.5rem;
+    }
+
+    .lupa-revelado-info-label {
+        font-size: 0.65rem;
+    }
+
+    .lupa-revelado-info-valor {
+        font-size: 0.82rem;
+    }
+
+    .lupa-revelado-resumen {
+        font-size: 0.78rem;
+        margin-top: 0.75rem;
+    }
+
+    .lupa-resultado-texto {
+        font-size: 0.85rem;
+        margin: 0.75rem 0;
+    }
+
+    .lupa-historial-box {
+        padding: 0.75rem;
+        min-height: 140px;
+    }
+
+    .lupa-historial-entry {
+        font-size: 0.78rem;
+    }
+
+    .lupa-arriesgar-titulo {
+        font-size: 0.82rem;
+    }
+
+    .lupa-arriesgar-contador {
+        font-size: 0.72rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .lupa-contenido-contenedor {
+        padding: 1.2rem 0.9rem;
+    }
+
+    .lupa-titulo {
+        font-size: 1.5rem;
+        margin: 0 0 0.3rem 0;
+    }
+
+    .lupa-subtitulo {
+        font-size: 0.7rem;
+        margin: 0 0 0.7rem 0;
+        letter-spacing: 1px;
+    }
+
+    .lupa-descripcion {
+        font-size: 0.72rem;
+        line-height: 1.45;
+        margin: 0 0 1rem 0;
+    }
+
+    .lupa-reglas {
+        font-size: 0.72rem;
+        padding-left: 1rem;
+    }
+
+    .lupa-btn-jugar {
+        padding: 0.7rem 1.8rem;
+        font-size: 0.8rem;
+        width: 80%;
+    }
+
+    .lupa-btn-ver-resultado {
+        padding: 0.7rem 1.8rem;
+        font-size: 0.8rem;
+        width: 80%;
+    }
+
+    .lupa-juego {
+        padding: 0.75rem;
+    }
+
+    .lupa-silueta {
+        width: 50px;
+        height: 50px;
+        font-size: 1.75rem;
+    }
+
+    .lupa-juego-header {
+        gap: 1rem;
+    }
+
+    .lupa-filtro-chip {
+        font-size: 0.75rem;
+        padding: 0.3rem 0.7rem;
+    }
+
+    .lupa-filtros-box {
+        padding: 0.7rem 0.8rem;
+    }
+
+    .lupa-arriesgar-grupo {
+        flex-direction: column;
+    }
+
+    .lupa-badge-circulo {
+        width: 12px;
+        height: 12px;
+    }
+
+    .lupa-revelado-foto {
+        width: 90px;
+        height: 90px;
+    }
+
+    .lupa-revelado-nombre {
+        font-size: 1.2rem;
+    }
+
+    .lupa-revelado-tarjeta {
+        padding: 1rem 0.75rem;
+    }
+
+    .lupa-revelado-info-item {
+        padding: 0.35rem 0.45rem;
+    }
+
+    .lupa-revelado-info-valor {
+        font-size: 0.75rem;
+    }
+
+    .lupa-historial-box {
+        padding: 0.6rem;
+        min-height: 120px;
+    }
+
+    .lupa-historial-entry {
+        font-size: 0.72rem;
+    }
+}
