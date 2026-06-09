@@ -22,27 +22,32 @@
       "altura_msnm": 3053,
       "url_foto": "/img/equipos/estadios/union_tarma.webp"
     },
-    "cuerpo_tecnico": { "dt": "Pablo Trobbiani", "nacionalidad": "ESP" },
+    "cuerpo_tecnico": { "dt": "Diego Ripacolli (Interino)", "nacionalidad": "ARG" },
     "plantilla": {
       "arqueros": [
         { "nombre": "Juan Valencia", "nacionalidad": "PER" },
         { "nombre": "Carlos Solís", "nacionalidad": "PER" },
-        { "nombre": "Edú Azañero", "nacionalidad": "PER" }
+        { "nombre": "Enzo Mori", "nacionalidad": "PER" }
       ],
       "defensas": [
         { "nombre": "Ronny Biojó", "nacionalidad": "ECU" },
-        { "nombre": "John Narváez", "nacionalidad": "ECU" },
         { "nombre": "Jhair Soto", "nacionalidad": "PER" },
-        { "nombre": "Carlos Cabello", "nacionalidad": "PER" },
-        { "nombre": "Luis Gómez", "nacionalidad": "PER" },
-        { "nombre": "Arthur Gutiérrez", "nacionalidad": "PER" }
+        { "nombre": "Leonardo Rugel", "nacionalidad": "PER" },
+        { "nombre": "John Narváez", "nacionalidad": "ECU" },
+        { "nombre": "Arthur Gutiérrez", "nacionalidad": "PER" },
+        { "nombre": "Luis Gómez", "nacionalidad": "ECU" },
+        { "nombre": "Jerry Navarro", "nacionalidad": "PER" },
+        { "nombre": "Joao Acosta", "nacionalidad": "PER" }
       ],
       "volantes": [
-        { "nombre": "Jhon Vega", "nacionalidad": "PER" },
-        { "nombre": "Jordan Guivin", "nacionalidad": "PER" },
         { "nombre": "Luis Pérez", "nacionalidad": "COL" },
+        { "nombre": "Jhon Vega", "nacionalidad": "PER" },
+        { "nombre": "Ángel Ojeda", "nacionalidad": "PER" },
+        { "nombre": "Jordan Guivin", "nacionalidad": "PER" },
         { "nombre": "Josue Alvino", "nacionalidad": "PER" },
         { "nombre": "Jair Reyes", "nacionalidad": "PER" },
+        { "nombre": "Emerson García", "nacionalidad": "PER" },
+        { "nombre": "Aarón Carnero", "nacionalidad": "PER" },
         { "nombre": "Víctor Cedrón", "nacionalidad": "PER" },
         { "nombre": "Joao Rojas", "nacionalidad": "ECU" },
         { "nombre": "Alexander Hidalgo", "nacionalidad": "PER" },
@@ -50,11 +55,15 @@
       ],
       "delanteros": [
         { "nombre": "Luis Benites", "nacionalidad": "PER" },
-        { "nombre": "Óscar Pinto", "nacionalidad": "PER" },
-        { "nombre": "Hideyoshi Arakaki", "nacionalidad": "PER" },
+        { "nombre": "Aylton Mazzo", "nacionalidad": "PER" },
         { "nombre": "Jhojan Garcilazo", "nacionalidad": "PER" },
-        { "nombre": "Hernán Rengifo", "nacionalidad": "PER" },
-        { "nombre": "Nicolás Rengifo", "nacionalidad": "PER" }
+        { "nombre": "Carlos Cabello", "nacionalidad": "PER" },
+        { "nombre": "Hideyoshi Arakaki", "nacionalidad": "PER" },
+        { "nombre": "Anthony Cubas", "nacionalidad": "PER" },
+        { "nombre": "Aldair Rodríguez", "nacionalidad": "PER" },
+        { "nombre": "Jonatan Bauman", "nacionalidad": "ARG" },
+        { "nombre": "Nicolás Rengifo", "nacionalidad": "PER" },
+        { "nombre": "Hernán Rengifo", "nacionalidad": "PER" }
       ]
     }
   },
@@ -85,15 +94,15 @@
     "plantilla": {
       "arqueros": [
         { "nombre": "Daniel Prieto", "nacionalidad": "PER" },
-        { "nombre": "Sebastián Amasifuén", "nacionalidad": "PER" },
+        { "nombre": "Éder Hermoza", "nacionalidad": "PER" },
         { "nombre": "Jesus Rossi", "nacionalidad": "PER" }
       ],
       "defensas": [
-        { "nombre": "José Villegas", "nacionalidad": "ARG" },
         { "nombre": "Román Suárez", "nacionalidad": "ARG" },
+        { "nombre": "José Villegas", "nacionalidad": "ARG" },
         { "nombre": "José Luján", "nacionalidad": "PER" },
-        { "nombre": "Juan Quiñones", "nacionalidad": "PER" },
         { "nombre": "Williams Guzmán", "nacionalidad": "PER" },
+        { "nombre": "Juan Quiñones", "nacionalidad": "PER" },
         { "nombre": "Luiggi Alburqueque", "nacionalidad": "PER" },
         { "nombre": "Jesús Mendieta", "nacionalidad": "PER" },
         { "nombre": "Anthony Gordillo", "nacionalidad": "PER" },
@@ -105,17 +114,19 @@
         { "nombre": "Juan Delgado", "nacionalidad": "PER" },
         { "nombre": "Jimmy Pérez", "nacionalidad": "PER" },
         { "nombre": "Ariel Muñoz", "nacionalidad": "ARG" },
-        { "nombre": "Germán Díaz", "nacionalidad": "ARG" }
+        { "nombre": "Germán Díaz", "nacionalidad": "ARG" },
+        { "nombre": "Alejo Antilef", "nacionalidad": "ARG" },
+        { "nombre": "Sergio Quiroga", "nacionalidad": "ARG" }
       ],
       "delanteros": [
         { "nombre": "Jorge del Castillo", "nacionalidad": "PER" },
+        { "nombre": "Cristian Penilla", "nacionalidad": "ECU" },
         { "nombre": "Guillermo Larios", "nacionalidad": "PER" },
         { "nombre": "Franchesco Flores", "nacionalidad": "PER" },
         { "nombre": "Cristhian Valladolid", "nacionalidad": "PER" },
         { "nombre": "Valentín Robaldo", "nacionalidad": "ARG" },
-        { "nombre": "Franco Coronel", "nacionalidad": "ARG" },
         { "nombre": "Mariano Barreda", "nacionalidad": "PER" },
-        { "nombre": "Álvaro Guevara", "nacionalidad": "PER" }
+        { "nombre": "Franco Coronel", "nacionalidad": "ARG" }
       ]
     }
   },
@@ -151,36 +162,35 @@
         { "nombre": "Fabrisio Mesías", "nacionalidad": "PER" }
       ],
       "defensas": [
-        { "nombre": "Mateo Antoni", "nacionalidad": "URU" },
-        { "nombre": "Carlos Zambrano", "nacionalidad": "PER" },
         { "nombre": "Renzo Garcés", "nacionalidad": "PER" },
+        { "nombre": "Mateo Antoni", "nacionalidad": "URU" },
         { "nombre": "Gianfranco Chávez", "nacionalidad": "PER" },
         { "nombre": "Jhoao Velásquez", "nacionalidad": "PER" },
-        { "nombre": "Luis Advíncula", "nacionalidad": "PER" },
-        { "nombre": "Miguel Trauco", "nacionalidad": "PER" },
-        { "nombre": "Josué Estrada", "nacionalidad": "PER" },
+        { "nombre": "Jonathan García", "nacionalidad": "PER" },
         { "nombre": "Cristian Carbajal", "nacionalidad": "PER" },
+        { "nombre": "Marco Huamán", "nacionalidad": "PER" },
         { "nombre": "D'Alessandro Montenegro", "nacionalidad": "PER" },
-        { "nombre": "Rait Alarcón", "nacionalidad": "PER" }
+        { "nombre": "Josué Estrada", "nacionalidad": "PER" },
+        { "nombre": "Luis Advíncula", "nacionalidad": "PER" }
       ],
       "volantes": [
-        { "nombre": "Pedro Aquino", "nacionalidad": "PER" },
-        { "nombre": "Sergio Peña", "nacionalidad": "PER" },
-        { "nombre": "Jairo Vélez", "nacionalidad": "ECU" },
-        { "nombre": "Fernando Gaibor", "nacionalidad": "ECU" },
         { "nombre": "Jesús Castillo", "nacionalidad": "PER" },
+        { "nombre": "Pedro Aquino", "nacionalidad": "PER" },
         { "nombre": "Jean Pierre Archimbaud", "nacionalidad": "PER" },
+        { "nombre": "Esteban Pavez", "nacionalidad": "CHI" },
+        { "nombre": "Piero Cari", "nacionalidad": "PER" },
         { "nombre": "Alessandro Burlamaqui", "nacionalidad": "PER" },
-        { "nombre": "Piero Cari", "nacionalidad": "PER" }
+        { "nombre": "Fernando Gaibor", "nacionalidad": "ECU" },
+        { "nombre": "Jairo Vélez", "nacionalidad": "ECU" }
       ],
       "delanteros": [
-        { "nombre": "Federico Girotti", "nacionalidad": "ARG" },
-        { "nombre": "Paolo Guerrero", "nacionalidad": "PER" },
-        { "nombre": "Kevin Quevedo", "nacionalidad": "PER" },
-        { "nombre": "Gaspar Gentile", "nacionalidad": "ARG" },
         { "nombre": "Alan Cantero", "nacionalidad": "ARG" },
         { "nombre": "Eryc Castillo", "nacionalidad": "ECU" },
+        { "nombre": "Kevin Quevedo", "nacionalidad": "PER" },
+        { "nombre": "Gaspar Gentile", "nacionalidad": "ARG" },
+        { "nombre": "Federico Girotti", "nacionalidad": "ARG" },
         { "nombre": "Luis Ramos", "nacionalidad": "PER" },
+        { "nombre": "Paolo Guerrero", "nacionalidad": "PER" },
         { "nombre": "Geray Motta", "nacionalidad": "PER" }
       ]
     }
@@ -208,35 +218,41 @@
       "altura_msnm": 60,
       "url_foto": "/img/equipos/estadios/campeones_36.webp"
     },
-    "cuerpo_tecnico": { "dt": "Ángel Comizzo", "nacionalidad": "ARG" },
+    "cuerpo_tecnico": { "dt": "Gerardo Ameli", "nacionalidad": "ARG" },
     "plantilla": {
       "arqueros": [
         { "nombre": "Patricio Álvarez", "nacionalidad": "PER" },
+        { "nombre": "Aarom Fuentes", "nacionalidad": "PER" },
         { "nombre": "Aamet Calderón", "nacionalidad": "PER" },
-        { "nombre": "Aarom Fuentes", "nacionalidad": "PER" }
+        { "nombre": "Breyner Vilela", "nacionalidad": "PER" }
       ],
       "defensas": [
         { "nombre": "Ignacio Tapia", "nacionalidad": "CHI" },
         { "nombre": "Rodrigo Tapia", "nacionalidad": "ARG" },
-        { "nombre": "Lucas Acevedo", "nacionalidad": "ARG" },
         { "nombre": "José Ataupillco", "nacionalidad": "PER" },
+        { "nombre": "Lucas Acevedo", "nacionalidad": "ARG" },
         { "nombre": "Elsar Rodas", "nacionalidad": "PER" },
         { "nombre": "Gabriel Alfaro", "nacionalidad": "PER" },
-        { "nombre": "Arnold Flores", "nacionalidad": "PER" }
+        { "nombre": "Arnold Flores", "nacionalidad": "PER" },
+        { "nombre": "Santiago Torres González", "nacionalidad": "PER" },
+        { "nombre": "Diego Rodríguez", "nacionalidad": "PER" }
       ],
       "volantes": [
         { "nombre": "Rafael Guarderas", "nacionalidad": "PER" },
         { "nombre": "Freddy Oncoy", "nacionalidad": "PER" },
         { "nombre": "Emiliano Franco", "nacionalidad": "ARG" },
-        { "nombre": "Cristian Neira", "nacionalidad": "PER" },
-        { "nombre": "Aldair Vásquez", "nacionalidad": "PER" },
         { "nombre": "Adrián de la Cruz", "nacionalidad": "PER" },
         { "nombre": "Eslyn Correa", "nacionalidad": "PER" },
-        { "nombre": "Diego Barreto", "nacionalidad": "PER" }
+        { "nombre": "Aldair Vásquez", "nacionalidad": "PER" },
+        { "nombre": "Cristian Neira", "nacionalidad": "PER" },
+        { "nombre": "Diego Barreto", "nacionalidad": "PAR" }
       ],
       "delanteros": [
-        { "nombre": "Raúl Ruidíaz", "nacionalidad": "PER" },
+        { "nombre": "Nicolás Delgadillo", "nacionalidad": "ARG" },
         { "nombre": "Paulo de la Cruz", "nacionalidad": "PER" },
+        { "nombre": "Henri Espinoza", "nacionalidad": "PER" },
+        { "nombre": "Isaac Camargo", "nacionalidad": "COL" },
+        { "nombre": "Raúl Ruidíaz", "nacionalidad": "PER" },
         { "nombre": "Yamir Ruidíaz", "nacionalidad": "PER" }
       ]
     }
@@ -268,36 +284,38 @@
     "plantilla": {
       "arqueros": [
         { "nombre": "Ítalo Espinoza", "nacionalidad": "PER" },
-        { "nombre": "Gonzalo Falcón", "nacionalidad": "URU" }
+        { "nombre": "Gonzalo Falcón", "nacionalidad": "URU" },
+        { "nombre": "Jean Franco Roncal", "nacionalidad": "PER" }
       ],
       "defensas": [
-        { "nombre": "Maximiliano Amondarain", "nacionalidad": "URU" },
         { "nombre": "Kevin Becerra", "nacionalidad": "ECU" },
         { "nombre": "Claudio Nuñez", "nacionalidad": "PER" },
         { "nombre": "Rotceh Aguilar", "nacionalidad": "PER" },
-        { "nombre": "Marco Huamán", "nacionalidad": "PER" },
+        { "nombre": "Maximiliano Amondarain", "nacionalidad": "URU" },
         { "nombre": "Alonso Yovera", "nacionalidad": "PER" },
-        { "nombre": "Sebastián Cavero", "nacionalidad": "PER" }
+        { "nombre": "Sebastián Cavero", "nacionalidad": "PER" },
+        { "nombre": "Marcos Martinich", "nacionalidad": "ARG" },
+        { "nombre": "Renzo Salazar", "nacionalidad": "PER" }
       ],
       "volantes": [
         { "nombre": "Santiago Arias", "nacionalidad": "URU" },
-        { "nombre": "Gonzalo Aguirre", "nacionalidad": "PER" },
-        { "nombre": "Gerson Barreto", "nacionalidad": "PER" },
         { "nombre": "Henry Caparó", "nacionalidad": "PER" },
         { "nombre": "Álvaro Rojas", "nacionalidad": "PER" },
-        { "nombre": "Ademar Robles", "nacionalidad": "PER" },
-        { "nombre": "Harol Rodríguez", "nacionalidad": "PER" }
+        { "nombre": "Gerson Barreto", "nacionalidad": "PER" },
+        { "nombre": "Gonzalo Aguirre", "nacionalidad": "PER" },
+        { "nombre": "Ademar Robles", "nacionalidad": "PER" }
       ],
       "delanteros": [
-        { "nombre": "Carlos Garcés", "nacionalidad": "ECU" },
-        { "nombre": "Matías Succar", "nacionalidad": "PER" },
-        { "nombre": "Juan Romagnoli", "nacionalidad": "ARG" },
         { "nombre": "Alejandro Hohberg", "nacionalidad": "PER" },
-        { "nombre": "Neri Bandiera", "nacionalidad": "ARG" },
-        { "nombre": "Cristian Souza", "nacionalidad": "URU" },
         { "nombre": "Ray Sandoval", "nacionalidad": "PER" },
-        { "nombre": "Nadhir Colunga", "nacionalidad": "PER" },
-        { "nombre": "Yván Rojas", "nacionalidad": "PER" }
+        { "nombre": "Yván Rojas", "nacionalidad": "PER" },
+        { "nombre": "Juan Romagnoli", "nacionalidad": "ARG" },
+        { "nombre": "Didier La Torre", "nacionalidad": "PER" },
+        { "nombre": "Cristian Souza", "nacionalidad": "URU" },
+        { "nombre": "Matías Succar", "nacionalidad": "PER" },
+        { "nombre": "Carlos Garcés", "nacionalidad": "ECU" },
+        { "nombre": "Neri Bandiera", "nacionalidad": "ARG" },
+        { "nombre": "Nadhir Colunga", "nacionalidad": "PER" }
       ]
     }
   },
@@ -324,18 +342,21 @@
       "altura_msnm": 2649,
       "url_foto": "/img/equipos/estadios/juan_maldonado.webp"
     },
-    "cuerpo_tecnico": { "dt": "Claudio Biaggio", "nacionalidad": "ARG" },
+    "cuerpo_tecnico": { "dt": "Daniel Morales (Interino)", "nacionalidad": "ARG" },
     "plantilla": {
       "arqueros": [
-        { "nombre": "Álvaro Villete", "nacionalidad": "URU" },
         { "nombre": "Matías Córdova", "nacionalidad": "PER" },
-        { "nombre": "José Charún", "nacionalidad": "PER" }
+        { "nombre": "Álvaro Villete", "nacionalidad": "URU" },
+        { "nombre": "José Charún", "nacionalidad": "PER" },
+        { "nombre": "Juan Cubas", "nacionalidad": "PER" }
       ],
       "defensas": [
         { "nombre": "Yordi Vílchez", "nacionalidad": "PER" },
         { "nombre": "Piero Guzmán", "nacionalidad": "PER" },
-        { "nombre": "Juan Rodríguez", "nacionalidad": "PER" },
-        { "nombre": "Daniel Lino", "nacionalidad": "PER" },
+        { "nombre": "Flavio Alcedo", "nacionalidad": "PER" },
+        { "nombre": "Juan Rodríguez", "nacionalidad": "URU" },
+        { "nombre": "Miguel Hilario", "nacionalidad": "PER" },
+        { "nombre": "Daniel Lino", "nacionalidad": "BOL" },
         { "nombre": "Alexis Cossio", "nacionalidad": "PER" },
         { "nombre": "Christian Vásquez", "nacionalidad": "PER" },
         { "nombre": "Fabio Rojas", "nacionalidad": "PER" }
@@ -343,16 +364,22 @@
       "volantes": [
         { "nombre": "Agustín Rodríguez", "nacionalidad": "URU" },
         { "nombre": "José Parodi", "nacionalidad": "PER" },
+        { "nombre": "Alexis Arias", "nacionalidad": "PER" },
         { "nombre": "Carlos Correa", "nacionalidad": "PER" },
         { "nombre": "Thiago Salinas", "nacionalidad": "PER" },
         { "nombre": "Rodrigo Vilca", "nacionalidad": "PER" }
       ],
       "delanteros": [
-        { "nombre": "Matías Sen", "nacionalidad": "ARG" },
+        { "nombre": "Óscar Pinto", "nacionalidad": "PER" },
         { "nombre": "Josuee Herrera", "nacionalidad": "PER" },
         { "nombre": "Mathías Carpio", "nacionalidad": "PER" },
+        { "nombre": "Carlos Saavedra", "nacionalidad": "PER" },
+        { "nombre": "Wilter Ayoví", "nacionalidad": "ECU" },
         { "nombre": "Miguel Carranza", "nacionalidad": "PER" },
-        { "nombre": "Carlos Saavedra", "nacionalidad": "PER" }
+        { "nombre": "Fabrizzio Cubas", "nacionalidad": "PER" },
+        { "nombre": "Matías Sen", "nacionalidad": "ARG" },
+        { "nombre": "Maximiliano Pérez", "nacionalidad": "URU" },
+        { "nombre": "Jean Carlo Olivares", "nacionalidad": "PER" }
       ]
     }
   },
@@ -379,7 +406,7 @@
       "altura_msnm": 3402,
       "url_foto": "/img/equipos/estadios/garcilaso.webp"
     },
-    "cuerpo_tecnico": { "dt": "Miguel Rondelli", "nacionalidad": "ARG" },
+    "cuerpo_tecnico": { "dt": "Javier Rabanal", "nacionalidad": "ESP" },
     "plantilla": {
       "arqueros": [
         { "nombre": "Pedro Díaz", "nacionalidad": "PER" },
@@ -391,33 +418,30 @@
         { "nombre": "Carlos Gamarra", "nacionalidad": "PER" },
         { "nombre": "Gu-rum Choi", "nacionalidad": "PER" },
         { "nombre": "Aldair Fuentes", "nacionalidad": "PER" },
+        { "nombre": "Alex Custodio", "nacionalidad": "PER" },
+        { "nombre": "Álvaro Ampuero", "nacionalidad": "PER" },
+        { "nombre": "Julinho Astudillo", "nacionalidad": "PER" },
         { "nombre": "José Bolívar", "nacionalidad": "PER" },
         { "nombre": "Marlon Ruidías", "nacionalidad": "PER" },
-        { "nombre": "Álvaro Ampuero", "nacionalidad": "PER" },
-        { "nombre": "Alessandro Milesi", "nacionalidad": "PER" },
-        { "nombre": "Alex Custodio", "nacionalidad": "PER" },
-        { "nombre": "José Zevallos", "nacionalidad": "PER" },
-        { "nombre": "Julinho Astudillo", "nacionalidad": "PER" }
+        { "nombre": "José Zevallos", "nacionalidad": "PER" }
       ],
       "volantes": [
-        { "nombre": "Iván Colman", "nacionalidad": "ARG" },
-        { "nombre": "Miguel Aucca", "nacionalidad": "PER" },
-        { "nombre": "Gabriel Carabajal", "nacionalidad": "ARG" },
-        { "nombre": "Diego Soto", "nacionalidad": "PER" },
         { "nombre": "Oswaldo Valenzuela", "nacionalidad": "PER" },
+        { "nombre": "Miguel Aucca", "nacionalidad": "PER" },
         { "nombre": "Carlo Diez", "nacionalidad": "PER" },
-        { "nombre": "Sergio Quillahuaman", "nacionalidad": "PER" },
-        { "nombre": "Sebastián Zarabia", "nacionalidad": "PER" }
+        { "nombre": "Diego Soto", "nacionalidad": "PER" },
+        { "nombre": "Iván Colman", "nacionalidad": "ARG" },
+        { "nombre": "Gabriel Carabajal", "nacionalidad": "ARG" },
+        { "nombre": "Sergio Quillahuaman", "nacionalidad": "PER" }
       ],
       "delanteros": [
-        { "nombre": "Juan Manuel Tévez", "nacionalidad": "ARG" },
-        { "nombre": "Facundo Callejo", "nacionalidad": "ARG" },
         { "nombre": "Lucas Colitto", "nacionalidad": "ARG" },
-        { "nombre": "Nicolás Silva", "nacionalidad": "ARG" },
-        { "nombre": "Pierre da Silva", "nacionalidad": "USA" },
         { "nombre": "José Manzaneda", "nacionalidad": "PER" },
         { "nombre": "José Alí", "nacionalidad": "PER" },
-        { "nombre": "Joel Herrera", "nacionalidad": "PER" }
+        { "nombre": "Joel Herrera", "nacionalidad": "PER" },
+        { "nombre": "Nicolás Silva", "nacionalidad": "ARG" },
+        { "nombre": "Facundo Callejo", "nacionalidad": "ARG" },
+        { "nombre": "Juan Manuel Tévez", "nacionalidad": "ARG" }
       ]
     }
   },
@@ -444,7 +468,7 @@
       "altura_msnm": 3402,
       "url_foto": "/img/equipos/estadios/garcilaso.webp"
     },
-    "cuerpo_tecnico": { "dt": "Hernán Lisi", "nacionalidad": "ARG" },
+    "cuerpo_tecnico": { "dt": "Sebastián Domínguez", "nacionalidad": "ARG" },
     "plantilla": {
       "arqueros": [
         { "nombre": "Patrick Zubczuk", "nacionalidad": "PER" },
@@ -455,29 +479,29 @@
         { "nombre": "Agustín Gómez", "nacionalidad": "ARG" },
         { "nombre": "Horacio Benincasa", "nacionalidad": "PER" },
         { "nombre": "Jefferson Portales", "nacionalidad": "PER" },
-        { "nombre": "Aldair Salazar", "nacionalidad": "PER" },
         { "nombre": "Xavi Moreno", "nacionalidad": "PER" },
-        { "nombre": "Erick Canales", "nacionalidad": "PER" },
+        { "nombre": "Aldair Salazar", "nacionalidad": "PER" },
         { "nombre": "Orlando Núñez", "nacionalidad": "PER" },
+        { "nombre": "Erick Canales", "nacionalidad": "PER" },
         { "nombre": "Samir Villacorta", "nacionalidad": "PER" }
       ],
       "volantes": [
-        { "nombre": "Agustín González", "nacionalidad": "URU" },
         { "nombre": "Claudio Torrejón", "nacionalidad": "PER" },
-        { "nombre": "Carlos Ramos", "nacionalidad": "PER" },
-        { "nombre": "Adrián Ascues", "nacionalidad": "PER" },
         { "nombre": "Inti Garrafa", "nacionalidad": "PER" },
+        { "nombre": "Carlos Ramos", "nacionalidad": "VEN" },
+        { "nombre": "Adrián Ascues", "nacionalidad": "PER" },
+        { "nombre": "Agustín González", "nacionalidad": "URU" },
         { "nombre": "Joao Mendoza", "nacionalidad": "PER" }
       ],
       "delanteros": [
-        { "nombre": "Agustín Graneros", "nacionalidad": "ARG" },
         { "nombre": "Kevin Sandoval", "nacionalidad": "PER" },
-        { "nombre": "Christopher Olivares", "nacionalidad": "PER" },
         { "nombre": "Beto da Silva", "nacionalidad": "PER" },
-        { "nombre": "Francisco Arancibia", "nacionalidad": "CHI" },
-        { "nombre": "José Sinisterra", "nacionalidad": "COL" },
         { "nombre": "James Morales", "nacionalidad": "PER" },
+        { "nombre": "Francisco Arancibia", "nacionalidad": "CHI" },
         { "nombre": "Sharif Ramírez", "nacionalidad": "PER" },
+        { "nombre": "Agustín Graneros", "nacionalidad": "ARG" },
+        { "nombre": "Christopher Olivares", "nacionalidad": "PER" },
+        { "nombre": "José Sinisterra", "nacionalidad": "COL" },
         { "nombre": "Paulo Rodríguez", "nacionalidad": "PER" },
         { "nombre": "Bryan Yupanqui", "nacionalidad": "PER" }
       ]
@@ -511,37 +535,39 @@
       "arqueros": [
         { "nombre": "Carlos Grados", "nacionalidad": "PER" },
         { "nombre": "Renzo Figueroa", "nacionalidad": "PER" },
-        { "nombre": "William Falcón", "nacionalidad": "PER" },
         { "nombre": "Thiago Bedoya", "nacionalidad": "PER" }
       ],
       "defensas": [
-        { "nombre": "Cristian Enciso", "nacionalidad": "PAR" },
         { "nombre": "Kevin Moreno", "nacionalidad": "PER" },
         { "nombre": "Brayan Rivera", "nacionalidad": "PER" },
-        { "nombre": "Juan Diego Lojas", "nacionalidad": "PER" },
+        { "nombre": "Cristian Enciso", "nacionalidad": "PAR" },
         { "nombre": "José Luis Granda", "nacionalidad": "PER" },
+        { "nombre": "Juan Diego Lojas", "nacionalidad": "PER" },
         { "nombre": "Mathias Panizo", "nacionalidad": "PER" },
-        { "nombre": "Aldair Perleche", "nacionalidad": "PER" },
-        { "nombre": "Eros Montenegro", "nacionalidad": "PER" },
+        { "nombre": "Nicolás Amasifuén", "nacionalidad": "PER" },
         { "nombre": "Jimmy Jiménez", "nacionalidad": "PER" },
-        { "nombre": "Nicolás Amasifuén", "nacionalidad": "PER" }
+        { "nombre": "Aldair Perleche", "nacionalidad": "PER" },
+        { "nombre": "Eros Montenegro", "nacionalidad": "PER" }
       ],
       "volantes": [
-        { "nombre": "Cristian Mejía", "nacionalidad": "COL" },
-        { "nombre": "Nicolás Chávez", "nacionalidad": "ARG" },
         { "nombre": "Ricardo Chipao", "nacionalidad": "PER" },
         { "nombre": "Claudio Ramírez", "nacionalidad": "PER" },
-        { "nombre": "Diego Ramírez", "nacionalidad": "PER" }
+        { "nombre": "Juan Agreda", "nacionalidad": "PER" },
+        { "nombre": "Diego Ramírez", "nacionalidad": "PER" },
+        { "nombre": "Cristian Mejía", "nacionalidad": "PER" },
+        { "nombre": "Nicolás Chávez", "nacionalidad": "PAR" },
+        { "nombre": "Róger Torres", "nacionalidad": "COL" }
       ],
       "delanteros": [
         { "nombre": "Yorman Zapata", "nacionalidad": "COL" },
-        { "nombre": "Jeferson Collazos", "nacionalidad": "COL" },
-        { "nombre": "Bryan Angulo", "nacionalidad": "ECU" },
-        { "nombre": "Edgar Lastre", "nacionalidad": "ECU" },
-        { "nombre": "Kevin Ruiz", "nacionalidad": "PER" },
         { "nombre": "Allonso Dávila", "nacionalidad": "PER" },
         { "nombre": "José López", "nacionalidad": "PER" },
-        { "nombre": "Marcello Negrón", "nacionalidad": "PER" }
+        { "nombre": "Edgar Lastre", "nacionalidad": "ECU" },
+        { "nombre": "Kevin Ruiz", "nacionalidad": "PER" },
+        { "nombre": "Juan Vilela", "nacionalidad": "PER" },
+        { "nombre": "Marcello Negrón", "nacionalidad": "PER" },
+        { "nombre": "Bryan Angulo", "nacionalidad": "ECU" },
+        { "nombre": "Jeferson Collazos", "nacionalidad": "COL" }
       ]
     }
   },
@@ -568,51 +594,46 @@
       "altura_msnm": 2368,
       "url_foto": "/img/equipos/estadios/unsa.webp"
     },
-    "cuerpo_tecnico": { "dt": "Juan Reynoso", "nacionalidad": "PER" },
+    "cuerpo_tecnico": { "dt": "Miguel Rondelli", "nacionalidad": "ARG" },
     "plantilla": {
       "arqueros": [
-        { "nombre": "Carlos Cáceda", "nacionalidad": "PER" },
         { "nombre": "Jorge Cabezudo", "nacionalidad": "PER" },
-        { "nombre": "Octavio Ramos", "nacionalidad": "PER" },
-        { "nombre": "Ricardo Farro", "nacionalidad": "PER" }
+        { "nombre": "Carlos Cáceda", "nacionalidad": "PER" },
+        { "nombre": "Ricardo Farro", "nacionalidad": "PER" },
+        { "nombre": "Facundo de la Cruz", "nacionalidad": "PER" }
       ],
       "defensas": [
         { "nombre": "Matías Lazo", "nacionalidad": "PER" },
+        { "nombre": "Juan Escobar", "nacionalidad": "PAR" },
         { "nombre": "Jesús Alcántar", "nacionalidad": "MEX" },
         { "nombre": "Alec Deneumostier", "nacionalidad": "PER" },
-        { "nombre": "Daniel Meneses", "nacionalidad": "PER" },
-        { "nombre": "Alejandro Ramos", "nacionalidad": "PER" },
         { "nombre": "Nelson Cabanillas", "nacionalidad": "PER" },
-        { "nombre": "Diego Rodríguez", "nacionalidad": "PER" },
-        { "nombre": "Juan Ayqque", "nacionalidad": "PER" },
         { "nombre": "Ángel Obando", "nacionalidad": "PER" },
-        { "nombre": "Juan Muñoz", "nacionalidad": "PER" }
+        { "nombre": "Alejandro Ramos", "nacionalidad": "PER" }
       ],
       "volantes": [
-        { "nombre": "Javier Salas", "nacionalidad": "MEX" },
-        { "nombre": "Nicolás Quagliata", "nacionalidad": "URU" },
-        { "nombre": "Horacio Orzán", "nacionalidad": "ARG" },
         { "nombre": "Walter Tandazo", "nacionalidad": "PER" },
+        { "nombre": "Javier Salas", "nacionalidad": "MEX" },
         { "nombre": "Yimy Gamero", "nacionalidad": "PER" },
-        { "nombre": "Andersson Pumacajia", "nacionalidad": "PER" },
+        { "nombre": "Horacio Orzán", "nacionalidad": "ARG" },
+        { "nombre": "Keith Yáñez", "nacionalidad": "PER" },
         { "nombre": "Gian García", "nacionalidad": "PER" },
-        { "nombre": "Cesar Doy", "nacionalidad": "PER" }
+        { "nombre": "Ian Arróspide", "nacionalidad": "PER" },
+        { "nombre": "Nicolás Quagliata", "nacionalidad": "URU" }
       ],
       "delanteros": [
-        { "nombre": "Bernardo Cuesta", "nacionalidad": "ARG" },
-        { "nombre": "Pablo Erustes", "nacionalidad": "ARG" },
-        { "nombre": "Lautaro Guzmán", "nacionalidad": "ARG" },
-        { "nombre": "Gregorio Rodríguez", "nacionalidad": "URU" },
-        { "nombre": "Cristian Bordacahar", "nacionalidad": "ARG" },
-        { "nombre": "Franco Zanelatto", "nacionalidad": "PER" },
+        { "nombre": "Jefferson Cáceres", "nacionalidad": "PER" },
+        { "nombre": "Matias Zegarra", "nacionalidad": "PER" },
         { "nombre": "Jhamir D'Arrigo", "nacionalidad": "PER" },
-        { "nombre": "Jeriel de Santis", "nacionalidad": "PER" },
+        { "nombre": "Abraham Aguinaga", "nacionalidad": "PER" },
+        { "nombre": "Lautaro Guzmán", "nacionalidad": "ARG" },
+        { "nombre": "Franco Zanelatto", "nacionalidad": "PER" },
+        { "nombre": "Cristian Bordacahar", "nacionalidad": "ARG" },
+        { "nombre": "Patricio Núñez", "nacionalidad": "PER" },
+        { "nombre": "Pablo Erustes", "nacionalidad": "ARG" },
         { "nombre": "Jhonny Vidales", "nacionalidad": "PER" },
         { "nombre": "Nicolás Figueroa", "nacionalidad": "PER" },
-        { "nombre": "Abraham Aguinaga", "nacionalidad": "PER" },
-        { "nombre": "Bruno Portugal", "nacionalidad": "PER" },
-        { "nombre": "Matias Zegarra", "nacionalidad": "PER" },
-        { "nombre": "Patricio Núñez", "nacionalidad": "PER" },
+        { "nombre": "Bernardo Cuesta", "nacionalidad": "ARG" },
         { "nombre": "Ryu Yabiku", "nacionalidad": "PER" }
       ]
     }
@@ -640,43 +661,41 @@
       "altura_msnm": 2750,
       "url_foto": "/img/equipos/estadios/heroes_san_ramon.webp"
     },
-    "cuerpo_tecnico": { "dt": "Carlos Silvestri", "nacionalidad": "PER" },
+    "cuerpo_tecnico": { "dt": "Celso Ayala", "nacionalidad": "PAR" },
     "plantilla": {
       "arqueros": [
-        { "nombre": "Samuel Aspajo", "nacionalidad": "PER" },
+        { "nombre": "Samuel Aspajo", "nacionalidad": "VEN" },
+        { "nombre": "Carlos Mosquera", "nacionalidad": "COL" },
         { "nombre": "Jonathan Medina", "nacionalidad": "PER" }
       ],
       "defensas": [
-        { "nombre": "Matías Almirón", "nacionalidad": "ARG" },
-        { "nombre": "Pablo Míguez", "nacionalidad": "URU" },
         { "nombre": "Hairo Timaná", "nacionalidad": "PER" },
         { "nombre": "Alexis Rodas", "nacionalidad": "PER" },
+        { "nombre": "Matías Almirón", "nacionalidad": "ARG" },
         { "nombre": "Brian Bernaola", "nacionalidad": "PER" },
-        { "nombre": "Bruno Merino", "nacionalidad": "PER" },
         { "nombre": "Ricardo Lagos", "nacionalidad": "PER" },
-        { "nombre": "Nilson Loyola", "nacionalidad": "PER" },
-        { "nombre": "José Gallardo", "nacionalidad": "PER" },
+        { "nombre": "Anthony Rosell", "nacionalidad": "PER" },
         { "nombre": "Carlos Gómez", "nacionalidad": "PER" },
+        { "nombre": "José Gallardo", "nacionalidad": "PER" },
         { "nombre": "Jhan Vega", "nacionalidad": "PER" }
       ],
       "volantes": [
-        { "nombre": "Tomás Andrade", "nacionalidad": "ARG" },
-        { "nombre": "Pablo Lavandeira", "nacionalidad": "URU" },
         { "nombre": "Axel Moyano", "nacionalidad": "PER" },
         { "nombre": "Enmanuel Páucar", "nacionalidad": "PER" },
         { "nombre": "Keyvin Paico", "nacionalidad": "PER" },
+        { "nombre": "Jefferson Orejuela", "nacionalidad": "ECU" },
+        { "nombre": "Pablo Míguez", "nacionalidad": "URU" },
+        { "nombre": "Tomás Andrade", "nacionalidad": "ARG" },
         { "nombre": "Mauricio Arrasco", "nacionalidad": "PER" },
         { "nombre": "Patrick Alegría", "nacionalidad": "PER" }
       ],
       "delanteros": [
-        { "nombre": "Hernán Barcos", "nacionalidad": "ARG" },
-        { "nombre": "Arley Rodríguez", "nacionalidad": "COL" },
-        { "nombre": "Jonathan Betancourt", "nacionalidad": "ECU" },
         { "nombre": "Brandon Palacios", "nacionalidad": "PER" },
-        { "nombre": "Sebastien Pineau", "nacionalidad": "PER" },
-        { "nombre": "Sebastián Enciso", "nacionalidad": "PER" },
+        { "nombre": "Jonathan Betancourt", "nacionalidad": "ECU" },
         { "nombre": "Fernando Ocas", "nacionalidad": "PER" },
+        { "nombre": "Sebastián Enciso", "nacionalidad": "PER" },
         { "nombre": "Carlos Meza", "nacionalidad": "PER" },
+        { "nombre": "Sebastien Pineau", "nacionalidad": "PER" },
         { "nombre": "Said Peralta", "nacionalidad": "PER" }
       ]
     }
@@ -704,7 +723,7 @@
       "altura_msnm": 248,
       "url_foto": "/img/equipos/estadios/chongoyape.webp"
     },
-    "cuerpo_tecnico": { "dt": "Marcelo Zuleta", "nacionalidad": "ARG" },
+    "cuerpo_tecnico": { "dt": "Jorge Araujo", "nacionalidad": "PER" },
     "plantilla": {
       "arqueros": [
         { "nombre": "Ismael Quispe", "nacionalidad": "PER" },
@@ -712,34 +731,35 @@
         { "nombre": "Matías Vega", "nacionalidad": "ARG" }
       ],
       "defensas": [
+        { "nombre": "Bairon Puño", "nacionalidad": "PER" },
         { "nombre": "Paolo Fuentes", "nacionalidad": "PER" },
-        { "nombre": "Iago Iriarte", "nacionalidad": "PER" },
+        { "nombre": "Iago Iriarte", "nacionalidad": "ARG" },
         { "nombre": "Arón Sánchez", "nacionalidad": "PER" },
         { "nombre": "Martín Peralta", "nacionalidad": "PER" },
-        { "nombre": "Jorge Toledo", "nacionalidad": "PER" },
-        { "nombre": "Josué Canova", "nacionalidad": "PER" },
         { "nombre": "Fabio Agurto", "nacionalidad": "PER" },
         { "nombre": "Piero Antón", "nacionalidad": "PER" },
-        { "nombre": "Adriano Espinoza", "nacionalidad": "PER" }
+        { "nombre": "Jorge Toledo", "nacionalidad": "PER" },
+        { "nombre": "Josué Canova", "nacionalidad": "PER" }
       ],
       "volantes": [
-        { "nombre": "Christian Cueva", "nacionalidad": "PER" },
         { "nombre": "Christian Flores", "nacionalidad": "PER" },
-        { "nombre": "Cristian García", "nacionalidad": "PER" },
+        { "nombre": "Cristian García", "nacionalidad": "ARG" },
+        { "nombre": "Diego Lozano", "nacionalidad": "PER" },
         { "nombre": "Nilton Ramirez", "nacionalidad": "PER" },
-        { "nombre": "Cristian Ramírez", "nacionalidad": "PER" },
         { "nombre": "Gustavo Aliaga", "nacionalidad": "PER" },
-        { "nombre": "Erinson Ramírez", "nacionalidad": "PER" }
+        { "nombre": "Erinson Ramírez", "nacionalidad": "PER" },
+        { "nombre": "Martín Alaníz", "nacionalidad": "URU" },
+        { "nombre": "Christian Cueva", "nacionalidad": "PER" }
       ],
       "delanteros": [
-        { "nombre": "Martín Alaníz", "nacionalidad": "URU" },
-        { "nombre": "Maximiliano Juambeltz", "nacionalidad": "URU" },
+        { "nombre": "Cristhian Tizón", "nacionalidad": "URU" },
+        { "nombre": "Adriano Espinoza", "nacionalidad": "PER" },
         { "nombre": "Jack Durán", "nacionalidad": "PER" },
+        { "nombre": "Jorge Barreto", "nacionalidad": "PER" },
+        { "nombre": "Maximiliano Juambeltz", "nacionalidad": "URU" },
+        { "nombre": "Adán Henricks", "nacionalidad": "PAN" },
         { "nombre": "Héctor Bazán", "nacionalidad": "PER" },
-        { "nombre": "Adán Henricks", "nacionalidad": "PER" },
-        { "nombre": "Jossimar Serrato", "nacionalidad": "PER" },
-        { "nombre": "Jean Piere Valle", "nacionalidad": "PER" },
-        { "nombre": "Randy Ramirez", "nacionalidad": "PER" }
+        { "nombre": "Jean Piere Valle", "nacionalidad": "PER" }
       ]
     }
   },
@@ -770,33 +790,36 @@
     "plantilla": {
       "arqueros": [
         { "nombre": "Franco Saravia", "nacionalidad": "PER" },
-        { "nombre": "Hairo Camacho", "nacionalidad": "PER" }
+        { "nombre": "Hairo Camacho", "nacionalidad": "PER" },
+        { "nombre": "Luis Pretel", "nacionalidad": "PER" }
       ],
       "defensas": [
         { "nombre": "Gonzalo Rizzo", "nacionalidad": "URU" },
-        { "nombre": "Carlos Pimienta", "nacionalidad": "URU" },
-        { "nombre": "Ederson Mogollón", "nacionalidad": "PER" },
         { "nombre": "Michael Kaufman", "nacionalidad": "PER" },
-        { "nombre": "Héctor González", "nacionalidad": "PER" },
+        { "nombre": "Héctor González", "nacionalidad": "ARG" },
+        { "nombre": "Carlos Pimienta", "nacionalidad": "URU" },
+        { "nombre": "José Cárdenas", "nacionalidad": "PER" },
         { "nombre": "Ayrthon Quintana", "nacionalidad": "PER" },
         { "nombre": "Brayan Guevara", "nacionalidad": "PER" },
         { "nombre": "David Gonzáles", "nacionalidad": "PER" }
       ],
       "volantes": [
-        { "nombre": "Abdiel Ayarza", "nacionalidad": "PAN" },
-        { "nombre": "Franco Torres", "nacionalidad": "ARG" },
         { "nombre": "Kelvin Sánchez", "nacionalidad": "PER" },
         { "nombre": "Jorge Palomino", "nacionalidad": "PER" },
         { "nombre": "Christian Velarde", "nacionalidad": "PER" },
-        { "nombre": "Adrián Quiroz", "nacionalidad": "PER" }
+        { "nombre": "Adrián Quiroz", "nacionalidad": "PER" },
+        { "nombre": "Abdiel Ayarza", "nacionalidad": "PAN" },
+        { "nombre": "Sebastián Zarabia", "nacionalidad": "PER" },
+        { "nombre": "Franco Torres", "nacionalidad": "ARG" }
       ],
       "delanteros": [
-        { "nombre": "Jarlín Quintero", "nacionalidad": "COL" },
-        { "nombre": "Juan Diego Ospina", "nacionalidad": "COL" },
-        { "nombre": "Janio Pósito", "nacionalidad": "PER" },
         { "nombre": "Oshiro Takeuchi", "nacionalidad": "PER" },
         { "nombre": "Kenyi Barrios", "nacionalidad": "PER" },
-        { "nombre": "Félix Espinoza", "nacionalidad": "PER" }
+        { "nombre": "Félix Espinoza", "nacionalidad": "PER" },
+        { "nombre": "Juan Diego Ospina", "nacionalidad": "COL" },
+        { "nombre": "Jarlín Quintero", "nacionalidad": "COL" },
+        { "nombre": "Marlon Torres", "nacionalidad": "COL" },
+        { "nombre": "Janio Pósito", "nacionalidad": "PER" }
       ]
     }
   },
@@ -823,44 +846,51 @@
       "altura_msnm": 25,
       "url_foto": "/img/equipos/estadios/miguel_grau.webp"
     },
-    "cuerpo_tecnico": { "dt": "Jaime de la Pava", "nacionalidad": "ECU" },
+    "cuerpo_tecnico": { "dt": "Carlos Desio", "nacionalidad": "ARG" },
     "plantilla": {
       "arqueros": [
         { "nombre": "Steven Rivadeneyra", "nacionalidad": "PER" },
-        { "nombre": "Diego Melián", "nacionalidad": "URU" }
+        { "nombre": "Diego Melián", "nacionalidad": "URU" },
+        { "nombre": "Sebastián Oblitas", "nacionalidad": "PER" }
       ],
       "defensas": [
         { "nombre": "Gustavo Dulanto", "nacionalidad": "PER" },
         { "nombre": "Renzo Alfani", "nacionalidad": "ARG" },
+        { "nombre": "Carlos Zambrano", "nacionalidad": "PER" },
         { "nombre": "Hansell Riojas", "nacionalidad": "PER" },
-        { "nombre": "Anghelo Flores", "nacionalidad": "PER" },
         { "nombre": "David Alvarado", "nacionalidad": "PER" },
+        { "nombre": "Evanz Cruz", "nacionalidad": "PER" },
         { "nombre": "Mathías Llontop", "nacionalidad": "PER" },
-        { "nombre": "Sebastián Aranda", "nacionalidad": "PER" },
+        { "nombre": "Nilson Loyola", "nacionalidad": "PER" },
+        { "nombre": "Miguel Trauco", "nacionalidad": "PER" },
+        { "nombre": "Nicolás Valencia", "nacionalidad": "PER" },
+        { "nombre": "Emilio Saba", "nacionalidad": "PSE" },
         { "nombre": "Oslimg Mora", "nacionalidad": "PER" },
-        { "nombre": "Emilio Saba", "nacionalidad": "PER" },
-        { "nombre": "Renzo Salazar", "nacionalidad": "PER" }
+        { "nombre": "Diego Contreras", "nacionalidad": "PER" },
+        { "nombre": "Sebastián Aranda", "nacionalidad": "PER" }
       ],
       "volantes": [
-        { "nombre": "Federico Illanes", "nacionalidad": "ARG" },
-        { "nombre": "Hernán Da Campo", "nacionalidad": "ARG" },
         { "nombre": "Erick Gonzales", "nacionalidad": "PER" },
+        { "nombre": "Federico Illanes", "nacionalidad": "ARG" },
         { "nombre": "Leonel Solís", "nacionalidad": "PER" },
         { "nombre": "Nicolas Paz", "nacionalidad": "PER" },
+        { "nombre": "Hernán Da Campo", "nacionalidad": "ARG" },
         { "nombre": "Víctor Flores", "nacionalidad": "PER" },
-        { "nombre": "André Vasquez", "nacionalidad": "PER" }
+        { "nombre": "Leonardo del Rosario", "nacionalidad": "PER" },
+        { "nombre": "André Vasquez", "nacionalidad": "PER" },
+        { "nombre": "Yuriel Celi", "nacionalidad": "PER" }
       ],
       "delanteros": [
-        { "nombre": "Carlos López", "nacionalidad": "COL" },
-        { "nombre": "Luis Urruti", "nacionalidad": "URU" },
-        { "nombre": "Luciano Nequecaur", "nacionalidad": "ARG" },
-        { "nombre": "Percy Liza", "nacionalidad": "PER" },
         { "nombre": "Jostin Alarcón", "nacionalidad": "PER" },
         { "nombre": "Juan Carlos Gonzáles", "nacionalidad": "PER" },
         { "nombre": "Juan Torres", "nacionalidad": "COL" },
-        { "nombre": "Rolando Díaz", "nacionalidad": "PER" },
+        { "nombre": "Carlos López", "nacionalidad": "COL" },
         { "nombre": "Alexis Huamán", "nacionalidad": "PER" },
-        { "nombre": "José Davey", "nacionalidad": "PER" }
+        { "nombre": "José Davey", "nacionalidad": "PER" },
+        { "nombre": "Luis Urruti", "nacionalidad": "URU" },
+        { "nombre": "Luciano Nequecaur", "nacionalidad": "ARG" },
+        { "nombre": "Percy Liza", "nacionalidad": "PER" },
+        { "nombre": "Rolando Díaz", "nacionalidad": "PER" }
       ]
     }
   },
@@ -887,44 +917,41 @@
       "altura_msnm": 3259,
       "url_foto": "/img/equipos/estadios/huancayo.webp"
     },
-    "cuerpo_tecnico": { "dt": "Roberto Mosquera", "nacionalidad": "PER" },
+    "cuerpo_tecnico": { "dt": "Richard Pellejero", "nacionalidad": "URU" },
     "plantilla": {
       "arqueros": [
         { "nombre": "Ángel Zamudio", "nacionalidad": "PER" },
         { "nombre": "Diego Campos", "nacionalidad": "PER" },
+        { "nombre": "Massimo Sandi", "nacionalidad": "PER" },
         { "nombre": "Aldair Ccorahua", "nacionalidad": "PER" }
       ],
       "defensas": [
-        { "nombre": "Yonatan Murillo", "nacionalidad": "COL" },
-        { "nombre": "Jimmy Valoyes", "nacionalidad": "COL" },
         { "nombre": "Marcelo Gaona", "nacionalidad": "PER" },
         { "nombre": "Juan Barreda", "nacionalidad": "PER" },
-        { "nombre": "Luis Torres", "nacionalidad": "PER" },
+        { "nombre": "Yonatan Murillo", "nacionalidad": "COL" },
+        { "nombre": "Gustavo Rissi", "nacionalidad": "BRA" },
+        { "nombre": "Jimmy Valoyes", "nacionalidad": "COL" },
         { "nombre": "Hugo Ángeles", "nacionalidad": "PER" },
         { "nombre": "Axel Chávez", "nacionalidad": "PER" },
-        { "nombre": "Diego Mesones", "nacionalidad": "PER" },
-        { "nombre": "Jeremy Rostaing", "nacionalidad": "PER" },
-        { "nombre": "Jean Franco Falconí", "nacionalidad": "PER" }
+        { "nombre": "Jean Franco Falconí", "nacionalidad": "PER" },
+        { "nombre": "Jeremy Rostaing", "nacionalidad": "PER" }
       ],
       "volantes": [
-        { "nombre": "Javier Sanguinetti", "nacionalidad": "ARG" },
-        { "nombre": "Ricardo Salcedo", "nacionalidad": "PER" },
-        { "nombre": "Diego Carabaño", "nacionalidad": "PER" },
         { "nombre": "Edu Villar", "nacionalidad": "PER" },
         { "nombre": "Leonardo Villar", "nacionalidad": "PER" },
-        { "nombre": "José Meza", "nacionalidad": "PER" }
+        { "nombre": "Ricardo Salcedo", "nacionalidad": "PER" },
+        { "nombre": "Diego Carabaño", "nacionalidad": "PER" },
+        { "nombre": "Javier Sanguinetti", "nacionalidad": "ARG" }
       ],
       "delanteros": [
-        { "nombre": "Yorleys Mena", "nacionalidad": "COL" },
+        { "nombre": "Rick Campodónico", "nacionalidad": "PER" },
         { "nombre": "Nahuel Luján", "nacionalidad": "ARG" },
-        { "nombre": "Ronal Huaccha", "nacionalidad": "PER" },
         { "nombre": "Piero Magallanes", "nacionalidad": "PER" },
         { "nombre": "Jeremy Canela", "nacionalidad": "PER" },
-        { "nombre": "Rick Campodónico", "nacionalidad": "PER" },
-        { "nombre": "Cristian Mendoza", "nacionalidad": "PER" },
-        { "nombre": "Carlos Jiménez", "nacionalidad": "PER" },
-        { "nombre": "Franco Caballero", "nacionalidad": "PER" },
-        { "nombre": "Juan Martínez", "nacionalidad": "PER" }
+        { "nombre": "Ronal Huaccha", "nacionalidad": "PER" },
+        { "nombre": "Yorleys Mena", "nacionalidad": "COL" },
+        { "nombre": "Juan Martínez", "nacionalidad": "PER" },
+        { "nombre": "Franco Caballero", "nacionalidad": "PER" }
       ]
     }
   },
@@ -951,47 +978,50 @@
       "altura_msnm": 160,
       "url_foto": "/img/equipos/estadios/gallardo.webp"
     },
-    "cuerpo_tecnico": { "dt": "Paulo Autuori", "nacionalidad": "BRA" },
+    "cuerpo_tecnico": { "dt": "Roberto Mosquera", "nacionalidad": "PER" },
     "plantilla": {
       "arqueros": [
         { "nombre": "Diego Enríquez", "nacionalidad": "PER" },
         { "nombre": "Renato Solís", "nacionalidad": "PER" },
-        { "nombre": "César Bautista", "nacionalidad": "PER" }
+        { "nombre": "César Bautista", "nacionalidad": "PER" },
+        { "nombre": "Tomás Dulanto", "nacionalidad": "PER" }
       ],
       "defensas": [
         { "nombre": "Luis Abram", "nacionalidad": "PER" },
-        { "nombre": "Miguel Araujo", "nacionalidad": "PER" },
         { "nombre": "Rafael Lutiger", "nacionalidad": "PER" },
-        { "nombre": "Cristiano", "nacionalidad": "BRA" },
-        { "nombre": "Leandro Sosa", "nacionalidad": "URU" },
+        { "nombre": "Miguel Araujo", "nacionalidad": "PER" },
         { "nombre": "Alejandro Pósito", "nacionalidad": "PER" },
-        { "nombre": "Flavio Alcedo", "nacionalidad": "PER" },
-        { "nombre": "Leo Díaz", "nacionalidad": "PER" },
-        { "nombre": "Quembol Guadalupe", "nacionalidad": "PER" },
-        { "nombre": "Juan González", "nacionalidad": "PER" },
+        { "nombre": "Leonardo Díaz", "nacionalidad": "PER" },
+        { "nombre": "Carlos Salgado", "nacionalidad": "PER" },
+        { "nombre": "Cristiano", "nacionalidad": "BRA" },
         { "nombre": "Fabrizio Lora", "nacionalidad": "PER" },
+        { "nombre": "Leandro Sosa", "nacionalidad": "URU" },
+        { "nombre": "Juan González", "nacionalidad": "ARG" },
+        { "nombre": "Joao Cuenca", "nacionalidad": "PER" },
         { "nombre": "Duham Ballumbrosio", "nacionalidad": "PER" }
       ],
       "volantes": [
-        { "nombre": "Yoshimar Yotún", "nacionalidad": "PER" },
-        { "nombre": "Christofer Gonzales", "nacionalidad": "PER" },
         { "nombre": "Gustavo Cazonatti", "nacionalidad": "BRA" },
-        { "nombre": "Santiago González", "nacionalidad": "ARG" },
-        { "nombre": "Catriel Cabellos", "nacionalidad": "PER" },
+        { "nombre": "Gerson Castillo", "nacionalidad": "PER" },
         { "nombre": "Martín Távara", "nacionalidad": "PER" },
-        { "nombre": "Cristian Benavente", "nacionalidad": "PER" },
-        { "nombre": "Gabriel", "nacionalidad": "BRA" },
+        { "nombre": "Catriel Cabellos", "nacionalidad": "PER" },
         { "nombre": "Ian Wisdom", "nacionalidad": "PER" },
+        { "nombre": "Yoshimar Yotún", "nacionalidad": "PER" },
+        { "nombre": "Lionel Herrera", "nacionalidad": "PER" },
+        { "nombre": "Christofer Gonzales", "nacionalidad": "PER" },
+        { "nombre": "Gabriel", "nacionalidad": "BRA" },
+        { "nombre": "Cristian Benavente", "nacionalidad": "PER" },
         { "nombre": "Yamir del Valle", "nacionalidad": "PER" }
       ],
       "delanteros": [
-        { "nombre": "Felipe Vizeu", "nacionalidad": "BRA" },
-        { "nombre": "Luis Iberico", "nacionalidad": "PER" },
-        { "nombre": "Írven Ávila", "nacionalidad": "PER" },
         { "nombre": "Maxloren Castro", "nacionalidad": "PER" },
-        { "nombre": "Diego Otoya", "nacionalidad": "PER" },
-        { "nombre": "Sebastián Sánchez", "nacionalidad": "PER" },
+        { "nombre": "Josemaría Mellán", "nacionalidad": "PER" },
+        { "nombre": "Santiago González", "nacionalidad": "ARG" },
         { "nombre": "Jair Moretti", "nacionalidad": "PER" },
+        { "nombre": "Luis Iberico", "nacionalidad": "PER" },
+        { "nombre": "Felipe Vizeu", "nacionalidad": "BRA" },
+        { "nombre": "Diego Otoya", "nacionalidad": "PER" },
+        { "nombre": "Írven Ávila", "nacionalidad": "PER" },
         { "nombre": "Mateo Rodríguez", "nacionalidad": "PER" }
       ]
     }
@@ -1019,7 +1049,7 @@
       "altura_msnm": 135,
       "url_foto": "/img/equipos/estadios/monumental.webp"
     },
-    "cuerpo_tecnico": { "dt": "Javier Rabanal", "nacionalidad": "ESP" },
+    "cuerpo_tecnico": { "dt": "Héctor Cúper", "nacionalidad": "ARG" },
     "plantilla": {
       "arqueros": [
         { "nombre": "Diego Romero", "nacionalidad": "PER" },
@@ -1027,35 +1057,38 @@
         { "nombre": "Jhefferson Rodríguez", "nacionalidad": "PER" }
       ],
       "defensas": [
-        { "nombre": "Williams Riveros", "nacionalidad": "PAR" },
-        { "nombre": "Matías Di Benedetto", "nacionalidad": "ARG" },
         { "nombre": "Anderson Santamaría", "nacionalidad": "PER" },
+        { "nombre": "Williams Riveros", "nacionalidad": "PAR" },
         { "nombre": "Caín Fara", "nacionalidad": "ARG" },
-        { "nombre": "José Carabalí", "nacionalidad": "ECU" },
+        { "nombre": "Matías Di Benedetto", "nacionalidad": "ARG" },
         { "nombre": "Aldo Corzo", "nacionalidad": "PER" },
         { "nombre": "César Inga", "nacionalidad": "PER" },
+        { "nombre": "José Carabalí", "nacionalidad": "ECU" },
         { "nombre": "Paolo Reyna", "nacionalidad": "PER" },
-        { "nombre": "Hugo Ancajima", "nacionalidad": "PER" },
-        { "nombre": "Rafael Guzmán", "nacionalidad": "PER" }
+        { "nombre": "Hugo Ancajima", "nacionalidad": "PER" }
       ],
       "volantes": [
-        { "nombre": "Jairo Concha", "nacionalidad": "PER" },
         { "nombre": "Jesús Castillo", "nacionalidad": "PER" },
-        { "nombre": "Martín Pérez Guedes", "nacionalidad": "PER" },
-        { "nombre": "Horacio Calcaterra", "nacionalidad": "PER" },
         { "nombre": "Jorge Murrugarra", "nacionalidad": "PER" },
-        { "nombre": "Yuriel Celi", "nacionalidad": "PER" },
-        { "nombre": "Esteban Cruz", "nacionalidad": "PER" },
-        { "nombre": "Sebastian Flores", "nacionalidad": "PER" }
+        { "nombre": "Jairo Concha", "nacionalidad": "PER" },
+        { "nombre": "Horacio Calcaterra", "nacionalidad": "PER" },
+        { "nombre": "Diego Vásquez", "nacionalidad": "PER" },
+        { "nombre": "Sebastian Flores", "nacionalidad": "PER" },
+        { "nombre": "Miguel Silveira", "nacionalidad": "BRA" },
+        { "nombre": "Fabián Cabanillas", "nacionalidad": "PER" }
       ],
       "delanteros": [
-        { "nombre": "Sekou Gassama", "nacionalidad": "SEN" },
-        { "nombre": "Edison Flores", "nacionalidad": "PER" },
+        { "nombre": "Bryan Reyna", "nacionalidad": "PER" },
+        { "nombre": "Héctor Fértoli", "nacionalidad": "ARG" },
+        { "nombre": "Christopher Loayza", "nacionalidad": "PER" },
         { "nombre": "Andy Polo", "nacionalidad": "PER" },
+        { "nombre": "Lisandro Alzugaray", "nacionalidad": "ARG" },
         { "nombre": "Álex Valera", "nacionalidad": "PER" },
         { "nombre": "José Rivera", "nacionalidad": "PER" },
-        { "nombre": "Héctor Fértoli", "nacionalidad": "ARG" },
-        { "nombre": "Rodrigo Dioses", "nacionalidad": "PER" }
+        { "nombre": "Edison Flores", "nacionalidad": "PER" },
+        { "nombre": "Sekou Gassama", "nacionalidad": "SEN" },
+        { "nombre": "Rodrigo Dioses", "nacionalidad": "PER" },
+        { "nombre": "Jhon Guzmán", "nacionalidad": "PER" }
       ]
     }
   },
@@ -1082,42 +1115,38 @@
       "altura_msnm": 2750,
       "url_foto": "/img/equipos/estadios/heroes_san_ramon.webp"
     },
-    "cuerpo_tecnico": { "dt": "Carlos Bustos", "nacionalidad": "ARG" },
+    "cuerpo_tecnico": { "dt": "Cristian Paulucci", "nacionalidad": "ARG" },
     "plantilla": {
       "arqueros": [
         { "nombre": "Ángelo Campos", "nacionalidad": "PER" },
         { "nombre": "Ignacio Barrios", "nacionalidad": "URU" },
-        { "nombre": "Ricardo Bettocchi", "nacionalidad": "PER" },
-        { "nombre": "Fernando Sánchez", "nacionalidad": "PER" }
+        { "nombre": "Ricardo Bettocchi", "nacionalidad": "PER" }
       ],
       "defensas": [
-        { "nombre": "Bruno Duarte", "nacionalidad": "ARG" },
-        { "nombre": "Leonardo Rugel", "nacionalidad": "PER" },
         { "nombre": "Manuel Ganoza", "nacionalidad": "PER" },
+        { "nombre": "Piero Serra", "nacionalidad": "PER" },
+        { "nombre": "Bruno Duarte", "nacionalidad": "ARG" },
         { "nombre": "Francesco Cavagna", "nacionalidad": "PER" },
         { "nombre": "Dylan Caro", "nacionalidad": "PER" },
-        { "nombre": "Joaquín Aguirre", "nacionalidad": "PER" },
         { "nombre": "Junior Huerto", "nacionalidad": "PER" },
-        { "nombre": "Gilmar Paredes", "nacionalidad": "PER" },
-        { "nombre": "Luis Garro", "nacionalidad": "PER" }
+        { "nombre": "Luis Garro", "nacionalidad": "PER" },
+        { "nombre": "Gilmar Paredes", "nacionalidad": "PER" }
       ],
       "volantes": [
-        { "nombre": "Arquímedes Figuera", "nacionalidad": "VEN" },
-        { "nombre": "Marcos Lliuya", "nacionalidad": "PER" },
-        { "nombre": "Piero Serra", "nacionalidad": "PER" },
-        { "nombre": "Luis Arce", "nacionalidad": "PER" },
         { "nombre": "David Dioses", "nacionalidad": "PER" },
-        { "nombre": "Joshua Cantt", "nacionalidad": "PER" }
+        { "nombre": "Luis Arce", "nacionalidad": "ECU" },
+        { "nombre": "Joshua Cantt", "nacionalidad": "PER" },
+        { "nombre": "Arquímedes Figuera", "nacionalidad": "VEN" },
+        { "nombre": "Marcos Lliuya", "nacionalidad": "PER" }
       ],
       "delanteros": [
-        { "nombre": "Marlon de Jesús", "nacionalidad": "ECU" },
         { "nombre": "Adolfo Muñoz", "nacionalidad": "ECU" },
-        { "nombre": "David Camacho", "nacionalidad": "COL" },
-        { "nombre": "Alexander Succar", "nacionalidad": "PER" },
-        { "nombre": "Michel Rasmussen", "nacionalidad": "PER" },
         { "nombre": "Jhosep Núñez", "nacionalidad": "PER" },
+        { "nombre": "David Camacho", "nacionalidad": "COL" },
+        { "nombre": "Michel Rasmussen", "nacionalidad": "PER" },
         { "nombre": "Santiago Gálvez", "nacionalidad": "PER" },
-        { "nombre": "Maycol Infante", "nacionalidad": "PER" }
+        { "nombre": "Marlon de Jesús", "nacionalidad": "ECU" },
+        { "nombre": "Abdiel Arroyo", "nacionalidad": "PAN" }
       ]
     }
   }
