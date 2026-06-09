@@ -226,7 +226,87 @@
     },
     {
         "id": 46,
+        "nombre": "Líbano",
+        "continente": "Asia"
+    },
+    {
+        "id": 47,
+        "nombre": "Grecia",
+        "continente": "Europa"
+    },
+    {
+        "id": 48,
+        "nombre": "Guatemala",
+        "continente": "América Central"
+    },
+    {
+        "id": 49,
+        "nombre": "Palestina",
+        "continente": "Asia"
+    },
+    {
+        "id": 50,
+        "nombre": "Haití",
+        "continente": "Caribe"
+    },
+    {
+        "id": 51,
         "nombre": "Croacia",
         "continente": "Europa"
+    },
+    {
+        "id": 52,
+        "nombre": "Israel",
+        "continente": "Asia"
+    },
+    {
+        "id": 53,
+        "nombre": "Guinea Ecuatorial",
+        "continente": "África"
+    },
+    {
+        "id": 54,
+        "nombre": "Armenia",
+        "continente": "Asia"
+    },
+    {
+        "id": 55,
+        "nombre": "Polonia",
+        "continente": "Europa"
+    },
+    {
+        "id": 56,
+        "nombre": "El Salvador",
+        "continente": "América Central"
+    },
+    {
+        "id": 57,
+        "nombre": "Nicaragua",
+        "continente": "América Central"
+    },
+    {
+        "id": 58,
+        "nombre": "Honduras",
+        "continente": "América Central"
+    },
+    {
+        "id": 59,
+        "nombre": "Dinamarca",
+        "continente": "Europa"
+    },
+    {
+        "id": 60,
+        "nombre": "Siria",
+        "continente": "Asia"
+    },
+    {
+        "id": 61,
+        "nombre": "Lesoto",
+        "continente": "África"
+    },
+    {
+        "id": 62,
+        "nombre": "Gambia",
+        "continente": "África"
     }
 ]

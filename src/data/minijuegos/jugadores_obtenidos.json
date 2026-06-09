@@ -291,7 +291,7 @@
         "nacionalidades": [
             25
         ],
-        "clubActual": "Sin equipo",
+        "clubActual": "UTC",
         "posicionPrincipal": "Delantero centro",
         "posicionesSecundarias": [
             "Extremo derecho",
@@ -306,6 +306,15 @@
                     [
                         2022,
                         2022
+                    ]
+                ]
+            },
+            {
+                "id_equipo": 21,
+                "periodos": [
+                    [
+                        2026,
+                        -1
                     ]
                 ]
             }
@@ -1069,9 +1078,9 @@
             1
         ],
         "clubActual": "Juan Pablo II",
-        "posicionPrincipal": "Lateral izquierdo",
+        "posicionPrincipal": "Extremo izquierdo",
         "posicionesSecundarias": [
-            "Extremo izquierdo"
+            "Lateral izquierdo"
         ],
         "valorMercadoMaximo": 75000.0,
         "jugoExtranjero": false,
@@ -1694,7 +1703,7 @@
         "posicionesSecundarias": [
             "Mediocentro ofensivo"
         ],
-        "valorMercadoMaximo": 300000.0,
+        "valorMercadoMaximo": 450000.0,
         "jugoExtranjero": false,
         "equiposJugados": [
             {
@@ -1931,7 +1940,7 @@
         "clubActual": "Atlético Grau",
         "posicionPrincipal": "Mediocentro",
         "posicionesSecundarias": [],
-        "valorMercadoMaximo": 125000.0,
+        "valorMercadoMaximo": 150000.0,
         "jugoExtranjero": false,
         "equiposJugados": [
             {
@@ -8608,7 +8617,7 @@
         "nacionalidades": [
             1
         ],
-        "clubActual": "FBC Melgar",
+        "clubActual": "FBC Melgar II",
         "posicionPrincipal": "Pivote",
         "posicionesSecundarias": [
             "Mediocentro"
@@ -8621,7 +8630,7 @@
                 "periodos": [
                     [
                         2025,
-                        -1
+                        2025
                     ]
                 ]
             }
@@ -12276,7 +12285,7 @@
         "nacionalidades": [
             5
         ],
-        "clubActual": "FC Cajamarca",
+        "clubActual": "Sin equipo",
         "posicionPrincipal": "Extremo derecho",
         "posicionesSecundarias": [
             "Delantero centro"
@@ -12316,7 +12325,7 @@
                 "periodos": [
                     [
                         2026,
-                        -1
+                        2026
                     ]
                 ]
             }
@@ -17194,7 +17203,7 @@
         "nacionalidades": [
             1
         ],
-        "clubActual": "Sin equipo",
+        "clubActual": "CA Mannucci",
         "posicionPrincipal": "Delantero centro",
         "posicionesSecundarias": [],
         "valorMercadoMaximo": 200000.0,
@@ -17219,6 +17228,15 @@
                     [
                         2025,
                         2025
+                    ]
+                ]
+            },
+            {
+                "id_equipo": 32,
+                "periodos": [
+                    [
+                        2026,
+                        2026
                     ]
                 ]
             }
@@ -20595,7 +20613,7 @@
             "Extremo derecho",
             "Interior derecho"
         ],
-        "valorMercadoMaximo": 150000.0,
+        "valorMercadoMaximo": 200000.0,
         "jugoExtranjero": true,
         "equiposJugados": [
             {
@@ -20779,7 +20797,7 @@
         "nacionalidades": [
             1
         ],
-        "clubActual": "Sport Huancayo",
+        "clubActual": "Sp. Huancayo II",
         "posicionPrincipal": "Extremo derecho",
         "posicionesSecundarias": [
             "Delantero centro"
@@ -20796,7 +20814,7 @@
                     ],
                     [
                         2024,
-                        -1
+                        2025
                     ]
                 ]
             }
@@ -22360,7 +22378,7 @@
         "clubActual": "Comerciantes",
         "posicionPrincipal": "Extremo izquierdo",
         "posicionesSecundarias": [],
-        "valorMercadoMaximo": 25000.0,
+        "valorMercadoMaximo": 50000.0,
         "jugoExtranjero": false,
         "equiposJugados": [
             {
@@ -23268,7 +23286,7 @@
         "nacionalidades": [
             1
         ],
-        "clubActual": "FBC Melgar",
+        "clubActual": "FBC Melgar II",
         "posicionPrincipal": "Mediocentro",
         "posicionesSecundarias": [
             "Pivote",
@@ -23282,7 +23300,7 @@
                 "periodos": [
                     [
                         2025,
-                        -1
+                        2025
                     ]
                 ]
             }
@@ -25461,7 +25479,7 @@
         "clubActual": "Dep. Moquegua",
         "posicionPrincipal": "Pivote",
         "posicionesSecundarias": [],
-        "valorMercadoMaximo": 100000.0,
+        "valorMercadoMaximo": 125000.0,
         "jugoExtranjero": false,
         "equiposJugados": [
             {
@@ -26176,7 +26194,7 @@
         "nacionalidades": [
             7
         ],
-        "clubActual": "Sin equipo",
+        "clubActual": "Juan Pablo II",
         "posicionPrincipal": "Extremo izquierdo",
         "posicionesSecundarias": [
             "Interior izquierdo",
@@ -26190,7 +26208,7 @@
                 "periodos": [
                     [
                         2025,
-                        2025
+                        -1
                     ]
                 ]
             }
@@ -27154,13 +27172,13 @@
         "nacionalidades": [
             1
         ],
-        "clubActual": "Sport Huancayo",
-        "posicionPrincipal": "Extremo izquierdo",
+        "clubActual": "Sp. Huancayo II",
+        "posicionPrincipal": "Mediocentro ofensivo",
         "posicionesSecundarias": [
-            "Mediocentro ofensivo",
+            "Extremo izquierdo",
             "Extremo derecho"
         ],
-        "valorMercadoMaximo": 25000.0,
+        "valorMercadoMaximo": 75000.0,
         "jugoExtranjero": false,
         "equiposJugados": [
             {
@@ -27168,7 +27186,7 @@
                 "periodos": [
                     [
                         2024,
-                        -1
+                        2025
                     ]
                 ]
             }
@@ -30587,7 +30605,7 @@
         "nacionalidades": [
             1
         ],
-        "clubActual": "FBC Melgar",
+        "clubActual": "FBC Melgar II",
         "posicionPrincipal": "Defensa central",
         "posicionesSecundarias": [
             "Lateral derecho"
@@ -30600,7 +30618,7 @@
                 "periodos": [
                     [
                         2025,
-                        -1
+                        2025
                     ]
                 ]
             }
@@ -35414,7 +35432,7 @@
         "nacionalidades": [
             1
         ],
-        "clubActual": "Sport Huancayo",
+        "clubActual": "Juv. Cautivo",
         "posicionPrincipal": "Lateral izquierdo",
         "posicionesSecundarias": [],
         "valorMercadoMaximo": 25000.0,
@@ -35425,7 +35443,7 @@
                 "periodos": [
                     [
                         2024,
-                        -1
+                        2025
                     ]
                 ]
             }
@@ -36483,7 +36501,7 @@
             "Mediocentro ofensivo",
             "Pivote"
         ],
-        "valorMercadoMaximo": 500000.0,
+        "valorMercadoMaximo": 550000.0,
         "jugoExtranjero": false,
         "equiposJugados": [
             {
@@ -39514,7 +39532,7 @@
         "clubActual": "Sport Huancayo",
         "posicionPrincipal": "Pivote",
         "posicionesSecundarias": [],
-        "valorMercadoMaximo": 350000.0,
+        "valorMercadoMaximo": 500000.0,
         "jugoExtranjero": false,
         "equiposJugados": [
             {
@@ -43949,7 +43967,7 @@
         "clubActual": "Dep. Moquegua",
         "posicionPrincipal": "Lateral derecho",
         "posicionesSecundarias": [],
-        "valorMercadoMaximo": 175000.0,
+        "valorMercadoMaximo": 200000.0,
         "jugoExtranjero": false,
         "equiposJugados": [
             {
@@ -44142,13 +44160,13 @@
         "nacionalidades": [
             1
         ],
-        "clubActual": "Universitario",
+        "clubActual": "Unión Comercio",
         "posicionPrincipal": "Pivote",
         "posicionesSecundarias": [
             "Defensa central",
             "Libero"
         ],
-        "valorMercadoMaximo": 25000.0,
+        "valorMercadoMaximo": 100000.0,
         "jugoExtranjero": false,
         "equiposJugados": [
             {
@@ -44156,6 +44174,15 @@
                 "periodos": [
                     [
                         2025,
+                        2025
+                    ]
+                ]
+            },
+            {
+                "id_equipo": 17,
+                "periodos": [
+                    [
+                        2026,
                         -1
                     ]
                 ]
@@ -45439,7 +45466,7 @@
         "posicionesSecundarias": [
             "Defensa central"
         ],
-        "valorMercadoMaximo": 0.0,
+        "valorMercadoMaximo": 50000.0,
         "jugoExtranjero": false,
         "equiposJugados": [
             {
@@ -48878,7 +48905,7 @@
         "clubActual": "Comerciantes",
         "posicionPrincipal": "Defensa central",
         "posicionesSecundarias": [],
-        "valorMercadoMaximo": 200000.0,
+        "valorMercadoMaximo": 250000.0,
         "jugoExtranjero": false,
         "equiposJugados": [
             {
@@ -57210,7 +57237,7 @@
         "posicionesSecundarias": [
             "Pivote"
         ],
-        "valorMercadoMaximo": 250000.0,
+        "valorMercadoMaximo": 275000.0,
         "jugoExtranjero": true,
         "equiposJugados": [
             {
@@ -60494,7 +60521,7 @@
         "posicionesSecundarias": [
             "Mediocentro"
         ],
-        "valorMercadoMaximo": 50000.0,
+        "valorMercadoMaximo": 175000.0,
         "jugoExtranjero": false,
         "equiposJugados": [
             {
@@ -70616,7 +70643,7 @@
             "Delantero centro",
             "Extremo izquierdo"
         ],
-        "valorMercadoMaximo": 100000.0,
+        "valorMercadoMaximo": 175000.0,
         "jugoExtranjero": false,
         "equiposJugados": [
             {
@@ -73804,7 +73831,7 @@
             8,
             1
         ],
-        "clubActual": "FBC Melgar",
+        "clubActual": "Caracas FC",
         "posicionPrincipal": "Delantero centro",
         "posicionesSecundarias": [
             "Extremo izquierdo"
@@ -73817,14 +73844,6 @@
                 "periodos": [
                     [
                         2024,
-                        2024
-                    ],
-                    [
-                        2025,
-                        2024
-                    ],
-                    [
-                        2025,
                         2025
                     ]
                 ]
@@ -79510,7 +79529,7 @@
         "posicionesSecundarias": [
             "Extremo izquierdo"
         ],
-        "valorMercadoMaximo": 125000.0,
+        "valorMercadoMaximo": 200000.0,
         "jugoExtranjero": false,
         "equiposJugados": [
             {
@@ -83327,7 +83346,7 @@
         "clubActual": "FBC Melgar",
         "posicionPrincipal": "Portero",
         "posicionesSecundarias": [],
-        "valorMercadoMaximo": 250000.0,
+        "valorMercadoMaximo": 350000.0,
         "jugoExtranjero": false,
         "equiposJugados": [
             {
@@ -85977,7 +85996,7 @@
         "posicionesSecundarias": [
             "Mediocentro"
         ],
-        "valorMercadoMaximo": 75000.0,
+        "valorMercadoMaximo": 100000.0,
         "jugoExtranjero": false,
         "equiposJugados": [
             {
@@ -90610,12 +90629,12 @@
         "nacionalidades": [
             1
         ],
-        "clubActual": "Sport Huancayo",
-        "posicionPrincipal": "Mediocentro",
+        "clubActual": "Sp. Huancayo II",
+        "posicionPrincipal": "Pivote",
         "posicionesSecundarias": [
-            "Pivote"
+            "Mediocentro"
         ],
-        "valorMercadoMaximo": 25000.0,
+        "valorMercadoMaximo": 75000.0,
         "jugoExtranjero": false,
         "equiposJugados": [
             {
@@ -90623,7 +90642,7 @@
                 "periodos": [
                     [
                         2024,
-                        -1
+                        2025
                     ]
                 ]
             }
@@ -92712,7 +92731,7 @@
         "nacionalidades": [
             1
         ],
-        "clubActual": "FBC Melgar",
+        "clubActual": "FBC Melgar II",
         "posicionPrincipal": "Lateral izquierdo",
         "posicionesSecundarias": [],
         "valorMercadoMaximo": 50000.0,
@@ -92724,10 +92743,6 @@
                     [
                         2023,
                         2024
-                    ],
-                    [
-                        2026,
-                        -1
                     ]
                 ]
             },
@@ -95302,7 +95317,7 @@
         "clubActual": "Sport Huancayo",
         "posicionPrincipal": "Delantero centro",
         "posicionesSecundarias": [],
-        "valorMercadoMaximo": 100000.0,
+        "valorMercadoMaximo": 125000.0,
         "jugoExtranjero": false,
         "equiposJugados": [
             {
@@ -95761,7 +95776,7 @@
         "nacionalidades": [
             1
         ],
-        "clubActual": "FBC Melgar",
+        "clubActual": "FBC Melgar II",
         "posicionPrincipal": "Lateral derecho",
         "posicionesSecundarias": [
             "Defensa central"
@@ -95775,10 +95790,6 @@
                     [
                         2024,
                         2024
-                    ],
-                    [
-                        2025,
-                        -1
                     ]
                 ]
             },
@@ -110054,7 +110065,7 @@
         "nacionalidades": [
             1
         ],
-        "clubActual": "Sport Huancayo",
+        "clubActual": "Sp. Huancayo II",
         "posicionPrincipal": "Defensa central",
         "posicionesSecundarias": [
             "Lateral derecho"
@@ -110067,7 +110078,7 @@
                 "periodos": [
                     [
                         2024,
-                        -1
+                        2025
                     ]
                 ]
             }
@@ -112470,7 +112481,7 @@
             "Pivote",
             "Lateral derecho"
         ],
-        "valorMercadoMaximo": 375000.0,
+        "valorMercadoMaximo": 400000.0,
         "jugoExtranjero": false,
         "equiposJugados": [
             {
@@ -113159,7 +113170,7 @@
         "posicionesSecundarias": [
             "Lateral izquierdo"
         ],
-        "valorMercadoMaximo": 450000.0,
+        "valorMercadoMaximo": 600000.0,
         "jugoExtranjero": false,
         "equiposJugados": [
             {
@@ -116708,7 +116719,7 @@
         "clubActual": "Juan Pablo II",
         "posicionPrincipal": "Defensa central",
         "posicionesSecundarias": [],
-        "valorMercadoMaximo": 200000.0,
+        "valorMercadoMaximo": 225000.0,
         "jugoExtranjero": false,
         "equiposJugados": [
             {
@@ -118143,7 +118154,7 @@
         "clubActual": "Comerciantes",
         "posicionPrincipal": "Portero",
         "posicionesSecundarias": [],
-        "valorMercadoMaximo": 175000.0,
+        "valorMercadoMaximo": 350000.0,
         "jugoExtranjero": false,
         "equiposJugados": [
             {
@@ -118316,7 +118327,7 @@
         "posicionesSecundarias": [
             "Lateral derecho"
         ],
-        "valorMercadoMaximo": 0.0,
+        "valorMercadoMaximo": 1200000.0,
         "jugoExtranjero": false,
         "equiposJugados": [
             {
@@ -118901,7 +118912,7 @@
             "Extremo izquierdo",
             "Extremo derecho"
         ],
-        "valorMercadoMaximo": 125000.0,
+        "valorMercadoMaximo": 250000.0,
         "jugoExtranjero": false,
         "equiposJugados": [
             {
@@ -120738,7 +120749,7 @@
         "posicionesSecundarias": [
             "Extremo derecho"
         ],
-        "valorMercadoMaximo": 1000000.0,
+        "valorMercadoMaximo": 1200000.0,
         "jugoExtranjero": false,
         "equiposJugados": [
             {
@@ -126733,7 +126744,7 @@
             7,
             1
         ],
-        "clubActual": "FC Cajamarca",
+        "clubActual": "Sin equipo",
         "posicionPrincipal": "Mediocentro ofensivo",
         "posicionesSecundarias": [
             "Mediocentro",
@@ -126818,7 +126829,7 @@
                 "periodos": [
                     [
                         2026,
-                        -1
+                        2026
                     ]
                 ]
             }
@@ -126885,9 +126896,10 @@
             1
         ],
         "clubActual": "FC Cajamarca",
-        "posicionPrincipal": "Defensa central",
+        "posicionPrincipal": "Pivote",
         "posicionesSecundarias": [
-            "Pivote"
+            "Defensa central",
+            "Mediocentro"
         ],
         "valorMercadoMaximo": 1000000.0,
         "jugoExtranjero": true,
@@ -133077,7 +133089,7 @@
             1,
             21
         ],
-        "clubActual": "Sport. Cristal",
+        "clubActual": "Llacuabamba",
         "posicionPrincipal": "Defensa central",
         "posicionesSecundarias": [],
         "valorMercadoMaximo": 75000.0,
@@ -133089,14 +133101,6 @@
                     [
                         2024,
                         2024
-                    ],
-                    [
-                        2025,
-                        2024
-                    ],
-                    [
-                        2026,
-                        -1
                     ]
                 ]
             },
@@ -133115,6 +133119,15 @@
                     [
                         2025,
                         2025
+                    ]
+                ]
+            },
+            {
+                "id_equipo": 36,
+                "periodos": [
+                    [
+                        2026,
+                        -1
                     ]
                 ]
             }
@@ -133487,7 +133500,7 @@
         "nacionalidades": [
             1
         ],
-        "clubActual": "Universitario",
+        "clubActual": "Betis Juvenil A",
         "posicionPrincipal": "Defensa central",
         "posicionesSecundarias": [],
         "valorMercadoMaximo": 0.0,
@@ -133498,7 +133511,7 @@
                 "periodos": [
                     [
                         2025,
-                        -1
+                        2025
                     ]
                 ]
             }
@@ -133527,7 +133540,7 @@
         "posicionesSecundarias": [
             "Lateral izquierdo"
         ],
-        "valorMercadoMaximo": 600000.0,
+        "valorMercadoMaximo": 900000.0,
         "jugoExtranjero": false,
         "equiposJugados": [
             {
@@ -136883,7 +136896,7 @@
         "posicionesSecundarias": [
             "Libero"
         ],
-        "valorMercadoMaximo": 1000000.0,
+        "valorMercadoMaximo": 1300000.0,
         "jugoExtranjero": false,
         "equiposJugados": [
             {
@@ -138225,7 +138238,7 @@
         "clubActual": "Dep. Moquegua",
         "posicionPrincipal": "Pivote",
         "posicionesSecundarias": [],
-        "valorMercadoMaximo": 225000.0,
+        "valorMercadoMaximo": 250000.0,
         "jugoExtranjero": false,
         "equiposJugados": [
             {
@@ -142569,7 +142582,7 @@
         "posicionesSecundarias": [
             "Extremo izquierdo"
         ],
-        "valorMercadoMaximo": 375000.0,
+        "valorMercadoMaximo": 400000.0,
         "jugoExtranjero": true,
         "equiposJugados": [
             {
@@ -145794,7 +145807,7 @@
         "clubActual": "Dep. Garcilaso",
         "posicionPrincipal": "Lateral derecho",
         "posicionesSecundarias": [],
-        "valorMercadoMaximo": 25000.0,
+        "valorMercadoMaximo": 50000.0,
         "jugoExtranjero": false,
         "equiposJugados": [
             {
@@ -147487,10 +147500,10 @@
         "nacionalidades": [
             1
         ],
-        "clubActual": "Alianza Atl.",
+        "clubActual": "Unión Comercio",
         "posicionPrincipal": "Portero",
         "posicionesSecundarias": [],
-        "valorMercadoMaximo": 75000.0,
+        "valorMercadoMaximo": 100000.0,
         "jugoExtranjero": false,
         "equiposJugados": [
             {
@@ -147512,7 +147525,12 @@
                     [
                         2024,
                         2025
-                    ],
+                    ]
+                ]
+            },
+            {
+                "id_equipo": 17,
+                "periodos": [
                     [
                         2026,
                         -1
@@ -147854,7 +147872,7 @@
             "Extremo izquierdo",
             "Mediocentro ofensivo"
         ],
-        "valorMercadoMaximo": 250000.0,
+        "valorMercadoMaximo": 300000.0,
         "jugoExtranjero": true,
         "equiposJugados": [
             {
@@ -157458,7 +157476,7 @@
         "posicionesSecundarias": [
             "Pivote"
         ],
-        "valorMercadoMaximo": 200000.0,
+        "valorMercadoMaximo": 250000.0,
         "jugoExtranjero": false,
         "equiposJugados": [
             {
@@ -162282,7 +162300,7 @@
         "nacionalidades": [
             1
         ],
-        "clubActual": "Estudiantil CNI",
+        "clubActual": "Alianza Atl.",
         "posicionPrincipal": "Portero",
         "posicionesSecundarias": [],
         "valorMercadoMaximo": 200000.0,
@@ -162343,6 +162361,15 @@
                     [
                         2024,
                         2025
+                    ]
+                ]
+            },
+            {
+                "id_equipo": 11,
+                "periodos": [
+                    [
+                        2026,
+                        -1
                     ]
                 ]
             }
@@ -164305,7 +164332,7 @@
         "posicionesSecundarias": [
             "Extremo derecho"
         ],
-        "valorMercadoMaximo": 150000.0,
+        "valorMercadoMaximo": 175000.0,
         "jugoExtranjero": true,
         "equiposJugados": [
             {
@@ -164829,7 +164856,7 @@
         "nacionalidades": [
             1
         ],
-        "clubActual": "FC Cajamarca",
+        "clubActual": "Las Palmas",
         "posicionPrincipal": "Defensa central",
         "posicionesSecundarias": [
             "Lateral izquierdo"
@@ -164851,7 +164878,7 @@
                 "periodos": [
                     [
                         2025,
-                        -1
+                        2025
                     ]
                 ]
             }
@@ -166106,7 +166133,7 @@
         "posicionesSecundarias": [
             "Mediocentro"
         ],
-        "valorMercadoMaximo": 50000.0,
+        "valorMercadoMaximo": 75000.0,
         "jugoExtranjero": false,
         "equiposJugados": [
             {
@@ -166342,15 +166369,15 @@
         "edad": 29,
         "altura": 184.0,
         "nacionalidades": [
-            2,
-            7
+            7,
+            2
         ],
         "clubActual": "Comerciantes",
         "posicionPrincipal": "Defensa central",
         "posicionesSecundarias": [
             "Lateral izquierdo"
         ],
-        "valorMercadoMaximo": 10000.0,
+        "valorMercadoMaximo": 225000.0,
         "jugoExtranjero": true,
         "equiposJugados": [
             {
@@ -167437,7 +167464,7 @@
             "Extremo derecho",
             "Pivote"
         ],
-        "valorMercadoMaximo": 125000.0,
+        "valorMercadoMaximo": 175000.0,
         "jugoExtranjero": false,
         "equiposJugados": [
             {
@@ -169655,7 +169682,7 @@
         "posicionesSecundarias": [
             "Defensa central"
         ],
-        "valorMercadoMaximo": 100000.0,
+        "valorMercadoMaximo": 250000.0,
         "jugoExtranjero": false,
         "equiposJugados": [
             {
@@ -172006,9 +172033,9 @@
         "altura": 177.0,
         "nacionalidades": [
             2,
-            46
+            51
         ],
-        "clubActual": "FC Cajamarca",
+        "clubActual": "Cienciano",
         "posicionPrincipal": "Lateral izquierdo",
         "posicionesSecundarias": [
             "Defensa central"
@@ -172037,8 +172064,7 @@
         "edad": 36,
         "altura": 180.0,
         "nacionalidades": [
-            2,
-            46
+            4
         ],
         "clubActual": "Alianza Lima",
         "posicionPrincipal": "Pivote",
@@ -172103,7 +172129,7 @@
             }
         ],
         "titulosObtenidos": [],
-        "url_foto": "https://img.a.transfermarkt.technology/portrait/header/131233-1718987163.jpg?lm=1"
+        "url_foto": "https://img.a.transfermarkt.technology/portrait/header/372163-1740100691.jpg?lm=1"
     },
     {
         "id": 3462,
@@ -172156,6 +172182,76 @@
                 "cantidad": 1
             }
         ],
-        "url_foto": "https://img.a.transfermarkt.technology/portrait/header/131233-1718987163.jpg?lm=1"
+        "url_foto": "https://img.a.transfermarkt.technology/portrait/header/130158-1778267129.png?lm=1"
+    },
+    {
+        "id": 3463,
+        "nombre": "Marlon Torres",
+        "fechaNacimiento": "2002-05-16",
+        "fechaFallecimiento": null,
+        "edad": 24,
+        "altura": 176.0,
+        "nacionalidades": [
+            5
+        ],
+        "clubActual": "Los Chankas",
+        "posicionPrincipal": "Delantero centro",
+        "posicionesSecundarias": [
+            "Extremo derecho",
+            "Extremo izquierdo"
+        ],
+        "valorMercadoMaximo": 250000.0,
+        "jugoExtranjero": true,
+        "equiposJugados": [
+            {
+                "id_equipo": 30,
+                "periodos": [
+                    [
+                        2025,
+                        2025
+                    ]
+                ]
+            },
+            {
+                "id_equipo": 39,
+                "periodos": [
+                    [
+                        2026,
+                        -1
+                    ]
+                ]
+            }
+        ],
+        "titulosObtenidos": [],
+        "url_foto": "https://img.a.transfermarkt.technology/portrait/header/648289-1779373303.png?lm=1"
+    },
+    {
+        "id": 3464,
+        "nombre": "Gustavo Rissi",
+        "fechaNacimiento": "1998-02-04",
+        "fechaFallecimiento": null,
+        "edad": 28,
+        "altura": 184.0,
+        "nacionalidades": [
+            3
+        ],
+        "clubActual": "Sport Huancayo",
+        "posicionPrincipal": "Defensa central",
+        "posicionesSecundarias": [],
+        "valorMercadoMaximo": 125000.0,
+        "jugoExtranjero": true,
+        "equiposJugados": [
+            {
+                "id_equipo": 10,
+                "periodos": [
+                    [
+                        2026,
+                        -1
+                    ]
+                ]
+            }
+        ],
+        "titulosObtenidos": [],
+        "url_foto": "https://img.a.transfermarkt.technology/portrait/header/625618-1679139844.jpg?lm=1"
     }
 ]
