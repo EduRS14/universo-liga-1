@@ -1,18 +1,10 @@
 ---
 import Layout from '../../layouts/Layout.astro';
 import equiposData from '../../data/wiki/equipos.json';
-import type { Equipo } from '../../types/equipo';
 
-export function getStaticPaths() {
-  return equiposData.map((equipo) => {
-    return {
-      params: { id: equipo.id.toString() }, 
-      props: { equipo }, 
-    };
-  });
-}
-
-const { equipo } = Astro.props;
+const { id } = Astro.params;
+const equipo = equiposData.find(e => e.id === Number(id));
+if (!equipo) return Astro.redirect('/404');
 
 const { identidad, estadio, historia, plantilla, palmares } = equipo;
 
