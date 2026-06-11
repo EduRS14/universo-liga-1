@@ -1,6 +1,6 @@
 ---
 import Layout from '../../layouts/Layout.astro';
-import MenuOnceLeyendas from '../../components/minijuegos/once-leyendas/Menu-Once-Leyendas';
+import MenuOnceUltimosRetirados from '../../components/minijuegos/once-ultimos-retirados/Menu-Once-Ultimos-Retirados';
 
 const dificultades : string[] = ["Normal", "Difícil"];
 const tiempos : string[] = ["Sin Tiempo", "45s", "60s", "90s"];
@@ -16,14 +16,14 @@ const tiemposValores : number[] = [0, 45, 60, 90];
             <div class="col-12 contenedor-titulo-calculadora">
                 <div class="row gx-0 justify-content-center align-items-center">
                     <div class="col-6">
-                        <h1 class="text-center titulo-calculadora">MINIJUEGO "EL ONCE - LEYENDAS"</h1>
+                        <h1 class="text-center titulo-calculadora">MINIJUEGO "EL ONCE - LOS ÚLTIMOS RETIRADOS"</h1>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <MenuOnceLeyendas client:load />
+    <MenuOnceUltimosRetirados client:load />
 
 </Layout>
 

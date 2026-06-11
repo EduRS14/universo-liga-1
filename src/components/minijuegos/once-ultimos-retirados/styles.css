@@ -26,7 +26,7 @@
   border: 1px solid #334155; /* Borde gris metálico */
   
   /* FONDO DE IMAGEN TOTAL */
-  background-image: url('/img/minijuegos/juegos/el-once-leyendas.webp');
+  background-image: url('/img/minijuegos/juegos/el-once-ultimos-retirados.webp');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -112,6 +112,26 @@
 
 .descripcion-juego-leyendas strong {
   color: #e2e8f0; /* Blanco apagado para mantener la elegancia */
+}
+
+.lupa-reglas {
+  text-align: left;
+  color: #94a3b8;
+  font-size: 0.85rem;
+  line-height: 1.6;
+  padding-left: 1.25rem;
+  margin: 0 0 1.5rem 0;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.lupa-reglas li {
+  margin-bottom: 0.25rem;
+}
+
+.lupa-reglas strong {
+  color: #ffffff;
 }
 
 /* --- FORMULARIO Y SELECTOR DE TIEMPO --- */
@@ -262,6 +282,8 @@
 
   .descripcion-juego-leyendas { font-size: 0.75rem; line-height: 1.45; margin-bottom: 1.2rem; }
 
+  .lupa-reglas { font-size: 0.78rem; }
+
   .contenedor-config-tiempo { padding: 0.8rem; }
   .titulo-config-leyendas { font-size: 0.85rem; }
   .radio-label-leyendas { font-size: 0.72rem; padding: 7px 4px; }
@@ -284,6 +306,8 @@
   .subtitulo-hero-leyendas { font-size: 0.65rem; }
 
   .descripcion-juego-leyendas { font-size: 0.7rem; }
+
+  .lupa-reglas { font-size: 0.72rem; padding-left: 1rem; }
 
   .radio-label-leyendas { font-size: 0.65rem; padding: 6px 3px; }
 
