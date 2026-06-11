@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import './styles.css';
-import JuegoElOnceLeyendas from './juego/juego-el-once-leyendas';
+import JuegoOnceUltimosRetirados from './juego/juego-once-ultimos-retirados';
 
 const TIEMPOS = [
   { label: "Sin Tiempo", value: 0 },
@@ -18,7 +18,7 @@ const FORMACIONES = [
 ];
 
 // --- COMPONENTE PRINCIPAL ---
-export default function MenuOnceLeyendas() {
+export default function MenuOnceUltimosRetirados() {
   const [dificultad, setDificultad] = useState<number | null>(null);
   const [tiempo, setTiempo] = useState<number | null>(null);
   const [formacion, setFormacion] = useState<string | null>(null);
@@ -31,18 +31,18 @@ export default function MenuOnceLeyendas() {
   // 1. CARGA INICIAL (Montaje)
   useEffect(() => {
     // A) Chequear si ya jugó hoy (bloqueo diario)
-    const jugado = localStorage.getItem('juegoJugadoElOnceLeyendas');
+    const jugado = localStorage.getItem('juegoJugadoOnceUltimosRetirados');
     if (jugado) {
       setYaJugoHoy(true);
     }
     
     // B) Chequear si hay una partida en curso (Recuperación de estado)
-    const iniciadoPrevio = localStorage.getItem('juegoIniciadoElOnceLeyendas');
+    const iniciadoPrevio = localStorage.getItem('juegoIniciadoOnceUltimosRetirados');
     
     if (iniciadoPrevio === 'true') {
-        const difGuardada = localStorage.getItem('elOnceLeyendas_dificultad');
-        const tiempoGuardado = localStorage.getItem('elOnceLeyendas_tiempo');
-        const formacionGuardada = localStorage.getItem('elOnceLeyendas_formacion');
+        const difGuardada = localStorage.getItem('onceUltimosRetirados_dificultad');
+        const tiempoGuardado = localStorage.getItem('onceUltimosRetirados_tiempo');
+        const formacionGuardada = localStorage.getItem('onceUltimosRetirados_formacion');
 
         if (difGuardada) setDificultad(Number(difGuardada));
         if (tiempoGuardado) setTiempo(Number(tiempoGuardado));
@@ -76,10 +76,10 @@ export default function MenuOnceLeyendas() {
       setJuegoIniciado(true);
 
       // Guardar en LocalStorage
-      localStorage.setItem('elOnceLeyendas_dificultad', dificultad !== null ? dificultad.toString() : '');
-      localStorage.setItem('elOnceLeyendas_tiempo', tiempo.toString());
-      localStorage.setItem('elOnceLeyendas_formacion', nuevaFormacion);
-      localStorage.setItem('juegoIniciadoElOnceLeyendas', 'true');
+      localStorage.setItem('onceUltimosRetirados_dificultad', dificultad !== null ? dificultad.toString() : '');
+      localStorage.setItem('onceUltimosRetirados_tiempo', tiempo.toString());
+      localStorage.setItem('onceUltimosRetirados_formacion', nuevaFormacion);
+      localStorage.setItem('juegoIniciadoOnceUltimosRetirados', 'true');
     }
   };
 
@@ -95,7 +95,7 @@ export default function MenuOnceLeyendas() {
   if (juegoIniciado && tiempo !== null && formacion !== null) {
     return (
       <div className="fade-in">
-         <JuegoElOnceLeyendas />
+         <JuegoOnceUltimosRetirados />
       </div>
     );
   }
@@ -114,20 +114,27 @@ export default function MenuOnceLeyendas() {
           {/* Cabecera del Juego */}
           <div className="leyendas-cabecera text-center mb-5">
             <span className="badge-categoria-leyendas">RETO</span>
-            <h1 className="titulo-hero-leyendas">EL ONCE: LEYENDAS</h1>
-            <h2 className="subtitulo-hero-leyendas">El equipo histórico definitivo</h2>
+            <h1 className="titulo-hero-leyendas">EL ONCE: LOS ÚLTIMOS RETIRADOS</h1>
+            <h2 className="subtitulo-hero-leyendas">LA MEMORIA DE LA ÚLTIMA ERA</h2>
           </div>
 
           {/* Cuerpo y Acción */}
           <div className="leyendas-cuerpo-accion text-center">
             <p className="descripcion-juego-leyendas text-justify">
-              El tiempo pasa, pero <strong>la clase es eterna.</strong> En esta edición especial, tu misión es invocar a los <strong>ídolos de antaño</strong> que ya forman parte del mito. Debes armar un equipo utilizando <strong>un solo jugador que hay jugado en la primera división entre 2010 y 2026 y que ya esté retirado por cada club</strong> seleccionado. ¿Recuerdas quién era el caudillo de esa defensa que ya no existe? Es momento de rendir tributo. <strong>Reto ilimitado</strong>
+              Pon a prueba tu conocimiento sobre el torneo local reciente: acepta el desafío de los clubes aleatorios y completa la cancha con los últimos en colgar los chimpunes.
             </p>
+
+            <ul className="lupa-reglas">
+              <li>Solo jugadores <strong>retirados</strong> que hayan jugado en Primera (2010-2025)</li>
+              <li>Un jugador <strong>por club</strong> histórico que aparezca en cada turno</li>
+              <li><strong>Sin repetir</strong> jugadores en el once</li>
+              <li>Ganas si completas los 11, pierdes si se acaba el tiempo o te rindes</li>
+            </ul>
 
             {yaJugoHoy ?  (
               <div className="alerta-jugado-leyendas fade-in">
                 <span className="alerta-icono-leyendas">👑</span>
-                <p>Ya armaste tu equipo histórico hoy<br/><strong>Vuelve mañana para invocar nuevas leyendas</strong></p>
+                <p>Ya armaste tu equipo hoy<br/><strong>Vuelve mañana para intentarlo de nuevo</strong></p>
               </div>
             ) : (
               <form onSubmit={handleContinuar} className="seccion-accion-leyendas">
