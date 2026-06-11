@@ -87233,7 +87233,7 @@
         "nacionalidades": [
             1
         ],
-        "clubActual": "Universitario",
+        "clubActual": "Estudiantil CNI",
         "posicionPrincipal": "Mediocentro",
         "posicionesSecundarias": [
             "Extremo izquierdo",
@@ -87265,7 +87265,7 @@
                 "periodos": [
                     [
                         2026,
-                        -1
+                        2026
                     ]
                 ]
             }
@@ -127454,7 +127454,7 @@
         "nacionalidades": [
             1
         ],
-        "clubActual": "Juan Pablo II",
+        "clubActual": "Sin equipo",
         "posicionPrincipal": "Defensa central",
         "posicionesSecundarias": [],
         "valorMercadoMaximo": 675000.0,
@@ -127514,7 +127514,7 @@
                 "periodos": [
                     [
                         2026,
-                        -1
+                        2026
                     ]
                 ]
             }
@@ -160535,7 +160535,7 @@
         "nacionalidades": [
             1
         ],
-        "clubActual": "Cienciano",
+        "clubActual": "Juan Pablo II",
         "posicionPrincipal": "Mediocentro",
         "posicionesSecundarias": [
             "Mediocentro ofensivo",
@@ -160550,14 +160550,6 @@
                     [
                         2024,
                         2024
-                    ],
-                    [
-                        2026,
-                        2025
-                    ],
-                    [
-                        2026,
-                        2025
                     ]
                 ]
             },
@@ -160567,6 +160559,10 @@
                     [
                         2025,
                         2025
+                    ],
+                    [
+                        2026,
+                        -1
                     ]
                 ]
             },
@@ -160575,7 +160571,7 @@
                 "periodos": [
                     [
                         2026,
-                        -1
+                        2026
                     ]
                 ]
             }
@@ -166234,7 +166230,7 @@
         "nacionalidades": [
             5
         ],
-        "clubActual": "Sin equipo",
+        "clubActual": "Univ. de Vinto",
         "posicionPrincipal": "Delantero centro",
         "posicionesSecundarias": [
             "Extremo izquierdo",
@@ -166955,7 +166951,7 @@
         "nacionalidades": [
             7
         ],
-        "clubActual": "Juan Pablo II",
+        "clubActual": "Sin equipo",
         "posicionPrincipal": "Delantero centro",
         "posicionesSecundarias": [],
         "valorMercadoMaximo": 450000.0,
@@ -166966,7 +166962,7 @@
                 "periodos": [
                     [
                         2026,
-                        -1
+                        2026
                     ]
                 ]
             }
@@ -167365,7 +167361,7 @@
             44,
             11
         ],
-        "clubActual": "Universitario",
+        "clubActual": "Sin equipo",
         "posicionPrincipal": "Delantero centro",
         "posicionesSecundarias": [],
         "valorMercadoMaximo": 500000.0,
@@ -167376,12 +167372,17 @@
                 "periodos": [
                     [
                         2026,
-                        -1
+                        2026
                     ]
                 ]
             }
         ],
-        "titulosObtenidos": [],
+        "titulosObtenidos": [
+            {
+                "id_trofeo": 201,
+                "cantidad": 1
+            }
+        ],
         "url_foto": "https://img.a.transfermarkt.technology/portrait/header/337070-1588061669.jpg?lm=1"
     },
     {
@@ -170424,7 +170425,7 @@
             2,
             12
         ],
-        "clubActual": "Sin equipo",
+        "clubActual": "Sarmiento",
         "posicionPrincipal": "Lateral izquierdo",
         "posicionesSecundarias": [
             "Interior izquierdo",

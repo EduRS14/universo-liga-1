@@ -6,7 +6,7 @@ import './styles.css';
 
 // --- CONSTANTES Y CONFIGURACIÓN ---
 
-const STORAGE_KEY = 'elOnceLeyendas_partidaGuardada';
+const STORAGE_KEY = 'onceUltimosRetirados_partidaGuardada';
 
 const COORDENADAS: Record<string, { id: number, top: string, left: string, rol: string }[]> = {
   "4-4-2": [
@@ -113,7 +113,7 @@ const MAPA_POSICIONES: Record<string, string[]> = {
   "DC": ["Delantero centro", "Mediapunta"]
 };
 
-export default function JuegoElOnceLeyendas() {
+export default function JuegoOnceUltimosRetirados() {
   // --- ESTADOS ---
   const [data, setData] = useState<GameState | null>(null);
   const [cargando, setCargando] = useState(true);
@@ -164,9 +164,9 @@ export default function JuegoElOnceLeyendas() {
 
     // B) Iniciar Juego Nuevo (si no había nada guardado o estaba corrupto)
     const timer = setTimeout(() => {
-        const dif = localStorage.getItem('elOnceLeyendas_dificultad');
-        const time = localStorage.getItem('elOnceLeyendas_tiempo');
-        const form = localStorage.getItem('elOnceLeyendas_formacion');
+        const dif = localStorage.getItem('onceUltimosRetirados_dificultad');
+        const time = localStorage.getItem('onceUltimosRetirados_tiempo');
+        const form = localStorage.getItem('onceUltimosRetirados_formacion');
         
         //if (dif && time && form) {
         //    const tiempoNum = Number(time);
@@ -287,7 +287,6 @@ export default function JuegoElOnceLeyendas() {
   };
 
   const handleRendirse = () => {
-      reiniciarJuegoTotalmente()
       setEstadoJuego('perdido');
   };
 
@@ -297,10 +296,10 @@ export default function JuegoElOnceLeyendas() {
       localStorage.removeItem(STORAGE_KEY);
       
       // 2. Borrar configuración inicial para que MenuOnce muestre el form
-      localStorage.removeItem('elOnceLeyendas_dificultad');
-      localStorage.removeItem('elOnceLeyendas_tiempo');
-      localStorage.removeItem('elOnceLeyendas_formacion');
-      localStorage.removeItem('juegoIniciadoElOnceLeyendas');
+      localStorage.removeItem('onceUltimosRetirados_dificultad');
+      localStorage.removeItem('onceUltimosRetirados_tiempo');
+      localStorage.removeItem('onceUltimosRetirados_formacion');
+      localStorage.removeItem('juegoIniciadoOnceUltimosRetirados');
   };
 
   const volver = () => {
@@ -319,7 +318,7 @@ export default function JuegoElOnceLeyendas() {
                   
                   <p className='texto-explicacion-estado'>
                       {estadoJuego === 'ganado' 
-                          ? 'Has completado el once de leyendas correctamente.' 
+                          ? 'Has completado el once de los últimos retirados correctamente.' 
                           : 'No lograste completar el equipo a tiempo o te rendiste.'}
                   </p>
 
@@ -533,7 +532,7 @@ export default function JuegoElOnceLeyendas() {
           <div className="row justify-content-center align-items-center">
 
               <div className="col-10 col-lg-10">
-                <h2 className='titulo-descripcion-minijuego'>El Once - Leyendas: El Templo de la Memoria</h2>
+                <h2 className='titulo-descripcion-minijuego'>El Once - Los Últimos Retirados: La memoria de la última era</h2>
               </div>
 
               <div className="col-11 col-lg-10">
