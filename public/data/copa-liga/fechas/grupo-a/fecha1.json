@@ -1,4 +1,4 @@
 [
-  { "id": "GA-F1-P1", "equipo_local_id": 4, "equipo_visitante_id": 2, "goles_local": null, "goles_visitante": null, "jugado": false },
-  { "id": "GA-F1-P2", "equipo_local_id": 3, "equipo_visitante_id": 1, "goles_local": null, "goles_visitante": null, "jugado": false }
+  { "id": "GA-F1-P1", "equipo_local_id": 4, "equipo_visitante_id": 2, "goles_local": 0, "goles_visitante": 1, "jugado": true },
+  { "id": "GA-F1-P2", "equipo_local_id": 3, "equipo_visitante_id": 1, "goles_local": 0, "goles_visitante": 0, "jugado": true }
 ]

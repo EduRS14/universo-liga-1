@@ -8,6 +8,12 @@
   margin: 2rem 0;
 }
 
+.once-menu-wrapper {
+  min-height: 72vh;
+  padding: 0.75rem 1rem;
+  margin: 1.5rem 0 2rem 0;
+}
+
 .texto-cargando {
   font-size: 1.5rem;
   color: white;
@@ -52,11 +58,15 @@
 .once-contenido-contenedor {
   position: relative;
   z-index: 2;
-  padding: 3rem;
+  padding: 1.5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   min-width: 50vw;
+}
+
+.once-cabecera {
+  margin-bottom: 0.8rem !important;
 }
 
 .once-cuerpo-accion {
@@ -70,29 +80,29 @@
 .badge-categoria-once {
   background-color: #06b6d4; /* Cian neón */
   color: #083344; /* Azul marino muy oscuro para contraste */
-  padding: 5px 14px;
-  border-radius: 10px;
-  font-size: 0.75rem;
+  padding: 4px 10px;
+  border-radius: 8px;
+  font-size: 0.65rem;
   font-weight: 800;
   letter-spacing: 1.5px;
   text-transform: uppercase;
-  margin-bottom: 12px;
+  margin-bottom: 6px;
   display: inline-block;
 }
 
 .titulo-hero-once {
   color: #ffffff;
-  font-size: 2.5rem;
+  font-size: 1.8rem;
   font-weight: 900;
   line-height: 1;
-  margin: 0.5rem 0 0.5rem 0;
+  margin: 0.2rem 0 0.2rem 0;
   letter-spacing: 1px;
   text-shadow: 0 4px 10px rgba(0,0,0,0.5);
 }
 
 .subtitulo-hero-once {
   color: #67e8f9; /* Cian suave */
-  font-size: 1.1rem;
+  font-size: 0.85rem;
   font-weight: 700;
   margin: 0;
   text-transform: uppercase;
@@ -101,14 +111,103 @@
 
 .descripcion-juego-once {
   color: #cbd5e1;
-  font-size: 1.05rem;
-  line-height: 1.6;
-  margin-bottom: 2rem;
+  font-size: 0.85rem;
+  line-height: 1.5;
+  margin-bottom: 0.8rem;
   max-width: 500px;
 }
 
 .descripcion-juego-once strong {
   color: #ffffff;
+}
+
+/* --- SLIDER DE INSTRUCCIONES --- */
+.once-slider {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto 0.8rem auto;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid #1e293b;
+}
+
+.once-slider.carousel {
+  padding-bottom: 20px;
+  background-color: #0f172a;
+}
+
+.once-slider .carousel-indicators {
+  bottom: 10px;
+  margin-bottom: 0;
+}
+
+.once-slide-inner {
+  position: relative;
+  height: 220px;
+  background: #0f172a;
+}
+
+.once-slide-placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+.once-slide-emoji {
+  font-size: 3rem;
+  line-height: 1;
+}
+
+.once-slide-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  padding: 0.6rem;
+  box-sizing: border-box;
+}
+
+.once-slide-caption {
+  background: #0f172a;
+  padding: 0.5rem 0.8rem;
+  text-align: center;
+  border-top: 1px solid #1e293b;
+}
+
+.once-slide-caption h5 {
+  color: #67e8f9;
+  font-size: 0.78rem;
+  font-weight: 700;
+  margin-bottom: 0.1rem;
+}
+
+.once-slide-caption p {
+  color: #cbd5e1;
+  font-size: 0.7rem;
+  line-height: 1.25;
+  margin: 0;
+}
+
+.once-slider .carousel-indicators button {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: #475569;
+  border: none;
+  margin: 0 3px;
+}
+
+.once-slider .carousel-indicators button.active {
+  background-color: #06b6d4;
+}
+
+.once-slider .carousel-control-prev-icon,
+.once-slider .carousel-control-next-icon {
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.6));
 }
 
 /* --- FORMULARIO Y SELECTOR DE TIEMPO --- */
@@ -122,32 +221,32 @@
 
 .contenedor-config-tiempo {
   background: rgb(36, 36, 36);
-  border-radius: 16px;
-  padding: 1.5rem;
+  border-radius: 12px;
+  padding: 0.8rem;
   width: 100%;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
 }
 
 .titulo-config-once {
   color: #b4b4b4;
-  font-size: 0.9rem;
+  font-size: 0.75rem;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 1px;
   text-align: center;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
 }
 
 .selector-tiempo-once {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 6px;
   justify-content: center;
 }
 
 .opcion-radio-wrapper {
-  flex: 1 1 calc(25% - 10px);
-  min-width: 80px;
+  flex: 1 1 calc(25% - 6px);
+  min-width: 60px;
 }
 
 .radio-oculto-once {
@@ -159,10 +258,10 @@
   background-color: #164e63; /* Azul verdoso oscuro */
   color: #b4b4b4;
   border: 2px solid transparent;
-  padding: 10px 5px;
-  border-radius: 15px;
+  padding: 6px 4px;
+  border-radius: 12px;
   font-weight: 600;
-  font-size: 0.9rem;
+  font-size: 0.75rem;
   text-align: center;
   cursor: pointer;
   transition: all 0.2s ease;
@@ -186,9 +285,9 @@
   background: #06b6d4; /* Cian principal */
   color: #083344;
   border: none;
-  padding: 16px 40px;
+  padding: 10px 28px;
   border-radius: 50px;
-  font-size: 1.2rem;
+  font-size: 0.9rem;
   font-weight: 800;
   letter-spacing: 1px;
   cursor: pointer;
@@ -256,13 +355,19 @@
 
   .descripcion-juego-once { font-size: 0.75rem; line-height: 1.45; margin-bottom: 1.2rem; }
 
-  .contenedor-config-tiempo { padding: 0.8rem; }
-  .titulo-config-once { font-size: 0.85rem; }
-  .radio-label-once { font-size: 0.72rem; padding: 7px 4px; }
+  .once-slide-inner { height: 170px; }
+  .once-slide-emoji { font-size: 2.5rem; }
+  .once-slide-caption { padding: 0.4rem 0.6rem; }
+  .once-slide-caption h5 { font-size: 0.72rem; }
+  .once-slide-caption p { font-size: 0.65rem; }
+
+  .contenedor-config-tiempo { padding: 0.6rem; }
+  .titulo-config-once { font-size: 0.7rem; }
+  .radio-label-once { font-size: 0.68rem; padding: 5px 3px; }
 
   .btn-iniciar-reto-once {
-    padding: 12px 24px;
-    font-size: 0.85rem;
+    padding: 8px 20px;
+    font-size: 0.78rem;
     width: 85%;
   }
 
@@ -279,7 +384,13 @@
 
   .descripcion-juego-once { font-size: 0.7rem; }
 
-  .radio-label-once { font-size: 0.65rem; padding: 6px 3px; }
+  .once-slide-inner { height: 140px; }
+  .once-slide-emoji { font-size: 2rem; }
+  .once-slide-caption { padding: 0.35rem 0.5rem; }
+  .once-slide-caption h5 { font-size: 0.68rem; }
+  .once-slide-caption p { font-size: 0.6rem; }
 
-  .btn-iniciar-reto-once { font-size: 0.78rem; padding: 10px 20px; }
+  .radio-label-once { font-size: 0.6rem; padding: 5px 2px; }
+
+  .btn-iniciar-reto-once { font-size: 0.72rem; padding: 8px 16px; }
 }
