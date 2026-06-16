@@ -1,3 +1,3 @@
 ﻿[
-  { "id": "GG-F1-P1", "equipo_local_id": 24, "equipo_visitante_id": 22, "goles_local": null, "goles_visitante": null, "jugado": false }
+  { "id": "GG-F1-P1", "equipo_local_id": 24, "equipo_visitante_id": 22, "goles_local": 0, "goles_visitante": 1, "jugado": true }
 ]
