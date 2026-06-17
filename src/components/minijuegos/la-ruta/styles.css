@@ -1,0 +1,776 @@
+/* --- CONTENEDOR GENERAL --- */
+.contenedor-configuracion {
+  min-height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  margin: 2rem 0;
+}
+
+.ruta-menu-wrapper {
+  min-height: 65vh;
+  padding: 0.5rem 1rem;
+  margin: 1rem 0 5rem 0;
+}
+
+/* --- MENU CARD --- */
+.menu-ruta-full-bg {
+  width: 100%;
+  max-width: 45vw;
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.6);
+  border: 1px solid #1e293b;
+  background-image: url('/img/minijuegos/juegos/la-ruta.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.ruta-overlay-fondo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to bottom,
+    rgba(15, 23, 42, 0.95) 0%,
+    rgba(15, 23, 42, 0.85) 50%,
+    rgba(0, 0, 0, 0.95) 100%
+  );
+  z-index: 1;
+}
+
+.ruta-contenido-contenedor {
+  position: relative;
+  z-index: 2;
+  padding: 1.2rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 45vw;
+}
+
+.ruta-cabecera {
+  margin-bottom: 0.7rem !important;
+}
+
+.ruta-cuerpo-accion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+/* --- BADGE Y TIPOGRAFIA --- */
+.badge-ruta {
+  background-color: #06b6d4;
+  color: #083344;
+  padding: 3px 8px;
+  border-radius: 8px;
+  font-size: 0.6rem;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  margin-bottom: 4px;
+  display: inline-block;
+}
+
+.ruta-titulo {
+  color: #ffffff;
+  font-size: 1.5rem;
+  font-weight: 900;
+  line-height: 1;
+  margin: 0.15rem 0 0.15rem 0;
+  letter-spacing: 1px;
+  text-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.ruta-subtitulo {
+  color: #67e8f9;
+  font-size: 0.75rem;
+  font-weight: 700;
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.ruta-descripcion {
+  color: #cbd5e1;
+  font-size: 0.78rem;
+  line-height: 1.4;
+  margin-bottom: 0.8rem;
+  max-width: 480px;
+}
+
+.ruta-descripcion strong {
+  color: #ffffff;
+}
+
+/* --- SLIDER DE INSTRUCCIONES --- */
+.ruta-slider {
+  width: 100%;
+  max-width: 460px;
+  margin: 0 auto 0.8rem auto;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid #1e293b;
+}
+
+.ruta-slider.carousel {
+  padding-bottom: 18px;
+  background-color: #0f172a;
+}
+
+.ruta-slider .carousel-indicators {
+  bottom: 8px;
+  margin-bottom: 0;
+}
+
+.ruta-slide-inner {
+  position: relative;
+  height: 170px;
+  background: #0f172a;
+}
+
+.ruta-slide-placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+.ruta-slide-emoji {
+  font-size: 2.5rem;
+  line-height: 1;
+}
+
+.ruta-slide-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  padding: 0.5rem;
+  box-sizing: border-box;
+}
+
+.ruta-slide-caption {
+  background: #0f172a;
+  padding: 0.4rem 0.6rem;
+  text-align: center;
+  border-top: 1px solid #1e293b;
+}
+
+.ruta-slide-caption h5 {
+  color: #67e8f9;
+  font-size: 0.72rem;
+  font-weight: 700;
+  margin-bottom: 0.05rem;
+}
+
+.ruta-slide-caption p {
+  color: #cbd5e1;
+  font-size: 0.65rem;
+  line-height: 1.2;
+  margin: 0;
+}
+
+.ruta-slider .carousel-indicators button {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: #475569;
+  border: none;
+  margin: 0 3px;
+}
+
+.ruta-slider .carousel-indicators button.active {
+  background-color: #06b6d4;
+}
+
+.ruta-slider .carousel-control-prev-icon,
+.ruta-slider .carousel-control-next-icon {
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.6));
+}
+
+/* --- YA JUGADO --- */
+.ruta-ya-jugado {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  background-color: rgb(8, 51, 68);
+  border: 2px solid rgb(22, 78, 99);
+  padding: 0.6rem 1rem;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 280px;
+  margin-top: 0.4rem;
+}
+
+.ruta-ya-jugado-icono {
+  font-size: 1.3rem;
+}
+
+.ruta-ya-jugado p {
+  color: #67e8f9;
+  margin: 0;
+  font-size: 0.75rem;
+  line-height: 1.3;
+  text-align: center;
+}
+
+.ruta-ya-jugado strong {
+  color: #ffffff;
+}
+
+/* --- BOTONES MENU --- */
+.ruta-btn-jugar {
+  background: #06b6d4;
+  color: #083344;
+  border: none;
+  padding: 8px 24px;
+  border-radius: 50px;
+  font-size: 0.85rem;
+  font-weight: 800;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  width: 100%;
+  max-width: 380px;
+  margin-top: 0.3rem;
+}
+
+.ruta-btn-jugar:hover {
+  transform: translateY(-2px);
+  background: #22d3ee;
+}
+
+.ruta-btn-ver-resultado {
+  background: #334155;
+  color: #ffffff;
+  border: 2px solid #475569;
+  padding: 6px 16px;
+  border-radius: 50px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.ruta-btn-ver-resultado:hover {
+  background: #475569;
+  border-color: #64748b;
+}
+
+/* --- RESULTADO --- */
+.menu-ruta-resultado {
+  width: 100%;
+  max-width: 500px;
+  background: #0f172a;
+  border-radius: 16px;
+  border: 1px solid #1e293b;
+  padding: 2rem;
+  margin: 0 auto;
+}
+
+.ruta-resultado-contenido {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ruta-badge-resultado {
+  font-size: 1.1rem;
+  font-weight: 900;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  padding: 8px 20px;
+  border-radius: 12px;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.ruta-badge-resultado.ganaste {
+  background: rgba(34, 197, 94, 0.15);
+  color: #4ade80;
+  border: 2px solid #22c55e;
+}
+
+.ruta-badge-resultado.perdiste {
+  background: rgba(220, 38, 38, 0.15);
+  color: #f87171;
+  border: 2px solid #dc2626;
+}
+
+.ruta-resultado-jugador {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.ruta-resultado-foto {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #06b6d4;
+  margin-bottom: 0.75rem;
+}
+
+.ruta-resultado-nombre {
+  color: #ffffff;
+  font-size: 1.3rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.ruta-resultado-stats {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #1e293b;
+  width: 100%;
+  max-width: 300px;
+}
+
+.ruta-resultado-label {
+  color: #94a3b8;
+  font-size: 0.9rem;
+}
+
+.ruta-resultado-valor {
+  color: #67e8f9;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.ruta-badge-perfecta {
+  background: #d97706;
+  color: #fff;
+  font-size: 0.8rem;
+  font-weight: 800;
+  padding: 6px 16px;
+  border-radius: 20px;
+  text-align: center;
+  margin: 1rem 0;
+  letter-spacing: 0.5px;
+}
+
+.ruta-resultado-texto {
+  color: #cbd5e1;
+  text-align: center;
+  font-size: 0.95rem;
+  margin: 1rem 0;
+}
+
+.ruta-btn-volver {
+  background: #334155;
+  color: #ffffff;
+  border: none;
+  padding: 10px 28px;
+  border-radius: 50px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.ruta-btn-volver:hover {
+  background: #475569;
+}
+
+/* ================================================ */
+/* --- JUEGO: ARBOL Y CONTROLES --- */
+/* ================================================ */
+
+.juego-ruta-container {
+  width: 100%;
+  max-width: 700px;
+  background: #0a0f1a;
+  border-radius: 16px;
+  border: 1px solid #1e293b;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* --- PANEL DE ESTADO SUPERIOR --- */
+.ruta-panel-estado {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  width: 100%;
+  padding: 0.75rem 1rem;
+  background: #0f172a;
+  border-radius: 10px;
+  border: 1px solid #1e293b;
+  margin-bottom: 1.5rem;
+}
+
+.ruta-stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+}
+
+.ruta-stat-label {
+  color: #64748b;
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.ruta-stat-valor {
+  color: #67e8f9;
+  font-size: 1.2rem;
+  font-weight: 800;
+}
+
+.ruta-vidas {
+  display: flex;
+  gap: 2px;
+}
+
+.ruta-vida-icono {
+  font-size: 1.1rem;
+  transition: opacity 0.3s ease;
+}
+
+.ruta-vida-icono.activa {
+  opacity: 1;
+}
+
+.ruta-vida-icono.inactiva {
+  opacity: 0.25;
+}
+
+/* --- ARBOL --- */
+.ruta-arbol {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+/* --- SILUETA --- */
+.ruta-silueta {
+  width: 80px;
+  height: 80px;
+  border-radius: 12px;
+  border: 2px solid #06b6d4;
+  background: #0f172a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  margin-bottom: 0;
+  transition: all 0.5s ease;
+}
+
+.ruta-silueta-interrogante {
+  color: #06b6d4;
+  font-size: 2.5rem;
+  font-weight: 900;
+  line-height: 1;
+}
+
+.ruta-silueta-foto {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.ruta-silueta-revelada {
+  border-color: #22d3ee;
+  box-shadow: 0 0 20px rgba(6, 182, 212, 0.3);
+}
+
+/* --- CONECTORES SVG --- */
+.ruta-conectores-svg {
+  width: 80%;
+  max-width: 500px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+/* --- FILA DE EQUIPOS --- */
+.ruta-equipos-fila {
+  width: 100%;
+  justify-content: center !important;
+}
+
+.ruta-caja-equipo {
+  width: 80px;
+  height: 80px;
+  border-radius: 10px;
+  border: 2px solid #06b6d4;
+  background: #0f172a;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.4s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.ruta-caja-equipo.revelada {
+  border-color: #22d3ee;
+  background: #0c1929;
+}
+
+.ruta-caja-equipo.bloqueada {
+  border-color: #1e3a4a;
+}
+
+.ruta-equipo-logo {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+  margin-bottom: 2px;
+}
+
+.ruta-equipo-nombre {
+  color: #94a3b8;
+  font-size: 0.5rem;
+  font-weight: 600;
+  text-align: center;
+  line-height: 1.1;
+  max-width: 70px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.ruta-caja-numero {
+  color: #06b6d4;
+  font-size: 1.8rem;
+  font-weight: 900;
+  line-height: 1;
+}
+
+/* --- MENSAJES --- */
+.ruta-mensaje {
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+  text-align: center;
+}
+
+.ruta-mensaje.error {
+  background: rgba(220, 38, 38, 0.15);
+  color: #f87171;
+  border: 1px solid rgba(220, 38, 38, 0.3);
+}
+
+.ruta-mensaje.exito {
+  background: rgba(34, 197, 94, 0.15);
+  color: #4ade80;
+  border: 1px solid rgba(34, 197, 94, 0.3);
+}
+
+/* --- CONTROLES --- */
+.ruta-controles {
+  width: 100%;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ruta-input-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.ruta-input-nombre {
+  background: #1e293b;
+  border: 1px solid #334155;
+  color: #ffffff;
+  border-radius: 8px;
+  padding: 0.6rem 1rem;
+  font-size: 0.9rem;
+  width: 100%;
+}
+
+.ruta-input-nombre:focus {
+  border-color: #06b6d4;
+  box-shadow: 0 0 0 2px rgba(6, 182, 212, 0.2);
+  outline: none;
+}
+
+.ruta-input-nombre::placeholder {
+  color: #64748b;
+}
+
+.ruta-sugerencias-lista {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: #1e293b;
+  border: 1px solid #334155;
+  border-radius: 8px;
+  margin-top: 4px;
+  max-height: 180px;
+  overflow-y: auto;
+  z-index: 10;
+  list-style: none;
+  padding: 0;
+}
+
+.ruta-sugerencias-lista li {
+  padding: 0.5rem 1rem;
+  color: #cbd5e1;
+  font-size: 0.85rem;
+  cursor: pointer;
+  border-bottom: 1px solid #334155;
+  transition: background 0.15s ease;
+}
+
+.ruta-sugerencias-lista li:last-child {
+  border-bottom: none;
+}
+
+.ruta-sugerencias-lista li:hover {
+  background: #334155;
+  color: #ffffff;
+}
+
+.ruta-btn-arriesgar {
+  font-weight: 700;
+  font-size: 0.85rem;
+  padding: 0.5rem 1.2rem;
+}
+
+.ruta-btn-revelar {
+  font-size: 0.85rem;
+  padding: 0.5rem 1.2rem;
+}
+
+.ruta-btn-rendirse {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  font-size: 0.8rem;
+  cursor: pointer;
+  text-decoration: none;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  transition: color 0.2s ease;
+}
+
+.ruta-btn-rendirse:hover {
+  background-color: #bb2d3b;
+}
+
+/* --- CONTROLES BLOQUEADOS (fin de juego) --- */
+.ruta-controles-bloqueados {
+  text-align: center;
+  padding: 1rem;
+}
+
+.ruta-fin-texto {
+  color: #94a3b8;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+/* --- FADE IN --- */
+.fade-in {
+  animation: fadeIn 0.4s ease-in;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* ================================================ */
+/* --- RESPONSIVE --- */
+/* ================================================ */
+
+@media (max-width: 768px) {
+  .menu-ruta-full-bg { max-width: 90vw; }
+  .ruta-contenido-contenedor { padding: 1.2rem 1rem; min-width: 90vw; }
+  .ruta-titulo { font-size: 1.6rem; }
+  .ruta-subtitulo { font-size: 0.8rem; }
+  .ruta-descripcion { font-size: 0.8rem; }
+  .ruta-slide-inner { height: 150px; }
+}
+
+@media (max-width: 600px) {
+  .ruta-contenido-contenedor { padding: 1rem 0.8rem; min-width: 90vw; }
+  .ruta-titulo { font-size: 1.3rem; }
+  .ruta-subtitulo { font-size: 0.68rem; letter-spacing: 1.5px; }
+  .ruta-descripcion { font-size: 0.7rem; line-height: 1.35; margin-bottom: 0.8rem; }
+
+  .ruta-btn-jugar { padding: 10px 20px; font-size: 0.8rem; }
+  .ruta-btn-ver-resultado { padding: 8px 16px; font-size: 0.78rem; }
+
+  .juego-ruta-container { padding: 1rem; }
+
+  .ruta-panel-estado { gap: 1rem; padding: 0.5rem 0.75rem; }
+  .ruta-stat-valor { font-size: 1rem; }
+  .ruta-vida-icono { font-size: 0.9rem; }
+
+  .ruta-silueta { width: 60px; height: 60px; }
+  .ruta-silueta-interrogante { font-size: 2rem; }
+
+  .ruta-caja-equipo { width: 60px; height: 60px; }
+  .ruta-equipo-logo { width: 36px; height: 36px; }
+  .ruta-caja-numero { font-size: 1.4rem; }
+  .ruta-equipo-nombre { font-size: 0.42rem; }
+
+  .ruta-input-nombre { font-size: 0.8rem; padding: 0.5rem 0.75rem; }
+  .ruta-btn-arriesgar, .ruta-btn-revelar { font-size: 0.75rem; padding: 0.4rem 0.8rem; }
+
+  .ruta-slider { max-width: 100%; }
+  .ruta-slide-inner { height: 140px; }
+  .ruta-slide-emoji { font-size: 2rem; }
+  .ruta-slide-caption { padding: 0.35rem 0.5rem; }
+  .ruta-slide-caption h5 { font-size: 0.68rem; }
+  .ruta-slide-caption p { font-size: 0.6rem; }
+
+  .ruta-ya-jugado { padding: 0.8rem; }
+  .ruta-ya-jugado p { font-size: 0.72rem; }
+}
+
+@media (max-width: 380px) {
+  .ruta-contenido-contenedor { padding: 0.8rem 0.6rem; }
+  .ruta-titulo { font-size: 1.1rem; }
+  .ruta-subtitulo { font-size: 0.6rem; }
+  .ruta-descripcion { font-size: 0.65rem; }
+
+  .ruta-caja-equipo { width: 52px; height: 52px; }
+  .ruta-equipo-logo { width: 30px; height: 30px; }
+  .ruta-caja-numero { font-size: 1.2rem; }
+  .ruta-equipo-nombre { font-size: 0.38rem; max-width: 50px; }
+
+  .ruta-silueta { width: 50px; height: 50px; }
+  .ruta-silueta-interrogante { font-size: 1.6rem; }
+
+  .ruta-btn-arriesgar, .ruta-btn-revelar { font-size: 0.7rem; padding: 0.35rem 0.6rem; }
+
+  .ruta-slide-inner { height: 120px; }
+  .ruta-slide-emoji { font-size: 1.8rem; }
+  .ruta-slide-caption { padding: 0.3rem 0.4rem; }
+  .ruta-slide-caption h5 { font-size: 0.62rem; }
+  .ruta-slide-caption p { font-size: 0.55rem; }
+}
