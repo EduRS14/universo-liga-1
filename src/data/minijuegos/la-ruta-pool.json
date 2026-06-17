@@ -1,0 +1,141 @@
+[
+    {
+      "id_jugador": 87,
+      "ruta": [
+        { "nombre": "FBC Melgar", "url_foto": "/img/minijuegos/la-ruta/equipos/mel.webp" },
+        { "nombre": "Alianza Lima", "url_foto": "/img/minijuegos/la-ruta/equipos/ali.webp" },
+        { "nombre": "Cienciano", "url_foto": "/img/minijuegos/la-ruta/equipos/cie.webp" },
+        { "nombre": "Universitario", "url_foto": "/img/minijuegos/la-ruta/equipos/uni.webp" },
+        { "nombre": "Sporting Cristal", "url_foto": "/img/minijuegos/la-ruta/equipos/scr.webp" }
+      ]
+    },
+    {
+      "id_jugador": 1076,
+      "ruta": [
+        { "nombre": "Universitario", "url_foto": "/img/minijuegos/la-ruta/equipos/uni.webp" },
+        { "nombre": "Alianza Lima", "url_foto": "/img/minijuegos/la-ruta/equipos/ali.webp" },
+        { "nombre": "Colo Colo", "url_foto": "/img/minijuegos/la-ruta/equipos/col.webp" },
+        { "nombre": "Rentistas", "url_foto": "/img/minijuegos/la-ruta/equipos/ren.webp" },
+        { "nombre": "Sporting Cristal", "url_foto": "/img/minijuegos/la-ruta/equipos/scr.webp" }
+      ]
+    },
+    {
+      "id_jugador": 2111,
+      "ruta": [
+        { "nombre": "Juan Aurich", "url_foto": "/img/minijuegos/la-ruta/equipos/jau.webp" },
+        { "nombre": "Newell's", "url_foto": "/img/minijuegos/la-ruta/equipos/new.webp" },
+        { "nombre": "Boca Juniors", "url_foto": "/img/minijuegos/la-ruta/equipos/boc.webp" },
+        { "nombre": "Sport. Cristal", "url_foto": "/img/minijuegos/la-ruta/equipos/scr.webp" },
+        { "nombre": "Rayo Vallecano", "url_foto": "/img/minijuegos/la-ruta/equipos/ray.webp" }
+      ]
+    },
+    {
+      "id_jugador": 474,
+      "ruta": [
+        { "nombre": "Alianza Lima", "url_foto": "/img/minijuegos/la-ruta/equipos/ali.webp" },
+        { "nombre": "São Paulo", "url_foto": "/img/minijuegos/la-ruta/equipos/spa.webp" },
+        { "nombre": "Cienciano", "url_foto": "/img/minijuegos/la-ruta/equipos/cie.webp" },
+        { "nombre": "Krasnodar", "url_foto": "/img/minijuegos/la-ruta/equipos/kra.webp" },
+        { "nombre": "Al-Fateh", "url_foto": "/img/minijuegos/la-ruta/equipos/alf.webp" }
+      ]
+    },
+    {
+      "id_jugador": 2539,
+      "ruta": [
+        { "nombre": "Corinthians", "url_foto": "/img/minijuegos/la-ruta/equipos/cor.webp" },
+        { "nombre": "Alianza Lima", "url_foto": "/img/minijuegos/la-ruta/equipos/ali.webp" },
+        { "nombre": "Bayern", "url_foto": "/img/minijuegos/la-ruta/equipos/bay.webp" },
+        { "nombre": "Hamburgo", "url_foto": "/img/minijuegos/la-ruta/equipos/ham.webp" },
+        { "nombre": "LDU Quito", "url_foto": "/img/minijuegos/la-ruta/equipos/ldu.webp" }
+      ]
+    },
+    {
+      "id_jugador": 712,
+      "ruta": [
+        { "nombre": "Sport. Cristal", "url_foto": "/img/minijuegos/la-ruta/equipos/scr.webp" },
+        { "nombre": "Juan Aurich", "url_foto": "/img/minijuegos/la-ruta/equipos/jau.webp" },
+        { "nombre": "U. San Martín", "url_foto": "/img/minijuegos/la-ruta/equipos/usm.webp" },
+        { "nombre": "Burnley", "url_foto": "/img/minijuegos/la-ruta/equipos/bur.webp" },
+        { "nombre": "Dep. Garcilaso", "url_foto": "/img/minijuegos/la-ruta/equipos/gar.webp" }
+      ]
+    },
+    {
+      "id_jugador": 493,
+      "ruta": [
+        { "nombre": "Sport. Cristal", "url_foto": "/img/minijuegos/la-ruta/equipos/scr.webp" },
+        { "nombre": "Universitario", "url_foto": "/img/minijuegos/la-ruta/equipos/uni.webp" },
+        { "nombre": "Colo Colo", "url_foto": "/img/minijuegos/la-ruta/equipos/col.webp" },
+        { "nombre": "Al-Adalah", "url_foto": "/img/minijuegos/la-ruta/equipos/aad.webp" },
+        { "nombre": "FBC Melgar", "url_foto": "/img/minijuegos/la-ruta/equipos/mel.webp" }
+      ]
+    },
+    {
+      "id_jugador": 297,
+      "ruta": [
+        { "nombre": "Cienciano", "url_foto": "/img/minijuegos/la-ruta/equipos/cie.webp" },
+        { "nombre": "Grêmio", "url_foto": "/img/minijuegos/la-ruta/equipos/gre.webp" },
+        { "nombre": "Alianza Lima", "url_foto": "/img/minijuegos/la-ruta/equipos/ali.webp" },
+        { "nombre": "Tigres UANL", "url_foto": "/img/minijuegos/la-ruta/equipos/tig.webp" },
+        { "nombre": "Argentinos Jrs.", "url_foto": "/img/minijuegos/la-ruta/equipos/arg.webp" }
+      ]
+    },
+    {
+      "id_jugador": 60,
+      "ruta": [
+        { "nombre": "Sporting CP", "url_foto": "/img/minijuegos/la-ruta/equipos/spc.webp" },
+        { "nombre": "Alianza Lima", "url_foto": "/img/minijuegos/la-ruta/equipos/ali.webp" },
+        { "nombre": "Sport. Cristal", "url_foto": "/img/minijuegos/la-ruta/equipos/scr.webp" },
+        { "nombre": "SC Braga", "url_foto": "/img/minijuegos/la-ruta/equipos/sbr.webp" },
+        { "nombre": "Universitario", "url_foto": "/img/minijuegos/la-ruta/equipos/uni.webp" }
+      ]
+    },
+    {
+      "id_jugador": 2177,
+      "ruta": [
+        { "nombre": "Alianza Lima", "url_foto": "/img/minijuegos/la-ruta/equipos/ali.webp" },
+        { "nombre": "Corinthians", "url_foto": "/img/minijuegos/la-ruta/equipos/cor.webp" },
+        { "nombre": "Universitario", "url_foto": "/img/minijuegos/la-ruta/equipos/uni.webp" },
+        { "nombre": "AD Cantolao", "url_foto": "/img/minijuegos/la-ruta/equipos/can.webp" },
+        { "nombre": "Sport Boys", "url_foto": "/img/minijuegos/la-ruta/equipos/sbo.webp" }
+      ]
+    },
+    {
+      "id_jugador": 1717,
+      "ruta": [
+        { "nombre": "Sport. Cristal", "url_foto": "/img/minijuegos/la-ruta/equipos/scr.webp" },
+        { "nombre": "Alianza Lima", "url_foto": "/img/minijuegos/la-ruta/equipos/ali.webp" },
+        { "nombre": "River Plate", "url_foto": "/img/minijuegos/la-ruta/equipos/riv.webp" },
+        { "nombre": "U. San Martín", "url_foto": "/img/minijuegos/la-ruta/equipos/usm.webp" },
+        { "nombre": "U. Concepción", "url_foto": "/img/minijuegos/la-ruta/equipos/ucn.webp" }
+      ]
+    },
+    {
+      "id_jugador": 83,
+      "ruta": [
+        { "nombre": "U. San Martín", "url_foto": "/img/minijuegos/la-ruta/equipos/usm.webp" },
+        { "nombre": "Sport. Cristal", "url_foto": "/img/minijuegos/la-ruta/equipos/scr.webp" },
+        { "nombre": "Lobos BUAP", "url_foto": "/img/minijuegos/la-ruta/equipos/lob.webp" },
+        { "nombre": "Zacatepec", "url_foto": "/img/minijuegos/la-ruta/equipos/zac.webp" },
+        { "nombre": "Alianza Lima", "url_foto": "/img/minijuegos/la-ruta/equipos/ali.webp" }
+      ]
+    },
+    {
+      "id_jugador": 2723,
+      "ruta": [
+        { "nombre": "Juan Aurich", "url_foto": "/img/minijuegos/la-ruta/equipos/jau.webp" },
+        { "nombre": "Sport. Cristal", "url_foto": "/img/minijuegos/la-ruta/equipos/scr.webp" },
+        { "nombre": "Inter Bogotá", "url_foto": "/img/minijuegos/la-ruta/equipos/inb.webp" },
+        { "nombre": "CA Mannucci", "url_foto": "/img/minijuegos/la-ruta/equipos/man.webp" },
+        { "nombre": "Sport Boys", "url_foto": "/img/minijuegos/la-ruta/equipos/sbo.webp" }
+      ]
+    },
+    {
+      "id_jugador": 73,
+      "ruta": [
+        { "nombre": "Dep. Municipal", "url_foto": "/img/minijuegos/la-ruta/equipos/mun.webp" },
+        { "nombre": "Alianza Lima", "url_foto": "/img/minijuegos/la-ruta/equipos/ali.webp" },
+        { "nombre": "Universitario", "url_foto": "/img/minijuegos/la-ruta/equipos/uni.webp" },
+        { "nombre": "U. San Martín", "url_foto": "/img/minijuegos/la-ruta/equipos/usm.webp" }
+      ]
+    }
+]
