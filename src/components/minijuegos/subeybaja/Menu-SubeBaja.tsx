@@ -13,6 +13,7 @@ import {
 import type { Jugador } from '../../../types/minijuegos/jugador.interface';
 import jugadoresData from '../../../data/minijuegos/jugadores_obtenidos.json';
 import JuegoSubeBaja from './Juego-SubeBaja';
+import Spinner from '../Spinner';
 import './styles.css';
 
 export default function MenuSubeBaja() {
@@ -33,7 +34,6 @@ export default function MenuSubeBaja() {
     }, []);
 
     useEffect(() => {
-        setLoading(true);
         setEstadoDiario(cargarEstadoDiario());
         setRecords(cargarRecords());
 
@@ -42,7 +42,8 @@ export default function MenuSubeBaja() {
             setJuegoIniciado(true);
         }
 
-        setLoading(false);
+        // timeout para que el browser pinte el spinner antes de ocultarlo
+        setTimeout(() => setLoading(false), 50);
     }, []);
 
     const handleIniciar = () => {
@@ -74,11 +75,7 @@ export default function MenuSubeBaja() {
     };
 
     if (loading) {
-        return (
-            <div className="contenedor-configuracion">
-                <p className="texto-cargando">Cargando...</p>
-            </div>
-        );
+        return <Spinner size="lg" mensaje="Preparando Sube y Baja..." />;
     }
 
     if (juegoIniciado && !resultadoPartida) {

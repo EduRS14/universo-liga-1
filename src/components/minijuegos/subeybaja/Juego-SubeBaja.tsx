@@ -23,6 +23,7 @@ import JugadorCard from './JugadorCard';
 import TimerBar from './TimerBar';
 import Countdown from './Countdown';
 import CategoriaDisplay from './CategoriaDisplay';
+import Spinner from '../Spinner';
 import './styles.css';
 
 type EstadoJuego = 'INTRO' | 'PLAYING' | 'REVEAL' | 'FEEDBACK' | 'GAMEOVER';
@@ -404,11 +405,7 @@ export default function JuegoSubeBaja({ categoriaDelDiaHoy, alTerminar }: Props)
     }
 
     if (!game.jugadorA || !game.jugadorB) {
-        return (
-            <div className="subeybaja-juego-wrapper">
-                <p className="subeybaja-cargando">Cargando jugadores...</p>
-            </div>
-        );
+        return <Spinner mensaje="Cargando jugadores..." />;
     }
 
     return (

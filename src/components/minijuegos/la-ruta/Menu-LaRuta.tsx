@@ -9,6 +9,7 @@ import {
     hayPartidaEnCurso,
 } from './la-ruta-logic';
 import JuegoLaRuta from './Juego-LaRuta';
+import Spinner from '../Spinner';
 import './styles.css';
 import JugadoresData from '../../../data/minijuegos/jugadores_obtenidos.json';
 import PoolRutaData from '../../../data/minijuegos/la-ruta-pool.json';
@@ -17,6 +18,7 @@ const jugadores: Jugador[] = JugadoresData as Jugador[];
 const entradasPool: EntradaPoolRuta[] = PoolRutaData as EntradaPoolRuta[];
 
 export default function MenuLaRuta() {
+    const [loading, setLoading] = useState(true);
     const [estadoDiario, setEstadoDiario] = useState<ResultadoDiarioRuta | null>(null);
     const [jugando, setJugando] = useState(false);
     const [verResultado, setVerResultado] = useState(false);
@@ -43,6 +45,7 @@ export default function MenuLaRuta() {
         if (!estado && hayPartidaEnCurso()) {
             setJugando(true);
         }
+        setTimeout(() => setLoading(false), 50);
     }, []);
 
     const handleFinalizar = (resultado: 'WIN' | 'GAMEOVER', score: number, equiposRevelados: number, fallos: number) => {
@@ -64,6 +67,10 @@ export default function MenuLaRuta() {
     const handleVerResultado = () => {
         setVerResultado(true);
     };
+
+    if (loading) {
+        return <Spinner size="lg" mensaje="Trazando la ruta..." />;
+    }
 
     if (verResultado && estadoDiario && jugador) {
         const esPerfecta = estadoDiario.resultado === 'WIN' && estadoDiario.equiposRevelados === 1 && estadoDiario.fallos === 0;
