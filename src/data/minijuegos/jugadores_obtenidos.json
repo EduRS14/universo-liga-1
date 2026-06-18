@@ -126591,7 +126591,7 @@
         "nacionalidades": [
             2
         ],
-        "clubActual": "FBC Melgar",
+        "clubActual": "Sport Boys",
         "posicionPrincipal": "Delantero centro",
         "posicionesSecundarias": [
             "Extremo derecho"
@@ -126619,6 +126619,15 @@
             },
             {
                 "id_equipo": 4,
+                "periodos": [
+                    [
+                        2026,
+                        2026
+                    ]
+                ]
+            },
+            {
+                "id_equipo": 5,
                 "periodos": [
                     [
                         2026,
@@ -172254,5 +172263,42 @@
         ],
         "titulosObtenidos": [],
         "url_foto": "https://img.a.transfermarkt.technology/portrait/header/625618-1679139844.jpg?lm=1"
+    },
+    {
+        "id": 3465,
+        "nombre": "Cristian Zúñiga",
+        "fechaNacimiento": "1992-05-07",
+        "fechaFallecimiento": null,
+        "edad": 34,
+        "altura": 177.0,
+        "nacionalidades": [
+            5
+        ],
+        "clubActual": "Sin equipo",
+        "posicionPrincipal": "Delantero centro",
+        "posicionesSecundarias": [
+            "Extremo izquierdo",
+            "Extremo derecho"
+        ],
+        "valorMercadoMaximo": 125000.0,
+        "jugoExtranjero": true,
+        "equiposJugados": [
+            {
+                "id_equipo": 1,
+                "periodos": [
+                    [
+                        2020,
+                        2020
+                    ]
+                ]
+            }
+        ],
+        "titulosObtenidos": [
+            {
+                "id_trofeo": 29,
+                "cantidad": 1
+            }
+        ],
+        "url_foto": "https://img.a.transfermarkt.technology/portrait/header/690447-1674549912.jpg?lm=1"
     }
 ]

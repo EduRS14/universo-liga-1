@@ -8,12 +8,6 @@
   margin: 2rem 0;
 }
 
-.texto-cargando {
-  font-size: 1.5rem;
-  color: white;
-  text-align: center;
-  font-weight: 700;
-}
 
 /* --- TARJETA CON FONDO TOTAL (Estructura sólida, óptima para rendimiento) --- */
 .menu-juego-actualidad-full-bg {

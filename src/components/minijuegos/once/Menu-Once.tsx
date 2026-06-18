@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import JuegoElOnce from './juego/juego-el-once';
+import Spinner from '../Spinner';
 import './styles.css';
 
 // --- DATOS CONSTANTES ---
@@ -90,11 +91,7 @@ export default function MenuOnce() {
   };
 
   if (loading) {
-    return (
-      <div className="contenedor-configuracion">
-        <p className='texto-cargando'>Cargando...</p>
-      </div>
-    );
+    return <Spinner size="lg" mensaje="Preparando El Once..." />;
   }
 
   // --- VISTA DEL JUEGO ---

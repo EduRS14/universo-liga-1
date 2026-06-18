@@ -8,12 +8,6 @@
     margin: 1rem 0;
 }
 
-.texto-cargando {
-    font-size: 1.5rem;
-    color: white;
-    text-align: center;
-    font-weight: 700;
-}
 
 /* --- TARJETA CON FONDO TOTAL --- */
 .menu-subeybaja-full-bg {
@@ -356,12 +350,6 @@
     color: #fff;
 }
 
-.subeybaja-cargando {
-    text-align: center;
-    color: #94a3b8;
-    font-size: 1rem;
-    padding: 2rem;
-}
 
 /* --- CATEGORÍA DISPLAY (en juego) --- */
 .subeybaja-categoria-display {

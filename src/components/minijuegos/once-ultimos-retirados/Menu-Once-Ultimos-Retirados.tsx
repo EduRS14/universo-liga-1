@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import Spinner from '../Spinner';
 import './styles.css';
 import JuegoOnceUltimosRetirados from './juego/juego-once-ultimos-retirados';
 
@@ -84,11 +85,7 @@ export default function MenuOnceUltimosRetirados() {
   };
 
   if (loading) {
-    return (
-      <div className="contenedor-configuracion">
-        <p className='texto-cargando'>Cargando...</p>
-      </div>
-    );
+    return <Spinner size="lg" mensaje="Preparando El Once Retirados..." />;
   }
 
   // --- VISTA DEL JUEGO ---
