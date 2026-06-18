@@ -300,6 +300,28 @@
   40%, 60% { transform: translate3d(4px, 0, 0); }
 }
 
+.feedback-msg{
+  color: white;
+}
+
+/* --- BOTÓN RENDIRSE --- */
+.tapadito-btn-rendirse {
+  margin-top: 2rem;
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  font-size: 0.8rem;
+  cursor: pointer;
+  text-decoration: none;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  transition: color 0.2s ease;
+}
+
+.tapadito-btn-rendirse:hover {
+  background-color: #bb2d3b;
+}
+
 /* --- DISEÑO RESPONSIVO (MÓVILES) --- */
 @media (max-width: 600px) {
   .tecla {
