@@ -7,6 +7,7 @@ import { normalizarTexto } from '../../../../utils/minijuegos/wordle/logica';
 import { TecladoVirtual } from './teclado';
 import Equipos from '../../../../data/minijuegos/equipos.json';
 import type { Equipo } from '../../../../types/minijuegos/equipo';
+import Spinner from '../../Spinner';
 import './styles.css';
 
 const JUGADORES: Jugador[] = Jugadores as Jugador[];
@@ -214,7 +215,7 @@ export const JuegoElTapadito: React.FC = () => {
     return mapa;
   }, [config?.palabrasUsadas, targetWord]);
 
-  if (!config) return <div className="loading">Cargando tablero...</div>;
+  if (!config) return <Spinner size="lg" mensaje="Cargando tablero..." />;
 
   const intentoActualIndex = config.palabrasUsadas.indexOf(null);
 

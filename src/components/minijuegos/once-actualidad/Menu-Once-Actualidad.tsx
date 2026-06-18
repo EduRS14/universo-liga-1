@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import Spinner from '../Spinner';
 import './styles.css';
 import JuegoElOnceActualidad from './juego/juego-el-once-actualidad';
 
@@ -84,11 +85,7 @@ export default function MenuOnceActualidad() {
   };
 
   if (loading) {
-    return (
-      <div className="contenedor-configuracion">
-        <p className='texto-cargando'>Cargando...</p>
-      </div>
-    );
+    return <Spinner size="lg" mensaje="Preparando El Once Actualidad..." />;
   }
 
   // --- VISTA DEL JUEGO ---
