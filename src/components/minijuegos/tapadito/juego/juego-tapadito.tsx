@@ -1,8 +1,8 @@
-// src/components/minijuegos/el-tapadito/juego/juego-tapadito.tsx
 import React, { useState, useEffect, useMemo, useCallback } from 'react';
 import type { ConfiguracionTapadito } from '../../../../types/minijuegos/tapadito/configuracion-tapadito';
 import type { Jugador } from '../../../../types/minijuegos/jugador.interface';
 import Jugadores from '../../../../data/minijuegos/jugadores_obtenidos.json';
+
 import { normalizarTexto } from '../../../../utils/minijuegos/wordle/logica';
 import { TecladoVirtual } from './teclado';
 import Equipos from '../../../../data/minijuegos/equipos.json';
@@ -60,6 +60,22 @@ export const JuegoElTapadito: React.FC = () => {
     return setApellidos;
   }, []);
 
+  const [palabrasDiccionario, setPalabrasDiccionario] = useState<string[] | null>(null);
+
+  useEffect(() => {
+    if (targetWord.length < 3) return;
+    setPalabrasDiccionario(null);
+    fetch(`/data/diccionario/${targetWord.length}.json`)
+      .then(res => res.json())
+      .then(setPalabrasDiccionario)
+      .catch(() => setPalabrasDiccionario([]));
+  }, [targetWord.length]);
+
+  const palabrasDiccionarioLongitudN = useMemo(
+    () => new Set<string>(palabrasDiccionario || []),
+    [palabrasDiccionario]
+  );
+
   // 3. LÓGICA DE ACTUALIZACIÓN DE ESTADO
   const actualizarConfiguracion = (nuevaConfig: Partial<ConfiguracionTapadito>) => {
     if (!config) return;
@@ -83,8 +99,8 @@ export const JuegoElTapadito: React.FC = () => {
         return;
       }
       
-      if (!diccionarioApellidos.has(currentGuess)) {
-        mostrarError('El apellido no figura en la base de datos');
+      if (!diccionarioApellidos.has(currentGuess) && !palabrasDiccionarioLongitudN.has(currentGuess)) {
+        mostrarError('Palabra no válida');
         return;
       }
 
@@ -98,7 +114,7 @@ export const JuegoElTapadito: React.FC = () => {
         setErrorMsg(null);
       }
     }
-  }, [currentGuess, targetWord, config, procesando, diccionarioApellidos]);
+  }, [currentGuess, targetWord, config, procesando, diccionarioApellidos, palabrasDiccionarioLongitudN]);
 
   // Soporte para teclado físico
   useEffect(() => {
@@ -146,6 +162,13 @@ export const JuegoElTapadito: React.FC = () => {
         setMostrarModalFin(true); 
       }
     }, 2000); 
+  };
+
+  const handleRendirse = () => {
+    if (!config || config.estado !== 'jugando') return;
+    actualizarConfiguracion({ estado: 'perdido' });
+    localStorage.setItem('tapaditoUltimaPartida', config.fechaUltimaPartida);
+    setMostrarModalFin(true);
   };
 
   // 5. EVALUADOR DE COLORES (Wordle Core Logic)
@@ -240,6 +263,17 @@ export const JuegoElTapadito: React.FC = () => {
           onKeyPress={handleKeyPress} 
           disabled={procesando || config.estado !== 'jugando'}
         />
+      )}
+
+      {/* Botón rendirse */}
+      {!mostrarModalFin && config.estado === 'jugando' && (
+        <button
+          type="button"
+          className="tapadito-btn-rendirse"
+          onClick={handleRendirse}
+        >
+          🏳️ Rendirse
+        </button>
       )}
 
       {/* ---> MODIFICADO: Ahora depende de mostrarModalFin */}
