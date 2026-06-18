@@ -5,133 +5,13 @@
   justify-content: center;
   align-items: center;
   padding: 1rem;
+  margin: 2rem 0;
 }
 
-/* --- TARJETA CON FONDO TOTAL (EL CAMBIO CLAVE) --- */
-.menu-juego-tapadito-full-bg {
-  width: 100%;
-  max-width: 600px;
-  position: relative; /* Necesario para que el overlay funcione */
-  border-radius: 20px;
-  overflow: hidden;
-  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.6);
-  border: 1px solid #1e293b;
-  
-  /* FONDO DE IMAGEN TOTAL */
-  background-image: url('/img/minijuegos/juegos/el-tapadito.webp');
-  background-size: cover; /* Llenar sin deformar */
-  background-position: center; /* Centrar la imagen */
-  background-repeat: no-repeat;
-}
-
-/* --- EL OVERLAY (El desvanecimiento oscuro sobre la imagen) --- */
-.tapadito-overlay-fondo {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  
-  /* Degradado profundo de negro a azul oscuro transparente */
-  background: linear-gradient(
-    to bottom, 
-    rgba(15, 23, 42, 0.95) 0%,   /* Casi negro arriba */
-    rgba(15, 23, 42, 0.95) 50%,   /* Medio desvanecido en el centro */
-    rgba(0, 0, 0, 0.95) 100%      /* Negro profundo abajo */
-  );
-  z-index: 1; /* Por debajo del contenido */
-}
-
-/* --- CONTENEDOR DE CONTENIDO (Flota sobre el overlay) --- */
-.tapadito-contenido-contenedor {
-  position: relative;
-  z-index: 2; /* Por encima del overlay */
-  padding: 3rem 2.5rem; /* Respiro general */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.tapadito-cuerpo-accion{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-/* --- ESTILOS DE TEXTO (Premium y legibles) --- */
-.badge-categoria-tapadito {
-  background-color: #2240c5;
-  color: #ffffff;
-  padding: 5px 14px;
-  border-radius: 10px;
-  font-size: 0.75rem;
-  font-weight: 700;
-  letter-spacing: 1.5px;
-  text-transform: uppercase;
-  margin-bottom: 12px;
-  display: inline-block;
-}
-
-.titulo-hero-tapadito {
-  color: #ffffff;
-  font-size: 2.5rem;
-  font-weight: 900;
-  line-height: 1;
-  margin: 0.5rem 0 0.5rem 0;
-  letter-spacing: 1px;
-  text-shadow: 0 4px 10px rgba(0,0,0,0.5); /* Sombra para resaltar */
-}
-
-.subtitulo-hero-tapadito {
-  color: #94a3b8;
-  font-size: 1.1rem;
-  font-weight: 700;
-  margin: 0;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-}
-
-.descripcion-juego-tapadito {
-  color: #cbd5e1;
-  font-size: 1.05rem;
-  line-height: 1.6;
-  margin-bottom: 2.5rem;
-  max-width: 500px;
-}
-
-.descripcion-juego-tapadito strong {
-  color: #ffffff;
-}
-
-/* --- BOTÓN JUGAR (VERDE WORDLE) --- */
-.seccion-accion-tapadito {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  max-width: 400px;
-}
-
-.btn-iniciar-reto-tapadito {
-  background: #2240c5;
-  color: #ffffff;
-  border: none;
-  padding: 16px 40px;
-  border-radius: 50px;
-  font-size: 1.2rem;
-  font-weight: 800;
-  letter-spacing: 1px;
-  cursor: pointer;
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  width: 100%;
-  justify-content: center;
-}
-
-.btn-iniciar-reto-tapadito:hover {
-  transform: translateY(-2px);
-  background: rgb(48, 87, 214);
+.tapadito-menu-wrapper {
+  min-height: 72vh;
+  padding: 0.75rem 1rem;
+  margin: 1.5rem 0 2rem 0;
 }
 
 .texto-cargando {
@@ -141,61 +21,318 @@
   font-weight: 700;
 }
 
-/* --- ALERTA YA JUGADO --- */
-.alerta-jugado-tapadito {
-  background-color: rgb(49, 39, 12);
-  border: 2px solid rgb(58, 45, 4);
+/* --- TARJETA CON FONDO TOTAL --- */
+.menu-juego-tapadito-full-bg {
+  width: 100%;
+  max-width: 50vw;
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.6);
+  border: 1px solid #1e293b;
+  background-image: url('/img/minijuegos/juegos/el-tapadito.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* --- EL OVERLAY --- */
+.tapadito-overlay-fondo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to bottom,
+    rgba(15, 23, 42, 0.95) 0%,
+    rgba(15, 23, 42, 0.85) 50%,
+    rgba(0, 0, 0, 0.95) 100%
+  );
+  z-index: 1;
+}
+
+/* --- CONTENEDOR DE CONTENIDO --- */
+.tapadito-contenido-contenedor {
+  position: relative;
+  z-index: 2;
   padding: 1.5rem;
-  border-radius: 12px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 10px;
+  min-width: 50vw;
+}
+
+.tapadito-cabecera {
+  margin-bottom: 0.8rem !important;
+}
+
+.tapadito-cuerpo-accion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+/* --- ESTILOS DE TEXTO --- */
+.badge-categoria-tapadito {
+  background-color: #2240c5;
+  color: #ffffff;
+  padding: 4px 10px;
+  border-radius: 8px;
+  font-size: 0.65rem;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+  display: inline-block;
+}
+
+.titulo-hero-tapadito {
+  color: #ffffff;
+  font-size: 1.8rem;
+  font-weight: 900;
+  line-height: 1;
+  margin: 0.2rem 0 0.2rem 0;
+  letter-spacing: 1px;
+  text-shadow: 0 4px 10px rgba(0,0,0,0.5);
+}
+
+.subtitulo-hero-tapadito {
+  color: #94a3b8;
+  font-size: 0.85rem;
+  font-weight: 700;
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.descripcion-juego-tapadito {
+  color: #cbd5e1;
+  font-size: 0.85rem;
+  line-height: 1.5;
+  margin-bottom: 0.8rem;
+  max-width: 500px;
+}
+
+.descripcion-juego-tapadito strong {
+  color: #ffffff;
+}
+
+/* --- SLIDER DE INSTRUCCIONES --- */
+.tapadito-slider {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto 0.8rem auto;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid #1e293b;
+}
+
+.tapadito-slider.carousel {
+  padding-bottom: 20px;
+  background-color: #0f172a;
+}
+
+.tapadito-slider .carousel-indicators {
+  bottom: 10px;
+  margin-bottom: 0;
+}
+
+.tapadito-slide-inner {
+  position: relative;
+  height: 220px;
+  background: #0f172a;
+}
+
+.tapadito-slide-placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+.tapadito-slide-emoji {
+  font-size: 3rem;
+  line-height: 1;
+}
+
+.tapadito-slide-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  padding: 0.6rem;
+  box-sizing: border-box;
+}
+
+.tapadito-slide-caption {
+  background: #0f172a;
+  padding: 0.5rem 0.8rem;
+  text-align: center;
+  border-top: 1px solid #1e293b;
+}
+
+.tapadito-slide-caption h5 {
+  color: #94a3b8;
+  font-size: 0.78rem;
+  font-weight: 700;
+  margin-bottom: 0.1rem;
+}
+
+.tapadito-slide-caption p {
+  color: #cbd5e1;
+  font-size: 0.7rem;
+  line-height: 1.25;
+  margin: 0;
+}
+
+.tapadito-slider .carousel-indicators button {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: #475569;
+  border: none;
+  margin: 0 3px;
+}
+
+.tapadito-slider .carousel-indicators button.active {
+  background-color: #2240c5;
+}
+
+.tapadito-slider .carousel-control-prev-icon,
+.tapadito-slider .carousel-control-next-icon {
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.6));
+}
+
+/* --- BOTÓN JUGAR --- */
+.tapadito-seccion-accion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 500px;
+}
+
+.tapadito-btn-jugar {
+  background: #2240c5;
+  color: #ffffff;
+  border: none;
+  padding: 10px 28px;
+  border-radius: 50px;
+  font-size: 0.9rem;
+  font-weight: 800;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 100%;
   max-width: 400px;
 }
 
-.alerta-icono-tapadito {
-  font-size: 2.2rem;
+.tapadito-btn-jugar:hover {
+  transform: translateY(-2px);
+  background: rgb(48, 87, 214);
 }
 
-.alerta-jugado-tapadito p {
-  color: #fde047;
+/* --- YA JUGADO --- */
+.tapadito-ya-jugado {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  background-color: rgb(25, 33, 61);
+  border: 2px solid rgb(34, 64, 197);
+  padding: 0.6rem 1rem;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 280px;
+  margin-top: 0.4rem;
+}
+
+.tapadito-ya-jugado-icono {
+  font-size: 1.3rem;
+}
+
+.tapadito-ya-jugado p {
+  color: #94a3b8;
   margin: 0;
-  font-size: 1rem;
-  line-height: 1.5;
+  font-size: 0.75rem;
+  line-height: 1.3;
+  text-align: center;
 }
 
-.alerta-jugado-tapadito strong {
+.tapadito-ya-jugado strong {
+  color: #ffffff;
+}
+
+.tapadito-btn-ver-resultado {
+  background: transparent;
+  color: #2240c5;
+  border: 2px solid #2240c5;
+  padding: 5px 14px;
+  border-radius: 50px;
+  font-size: 0.7rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.tapadito-btn-ver-resultado:hover {
+  background: #2240c5;
   color: #ffffff;
 }
 
 /* --- RESPONSIVO MÓVIL --- */
 @media (max-width: 600px) {
-  .tapadito-contenido-contenedor { 
-    padding: 2rem 1.5rem; 
-    }
-  
-    .tapadito-cabecera{
-    margin-bottom: 1.5rem !important;
-    }
+  .tapadito-contenido-contenedor { padding: 1.5rem 1rem; min-width: 90vw; }
 
-  .titulo-hero-tapadito { font-size: 1rem; }
-  .subtitulo-hero-tapadito { font-size: 0.75rem; }
-  
+  .menu-juego-tapadito-full-bg { max-width: 90vw; background-position: center top; }
+
+  .tapadito-cabecera { margin-bottom: 1rem !important; }
+
+  .badge-categoria-tapadito { font-size: 0.6rem; padding: 4px 10px; }
+
+  .titulo-hero-tapadito { font-size: 1.5rem; }
+  .subtitulo-hero-tapadito { font-size: 0.72rem; letter-spacing: 1.5px; }
+
+  .descripcion-juego-tapadito { font-size: 0.75rem; line-height: 1.45; margin-bottom: 1.2rem; }
+
+  .tapadito-slide-inner { height: 170px; }
+  .tapadito-slide-emoji { font-size: 2.5rem; }
+  .tapadito-slide-caption { padding: 0.4rem 0.6rem; }
+  .tapadito-slide-caption h5 { font-size: 0.72rem; }
+  .tapadito-slide-caption p { font-size: 0.65rem; }
+
+  .tapadito-btn-jugar {
+    padding: 8px 20px;
+    font-size: 0.78rem;
+    width: 85%;
+  }
+
+  .tapadito-ya-jugado-icono { font-size: 1.2rem; }
+  .tapadito-ya-jugado p { font-size: 0.78rem; }
+  .tapadito-ya-jugado { padding: 0.6rem; }
+}
+
+@media (max-width: 380px) {
+  .tapadito-contenido-contenedor { padding: 1.2rem 0.8rem; }
+
+  .titulo-hero-tapadito { font-size: 1.3rem; }
+  .subtitulo-hero-tapadito { font-size: 0.65rem; }
+
   .descripcion-juego-tapadito { font-size: 0.7rem; }
-  
-  .btn-iniciar-reto-tapadito {
-    padding: 14px 30px;
-    font-size: 0.8rem;
-    width: 70%;
-  }
 
-  .alerta-icono-tapadito{
-    font-size: 1.2rem;
-  }
+  .tapadito-slide-inner { height: 140px; }
+  .tapadito-slide-emoji { font-size: 2rem; }
+  .tapadito-slide-caption { padding: 0.35rem 0.5rem; }
+  .tapadito-slide-caption h5 { font-size: 0.68rem; }
+  .tapadito-slide-caption p { font-size: 0.6rem; }
 
-  .alerta-jugado-tapadito p {
-    font-size: 0.8rem;
-  }
+  .tapadito-btn-jugar { font-size: 0.72rem; padding: 8px 16px; }
 }

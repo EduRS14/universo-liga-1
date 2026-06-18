@@ -22,7 +22,7 @@ export default function MenuElTapadito() {
     const ultimaPartida = localStorage.getItem('tapaditoUltimaPartida');
     if (ultimaPartida) {
       const hoy = new Date();
-      const hoyStr = hoy.toISOString().split('T')[0]; // Formato YYYY-MM-DD
+      const hoyStr = hoy.toISOString().split('T')[0];
       if (ultimaPartida === hoyStr) {
         setYaJugoHoy(true);
         setLoading(false);
@@ -48,14 +48,15 @@ export default function MenuElTapadito() {
   const handleContinuar = (e: React.FormEvent) => {
     e.preventDefault();
 
-    console.log('Iniciando nueva partida de El Tapadito...');
-
     if (juegoIniciado === false) {
 
       setLoading(true);
 
-      // Seleccionamos un jugador al azar de la lista de goleadores
-      const jugadorAleatorio = JUGADORES[Math.floor(Math.random() * JUGADORES.length)];
+      // Filtramos jugadores con exactamente 2 palabras (nombre + apellido simple)
+      const jugadoresValidos = JUGADORES.filter(j => j.nombre.trim().split(/\s+/).length === 2);
+
+      // Seleccionamos un jugador al azar de la lista filtrada
+      const jugadorAleatorio = jugadoresValidos[Math.floor(Math.random() * jugadoresValidos.length)];
 
       // Obtenemos el nombre del jugador y lo normalizamos
       const nombreJugador = normalizarTexto(jugadorAleatorio.nombre);
@@ -100,7 +101,6 @@ export default function MenuElTapadito() {
   }
 
   // --- VISTA DEL JUEGO ---
-  // --- VISTA DEL JUEGO ---
   if (juegoIniciado) {
     return (
       <div className="fade-in">
@@ -109,19 +109,19 @@ export default function MenuElTapadito() {
     );
   }
 
-  // --- NUEVA VISTA DEL MENÚ ---
+  // --- NUEVA VISTA DEL MENÚ COMPACTO ---
   return (
-    <div className="contenedor-configuracion">
+    <div className="contenedor-configuracion tapadito-menu-wrapper">
       <div className="menu-juego-tapadito-full-bg fade-in">
         
-        {/* 1. EL OVERLAY GENERAL (Imprescindible para legibilidad) */}
+        {/* OVERLAY GENERAL */}
         <div className="tapadito-overlay-fondo"></div>
 
-        {/* 2. EL CONTENIDO FLOTANTE (Centrado y legible) */}
+        {/* CONTENIDO FLOTANTE */}
         <div className="tapadito-contenido-contenedor">
           
           {/* Cabecera del Juego */}
-          <div className="tapadito-cabecera text-center mb-5">
+          <div className="tapadito-cabecera text-center">
             <span className="badge-categoria-tapadito">RETO DIARIO</span>
             <h1 className="titulo-hero-tapadito">EL TAPADITO</h1>
             <h2 className="subtitulo-hero-tapadito">EL WORDLE DE LA LIGA 1</h2>
@@ -130,20 +130,71 @@ export default function MenuElTapadito() {
           {/* Cuerpo y Acción */}
           <div className="tapadito-cuerpo-accion text-center">
             <p className="descripcion-juego-tapadito text-justify">
-              En nuestro fútbol, siempre hay un nombre que se esconde bajo la manga. En esta versión del clásico <strong>Wordle</strong>, tu misión es descubrir la identidad de un futbolista oculto que pasó por nuestro campeonato <strong>entre 2010 y 2026.</strong> Tienes <strong>seis intentos</strong>. El verde te confirmará el éxito, el amarillo la reubicación y el gris el error. <strong>¿Tienes la visión de juego para descifrar el enigma? Reto diario</strong>
+              Descubre la identidad del futbolista oculto. Tienes <strong>seis intentos</strong> para adivinar su apellido.
             </p>
 
+            {/* SLIDER DE INSTRUCCIONES VISUALES */}
+            <div id="sliderTapadito" className="carousel slide tapadito-slider" data-bs-ride="carousel">
+              <div className="carousel-indicators">
+                <button type="button" data-bs-target="#sliderTapadito" data-bs-slide-to="0" className="active" aria-label="Slide 1" />
+                <button type="button" data-bs-target="#sliderTapadito" data-bs-slide-to="1" aria-label="Slide 2" />
+                <button type="button" data-bs-target="#sliderTapadito" data-bs-slide-to="2" aria-label="Slide 3" />
+                <button type="button" data-bs-target="#sliderTapadito" data-bs-slide-to="3" aria-label="Slide 4" />
+              </div>
+              <div className="carousel-inner">
+                {[
+                  { emoji: '🎯', title: 'Jugador Oculto', text: 'Se te asigna un futbolista misterioso de la Liga 1. Debes adivinar su apellido en 6 intentos.', img: 'slide-1.webp' },
+                  { emoji: '⌨️', title: 'Escribe tu Intento', text: 'Ingresa un apellido o palabra en español y ve descifrando el caso.', img: 'slide-2.webp' },
+                  { emoji: '🟩🟨⬜', title: 'Pistas de Color', text: '🟩: letra correcta en posición correcta. 🟨: letra correcta en otra posición. ⬜: letra incorrecta.', img: 'slide-3.webp' },
+                  { emoji: '🏆', title: 'Completa el Reto', text: 'Acierta el apellido en 6 intentos o menos. Cada día un nuevo jugador misterioso te espera.', img: 'slide-4.webp' },
+                ].map((slide, i) => (
+                  <div key={slide.title} className={`carousel-item${i === 0 ? ' active' : ''}`}>
+                    <div className="tapadito-slide-inner">
+                      <div className="tapadito-slide-placeholder">
+                        <span className="tapadito-slide-emoji">{slide.emoji}</span>
+                      </div>
+                      <img
+                        src={`/img/minijuegos/tutoriales/el-tapadito/${slide.img}`}
+                        alt={slide.title}
+                        className="tapadito-slide-img"
+                        onError={(e) => { (e.target as HTMLImageElement).style.display = 'none' }}
+                      />
+                    </div>
+                    <div className="tapadito-slide-caption">
+                      <h5>{slide.title}</h5>
+                      <p>{slide.text}</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+              <button className="carousel-control-prev" type="button" data-bs-target="#sliderTapadito" data-bs-slide="prev">
+                <span className="carousel-control-prev-icon" aria-hidden="true" />
+                <span className="visually-hidden">Anterior</span>
+              </button>
+              <button className="carousel-control-next" type="button" data-bs-target="#sliderTapadito" data-bs-slide="next">
+                <span className="carousel-control-next-icon" aria-hidden="true" />
+                <span className="visually-hidden">Siguiente</span>
+              </button>
+            </div>
+
             {yaJugoHoy ? (
-              <div className="alerta-jugado-tapadito fade-in">
-                <span className="alerta-icono-tapadito">⏳</span>
-                <p>Ya completaste el reto de hoy<br/><strong>Vuelve mañana para un nuevo tapadito</strong></p>
+              <div className="tapadito-ya-jugado fade-in">
+                <span className="tapadito-ya-jugado-icono">⏳</span>
+                <p>Ya completaste el reto de hoy<br /><strong>Vuelve mañana para un nuevo tapadito</strong></p>
+                <button
+                  type="button"
+                  className="tapadito-btn-ver-resultado"
+                  onClick={() => setJuegoIniciado(true)}
+                >
+                  VER RESULTADO
+                </button>
               </div>
             ) : (
-              <form onSubmit={handleContinuar} className="seccion-accion-tapadito">
+              <form onSubmit={handleContinuar} className="tapadito-seccion-accion">
                 <button
                   id="btn-continuar"
                   type="submit"
-                  className="btn-iniciar-reto-tapadito"
+                  className="tapadito-btn-jugar"
                 >
                   JUGAR AHORA
                 </button>
