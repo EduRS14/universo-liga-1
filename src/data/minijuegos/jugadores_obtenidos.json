@@ -1698,7 +1698,7 @@
         "nacionalidades": [
             1
         ],
-        "clubActual": "Los Chankas",
+        "clubActual": "Universitario",
         "posicionPrincipal": "Mediocentro",
         "posicionesSecundarias": [
             "Mediocentro ofensivo"
@@ -1720,6 +1720,15 @@
                 "periodos": [
                     [
                         2025,
+                        2026
+                    ]
+                ]
+            },
+            {
+                "id_equipo": 2,
+                "periodos": [
+                    [
+                        2026,
                         -1
                     ]
                 ]
@@ -19223,7 +19232,7 @@
         "nacionalidades": [
             1
         ],
-        "clubActual": "AD Tarma",
+        "clubActual": "Cienciano",
         "posicionPrincipal": "Lateral derecho",
         "posicionesSecundarias": [
             "Extremo derecho",
@@ -19293,6 +19302,15 @@
                 "periodos": [
                     [
                         2025,
+                        2026
+                    ]
+                ]
+            },
+            {
+                "id_equipo": 6,
+                "periodos": [
+                    [
+                        2026,
                         -1
                     ]
                 ]
@@ -52664,7 +52682,7 @@
         "nacionalidades": [
             2
         ],
-        "clubActual": "Cusco FC",
+        "clubActual": "San Martín (T)",
         "posicionPrincipal": "Mediocentro ofensivo",
         "posicionesSecundarias": [
             "Mediocentro",
@@ -52687,7 +52705,7 @@
                 "periodos": [
                     [
                         2026,
-                        -1
+                        2026
                     ]
                 ]
             }
@@ -87711,7 +87729,7 @@
         "nacionalidades": [
             6
         ],
-        "clubActual": "Universitario",
+        "clubActual": "LDU Quito",
         "posicionPrincipal": "Lateral izquierdo",
         "posicionesSecundarias": [
             "Interior izquierdo",
@@ -87725,7 +87743,7 @@
                 "periodos": [
                     [
                         2025,
-                        -1
+                        2026
                     ]
                 ]
             }
@@ -97318,7 +97336,7 @@
         "nacionalidades": [
             1
         ],
-        "clubActual": "Cusco FC",
+        "clubActual": "César Vallejo",
         "posicionPrincipal": "Defensa central",
         "posicionesSecundarias": [
             "Lateral derecho"
@@ -97332,10 +97350,6 @@
                     [
                         2024,
                         2025
-                    ],
-                    [
-                        2027,
-                        -1
                     ]
                 ]
             },
@@ -97345,6 +97359,15 @@
                     [
                         2026,
                         2026
+                    ]
+                ]
+            },
+            {
+                "id_equipo": 9,
+                "periodos": [
+                    [
+                        2026,
+                        -1
                     ]
                 ]
             }
@@ -165388,7 +165411,7 @@
             2,
             12
         ],
-        "clubActual": "Atlético Grau",
+        "clubActual": "Dep. Morón",
         "posicionPrincipal": "Mediocentro",
         "posicionesSecundarias": [
             "Mediocentro ofensivo",
@@ -165402,7 +165425,7 @@
                 "periodos": [
                     [
                         2026,
-                        -1
+                        2026
                     ]
                 ]
             }
@@ -171770,7 +171793,7 @@
         "nacionalidades": [
             9
         ],
-        "clubActual": "Caracas FC",
+        "clubActual": "Atlético Grau",
         "posicionPrincipal": "Delantero centro",
         "posicionesSecundarias": [],
         "valorMercadoMaximo": 600000.0,
@@ -171793,6 +171816,15 @@
                         2025
                     ]
                 ]
+            },
+            {
+                "id_equipo": 35,
+                "periodos": [
+                    [
+                        2026,
+                        -1
+                    ]
+                ]
             }
         ],
         "titulosObtenidos": [],
@@ -171808,7 +171840,7 @@
         "nacionalidades": [
             2
         ],
-        "clubActual": "Alianza Atl.",
+        "clubActual": "Central Norte",
         "posicionPrincipal": "Mediocentro ofensivo",
         "posicionesSecundarias": [
             "Mediocentro"
@@ -171821,7 +171853,7 @@
                 "periodos": [
                     [
                         2026,
-                        -1
+                        2026
                     ]
                 ]
             }
@@ -172074,7 +172106,7 @@
         "jugoExtranjero": true,
         "equiposJugados": [
             {
-                "id_equipo": 6,
+                "id_equipo": 1,
                 "periodos": [
                     [
                         2026,
@@ -172254,5 +172286,162 @@
         ],
         "titulosObtenidos": [],
         "url_foto": "https://img.a.transfermarkt.technology/portrait/header/625618-1679139844.jpg?lm=1"
+    },
+    {
+        "id": 3465,
+        "nombre": "Gianluca Lapadula",
+        "fechaNacimiento": "1990-02-07",
+        "fechaFallecimiento": null,
+        "edad": 36,
+        "altura": 178.0,
+        "nacionalidades": [
+            1,
+            12
+        ],
+        "clubActual": "Universitario",
+        "posicionPrincipal": "Delantero centro",
+        "posicionesSecundarias": [
+            "Extremo derecho"
+        ],
+        "valorMercadoMaximo": 8000000.0,
+        "jugoExtranjero": true,
+        "equiposJugados": [
+            {
+                "id_equipo": 2,
+                "periodos": [
+                    [
+                        2026,
+                        -1
+                    ]
+                ]
+            }
+        ],
+        "titulosObtenidos": [
+            {
+                "id_trofeo": 29,
+                "cantidad": 4
+            },
+            {
+                "id_trofeo": 202,
+                "cantidad": 1
+            },
+            {
+                "id_trofeo": 145,
+                "cantidad": 1
+            }
+        ],
+        "url_foto": "https://img.a.transfermarkt.technology/portrait/header/130394-1718677760.jpg?lm=1"
+    },
+    {
+        "id": 3466,
+        "nombre": "Lucas Ríos",
+        "fechaNacimiento": "2001-11-05",
+        "fechaFallecimiento": null,
+        "edad": 24,
+        "altura": 172.0,
+        "nacionalidades": [
+            2
+        ],
+        "clubActual": "Dep. Garcilaso",
+        "posicionPrincipal": "Extremo izquierdo",
+        "posicionesSecundarias": [
+            "Extremo derecho",
+            "Delantero centro"
+        ],
+        "valorMercadoMaximo": 325000.0,
+        "jugoExtranjero": true,
+        "equiposJugados": [
+            {
+                "id_equipo": 38,
+                "periodos": [
+                    [
+                        2026,
+                        -1
+                    ]
+                ]
+            }
+        ],
+        "titulosObtenidos": [],
+        "url_foto": "https://img.a.transfermarkt.technology/portrait/header/912299-1730305968.png?lm=1"
+    },
+    {
+        "id": 3467,
+        "nombre": "Juan Manuel Cuesta",
+        "fechaNacimiento": "2002-02-09",
+        "fechaFallecimiento": null,
+        "edad": 24,
+        "altura": 172.0,
+        "nacionalidades": [
+            5
+        ],
+        "clubActual": "Sport. Cristal",
+        "posicionPrincipal": "Extremo izquierdo",
+        "posicionesSecundarias": [
+            "Mediocentro ofensivo"
+        ],
+        "valorMercadoMaximo": 850000.0,
+        "jugoExtranjero": true,
+        "equiposJugados": [
+            {
+                "id_equipo": 3,
+                "periodos": [
+                    [
+                        2026,
+                        -1
+                    ]
+                ]
+            }
+        ],
+        "titulosObtenidos": [
+            {
+                "id_trofeo": 124,
+                "cantidad": 1
+            },
+            {
+                "id_trofeo": 63,
+                "cantidad": 2
+            },
+            {
+                "id_trofeo": 46,
+                "cantidad": 1
+            }
+        ],
+        "url_foto": "https://img.a.transfermarkt.technology/portrait/header/660840-1738273104.JPG?lm=1"
+    },
+    {
+        "id": 3468,
+        "nombre": "Facundo Castelli",
+        "fechaNacimiento": "1995-02-18",
+        "fechaFallecimiento": null,
+        "edad": 31,
+        "altura": 183.0,
+        "nacionalidades": [
+            2
+        ],
+        "clubActual": "Dep. Garcilaso",
+        "posicionPrincipal": "Delantero centro",
+        "posicionesSecundarias": [
+            "Extremo derecho"
+        ],
+        "valorMercadoMaximo": 800000.0,
+        "jugoExtranjero": true,
+        "equiposJugados": [
+            {
+                "id_equipo": 38,
+                "periodos": [
+                    [
+                        2026,
+                        -1
+                    ]
+                ]
+            }
+        ],
+        "titulosObtenidos": [
+            {
+                "id_trofeo": 104,
+                "cantidad": 1
+            }
+        ],
+        "url_foto": "https://img.a.transfermarkt.technology/portrait/header/443350-1718913436.jpg?lm=1"
     }
 ]
