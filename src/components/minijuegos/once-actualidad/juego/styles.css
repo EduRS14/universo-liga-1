@@ -5,11 +5,6 @@
     gap: 0.5rem;
 }
 
-.texto-cargando{
-    color: #fff;
-    font-size: 1.2rem;
-    text-align: center;
-}
 
 .juego-container{
     display: flex; 
@@ -272,9 +267,6 @@
         font-size: 0.9rem;
     }
 
-    .texto-cargando{
-        font-size: 1rem;
-    }
 
     .contenedor-informacion{
         padding: 0.5rem;

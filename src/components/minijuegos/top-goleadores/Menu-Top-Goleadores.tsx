@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import JuegoTopGoleadores from './juego/juego-top-goleadores';
+import Spinner from '../Spinner';
 import GoleadoresTemporadasData from '../../../data/minijuegos/goleadores_temporada.json';
 import JugadoresData from '../../../data/minijuegos/jugadores_obtenidos.json';
 import EquiposData from '../../../data/minijuegos/equipos.json';
@@ -105,11 +106,7 @@ export default function MenuTopGoleadores() {
   };
 
   if (loading) {
-    return (
-      <div className="contenedor-configuracion">
-        <p className='texto-cargando'>Cargando...</p>
-      </div>
-    );
+    return <Spinner size="lg" mensaje="Preparando Top Goleadores..." />;
   }
 
   // --- VISTA DEL JUEGO ---

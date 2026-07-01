@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import Buscador from '../../../buscador';
 import Equipos from '../../../../data/minijuegos/equipos.json'; 
 import type { Jugador } from '../../../../types/minijuegos/jugador.interface';
+import Spinner from '../../Spinner';
 import './styles.css';
 
 // --- CONSTANTES Y CONFIGURACIÓN ---
@@ -333,7 +334,7 @@ export default function JuegoElOnce() {
   }
 
   // --- RENDERIZADO: JUEGO ACTIVO ---
-  if (cargando || !data) return <div className='texto-cargando'>Cargando...</div>;
+  if (cargando || !data) return <Spinner size="lg" mensaje="Cargando partida..." />;
 
   const posiciones = COORDENADAS[data.formacion] || [];
   const rolSeleccionado = posiciones.find(p => p.id === slotSeleccionado)?.rol;

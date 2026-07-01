@@ -6,6 +6,7 @@ import NexosModal from './NexosModal';
 import { validarCadena, calcularEstrellas } from './nexo-logic';
 import datosRetos from '../../../data/minijuegos/nexos-retos.json';
 import datosJugadores from '../../../data/minijuegos/jugadores_obtenidos.json';
+import Spinner from '../Spinner';
 import './styles.css';
 
 interface NexoJugador {
@@ -32,6 +33,7 @@ interface Resultado {
 }
 
 export default function NexosJuego() {
+    const [loading, setLoading] = useState(true);
     const [juegoActivo, setJuegoActivo] = useState(false);
     const [cadena, setCadena] = useState<NexoJugador[]>([]);
     const [hoyJugado, setHoyJugado] = useState(false);
@@ -89,6 +91,7 @@ export default function NexosJuego() {
         } else if (jugadorOrigen) {
             setCadena([jugadorOrigen]);
         }
+        setTimeout(() => setLoading(false), 50);
     }, [jugadorOrigen]);
 
     useEffect(() => {
@@ -171,6 +174,10 @@ export default function NexosJuego() {
         setProcesando(true);
         finalizarJuego('rendicion');
     };
+
+    if (loading) {
+        return <Spinner size="lg" mensaje="Buscando conexiones..." />;
+    }
 
     if (!juegoActivo || (hoyJugado && !resultado)) {
         return <NexosMenu onJugar={() => setJuegoActivo(true)} deshabilitado={hoyJugado} />;

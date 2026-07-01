@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import Spinner from '../Spinner';
 import {JuegoElTapadito} from './juego/juego-tapadito';
 import type { ConfiguracionTapadito } from '../../../types/minijuegos/tapadito/configuracion-tapadito';
 import Jugadores from '../../../data/minijuegos/jugadores_obtenidos.json';
@@ -93,11 +94,7 @@ export default function MenuElTapadito() {
   };
 
   if (loading) {
-    return (
-      <div className="contenedor-configuracion">
-        <p className='texto-cargando'>Cargando...</p>
-      </div>
-    );
+    return <Spinner size="lg" mensaje="Preparando El Tapadito..." />;
   }
 
   // --- VISTA DEL JUEGO ---

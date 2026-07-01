@@ -5,6 +5,7 @@ import Jugadores from '../../../../data/minijuegos/jugadores_obtenidos.json';
 import type { Jugador } from '../../../../types/minijuegos/jugador.interface';
 import type { ConfiguracionTop, ResultadoFinalTop } from '../../../../types/minijuegos/tops/configuracion-top';
 import type { GoleadoresTemporadas } from '../../../../types/minijuegos/tops/goleadores';
+import Spinner from '../../Spinner';
 import './styles.css';
 
 // --- CONSTANTES Y CONFIGURACIÓN ---
@@ -267,7 +268,7 @@ export default function JuegoTopGoleadores() {
   }
 
   // --- RENDERIZADO: JUEGO ACTIVO ---
-  if (cargando || !data) return <div className='texto-cargando'>Cargando...</div>;
+  if (cargando || !data) return <Spinner size="lg" mensaje="Cargando partida..." />;
 
   // Helper Tiempo
   const formatoTiempo = (segundos: number) => {

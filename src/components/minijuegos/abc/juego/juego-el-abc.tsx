@@ -3,6 +3,7 @@ import React, { useState, useEffect, useMemo, useCallback } from 'react';
 import { buscarPorApellido, obtenerStringApellidos } from '../../../../utils/minijuegos/el-abc/logica';
 import type { Equipo } from '../../../../types/minijuegos/equipo';
 import type { Jugador } from '../../../../types/minijuegos/jugador.interface';
+import Spinner from '../../Spinner';
 import { ModalSeleccion } from './Modal';
 import './styles.css';
 
@@ -10,6 +11,7 @@ import './styles.css';
 interface ElABCProps {
   todosLosEquipos: Equipo[];
   todosLosJugadores: Jugador[];
+  dificultad: 'facil' | 'intermedio' | 'dificil';
 }
 
 // Interfaz para guardar el estado completo en LocalStorage
@@ -24,7 +26,13 @@ interface EstadoPartida {
 const ALFABETO: string[] = "ABCDEFGHIJLMNOPQRSTUVZ".split('');
 const STORAGE_KEY = 'elABC_sesion_v2'; 
 
-export const JuegoElABC: React.FC<ElABCProps> = ({ todosLosEquipos, todosLosJugadores }) => {
+const MAX_MULTIPLICADOR = {
+  facil: 1.5,
+  intermedio: 2.0,
+  dificil: Infinity,
+};
+
+export const JuegoElABC: React.FC<ElABCProps> = ({ todosLosEquipos, todosLosJugadores, dificultad }) => {
   // ESTADOS VISUALES
   const [cargando, setCargando] = useState<boolean>(true);
   const [indiceLetra, setIndiceLetra] = useState<number>(0);
@@ -83,15 +91,18 @@ export const JuegoElABC: React.FC<ElABCProps> = ({ todosLosEquipos, todosLosJuga
   };
 
   const iniciarNuevaPartida = useCallback(() => {
+    const maxMult = MAX_MULTIPLICADOR[dificultad];
     const nuevaSecuencia = ALFABETO.map((letra) => {
       const idsValidosSet = mapaLetrasEquipos[letra];
       const equiposCandidatos = Array.from(idsValidosSet)
         .map(id => todosLosEquipos.find(e => e.id === id))
-        .filter(e => e !== undefined) as Equipo[];
+        .filter(e => e !== undefined && e.multiplicador <= maxMult) as Equipo[];
 
       if (equiposCandidatos.length === 0) {
-        const randomFallback = Math.floor(Math.random() * todosLosEquipos.length);
-        return todosLosEquipos[randomFallback];
+        const equiposFiltrados = todosLosEquipos.filter(e => e.multiplicador <= maxMult);
+        const fallback = equiposFiltrados.length > 0 ? equiposFiltrados : todosLosEquipos;
+        const randomFallback = Math.floor(Math.random() * fallback.length);
+        return fallback[randomFallback];
       }
 
       const randomIndex = Math.floor(Math.random() * equiposCandidatos.length);
@@ -113,7 +124,7 @@ export const JuegoElABC: React.FC<ElABCProps> = ({ todosLosEquipos, todosLosJuga
     setEstadoJuego('jugando');
     setProcesando(false); // Aseguramos que inicie desbloqueado
     guardarProgreso(estadoInicial);
-  }, [todosLosEquipos, mapaLetrasEquipos]);
+  }, [todosLosEquipos, mapaLetrasEquipos, dificultad]);
 
   useEffect(() => {
     const partidaGuardada = localStorage.getItem(STORAGE_KEY);
@@ -267,7 +278,7 @@ export const JuegoElABC: React.FC<ElABCProps> = ({ todosLosEquipos, todosLosJuga
   // 4. RENDER
   // --------------------------------------------------------------------------
 
-  if (cargando) return <div className="loading">Cargando partida...</div>;
+  if (cargando) return <Spinner size="lg" mensaje="Cargando partida..." />;
 
   if (estadoJuego !== 'jugando') {
     return (
@@ -303,7 +314,7 @@ export const JuegoElABC: React.FC<ElABCProps> = ({ todosLosEquipos, todosLosJuga
     );
   }
 
-  if (!equipoActual) return <div className="loading">Generando desafío...</div>;
+  if (!equipoActual) return <Spinner size="md" mensaje="Generando desafío..." />;
 
   const colorActual = getColorDificultad(equipoActual.multiplicador);
 

@@ -10,6 +10,7 @@ import {
 } from './bajo-la-lupa-logic';
 import JuegoBajoLaLupa from './Juego-BajoLaLupa';
 import LupaJugadorRevelado from './LupaJugadorRevelado';
+import Spinner from '../Spinner';
 import './styles.css';
 import JugadoresData from '../../../data/minijuegos/jugadores_obtenidos.json';
 import EquiposData from '../../../data/minijuegos/equipos.json';
@@ -22,6 +23,7 @@ const paises: { id: number; nombre: string }[] = PaisesData as { id: number; nom
 const idsPoolCurado: number[] = PoolCuradoData as number[];
 
 export default function MenuBajoLaLupa() {
+    const [loading, setLoading] = useState(true);
     const [estadoDiario, setEstadoDiario] = useState<EstadoDiario | null>(null);
     const [jugando, setJugando] = useState(false);
     const [verResultado, setVerResultado] = useState(false);
@@ -48,6 +50,7 @@ export default function MenuBajoLaLupa() {
         if (!estado && hayPartidaEnCurso()) {
             setJugando(true);
         }
+        setTimeout(() => setLoading(false), 50);
     }, []);
 
     const handleFinalizar = (resultado: 'WIN' | 'GAMEOVER', historial: EntradaHistorial[]) => {
@@ -67,6 +70,10 @@ export default function MenuBajoLaLupa() {
     const handleVerResultado = () => {
         setVerResultado(true);
     };
+
+    if (loading) {
+        return <Spinner size="lg" mensaje="Preparando la lupa..." />;
+    }
 
     if (verResultado && estadoDiario && jugador) {
         return (
