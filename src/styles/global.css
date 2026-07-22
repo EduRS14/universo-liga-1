@@ -88,6 +88,18 @@ p, h1, h2, h3, h4, h5, h6, ul, li {
         font-size: 1rem;
     }
 
+    .btn-group {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .btn-torneo-activo,
+    .btn-torneo-normal {
+        padding: 0.25rem 0.6rem;
+        font-size: 0.75rem;
+        white-space: nowrap;
+    }
+
 }
 
 /* Banner Campeón */
@@ -137,6 +149,50 @@ p, h1, h2, h3, h4, h5, h6, ul, li {
     font-size: 1rem;
     text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
     white-space: nowrap;
+}
+
+.btn-izq{
+    border-radius: 0.4rem 0 0 0.4rem;
+}
+
+.btn-der{
+    border-radius: 0 0.4rem 0.4rem 0;
+}
+
+.btn-torneo-activo{
+    color: white;
+    background-color: #ED283A;
+    border: 2px solid #ED283A;
+    font-weight: 500;
+    padding: 0.3rem 1rem;
+}
+
+.btn-torneo-activo:hover{
+    background-color: #b91f2c;
+    border: 2px solid #b91f2c;
+}
+
+.btn-torneo-activo:focus{
+    background-color: #b91f2c;
+    border: 2px solid #b91f2c;
+}
+
+.btn-torneo-normal{
+    color: rgb(0, 0, 0);
+    background-color: #d1cfcf;
+    border: 2px solid #d1cfcf;
+    font-weight: 500;
+    padding: 0.3rem 1rem;
+}
+
+.btn-torneo-normal:hover{
+    background-color: #adadad;
+    border: 2px solid #adadad;
+}
+
+.btn-torneo-normal:focus{
+    background-color: #adadad;
+    border: 2px solid #adadad;
 }
 
 @keyframes bannerScroll {

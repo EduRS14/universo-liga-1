@@ -24,10 +24,7 @@
   overflow: hidden;
   box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.6);
   border: 1px solid #1e293b;
-  background-image: url('/img/minijuegos/juegos/el-tapadito.webp');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  background: #0f172a;
 }
 
 /* --- EL OVERLAY --- */
@@ -120,7 +117,7 @@
   margin: 0 auto 0.8rem auto;
   border-radius: 10px;
   overflow: hidden;
-  border: 1px solid #1e293b;
+  border: 2px solid #2240c5;
 }
 
 .tapadito-slider.carousel {
@@ -167,7 +164,7 @@
   background: #0f172a;
   padding: 0.5rem 0.8rem;
   text-align: center;
-  border-top: 1px solid #1e293b;
+  border-top: 2px solid #2240c5;
 }
 
 .tapadito-slide-caption h5 {
@@ -286,7 +283,7 @@
 @media (max-width: 600px) {
   .tapadito-contenido-contenedor { padding: 1.5rem 1rem; min-width: 90vw; }
 
-  .menu-juego-tapadito-full-bg { max-width: 90vw; background-position: center top; }
+  .menu-juego-tapadito-full-bg { max-width: 90vw; }
 
   .tapadito-cabecera { margin-bottom: 1rem !important; }
 

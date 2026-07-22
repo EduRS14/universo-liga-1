@@ -1,0 +1,10 @@
+[
+  { "id": "octavos-1", "goles_local": 3, "goles_visitante": 2, "penales_local": null, "penales_visitante": null, "jugado": true },
+  { "id": "octavos-2", "goles_local": 4, "goles_visitante": 1, "penales_local": null, "penales_visitante": null, "jugado": true },
+  { "id": "octavos-3", "goles_local": 1, "goles_visitante": 1, "penales_local": 8, "penales_visitante": 7, "jugado": true },
+  { "id": "octavos-4", "goles_local": 1, "goles_visitante": 0, "penales_local": null, "penales_visitante": null, "jugado": true },
+  { "id": "octavos-5", "goles_local": 1, "goles_visitante": 1, "penales_local": 5, "penales_visitante": 4, "jugado": true },
+  { "id": "octavos-6", "goles_local": 3, "goles_visitante": 1, "penales_local": null, "penales_visitante": null, "jugado": true },
+  { "id": "octavos-7", "goles_local": 2, "goles_visitante": 3, "penales_local": null, "penales_visitante": null, "jugado": true },
+  { "id": "octavos-8", "goles_local": 0, "goles_visitante": 0, "penales_local": 4, "penales_visitante": 2, "jugado": true }
+]

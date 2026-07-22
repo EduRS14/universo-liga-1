@@ -130,7 +130,6 @@ export default function MenuTopGoleadores() {
     return (
       <div className="contenedor-configuracion">
         <div className="menu-juego-top-full-bg fade-in">
-          <div className="top-overlay-fondo"></div>
           <div className="top-contenido-contenedor top-resultado-contenedor">
             <div
               className="contenedor-menu-fin top-resultado-panel"
@@ -222,9 +221,6 @@ export default function MenuTopGoleadores() {
   return (
     <div className="contenedor-configuracion">
       <div className="menu-juego-top-full-bg fade-in">
-
-        {/* OVERLAY GENERAL */}
-        <div className="top-overlay-fondo"></div>
 
         {/* CONTENIDO FLOTANTE */}
         <div className="top-contenido-contenedor">

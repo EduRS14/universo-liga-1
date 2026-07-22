@@ -93,8 +93,7 @@ export default function MenuSubeBaja() {
         return (
             <div className="contenedor-configuracion">
                 <div className="menu-subeybaja-full-bg fade-in">
-                    <div className="subeybaja-overlay-fondo"></div>
-                    <div className="subeybaja-contenido-contenedor">
+                        <div className="subeybaja-contenido-contenedor">
                         <div className="subeybaja-resultado-cabecera text-center">
                             <div className="subeybaja-resultado-icono">
                                 {resultadoPartida.recordRotoCategoria || resultadoPartida.recordRotoAbsoluto ? '🏆' : '💀'}
@@ -149,7 +148,6 @@ export default function MenuSubeBaja() {
     return (
         <div className="contenedor-configuracion">
             <div className="menu-subeybaja-full-bg fade-in">
-                <div className="subeybaja-overlay-fondo"></div>
                 <div className="subeybaja-contenido-contenedor">
                     <div className="subeybaja-cabecera text-center">
                         <span className="badge-categoria-subeybaja">RETO DIARIO</span>

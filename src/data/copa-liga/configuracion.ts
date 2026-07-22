@@ -109,7 +109,6 @@ export interface ConfiguracionTorneo {
     totalFechasGruposDeCuatro: number;
     totalFechasGruposDeTres: number;
     cuposOctavos: number;
-    crucesOctavos: [number, number][];
     crucesCuartos: [string, string][];
     crucesSemifinales: [string, string][];
 }
@@ -120,16 +119,6 @@ export const configuracionTorneo: ConfiguracionTorneo = {
     totalFechasGruposDeCuatro: 3,
     totalFechasGruposDeTres: 3,
     cuposOctavos: 16,
-    crucesOctavos: [
-        [1, 16],
-        [2, 15],
-        [3, 14],
-        [4, 13],
-        [5, 12],
-        [6, 11],
-        [7, 10],
-        [8, 9]
-    ],
     crucesCuartos: [
         ["octavos-1", "octavos-8"],
         ["octavos-2", "octavos-7"],

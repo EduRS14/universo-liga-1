@@ -1,4 +1,4 @@
 ﻿[
-  { "id": "GF-F2-P1", "equipo_local_id": 19, "equipo_visitante_id": 20, "goles_local": null, "goles_visitante": null, "jugado": false },
-  { "id": "GF-F2-P2", "equipo_local_id": 21, "equipo_visitante_id": 18, "goles_local": null, "goles_visitante": null, "jugado": false }
+  { "id": "GF-F2-P1", "equipo_local_id": 19, "equipo_visitante_id": 20, "goles_local": 2, "goles_visitante": 1, "jugado": true },
+  { "id": "GF-F2-P2", "equipo_local_id": 21, "equipo_visitante_id": 18, "goles_local": 4, "goles_visitante": 3, "jugado": true }
 ]

@@ -1,6 +1,6 @@
 import type { GrupoCopa, FechaCopa, TablaGrupo } from "../../types/copa-liga/grupo";
 import { calcularTablaGrupo } from "./calcular-tabla";
-import { calcularPromedio, ordenarPorPromedio, type EquipoPromedio } from "./calcular-promedio";
+import { calcularPromedio, type EquipoPromedio } from "./calcular-promedio";
 
 export type ClasificacionResultado = {
     primeros: { grupoLetra: string; equipo_id: number; promedio: EquipoPromedio }[];
@@ -45,7 +45,14 @@ export function obtenerClasificacion(
         }
     }
 
-    const ordenados = ordenarPorPromedio(segundosGruposDeTres);
+    const ordenados = [...segundosGruposDeTres].sort((a, b) => {
+        const pa = a.promedio;
+        const pb = b.promedio;
+        if (pb.puntos !== pa.puntos) return pb.puntos - pa.puntos;
+        if (pb.diferenciaGoles !== pa.diferenciaGoles) return pb.diferenciaGoles - pa.diferenciaGoles;
+        if (pb.golesFavor !== pa.golesFavor) return pb.golesFavor - pa.golesFavor;
+        return pa.golesContra - pb.golesContra;
+    });
     const mejoresSegundos = ordenados.slice(0, 2);
 
     return {
