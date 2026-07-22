@@ -10,8 +10,6 @@ export default function NexosMenu({ onJugar, deshabilitado = false }: Props) {
         <div className="contenedor-configuracion">
             <div className="menu-nexos-full-bg fade-in">
 
-                <div className="nexos-overlay-fondo"></div>
-
                 <div className="nexos-contenido-contenedor">
 
                     <div className="nexos-cabecera text-center">

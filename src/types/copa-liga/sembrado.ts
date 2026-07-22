@@ -6,9 +6,12 @@ export interface SembradoEquipo {
     puntos: number;
     partidosJugados: number;
     diferenciaGoles: number;
+    golesFavor: number;
+    golesContra: number;
     promedioPuntos: number;
     promedioDG: number;
     esPrimero: boolean;
+    grupoLetra: string;
 }
 
 export interface LlaveEliminatoria {

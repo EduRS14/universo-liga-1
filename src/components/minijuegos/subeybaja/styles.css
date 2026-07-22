@@ -18,10 +18,7 @@
     overflow: hidden;
     box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.5);
     border: 1px solid #1e293b;
-    background-image: url('/img/minijuegos/juegos/subeybaja.webp');
-    background-size: cover;
-    background-position: center top;
-    background-repeat: no-repeat;
+    background: #0f172a;
 }
 
 .subeybaja-overlay-fondo {

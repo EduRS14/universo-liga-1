@@ -108,9 +108,6 @@ export default function MenuOnce() {
     <div className="contenedor-configuracion once-menu-wrapper">
       <div className="menu-juego-once-full-bg fade-in">
         
-        {/* OVERLAY GENERAL */}
-        <div className="once-overlay-fondo"></div>
-
         {/* CONTENIDO FLOTANTE */}
         <div className="once-contenido-contenedor">
           
@@ -126,6 +123,14 @@ export default function MenuOnce() {
             <p className="descripcion-juego-once text-justify">
               Quince años de fútbol peruano (2010-2026) resumidos en once decisiones. <strong>Reto ilimitado</strong> 
             </p>
+
+            <div className="once-deprecado-banner">
+              <span className="once-deprecado-icono">⚠️</span>
+              <div className="once-deprecado-texto">
+                <p className="once-deprecado-titulo">Versión Legacy</p>
+                <p className="once-deprecado-sub">Esta versión será descontinuada. Prueba <a href="/minijuegos/nuevo-once" className="once-deprecado-link">El Nuevo Once</a>, la edición renovada.</p>
+              </div>
+            </div>
 
             {/* SLIDER DE INSTRUCCIONES VISUALES */}
             <div id="sliderOnce" className="carousel slide once-slider" data-bs-ride="carousel">

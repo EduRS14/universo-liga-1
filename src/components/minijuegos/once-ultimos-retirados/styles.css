@@ -19,12 +19,7 @@
   box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.8);
   border: 1px solid #334155; /* Borde gris metálico */
   
-  /* FONDO DE IMAGEN TOTAL */
-  background-image: url('/img/minijuegos/juegos/el-once-ultimos-retirados.webp');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  /* Opcional: Filtro sepia o blanco y negro directo en CSS para darle un toque más retro */
+  background: #0f172a;
   filter: grayscale(20%); 
 }
 

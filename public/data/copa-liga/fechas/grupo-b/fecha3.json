@@ -1,3 +1,3 @@
 [
-  { "id": "GB-F3-P1", "equipo_local_id": 5, "equipo_visitante_id": 6, "goles_local": null, "goles_visitante": null, "jugado": false }
+  { "id": "GB-F3-P1", "equipo_local_id": 5, "equipo_visitante_id": 6, "goles_local": 0, "goles_visitante": 0, "jugado": true }
 ]

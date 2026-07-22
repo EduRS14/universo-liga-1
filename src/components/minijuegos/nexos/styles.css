@@ -16,10 +16,7 @@
     overflow: hidden;
     box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.6);
     border: 1px solid #1e293b;
-    background-image: url('/img/minijuegos/juegos/nexos.webp');
-    background-size: cover;
-    background-position: center top;
-    background-repeat: no-repeat;
+    background: #0f172a;
 }
 
 /* --- OVERLAY --- */

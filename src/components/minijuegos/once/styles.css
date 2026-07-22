@@ -25,11 +25,7 @@
   box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.6);
   border: 1px solid #1e293b;
   
-  /* FONDO DE IMAGEN TOTAL */
-  background-image: url('/img/minijuegos/juegos/el-once.webp');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  background: #0f172a;
 }
 
 /* --- EL OVERLAY (Desvanecimiento oscuro sobre la imagen) --- */
@@ -122,7 +118,7 @@
   margin: 0 auto 0.8rem auto;
   border-radius: 10px;
   overflow: hidden;
-  border: 1px solid #1e293b;
+  border: 2px solid #06b6d4;
 }
 
 .once-slider.carousel {
@@ -169,7 +165,7 @@
   background: #0f172a;
   padding: 0.5rem 0.8rem;
   text-align: center;
-  border-top: 1px solid #1e293b;
+  border-top: 2px solid #06b6d4;
 }
 
 .once-slide-caption h5 {
@@ -334,11 +330,64 @@
   color: #ffffff;
 }
 
+/* --- BANNER DEPRECADO --- */
+.once-deprecado-banner {
+  background: rgba(251, 191, 36, 0.12);
+  border: 1px solid #fbbf24;
+  border-radius: 8px;
+  padding: 0.6rem 1rem;
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  width: 100%;
+  max-width: 500px;
+  margin: 1rem auto;
+  text-align: left;
+}
+
+.once-deprecado-icono {
+  font-size: 1rem;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.once-deprecado-texto {
+  flex: 1;
+  min-width: 0;
+}
+
+.once-deprecado-titulo {
+  color: #fbbf24;
+  margin: 0;
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.once-deprecado-sub {
+  color: #cbd5e1;
+  margin: 2px 0 0 0;
+  font-size: 0.7rem;
+  line-height: 1.4;
+}
+
+.once-deprecado-link {
+  color: #67e8f9;
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.once-deprecado-link:hover {
+  color: #22d3ee;
+}
+
 /* --- RESPONSIVO MÓVIL --- */
 @media (max-width: 600px) {
   .once-contenido-contenedor { padding: 1.5rem 1rem; min-width: 90vw; }
 
-  .menu-juego-once-full-bg { max-width: 90vw; background-position: center top; }
+  .menu-juego-once-full-bg { max-width: 90vw; }
 
   .once-cabecera { margin-bottom: 1rem !important; }
 

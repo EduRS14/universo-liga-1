@@ -102,9 +102,6 @@ export default function MenuOnceActualidad() {
     <div className="contenedor-configuracion">
       <div className="menu-juego-actualidad-full-bg fade-in">
         
-        {/* OVERLAY GENERAL */}
-        <div className="actualidad-overlay-fondo"></div>
-
         {/* CONTENIDO FLOTANTE */}
         <div className="actualidad-contenido-contenedor">
           

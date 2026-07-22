@@ -2,13 +2,14 @@ import { useState, useEffect, useCallback } from 'react';
 import type { EquipoCopa } from '../../types/copa-liga/equipo';
 import type { GrupoCopa, FechaCopa } from '../../types/copa-liga/grupo';
 import type { LlaveEliminatoria, SembradoEquipo } from '../../types/copa-liga/sembrado';
+import type { PartidoAlmacenado } from '../../utils/copa-liga/cruces-octavos';
 import { gruposCopa } from '../../data/copa-liga/grupos';
 import equiposData from '../../data/copa-liga/equipos-copa.json';
 import { generarFechasGrupo } from '../../data/copa-liga/configuracion';
 import { calcularTablaGrupo } from '../../utils/copa-liga/calcular-tabla';
 import { obtenerClasificacion } from '../../utils/copa-liga/clasificacion';
 import { generarSembrado } from '../../utils/copa-liga/generar-sembrado';
-import { generarCrucesOctavos, generarCuartos, generarSemifinales, generarFinal } from '../../utils/copa-liga/cruces-octavos';
+import { generarCrucesOctavos, generarCuartos, generarSemifinales, generarFinal, aplicarResultados } from '../../utils/copa-liga/cruces-octavos';
 import { invalidarHaciaAdelante } from '../../utils/copa-liga/invalidacion-cascada';
 import GruposGrid from './GruposGrid';
 import ResultadosGrupo from './ResultadosGrupo';
@@ -91,17 +92,16 @@ export default function AppCopaLiga() {
 
         const octavosGuardados = localStorage.getItem('copa-liga-octavos');
         let octavos: LlaveEliminatoria[];
-
         if (octavosGuardados) {
             const existentes = JSON.parse(octavosGuardados) as LlaveEliminatoria[];
-            const nuevos = generarCrucesOctavos(sembradoResult);
+            const nuevos = generarCrucesOctavos(clasificacion, equiposMap);
             octavos = nuevos.map(n => {
                 const existente = existentes.find(e => e.id === n.id);
                 if (existente && existente.jugado) return existente;
                 return n;
             });
         } else {
-            octavos = generarCrucesOctavos(sembradoResult);
+            octavos = generarCrucesOctavos(clasificacion, equiposMap);
         }
         setPartidosOctavos(octavos);
         localStorage.setItem('copa-liga-octavos', JSON.stringify(octavos));
@@ -154,6 +154,53 @@ export default function AppCopaLiga() {
         setGanador(null);
     }, [fechasPorGrupo, equiposMap]);
 
+    const regenerarDesdeClasificacion = useCallback(async (nuevasFechas: Record<string, FechaCopa[]>, equiposMap: Map<number, EquipoCopa>): Promise<{ octavos: LlaveEliminatoria[]; cuartos: LlaveEliminatoria[]; semis: LlaveEliminatoria[]; final: LlaveEliminatoria; ganador: EquipoCopa | null }> => {
+        const clasificacion = obtenerClasificacion(gruposCopa, nuevasFechas);
+        const sembradoResult = generarSembrado(clasificacion, equiposMap);
+        setSembrado(sembradoResult);
+
+        let octavosAlmacenados: PartidoAlmacenado[] | undefined;
+        try {
+            const resp = await fetch('/data/copa-liga/octavos.json');
+            if (resp.ok) octavosAlmacenados = await resp.json();
+        } catch { /* ignore */ }
+
+        let cuartosAlmacenados: PartidoAlmacenado[] | undefined;
+        try {
+            const resp = await fetch('/data/copa-liga/cuartos.json');
+            if (resp.ok) cuartosAlmacenados = await resp.json();
+        } catch { /* ignore */ }
+
+        let semisAlmacenados: PartidoAlmacenado[] | undefined;
+        try {
+            const resp = await fetch('/data/copa-liga/semifinales.json');
+            if (resp.ok) semisAlmacenados = await resp.json();
+        } catch { /* ignore */ }
+
+        let finalAlmacenado: PartidoAlmacenado | undefined;
+        try {
+            const resp = await fetch('/data/copa-liga/final.json');
+            if (resp.ok) finalAlmacenado = await resp.json();
+        } catch { /* ignore */ }
+
+        const octavos = generarCrucesOctavos(clasificacion, equiposMap, octavosAlmacenados);
+
+        let cuartos = generarCuartos(octavos);
+        if (cuartosAlmacenados) cuartos = aplicarResultados(cuartos, cuartosAlmacenados);
+
+        let semis = generarSemifinales(cuartos);
+        if (semisAlmacenados) semis = aplicarResultados(semis, semisAlmacenados);
+
+        let final = generarFinal(semis);
+        if (finalAlmacenado && finalAlmacenado.jugado) {
+            final = aplicarResultados([final], [finalAlmacenado])[0];
+        }
+
+        const ganador = final.jugado && final.ganador ? final.ganador : null;
+
+        return { octavos, cuartos, semis, final, ganador };
+    }, []);
+
     const handleGrupoSeleccionado = (grupo: GrupoCopa) => {
         setGrupoSeleccionado(grupo);
     };
@@ -180,7 +227,7 @@ export default function AppCopaLiga() {
             for (const grupo of gruposCopa) {
                 const grupoKey = grupo.letra.toLowerCase();
                 const fechas: FechaCopa[] = [];
-                const totalFechas = grupo.tipo === 'cuatro' ? 3 : 3;
+                const totalFechas = 3;
                 for (let i = 1; i <= totalFechas; i++) {
                     const resp = await fetch(`/data/copa-liga/fechas/grupo-${grupoKey}/fecha${i}.json`);
                     if (!resp.ok) throw new Error(`Error grupo ${grupo.letra} fecha ${i}`);
@@ -191,13 +238,30 @@ export default function AppCopaLiga() {
                 localStorage.setItem(`copa-liga-grupo-${grupo.letra}`, JSON.stringify(fechas));
             }
             setFechasPorGrupo(nuevasFechas);
-            invalidarHaciaAdelante('grupos');
-            setPartidosOctavos([]);
-            setPartidosCuartos([]);
-            setPartidosSemifinales([]);
-            setPartidoFinal(null);
-            setGanador(null);
-            setSembrado([]);
+
+            const { octavos, cuartos, semis, final, ganador } = await regenerarDesdeClasificacion(nuevasFechas, equiposMap);
+
+            setPartidosOctavos(octavos);
+            localStorage.setItem('copa-liga-octavos', JSON.stringify(octavos));
+
+            setPartidosCuartos(cuartos);
+            localStorage.setItem('copa-liga-cuartos', JSON.stringify(cuartos));
+
+            setPartidosSemifinales(semis);
+            localStorage.setItem('copa-liga-semifinales', JSON.stringify(semis));
+
+            setPartidoFinal(final);
+            localStorage.setItem('copa-liga-final', JSON.stringify(final));
+
+            if (ganador) {
+                setGanador(ganador);
+                localStorage.setItem('copa-liga-ganador', JSON.stringify(ganador));
+            } else {
+                localStorage.removeItem('copa-liga-ganador');
+                setGanador(null);
+            }
+
+            setFaseActiva('sembrado');
             alert('Resultados sincronizados correctamente.');
         } catch (e) {
             console.error(e);
@@ -311,6 +375,18 @@ export default function AppCopaLiga() {
                 </div>
             </div>
 
+            <div className="row mt-2 mb-3">
+                <div className="col-12 text-center">
+                    <button
+                        className={`btn-copa ${sincronizando ? 'btn-esperando' : ''}`}
+                        disabled={sincronizando}
+                        onClick={handleSincronizar}
+                    >
+                        {sincronizando ? 'Sincronizando...' : 'Sincronizar datos reales'}
+                    </button>
+                </div>
+            </div>
+
             {faseActiva === 'grupos' && (
                 <>
                     <div className="row justify-content-center align-items-center">
@@ -337,17 +413,6 @@ export default function AppCopaLiga() {
                             </div>
                         </div>
                     )}
-                    <div className="row mt-4">
-                        <div className="col-12 text-center">
-                            <button
-                                className={`btn-copa ${sincronizando ? 'btn-esperando' : ''}`}
-                                disabled={sincronizando}
-                                onClick={handleSincronizar}
-                            >
-                                {sincronizando ? 'Sincronizando...' : 'Sincronizar datos reales'}
-                            </button>
-                        </div>
-                    </div>
                     <div className="row mt-3 mb-4">
                         <div className="col-12 text-center">
                             <button
@@ -371,7 +436,7 @@ export default function AppCopaLiga() {
                     </div>
                     <div className="row mt-3 mb-4">
                         <div className="col-12 text-center d-flex justify-content-center gap-3">
-                            <button className="btn-copa btn-volver" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' }) || setFaseActiva('grupos')}>
+                            <button className="btn-copa btn-volver" onClick={() => { window.scrollTo({ top: 0, behavior: 'smooth' }); setFaseActiva('grupos'); }}>
                                 Volver: Fase de Grupos
                             </button>
                             <button className="btn-copa btn-avanzar" onClick={() => { window.scrollTo({ top: 0, behavior: 'smooth' }); setFaseActiva('octavos'); }}>

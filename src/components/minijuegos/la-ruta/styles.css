@@ -23,10 +23,7 @@
   overflow: hidden;
   box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.6);
   border: 1px solid #1e293b;
-  background-image: url('/img/minijuegos/juegos/la-ruta.webp');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  background: #0f172a;
 }
 
 .ruta-overlay-fondo {
@@ -117,7 +114,7 @@
   margin: 0 auto 0.8rem auto;
   border-radius: 10px;
   overflow: hidden;
-  border: 1px solid #1e293b;
+  border: 2px solid #06b6d4;
 }
 
 .ruta-slider.carousel {
@@ -164,7 +161,7 @@
   background: #0f172a;
   padding: 0.4rem 0.6rem;
   text-align: center;
-  border-top: 1px solid #1e293b;
+  border-top: 2px solid #06b6d4;
 }
 
 .ruta-slide-caption h5 {

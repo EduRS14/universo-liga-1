@@ -68,7 +68,7 @@ export default function BracketOctavos({ partidos, onPartidosActualizados }: Pro
     return (
         <div className="contenedor-bracket">
             <h2 className="titulo-seccion">OCTAVOS DE FINAL</h2>
-            <p className="subtitulo-bracket">Partido único - Localía del mejor posicionado</p>
+            <p className="subtitulo-bracket">Partido único</p>
 
             <div className="container-fluid">
 
@@ -83,7 +83,6 @@ export default function BracketOctavos({ partidos, onPartidosActualizados }: Pro
                                     <div className="llave-equipo-row">
                                         <img src={partido.equipo_local?.url_foto} alt="" className="llave-logo" />
                                         <span className="llave-nombre">{partido.equipo_local?.nombre}</span>
-                                        <span className="llave-seed">({partido.equipo_local ? `Pos. ${partidos.findIndex(p => p.equipo_local?.  id === partido.equipo_local?.id) + 1}` : ''})</span>
                                         <input
                                             type="number"
                                             min={0}
@@ -96,7 +95,6 @@ export default function BracketOctavos({ partidos, onPartidosActualizados }: Pro
                                     <div className="llave-equipo-row">
                                         <img src={partido.equipo_visitante?.url_foto} alt="" className="llave-logo" />
                                         <span className="llave-nombre">{partido.equipo_visitante?.nombre}</span>
-                                        <span className="llave-seed">({partido.equipo_visitante ? `Pos. ${16 - partidos.findIndex(p => p.    equipo_visitante?.id === partido.equipo_visitante?.id)}` : ''})</span>
                                         <input
                                             type="number"
                                             min={0}

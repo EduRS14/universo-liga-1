@@ -124,8 +124,7 @@ export default function MenuBajoLaLupa() {
         return (
             <div className="contenedor-configuracion">
                 <div className="menu-lupa-full-bg fade-in">
-                    <div className="lupa-overlay-fondo" />
-                    <div className="lupa-contenido-contenedor">
+                        <div className="lupa-contenido-contenedor">
                         <div className="lupa-cabecera text-center">
                             <span className="badge-lupa">RETO DIARIO</span>
                             <h1 className="lupa-titulo">BAJO LA LUPA</h1>
@@ -146,8 +145,6 @@ export default function MenuBajoLaLupa() {
     return (
         <div className="contenedor-configuracion">
             <div className="menu-lupa-full-bg fade-in">
-
-                <div className="lupa-overlay-fondo" />
 
                 <div className="lupa-contenido-contenedor">
 

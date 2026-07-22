@@ -1,0 +1,478 @@
+.juego-container{
+    display: flex; 
+    flex-direction: column; 
+    align-items: center;
+    margin: 1rem 0;
+    min-height: 70vh;
+}
+
+.info-superior {
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto 1.5rem auto;
+}
+
+.cancha-wrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.turno-banner-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.turno-buscador-row {
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 1rem;
+}
+
+.panel-seleccion-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.cancha {
+   position: relative;
+   width: 100%;
+   max-width: 600px;
+   height: 450px;
+   background:
+    repeating-linear-gradient(
+      #2e7d32,
+      #2e7d32 50px,
+      #256b2b 50px,
+      #256b2b 100px
+    ),
+    repeating-linear-gradient(
+      transparent,
+      transparent 50px,
+      rgba(255,255,255,0.08) 50px,
+      rgba(255,255,255,0.08) 51px
+    );
+   border: 2px solid white;
+   margin: 0 auto;
+   border-radius: 8px;
+}
+
+.jugador-slot {
+    position: absolute;
+    width: 45px; 
+    height: 45px;
+    border: 2px solid rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.603);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translate(-50%, -50%);
+    z-index: 5;
+}
+
+.jugador-slot.ocupado {
+    cursor: default;
+}
+
+.img-jugador-cancha {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.icono-mas {
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+    pointer-events: none;
+}
+
+.rol-texto {
+    position: absolute;
+    bottom: -22px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 0.75rem;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px black;
+    white-space: nowrap;
+    pointer-events: none;
+    padding: 2px 6px;
+    border-radius: 4px;
+}
+
+.contenedor-informacion{
+    background-color: #0e2447;
+    border-radius: 8px;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #a5a5a5;
+}
+
+.contenedor-juego{
+    padding: 2rem 0;
+    background: #0a0d0d;
+    background: linear-gradient(90deg,rgba(10, 13, 13, 1) 0%, rgba(4, 18, 13, 1) 50%, rgba(10, 13, 13, 1) 100%);
+    border-radius: 15px;
+}
+
+.texto-titulo-informacion{
+    color: #fff;
+    font-size: 0.65rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 0.1rem;
+}
+
+.texto-informacion{
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.turno-banner{
+    background-color: #1e293b;
+    color: white;
+    padding: 10px 12px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 10px;
+    text-align: center;
+    border: 2px solid #fbbf24;
+}
+
+.turno-texto{
+    font-size: 0.7rem;
+    color: #fbbf24;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 6px;
+}
+
+.turno-equipo-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 6px;
+}
+
+.turno-escudo {
+    width: 35px;
+    height: 35px;
+    object-fit: contain;
+    border-radius: 5px;
+    border: 2px solid white;
+    background-color: white;
+    flex-shrink: 0;
+}
+
+.turno-nombre-equipo{
+    font-size: 0.85rem;
+    font-weight: bold;
+    margin: 0;
+    line-height: 1.2;
+}
+
+.turno-instruccion{
+    font-size: 0.6rem;
+    color: #ccc;
+    margin-bottom: 0;
+}
+
+.contenedor-alerta-fallo{
+    background-color: #ef4444;
+    color: white;
+    font-size: 0.8rem;
+    padding: 8px 15px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+/* --- ALERTA DE ERROR --- */
+.alerta-error-row {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 600px;
+    margin: 1rem auto;
+}
+
+/* --- POSITION PICKER --- */
+.position-picker {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.picker-options {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.picker-option {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    color: #fff;
+    font-size: 0.8rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.picker-option input[type="radio"] {
+    accent-color: #06b6d4;
+    width: 14px;
+    height: 14px;
+}
+
+.picker-option.picker-disabled {
+    color: #64748b;
+    cursor: not-allowed;
+    text-decoration: line-through;
+}
+
+.picker-option.picker-disabled input[type="radio"] {
+    cursor: not-allowed;
+}
+
+.btn-colocar {
+    background: #06b6d4;
+    color: #083344;
+    border: none;
+    padding: 6px 16px;
+    border-radius: 8px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.btn-colocar:hover:not(:disabled) {
+    background: #22d3ee;
+}
+
+.btn-colocar:disabled {
+    background: #164e63;
+    color: #475569;
+    cursor: not-allowed;
+}
+
+/* --- DESCRIPCIÓN MINIJUEGO --- */
+.titulo-descripcion-minijuego{
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    font-style: italic;
+    margin-bottom: 1rem;
+    text-shadow: 2px 0px 10px #420b0b;
+}
+
+.texto-descripcion-minijuego{
+    color: #e9e9e9;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.contenedor-descripcion-minijuego{
+    margin: 5rem 0;
+    padding: 3rem 0;
+    background-color: #1e293b;
+    border-radius: 10px;
+    border: 2px solid #a5a5a5;
+}
+
+/* --- FIN DE JUEGO --- */
+.contenedor-menu-fin{
+    background-color: rgba(0,0,0,0.8);
+    padding: 2rem;
+    border-radius: 15px;
+}
+
+.texto-estado-juego{
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.texto-explicacion-estado{
+    color: white;
+    font-size: 1.2rem;
+}
+
+/* --- MODAL OVERLAY --- */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.85);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.modal-contenido {
+    background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+    border: 2px solid #334155;
+    border-radius: 16px;
+    padding: 2.5rem 3rem;
+    text-align: center;
+    max-width: 450px;
+    width: 90%;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+}
+
+.modal-stats {
+    margin: 1.5rem 0;
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+}
+
+.modal-stats p {
+    margin: 0.5rem 0;
+}
+
+.btn-modal {
+    padding: 12px 32px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    margin-top: 1rem;
+}
+
+.btn-modal-volver {
+    background: #06b6d4;
+    color: #083344;
+}
+
+.btn-modal-volver:hover {
+    background: #22d3ee;
+    transform: translateY(-2px);
+}
+
+.btn-modal-jugar {
+    background: #22c55e;
+    color: white;
+}
+
+.btn-modal-jugar:hover {
+    background: #16a34a;
+    transform: translateY(-2px);
+}
+
+/* --- RESPONSIVE --- */
+@media (max-width: 768px) {
+
+    .juego-container{
+        min-height: 60vh;
+    }
+
+    .contenedor-menu-fin{
+        width: 80%;
+    }
+
+    .texto-estado-juego{
+        font-size: 1.2rem;
+    }
+
+    .texto-explicacion-estado{
+        font-size: 0.9rem;
+    }
+
+    .contenedor-informacion{
+        padding: 0.5rem;
+        margin-bottom: 0.75rem;
+    }
+
+    .contenedor-alerta-fallo{
+        padding: 6px 10px;
+    }
+
+    .contenedor-juego{
+        padding: 0.5rem;
+    }
+
+    .contenedor-descripcion-minijuego{
+        margin: 3rem 0;
+        padding: 2rem 0;
+    }
+
+    .titulo-descripcion-minijuego{
+        font-size: 0.8rem;
+    }
+
+    .texto-descripcion-minijuego{
+        font-size: 0.5rem;
+    }
+
+    .texto-titulo-informacion{
+        font-size: 0.45rem;
+    }
+
+    .texto-informacion{
+        font-size: 0.7rem;
+    }
+
+    .turno-banner{
+        padding: 8px 10px;
+    }
+
+    .turno-texto{
+        font-size: 0.6rem;
+    }
+
+    .turno-equipo-row {
+        gap: 6px;
+        margin-bottom: 4px;
+    }
+
+    .turno-escudo {
+        width: 28px;
+        height: 28px;
+    }
+
+    .turno-nombre-equipo{
+        font-size: 0.7rem;
+    }
+
+    .turno-instruccion{
+        font-size: 0.5rem;
+    }
+
+    .btn-rendirse{
+        font-size: 0.7rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .cancha {
+        height: 300px;
+    }
+
+    .jugador-slot {
+        width: 35px; 
+        height: 35px;
+    }
+}
