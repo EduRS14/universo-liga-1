@@ -1,4 +1,4 @@
-import { useState, useEffect, use } from 'react';
+import { useState, useEffect } from 'react';
 import type { Equipo } from "../../types/equipo";
 import type { Partido } from "../../types/partido";
 import type { Resultado } from '../../types/resultado';
@@ -7,9 +7,10 @@ import "./styles.css";
 interface Props {
     equipos: Equipo[];
     listaFechas: { [key: string]: Partido[] };
+    torneo: string;
 }
 
-export default function Resultados( {equipos, listaFechas}: Props ) {
+export default function Resultados( {equipos, listaFechas, torneo}: Props ) {
 
     const [resultados, setResultados] = useState<Resultado[]>([]);
 
@@ -101,7 +102,7 @@ export default function Resultados( {equipos, listaFechas}: Props ) {
                     <div className="container-fluid contenedor-titulo-tabla">
                         <div className="row justify-content-center align-items-center">
                             <div className="col-6 texto text-center">
-                                <h2 className="titulo-fecha">Tabla - Torneo Apertura</h2>
+                                <h2 className="titulo-fecha">Tabla - {torneo === 'acumulado' ? 'Acumulado 2026' : `Torneo ${torneo === 'apertura' ? 'Apertura' : 'Clausura'}`}</h2>
                             </div>
                         </div>
                     </div>
@@ -162,11 +163,15 @@ export default function Resultados( {equipos, listaFechas}: Props ) {
                                                 <div
                                                 className="w-100 h-100"
                                                 style={
-                                                index + 1 == 1 ? {backgroundColor: '#f0b535', borderRadius: '5px'}
-                                                : index + 1 <= 4 ? {backgroundColor: '#32a869', borderRadius: '5px'}
-                                                : index + 1 <= 8 ? { backgroundColor: '#e0944d', borderRadius: '5px' } 
-                                                : index + 1 >= 16 ? { backgroundColor: '#e5533d', borderRadius: '5px' }
-                                                : {}}>
+                                                    index + 1 === 1
+                                                        ? {backgroundColor: '#f0b535', borderRadius: '5px'}
+                                                        : torneo === 'acumulado' && index + 1 <= 4
+                                                        ? {backgroundColor: '#32a869', borderRadius: '5px'}
+                                                        : torneo === 'acumulado' && index + 1 <= 8
+                                                        ? { backgroundColor: '#e0944d', borderRadius: '5px' }
+                                                        : torneo === 'acumulado' && index + 1 >= 16
+                                                        ? { backgroundColor: '#e5533d', borderRadius: '5px' }
+                                                        : {}}>
                                                     <strong className='texto-tabla'>{index + 1}</strong>
                                                 </div>
                                             </div>
@@ -223,13 +228,16 @@ export default function Resultados( {equipos, listaFechas}: Props ) {
                                             <div className="cuadrado-amarillo"></div>
                                         </div>
                                         <div className="col-10 texto-tabla">
-                                            <p className="texto-leyenda">Campeón del Torneo Apertura</p>
+                                            <p className="texto-leyenda">
+                                                {torneo === 'acumulado' ? '1er Puesto del Acumulado' : `Campeón del Torneo ${torneo === 'apertura' ? 'Apertura' : 'Clausura'}`}
+                                            </p>
                                         </div>
                                     </div>
                                 </div>
 
                             </div>
 
+                            {torneo === 'acumulado' && (
                             <div className="col-12 text-center contenedor-leyenda-tabla">
 
                                 <div className="container-fluid">
@@ -244,7 +252,9 @@ export default function Resultados( {equipos, listaFechas}: Props ) {
                                 </div>
 
                             </div>
+                            )}
 
+                            {torneo === 'acumulado' && (
                             <div className="col-12 text-center contenedor-leyenda-tabla">
 
                                 <div className="container-fluid">
@@ -259,7 +269,9 @@ export default function Resultados( {equipos, listaFechas}: Props ) {
                                 </div>
 
                             </div>
+                            )}
 
+                            {torneo === 'acumulado' && (
                             <div className="col-12 text-center contenedor-leyenda-tabla">
 
                                 <div className="container-fluid">
@@ -274,6 +286,7 @@ export default function Resultados( {equipos, listaFechas}: Props ) {
                                 </div>
 
                             </div>
+                            )}
                     
                         </div>
 

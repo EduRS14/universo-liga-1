@@ -19,11 +19,7 @@
   box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.6);
   border: 1px solid #1e293b;
   
-  /* FONDO DE IMAGEN TOTAL */
-  background-image: url('/img/minijuegos/juegos/top-goleadores.webp');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  background: #0f172a;
 }
 
 /* --- EL OVERLAY (Desvanecimiento oscuro sobre la imagen) --- */
@@ -296,7 +292,7 @@
 @media (max-width: 600px) {
   .top-contenido-contenedor { padding: 1.5rem 1rem; min-width: 90vw; }
 
-  .menu-juego-top-full-bg { max-width: 90vw; background-position: center top; }
+  .menu-juego-top-full-bg { max-width: 90vw; }
 
   .top-cabecera { margin-bottom: 1rem !important; }
 

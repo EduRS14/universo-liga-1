@@ -128,7 +128,6 @@ export default function MenuLaRuta() {
         return (
             <div className="contenedor-configuracion">
                 <div className="menu-ruta-full-bg fade-in">
-                    <div className="ruta-overlay-fondo" />
                     <div className="ruta-contenido-contenedor">
                         <div className="ruta-cabecera text-center">
                             <span className="badge-ruta">RETO DIARIO</span>
@@ -150,8 +149,6 @@ export default function MenuLaRuta() {
     return (
         <div className="contenedor-configuracion ruta-menu-wrapper">
             <div className="menu-ruta-full-bg fade-in">
-
-                <div className="ruta-overlay-fondo" />
 
                 <div className="ruta-contenido-contenedor">
 

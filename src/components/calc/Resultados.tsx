@@ -1,4 +1,4 @@
-import { useState, useEffect, use } from 'react';
+import { useState, useEffect } from 'react';
 import type { Equipo } from "../../types/equipo";
 import type { Partido } from "../../types/partido";
 import "./styles.css";
@@ -11,13 +11,16 @@ interface Props {
     onCambiarListaAuxiliar: (
         nuevaLista: { [key: string]: Partido[] } | ((prev: { [key: string]: Partido[] }) => { [key: string]: Partido[] })
     ) => void;
+    torneo: string;
 }
 
+const TOTAL_FECHAS = 17;
+const LS_KEY = (torneo: string) => `datos_${torneo}`;
+
 export default function Resultados( { equipos, fechaActual, onCambiarFecha,
-    listaAuxiliar, onCambiarListaAuxiliar
+    listaAuxiliar, onCambiarListaAuxiliar, torneo
  }: Props ) {
 
-    // Funcion para guardar los resultados ingresados
     const guardarResultados = () => {
 
         const listaFecha = listaAuxiliar[`fecha${fechaActual}`] || [];
@@ -50,34 +53,33 @@ export default function Resultados( { equipos, fechaActual, onCambiarFecha,
             [`fecha${fechaActual}`]: listaActualizada
         }));
 
-        localStorage.setItem(
-            `fecha${fechaActual}_apertura`,
-            JSON.stringify(listaActualizada)
-        );
+        const guardado = localStorage.getItem(LS_KEY(torneo));
+        const datos = guardado ? JSON.parse(guardado) : {};
+        datos[`fecha${fechaActual}`] = listaActualizada;
+        localStorage.setItem(LS_KEY(torneo), JSON.stringify(datos));
 
         setEstadoCambio(false);
     };
 
-
     const reiniciarFecha = async () => {
       try {
-        //console.log('Reiniciando fecha', fechaActual);
 
-        const response = await fetch(`/data/fechas/apertura/fecha${fechaActual}.json`);
+        const response = await fetch(`/data/fechas/${torneo}/fecha${fechaActual}.json`);
         if (!response.ok) {
           throw new Error('Error al cargar los datos originales de los partidos');
         }
 
         const nuevaListaFecha: Partido[] = await response.json();
 
-        //console.log('Nueva lista fecha:', nuevaListaFecha);
-
         onCambiarListaAuxiliar(prev => ({
           ...prev,
           [`fecha${fechaActual}`]: nuevaListaFecha
         }));
 
-        localStorage.setItem(`fecha${fechaActual}_apertura`, JSON.stringify(nuevaListaFecha));
+        const guardado = localStorage.getItem(LS_KEY(torneo));
+        const datos = guardado ? JSON.parse(guardado) : {};
+        datos[`fecha${fechaActual}`] = nuevaListaFecha;
+        localStorage.setItem(LS_KEY(torneo), JSON.stringify(datos));
 
         setEstadoReset(false);
         setEstadoCambio(false);
@@ -94,7 +96,6 @@ export default function Resultados( { equipos, fechaActual, onCambiarFecha,
 
         const listaFecha = listaAuxiliar[`fecha${fechaActual}`] || [];
 
-        // 1. Validar que no haya resultados inválidos
         for (let partido of listaFecha) {
             const local = partido.goles_local;
             const visita = partido.goles_visitante;
@@ -109,28 +110,23 @@ export default function Resultados( { equipos, fechaActual, onCambiarFecha,
             }
         }
 
-        // 2. Obtener lo guardado en localStorage
-        const guardado = localStorage.getItem(`fecha${fechaActual}_apertura`);
-        const listaGuardada = guardado ? JSON.parse(guardado) : [];
+        const guardado = localStorage.getItem(LS_KEY(torneo));
+        const datos = guardado ? JSON.parse(guardado) : {};
+        const listaGuardada = datos[`fecha${fechaActual}`] || [];
 
-        // 3. Comparar ambas listas
         const hayCambios =
             JSON.stringify(listaFecha) !== JSON.stringify(listaGuardada);
 
         setEstadoCambio(hayCambios);
 
-    }, [listaAuxiliar, fechaActual]);
-
+    }, [listaAuxiliar, fechaActual, torneo]);
 
     useEffect(() => {
-        // Al cambiar de fecha, reseteamos el estado de cambio
         setEstadoCambio(false);
     }, [fechaActual]);
 
     useEffect(() => {
 
-        // En caso todos los resultados de la listaAuxiliar sean diferentes de null,
-        // marcamos el estado de reset como true
         const listaFecha = listaAuxiliar[`fecha${fechaActual}`] || [];
         let estado = false;
         for (let i = 0; i < listaFecha.length; i++) {
@@ -153,7 +149,6 @@ export default function Resultados( { equipos, fechaActual, onCambiarFecha,
 
                         <div className="container-fluid contenedor-opciones">
                             <div className="row justify-content-center align-items-center">
-                                {/* Botones para cambiar la fecha (hacia atras y hacia adelante) */}
                                 <div className="col-3 texto text-center">
                                     <button
                                         className="btn btn-primary btn-opciones"
@@ -171,8 +166,8 @@ export default function Resultados( { equipos, fechaActual, onCambiarFecha,
                                 <div className="col-3 texto text-center">
                                     <button
                                         className="btn btn-primary btn-opciones"
-                                        onClick={() => { if (fechaActual < 17) onCambiarFecha(fechaActual + 1); }}
-                                        disabled={fechaActual >= 17}
+                                        onClick={() => { if (fechaActual < TOTAL_FECHAS) onCambiarFecha(fechaActual + 1); }}
+                                        disabled={fechaActual >= TOTAL_FECHAS}
                                     >
                                         Siguiente
                                     </button>
@@ -308,7 +303,6 @@ export default function Resultados( { equipos, fechaActual, onCambiarFecha,
 
                     </div>
                     
-                    {/* Seccion de boton para guardar resultados */}
                     <div className="col-11">
 
                         <div className="container-fluid contenedor-opciones">

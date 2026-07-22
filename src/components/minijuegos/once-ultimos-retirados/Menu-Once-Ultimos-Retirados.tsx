@@ -102,9 +102,6 @@ export default function MenuOnceUltimosRetirados() {
     <div className="contenedor-configuracion">
       <div className="menu-juego-leyendas-full-bg fade-in">
         
-        {/* OVERLAY GENERAL */}
-        <div className="leyendas-overlay-fondo"></div>
-
         {/* CONTENIDO FLOTANTE */}
         <div className="leyendas-contenido-contenedor">
           

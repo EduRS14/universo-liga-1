@@ -19,11 +19,7 @@
   box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.6); /* Sombra estándar, sin resplandores */
   border: 1px solid #1e293b; /* Borde estándar limpio */
   
-  /* FONDO DE IMAGEN TOTAL */
-  background-image: url('/img/minijuegos/juegos/el-once-actualidad.webp');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  background: #0f172a;
 }
 
 /* --- EL OVERLAY (Desvanecimiento oscuro estándar para 100% legibilidad) --- */

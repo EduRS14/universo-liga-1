@@ -83,9 +83,6 @@ export default function MenuABC() {
     <div className="contenedor-configuracion abc-menu-wrapper">
       <div className="menu-juego-abc-full-bg fade-in">
         
-        {/* OVERLAY GENERAL */}
-        <div className="abc-overlay-fondo"></div>
-
         {/* CONTENIDO FLOTANTE */}
         <div className="abc-contenido-contenedor">
           

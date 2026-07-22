@@ -111,9 +111,6 @@ export default function MenuElTapadito() {
     <div className="contenedor-configuracion tapadito-menu-wrapper">
       <div className="menu-juego-tapadito-full-bg fade-in">
         
-        {/* OVERLAY GENERAL */}
-        <div className="tapadito-overlay-fondo"></div>
-
         {/* CONTENIDO FLOTANTE */}
         <div className="tapadito-contenido-contenedor">
           
